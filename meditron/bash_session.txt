@@ -1,0 +1,92 @@
+    1  nvidia-smi
+    2  exit
+    3  owd
+    4  pwd
+    5  nvidia-smi
+    6  pwd
+    7  history
+    8  pip list
+    9  pip freeze
+   10  pip freeze | grep fastchat
+   11  pip install -U pip
+   12  which pip2
+   13  which pip3
+   14  pip install -e ".[model_worker,webui]"
+   15  python -m fastchat.serve.cli --help
+   16  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --conv-template zero_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline
+   17  huggingface-cli login
+   18  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --conv-template zero_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline
+   19  nvidia-smi
+   20  vim fastchat/conversation.py 
+   21  python3 -m fastchat.serve.cli --model-path lmsys/vicuna-7b-v1.5 --load-8bit
+   22  pip install transformers accelerate bitsandbytes
+   23  huggingface-cli delete-cache
+   24  pip install huggingface_hub[cli]
+   25  huggingface-cli delete-cache
+   26  huggingface-cli delete-cache
+   27  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --conv-template zero_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline
+   28  pip list | grep accelerate
+   29  pip list | grep bitsandbytes
+   30  pip list | grep huggingface-hub
+   31  pip list | grep safetensors
+   32  pip list | grep torch
+   33  pip list | grep transformers
+   34  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --conv-template zero_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline --debug
+   35  nvidia-smi
+   36  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --conv-template zero_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline --debug
+   37  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --conv-template zero_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline --debug
+   38  nvidia-smi
+   39  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --conv-template zero_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline --debug
+   40  python -m fastchat.serve.cli --help
+   41  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --dtype bfloat16 --conv-template zero_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline --debug
+   42  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --dtype bfloat16 --device cuda --conv-template zero_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline --debug
+   43  huggingface-cli delete-cache
+   44  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --dtype bfloat16 --device cuda --conv-template zero_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline --debug
+   
+   =========================
+   45  pip install 'bitsandbytes==0.39.0' 'accelerate==0.20.0'
+   46  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --dtype bfloat16 --device cuda --conv-template zero_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline --debug
+   =========================
+   
+   47  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --dtype bfloat16 --device cuda --conv-template zero_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline
+   48  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --conv-template zero_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline
+   49  exit
+   50  nvidia-smi
+   51  pwd
+   52  cd SageMaker/FastChat/
+   53  pwd
+   54  vim fastchat/conversation.py 
+   55  vim fastchat/model/model_adapter.py 
+   56  ls
+   57  vim fastchat/serve/cli.py 
+   58  history
+   59  nvidia-smi
+   60  ipython
+   61  nvidia-smi
+   62  nvidia-smi -r
+   63  sudo nvidia-smi -r
+   64  ps -a
+   65  sudo nvidia-smi
+   66  sudo nvidia-smi -r
+   67  nvidia-smi
+   68  pwd
+   69  cd SageMaker/FastChat/
+   70  history
+   71  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --conv-template few_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline
+   72  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --conv-template few_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline --debug
+   73  python -m fastchat.serve.cli --model-path epfl-llm/meditron-7b --load-8bit --conv-template zero_shot_medical --temperature 0.1 --repetition_penalty 1.1 --max-new-tokens 256 --style rich --multiline --debug
+   74  nvidia-smi
+   75  ipython
+   76  nvidia-smi
+   77  ipython
+   78  nvidia-smi
+   79  pwd
+   80  cd SageMaker/
+   81  ls
+   82  conda env list
+   83  pip freeze > requirements.jupytersysenv.txt
+   84  conda activate pytorch_p310
+   85  conda init bash
+   86  conda activate pytorch_p310
+   87  history
+   88  history > bash_session.txt
