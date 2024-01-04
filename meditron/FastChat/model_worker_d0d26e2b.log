@@ -1,0 +1,62 @@
+2024-01-02 20:49:21 | INFO | stdout | usage: model_worker.py [-h] [--host HOST] [--port PORT] [--worker-address WORKER_ADDRESS] [--controller-address CONTROLLER_ADDRESS] [--model-path MODEL_PATH]
+2024-01-02 20:49:21 | INFO | stdout |                        [--revision REVISION] [--device {cpu,cuda,mps,xpu,npu}] [--gpus GPUS] [--num-gpus NUM_GPUS] [--max-gpu-memory MAX_GPU_MEMORY]
+2024-01-02 20:49:21 | INFO | stdout |                        [--dtype {float32,float16,bfloat16}] [--load-8bit] [--cpu-offloading] [--gptq-ckpt GPTQ_CKPT] [--gptq-wbits {2,3,4,8,16}]
+2024-01-02 20:49:21 | INFO | stdout |                        [--gptq-groupsize GPTQ_GROUPSIZE] [--gptq-act-order] [--awq-ckpt AWQ_CKPT] [--awq-wbits {4,16}] [--awq-groupsize AWQ_GROUPSIZE] [--enable-exllama]
+2024-01-02 20:49:21 | INFO | stdout |                        [--exllama-max-seq-len EXLLAMA_MAX_SEQ_LEN] [--exllama-gpu-split EXLLAMA_GPU_SPLIT] [--exllama-cache-8bit] [--enable-xft]
+2024-01-02 20:49:21 | INFO | stdout |                        [--xft-max-seq-len XFT_MAX_SEQ_LEN] [--xft-dtype {fp16,bf16,int8,bf16_fp16,bf16_int8}] [--model-names MODEL_NAMES] [--conv-template CONV_TEMPLATE]
+2024-01-02 20:49:21 | INFO | stdout |                        [--embed-in-truncate] [--limit-worker-concurrency LIMIT_WORKER_CONCURRENCY] [--stream-interval STREAM_INTERVAL] [--no-register] [--seed SEED]
+2024-01-02 20:49:21 | INFO | stdout |                        [--debug DEBUG] [--ssl]
+2024-01-02 20:49:21 | INFO | stdout | 
+2024-01-02 20:49:21 | INFO | stdout | options:
+2024-01-02 20:49:21 | INFO | stdout |   -h, --help            show this help message and exit
+2024-01-02 20:49:21 | INFO | stdout |   --host HOST
+2024-01-02 20:49:21 | INFO | stdout |   --port PORT
+2024-01-02 20:49:21 | INFO | stdout |   --worker-address WORKER_ADDRESS
+2024-01-02 20:49:21 | INFO | stdout |   --controller-address CONTROLLER_ADDRESS
+2024-01-02 20:49:21 | INFO | stdout |   --model-path MODEL_PATH
+2024-01-02 20:49:21 | INFO | stdout |                         The path to the weights. This can be a local folder or a Hugging Face repo ID.
+2024-01-02 20:49:21 | INFO | stdout |   --revision REVISION   Hugging Face Hub model revision identifier
+2024-01-02 20:49:21 | INFO | stdout |   --device {cpu,cuda,mps,xpu,npu}
+2024-01-02 20:49:21 | INFO | stdout |                         The device type
+2024-01-02 20:49:21 | INFO | stdout |   --gpus GPUS           A single GPU like 1 or multiple GPUs like 0,2
+2024-01-02 20:49:21 | INFO | stdout |   --num-gpus NUM_GPUS
+2024-01-02 20:49:21 | INFO | stdout |   --max-gpu-memory MAX_GPU_MEMORY
+2024-01-02 20:49:21 | INFO | stdout |                         The maximum memory per GPU for storing model weights. Use a string like '13Gib'
+2024-01-02 20:49:21 | INFO | stdout |   --dtype {float32,float16,bfloat16}
+2024-01-02 20:49:21 | INFO | stdout |                         Override the default dtype. If not set, it will use float16 on GPU and float32 on CPU.
+2024-01-02 20:49:21 | INFO | stdout |   --load-8bit           Use 8-bit quantization
+2024-01-02 20:49:21 | INFO | stdout |   --cpu-offloading      Only when using 8-bit quantization: Offload excess weights to the CPU that don't fit on the GPU
+2024-01-02 20:49:21 | INFO | stdout |   --gptq-ckpt GPTQ_CKPT
+2024-01-02 20:49:21 | INFO | stdout |                         Used for GPTQ. The path to the local GPTQ checkpoint.
+2024-01-02 20:49:21 | INFO | stdout |   --gptq-wbits {2,3,4,8,16}
+2024-01-02 20:49:21 | INFO | stdout |                         Used for GPTQ. #bits to use for quantization
+2024-01-02 20:49:21 | INFO | stdout |   --gptq-groupsize GPTQ_GROUPSIZE
+2024-01-02 20:49:21 | INFO | stdout |                         Used for GPTQ. Groupsize to use for quantization; default uses full row.
+2024-01-02 20:49:21 | INFO | stdout |   --gptq-act-order      Used for GPTQ. Whether to apply the activation order GPTQ heuristic
+2024-01-02 20:49:21 | INFO | stdout |   --awq-ckpt AWQ_CKPT   Used for AWQ. Load quantized model. The path to the local AWQ checkpoint.
+2024-01-02 20:49:21 | INFO | stdout |   --awq-wbits {4,16}    Used for AWQ. #bits to use for AWQ quantization
+2024-01-02 20:49:21 | INFO | stdout |   --awq-groupsize AWQ_GROUPSIZE
+2024-01-02 20:49:21 | INFO | stdout |                         Used for AWQ. Groupsize to use for AWQ quantization; default uses full row.
+2024-01-02 20:49:21 | INFO | stdout |   --enable-exllama      Used for exllamabv2. Enable exllamaV2 inference framework.
+2024-01-02 20:49:21 | INFO | stdout |   --exllama-max-seq-len EXLLAMA_MAX_SEQ_LEN
+2024-01-02 20:49:21 | INFO | stdout |                         Used for exllamabv2. Max sequence length to use for exllamav2 framework; default 4096 sequence length.
+2024-01-02 20:49:21 | INFO | stdout |   --exllama-gpu-split EXLLAMA_GPU_SPLIT
+2024-01-02 20:49:21 | INFO | stdout |                         Used for exllamabv2. Comma-separated list of VRAM (in GB) to use per GPU. Example: 20,7,7
+2024-01-02 20:49:21 | INFO | stdout |   --exllama-cache-8bit  Used for exllamabv2. Use 8-bit cache to save VRAM.
+2024-01-02 20:49:21 | INFO | stdout |   --enable-xft          Used for xFasterTransformer Enable xFasterTransformer inference framework.
+2024-01-02 20:49:21 | INFO | stdout |   --xft-max-seq-len XFT_MAX_SEQ_LEN
+2024-01-02 20:49:21 | INFO | stdout |                         Used for xFasterTransformer. Max sequence length to use for xFasterTransformer framework; default 4096 sequence length.
+2024-01-02 20:49:21 | INFO | stdout |   --xft-dtype {fp16,bf16,int8,bf16_fp16,bf16_int8}
+2024-01-02 20:49:21 | INFO | stdout |                         Override the default dtype. If not set, it will use bfloat16 for first token and float16 next tokens on CPU.
+2024-01-02 20:49:21 | INFO | stdout |   --model-names MODEL_NAMES
+2024-01-02 20:49:21 | INFO | stdout |                         Optional display comma separated names
+2024-01-02 20:49:21 | INFO | stdout |   --conv-template CONV_TEMPLATE
+2024-01-02 20:49:21 | INFO | stdout |                         Conversation prompt template.
+2024-01-02 20:49:21 | INFO | stdout |   --embed-in-truncate
+2024-01-02 20:49:21 | INFO | stdout |   --limit-worker-concurrency LIMIT_WORKER_CONCURRENCY
+2024-01-02 20:49:21 | INFO | stdout |                         Limit the model concurrency to prevent OOM.
+2024-01-02 20:49:21 | INFO | stdout |   --stream-interval STREAM_INTERVAL
+2024-01-02 20:49:21 | INFO | stdout |   --no-register
+2024-01-02 20:49:21 | INFO | stdout |   --seed SEED           Overwrite the random seed for each generation.
+2024-01-02 20:49:21 | INFO | stdout |   --debug DEBUG         Print debugging messages
+2024-01-02 20:49:21 | INFO | stdout |   --ssl                 Enable SSL. Requires OS Environment variables 'SSL_KEYFILE' and 'SSL_CERTFILE'.

@@ -1,0 +1,92 @@
+2024-01-02 19:50:25 | INFO | model_worker | args: Namespace(host='localhost', port=21002, worker_address='http://localhost:21002', controller_address='http://localhost:21001', model_path='epfl-llm/meditron-7b', revision='main', device='cuda', gpus=None, num_gpus=1, max_gpu_memory=None, dtype=None, load_8bit=True, cpu_offloading=False, gptq_ckpt=None, gptq_wbits=16, gptq_groupsize=-1, gptq_act_order=False, awq_ckpt=None, awq_wbits=16, awq_groupsize=-1, enable_exllama=False, exllama_max_seq_len=4096, exllama_gpu_split=None, exllama_cache_8bit=False, enable_xft=False, xft_max_seq_len=4096, xft_dtype=None, model_names=None, conv_template=None, embed_in_truncate=False, limit_worker_concurrency=5, stream_interval=2, no_register=False, seed=None, debug=False, ssl=False)
+2024-01-02 19:50:25 | INFO | model_worker | Loading the model ['meditron-7b'] on worker c8897f47 ...
+2024-01-02 19:50:25 | ERROR | stderr |   0%|                                                                                                                                                     | 0/8 [00:00<?, ?it/s]
+2024-01-02 19:50:29 | ERROR | stderr |  12%|█████████████████▋                                                                                                                           | 1/8 [00:03<00:26,  3.72s/it]
+2024-01-02 19:50:33 | ERROR | stderr |  25%|███████████████████████████████████▎                                                                                                         | 2/8 [00:07<00:22,  3.80s/it]
+2024-01-02 19:50:37 | ERROR | stderr |  38%|████████████████████████████████████████████████████▉                                                                                        | 3/8 [00:11<00:20,  4.03s/it]
+2024-01-02 19:50:42 | ERROR | stderr |  50%|██████████████████████████████████████████████████████████████████████▌                                                                      | 4/8 [00:16<00:16,  4.20s/it]
+2024-01-02 19:50:46 | ERROR | stderr |  62%|████████████████████████████████████████████████████████████████████████████████████████▏                                                    | 5/8 [00:20<00:12,  4.30s/it]
+2024-01-02 19:50:51 | ERROR | stderr |  75%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                   | 6/8 [00:25<00:08,  4.38s/it]
+2024-01-02 19:50:55 | ERROR | stderr |  88%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                 | 7/8 [00:29<00:04,  4.40s/it]
+2024-01-02 19:50:55 | ERROR | stderr | 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:30<00:00,  3.07s/it]
+2024-01-02 19:50:55 | ERROR | stderr | 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:30<00:00,  3.75s/it]
+2024-01-02 19:50:55 | ERROR | stderr | 
+2024-01-02 19:50:55 | INFO | model_worker | Register to controller
+2024-01-02 19:50:55 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m22974[0m]
+2024-01-02 19:50:55 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-01-02 19:50:55 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-01-02 19:50:55 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://localhost:21002[0m (Press CTRL+C to quit)
+2024-01-02 19:51:40 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: None. call_ct: 0. worker_id: c8897f47. 
+2024-01-02 19:51:43 | INFO | stdout | [32mINFO[0m:     127.0.0.1:54138 - "[1mPOST /worker_get_status HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 19:52:25 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: None. call_ct: 0. worker_id: c8897f47. 
+2024-01-02 19:53:10 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: None. call_ct: 0. worker_id: c8897f47. 
+2024-01-02 19:53:22 | INFO | stdout | [32mINFO[0m:     127.0.0.1:52776 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 19:53:55 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 1. worker_id: c8897f47. 
+2024-01-02 19:54:40 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 1. worker_id: c8897f47. 
+2024-01-02 19:54:49 | INFO | stdout | [32mINFO[0m:     127.0.0.1:44454 - "[1mPOST /worker_get_status HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 19:55:25 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 1. worker_id: c8897f47. 
+2024-01-02 19:55:35 | INFO | stdout | [32mINFO[0m:     127.0.0.1:52004 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 19:55:56 | INFO | stdout | [32mINFO[0m:     127.0.0.1:45482 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 19:56:11 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 19:56:56 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 19:57:41 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 19:58:26 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 19:59:11 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 19:59:56 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:00:41 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:01:26 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:02:11 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:02:56 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:03:41 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:04:26 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:05:11 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:05:56 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:06:41 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:07:26 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:08:11 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:08:56 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:09:41 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:10:26 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 3. worker_id: c8897f47. 
+2024-01-02 20:10:35 | INFO | stdout | [32mINFO[0m:     127.0.0.1:52280 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 20:10:59 | INFO | stdout | [32mINFO[0m:     127.0.0.1:35470 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 20:11:11 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 5. worker_id: c8897f47. 
+2024-01-02 20:11:20 | INFO | stdout | [32mINFO[0m:     127.0.0.1:43266 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 20:11:56 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 6. worker_id: c8897f47. 
+2024-01-02 20:12:41 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 6. worker_id: c8897f47. 
+2024-01-02 20:13:19 | INFO | stdout | [32mINFO[0m:     127.0.0.1:56628 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 20:13:27 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 7. worker_id: c8897f47. 
+2024-01-02 20:14:11 | INFO | stdout | [32mINFO[0m:     127.0.0.1:46420 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 20:14:12 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=4, locked=False). call_ct: 8. worker_id: c8897f47. 
+2024-01-02 20:14:26 | INFO | stdout | [32mINFO[0m:     127.0.0.1:59758 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 20:14:57 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 9. worker_id: c8897f47. 
+2024-01-02 20:15:42 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 9. worker_id: c8897f47. 
+2024-01-02 20:16:27 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 9. worker_id: c8897f47. 
+2024-01-02 20:17:12 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 9. worker_id: c8897f47. 
+2024-01-02 20:17:57 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 9. worker_id: c8897f47. 
+2024-01-02 20:18:17 | INFO | stdout | [32mINFO[0m:     127.0.0.1:44068 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 20:18:28 | INFO | stdout | [32mINFO[0m:     127.0.0.1:33044 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 20:18:42 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 11. worker_id: c8897f47. 
+2024-01-02 20:19:27 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 11. worker_id: c8897f47. 
+2024-01-02 20:19:31 | INFO | stdout | [32mINFO[0m:     127.0.0.1:47938 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 20:20:08 | INFO | stdout | [32mINFO[0m:     127.0.0.1:52798 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 20:20:12 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=4, locked=False). call_ct: 13. worker_id: c8897f47. 
+2024-01-02 20:20:57 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=4, locked=False). call_ct: 13. worker_id: c8897f47. 
+2024-01-02 20:21:42 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 13. worker_id: c8897f47. 
+2024-01-02 20:22:27 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 13. worker_id: c8897f47. 
+2024-01-02 20:23:12 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 13. worker_id: c8897f47. 
+2024-01-02 20:23:57 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 13. worker_id: c8897f47. 
+2024-01-02 20:24:42 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 13. worker_id: c8897f47. 
+2024-01-02 20:25:27 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 13. worker_id: c8897f47. 
+2024-01-02 20:26:12 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 13. worker_id: c8897f47. 
+2024-01-02 20:26:57 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 13. worker_id: c8897f47. 
+2024-01-02 20:27:01 | INFO | stdout | [32mINFO[0m:     127.0.0.1:55302 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 20:27:42 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 14. worker_id: c8897f47. 
+2024-01-02 20:28:27 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 14. worker_id: c8897f47. 
+2024-01-02 20:29:05 | INFO | stdout | [32mINFO[0m:     127.0.0.1:56998 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 20:29:12 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=4, locked=False). call_ct: 15. worker_id: c8897f47. 
+2024-01-02 20:29:33 | INFO | stdout | [32mINFO[0m:     127.0.0.1:33196 - "[1mPOST /worker_generate_stream HTTP/1.1[0m" [32m200 OK[0m
+2024-01-02 20:29:57 | INFO | model_worker | Send heart beat. Models: ['meditron-7b']. Semaphore: Semaphore(value=5, locked=False). call_ct: 16. worker_id: c8897f47. 
+2024-01-02 20:29:59 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-01-02 20:30:00 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-01-02 20:30:00 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-01-02 20:30:00 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m22974[0m]
