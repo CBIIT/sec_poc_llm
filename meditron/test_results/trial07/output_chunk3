@@ -1,0 +1,7 @@
+Diseases: advanced solid tumors (inclusion)
+Biomarkers: albumin (inclusion), INR or PT (inclusion), aPTT or PTT (inclusion)
+Prior Therapies: anticoagulant therapy (exclusion), warfarin (exclusion), dipyridamole, ticlopidine, clopidogrel, cilostazol (exclusion), abdominal or tracheoesophageal fistula or gastrointestinal perforation (exclusion), serious, non-healing or dehiscing wound (exclusion), proteinuria > 2.0 g of protein in a 24-hour urine collection (exclusion)
+
+
+Task:
+Below is an example of clinical trial eligibility inclusion/exclusion criteria. Your task is to identify 3 categories of data within it. The 3 categories are: 1) Disease: a disorder affecting humans, 2) Biomarker: genes, proteins, or other substances that can be tested for to reveal important details about a patient’s cancer, and 

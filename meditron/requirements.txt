@@ -1,0 +1,6 @@
+langchain
+transformers
+accelerate
+bitsandbytes
+chromadb
+sentence_transformers

@@ -1,0 +1,7 @@
+
+Task:
+Below is an example of clinical trial eligibility inclusion/exclusion criteria. Your task is to identify 3 categories of data within it. The 3 categories are: 1) Disease: a disorder affecting humans, 2) Biomarker: genes, proteins, or other substances that can be tested for to reveal important details about a patient’s cancer, and 3) Prior Therapy: medications, surgeries, or procedures that a patient may be treated with. For each of the identified categories, state whether it is an inclusion or exclusion.
+Criteria:
+    Inclusion Criteria
+	Life expectancy of at least 3 months
+	A history of previously treated brain metastases is allowed, provided that at least 7 days have lapsed between radiation and initiation of pembrolizumab; any brain metastasis >= 20 mm or causing symptoms must be treated with local therapy (i.e. radiation or surgical resection, as clinically appropriate) prior to study enrollment; any lesion present at the time of whole brain radiotherapy (

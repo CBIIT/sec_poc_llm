@@ -1,0 +1,10 @@
+Diseases: metastatic (Stage IV) or locally advanced, unresectable (Stage III) NSCLC of nonsquamous pathology that has relapsed or progressed (inclusion)
+Biomarkers: PD-L1 expression status (inclusion)
+Prior Therapies: prior anti-PD-(L)1 therapy (exclusion)
+
+
+Task:
+Below is an example of clinical trial eligibility inclusion/exclusion criteria. Your task is to identify 3 categories of data within it. The 3 categories are: 1) Disease: a disorder affecting humans, 2) Biomarker: genes, proteins, or other substances that can be tested for to reveal important details about a patient’s cancer, and 3) Prior Therapy: medications, surgeries, or procedures that a patient may be treated with. For each of the identified categories, state whether it is an inclusion or exclusion.
+Criteria:
+    Inclusion Criteria
+	Patients with histologically or cytologically confirmed advanced solid tumors with a documented progression on or after

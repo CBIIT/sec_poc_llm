@@ -1,0 +1,13 @@
+Diseases: salivary gland carcinoma (inclusion)
+Biomarkers: mismatch repair deficient (inclusion)
+Prior Therapies: microsatellite instability high (inclusion)
+
+
+Task:
+Below is an example of clinical trial eligibility inclusion/exclusion criteria. Your task is to identify 3 categories of data within it. The 3 categories are: 1) Disease: a disorder affecting humans, 2) Biomarker: genes, proteins, or other substances that can be tested for to reveal important details about a patient’s cancer, and 3) Prior Therapy: medications, surgeries, or procedures that a patient may be treated with. For each of the identified categories, state whether it is an inclusion or exclusion.
+Criteria:
+    Inclusion Criteria
+o	Patients with advanced solid tumors with no available standard therapy or for which participation in a clinical trial is not possible
+•	No prior chemotherapy for metastatic disease
+•	No prior radiotherapy within 14 days of beginning of cycle 1
+•	

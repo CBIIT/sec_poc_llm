@@ -1,0 +1,26 @@
+when taking 1 criterion at a time, how to differentiate between nested lists (nested criterion)?
+
+1. Document the problems faced when getting the model up and running
+    - For running inference jobs on the meditron model, a GPU with enough memory to hold the model (16GB) is ideal.
+        - Running on CPU was slow. It was not ideal for finding the best prompt (0.993 tokens/s vs 11 tokens/s on GPU as measured in fastchat conversation)
+        
+        - The ease of running on GPU in SageMaker depends on the JupyterLab environment. With standalone Notebook Instances, the pytorch/python310 environment comes preconfigured for using CUDA - no configuration required. The most common issues with this environment were related to python packages not being installed properly. 
+        
+            - Occasionally on a fresh EC2 instance the fastchat tool I was using to load a chat interface would prefer loading the pytorch bins instead of safetensors which caused issues. This is more likely an issue with the fastchat service than with the environment. Resolving the issue involved a few different attempts:
+                1. Use hugging face CLI to clear the cache of downloaded models and retry
+                2. pip install fastchat again
+                3. reset gpu with nvidia-smi -r
+                4. pip install bitsandbytes>=0.39.0 accelerate>=0.20.0 (https://huggingface.co/docs/transformers/main/en/perf_infer_gpu_one#bitsandbytes) and restart the terminal
+                5. setting --dtype bfloat16 and --load-8bit CLI args
+        
+                This tool is comes with some issues; sometimes it works, sometimes it doesn't. However, it is a good open source tool when it works. It has a chat interface that takes into account chat history and is good about stopping the model from blabbering. It is the tool that the creators of Meditron recommend for inference.
+        
+       - Running on GPU in SageMaker Studio JupyterLab was problematic. Nothing worked "out of the box" like in the standalone Notebook Instances or Google Colaboratory. Studio comes with the latest version of JupyterLab which includes better extensions and features. However, the LOE to get the environment working was not worth it. If the newest environment is worth it, next steps would be to try to replicate the working environment from the standalone Notebook Instances.
+       
+       - Running on GPU in Google Colab works without any configuration - and its free to some extent. When the requirements demand more memory, Colab comes with a paid subscription for compute credits. Even with more memory, I ran into an issue where the GPU would not free up space that was no longer needed. This resulted in very frequent Out of Memory errors. Everytime that happens the whole session must be restarted and the model has to be loaded again. I was only able to produce 3 or 4 runs before the session crashed.
+           - here I learned of one way to programmatically clear memory (or attempt to) with torch.cuda.empty_cache()
+        
+        
+1. Try the whole prompt and show the error about exceeding context length
+2. Try chunking the prompt and show that it fails to output the expected results
+3. Try one criterion at a time, using the original xlsx document containing the (inclusion--- t) | pipes as lines of demarkation

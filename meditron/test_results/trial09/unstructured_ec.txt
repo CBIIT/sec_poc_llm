@@ -1,0 +1,30 @@
+Inclusion Criteria
+	Confirmed diagnosis of metastatic (Stage IV) or locally advanced, unresectable (Stage III) NSCLC of nonsquamous pathology that has relapsed or progressed
+	Measurable disease as defined by RECIST v1.1 criteria
+	PD-L1 expression status available at or after the time of diagnosis of advanced or metastatic NSCLC disease
+	Can provide existing biopsy taken within 2 years prior to entering trial or provide fresh biopsy
+	Have relapsed or progressed after prior anti- PD-(L)1 therapy as follows:
+	At least 12 weeks of treatment with only 1 line of anti-PD-(L)1 therapy (mono or combo) in the metastatic setting, without concomitant chemotherapy OR
+	At least 12 weeks of single-agent durvalumab
+	Adequate organ function
+	ECOG performance status of 0 to 1.
+
+Exclusion Criteria
+	Symptomatic and/or untreated central nervous system (CNS) metastases or leptomeningeal disease.
+	Presence of active second malignancy
+	EGFR or ALK mutation. Participants with presence of other driver mutations are allowed if targeted therapy is not available as per local standard of care.
+	Preexisting gastrointestinal disorders/conditions that may interfere with ingestion or absorption of oral medications.
+	History of or active (non-infectious) pneumonitis/ interstitial disease or lung fibrosis, except for Grade 1 pneumonitis from prior chemoradiation therapy (Stage III patients).
+	History of or active autoimmune disease requiring systemic treatment in the last 6 months or persistent immune-mediated toxicity caused by checkpoint inhibitor therapy > Grade 2
+	Known active or chronic hepatitis B or C infection unless adequately treated for at least 4 weeks with no detectable viral load; known infection with human immunodeficiency virus (HIV) unless receiving antiretroviral therapy with well-controlled disease.
+	History of life-threatening toxicity related to prior immune therapy or any toxicity resulting in permanent discontinuation from prior therapy.
+	Diagnosis of immunodeficiency or any condition requiring concurrent use of systemic immunosuppressants or corticosteroids.
+	Active infection requiring systemic therapy â‰¤ 7 days prior to first dose of study treatment.
+	Any other oncologic treatments administered â‰¤14 days (<28 days in case of checkpoint inhibitor therapy) prior to first dose of study treatment. Also, ongoing adverse effects from such treatment > Grade 1 with the exception for alopecia and Grade 2 peripheral neuropathy.
+	Non-study related minor surgical procedure â‰¤7 days, or major surgical procedure of â‰¤ 5 weeks prior to first dose of study treatment.
+	Uncontrolled or significant cardiovascular disease
+	History of allergy or hypersensitivity to any of the study treatments.
+	Treatment with a live or live attenuated vaccine.
+	Treatment with moderate or strong inducers or inhibitor of CYP 3A4, inhibitors of P-glycoprotein, or substrates of breast cancer resistance protein
+	Pregnant or breast-feeding
+	Male and Female participants: Lack of agreement to use highly effective method of contraception during treatment and for 6 months after the last administration of chemotherapy 

@@ -1,0 +1,11 @@
+Diseases: castration resistant prostate cancer (inclusion)
+Biomarkers: TP53, RB1 and PTEN gene mutations (inclusion)
+Prior Therapies: cabazitaxel (exclusion)
+
+
+Task:
+Below is an example of clinical trial eligibility inclusion/exclusion criteria. Your task is to identify 3 categories of data within it. The 3 categories are: 1) Disease: a disorder affecting humans, 2) Biomarker: genes, proteins, or other substances that can be tested for to reveal important details about a patient’s cancer, and 3) Prior Therapy: medications, surgeries, or procedures that a patient may be treated with. For each of the identified categories, state whether it is an inclusion or exclusion.
+Criteria:
+    Inclusion Criteria
+	Patients with histologically confirmed adenocarcinoma of the stomach or gastroesophageal junction (GEJ) with distant metastases (Stage IV)
+	Patients with measurable

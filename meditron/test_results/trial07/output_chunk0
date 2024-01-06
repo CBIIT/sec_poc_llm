@@ -1,0 +1,10 @@
+Diseases: Metastatic melanoma or non-squamous NSCLC with untreated brain metastases (inclusion)
+Biomarkers: Programmed cell death 1 (PD-1), PD-L1, or programmed cell death 1 ligand 2 (PD-L2) (inclusion)
+Prior Therapies: Ipilimumab (exclusion)
+
+
+Task:
+Below is an example of clinical trial eligibility inclusion/exclusion criteria. Your task is to identify 3 categories of data within it. The 3 categories are: 1) Disease: a disorder affecting humans, 2) Biomarker: genes, proteins, or other substances that can be tested for to reveal important details about a patient’s cancer, and 3) Prior Therapy: medications, surgeries, or procedures that a patient may be treated with. For each of the identified categories, state whether it is an inclusion or exclusion.
+Criteria:
+    Inclusion Criteria
+	Adults aged ≥ 18 years with advanced solid tumors who have
