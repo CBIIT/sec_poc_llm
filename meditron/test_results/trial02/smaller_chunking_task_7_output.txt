@@ -1,0 +1,10 @@
+
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Platelets >= 30,000/mm^3 | Metastatic Lung Non-Small Cell Carcinoma | | | | |
+| Exclusion | Women must not be pregnant or breast-feeding because, based on the mechanism of action, crizotinib may cause fetal harm when administered during pregnancy; in animal studies, teratogenicity was not evident, but embryotoxic and fetotoxic effects were noted in rats at crizotinib exposures similar to and above those observed in humans at the recommended clinical dose | | | | |
+
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of

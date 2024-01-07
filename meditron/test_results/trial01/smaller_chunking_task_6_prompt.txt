@@ -1,0 +1,54 @@
+[metrics]
+length=1189
+
+[prompt]
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+    •   Participants must be ‚â• 18 years of age
+    •   Histologically or cytologically confirmed diagnosis of metastatic solid tumors
+    •   Eastern Cooperative Oncology Group (ECOG) performance status 0-1
+    •   All participants should have at least 1 measurable disease per RECIST v1.1. An irradiated lesion can be considered measurable only if progression has been demonstrated on the irradiated lesion.
+    •   Body weight within [45 - 150 kg] (inclusive)
+    •   All Contraceptive use by men and women should be consistent with local regulations regarding the methods of contraception for those participating in clinical studies.
+    •   Capable of giving signed informed consent
+    •   Any clinically significant cardiac disease
+    •   History of or current interstitial lung disease or pneumonitis
+
+    Exclusion Criteria
+    •   Uncontrolled or unresolved acute renal failure
+    •   Prior solid organ or hematologic transplant.
+    •   Known positivity with human immunodeficiency virus (HIV), known active hepatitis A, B, and C, or uncontrolled chronic or ongoing infectious requiring parenteral treatment.
+    •   Receipt of a live-virus vaccination within 28 days of planned treatment start
+    •   Participation in a concurrent clinical study in the treatment period.
+    •   Inadequate hematologic, hepatic and renal function
+    •   Participant not suitable for participation, whatever the reason, as judged by the Investigator, including medical or clinical conditions.
+
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Histologically or cytologically confirmed diagnosis of metastatic solid tumors | Metastatic solid tumor | | | | diagnosis == "Metastatic solid tumor" |
+| Exclusion | Prior solid organ or hematologic transplant. | | Solid organ transplantation | | | Solid organ transplantation is True |
+
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+•       Fasting glucose =< 140 mg/dL and glycosylated hemoglobin measurement (HbA1c) =< 7%
+•       Serum creatinine =< 1.5 mg/dL (or glomerular filtration rate >= 30 ml/min as determined by the Cockcroft-Gault equation)
+•       Female subjects of childbearing potential must have a negative serum or urine pregnancy test within 8 days of initiating protocol therapy |
+
+Exclusion Criteria
+•       Symptomatic intrinsic lung disease or extensive tumor involvement of the lungs, resulting in dyspnea at rest
+•       Known intolerance to trastuzumab that persists after appropriate medical management. Patients who have a history of prior intolerance to trastuzumab that is controlled after medical management and who tolerate trastuzumab thereafter without reactions are eligible to participate

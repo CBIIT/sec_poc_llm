@@ -1,0 +1,55 @@
+[metrics]
+length=1351
+
+[prompt]
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+    •   Participants must be ‚â• 18 years of age
+    •   Histologically or cytologically confirmed diagnosis of metastatic solid tumors
+    •   Eastern Cooperative Oncology Group (ECOG) performance status 0-1
+    •   All participants should have at least 1 measurable disease per RECIST v1.1. An irradiated lesion can be considered measurable only if progression has been demonstrated on the irradiated lesion.
+    •   Body weight within [45 - 150 kg] (inclusive)
+    •   All Contraceptive use by men and women should be consistent with local regulations regarding the methods of contraception for those participating in clinical studies.
+    •   Capable of giving signed informed consent
+    •   Any clinically significant cardiac disease
+    •   History of or current interstitial lung disease or pneumonitis
+
+    Exclusion Criteria
+    •   Uncontrolled or unresolved acute renal failure
+    •   Prior solid organ or hematologic transplant.
+    •   Known positivity with human immunodeficiency virus (HIV), known active hepatitis A, B, and C, or uncontrolled chronic or ongoing infectious requiring parenteral treatment.
+    •   Receipt of a live-virus vaccination within 28 days of planned treatment start
+    •   Participation in a concurrent clinical study in the treatment period.
+    •   Inadequate hematologic, hepatic and renal function
+    •   Participant not suitable for participation, whatever the reason, as judged by the Investigator, including medical or clinical conditions.
+
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Histologically or cytologically confirmed diagnosis of metastatic solid tumors | Metastatic solid tumor | | | | diagnosis == "Metastatic solid tumor" |
+| Exclusion | Prior solid organ or hematologic transplant. | | Solid organ transplantation | | | Solid organ transplantation is True |
+
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+•       The effects of paxalisib (GDC-0084) on the developing human fetus are unknown and radiotherapy has known teratogenic effects so women of child-bearing potential and men must agree to use adequate contraception (barrier method of birth control; abstinence) prior to study entry and for the duration of study participation and 7 months after completion of trastuzumab administration per recommendations from the trastuzumab package insert
+•       The subject is capable of understanding and complying with the protocol and has signed the informed consent document
+•       Participant must be able to swallow and retain oral medication
+
+Exclusion Criteria
+•       Corrected QT (QTc) interval time of >= 470 msec
+•       Note: The correction may be made using any method of QTc calculation
+•       Participants receiving any medications or substances that are strong inhibitors or strong inducers of CYP3A4 are ineligible. Should a participant be taking one of these agents and is able to discontinue the therapy or switch to a different agent, no washout will be required prior to starting study medication. Corticosteroids, which are weak CYP3A4 inducers are allowed. Because the lists of these agents are constantly changing, it is important to regularly consult a frequently-updated list; medical reference texts such as the Physiciansâ€™ Desk Reference may also provide this information. As part of the enrollment/informed consent procedures, the patient will be counseled on the risk of interactions with other agents, and what to do if new medications need to be prescribed or if the patient is considering a new over-the-counter medicine or herbal product

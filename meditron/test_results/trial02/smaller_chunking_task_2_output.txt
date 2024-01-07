@@ -1,0 +1,10 @@
+
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Patient registered to and the ALK fusion status performed centrally on the ALCHEMIST-SCREEN (ALLIANCE A151216) | ALK fusion positive NSCLC | | | | diagnosis == "ALK fusion positive NSCLC" |
+| Exclusion | No ongoing cardiac dysrhythmias of grade >= 2 NCI CTCAE version 4.0, uncontrolled atrial fibrillation (any grade), or corrected QT (QTc) interval > 470 msec | | Atrial fibrillation | | | Atrial fibrillation is False |
+
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text
