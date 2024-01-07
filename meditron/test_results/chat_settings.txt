@@ -1,4 +1,0 @@
-      quantization: 4bit # to run inference on 1 GPU (16 GiB)
-       temperature: 0.1  # 'randomness' of outputs
-    max_new_tokens: 256  # max number of tokens to generate in the output
-repetition_penalty: 1.1  # prevent repeating output
