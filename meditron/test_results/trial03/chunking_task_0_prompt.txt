@@ -1,0 +1,64 @@
+[metrics]
+length=1461
+
+[prompt]
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+    •	Participants must be ‚â• 18 years of age
+    •	Histologically or cytologically confirmed diagnosis of metastatic solid tumors
+    •	Eastern Cooperative Oncology Group (ECOG) performance status 0-1
+    •	All participants should have at least 1 measurable disease per RECIST v1.1. An irradiated lesion can be considered measurable only if progression has been demonstrated on the irradiated lesion.
+    •	Body weight within [45 - 150 kg] (inclusive)
+    •	All Contraceptive use by men and women should be consistent with local regulations regarding the methods of contraception for those participating in clinical studies.
+    •	Capable of giving signed informed consent
+    •	Any clinically significant cardiac disease
+    •	History of or current interstitial lung disease or pneumonitis
+
+    Exclusion Criteria
+    •	Uncontrolled or unresolved acute renal failure
+    •	Prior solid organ or hematologic transplant.
+    •	Known positivity with human immunodeficiency virus (HIV), known active hepatitis A, B, and C, or uncontrolled chronic or ongoing infectious requiring parenteral treatment.
+    •	Receipt of a live-virus vaccination within 28 days of planned treatment start
+    •	Participation in a concurrent clinical study in the treatment period.
+    •	Inadequate hematologic, hepatic and renal function
+    •	Participant not suitable for participation, whatever the reason, as judged by the Investigator, including medical or clinical conditions.
+
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Histologically or cytologically confirmed diagnosis of metastatic solid tumors | Metastatic solid tumor | | | | diagnosis == "Metastatic solid tumor" |
+| Exclusion | Prior solid organ or hematologic transplant. | | Solid organ transplantation | | | Solid organ transplantation is True |
+
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features:
+•	Measurable disease by Response Evaluation Criteria in Solid Tumors (RECIST) 1.1
+•	Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry
+•	Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards)
+•	Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator OR
+•	Platinum-resistant (defined as progression within 12 months of last platinum therapy administration), pathologically confirmed serous ovarian cancer that is recurrent and unresectable, in the opinion of the enrolling investigator
+FOR DOSE EXPANSION COHORT ONLY: Pathologically confirmed breast cancer with the following features:
+•	Measurable disease by RECIST 1.1
+
+Exclusion Criteria
+•	Previous use of CDK 4/6 or HDAC inhibitors for cancer treatment
+•	Major surgery, radiotherapy, anticancer therapy, or investigational agents =< 4 weeks of treatment day 1 or =< 5 half-lives, whichever is shorter
+•	Patients with new or progressive brain metastases (active brain metastases) or leptomeningeal disease unless determined by the treating physician that immediate central nervous system (CNS) specific treatment is not required and is unlikely to be required during the first cycle of therapy
+•	Medical condition that in the opinion of the enrolling investigator would require the use of valproic acid within =< 5 days of the first dose of belinostat or while on study
+•	Active infection requiring systemic therapy
+•	History of allergy or hypersensitivity to belinostat, ribociclib, or their binders
+•	Uncontrolled arrhythmia, congestive heart failure or angina. Patients who have had a myocardial infarction, symptomatic pericarditis, or cardiac surgery should be at least 6 months from the event and free of active symptoms

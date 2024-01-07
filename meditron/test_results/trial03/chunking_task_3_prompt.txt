@@ -1,0 +1,65 @@
+[metrics]
+length=1646
+
+[prompt]
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+    •	Participants must be ‚â• 18 years of age
+    •	Histologically or cytologically confirmed diagnosis of metastatic solid tumors
+    •	Eastern Cooperative Oncology Group (ECOG) performance status 0-1
+    •	All participants should have at least 1 measurable disease per RECIST v1.1. An irradiated lesion can be considered measurable only if progression has been demonstrated on the irradiated lesion.
+    •	Body weight within [45 - 150 kg] (inclusive)
+    •	All Contraceptive use by men and women should be consistent with local regulations regarding the methods of contraception for those participating in clinical studies.
+    •	Capable of giving signed informed consent
+    •	Any clinically significant cardiac disease
+    •	History of or current interstitial lung disease or pneumonitis
+
+    Exclusion Criteria
+    •	Uncontrolled or unresolved acute renal failure
+    •	Prior solid organ or hematologic transplant.
+    •	Known positivity with human immunodeficiency virus (HIV), known active hepatitis A, B, and C, or uncontrolled chronic or ongoing infectious requiring parenteral treatment.
+    •	Receipt of a live-virus vaccination within 28 days of planned treatment start
+    •	Participation in a concurrent clinical study in the treatment period.
+    •	Inadequate hematologic, hepatic and renal function
+    •	Participant not suitable for participation, whatever the reason, as judged by the Investigator, including medical or clinical conditions.
+
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Histologically or cytologically confirmed diagnosis of metastatic solid tumors | Metastatic solid tumor | | | | diagnosis == "Metastatic solid tumor" |
+| Exclusion | Prior solid organ or hematologic transplant. | | Solid organ transplantation | | | Solid organ transplantation is True |
+
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+o	Potassium
+o	Magnesium
+o	Total calcium (corrected for serum albumin)
+•	International normalized ratio (INR) =< 1.5 (unless the patient is receiving anticoagulants and the INR is within the therapeutic range of intended use for that anticoagulant within 7 days prior to the first dose of study drug) 
+•	Presence of >= 1 metastatic sites of disease that can be safely accessed for core needle biopsy and patient willingness to undergo fresh tissue biopsies of up to 3 lesions. (Safely accessible means risk of mortality or major morbidity < 1.5%, such as core needle biopsy of breast, superficial lymph node, subcutaneous nodule, peripheral liver nodule, pleural nodule, omental nodule, etc. or per investigator discretion) 
+•	Negative serum or urine pregnancy test at screening for women of childbearing potential
+•	Agrees to continue use of approved birth control for at least 6 months after receiving the last dose of study drugs
+•	Able to provide informed consent and have signed an approved consent form that conforms to federal and institutional guidelines
+
+Exclusion Criteria
+o	Total abstinence (when this is in line with the preferred and usual lifestyle of the patient. Periodic abstinence (e.g., calendar, ovulation, symptothermal, post-ovulation methods) and withdrawal are not acceptable methods of contraception
+o	Female sterilization (have had surgical bilateral oophorectomy with or without hysterectomy), total hysterectomy or tubal ligation at least 6 weeks before taking study treatment. In case of oophorectomy alone, only when the reproductive status of the woman has been confirmed by follow up hormone level assessment
+o	Male partner sterilization (at least 6 months prior to screening). For female patients on the study, the vasectomized male partner should be the sole partner for that patient and the success of the vasectomy must be medically confirmed as per local practice
+o	Placement of an intrauterine device (IUD)
+o	Use of hormonal contraception plus a barrier contraceptive
+•	Known human immunodeficiency virus (HIV) infection with a detectable viral load within 6 months of the anticipated start of treatment. Note: Patients on effective anti-retroviral therapy with an undetectable viral load within 6 months of the anticipated start of treatment are eligible for this trial
+•	Known chronic hepatitis B virus (HBV) or hepatitis C virus infection with a detectable viral load. Note: Patients with an undetectable HBV viral load on appropriate suppressive therapy are eligible. Patients with an undetectable HCV viral load are eligible
+•	Malignancy other than breast carcinoma or ovarian cancer (dose escalation) anticipated to need systemic treatment within 1 year in the opinion of the enrolling investigator

@@ -1,0 +1,17 @@
+•	Participants with a history of prolonged corrected QT interval (> 450 msec) or family history of long QT syndrome
+•	History of cardiac conduction abnormalities (second degree heart block, third degree heart block, sick sinus syndrome, AV block, bundle branch block, or cardiac pacemaker)
+•	History of cardiac failure or pulmonary edema
+•	History of cardiac arrest
+•	History of syncope
+•	History of Torsades de Pointes
+•	History of ventricular tachycardia
+•	History of ventricular fibrillation
+•	History of sudden cardiac death
+•	History of left ventricular outflow tract obstruction
+•	History of left ventricular hypertrophy
+•	History of left ventricular dilatation
+•	History of left ventricular systolic dysfunction
+•	History of right ventricular outflow tract obstruction
+•	History of right ventricular dilatation
+•	History of right ventricular systolic dysfunction
+•	History of valvular heart disease

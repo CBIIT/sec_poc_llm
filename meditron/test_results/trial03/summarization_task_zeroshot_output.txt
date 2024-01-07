@@ -1,0 +1,9 @@
+•	Other serious medical conditions or diseases that in the opinion of the enrolling investigator would make the patient inappropriate for the study
+•	Any other condition that in the opinion of the enrolling investigator would make the patient inappropriate for the study
+
+Dosing Information
+Belinostat is administered orally twice daily on Days 1-14 of each 21-day cycle. Ribociclib is administered orally once daily continuously. Dose modifications for belinostat and ribociclib are described below.
+Belinostat Dose Modifications
+Belinostat dose reductions are based on the worst grade of adverse events (AEs) experienced during the previous cycle.
+Belinostat Dose Reduction Guidelines
+If the patient experiences a Grade ≥ 3 AE, the dose of belinostat is reduced to 100 mg PO BID until recovery to Grade ≤ 2. Once recovered to Grade ≤ 2, the dose of belinostat is increased back to 200 mg PO BID. If the patient experiences a

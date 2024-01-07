@@ -1,0 +1,15 @@
+
+
+Task:
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns:
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+Here is the criteria to analyze:
+    Inclusion Criteria
+•	≥ 18 years of age and able to provide informed consent
+•	Pathologically confirmed diagnosis of high-grade (grade 2-3) epithelial ovarian cancer, primary peritoneal cancer, or fallopian tube

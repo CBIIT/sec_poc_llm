@@ -4,3 +4,4 @@ accelerate
 bitsandbytes
 chromadb
 sentence_transformers
+huggingface_hub[cli]

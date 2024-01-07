@@ -1,0 +1,10 @@
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | AVPC determination by DNA sequencing. As previously described, the TP53, RB1 and PTEN genes will be considered aberrant if they contain exonic nonsynonymous missense or stop-gain mutations, frameshift or non frameshift indels (insertions or deletions), and/or copy number losses | | | | | | | | |
+| Exclusion | Patients with symptomatic uncontrolled brain metastases or spinal cord compressions. A scan to confirm the absence of brain metastases is not required | | | | | | | | |
+
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+D

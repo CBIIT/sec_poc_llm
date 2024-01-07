@@ -1,0 +1,21 @@
+•	Any serious or non-serious adverse events (AE) related to prior treatment with a cyclin dependent kinase (CDK) inhibitor or histone deacetylase (HDAC) inhibitor
+•	Patients with a history of invasive fungal infections or active fungal infections
+•	Patients with a history of severe hypersensitivity reaction to any component of the combination regimen
+•	Patients with a history of severe hypersensitivity reaction to any of the following drugs:
+o	Belinostat
+o	Ribociclib
+o	Letrozole
+o	Palbociclib
+o	Oral contraceptives
+o	Anti-emetics
+o	Antihistamines
+o	Antipyretics
+o	Antimuscarinics
+o	Anticholinergics
+o	Antidiarrheals
+o	Antispasmodics
+o	Antiepileptic drugs
+o	Antidepressants
+o	Antipsychotic drugs
+o	Antihypertensive drugs
+o	Antimalarial drugs

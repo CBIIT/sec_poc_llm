@@ -1,8 +1,22 @@
+from langchain.prompts.few_shot import FewShotPromptTemplate
+from langchain.prompts.prompt import PromptTemplate
+from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.prompts.example_selector import SemanticSimilarityExampleSelector
+from langchain_community.vectorstores import Chroma
+
+
 examples = [
     {
         "context": """
-Below is an example of clinical trial eligibility inclusion/exclusion criteria. Your task is to identify 3 categories of data within it. The 3 categories are: 1) Disease: a disorder affecting humans, 2) Biomarker: genes, proteins, or other substances that can be tested for to reveal important details about a patient’s cancer, and 3) Prior Therapy: medications, surgeries, or procedures that a patient may be treated with. For each of the identified categories, state whether it is an inclusion or exclusion.
-Criteria:
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+Here is the criteria to analyze:
     Inclusion Criteria
     •	Age 18 or older
     •	Willing and able to provide informed consent
@@ -21,15 +35,25 @@ Criteria:
     •	Previous radiotherapy to the intended treatment site that precludes developing a treatment plan that respects normal tissue tolerances
 """,
         "answer": """
-Diseases: Metastatic breast cancer (inclusion)
-Biomarkers: Estrogen receptor (ER)+/HER2-, HER2+ (inclusion)
-Prior Therapies: Previous radiotherapy to the intended treatment site (exclusion)
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Metastatic breast cancer, biopsy proven | Metastatic breast cancer | | | | diagnosis == "Metastatic breast cancer" |
+| Inclusion | Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining | | | | HER2- | HER2- > 5% ER+ |
+| Inclusion | HER2+ (regardless of ER status), including HER2-low and high expressors | | | | HER2+ | HER2+ is True |
+| Exclusion | Previous radiotherapy to the intended treatment site that precludes developing a treatment plan that respects normal tissue tolerances | | Prior radiation therapy | | | Prior radiation therapy is True |
 """,
     },
     {
         "context": """
-Below is an example of clinical trial eligibility inclusion/exclusion criteria. Your task is to identify 3 categories of data within it. The 3 categories are: 1) Disease: a disorder affecting humans, 2) Biomarker: genes, proteins, or other substances that can be tested for to reveal important details about a patient’s cancer, and 3) Prior Therapy: medications, surgeries, or procedures that a patient may be treated with. For each of the identified categories, state whether it is an inclusion or exclusion.
-Criteria:
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+Here is the criteria to analyze:
     Inclusion Criteria
     •	Signed informed consent must be obtained prior to performing any specific pre-screening and screening procedure
     •	Male or female >= 18 years of age at the time of informed consent
@@ -50,15 +74,24 @@ Criteria:
     •	A history or current evidence/risk of retinal vein occlusion or central serous retinopathy
 """,
         "answer": """
-Diseases: thyroid cancer (inclusion), Anaplastic or medullary carcinoma of the Tyroid (inclusion)
-Biomarkers: BRAFV600E mutation positive (inclusion), RET Fusion Positive (exclusion)
-Prior Therapies: VEGFR targeted therapy (inclusion), BRAF inhibitor and/or MEK inhibitor (exclusion)
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Histologically or cytologically confirmed diagnosis of advanced/metastatic differentiated thyroid cancer | Thryoid cancer | | | | diagnosis == "Thyroid cancer" |
+| Inclusion | BRAFV600E mutation positive tumor sample as per Novartis designated central laboratory result | | | | BRAFV600E | BRAFV600E is True |
+| Inclusion | Has progressed on at least 1 but not more than 2 prior VEGFR targeted therapy | | VEGFR targeted therapy | | | VEGFR >= 1, VEGFR < 2 |
+| Exclusion | Previous treatment with BRAF inhibitor and/or MEK inhibitor | | | BRAF inhibitor, MEK inhibitor | | BRAF inhibitor is True OR MEK inhibitor is True |
 """,
     },
     {
         "context": """
-Below is an example of clinical trial eligibility inclusion/exclusion criteria. Your task is to identify 3 categories of data within it. The 3 categories are: 1) Disease: a disorder affecting humans, 2) Biomarker: genes, proteins, or other substances that can be tested for to reveal important details about a patient’s cancer, and 3) Prior Therapy: medications, surgeries, or procedures that a patient may be treated with. For each of the identified categories, state whether it is an inclusion or exclusion.
-Criteria:
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
     Inclusion Criteria
     •	Participants must be ‚â• 18 years of age
     •	Histologically or cytologically confirmed diagnosis of metastatic solid tumors
@@ -80,15 +113,22 @@ Criteria:
     •	Participant not suitable for participation, whatever the reason, as judged by the Investigator, including medical or clinical conditions.
 """,
         "answer": """
-Diseases: Metastatic solid tumor (inclusion)
-Biomarkers: none
-Prior Therapies: organ or hematologic transplant (exclusion)
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Histologically or cytologically confirmed diagnosis of metastatic solid tumors | Metastatic solid tumor | | | | diagnosis == "Metastatic solid tumor" |
+| Exclusion | Prior solid organ or hematologic transplant. | | Solid organ transplantation | | | Solid organ transplantation is True |
 """
     },
     {
         "context": """
-Below is an example of clinical trial eligibility inclusion/exclusion criteria. Your task is to identify 3 categories of data within it. The 3 categories are: 1) Disease: a disorder affecting humans, 2) Biomarker: genes, proteins, or other substances that can be tested for to reveal important details about a patient’s cancer, and 3) Prior Therapy: medications, surgeries, or procedures that a patient may be treated with. For each of the identified categories, state whether it is an inclusion or exclusion.
-Criteria:
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
     Inclusion Criteria:
     •	Adults with a confirmed diagnosis of unresectable, locally advanced and/or metastatic Stage IIIB/IV NSCLC, Stage III/IV PDAC and/or Stage III/IV CRC with no curative-intent treatment options and documented activating KRAS mutation (without known additional actionable driver mutations such as EGFR, ALK or ROS1)
     •	Documented progression and measurable disease after ‚â• 1 prior line of systemic therapy (‚â• 2 and ‚â§ 4 prior lines for NSCLC) with adequate washout period and resolution of treatment-related toxicities to ‚â§ Grade 2
@@ -108,9 +148,41 @@ Criteria:
     •	Women who are pregnant or lactating.
 """,
         "answer": """
-Diseases: unresectable, locally advanced and/or metastatic Stage IIIB/IV NSCLC, Stage III/IV PDAC and/or Stage III/IV CRC (inclusion)
-Biomarkers: KRAS mutation (inclusion)
-Prior Therapies: menin inhibitor therapy (exclusion)
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Adults with a confirmed diagnosis of unresectable, locally advanced and/or metastatic Stage IIIB/IV NSCLC, Stage III/IV PDAC and/or Stage III/IV CRC with no curative-intent treatment options and documented activating KRAS mutation (without known additional actionable driver mutations such as EGFR, ALK or ROS1) | Metastatic Lung Non-Small Cell Carcinoma, Metastatic Pancreatic Ductal Adenocarcinoma, Metastatic Colorectal Carcinoma | | | KRAS | diagnosis == "Metastatic Lung Non-Small Cell Carcinoma" OR diagnosis == "Metastatic Pancreatic Ductal Adenocarcinoma" OR diagnosis == "Metastatic Colorectal Carcinoma", KRAS is True |
+| Exclusion | Prior menin inhibitor therapy | | | Menin inhibitor | | Menin inhibitor is True |
 """
     }
 ]
+
+example_selector = SemanticSimilarityExampleSelector.from_examples(
+    # This is the list of examples available to select from.
+    examples,
+    # This is the embedding class used to produce embeddings which are used to measure semantic similarity.
+    HuggingFaceEmbeddings(),
+    # This is the VectorStore class that is used to store the embeddings and do a similarity search over.
+    Chroma,
+    # This is the number of examples to produce.
+    k=1,
+)
+
+example_prompt = PromptTemplate(
+    input_variables=["context", "answer"], template="{context}{answer}"
+)
+
+prompt = FewShotPromptTemplate(
+    example_selector=example_selector,
+    example_prompt=example_prompt,
+    suffix="""You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    {criteria}
+""",
+    input_variables=["criteria"],
+)

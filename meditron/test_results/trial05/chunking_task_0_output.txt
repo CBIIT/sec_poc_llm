@@ -1,0 +1,4 @@
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Patients must agree to tissue collection for correlative studies at the specified timepoints | Prostate carcinoma | | | | diagnosis == "Prostate carcinoma" |
+| Exclusion | Any prior treatment for castration-resistant prostate cancer (CRPC) with carboplatin, cisplatin, cabazitaxel, PARP-inhibitor or an anti-PD1 or anti-PDL1 inhibitor | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |

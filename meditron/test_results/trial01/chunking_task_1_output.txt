@@ -1,0 +1,10 @@
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | COHORT B: New and/or progressive brain metastasis(es) with clinical indication for resection | Brain metastases | | | | diagnosis == "Brain metastases" & diagnosis == "New and/or progressive" & diagnosis == "Clinical indication for resection" |
+| Exclusion | Chemotherapy or targeted therapy within 14 days prior to initiation of protocol therapy. No washout is required for trastuzumab | | Chemotherapy | | | chemotherapy == "Within 14 days" |
+
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+D

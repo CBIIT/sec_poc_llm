@@ -1,0 +1,63 @@
+[metrics]
+length=1911
+
+[prompt]
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+    •	Participants must be ‚â• 18 years of age
+    •	Histologically or cytologically confirmed diagnosis of metastatic solid tumors
+    •	Eastern Cooperative Oncology Group (ECOG) performance status 0-1
+    •	All participants should have at least 1 measurable disease per RECIST v1.1. An irradiated lesion can be considered measurable only if progression has been demonstrated on the irradiated lesion.
+    •	Body weight within [45 - 150 kg] (inclusive)
+    •	All Contraceptive use by men and women should be consistent with local regulations regarding the methods of contraception for those participating in clinical studies.
+    •	Capable of giving signed informed consent
+    •	Any clinically significant cardiac disease
+    •	History of or current interstitial lung disease or pneumonitis
+
+    Exclusion Criteria
+    •	Uncontrolled or unresolved acute renal failure
+    •	Prior solid organ or hematologic transplant.
+    •	Known positivity with human immunodeficiency virus (HIV), known active hepatitis A, B, and C, or uncontrolled chronic or ongoing infectious requiring parenteral treatment.
+    •	Receipt of a live-virus vaccination within 28 days of planned treatment start
+    •	Participation in a concurrent clinical study in the treatment period.
+    •	Inadequate hematologic, hepatic and renal function
+    •	Participant not suitable for participation, whatever the reason, as judged by the Investigator, including medical or clinical conditions.
+
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Histologically or cytologically confirmed diagnosis of metastatic solid tumors | Metastatic solid tumor | | | | diagnosis == "Metastatic solid tumor" |
+| Exclusion | Prior solid organ or hematologic transplant. | | Solid organ transplantation | | | Solid organ transplantation is True |
+
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+	AVPC determination by DNA sequencing. As previously described, the TP53, RB1 and PTEN genes will be considered aberrant if they contain exonic nonsynonymous missense or stop-gain mutations, frameshift or non frameshift indels (insertions or deletions), and/or copy number losses
+	Patients who have castration-resistant disease progression per RECIST in the absence of PSA values rising to >= 1.0ng/ml as per Prostate Cancer Working Group 3 (PCWG3) PSA progression criteria (inclusion--- t) | 
+o	Patients must have documented evidence of progressive disease as defined by any of the following: a) PSA progression: minimum of 2 rising values (3 measurements) obtained a minimum of 7 days apart with the last result being at least >= 1.0 ng/mL; b) New or increasing non-bone disease (RECIST); c) Positive bone scan with 2 or more new lesions (Prostate Cancer Working Group 3 [PCWG3]); d) Increasing symptoms unequivocally attributed to disease progression as judged by the treating physician and the principal investigator (PI) 
+o	Surgically or ongoing medically castrated, with baseline testosterone levels of =< 50 ng/dL (=< 2.0 nM). Exception: Patients with de novo primary small cell carcinoma of the prostate may begin chemotherapy on study once treatment with an LHRH agonist or antagonist has been initiated, even if testosterone levels have not reached =< 50ng/dL
+o	Eastern Cooperative Oncology Group (ECOG) performance status of =< 2
+o	Hemoglobin >= 10.0 g/dL (unless due to bone marrow infiltration by tumor, in which case hemoglobin > 8 g/dL is allowed) (within 7 days prior to treatment registration). Patient may have blood transfusions prior to study enrollment
+o	Absolute neutrophil count (ANC) >= 1.5 x 10^9/L (unless due to bone marrow infiltration by tumor, in which case ANC > 1,000/mm^3 is allowed) (within 7 days prior to treatment registration)
+o	White blood cells (WBC) > 3 x 10^9/L (unless due to bone marrow infiltration by tumor, in which case WBC > 2 x 10^9/L is allowed) (within 7 days prior to treatment registration)
+
+Exclusion Criteria
+	Patients with symptomatic uncontrolled brain metastases or spinal cord compressions. A scan to confirm the absence of brain metastases is not required
+	Patients with a known hypersensitivity to niraparib, carboplatin, cabazitaxel or an anti-PD1 or anti-PDL1 inhibitor 
+	Current or prior use of immunosuppressive medication within 21 days before the first dose of cetrelimab, with the exceptions of intranasal and inhaled corticosteroids or systemic corticosteroids at physiological doses, which are not to exceed 10 mg/day of prednisone, or an equivalent corticosteroid or steroids as pre-medication for hypersensitivity reactions (e.g. CT scan premedication)
+	Active or prior documented autoimmune or inflammatory disorders (including inflammatory bowel disease [e.g., colitis or Crohn's disease], diverticulitis [with the exception of diverticulosis], systemic lupus erythematosus, Sarcoidosis syndrome, or Wegener syndrome [granulomatosis with polyangiitis, Graves' disease, rheumatoid arthritis, hypophysitis, uveitis, etc.]). The following are exceptions to this criterion:
+•	Patients with vitiligo or alopecia
+•	Patients with hypothyroidism (e.g., following Hashimoto syndrome) stable on hormone replacement

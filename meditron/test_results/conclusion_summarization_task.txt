@@ -1,0 +1,24 @@
+The summarization task asks the model to tabularize the raw input eligibility criteria - regardless of how large that criteria input is.
+
+Out of the 5 trials tested using this methodology, all 5 failed to make sense of the requested task.
+It was decided that continuing with the remaining 5 trials would result in the same failures.
+The failures are attributed to exceeding the maximum allowed context length or prompts that approach this limit.
+In all but one trial (trial 2) did the prompt size exceed the maximum of 2048 tokens. Trial 2's prompt accounted for 88% of the allowed context length.
+Retrying trial 2 with a minimal prompt, where the system instruction only accounts for 3% of the overall input, also resulted in failure. The total prompt length was 1670 or 82% of the allowed context length.
+
+At this point it is recommended to try chunking the inputs, but keeping the format the same as in the original document. For example, if the input is very large, the chunks produced from it could resemble the following:
+"""
+Inclusion Criteria
+•	Positive for translocation or inversion events involving the ALK gene locus (e.g. resulting in EML4-ALK fusion) as defined by a Clinical Laboratory Improvement Act (CLIA)-approved test including: (1) translocation or inversion events involving the ALK gene locus (e.g. resulting in EML4-ALK fusion) as determined by the Vysis Break Point fluorescence in situ hybridization (FISH) assay; (2) ALK protein expression by immunohistochemistry (IHC); or (3) ALK rearrangement identified by next generation (NextGen) sequencing; this must have been performed:
+o	By a local CLIA certified laboratory: Report must indicate the results as well as the CLIA number of the laboratory which performed the assay; tissue must be available for submission for central, retrospective confirmation of the ALK fusion status via ALCHEMIST-SCREEN (ALLIANCE A151216); OR
+o	Patient registered to and the ALK fusion status performed centrally on the ALCHEMIST-SCREEN (ALLIANCE A151216)
+•	All females of childbearing potential must have a blood or urine pregnancy test within 72 hours prior to randomization to rule out pregnancy; a female of childbearing potential is any woman, regardless of sexual orientation or whether they have undergone tubal ligation, who meets the following criteria: 1) has not undergone a hysterectomy or bilateral oophorectomy; or 2) has not been naturally postmenopausal for at least 24 consecutive months (i.e., has had menses at any time in the preceding 24 consecutive months)
+
+Exclusion Criteria
+•	No known interstitial fibrosis or interstitial lung disease
+•	No prior treatment with crizotinib or another ALK inhibitor
+•	No ongoing cardiac dysrhythmias of grade >= 2 National Cancer Institute (NCI) Common Terminology Criteria for Adverse Events (CTCAE) version 4.0, uncontrolled atrial fibrillation (any grade), or corrected QT (QTc) interval > 470 msec
+•	No use of medications, herbals, or foods that are known potent cytochrome P450, subfamily 3A, polypeptide 4 (CYP3A4) inhibitors or inducers, included but not limited to those outlined
+"""
+
+In this example the inputs account for 604 tokens (30%) of the context length which provides more space for few shot examples with clear instructions. Also as we have seen with trial 2, even when the context length is not exceeded by the prompt, pushing the upper limit of 80% also results in failed output.

@@ -1,0 +1,10 @@
+•	Patients must not have received prior anticancer therapies, including investigational agents, within 2 weeks of randomization
+•	Patients must not have received prior thoracic radiotherapy
+•	Patients must not have received prior cranial irradiation
+•	Patients must not have received prior crizotinib
+•	Patients must not have received prior tyrosine kinase inhibitors (TKIs) targeting ALK, ROS1, RET, MET, BRAF, or MEK
+•	Patients must not have received prior anti-PD-1, anti-PD-L1, anti-PD-L2, anti-CD137, anti-OX40, anti-4-1BB, or anti-GITR agents
+•	Patients must not have received prior anti-CTLA-4 antibody therapy
+•	Patients must not have received prior vaccines within 2 weeks of randomization
+•	Patients must not have received prior systemic steroids within 2 weeks of randomization
+•	Patients must not have received prior systemic chemotherapy,

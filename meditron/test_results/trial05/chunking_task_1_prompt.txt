@@ -1,0 +1,63 @@
+[metrics]
+length=1723
+
+[prompt]
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+    •	Participants must be ‚â• 18 years of age
+    •	Histologically or cytologically confirmed diagnosis of metastatic solid tumors
+    •	Eastern Cooperative Oncology Group (ECOG) performance status 0-1
+    •	All participants should have at least 1 measurable disease per RECIST v1.1. An irradiated lesion can be considered measurable only if progression has been demonstrated on the irradiated lesion.
+    •	Body weight within [45 - 150 kg] (inclusive)
+    •	All Contraceptive use by men and women should be consistent with local regulations regarding the methods of contraception for those participating in clinical studies.
+    •	Capable of giving signed informed consent
+    •	Any clinically significant cardiac disease
+    •	History of or current interstitial lung disease or pneumonitis
+
+    Exclusion Criteria
+    •	Uncontrolled or unresolved acute renal failure
+    •	Prior solid organ or hematologic transplant.
+    •	Known positivity with human immunodeficiency virus (HIV), known active hepatitis A, B, and C, or uncontrolled chronic or ongoing infectious requiring parenteral treatment.
+    •	Receipt of a live-virus vaccination within 28 days of planned treatment start
+    •	Participation in a concurrent clinical study in the treatment period.
+    •	Inadequate hematologic, hepatic and renal function
+    •	Participant not suitable for participation, whatever the reason, as judged by the Investigator, including medical or clinical conditions.
+
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Histologically or cytologically confirmed diagnosis of metastatic solid tumors | Metastatic solid tumor | | | | diagnosis == "Metastatic solid tumor" |
+| Exclusion | Prior solid organ or hematologic transplant. | | Solid organ transplantation | | | Solid organ transplantation is True |
+
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+•	Exclusive visceral metastases
+•	Predominantly lytic bone metastases identified by plain x-ray or CT scan
+•	Bulky (>= 5 cm in longest dimension) lymphadenopathy or high-grade tumor mass in prostate/pelvis
+•	Low PSA (=< 10 ng/mL) at initial presentation (prior to androgen ablation or at symptomatic progression in the castrate-setting) plus high volume (>= 20) bone metastases
+•	Elevated serum lactate dehydrogenase (LDH) (>= 2 x ULN) or elevated serum carcinoembryonic antigen (CEA) (>= 2 x ULN) in the absence of other etiologies
+•	Short interval (=< 180 days) to castrate-resistant progression following initiation of hormonal therapy
+•	Known loss or mutation (by Clinical Laboratory Improvement Act [CLIA] certified molecular testing, immunohistochemistry [IHC] and/or deoxyribonucleic acid [DNA] sequencing) in at least 2 of Tp53, RB1 and PTEN defined as:
+	AVPC determination by immunohistochemistry. As previously described, tumor samples are considered negative (and thus abnormal) for RB1 and PTEN if their labeling index is =< 10% and positive (and thus aberrant) for Tp53 if their labeling index is >= 10%, where the labeling index is defined as the percentage of positive cells, and calculated as the number of positively stained epithelial cells divided by the total number of epithelial cells, at X200 magnification
+
+Exclusion Criteria
+	Active uncontrolled infection (patients completing a course of antibiotic or antiviral therapy whose infection is deemed to be controlled may be allowed on study after discussion with the PI; the PI will serve as the final arbiter regarding eligibility) 
+	Active or symptomatic viral hepatitis or chronic liver disease (inclusion--- f) | 
+	A history of pneumonitis or extensive bilateral lung disease of non-malignant etiology 
+	A malignancy (other than the one treated in this study) which has a >= 30% probability of recurrence within 24 months (except for adequately treated non-melanoma skin cancer, curatively treated in-situ cancer of the cervix or Ta urothelial carcinomas) 
+	Any underlying medical or psychiatric condition, which in the opinion of the investigator, will make the administration of study drug hazardous or obscure the interpretation of adverse events. Examples include, but are not limited to, uncontrolled ventricular arrhythmia, recent (within 3 months) myocardial infarction, superior vena cava syndrome, extensive bilateral lung disease on high resolution computed tomography (HRCT) scan, uncontrolled seizures, history of allogeneic organ transplant, history of primary immunodeficiency or any psychiatric disorder that prohibits obtaining informed consent
+	Patients unable to swallow orally administered medication and patients with gastrointestinal disorders likely to interfere with absorption of the study medication

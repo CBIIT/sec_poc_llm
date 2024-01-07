@@ -1,0 +1,11 @@
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+•	Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous b NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. N3 disease is

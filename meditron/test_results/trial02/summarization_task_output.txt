@@ -1,0 +1,13 @@
+•	Patients must not have received prior anticancer therapies, including investigational agents, within 2 weeks prior to randomization
+•	Patients must not have received prior thoracic radiation therapy
+•	Patients must not have received prior cytotoxic chemotherapy
+•	Patients must not have received prior targeted small molecule therapy
+•	Patients must not have received prior tyrosine kinase inhibitor therapy
+•	Patients must not have received prior immune checkpoint inhibitor therapy
+•	Patients must not have received prior anti-PD-1/anti-PD-L1 therapy
+•	Patients must not have received prior anti-cytotoxic T lymphocyte associated antigen-4 (CTLA-4) therapy
+•	Patients must not have received prior anti-programmed death-ligand 1 (PD-L1) therapy
+•	Patients must not have received prior vaccine therapy
+•	Patients must not have received prior antibody therapy
+•	Patients must not have received prior cellular therapy
+•	Patients

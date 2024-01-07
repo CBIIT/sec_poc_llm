@@ -1,0 +1,63 @@
+[metrics]
+length=1651
+
+[prompt]
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria:
+    •	Adults with a confirmed diagnosis of unresectable, locally advanced and/or metastatic Stage IIIB/IV NSCLC, Stage III/IV PDAC and/or Stage III/IV CRC with no curative-intent treatment options and documented activating KRAS mutation (without known additional actionable driver mutations such as EGFR, ALK or ROS1)
+    •	Documented progression and measurable disease after ‚â• 1 prior line of systemic therapy (‚â• 2 and ‚â§ 4 prior lines for NSCLC) with adequate washout period and resolution of treatment-related toxicities to ‚â§ Grade 2
+    •	ECOG PS of 0-2 (0-1 for PDAC) and a life expectancy > 3 months in the opinion of the Investigator
+    •	Adequate hematological, liver, and renal function
+    •	Men and women of childbearing potential must use adequate birth control measures for the duration of the trial and at least 90 days after discontinuing study treatment
+    •	Symptomatic and/or untreated CNS or brain metastasis, pre-existing ILD or pericardial/pleural effusion of ‚â• grade 2 or requiring chronic oxygen therapy for COPD or pleural effusions
+    •	Serious concomitant disorder including infection
+    •	Known positive test for HIV, HCV, HBV surface antigen
+
+    Exclusion Criteria:
+    •	Concurrent malignancy in the previous 2 years
+    •	Prior menin inhibitor therapy
+    •	Requiring treatment with a strong or moderate CYP3A inhibitor/inducer
+    •	Significant cardiovascular disease or QTcF or QTcB prolongation.
+    •	Major surgery within 4 weeks prior to first dose
+    •	Women who are pregnant or lactating.
+
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Adults with a confirmed diagnosis of unresectable, locally advanced and/or metastatic Stage IIIB/IV NSCLC, Stage III/IV PDAC and/or Stage III/IV CRC with no curative-intent treatment options and documented activating KRAS mutation (without known additional actionable driver mutations such as EGFR, ALK or ROS1) | Metastatic Lung Non-Small Cell Carcinoma, Metastatic Pancreatic Ductal Adenocarcinoma, Metastatic Colorectal Carcinoma | | | KRAS | diagnosis == "Metastatic Lung Non-Small Cell Carcinoma" OR diagnosis == "Metastatic Pancreatic Ductal Adenocarcinoma" OR diagnosis == "Metastatic Colorectal Carcinoma", KRAS is True |
+| Exclusion | Prior menin inhibitor therapy | | | Menin inhibitor | | Menin inhibitor is True |
+
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+•	ER and PR =< 1% by immunohistochemistry
+•	Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by CAP/ASCO standards)
+•	Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator 
+FOR ALL PATIENTS:
+•	Age >= 18
+•	Eastern Cooperative Oncology Group (ECOG) performance status =< 2
+•	Able to swallow pills
+•	Absolute neutrophil count > 1,500/mcL
+
+Exclusion Criteria
+•	Known left ventricular ejection fraction < 50%. (Echocardiogram is not required for study entry) 
+•	Clinically significant cardiac arrhythmias (e.g., ventricular tachycardia), complete left bundle branch block, high grade atrioventricular (AV) block (e.g., bifascicular block, Mobitz type II and third degree AV block)
+•	Congenital long QT syndrome 
+•	Baseline corrected QT interval (QTcF) > 450 msec. The heart rate on the qualifying electrocardiogram (ECG) must be between 50 and 90 beats per minute (BPM)
+•	Concurrent use of medication known to inhibit UGT1A1. Patients currently taking these medications must have discontinued >= 7 days prior to treatment day 1
+•	Concurrent use of herbal supplements, unless approved by the principal investigator. Patients currently taking herbal supplements must have discontinued >= 7 days prior to treatment day 1 
+•	Concurrent use of medication with a known risk of inducing torsades de pointes (on the known risk list of crediblemeds.org) that cannot be discontinued or switched to a different medication >= 7 days prior to starting the study drug
+•	Unresolved diarrhea >= grade 2, per Common Terminology Criteria for Adverse Events (CTCAE) version (v)5.0

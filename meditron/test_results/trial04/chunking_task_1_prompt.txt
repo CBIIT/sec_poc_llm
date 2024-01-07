@@ -1,0 +1,61 @@
+[metrics]
+length=1479
+
+[prompt]
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+    •	Participants must be ‚â• 18 years of age
+    •	Histologically or cytologically confirmed diagnosis of metastatic solid tumors
+    •	Eastern Cooperative Oncology Group (ECOG) performance status 0-1
+    •	All participants should have at least 1 measurable disease per RECIST v1.1. An irradiated lesion can be considered measurable only if progression has been demonstrated on the irradiated lesion.
+    •	Body weight within [45 - 150 kg] (inclusive)
+    •	All Contraceptive use by men and women should be consistent with local regulations regarding the methods of contraception for those participating in clinical studies.
+    •	Capable of giving signed informed consent
+    •	Any clinically significant cardiac disease
+    •	History of or current interstitial lung disease or pneumonitis
+
+    Exclusion Criteria
+    •	Uncontrolled or unresolved acute renal failure
+    •	Prior solid organ or hematologic transplant.
+    •	Known positivity with human immunodeficiency virus (HIV), known active hepatitis A, B, and C, or uncontrolled chronic or ongoing infectious requiring parenteral treatment.
+    •	Receipt of a live-virus vaccination within 28 days of planned treatment start
+    •	Participation in a concurrent clinical study in the treatment period.
+    •	Inadequate hematologic, hepatic and renal function
+    •	Participant not suitable for participation, whatever the reason, as judged by the Investigator, including medical or clinical conditions.
+
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Histologically or cytologically confirmed diagnosis of metastatic solid tumors | Metastatic solid tumor | | | | diagnosis == "Metastatic solid tumor" |
+| Exclusion | Prior solid organ or hematologic transplant. | | Solid organ transplantation | | | Solid organ transplantation is True |
+
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+•	Ascites and/or pleural effusion attributed to tumor OR
+•	Solid and/or cystic abnormalities on radiographic imaging consistent with recurrent disease that do not meet Response Evaluation Criteria in Solid Tumors (RECIST) version 1.1 definitions for target lesions. The protocol is using immune-related (i)RECIST for response evaluation
+•	Patient’s carcinoma should express the FSHR antigen, detectable by polymerase chain reaction (PCR) analysis of archival tumor sample
+o	Expression will be graded as positive, negative, inconclusive/uninterpretable. Only patients without a negative result will be eligible for the treatment with FSCER T cells. Others will be allowed to participate in the treatment portion if other criteria are met
+	Historical FFPE will be requested also for Western Blot and IHC analysis for exploration of the correlation to PCR results, but it is not necessary to have obtained it or the results before enrollment; tissue IHC FSHR positivity in the historical FFPE sample is not required for eligibility
+	The tissue screening portion can be conducted at any time before the eligibility determination is made for the treatment portion of the study. This means patients age 18 or greater with histologies listed in the inclusion criteria may have their tissue screened for possible future eligibility on this study
+
+Exclusion Criteria
+o	Clinically significant heart disease (New York Heart Association class 3 or 4) or symptomatic congestive heart failure
+o	Myocardial infarction < 6 months before enrollment
+o	History of clinically significant ventricular arrhythmia or unexplained syncope that is not believed to be vasovagal in nature or due to dehydration 
+o	History of severe non-ischemic cardiomyopathy with ejection fraction < 20%
+o	Findings on baseline electrocardiogram (ECG) or echocardiogram (ECHO) that, in the opinion of the patientâ€™s treating physician or investigator, would require medical intervention before anticancer therapy
+•	Active autoimmune disease (excluding autoimmune thyroid disease on a stable thyroid regimen). Such conditions include but are not limited to systemic lupus erythematous, rheumatoid arthritis, ulcerative colitis, Crohn’s disease, and temporal arteritis

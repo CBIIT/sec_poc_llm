@@ -1,0 +1,23 @@
+		- Congenital long QT syndrome
+		- Conduction disorders requiring pacemaker
+		- Second degree heart block
+		- Third degree heart block
+		- Symptomatic bradycardia
+		- Sinus node dysfunction
+		- Significant ventricular arrhythmias
+		- Ventricular tachycardia
+		- Wolff-Parkinson-White syndrome
+		- Other significant cardiac conduction defects
+		- History of myocardial infarction within 6 months prior to randomization
+		- Unstable angina within 6 months prior to randomization
+		- New York Heart Association Class III or IV congestive heart failure
+		- Left bundle branch block
+		- Right bundle branch block
+		- Left anterior fascicular block
+		- Left posterior fascicular block
+		- Complete left bundle branch block
+		- Complete right bundle branch block
+		- Second degree heart block
+		- Third degree heart block
+		- Significant ventricular arrhythmias
+		-

@@ -1,0 +1,64 @@
+[metrics]
+length=1603
+
+[prompt]
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+    •	Participants must be ‚â• 18 years of age
+    •	Histologically or cytologically confirmed diagnosis of metastatic solid tumors
+    •	Eastern Cooperative Oncology Group (ECOG) performance status 0-1
+    •	All participants should have at least 1 measurable disease per RECIST v1.1. An irradiated lesion can be considered measurable only if progression has been demonstrated on the irradiated lesion.
+    •	Body weight within [45 - 150 kg] (inclusive)
+    •	All Contraceptive use by men and women should be consistent with local regulations regarding the methods of contraception for those participating in clinical studies.
+    •	Capable of giving signed informed consent
+    •	Any clinically significant cardiac disease
+    •	History of or current interstitial lung disease or pneumonitis
+
+    Exclusion Criteria
+    •	Uncontrolled or unresolved acute renal failure
+    •	Prior solid organ or hematologic transplant.
+    •	Known positivity with human immunodeficiency virus (HIV), known active hepatitis A, B, and C, or uncontrolled chronic or ongoing infectious requiring parenteral treatment.
+    •	Receipt of a live-virus vaccination within 28 days of planned treatment start
+    •	Participation in a concurrent clinical study in the treatment period.
+    •	Inadequate hematologic, hepatic and renal function
+    •	Participant not suitable for participation, whatever the reason, as judged by the Investigator, including medical or clinical conditions.
+
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Histologically or cytologically confirmed diagnosis of metastatic solid tumors | Metastatic solid tumor | | | | diagnosis == "Metastatic solid tumor" |
+| Exclusion | Prior solid organ or hematologic transplant. | | Solid organ transplantation | | | Solid organ transplantation is True |
+
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+•	Platelets > 100,000/mm^3 
+•	Hemoglobin > 9 g/dL
+•	Serum bilirubin levels =< 1.5 mg/dL. Higher levels are acceptable if these can be attributed to active hemolysis or ineffective erythropoiesis. Bilirubin above 1.5 mg/dL due to Gilbert’s is still excluded
+•	Serum aspartate transaminase (AST) and serum alanine transaminase (ALT) =< 2.5 x upper limit of normal
+•	AST (serum glutamic-oxaloacetic transaminase [SGOT])/ALT (serum glutamate pyruvate transaminase [SGPT]) =< 5 x institutional upper limit of normal (ULN) for patients with liver metastasis
+•	Alkaline phosphatase < 2.5 x upper limit of normal, unless bone metastasis is present in the absence of liver metastasis
+•	Serum creatinine levels =< 1.5 mg/dL
+•	Patient must have the following laboratory values within normal limits or corrected to within normal limits with supplements before the first dose of study medication:
+
+Exclusion Criteria
+•	Use of any of the following substances =< 7 days prior to the start of the treatment:
+o	Known strong and moderate inducers or inhibitors of CYP3A4/5, including grapefruit, grapefruit hybrids, pomelos, star-fruit, and Seville oranges
+o	Medications that have a narrow therapeutic window and are predominantly metabolized through CYP3A4/5. Examples include certain benzodiazepines such as alprazolam and anti-seizure medications such as carbamazepine. Ultimately determination of drugs with a narrow therapeutic window is left to the discretion of the principal investigator 
+•	Patient is currently receiving warfarin or other coumarin derived anti-coagulant, for treatment, prophylaxis or otherwise. Note: Therapy with heparin, low molecular weight heparin (LMWH), an oral factor Xa inhibitor, an oral direct thrombin inhibitor, or fondaparinux is allowed
+•	Impaired gastrointestinal (GI) function that may alter absorption of medicines, such as uncontrolled inflammatory bowel disease, uncontrolled vomiting, or major stomach or small bowel resection
+•	Pregnant or breast feeding
+•	Women of child-bearing potential defined as all women physiologically capable of becoming pregnant or men whose female partner is of child-bearing potential, unless they are using highly effective methods of contraception during the study treatment and for 6 months after stopping the treatment. Highly effective contraception methods include:

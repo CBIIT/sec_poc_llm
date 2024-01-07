@@ -1,0 +1,67 @@
+[metrics]
+length=1604
+
+[prompt]
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+    •	Participants must be ‚â• 18 years of age
+    •	Histologically or cytologically confirmed diagnosis of metastatic solid tumors
+    •	Eastern Cooperative Oncology Group (ECOG) performance status 0-1
+    •	All participants should have at least 1 measurable disease per RECIST v1.1. An irradiated lesion can be considered measurable only if progression has been demonstrated on the irradiated lesion.
+    •	Body weight within [45 - 150 kg] (inclusive)
+    •	All Contraceptive use by men and women should be consistent with local regulations regarding the methods of contraception for those participating in clinical studies.
+    •	Capable of giving signed informed consent
+    •	Any clinically significant cardiac disease
+    •	History of or current interstitial lung disease or pneumonitis
+
+    Exclusion Criteria
+    •	Uncontrolled or unresolved acute renal failure
+    •	Prior solid organ or hematologic transplant.
+    •	Known positivity with human immunodeficiency virus (HIV), known active hepatitis A, B, and C, or uncontrolled chronic or ongoing infectious requiring parenteral treatment.
+    •	Receipt of a live-virus vaccination within 28 days of planned treatment start
+    •	Participation in a concurrent clinical study in the treatment period.
+    •	Inadequate hematologic, hepatic and renal function
+    •	Participant not suitable for participation, whatever the reason, as judged by the Investigator, including medical or clinical conditions.
+
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Histologically or cytologically confirmed diagnosis of metastatic solid tumors | Metastatic solid tumor | | | | diagnosis == "Metastatic solid tumor" |
+| Exclusion | Prior solid organ or hematologic transplant. | | Solid organ transplantation | | | Solid organ transplantation is True |
+
+
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+    Inclusion Criteria
+o	9 months (270 days) if adjuvant chemotherapy was administered
+o	11 months (330 days) if adjuvant chemotherapy and radiation therapy were administered
+•	Patients must have completed any prior adjuvant chemotherapy or radiation therapy 2 or more weeks (6 or more weeks for mitomycin and nitrosoureas) prior to randomization and be adequately recovered at the time of randomization
+NOTE: Patients taking low dose methotrexate for non-malignant conditions and other cytotoxic agents for non-malignant conditions are allowed to continue treatment while on study
+NOTE: Neo-adjuvant chemotherapy or radiation therapy for the resected lung cancer is not permitted (inclusion--- t) | 
+•	Patients must have adequate organ function as defined by the following criteria within 2 weeks prior to randomization:
+NOTE: it is strongly encouraged that these tests take place no more than one week prior to randomization to meet the 2 week requirement for randomization
+o	Serum aspartate aminotransferase (AST) and serum alanine aminotransferase (ALT) =< 2.5 x upper limit of normal (ULN) 
+o	Total serum bilirubin =< 1.5 x ULN
+o	Absolute neutrophil count (ANC) >= 1500/mm^3
+o	Platelets >= 30,000/mm^3
+o	Hemoglobin >= 8.0 g/dL
+o	Serum creatinine =< 2 x ULN
+•	Prior to randomization patients with any non-hematologic toxicity from surgery, chemotherapy, or radiation must have recovered to grade =< 1 with the exception of alopecia and the criteria outlined
+
+Exclusion Criteria
+•	Patients may not be receiving any other investigational agents while on study
+•	Patients must NOT have uncontrolled intercurrent illness including, but not limited to, serious ongoing or active infection, symptomatic congestive heart failure, unstable angina pectoris, uncontrolled cardiac arrhythmia, or psychiatric illness/social situations that would limit compliance with study requirements 
+•	Women must not be pregnant or breast-feeding because, based on the mechanism of action, crizotinib may cause fetal harm when administered during pregnancy; in animal studies, teratogenicity was not evident, but embryotoxic and fetotoxic effects were noted in rats at crizotinib exposures similar to and above those observed in humans at the recommended clinical dose
+•	Patients must not have any history of locally advanced or metastatic cancer requiring systemic therapy within 5 years from randomization, with the exception of in-situ carcinomas and non-melanoma skin cancer; patients must have no previous primary lung cancer diagnosed concurrently or within the past 2 years

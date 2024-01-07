@@ -1,0 +1,43 @@
+[metrics]
+length=1670
+
+[prompt]
+Based on the following list of criteria, extract the diseases, biomarkers, and prior therapies for each. If you aren't sure how to categorize a criterion, please skip that line and continue on to the next.
+    Inclusion Criteria
+•	Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous b NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. N3 disease is not allowed.  
+•	Baseline chest computed tomography (CT) with or without contrast must be performed within 6 months (180 days) prior to randomization to ensure no evidence of disease; if clinically indicated additional imaging studies must be performed to rule out metastatic disease
+•	Eastern Cooperative Oncology Group (ECOG) performance status 0 or 1 
+•	Patients must be registered to the ALCHEMIST-SCREEN (ALLIANCE A151216) trial prior to randomization 
+•	Positive for translocation or inversion events involving the ALK gene locus (e.g. resulting in EML4-ALK fusion) as defined by a Clinical Laboratory Improvement Act (CLIA)-approved test including: (1) translocation or inversion events involving the ALK gene locus (e.g. resulting in EML4-ALK fusion) as determined by the Vysis Break Point fluorescence in situ hybridization (FISH) assay; (2) ALK protein expression by immunohistochemistry (IHC); or (3) ALK rearrangement identified by next generation (NextGen) sequencing; this must have been performed:
+o	By a local CLIA certified laboratory: Report must indicate the results as well as the CLIA number of the laboratory which performed the assay; tissue must be available for submission for central, retrospective confirmation of the ALK fusion status via ALCHEMIST-SCREEN (ALLIANCE A151216); OR
+o	Patient registered to and the ALK fusion status performed centrally on the ALCHEMIST-SCREEN (ALLIANCE A151216)
+•	All females of childbearing potential must have a blood or urine pregnancy test within 72 hours prior to randomization to rule out pregnancy; a female of childbearing potential is any woman, regardless of sexual orientation or whether they have undergone tubal ligation, who meets the following criteria: 1) has not undergone a hysterectomy or bilateral oophorectomy; or 2) has not been naturally postmenopausal for at least 24 consecutive months (i.e., has had menses at any time in the preceding 24 consecutive months)
+•	Women of childbearing potential and sexually active males must be strongly advised to practice abstinence or use an accepted and effective method of contraception
+•	Patients must be adequately recovered from surgery at the time of randomization
+•	The minimum time requirement between date of surgery and randomization must be at least 4 weeks (28 days)
+•	The maximum time requirement between surgery and randomization must be:
+o	4 months (120 days) if no adjuvant chemotherapy was administered
+o	9 months (270 days) if adjuvant chemotherapy was administered
+o	11 months (330 days) if adjuvant chemotherapy and radiation therapy were administered
+•	Patients must have completed any prior adjuvant chemotherapy or radiation therapy 2 or more weeks (6 or more weeks for mitomycin and nitrosoureas) prior to randomization and be adequately recovered at the time of randomization
+NOTE: Patients taking low dose methotrexate for non-malignant conditions and other cytotoxic agents for non-malignant conditions are allowed to continue treatment while on study
+NOTE: Neo-adjuvant chemotherapy or radiation therapy for the resected lung cancer is not permitted (inclusion--- t) | 
+•	Patients must have adequate organ function as defined by the following criteria within 2 weeks prior to randomization:
+NOTE: it is strongly encouraged that these tests take place no more than one week prior to randomization to meet the 2 week requirement for randomization
+o	Serum aspartate aminotransferase (AST) and serum alanine aminotransferase (ALT) =< 2.5 x upper limit of normal (ULN) 
+o	Total serum bilirubin =< 1.5 x ULN
+o	Absolute neutrophil count (ANC) >= 1500/mm^3
+o	Platelets >= 30,000/mm^3
+o	Hemoglobin >= 8.0 g/dL
+o	Serum creatinine =< 2 x ULN
+•	Prior to randomization patients with any non-hematologic toxicity from surgery, chemotherapy, or radiation must have recovered to grade =< 1 with the exception of alopecia and the criteria outlined
+
+Exclusion Criteria
+•	No known interstitial fibrosis or interstitial lung disease
+•	No prior treatment with crizotinib or another ALK inhibitor
+•	No ongoing cardiac dysrhythmias of grade >= 2 National Cancer Institute (NCI) Common Terminology Criteria for Adverse Events (CTCAE) version 4.0, uncontrolled atrial fibrillation (any grade), or corrected QT (QTc) interval > 470 msec
+•	No use of medications, herbals, or foods that are known potent cytochrome P450, subfamily 3A, polypeptide 4 (CYP3A4) inhibitors or inducers, included but not limited to those outlined
+•	Patients may not be receiving any other investigational agents while on study
+•	Patients must NOT have uncontrolled intercurrent illness including, but not limited to, serious ongoing or active infection, symptomatic congestive heart failure, unstable angina pectoris, uncontrolled cardiac arrhythmia, or psychiatric illness/social situations that would limit compliance with study requirements 
+•	Women must not be pregnant or breast-feeding because, based on the mechanism of action, crizotinib may cause fetal harm when administered during pregnancy; in animal studies, teratogenicity was not evident, but embryotoxic and fetotoxic effects were noted in rats at crizotinib exposures similar to and above those observed in humans at the recommended clinical dose
+•	Patients must not have any history of locally advanced or metastatic cancer requiring systemic therapy within 5 years from randomization, with the exception of in-situ carcinomas and non-melanoma skin cancer; patients must have no previous primary lung cancer diagnosed concurrently or within the past 2 years
