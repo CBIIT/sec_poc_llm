@@ -1,0 +1,7 @@
+The chunking task involves splitting up the input EC section into smaller chunks that the model can process without exceeding the context length. Here the average size of an example response is used as a buffer so that the input + output should remain below the context length.
+
+Using this methodology, the model is able to make better sense of the desired output. However, for the trials 1-6 that were executed using this methodology, only trial 1 showed promising results for chunks 0 and 1. The others were considered failures and thus the continuation of the remaining trials was stopped early.
+
+To account for the possibility that the prompt was still too large, a zero-shot prompt was used on trial 1 after the inital pass. The average prompt size after chunking this zero-shot prompt was 720 tokens (35%). The tradeoff with this approach is that the model loses prior examples. This tradeoff appears to be significant as the model failed to comprehend the desired output and failed to capture any of the requested elements. The zero-shot approach was abandoned for this chunking methodology.
+
+Another potentially favorable adjustment was made to the chunking strategy. Hypothesis: The upper limit of 80% is an ideal maximum before generating output AND a 1-shot prompt significantly improves the model's comprehension of the desired output. Adjusting the chunking strategy to account for a 20% buffer on top of the average response size, the test was repeated.

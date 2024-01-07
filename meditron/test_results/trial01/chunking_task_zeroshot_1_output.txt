@@ -1,0 +1,16 @@
+### Dose Limiting Toxicity
+The maximum tolerated dose (MTD) is defined as the highest dose level at which no more than one of six patients experience a DLT during cycle 1. The MTD is determined using the Bayesian logistic regression model described below.
+
+### Dose Escalation
+A starting dose of 10mg twice daily is planned. This dose is selected based on the results from the phase I study of GDC-0084 in combination with paclitaxel in patients with advanced solid tumors. The starting dose of 10mg twice daily is also supported by preclinical data demonstrating that this dose is well tolerated in cynomolgus monkeys.
+
+### Dose Reduction
+Dose reduction may occur due to adverse events or abnormalities in laboratory values. Dose reductions are made according to the following guidelines:
+
+### Dose Modifications
+Dose modifications are made according to the following guidelines:
+
+### Dose Delays
+Dose delays are made according to the following guidelines:
+
+###
