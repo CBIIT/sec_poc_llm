@@ -1,0 +1,28 @@
+
+    Original Text: Eastern Cooperative Oncology Group (ECOG) performance status of =< 2
+    Disease/Condition: ECOG performance status
+    Procedure: none
+    Biomarker: none
+    Computable Rule: Performance Status is <= 2
+
+Criterion:
+    Patients must have measurable disease per RECIST v1.1
+
+Output:
+    Original Text: Patients must have measurable disease per RECIST v1.1
+    Disease/Condition: Measurable disease
+    Procedure: none
+    Biomarker: none
+    Computable Rule: Disease is Measurable
+
+Criterion:
+    Patients must have received prior treatment with a taxane and an anthracycline
+
+Output:
+    Original Text: Patients must have received prior treatment with a taxane and an anthracycline
+    Disease/Condition: Prior treatment with a taxane and an anthracycline
+    Procedure: none
+    Biomarker: none
+    Computable Rule: Treatment History is Taxane and Anthracycline
+
+Criter

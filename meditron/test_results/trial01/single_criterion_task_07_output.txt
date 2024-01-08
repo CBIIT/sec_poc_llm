@@ -1,0 +1,19 @@
+
+    Original Text: Concurrent administration of other anti-cancer therapy during the course of this study is not allowed. Note that concurrent use of supportive care medications (e.g. anti-resorptive agents, pain medications) is allowed
+    Disease/Condition: none
+    Procedure: none
+    Biomarker: none
+    Computable Rule: "Concurrent administration of other anti-cancer therapy during the course of this study is not allowed." is True
+
+Criterion:
+    Patients with a history of malignancy within 5 years before screening are excluded from the study
+
+Output:
+    Original Text: Patients with a history of malignancy within 5 years before screening are excluded from the study
+    Disease/Condition: none
+    Procedure: none
+    Biomarker: none
+    Computable Rule: "Patients with a history of malignancy within 5 years before screening are excluded from the study." is True
+
+Criterion:
+    Patients with a history of malignancy within 10 years before screening are excluded from the study

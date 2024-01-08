@@ -1,0 +1,13 @@
+
+    Original Text: COHORT B: New and/or progressive brain metastasis(es) with clinical indication for resection
+    Disease/Condition: Brain Metastasis, Progressive Brain Metastasis
+    Procedure: Resection
+    Biomarker: none
+    Computable Rule: Cohort_B == True, Brain_Metastasis == True, Progressive_Brain_Metastasis == True
+
+Criterion:
+    Patients with histologically confirmed advanced non-small cell lung cancer (NSCLC), stage IIIb or IV, according to the Veterans Administration Lung Study Group (VALSG) classification system, and measurable disease by Response Evaluation Criteria In Solid Tumors (RECIST) guidelines
+
+Output:
+    Original Text: Patients with histologically confirmed advanced non-small cell lung cancer (NSCLC), stage IIIb or IV, according to the Veterans Administration Lung Study Group (VALSG) classification system, and measurable disease by Response Evaluation Criteria In Solid Tumors (RECIST) guidelines
+    Dise

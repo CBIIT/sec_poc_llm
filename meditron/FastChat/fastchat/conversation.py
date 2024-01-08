@@ -1394,17 +1394,16 @@ register_conv_template(
     )
 )
 
-system_msg_meditron = "You are a helpful, respectful and honest assistant." + \
-        "Always answer as helpfully as possible, while being safe." + \
-        "Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content." + \
-        "Please ensure that your responses are socially unbiased and positive in nature.\n\n" + \
-        "If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct." + \
-        "If you don't know the answer to a question, please don't share false information."""
+# system_msg_meditron = "You are a helpful, respectful and honest assistant." + \
+#         "Always answer as helpfully as possible, while being safe." + \
+#         "Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content." + \
+#         "Please ensure that your responses are socially unbiased and positive in nature.\n\n" + \
+#         "If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct." + \
+#         "If you don't know the answer to a question, please don't share false information."""
 
 register_conv_template(
     Conversation(
-        name="zero_shot_medical",
-        system_message=system_msg_meditron,
+        name="meditron_zero_shot",
         roles=("User", "Assistant"),
         sep_style=SeparatorStyle.ADD_COLON_SINGLE,
         sep="\n### ",
@@ -1412,35 +1411,97 @@ register_conv_template(
     )
 )
 
-system_msg_urial = """Below is a list of conversations between a human and an AI assistant (you).
-Users place their queries under \"# User:\", and your responses are under \"# Assistant:\".
-Users will provide a list of text separated with \"-\" that contains clinical trial eligibility criteria. It is your job to answer the User's questions regarding the clinical trial eligibility criteria. Please keep your answer grounded to only the criteria in question. If you don't know the answer, just say so.
+system_msg_hannes = """You are a seasoned expert in clinical research with a profound understanding of medicine, in particular oncology and the diagnoses, therapies and biomarkers associated with cancer. You will now be in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Please process this information and ask any questions to clarify the task at hand before proceeding.
 """
 
 register_conv_template(
     Conversation(
-        name="few_shot_medical",
-        system_message=system_msg_urial,
+        name="meditron_one_shot",
+        system_message=system_msg_hannes,
         roles=("User", "Assistant"),
         messages=(
-            ("User", """Here is my list of eligibility criteria:
-- Age 18 or older
-- Willing and able to provide informed consent
-- Metastatic breast cancer, biopsy proven
-    * Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
-    * HER2+ (regardless of ER status), including HER2-low and high expressors
-- History of at least 6 months, sustained response to systemic therapy (clinically or radiographically defined as complete or stable response without progression)
-- Isolated site of disease progression on fludeoxyglucose F-18 (FDG) positron emission tomography (PET) scan
-- Consented to 12-245
-- Eastern Cooperative Oncology Group (ECOG) performance status 0-1
-- Pregnancy
-- Serious medical comorbidity precluding radiation, including connective tissue disorders
-- Intracranial disease (including previous intracranial involvement)
-- Previous radiotherapy to the intended treatment site that precludes developing a treatment plan that respects normal tissue tolerances 
+            ("User", """Inclusion Criteria
+    •	Age 18 or older
+    •	Willing and able to provide informed consent
+    •	Metastatic breast cancer, biopsy proven
+    o	Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+    o	HER2+ (regardless of ER status), including HER2-low and high expressors
+    •	History of at least 6 months, sustained response to systemic therapy (clinically or radiographically defined as complete or stable response without progression)
+    •	Isolated site of disease progression on fludeoxyglucose F-18 (FDG) positron emission tomography (PET) scan
+    •	Consented to 12-245
+    •	Eastern Cooperative Oncology Group (ECOG) performance status 0-1
+
+    Exclusion Criteria
+    •	Pregnancy
+    •	Serious medical comorbidity precluding radiation, including connective tissue disorders
+    •	Intracranial disease (including previous intracranial involvement)
+    •	Previous radiotherapy to the intended treatment site that precludes developing a treatment plan that respects normal tissue tolerances
 """),
-            ("Assistant", "I see. I am happy to assist answering any questions you may have regarding this eligibility criteria."),
-            ("User", "What are the biomarkers you are able to find?"),
-            ("Assistant", "The biomarkers I see are HER2, short for human epidermal growth factor receptor 2")
+            ("Assistant", """
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Metastatic breast cancer, biopsy proven | Metastatic breast cancer | | | | diagnosis == "Metastatic breast cancer" |
+| Inclusion | Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining | | | | HER2- | HER2 > 5% ER+ staining |
+| Inclusion | HER2+ (regardless of ER status), including HER2-low and high expressors | | | | HER2+ | |
+| Exclusion | Previous radiotherapy to the intended treatment site that precludes developing a treatment plan that respects normal tissue tolerances | | Prior radiation therapy | | | Prior radiation therapy is True |
+"""),
+        ),
+        offset=2,
+        sep_style=SeparatorStyle.ADD_COLON_SINGLE,
+        sep="\n### ",
+        stop_str=["<\s>", "###", "\n###", "<EOD>"]
+    )
+)
+
+system_msg_chunk_criteria = """You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or Inclusion criterion
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+"""
+
+register_conv_template(
+    Conversation(
+        name="meditron_one_shot_chunk",
+        system_message=system_msg_chunk_criteria,
+        roles=("User", "Assistant"),
+        messages=(
+            ("User", """Here is the criteria to analyze:
+    Inclusion Criteria
+    •	Age 18 or older
+    •	Willing and able to provide informed consent
+    •	Metastatic breast cancer, biopsy proven
+    o	Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+    o	HER2+ (regardless of ER status), including HER2-low and high expressors
+    •	History of at least 6 months, sustained response to systemic therapy (clinically or radiographically defined as complete or stable response without progression)
+    •	Isolated site of disease progression on fludeoxyglucose F-18 (FDG) positron emission tomography (PET) scan
+    •	Consented to 12-245
+    •	Eastern Cooperative Oncology Group (ECOG) performance status 0-1
+
+    Exclusion Criteria
+    •	Pregnancy
+    •	Serious medical comorbidity precluding radiation, including connective tissue disorders
+    •	Intracranial disease (including previous intracranial involvement)
+    •	Previous radiotherapy to the intended treatment site that precludes developing a treatment plan that respects normal tissue tolerances
+"""),
+            ("Assistant", """
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Metastatic breast cancer, biopsy proven | Metastatic breast cancer | | | | diagnosis == "Metastatic breast cancer" |
+| Inclusion | Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining | | | | HER2- | HER2- > 5% ER+ |
+| Inclusion | HER2+ (regardless of ER status), including HER2-low and high expressors | | | | HER2+ | HER2+ is True |
+| Exclusion | Previous radiotherapy to the intended treatment site that precludes developing a treatment plan that respects normal tissue tolerances | | Prior radiation therapy | | | Prior radiation therapy is True |
+"""),
         ),
         offset=2,
         sep_style=SeparatorStyle.ADD_COLON_SINGLE,

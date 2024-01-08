@@ -1,0 +1,23 @@
+
+    Original Text: Visceral crisis or impending visceral crisis at time of screening
+    Disease/Condition: none
+    Procedure: none
+    Biomarker: none
+    Computable Rule: "Visceral crisis or impending visceral crisis at time of screening" is True
+
+Criterion:
+    Patients with a history of malignancy other than breast cancer within the last five years
+
+Output:
+    Original Text: Patients with a history of malignancy other than breast cancer within the last five years
+    Disease/Condition: none
+    Procedure: none
+    Biomarker: none
+    Computable Rule: "Patients with a history of malignancy other than breast cancer within the last five years" is False
+
+Criterion:
+    Patient must have had a histologically confirmed diagnosis of invasive ductal carcinoma of the breast
+
+Output:
+    Original Text: Patient must have had a histologically confirmed diagnosis of invasive ductal carcinoma of the breast
+    Disease/Condition: Invasive ductal carcinoma

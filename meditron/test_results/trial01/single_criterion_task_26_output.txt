@@ -1,0 +1,13 @@
+
+    Original Text: No washout is required for endocrine therapy. If a patient has been on ovarian suppression for at least 28 days prior to initiation of study treatment, continuation of ovarian suppression is permitted on protocol. Starting a new endocrine therapy during protocol therapy is not permitted
+    Disease/Condition: Ovarian cancer
+    Procedure: Endocrine therapy
+    Biomarker: none
+    Computable Rule: "Ovarian cancer" AND ("Endocrine therapy" OR "ovarian suppression") AND ("at least 28 days" OR "not permitted")
+
+Criterion:
+    Patients with metastatic breast cancer who have progressed after anthracyclines and taxanes and who have received no more than one chemotherapy regimen for metastatic disease are eligible
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have progressed after anthracyclines and taxanes and who have received no more than one chemotherapy regimen for metastatic disease are eligible
+    Disease/Condition: Metastatic breast

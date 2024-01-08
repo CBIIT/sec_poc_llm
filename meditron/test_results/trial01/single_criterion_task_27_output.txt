@@ -1,0 +1,21 @@
+
+    Original Text: Current use or history of receiving a non-approved, investigational treatment within 14 days prior to initiation of protocol therapy
+    Disease/Condition: none
+    Procedure: Investigational Treatment
+    Biomarker: none
+    Computable Rule: "Investigational Treatment" is True
+
+Criterion:
+    Patients with a history of malignancy other than breast cancer (except basal cell carcinoma of the skin) within 5 years before enrollment
+
+Output:
+    Original Text: Patients with a history of malignancy other than breast cancer (except basal cell carcinoma of the skin) within 5 years before enrollment
+    Disease/Condition: none
+    Procedure: Malignancy Other Than Breast Cancer
+    Biomarker: none
+    Computable Rule: "Malignancy Other Than Breast Cancer" is False
+
+Criterion:
+    Patients with a history of malignancy other than breast cancer (except basal cell carcinoma of the skin) within 5 years before enrollment
+
+Output:

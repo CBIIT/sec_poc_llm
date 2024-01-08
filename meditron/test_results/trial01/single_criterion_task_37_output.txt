@@ -1,0 +1,13 @@
+
+    Original Text: Participants receiving any medications or substances that are strong inhibitors or strong inducers of CYP3A4 are ineligible. Should a participant be taking one of these agents and is able to discontinue the therapy or switch to a different agent, no washout will be required prior to starting study medication. Corticosteroids, which are weak CYP3A4 inducers are allowed. Because the lists of these agents are constantly changing, it is important to regularly consult a frequently-updated list; medical reference texts such as the Physiciansâ€™ Desk Reference may also provide this information. As part of the enrollment/informed consent procedures, the patient will be counseled on the risk of interactions with other agents, and what to do if new medications need to be prescribed or if the patient is considering a new over-the-counter medicine or herbal product
+
+### Examples
+
+#### Example 1
+
+```
+Criterion:
+    Subjects must have a history of at least two episodes of acute gastroenteritis (AGE) within the past year
+
+Output:
+    Original Text

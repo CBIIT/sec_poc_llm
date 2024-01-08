@@ -1,0 +1,12 @@
+
+### Eligibility Criteria
+
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Participants who have had prior whole brain radiotherapy (WBRT) and/or SRS and then whose lesions have subsequently progressed or who have new lesions are also eligible. In this case, lesions which have been treated with SRS may be considered as target lesions if there is unequivocal evidence, in the opinion of the treating physician, of progression following SRS | | | | | | | |
+| Exclusion | Known leptomeningeal metastases (defined as positive CSF cytology and/or unequivocal radiological evidence of clinically significant leptomeningeal involvement. CSF sampling is not required in the absence of suggestive symptoms to exclude leptomeningeal involvement) | | | | | | | |
+
+
+### Eligibility Criteria
+
+| Type | Original Text | Disease/Condition |

@@ -1,0 +1,23 @@
+
+    Original Text: Platelets >= 75,000/ul
+    Disease/Condition: None
+    Procedure: none
+    Biomarker: none
+    Computable Rule: PLT >= 75000
+
+Criterion:
+    Patients with a history of cardiac arrhythmias or conduction abnormalities should not be included in this study
+
+Output:
+    Original Text: Patients with a history of cardiac arrhythmias or conduction abnormalities should not be included in this study
+    Disease/Condition: Arrhythmia, Conduction Abnormality
+    Procedure: none
+    Biomarker: none
+    Computable Rule: (ARRHYTHMIAS OR CONDUCTION_ABNORMALITIES) = True
+
+Criterion:
+    The patient must have a histologically confirmed diagnosis of invasive ductal carcinoma of the breast
+
+Output:
+    Original Text: The patient must have a histologically confirmed diagnosis of invasive ductal carcinoma of the breast
+    Disease/

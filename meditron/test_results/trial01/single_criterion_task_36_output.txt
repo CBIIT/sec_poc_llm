@@ -1,0 +1,22 @@
+
+    Original Text: Corrected QT (QTc) interval time of >= 470 msec
+    Disease/Condition: none
+    Procedure: none
+    Biomarker: none
+    Computable Rule: ">= 470 msec" is True
+
+Criterion:
+    Subjects with corrected QT (QTc) interval times of > 500 msec at screening, randomization, or baseline visit
+
+Output:
+    Original Text: Subjects with corrected QT (QTc) interval times of > 500 msec at screening, randomization, or baseline visit
+    Disease/Condition: none
+    Procedure: none
+    Biomarker: none
+    Computable Rule: "> 500 msec" is True
+
+Criterion:
+    Subjects with corrected QT (QTc) interval times of > 600 msec at screening, randomization, or baseline visit
+
+Output:
+    Original Text: Subjects with corrected QT (QTc) interval times of > 60

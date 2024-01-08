@@ -1,0 +1,9 @@
+| Type | Original Text | Disease/Condition | Procedure | Drug | Biomarker | Computable Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inclusion | Left ventricular ejection fraction (LVEF) >= 50% by echocardiogram (ECHO) or multigated acquisition (MUGA) scan | LVEF >= 50% | | | | LVEF >= 50% is True |
+| Exclusion | No washout is required for endocrine therapy. If a patient has been on ovarian suppression for at least 28 days prior to initiation of study treatment, continuation of ovarian suppression is permitted on protocol. Starting a new endocrine therapy during protocol therapy is not permitted | | | | | | |
+
+
+### Example 3
+You are in the role of an abstractor who will analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns: 
+Type: listing whether criterion is an Exclusion or

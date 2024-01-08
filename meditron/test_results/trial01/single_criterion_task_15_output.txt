@@ -1,0 +1,22 @@
+
+    Original Text: Serum creatinine =< 1.5 mg/dL (or glomerular filtration rate >= 30 ml/min as determined by the Cockcroft-Gault equation)
+    Disease/Condition: none
+    Procedure: none
+    Biomarker: none
+    Computable Rule: <=>(creatinine <= 1.5) OR (glomerular_filtration_rate >= 30)
+
+Criterion:
+    Patients with a history of cardiac surgery within 6 months prior to randomization
+
+Output:
+    Original Text: Patients with a history of cardiac surgery within 6 months prior to randomization
+    Disease/Condition: none
+    Procedure: none
+    Biomarker: none
+    Computable Rule: <=>(history_of_cardiac_surgery <= 6)
+
+Criterion:
+    Patients with a history of cardiac surgery within 6 months prior to randomization
+
+Output:
+    Original Text: Patients with a history of cardiac surgery within 6 months

@@ -1,0 +1,30 @@
+[metrics]
+length=522
+
+[prompt]
+You are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    COHORT A: Unequivocal evidence of new and/or progressive brain metastases, and at least one of the following scenarios:
+* Treated with stereotactic radiosurgery (SRS) or surgery with residual un-treated lesions remaining. Such participants are eligible for immediate enrollment on this study providing that at least one untreated lesion is measurable
+* Participants who have had prior whole brain radiotherapy (WBRT) and/or SRS and then whose lesions have subsequently progressed or who have new lesions are also eligible. In this case, lesions which have been treated with SRS may be considered as target lesions if there is unequivocal evidence, in the opinion of the treating physician, of progression following SRS
+* Participants who have not previously been treated with cranial radiation (e.g., WBRT or SRS) are eligible to enter the study, but such participants must be asymptomatic from their CNS metastases and not requiring corticosteroids for symptom control
+* Participants who present with systemic stable/absent or progressive disease are eligible to this trial, as long as they fulfill one of the above criteria
+
+Output:

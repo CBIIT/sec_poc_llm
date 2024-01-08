@@ -1,0 +1,26 @@
+[metrics]
+length=437
+
+[prompt]
+You are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Participants receiving any medications or substances that are strong inhibitors or strong inducers of CYP3A4 are ineligible. Should a participant be taking one of these agents and is able to discontinue the therapy or switch to a different agent, no washout will be required prior to starting study medication. Corticosteroids, which are weak CYP3A4 inducers are allowed. Because the lists of these agents are constantly changing, it is important to regularly consult a frequently-updated list; medical reference texts such as the Physiciansâ€™ Desk Reference may also provide this information. As part of the enrollment/informed consent procedures, the patient will be counseled on the risk of interactions with other agents, and what to do if new medications need to be prescribed or if the patient is considering a new over-the-counter medicine or herbal product
+
+Output:

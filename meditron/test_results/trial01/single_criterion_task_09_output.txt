@@ -1,0 +1,22 @@
+
+    Original Text: Absolute neutrophil count >= 1,000/ul
+    Disease/Condition: Neutropenia
+    Procedure: none
+    Biomarker: none
+    Computable Rule: ANC >= 1000
+
+Criterion:
+    Subject must have a history of at least one episode of acute myocardial infarction within 6 months prior to randomization
+
+Output:
+    Original Text: Subject must have a history of at least one episode of acute myocardial infarction within 6 months prior to randomization
+    Disease/Condition: Acute Myocardial Infarction
+    Procedure: none
+    Biomarker: none
+    Computable Rule: AMI_HISTORY == True
+
+Criterion:
+    Subject must have a history of at least two episodes of acute myocardial infarction within 6 months prior to randomization
+
+Output:
+    Original Text: Subject must have a history of at least two episodes of acute myocardial infarction within 6 months prior to randomization

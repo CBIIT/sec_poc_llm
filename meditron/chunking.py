@@ -84,6 +84,18 @@ def parse_file(filename: str) -> ECDoc:
                 exc.append(line)
     return ECDoc(inc=inc, exc=exc)
 
+def parse_file_with_pipes(filename: str) -> list[str]:
+    criterions = []
+    with open(filename) as filein:
+        contents = filein.read()
+    splits = contents.split('|')
+    for split in splits:
+        split = split.replace('(inclusion--- t)', '')
+        split = split.replace('(inclusion--- f)', '')
+        split = split.strip()
+        criterions.append(split)
+    return criterions
+
 
 def chunk_ec(doc: ECDoc, min_criterions_per_section: int = 5, target_input_size: float = 0.0) -> list[ECDoc]:
     """Chunk an eligibility criteria document until it fits within max_input_size or a size determined by the

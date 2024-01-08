@@ -1,0 +1,18 @@
+
+    Original Text: Total bilirubin =< 1.5 mg/dL (upper limit of normal) except subject with documented Gilbert's syndrome (=< 5 x upper limit of normal [ULN]) or liver metastasis, who must have a baseline total bilirubin =< 3.0 mg/dL
+    Disease/Condition: Gilbert's Syndrome, Liver Metastasis
+    Procedure: none
+    Biomarker: none
+    Computable Rule: TBIL <= 1.5 * ULN, TBIL <= 3.0 * ULN
+
+Criterion:
+    Subject must have a history of at least one of the following:
+        - Clinically significant cardiac arrhythmia
+        - Congestive heart failure
+        - Cardiac dysrhythmias
+        - Myocardial infarction
+        - Coronary artery bypass grafting
+        - Percutaneous coronary intervention
+        - Other cardiac surgery
+    Subject must not have any of the following:
+        - History of stroke within

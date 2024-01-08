@@ -1,0 +1,26 @@
+[metrics]
+length=348
+
+[prompt]
+You are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Patients with known contraindication to magnetic resonance imaging (MRI) (e.g., due to pacemaker, ferromagnetic implants, claustrophobia, extreme obesity, hypersensitivity, etc.). However, head computed tomography (CT) with contrast may be used in place of MRI at baseline and throughout the trial if MRI is contraindicated and a participantâ€™s brain metastases are clearly measurable by head CT
+
+Output:

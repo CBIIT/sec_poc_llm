@@ -1,0 +1,24 @@
+
+    Original Text: Participant must be able to swallow and retain oral medication
+    Disease/Condition: none
+    Procedure: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Participants must have a diagnosis of schizophrenia, schizoaffective disorder, or bipolar I disorder
+
+Output:
+    Original Text: Participants must have a diagnosis of schizophrenia, schizoaffective disorder, or bipolar I disorder
+    Disease/Condition: Schizophrenia
+    Procedure: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Participants must have a diagnosis of schizophrenia, schizoaffective disorder, or bipolar I disorder
+
+Output:
+    Original Text: Participants must have a diagnosis of schizophrenia, schizoaffective disorder, or bipolar I disorder
+    Disease/Condition: Schizophrenia
+    Procedure:

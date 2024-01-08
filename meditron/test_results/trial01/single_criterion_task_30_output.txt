@@ -1,0 +1,24 @@
+
+    Original Text: The subject is pregnant or breast-feeding
+    Disease/Condition: Pregnancy
+    Procedure: none
+    Biomarker: None
+    Computable Rule: Disease is "Pregnancy"
+
+Criterion:
+    Subjects with a history of malignancy other than nonmelanoma skin cancer within 3 years prior to screening
+
+Output:
+    Original Text: Subjects with a history of malignancy other than nonmelanoma skin cancer within 3 years prior to screening
+    Disease/Condition: History of malignancy other than nonmelanoma skin cancer
+    Procedure: none
+    Biomarker: None
+    Computable Rule: Disease is "History of malignancy other than nonmelanoma skin cancer"
+
+Criterion:
+    Subjects with a history of malignancy within 1 year prior to screening
+
+Output:
+    Original Text: Subjects with a history of malignancy within 1 year prior to screening
+    Disease/Condition: History of malignancy
+    Pro

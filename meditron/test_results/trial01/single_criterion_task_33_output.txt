@@ -1,0 +1,22 @@
+
+    Original Text: Active infection requiring IV antibiotics at the time of protocol therapy initiation
+    Disease/Condition: Infection, Infectious Disease, Infection Requiring Antibiotic Therapy
+    Procedure: none
+    Biomarker: none
+    Computable Rule: LK INF == True, INF == True
+
+Criterion:
+    Patients with a history of prior malignancy other than nonmelanoma skin cancer within 5 years before enrollment
+
+Output:
+    Original Text: Patients with a history of prior malignancy other than nonmelanoma skin cancer within 5 years before enrollment
+    Disease/Condition: History of Cancer, Prior Cancer, Non-Melanoma Skin Cancer
+    Procedure: none
+    Biomarker: none
+    Computable Rule: LK HISTORY == True, HISTORY == True, NMSKC == False
+
+Criterion:
+    Patients with a history of prior malignancy within 1 year before enrollment
+
+Output:
+    Original Text: Patients

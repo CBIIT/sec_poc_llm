@@ -1,0 +1,24 @@
+
+    Original Text: CNS complications for whom urgent neurosurgical intervention is indicated (e.g., resection, shunt placement)
+    Disease/Condition: none
+    Procedure: Neurosurgery
+    Biomarker: none
+    Computable Rule: "Neurosurgery" is True
+
+Criterion:
+    Patients with a history of malignancy other than non-melanoma skin cancer within the past five years
+
+Output:
+    Original Text: Patients with a history of malignancy other than non-melanoma skin cancer within the past five years
+    Disease/Condition: none
+    Procedure: Malignancy
+    Biomarker: none
+    Computable Rule: "Malignancy" is False
+
+Criterion:
+    Patients with a history of malignancy other than non-melanoma skin cancer within the past five years
+
+Output:
+    Original Text: Patients with a history of malignancy other than non-melanoma skin cancer within the past five years
+    Disease/Condition: none
+    Procedure: Malignancy

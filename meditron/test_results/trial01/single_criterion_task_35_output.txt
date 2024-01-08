@@ -1,0 +1,12 @@
+
+    Original Text: Known intolerance to trastuzumab that persists after appropriate medical management. Patients who have a history of prior intolerance to trastuzumab that is controlled after medical management and who tolerate trastuzumab thereafter without reactions are eligible to participate
+    Disease/Condition: none
+    Procedure: Trastuzumab
+    Biomarker: none
+    Computable Rule: "Known intolerance to trastuzumab that persists after appropriate medical management" is False OR "Patients who have a history of prior intolerance to trastuzumab that is controlled after medical management and who tolerate trastuzumab thereafter without reactions" is True
+
+Criterion:
+    Patients with metastatic breast cancer who have received no more than one chemotherapy regimen for metastatic disease, including adjuvant therapy, and whose tumors express HER2 protein by immunohistochemistry (IHC) and/or fluorescence in situ hybridization (FISH).
+
+Output:
+    Original Text

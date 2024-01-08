@@ -1,0 +1,25 @@
+
+    Original Text: The subject is capable of understanding and complying with the protocol and has signed the informed consent document
+    Disease/Condition: none
+    Procedure: none
+    Biomarker: none
+    Computable Rule: "Capable of understanding and complying with the protocol" is True
+
+Criterion:
+    Subjects must be able to swallow tablets whole without crushing, chewing, or dissolving them
+
+Output:
+    Original Text: Subjects must be able to swallow tablets whole without crushing, chewing, or dissolving them
+    Disease/Condition: none
+    Procedure: none
+    Biomarker: none
+    Computable Rule: "Swallow tablets whole without crushing, chewing, or dissolving them" is True
+
+Criterion:
+    Subjects must be willing to participate in this study and sign the informed consent form
+
+Output:
+    Original Text: Subjects must be willing to participate in this study and sign the informed consent form
+    Disease/Condition: none
+    Procedure: none
+    Biomarker: none

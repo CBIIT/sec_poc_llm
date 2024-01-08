@@ -1,0 +1,13 @@
+
+    Original Text: Female subjects of childbearing potential must have a negative serum or urine pregnancy test within 8 days of initiating protocol therapy
+    Disease/Condition: none
+    Procedure: Pregnancy Test
+    Biomarker: none
+    Computable Rule: "Pregnancy Test" is False
+
+Criterion:
+    Subjects with a history of malignant neoplasm other than basal cell carcinoma of the skin, cervical cancer in situ, squamous cell carcinoma of the skin, or breast ductal carcinoma in situ may participate if they have been continuously disease-free for at least 5 years since completion of treatment
+
+Output:
+    Original Text: Subjects with a history of malignant neoplasm other than basal cell carcinoma of the skin, cervical cancer in situ, squamous cell carcinoma of the skin, or breast ductal carcinoma in situ may participate if they have been continuously disease-free for at least 5 years since completion of treatment
+    Disease/Condition:

@@ -1,0 +1,24 @@
+
+    Original Text: Has received prior therapy with a PI3K or mTOR inhibitor
+    Disease/Condition: PI3K Inhibitors, mTOR Inhibitors
+    Procedure: none
+    Biomarker: none
+    Computable Rule: PI3K_Inhibitors == True, mTOR_Inhibitors == True
+
+Criterion:
+    Patients must have measurable disease at baseline (RECIST 1.0)
+
+Output:
+    Original Text: Patients must have measurable disease at baseline (RECIST 1.0)
+    Disease/Condition: Measurable Disease
+    Procedure: none
+    Biomarker: none
+    Computable Rule: RECIST_1.0 == True
+
+Criterion:
+    Patients must have measurable disease at baseline (WHO 2007)
+
+Output:
+    Original Text: Patients must have measurable disease at baseline (WHO 2007)
+    Disease/Condition: Measurable Disease
+    Procedure

@@ -1,0 +1,30 @@
+[metrics]
+length=481
+
+[prompt]
+You are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+
+Output:
+    Original Text: Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Biomarker: HER2-, HER2+
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2- is True OR HER2+ is True
+
+Criterion:
+    Pathologically confirmed HER2-positive MBC by local laboratory with the following requirements: HER2 overexpressed or amplified (immunohistochemistry of 3+ or HER2 gene amplification by in situ hybridization with a ratio of HER2-gene signals to centromere 17 signals >= 2.0 or average HER2 copy number >= 6.0 signals/cells)
+
+Output:

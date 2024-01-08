@@ -1,0 +1,19 @@
+
+    Original Text: Symptomatic intrinsic lung disease or extensive tumor involvement of the lungs, resulting in dyspnea at rest
+    Disease/Condition: Intrinsic Lung Disease, Extensive Tumor Involvement of the Lungs
+    Procedure: none
+    Biomarker: none
+    Computable Rule: (LK ILD == True) OR ((LK ETIL == True) AND (LK ETIL == True))
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to study entry
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to study entry
+    Disease/Condition: History of Malignancy, Nonmelanoma Skin Cancer
+    Procedure: none
+    Biomarker: none
+    Computable Rule: (LK HISTM == True) OR (LK NMSK == False)
+
+Criterion:
+    Patients with a history of malignancy within 
