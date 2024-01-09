@@ -20,7 +20,4 @@ when taking 1 criterion at a time, how to differentiate between nested lists (ne
        - Running on GPU in Google Colab works without any configuration - and its free to some extent. When the requirements demand more memory, Colab comes with a paid subscription for compute credits. Even with more memory, I ran into an issue where the GPU would not free up space that was no longer needed. This resulted in very frequent Out of Memory errors. Everytime that happens the whole session must be restarted and the model has to be loaded again. I was only able to produce 3 or 4 runs before the session crashed.
            - here I learned of one way to programmatically clear memory (or attempt to) with torch.cuda.empty_cache()
         
-        
-1. Try the whole prompt and show the error about exceeding context length
-2. Try chunking the prompt and show that it fails to output the expected results
-3. Try one criterion at a time, using the original xlsx document containing the (inclusion--- t) | pipes as lines of demarkation
+Running 70B model (bfloat16) requires around 140GB memory to load up all the safetensor files (model weights) - if using 32bit then double this value. If using 8bit quantization, this requirements is reduced by about half. So in theory 70GB is the requirement for 8bit. This was proven by running the 7B model which requires 14GB memory by default. Running it in 8bit mode only took about 7GB and about 4GB in 4bit mode. Trying the ml.g5.12xlarge (4 GPU, 96 GB total memory, $7/hr) should work in theory for 8bit mode on multiple GPUs. However, the fastchat util does not support 8bit mode on multiple gpus. Therefore, the next best option is to use an instance with enough RAM on CPU to load the model.
