@@ -1,0 +1,8 @@
+Original Text: |
+    Any advanced solid tumor (including Colorectal Carcinoma [CRC]) which is Mismatch Repair Deficient (dMMR)/MSI-H in participants from mainland China who are of Chinese descent. (CRC participants will have a histologically proven locally advanced unresectable or metastatic CRC which is dMMR/MSI-H that has received 2 prior lines of therapy) OR
+Disease/Condition: None
+Procedure: None
+Drug: None
+Biomarker: None
+Computable Rule: |
+    "Mismatch Repair Deficient (dMMR)/MSI-H" is True AND "Colorectal Carcinoma" is True AND "Chinese" is True AND "Advanced Solid Tumor" is True AND "2 Prior Lines of Therapy" is True

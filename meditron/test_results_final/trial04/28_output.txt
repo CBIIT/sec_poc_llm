@@ -1,0 +1,26 @@
+
+    Original Text: Prior radiotherapy to any portion of the abdominal cavity or pelvis
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Prior radiotherapy to the abdomen, pelvis, or para-aortic lymph nodes
+
+Output:
+    Original Text: Prior radiotherapy to the abdomen, pelvis, or para-aortic lymph nodes
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Prior radiotherapy to the abdomen, pelvis, or para-aortic lymph nodes
+
+Output:
+    Original Text: Prior radiotherapy to the abdomen, pelvis, or para-aortic lymph nodes
+    Disease/Condition: none
+    Procedure: Radi

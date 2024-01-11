@@ -1,0 +1,24 @@
+
+    Original Text: Subjects who are compulsorily detained for treatment of either a psychiatric or physical (e.g. infectious disease) illness
+    Disease/Condition: none
+    Procedure: Compulsory Detention
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Compulsory Detention" is True
+
+Criterion:
+    Subjects with a history of alcohol abuse, defined as >14 drinks per week for men and >7 drinks per week for women
+
+Output:
+    Original Text: Subjects with a history of alcohol abuse, defined as >14 drinks per week for men and >7 drinks per week for women
+    Disease/Condition: Alcohol Abuse
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: "Alcohol Abuse" is True
+
+Criterion:
+    Subjects with a history of substance abuse, defined as use of any illicit drugs within the last year
+
+Output:
+    Original

@@ -1,0 +1,125 @@
+Criterion Text In,Criterion Text Out,Inclusion/Exclusion,Disease,Biomarker,Procedure,Drug,Criterion Rule
+"FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features:
+* Measurable disease by Response Evaluation Criteria in Solid Tumors (RECIST) 1.1
+* Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry
+* Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards)
+* Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator OR
+* Platinum-resistant (defined as progression within 12 months of last platinum therapy administration), pathologically confirmed serous ovarian cancer that is recurrent and unresectable, in the opinion of the enrolling investigator
+","FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features:
+* Measurable disease by Response Evaluation Criteria in Solid Tumors (RECIST) 1.1
+* Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry
+* Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards)
+* Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator OR
+* Platinum-resistant (defined as progression within 12 months of last platinum therapy administration), pathologically confirmed serous ovarian cancer that is recurrent and unresectable, in the opinion of the enrolling investigator",Inclusion,Breast Cancer,"ER-, PR-, Her-2/neu-",,,"Disease is ""Breast Cancer"" AND ER is False AND PR is False AND Her-2/neu is False
+"
+"FOR DOSE EXPANSION COHORT ONLY: Pathologically confirmed breast cancer with the following features:
+* Measurable disease by RECIST 1.1
+* ER and PR =< 1% by immunohistochemistry
+* Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by CAP/ASCO standards)
+* Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator
+","FOR DOSE EXPANSION COHORT ONLY: Pathologically confirmed breast cancer with the following features:
+* Measurable disease by RECIST 1.1
+* ER and PR =< 1% by immunohistochemistry
+* Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by CAP/ASCO standards)
+* Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator",Inclusion,Breast cancer,"ER < 1%, PR < 1%, HER2 negative",,,"Disease is ""Breast cancer"" AND ER <= 1% is True AND PR <= 1% is True AND HER2 is False
+"
+FOR ALL PATIENTS:,FOR ALL PATIENTS,Inclusion,,,,,"""FOR ALL PATIENTS"" is True
+"
+Age >= 18,Age >= 18,Inclusion,,,,,"age >= 18
+"
+Eastern Cooperative Oncology Group (ECOG) performance status =< 2,Eastern Cooperative Oncology Group (ECOG) performance status =< 2,Inclusion,ECOG performance status,,,,"Performance Status is less than or equal to 2
+"
+Able to swallow pills,Able to swallow pills,Inclusion,,,,,"none
+"
+"Absolute neutrophil count > 1,500/mcL","Absolute neutrophil count > 1,500/mcL",Inclusion,Neutropenia,,,,"ANC > 1500
+"
+"Platelets > 100,000/mm^3","Platelets > 100,000/mm^3",Inclusion,,,,,"Platelets > 100000
+"
+Hemoglobin > 9 g/dL,Hemoglobin > 9 g/dL,Inclusion,Anemia,,,,"Hb > 9
+"
+Serum bilirubin levels =< 1.5 mg/dL. Higher levels are acceptable if these can be attributed to active hemolysis or ineffective erythropoiesis. Bilirubin above 1.5 mg/dL due to Gilbertâ€™s is still excluded,Serum bilirubin levels =< 1.5 mg/dL. Higher levels are acceptable if these can be attributed to active hemolysis or ineffective erythropoiesis. Bilirubin above 1.5 mg/dL due to Gilbertâ€™s is still excluded,Inclusion,Gilbert's syndrome,,,,"serum bilirubin levels <= 1.5 AND (bilirubin > 1.5 AND Gilbert's)
+"
+"Serum aspartate transaminase (AST) and serum alanine transaminase (ALT) =< 2.5 x upper limit of normal
+* AST (serum glutamic-oxaloacetic transaminase [SGOT])/ALT (serum glutamate pyruvate transaminase [SGPT]) =< 5 x institutional upper limit of normal (ULN) for patients with liver metastasis
+",Serum aspartate transaminase (AST) and serum alanine transaminase (ALT) =< 2.5 x upper limit of normal,Inclusion,Liver Metastasis,,,,"SGOT <= 2.5 * ULN, SGPT <= 5 * ULN
+"
+"Alkaline phosphatase < 2.5 x upper limit of normal, unless bone metastasis is present in the absence of liver metastasis","Alkaline phosphatase < 2.5 x upper limit of normal, unless bone metastasis is present in the absence of liver metastasis",Inclusion,"Alkaline Phosphatase, Bone Metastasis, Liver Metastasis",,,,"ALP < 2.5 * ULN, BM == False && LM == False
+"
+Serum creatinine levels =< 1.5 mg/dL,Serum creatinine levels =< 1.5 mg/dL,Inclusion,"Creatinine, Serum Creatinine",,,,"CREATININE <= 1.5
+"
+"Patient must have the following laboratory values within normal limits or corrected to within normal limits with supplements before the first dose of study medication:
+* Potassium
+* Magnesium
+* Total calcium (corrected for serum albumin)
+",Patient must have the following laboratory values within normal limits or corrected to within normal limits with supplements before the first dose of study medication:,Inclusion,,,Laboratory Values,,"""Potassium"", ""Magnesium"", ""Total calcium (corrected for serum albumin)"" is True
+"
+International normalized ratio (INR) =< 1.5 (unless the patient is receiving anticoagulants and the INR is within the therapeutic range of intended use for that anticoagulant within 7 days prior to the first dose of study drug),International normalized ratio (INR) =< 1.5,Inclusion,,,,,"INR <=> 1.5
+"
+"Presence of >= 1 metastatic sites of disease that can be safely accessed for core needle biopsy and patient willingness to undergo fresh tissue biopsies of up to 3 lesions. (Safely accessible means risk of mortality or major morbidity < 1.5%, such as core needle biopsy of breast, superficial lymph node, subcutaneous nodule, peripheral liver nodule, pleural nodule, omental nodule, etc. or per investigator discretion)",Presence of >= 1 metastatic sites of disease that can be safely accessed for core needle biopsy and patient willingness to undergo fresh tissue biopsies of up to 3 lesions.,Inclusion,"Metastasis, Safely Accessible",,"Core Needle Biopsy, Fresh Tissue Biopsy",,"METASTASIS > 0 AND SAFELY ACCESSIBLE > 0
+"
+Negative serum or urine pregnancy test at screening for women of childbearing potential,Negative serum or urine pregnancy test at screening for women of childbearing potential,Inclusion,,,,,"Disease is None
+"
+Agrees to continue use of approved birth control for at least 6 months after receiving the last dose of study drugs,Agrees to continue use of approved birth control for at least 6 months after receiving the last dose of study drugs,Inclusion,,,,,"Agrees to continue use of approved birth control for at least 6 months after receiving the last dose of study drugs
+"
+Able to provide informed consent and have signed an approved consent form that conforms to federal and institutional guidelines,Able to provide informed consent and have signed an approved consent form that conforms to federal and institutional guidelines,Inclusion,,,,,"able_to_provide_informed_consent_and_have_signed_an_approved_consent_form_that_conforms_to_federal_and_institutional_guidelines
+"
+Previous use of CDK 4/6 or HDAC inhibitors for cancer treatment,Previous use of CDK 4/6 or HDAC inhibitors for cancer treatment,Exclusion,"CDK 4/6 Inhibitor, HDAC Inhibitor",,,,"PREVIOUS_USE_OF_CDK4_OR_HDAC == True, PREVIOUS_USE_OF_CDK4_OR_HDAC == True
+"
+"Major surgery, radiotherapy, anticancer therapy, or investigational agents =< 4 weeks of treatment day 1 or =< 5 half-lives, whichever is shorter","Major surgery, radiotherapy, anticancer therapy, or investigational agents =< 4 weeks of treatment day 1 or =< 5 half-lives, whichever is shorter",Exclusion,,,,,"""Major surgery, radiotherapy, anticancer therapy, or investigational agents"" <=""4 weeks of treatment day 1"" OR ""Major surgery, radiotherapy, anticancer therapy, or investigational agents"" <=""5 half-lives""
+"
+Patients with new or progressive brain metastases (active brain metastases) or leptomeningeal disease unless determined by the treating physician that immediate central nervous system (CNS) specific treatment is not required and is unlikely to be required during the first cycle of therapy,Patients with new or progressive brain metastases (active brain metastases) or leptomeningeal disease unless determined by the treating physician that immediate central nervous system (CNS) specific treatment is not required and is unlikely to be required during the first cycle of therapy,Exclusion,"Brain Metastasis, Leptomeningeal Disease",,,,"""Brain Metastasis"" OR ""Leptomeningeal Disease"" is True AND (""Immediate CNS Specific Treatment"" is False OR ""Treating Physician Determined"")
+"
+Medical condition that in the opinion of the enrolling investigator would require the use of valproic acid within =< 5 days of the first dose of belinostat or while on study,Medical condition that in the opinion of the enrolling investigator would require the use of valproic acid within =< 5 days of the first dose of belinostat or while on study,Exclusion,,,Valproic Acid,,"""Valproic Acid"" is True
+"
+Active infection requiring systemic therapy,Active infection requiring systemic therapy,Exclusion,"Infection, Systemic Therapy",,,,"LK INF == True, INF == True
+"
+"History of allergy or hypersensitivity to belinostat, ribociclib, or their binders","History of allergy or hypersensitivity to belinostat, ribociclib, or their binders",Exclusion,,,,"Belinostat, Ribociclib","""Belinostat"", ""Ribociclib"", ""Allergy"", ""Hypersensitivity"" are all False
+"
+"Uncontrolled arrhythmia, congestive heart failure or angina. Patients who have had a myocardial infarction, symptomatic pericarditis, or cardiac surgery should be at least 6 months from the event and free of active symptoms","Uncontrolled arrhythmia, congestive heart failure or angina. Patients who have had a myocardial infarction, symptomatic pericarditis, or cardiac surgery should be at least 6 months from the event and free of active symptoms",Exclusion,,,,,"""Uncontrolled arrhythmia"", ""congestive heart failure"", ""angina"", ""myocardial infarction"", ""pericarditis"", ""cardiac surgery"" is False
+"
+Known left ventricular ejection fraction < 50%. (Echocardiogram is not required for study entry),Known left ventricular ejection fraction < 50%. (Echocardiogram is not required for study entry),Exclusion,,,,,"""Known left ventricular ejection fraction < 50%"" is False
+"
+"Clinically significant cardiac arrhythmias (e.g., ventricular tachycardia), complete left bundle branch block, high grade atrioventricular (AV) block (e.g., bifascicular block, Mobitz type II and third degree AV block)","Clinically significant cardiac arrhythmias (e.g., ventricular tachycardia), complete left bundle branch block, high grade atrioventricular (AV) block (e.g., bifascicular block, Mobitz type II and third degree AV block)",Exclusion,,,,,"""Clinically significant cardiac arrhythmias (e.g., ventricular tachycardia), complete left bundle branch block, high grade atrioventricular (AV) block (e.g., bifascicular block, Mobitz type II and third degree AV block)"" is False
+"
+Congenital long QT syndrome,Congenital Long QT Syndrome,Exclusion,Congenital Long QT Syndrome,,,,"LQTS == True
+"
+Baseline corrected QT interval (QTcF) > 450 msec. The heart rate on the qualifying electrocardiogram (ECG) must be between 50 and 90 beats per minute (BPM),Baseline corrected QT interval (QTcF) > 450 msec. The heart rate on the qualifying electrocardiogram (ECG) must be between 50 and 90 beats per minute (BPM),Exclusion,,,,,"QTcF > 450 AND HeartRate BETWEEN 50 AND 90
+"
+Concurrent use of medication known to inhibit UGT1A1. Patients currently taking these medications must have discontinued >= 7 days prior to treatment day 1,Concurrent use of medication known to inhibit UGT1A1. Patients currently taking these medications must have discontinued >= 7 days prior to treatment day 1,Exclusion,,,Medication known to inhibit UGT1A1,,"""Medication known to inhibit UGT1A1"" is False
+"
+"Concurrent use of herbal supplements, unless approved by the principal investigator. Patients currently taking herbal supplements must have discontinued >= 7 days prior to treatment day 1","Concurrent use of herbal supplements, unless approved by the principal investigator. Patients currently taking herbal supplements must have discontinued >= 7 days prior to treatment day 1",Exclusion,,,Herbal Supplement,,"""Herbal Supplement"" is False or ""Herbal Supplement"" is True and ""DaysSinceLastUse"" is GreaterThan 7
+"
+Concurrent use of medication with a known risk of inducing torsades de pointes (on the known risk list of crediblemeds.org) that cannot be discontinued or switched to a different medication >= 7 days prior to starting the study drug,Concurrent use of medication with a known risk of inducing torsades de pointes (on the known risk list of crediblemeds.org) that cannot be discontinued or switched to a different medication >= 7 days prior to starting the study drug,Exclusion,,,,,"""Torsades De Pointes"" is True AND ""Medication"" is True AND ""Discontinued"" is False AND ""Switched"" is False
+"
+"Unresolved diarrhea >= grade 2, per Common Terminology Criteria for Adverse Events (CTCAE) version (v)5.0","Unresolved diarrhea >= grade 2, per Common Terminology Criteria for Adverse Events (CTCAE) version (v)5.0",Exclusion,,,,,"""Unresolved diarrhea >= grade 2, per Common Terminology Criteria for Adverse Events (CTCAE) version (v)5.0"" is True
+"
+"Use of any of the following substances =< 7 days prior to the start of the treatment:
+* Known strong and moderate inducers or inhibitors of CYP3A4/5, including grapefruit, grapefruit hybrids, pomelos, star-fruit, and Seville oranges
+* Medications that have a narrow therapeutic window and are predominantly metabolized through CYP3A4/5. Examples include certain benzodiazepines such as alprazolam and anti-seizure medications such as carbamazepine. Ultimately determination of drugs with a narrow therapeutic window is left to the discretion of the principal investigator
+",Use of any of the following substances =< 7 days prior to the start of the treatment,Exclusion,,,,,"<(use_of_any_of_the_following_substances) >< (7_days_prior_to_start_of_treatment) >
+"
+"Patient is currently receiving warfarin or other coumarin derived anti-coagulant, for treatment, prophylaxis or otherwise. Note: Therapy with heparin, low molecular weight heparin (LMWH), an oral factor Xa inhibitor, an oral direct thrombin inhibitor, or fondaparinux is allowed","Patient is currently receiving warfarin or other coumarin derived anti-coagulant, for treatment, prophylaxis or otherwise. Note: Therapy with heparin, low molecular weight heparin (LMWH), an oral factor Xa inhibitor, an oral direct thrombin inhibitor, or fondaparinux is allowed",Exclusion,"Warfarin, Coumarins, Heparin, Low Molecular Weight Heparin, Oral Factor Xa Inhibitors, Oral Direct Thrombin Inhibitors, Fondaparinux",,,,"PT_WARFARIN == True OR PT_COUMARIN == True OR PT_HEPARIN == True OR PT_LMWH == True OR PT_Oral_FXa_Inhibitor == True OR PT_Oral_Direct_Thrombin_Inhibitor == True OR PT_Fondaparinux == True
+"
+"Impaired gastrointestinal (GI) function that may alter absorption of medicines, such as uncontrolled inflammatory bowel disease, uncontrolled vomiting, or major stomach or small bowel resection","Impaired gastrointestinal (GI) function that may alter absorption of medicines, such as uncontrolled inflammatory bowel disease, uncontrolled vomiting, or major stomach or small bowel resection",Exclusion,,,,,"""Impaired gastrointestinal (GI) function that may alter absorption of medicines, such as uncontrolled inflammatory bowel disease, uncontrolled vomiting, or major stomach or small bowel resection"" is True
+"
+Pregnant or breast feeding,Pregnant or breast feeding,Exclusion,Pregnancy,,,,"Disease is ""Pregnancy""
+"
+"Women of child-bearing potential defined as all women physiologically capable of becoming pregnant or men whose female partner is of child-bearing potential, unless they are using highly effective methods of contraception during the study treatment and for 6 months after stopping the treatment. Highly effective contraception methods include:
+* Total abstinence (when this is in line with the preferred and usual lifestyle of the patient. Periodic abstinence (e.g., calendar, ovulation, symptothermal, post-ovulation methods) and withdrawal are not acceptable methods of contraception
+* Female sterilization (have had surgical bilateral oophorectomy with or without hysterectomy), total hysterectomy or tubal ligation at least 6 weeks before taking study treatment. In case of oophorectomy alone, only when the reproductive status of the woman has been confirmed by follow up hormone level assessment
+* Male partner sterilization (at least 6 months prior to screening). For female patients on the study, the vasectomized male partner should be the sole partner for that patient and the success of the vasectomy must be medically confirmed as per local practice
+* Placement of an intrauterine device (IUD)
+* Use of hormonal contraception plus a barrier contraceptive
+","Women of child-bearing potential defined as all women physiologically capable of becoming pregnant or men whose female partner is of child-bearing potential, unless they are using highly effective methods of contraception during the study treatment and for 6 months after stopping the treatment. Highly effective contraception methods include:
+* Total abstinence (when this is in line with the preferred and usual lifestyle of the patient. Periodic abstinence (e.g., calendar, ovulation, symptothermal, post-ovulation methods) and withdrawal are not acceptable methods of contraception
+* Female sterilization (have had surgical bilateral oophorectomy with or without hysterectomy), total hysterectomy or tubal ligation at least 6 weeks before taking study treatment. In case of oophorectomy alone, only when the reproductive status of the woman has been confirmed by follow up hormone level assessment
+* Male partner sterilization (at least 6 months prior to screening). For female patients on the study, the vasectomized male partner should be the sole partner for that patient and the success of the vasectomy must be medically confirmed as per local practice
+* Placement of an intrauterine device (IUD)
+* Use of hormonal contraception plus a barrier contraceptive",Exclusion,Women of child-bearing potential,,,,"Disease is ""Women of child-bearing potential"" AND Hormonal contraception is True OR Barrier contraception is True
+"
+Known human immunodeficiency virus (HIV) infection with a detectable viral load within 6 months of the anticipated start of treatment. Note: Patients on effective anti-retroviral therapy with an undetectable viral load within 6 months of the anticipated start of treatment are eligible for this trial,known human immunodeficiency virus (HIV) infection with a detectable viral load within 6 months of the anticipated start of treatment,Exclusion,HIV,,Anti-Retroviral Therapy,,"""HIV"" is True and ""Viral Load"" is GreaterThan(0)
+"
+Known chronic hepatitis B virus (HBV) or hepatitis C virus infection with a detectable viral load. Note: Patients with an undetectable HBV viral load on appropriate suppressive therapy are eligible. Patients with an undetectable HCV viral load are eligible,Known chronic hepatitis B virus (HBV) or hepatitis C virus infection with a detectable viral load. Note: Patients with an undetectable HBV viral load on appropriate suppressive therapy are eligible. Patients with an undetectable HCV viral load are eligible,Exclusion,"Hepatitis B Virus Infection, Hepatitis C Virus Infection",,,,"HBV == True OR HCV == True
+"
+Malignancy other than breast carcinoma or ovarian cancer (dose escalation) anticipated to need systemic treatment within 1 year in the opinion of the enrolling investigator,Malignancy other than breast carcinoma or ovarian cancer (dose escalation) anticipated to need systemic treatment within 1 year in the opinion of the enrolling investigator,Exclusion,Malignancy other than breast carcinoma or ovarian cancer,,,,"Disease is ""Malignancy other than breast carcinoma or ovarian cancer""
+"

@@ -1,0 +1,8 @@
+Original Text: |
+    Prior chemotherapy, targeted small molecule therapy, or radiation therapy within 2 weeks of study Day 1 or not recovered from adverse events caused by a previously administered agent
+Disease/Condition: none
+Procedure: Chemotherapy, Targeted Small Molecule Therapy, Radiation Therapy
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Chemotherapy", "Targeted Small Molecule Therapy", "Radiation Therapy" is False OR "Adverse Events Caused By A Previously Administered Agent" is True

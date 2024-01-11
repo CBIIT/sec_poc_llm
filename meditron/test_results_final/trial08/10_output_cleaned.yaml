@@ -1,0 +1,8 @@
+Original Text: |
+    Has received more than 2 lines of prior systemic therapy for locally advanced/metastatic breast cancer.
+Disease/Condition: Locally Advanced Breast Cancer
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    Disease is "Locally Advanced Breast Cancer" AND Prior Systemic Therapy is True

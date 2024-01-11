@@ -1,0 +1,28 @@
+
+    Original Text: Active infection requiring systemic therapy
+    Disease/Condition: Infection, Systemic Therapy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK INF == True, INF == True
+
+Criterion:
+    Patients with a history of malignancy within the last 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy within the last 5 years
+    Disease/Condition: History of Malignancy, Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK HISTM == True, MALIGNANCY == True
+
+Criterion:
+    Patients with a history of malignancy within the last 10 years
+
+Output:
+    Original Text: Patients with a history of malignancy within the last 10 years
+    Disease/Condition: History of Malignancy, Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker:

@@ -1,0 +1,21 @@
+
+    Original Text: Received live vaccine within 30 days of planned start of study treatment
+    Disease/Condition: none
+    Procedure: Vaccination
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Vaccination" is False
+
+Criterion:
+    Patients with a history of malignancy other than non-melanoma skin cancer, carcinoma in situ of the cervix uteri, or basal cell or squamous cell carcinoma of the skin within the last 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy other than non-melanoma skin cancer, carcinoma in situ of the cervix uteri, or basal cell or squamous cell carcinoma of the skin within the last 5 years
+    Disease/Condition: none
+    Procedure: Malignancy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Malignancy" is False
+
+Criterion:
+    Patients with a history of malignancy other than non-

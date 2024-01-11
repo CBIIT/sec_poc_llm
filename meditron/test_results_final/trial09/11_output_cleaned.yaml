@@ -1,0 +1,8 @@
+Original Text: |
+    Preexisting gastrointestinal disorders/conditions that may interfere with ingestion or absorption of oral medications.
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Preexisting gastrointestinal disorders/conditions that may interfere with ingestion or absorption of oral medications." is False

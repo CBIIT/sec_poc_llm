@@ -1,0 +1,18 @@
+
+    Original Text: Serum aspartate transaminase (AST) and serum alanine transaminase (ALT) =< 2.5 x upper limit of normal
+    Disease/Condition: Liver Metastasis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: SGOT <= 2.5 * ULN, SGPT <= 5 * ULN
+
+Criterion:
+    Patients must have histologically confirmed adenocarcinoma of the stomach or gastroesophageal junction
+
+Output:
+    Original Text: Patients must have histologically confirmed adenocarcinoma of the stomach or gastroesophageal junction
+    Disease/Condition: Stomach Cancer, Gastric Cancer, Esophagogastric Junction Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HISTOLOGICALLY_CONFIRMED_ADENOCARCINOMA_OF_THE_

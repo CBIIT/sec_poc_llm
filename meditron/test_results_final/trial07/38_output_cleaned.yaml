@@ -1,0 +1,8 @@
+Original Text: |
+    Has a known human immunodeficiency virus (HIV), hepatitis B (HBV), or hepatitis C (HCV) infection
+Disease/Condition: HIV, Hepatitis B Virus Infection, Hepatitis C Virus Infection
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    HIV == True, HBV == True, HCV == True

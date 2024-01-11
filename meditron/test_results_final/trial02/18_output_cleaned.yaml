@@ -1,0 +1,8 @@
+Original Text: |
+    Patients must have adequate organ function as defined by the following criteria within 2 weeks prior to randomization
+Disease/Condition: none
+Procedure: Adequate Organ Function
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Adequate Organ Function" is True

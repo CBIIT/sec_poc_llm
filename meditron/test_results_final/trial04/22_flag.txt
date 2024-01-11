@@ -1,0 +1,1 @@
+Input reported as not captured, but the outputs suggest that the model understood the full criterion.

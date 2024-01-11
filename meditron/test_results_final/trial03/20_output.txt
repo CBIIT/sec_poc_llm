@@ -1,0 +1,18 @@
+
+    Original Text: Previous use of CDK 4/6 or HDAC inhibitors for cancer treatment
+    Disease/Condition: CDK 4/6 Inhibitor, HDAC Inhibitor
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: PREVIOUS_USE_OF_CDK4_OR_HDAC == True, PREVIOUS_USE_OF_CDK4_OR_HDAC == True
+
+Criterion:
+    Patients with a history of prior malignancy other than nonmelanoma skin cancer within 5 years before enrollment
+
+Output:
+    Original Text: Patients with a history of prior malignancy other than nonmelanoma skin cancer within 5 years before enrollment
+    Disease/Condition: Non-Melanoma Skin Cancer, Other Prior Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HISTORY_OF_PRIOR_MALIGNANCY_OTHER_THAN_N

@@ -1,0 +1,8 @@
+Original Text: |
+    Biopsy proven metastatic melanoma or non-squamous NSCLC with at least one untreated cerebral metastasis that is at least 5 mm AND twice the magnetic resonance imaging (MRI) slice thickness, but less than 20 mm, that is asymptomatic and does not require local therapy at the time of enrollment (â€œclinically evaluable lesion[s]â€); an untreated brain metastasis is defined as a lesion not present at the time of whole brain radiation therapy or included in a stereotactic radiotherapy field (or within 2 mm of a treated lesion), or any lesion that is new or unequivocally progressing since prior radiation therapy; all MRIs at screening will be reviewed centrally at Yale for sign off of eligibility
+Disease/Condition: Metastatic melanoma
+Procedure: None
+Drug: None
+Biomarker: None
+Computable Rule: |
+    "Biopsy proven metastatic melanoma or non-squamous NS

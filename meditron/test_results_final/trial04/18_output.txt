@@ -1,0 +1,24 @@
+
+    Original Text: Known active hepatitis B infection, known history of hepatitis C or human immunodeficiency virus (HIV) infection
+    Disease/Condition: Hepatitis B Infection, Hepatitis C Infection, HIV Infection
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK HBV == True, HCV == True, HIV == True
+
+Criterion:
+    Patients with a history of malignancy within the last 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy within the last 5 years
+    Disease/Condition: History of Malignancy, History of Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MALIGNANCY == True
+
+Criterion:
+    Patient has a history of cardiac surgery within the past 12 months
+
+Output:
+    Original Text: Patient has a history of cardiac surgery within the past 12

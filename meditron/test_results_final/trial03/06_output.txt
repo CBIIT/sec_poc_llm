@@ -1,0 +1,42 @@
+
+    Original Text: Able to swallow pills
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Able to swallow pills
+
+Output:
+    Original Text: Able to swallow pills
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Able to swallow pills
+
+Output:
+    Original Text: Able to swallow pills
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Able to swallow pills
+
+Output:
+    Original Text: Able to swallow pills
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:

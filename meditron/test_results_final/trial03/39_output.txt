@@ -1,0 +1,18 @@
+
+    Original Text: Women of child-bearing potential defined as all women physiologically capable of becoming pregnant or men whose female partner is of child-bearing potential, unless they are using highly effective methods of contraception during the study treatment and for 6 months after stopping the treatment. Highly effective contraception methods include:
+* Total abstinence (when this is in line with the preferred and usual lifestyle of the patient. Periodic abstinence (e.g., calendar, ovulation, symptothermal, post-ovulation methods) and withdrawal are not acceptable methods of contraception
+* Female sterilization (have had surgical bilateral oophorectomy with or without hysterectomy), total hysterectomy or tubal ligation at least 6 weeks before taking study treatment. In case of oophorectomy alone, only when the reproductive status of the woman has been confirmed by follow up hormone level assessment
+* Male partner sterilization (at least 6 months prior to screening). For female patients on the study, the vasectomized male partner should be the sole partner for that patient and the success of the vasectomy must be medically confirmed as per local practice
+* Placement of an intrauterine device (IUD)
+* Use of hormonal contraception plus a barrier contraceptive
+    Disease/Condition: Women of child-bearing potential
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: Disease is "Women of child-bearing potential" AND Hormonal contraception is True OR Barrier contraception is True
+
+Criterion:
+    Patients with metastatic breast cancer who have received no more than two lines of chemotherapy for advanced disease and have progressed on or within 12 months of adjuvant therapy or on first-line therapy for metastatic disease.
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have received no more than two lines of chemotherapy for advanced disease and have progressed on or within 12 months of adjuvant therapy or on first-line therapy for metastatic disease.

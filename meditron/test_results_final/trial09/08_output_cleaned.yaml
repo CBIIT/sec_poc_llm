@@ -1,0 +1,8 @@
+Original Text: |
+    Symptomatic and/or untreated central nervous system (CNS) metastases or leptomeningeal disease.
+Disease/Condition: CNS Metastasis, Leptomeningeal Disease
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK MTS == True OR LK MLD == True

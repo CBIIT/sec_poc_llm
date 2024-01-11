@@ -1,0 +1,8 @@
+Original Text: |
+    Total serum bilirubin =< 1.5 x ULN
+Disease/Condition: None
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    Total serum bilirubin <= 1.5 * ULN

@@ -1,0 +1,8 @@
+Original Text: |
+    Non-study related minor surgical procedure â‰¤7 days, or major surgical procedure of â‰¤ 5 weeks prior to first dose of study treatment.
+Disease/Condition: none
+Procedure: Minor Surgery, Major Surgery
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Minor Surgery" OR "Major Surgery" is False

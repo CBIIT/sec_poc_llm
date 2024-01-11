@@ -1,0 +1,8 @@
+Original Text: |
+    Has severe hypersensitivity (â‰¥Grade 3) to pembrolizumab and/or any of its excipients
+Disease/Condition: none
+Procedure: none
+Drug: Pembrolizumab
+Biomarker: none
+Computable Rule: |
+    "Severe Hypersensitivity" is False

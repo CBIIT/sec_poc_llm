@@ -1,0 +1,1 @@
+Input not captured. First instance of non-nested list. Model failed to capture text inside of parantheses.

@@ -1,0 +1,27 @@
+
+    Original Text: Has an Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1.
+    Disease/Condition: ECOG Performance Status
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: ECOGPS == 0 OR ECOGPS == 1
+
+Criterion:
+    Patients with histologically confirmed advanced gastric adenocarcinoma
+
+Output:
+    Original Text: Patients with histologically confirmed advanced gastric adenocarcinoma
+    Disease/Condition: Gastric Adenocarcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: GA == True
+
+Criterion:
+    Patients with histologically confirmed advanced gastric adenocarcinoma
+
+Output:
+    Original Text: Patients with histologically confirmed advanced gastric adenocarcinoma
+    Disease/Condition: Gastric Adenocarcinoma
+    Procedure: none
+   

@@ -1,0 +1,32 @@
+
+    Original Text: Radiologically-measurable disease
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiologically-measurable disease" is True
+
+Criterion:
+    Patients with measurable disease (by RECIST)
+
+Output:
+    Original Text: Patients with measurable disease (by RECIST)
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Patients with measurable disease (by RECIST)" is True
+
+Criterion:
+    Patients with measurable disease (by RECIST)
+
+Output:
+    Original Text: Patients with measurable disease (by RECIST)
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Patients with measurable disease (by RECIST)" is True
+
+Criterion:
+    Patients with meas

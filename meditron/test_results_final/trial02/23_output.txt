@@ -1,0 +1,32 @@
+
+    Original Text: Hemoglobin >= 8.0 g/dL
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Hemoglobin >= 8.0 g/dL
+
+Criterion:
+    Hemoglobin < 8.0 g/dL
+
+Output:
+    Original Text: Hemoglobin < 8.0 g/dL
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Hemoglobin < 8.0 g/dL
+
+Criterion:
+    Hemoglobin > 8.0 g/dL
+
+Output:
+    Original Text: Hemoglobin > 8.0 g/dL
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Hemoglobin > 8.0 g/dL
+
+Criterion:
+   

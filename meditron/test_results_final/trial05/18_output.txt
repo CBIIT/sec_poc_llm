@@ -1,0 +1,25 @@
+
+    Original Text: Calculated creatinine clearance (Cockcroft-Gault equation) >= 30 mL/min (within 7 days prior to treatment registration)
+    Disease/Condition: None
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: Cockcroft-Gault_Clearance >= 30
+
+Criterion:
+    Patients must have measurable disease per RECIST v1.1
+
+Output:
+    Original Text: Patients must have measurable disease per RECIST v1.1
+    Disease/Condition: None
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: MeasurableDiseasePerRECISTv1.1 == True
+
+Criterion:
+    Patient must have received no more than two prior chemotherapy regimens for metastatic disease
+
+Output:
+    Original Text: Patient must have received no more than two prior chemotherapy regimens for metastatic disease
+    Disease/Condition: None

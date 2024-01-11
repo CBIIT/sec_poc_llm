@@ -1,0 +1,1 @@
+Input reported as captured because the model regurgitated the criterion further down in the output. It is a false positive.

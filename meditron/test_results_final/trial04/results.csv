@@ -1,0 +1,110 @@
+Criterion Text In,Criterion Text Out,Inclusion/Exclusion,Disease,Biomarker,Procedure,Drug,Criterion Rule
+">= 18 years of age and able to provide informed consent
+",>= 18 years of age and able to provide informed consent,Inclusion,,,,,"> 18 AND (age OR ability)
+"
+"Pathologically confirmed diagnosis of high-grade (grade 2-3) epithelial ovarian cancer, primary peritoneal cancer, or fallopian tube carcinoma (EOC), which are serous, endometrioid, clear cell, mucinous, mixed epithelial, or undifferentiated. The study does not include pure sarcoma, stromal, or germ-cell tumors. Tumors that are substantially high-grade carcinoma and have focal elements of lower grade tumors or sarcomatous elements (e.g., carcinosarcoma) are eligible
+","Pathologically confirmed diagnosis of high-grade (grade 2-3) epithelial ovarian cancer, primary peritoneal cancer, or fallopian tube carcinoma (EOC), which are serous, endometrioid, clear cell, mucinous, mixed epithelial, or undifferentiated. The study does not include pure sarcoma, stromal, or germ-cell tumors. Tumors that are substantially high-grade carcinoma and have focal elements of lower grade tumors or sarcomatous elements (e.g., carcinosarcoma) are eligible",Inclusion,Epithelial Ovarian Cancer,,,,"Disease is ""Epithelial Ovarian Cancer"" OR ""Primary Peritoneal Cancer"" OR ""Fallopian Tube Carcinoma"" AND Grade is ""High Grade""
+"
+"Have measurable disease or detectable (non-measurable) disease
+* Measurable disease is defined as at least 1 lesion that can be accurately measured in at least 1 dimension (longest diameter to be recorded). Each lesion must be >= 10 mm when measured by computed tomography (CT), magnetic resonance imaging (MRI), or caliper measurement at clinical examination or >= 20 mm when measured by chest x-ray. Lymph nodes must be >= 15 mm in short axis when measured by CT or MRI
+* Detectable (non-measurable) disease is defined as not having measurable disease but having:
+** Baseline values of CA-125 at least 2 x upper limit of normal AND EITHER
+*** Ascites and/or pleural effusion attributed to tumor OR
+*** Solid and/or cystic abnormalities on radiographic imaging consistent with recurrent disease that do not meet Response Evaluation Criteria in Solid Tumors (RECIST) version 1.1 definitions for target lesions. The protocol is using immune-related (i)RECIST for response evaluation
+",Have measurable disease or detectable (non-measurable) disease,Inclusion,"Measurable Disease, Non-Measurable Disease",,,,"LK MTS == True, MTS == True
+"
+"Patientâ€™s carcinoma should express the FSHR antigen, detectable by polymerase chain reaction (PCR) analysis of archival tumor sample
+* Expression will be graded as positive, negative, inconclusive/uninterpretable. Only patients without a negative result will be eligible for the treatment with FSCER T cells. Others will be allowed to participate in the treatment portion if other criteria are met
+** Historical FFPE will be requested also for Western Blot and IHC analysis for exploration of the correlation to PCR results, but it is not necessary to have obtained it or the results before enrollment; tissue IHC FSHR positivity in the historical FFPE sample is not required for eligibility
+** The tissue screening portion can be conducted at any time before the eligibility determination is made for the treatment portion of the study. This means patients age 18 or greater with histologies listed in the inclusion criteria may have their tissue screened for possible future eligibility on this study
+","Patientâ€™s carcinoma should express the FSHR antigen, detectable by polymerase chain reaction (PCR) analysis of archival tumor sample",Inclusion,Carcinoma,FSHR,Polymerase Chain Reaction,,"""FSHR"" is True AND ""Polymerase Chain Reaction"" is True
+"
+"Patients must have had 1 prior platinum-based chemotherapeutic regimen for the management of ovarian, primary peritoneal, or fallopian tube carcinoma and at least 2 prior chemotherapy regimens
+","Patients must have had 1 prior platinum-based chemotherapeutic regimen for the management of ovarian, primary peritoneal, or fallopian tube carcinoma and at least 2 prior chemotherapy regimens",Inclusion,Ovarian cancer,,Platinum-based chemotherapy,,"""Platinum-based chemotherapy"" is True and ""at least 2 prior chemotherapy regimens"" is True
+"
+"Patients should be considered platinum- refractory (progression while on a prior platinum chemotherapy) or resistant (persistence or recurrence within 6 months after a prior platinum chemotherapy) and be deemed unlikely to have significant benefit from any standard therapies by the treating investigator
+",Patients should be considered platinum-refractory (progression while on a prior platinum chemotherapy) or resistant (persistence or recurrence within 6 months after a prior platinum chemotherapy) and be deemed unlikely to have significant benefit from any standard therapies by the treating investigator,Inclusion,,,,,"""Platinum Refractory OR Resistant AND Unlikely To Benefit"" is True
+"
+"Patients with a known germline or somatic BRCA pathogenic mutation should have a prior PARP inhibitor and subsequent progression, unless they have a documented history of intolerance or inability to swallow oral medications
+","Patients with a known germline or somatic BRCA pathogenic mutation should have a prior PARP inhibitor and subsequent progression, unless they have a documented history of intolerance or inability to swallow oral medications",Inclusion,BRCA1/2 mutation,BRCA1/2 mutation,,,"Disease is ""BRCA1/2 mutation"" AND Prior PARP inhibitor is False OR Prior PARP inhibitor is True AND Subsequent progression is False
+"
+"Patients are allowed to receive, but are not required to receive, up to 6 additional prior chemotherapy treatment regimens (including platinum-based chemotherapy). Prior maintenance therapy with an agent when there has not been progression will not be a separate treatment regimen. Prior hormonal therapy is allowed, and when used alone, even as a therapeutic agent, it does not count toward this prior regimen requirement. Hormonal therapy must be discontinued at least 1 week before T-cell infusion. Continuation of hormone replacement therapy is permitted
+","Patients are allowed to receive, but are not required to receive, up to 6 additional prior chemotherapy treatment regimens (including platinum-based chemotherapy). Prior maintenance therapy with an agent when there has not been progression will not be a separate treatment regimen. Prior hormonal therapy is allowed, and when used alone, even as a therapeutic agent, it does not count toward this prior regimen requirement. Hormonal therapy must be discontinued at least 1 week before T-cell infusion. Continuation of hormone replacement therapy is permitted",Inclusion,,,Chemotherapy,,"""Chemotherapy"" is True OR ""Platinum-based chemotherapy"" is True OR ""Hormonal therapy"" is True AND (""hormonal therapy"" is False) OR ""Hormone replacement therapy"" is True
+"
+"Patients are allowed to receive, but are not required to receive, biologic/targeted therapy alone or as part of their treatment regimens. When used as treatment after progression, these treatments will count as a separate therapy
+","Patients are allowed to receive, but are not required to receive, biologic/targeted therapy alone or as part of their treatment regimens. When used as treatment after progression, these treatments will count as a separate therapy",Inclusion,,,Biologic/Targeted Therapy,,"""Biologic/Targeted Therapy"" is True OR ""Biologic/Targeted Therapy"" is False AND ""Biologic/Targeted Therapy"" is NOT ""After Progression""
+"
+"Eastern Cooperative Oncology Group (ECOG) status of 2 or better (or Karnofsky performance status score of >= 60%)
+",Eastern Cooperative Oncology Group (ECOG) status of 2 or better (or Karnofsky performance status score of >= 60%),Inclusion,"ECOG Status, Karnofsky Performance Score",,,,"ECOG_Status == 2 OR KPS >= 60
+"
+"Life expectancy of at least 3 months
+",Life expectancy of at least 3 months,Inclusion,,,,,"none
+"
+"Adequate bone marrow, renal, and hepatic function (liver function and renal tests, grade 1 or lower)
+","Adequate bone marrow, renal, and hepatic function (liver function and renal tests, grade 1 or lower)",Inclusion,"Bone Marrow, Renal Function, Hepatic Function",,,,"BM == True, RF == True, HF == True
+"
+"Absolute neutrophil count (ANC) >= 1500/mm^3
+",Absolute neutrophil count (ANC) >= 1500/mm^3,Inclusion,Neutropenia,,,,"ANC >= 1500
+"
+"Platelets >= 100 000/mm^3
+",Platelets >= 100 000/mm^3,Inclusion,,,,,"PLT >= 100000
+"
+"No anticancer therapy (chemotherapy, biologic therapy, or immunotherapy) in the 3 weeks before the T-cell infusion (and all hematologic effects have resolved). No prior immunotherapy with checkpoint blockade (e.g., PD1 inhibitor, PDL1 inhibitor, or CTL4- antagonist or similar agent) in the 6 months before the T-cell infusion (and all clinically significant related side effects must be resolved)
+","No anticancer therapy (chemotherapy, biologic therapy, or immunotherapy) in the 3 weeks before the T-cell infusion (and all hematologic effects have resolved). No prior immunotherapy with checkpoint blockade (e.g., PD1 inhibitor, PDL1 inhibitor, or CTL4- antagonist or similar agent) in the 6 months before the T-cell infusion (and all clinically significant related side effects must be resolved)",Inclusion,"Chemotherapy, Biological Therapy, Immunotherapy, Checkpoint Blockade Inhibitors",,,,"LK MTS == False, MTS == False, MTS == False, MTS == False
+"
+"Patient agrees to undergo placement of either interventional radiologically placed or surgically placed peritoneal port (may be temporary or subcutaneous)
+",Patient agrees to undergo placement of either interventional radiologically placed or surgically placed peritoneal port (may be temporary or subcutaneous),Inclusion,,,,,"""Placement of either interventional radiologically placed or surgically placed peritoneal port (may be temporary or subcutaneous)"" is True
+"
+"Although it is anticipated that patients who are eligible for this study will not have childbearing potential, any patient the treating doctor or investigator deems to have childbearing potential must agree to an acceptable means of contraception from the time of screening to at least 6 months after T-cell infusion
+","Although it is anticipated that patients who are eligible for this study will not have childbearing potential, any patient the treating doctor or investigator deems to have childbearing potential must agree to an acceptable means of contraception from the time of screening to at least 6 months after T-cell infusion",Inclusion,,,Childbearing Potential,,"""Childbearing Potential"" is True OR ""Childbearing Potential"" is False AND ""Acceptable Means of Contraception"" is True
+"
+"Known active hepatitis B infection, known history of hepatitis C or human immunodeficiency virus (HIV) infection
+","Known active hepatitis B infection, known history of hepatitis C or human immunodeficiency virus (HIV) infection",Exclusion,"Hepatitis B Infection, Hepatitis C Infection, HIV Infection",,,,"LK HBV == True, HCV == True, HIV == True
+"
+"Clinical or radiographic evidence of bowel obstruction or need
+",Clinical or radiographic evidence of bowel obstruction or need,Exclusion,,,Bowel Obstruction,,"""Bowel Obstruction"" is True or ""Need"" is True
+"
+"For parenteral hydration and/or nutrition
+",For parenteral hydration and/or nutrition,Exclusion,,,,,"none
+"
+"Known or suspected extensive abdominal adhesions that would preclude port placement or infusion
+",Known or suspected extensive abdominal adhesions that would preclude port placement or infusion,Exclusion,"Adhesive Peritonitis, Abdominal Adhesions, Extensive Abdominal Adhesions",,,,"LK AAB == True, AAB == True
+"
+"Any of the following cardiac conditions:
+* Clinically significant heart disease (New York Heart Association class 3 or 4) or symptomatic congestive heart failure
+* Myocardial infarction < 6 months before enrollment
+* History of clinically significant ventricular arrhythmia or unexplained syncope that is not believed to be vasovagal in nature or due to dehydration 
+* History of severe non-ischemic cardiomyopathy with ejection fraction < 20%
+* Findings on baseline electrocardiogram (ECG) or echocardiogram (ECHO) that, in the opinion of the patientâ€™s treating physician or investigator, would require medical intervention before anticancer therapy
+",Any of the following cardiac conditions:,Exclusion,Clinically significant heart disease (New York Heart Association class 3 or 4) or symptomatic congestive heart failure,,Myocardial infarction < 6 months before enrollment,,"""Any of the following cardiac conditions:"" AND NOT (""Myocardial infarction < 6 months before enrollment"") AND NOT (""History of clinically significant ventricular arrhythmia or unexplained syncope that is not believed to be vasovagal in nature or due to dehydration"") AND NOT (""History of severe non-ischemic cardiomyopathy with ejection fraction < 20%"") AND NOT (""Findings on baseline electrocardiogram (ECG) or echocardiogram (ECHO) that, in the opinion of the patientâ€™s treating physician or investigator, would require medical intervention before anticancer therapy"")
+"
+"Active autoimmune disease (excluding autoimmune thyroid disease on a stable thyroid regimen). Such conditions include but are not limited to systemic lupus erythematous, rheumatoid arthritis, ulcerative colitis, Crohnâ€™s disease, and temporal arteritis
+",Active autoimmune disease (excluding autoimmune thyroid disease on a stable thyroid regimen),Exclusion,"Autoimmune Thyroid Disease, Systemic Lupus Erythematosus, Rheumatoid Arthritis, Ulcerative Colitis, Crohn's Disease, Temporal Arteritis",,,,"AID == True, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID =="
+"Known or suspected leptomeningeal disease and patients with metastases to the brain stem, midbrain, pons, or medulla
+","Known or suspected leptomeningeal disease and patients with metastases to the brain stem, midbrain, pons, or medulla",Exclusion,"Leptomeningeal Disease, Brain Stem, Midbrain, Pons, Medulla",,,,"LK MTS == True OR BS MTS == True OR MB MTS == True OR PS MTS == True OR MD MTS == True
+"
+"Known or suspected untreated brain metastases. Patients with radiographically stable, asymptomatic previously irradiated lesions are eligible provided patient is > 4 weeks beyond completion of cranial irradiation and > 3 weeks off of corticosteroid therapy at the time of study intervention
+","Known or suspected untreated brain metastases. Patients with radiographically stable, asymptomatic previously irradiated lesions are eligible provided patient is > 4 weeks beyond completion of cranial irradiation and > 3 weeks off of corticosteroid therapy at the time of study intervention",Exclusion,Brain Metastasis,,Radiotherapy,,"""Brain Metastasis"" AND (""Radiotherapy"" OR ""Radiographically Stable"") AND (""Asymptomatic"" OR ""> 4 Weeks"") AND (""> 3 Weeks Off Corticosteroids"")
+"
+"Prior history of clinically significant seizure disorder (e.g., not including childhood febrile seizures)
+","Prior history of clinically significant seizure disorder (e.g., not including childhood febrile seizures)",Exclusion,,,Seizure Disorder,,"""Seizure Disorder"" is False
+"
+"Any concurrent active malignancies, defined as malignancies requiring any therapy other than expectant observation, because adverse events (AEs) resulting from these malignancies or their treatment may confound our assessment of the safety of adoptive T-cell therapy for ovarian cancer
+","Any concurrent active malignancies, defined as malignancies requiring any therapy other than expectant observation, because adverse events (AEs) resulting from these malignancies or their treatment may confound our assessment of the safety of adoptive T-cell therapy for ovarian cancer",Exclusion,"Concurrent Active Malignancy, Active Malignancy",,,,"MALIGNANCY == True, ACTIVE == True
+"
+"Prior radiotherapy to any portion of the abdominal cavity or pelvis
+",Prior radiotherapy to any portion of the abdominal cavity or pelvis,Exclusion,,,Radiotherapy,,"""Radiotherapy"" is False
+"
+"Current pregnancy or lactation
+",Current pregnancy or lactation,Exclusion,Pregnancy,,,,"Disease is ""Pregnancy""
+"
+"Any of the following within 28 days of first date of study treatment:
+* Serious uncontrolled medical illness or disorder that in the opinion of the treating physician would make the patient ineligible for the study
+* Active uncontrolled infection (with the exception of uncomplicated urinary tract infection)
+* Abdominal fistula, gastrointestinal perforation, or intraabdominal abscess
+* Abdominal surgery (for reasons other than IP port placement)
+",Any of the following within 28 days of first date of study treatment,Exclusion,,,,,"""Any of the following within 28 days of first date of study treatment"" is False
+"
+"Any other issue which, in the opinion of the treating physician or principal investigator, would make the patient ineligible for the study
+","Any other issue which, in the opinion of the treating physician or principal investigator, would make the patient ineligible for the study",Exclusion,,,,,"""Any other issue which, in the opinion of the treating physician or principal investigator, would make the patient ineligible for the study"" is True
+"

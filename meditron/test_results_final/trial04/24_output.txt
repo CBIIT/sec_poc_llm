@@ -1,0 +1,21 @@
+
+    Original Text: Known or suspected leptomeningeal disease and patients with metastases to the brain stem, midbrain, pons, or medulla
+    Disease/Condition: Leptomeningeal Disease, Brain Stem, Midbrain, Pons, Medulla
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == True OR BS MTS == True OR MB MTS == True OR PS MTS == True OR MD MTS == True
+
+Criterion:
+    Patients with known or suspected central nervous system (CNS) metastases should be excluded from this study.
+
+Output:
+    Original Text: Patients with known or suspected central nervous system (CNS) metastases should be excluded from this study.
+    Disease/Condition: CNS Metastasis, Central Nervous System
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: CNSMTS == True
+
+Criterion:
+    Patients with

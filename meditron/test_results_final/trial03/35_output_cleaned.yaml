@@ -1,0 +1,8 @@
+Original Text: |
+    Use of any of the following substances =< 7 days prior to the start of the treatment
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    <(use_of_any_of_the_following_substances) >< (7_days_prior_to_start_of_treatment) >

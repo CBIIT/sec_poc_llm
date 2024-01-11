@@ -1,0 +1,9 @@
+elapsed_time: 18s
+was_input_captured: False
+original_text: |
+    Any of the following within 28 days of first date of study treatment:
+    * Serious uncontrolled medical illness or disorder that in the opinion of the treating physician would make the patient ineligible for the study
+    * Active uncontrolled infection (with the exception of uncomplicated urinary tract infection)
+    * Abdominal fistula, gastrointestinal perforation, or intraabdominal abscess
+    * Abdominal surgery (for reasons other than IP port placement)
+inclusion: False

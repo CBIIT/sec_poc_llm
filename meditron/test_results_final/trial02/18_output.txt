@@ -1,0 +1,22 @@
+
+    Original Text: Patients must have adequate organ function as defined by the following criteria within 2 weeks prior to randomization
+    Disease/Condition: none
+    Procedure: Adequate Organ Function
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Adequate Organ Function" is True
+
+Criterion:
+    Patients must have adequate organ function as defined by the following criteria within 2 weeks prior to randomization:
+* NOTE: it is strongly encouraged that these tests take place no more than one week prior to randomization to meet the 2 week requirement for randomization
+
+Output:
+    Original Text: Patients must have adequate organ function as defined by the following criteria within 2 weeks prior to randomization
+    Disease/Condition: none
+    Procedure: Adequate Organ Function
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Adequate Organ Function" is True
+
+Criterion:
+    Patients must have adequate organ function as defined by the following criteria within 2 weeks prior to random

@@ -1,0 +1,14 @@
+
+    Original Text: Patients must not have any history of locally advanced or metastatic cancer requiring systemic therapy within 5 years from randomization, with the exception of in-situ carcinomas and non-melanoma skin cancer; patients must have no previous primary lung cancer diagnosed concurrently or within the past 2 years
+    Disease/Condition: none
+    Procedure: None
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Locally Advanced or Metastatic Cancer Requiring Systemic Therapy" is False and "Non-Melanoma Skin Cancer" is True and "In Situ Carcinoma" is True and "Lung Cancer Diagnosed Concurrently or Within the Past 2 Years" is False
+
+Criterion:
+    Patients must not have had prior chemotherapy, targeted small molecule therapy, or immunotherapy for NSCLC
+
+Output:
+    Original Text: Patients must not have had prior chemotherapy, targeted small molecule therapy, or immunotherapy for NSCLC
+    Disease/Condition: none

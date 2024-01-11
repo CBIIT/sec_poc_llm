@@ -1,0 +1,13 @@
+
+    Original Text: Patients should be considered platinum-refractory (progression while on a prior platinum chemotherapy) or resistant (persistence or recurrence within 6 months after a prior platinum chemotherapy) and be deemed unlikely to have significant benefit from any standard therapies by the treating investigator
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Platinum Refractory OR Resistant AND Unlikely To Benefit" is True
+
+Criterion:
+    Patients with histologically confirmed advanced non-small cell lung cancer (NSCLC), adenocarcinoma, squamous cell carcinoma, large cell carcinoma, or other NSCLC subtypes, who have progressed following treatment with at least one platinum-based regimen and at least one taxane-containing regimen
+
+Output:
+    Original Text: Patients with histologically confirmed advanced non-small cell lung cancer (NSCLC), adenocarcinoma, squamous cell carcinoma, large cell car

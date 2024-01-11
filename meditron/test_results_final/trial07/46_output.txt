@@ -1,0 +1,21 @@
+
+    Original Text: Warfarin is not permitted; prophylactic or therapeutic use of low molecular-weight heparin (e.g., enoxaparin), direct thrombin inhibitors or factor Xa inhibitors (direct or indirect) are permitted are permitted
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a history of bleeding disorders, including but not limited to hemophilia A or B, von Willebrand's disease, or platelet function disorder
+
+Output:
+    Original Text: Patients with a history of bleeding disorders, including but not limited to hemophilia A or B, von Willebrand's disease, or platelet function disorder
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a history of bleeding disorders, including but not limited to hemophilia A or B

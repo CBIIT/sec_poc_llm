@@ -1,0 +1,7 @@
+elapsed_time: 35s
+was_input_captured: False
+original_text: |
+    Positive for translocation or inversion events involving the ALK gene locus (e.g. resulting in EML4-ALK fusion) as defined by a Clinical Laboratory Improvement Act (CLIA)-approved test including: (1) translocation or inversion events involving the ALK gene locus (e.g. resulting in EML4-ALK fusion) as determined by the Vysis Break Point fluorescence in situ hybridization (FISH) assay; (2) ALK protein expression by immunohistochemistry (IHC); or (3) ALK rearrangement identified by next generation (NextGen) sequencing; this must have been performed:
+    * By a local CLIA certified laboratory: Report must indicate the results as well as the CLIA number of the laboratory which performed the assay; tissue must be available for submission for central, retrospective confirmation of the ALK fusion status via ALCHEMIST-SCREEN (ALLIANCE A151216); OR
+    * Patient registered to and the ALK fusion status performed centrally on the ALCHEMIST-SCREEN (ALLIANCE A151216)
+inclusion: True

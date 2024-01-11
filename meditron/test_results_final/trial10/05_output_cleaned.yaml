@@ -1,0 +1,8 @@
+Original Text: |
+    Progression of tumor or intolerance to therapies known to provide clinical benefit. There is no limit to the number of prior treatment regimens
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Progression of tumor or intolerance to therapies known to provide clinical benefit." is False

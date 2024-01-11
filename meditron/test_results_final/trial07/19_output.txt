@@ -1,0 +1,14 @@
+
+    Original Text: Female subject of childbearing potential should have a negative urine or serum pregnancy within 72 hours prior to receiving the first dose of study medication; if the urine test is positive or cannot be confirmed as negative, a serum pregnancy test will be required
+    Disease/Condition: Female
+    Procedure: Urine Pregnancy Test
+    Drug: None
+    Biomarker: None
+    Computable Rule: Disease is "Female" AND Urine Pregnancy Test is False
+
+Criterion:
+    Subjects with a history of malignant neoplasm other than non-melanoma skin cancer or cervical carcinoma in situ within 10 years prior to screening visit are excluded from this study
+
+Output:
+    Original Text: Subjects with a history of malignant neoplasm other than non-melanoma skin cancer or cervical carcinoma in situ within 10 years prior to screening visit are excluded from this study
+    Disease/Condition: History of Malignant Neop

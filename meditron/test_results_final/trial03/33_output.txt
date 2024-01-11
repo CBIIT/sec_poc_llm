@@ -1,0 +1,13 @@
+
+    Original Text: Concurrent use of medication with a known risk of inducing torsades de pointes (on the known risk list of crediblemeds.org) that cannot be discontinued or switched to a different medication >= 7 days prior to starting the study drug
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Torsades De Pointes" is True AND "Medication" is True AND "Discontinued" is False AND "Switched" is False
+
+Criterion:
+    Patients with a history of cardiac arrhythmias, including but not limited to atrial fibrillation, atrial flutter, ventricular tachycardia, ventricular fibrillation, or sudden cardiac death within 6 months before screening
+
+Output:
+    Original Text: Patients with a history of cardiac arrhythmias, including but not limited to atrial fibrillation, atrial flutter, ventricular tachycardia, ventricular fibrillation, or sudden

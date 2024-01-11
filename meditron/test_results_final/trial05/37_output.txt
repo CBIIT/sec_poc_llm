@@ -1,0 +1,21 @@
+
+    Original Text: Receipt of live attenuated vaccination within 30 days of receiving cetrelimab
+    Disease/Condition: none
+    Procedure: Vaccination
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Live Attenuated Vaccine" is False
+
+Criterion:
+    Patients with a history of malignancy other than non-melanoma skin cancer, carcinoma in situ of the cervix uteri, or breast ductal carcinoma in situ (DCIS) within 5 years before study entry
+
+Output:
+    Original Text: Patients with a history of malignancy other than non-melanoma skin cancer, carcinoma in situ of the cervix uteri, or breast ductal carcinoma in situ (DCIS) within 5 years before study entry
+    Disease/Condition: none
+    Procedure: Malignancy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Malignancy" is False
+
+Criterion:
+    Patients with a

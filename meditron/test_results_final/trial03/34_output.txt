@@ -1,0 +1,17 @@
+
+    Original Text: Unresolved diarrhea >= grade 2, per Common Terminology Criteria for Adverse Events (CTCAE) version (v)5.0
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Unresolved diarrhea >= grade 2, per Common Terminology Criteria for Adverse Events (CTCAE) version (v)5.0" is True
+
+Criterion:
+    Patients with a history of cardiac disease, including congestive heart failure, unstable angina, myocardial infarction, or arrhythmia within 6 months before enrollment
+
+Output:
+    Original Text: Patients with a history of cardiac disease, including congestive heart failure, unstable angina, myocardial infarction, or arrhythmia within 6 months before enrollment
+    Disease/Condition: Congestive Heart Failure
+    Procedure: Unstable Angina
+    Drug: Myocardial Infarction
+    Biom

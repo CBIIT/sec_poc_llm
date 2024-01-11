@@ -1,0 +1,16 @@
+
+    Original Text: Evidence of bleeding diathesis or clinically significant coagulopathy (in the absence of therapeutic anticoagulation); any history of significant bleeding or thrombosis should be discussed with the study principal investigators (PIs)
+    Disease/Condition: none
+    Procedure: Bleeding Diathesis, Coagulopathy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Evidence of bleeding diathesis or clinically significant coagulopathy (in the absence of therapeutic anticoagulation)" AND NOT ("any history of significant bleeding or thrombosis should be discussed with the study principal investigators (PIs)")
+
+Criterion:
+    Patients with a history of malignancy other than non-melanoma skin cancer within the last 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy other than non-melanoma skin cancer within the last 5 years
+    Disease/Condition: none
+    Procedure: Malignancy
+    Drug

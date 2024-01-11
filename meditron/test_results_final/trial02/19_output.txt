@@ -1,0 +1,18 @@
+
+    Original Text: Serum aspartate aminotransferase (AST) and serum alanine aminotransferase (ALT) =< 2.5 x upper limit of normal (ULN)
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: AST + ALT <= 2.5 * ULN
+
+Criterion:
+    Patients with a history of cardiac surgery, coronary artery bypass grafting, valve replacement, or percutaneous transluminal coronary angioplasty within 6 months prior to enrollment
+
+Output:
+    Original Text: Patients with a history of cardiac surgery, coronary artery bypass grafting, valve replacement, or percutaneous transluminal coronary angioplasty within 6 months prior to enrollment
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HistoryOfCardiacSurgeryORCoronary

@@ -1,0 +1,18 @@
+
+    Original Text: Localized adenocarcinoma of the prostate with the following features
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Localized adenocarcinoma of the prostate with the following features" is True
+
+Criterion:
+    Subjects must have histologically confirmed adenocarcinoma of the prostate
+    Subjects must have a serum PSA level less than 4 ng/ml at screening
+    Subjects must have no evidence of lymph node involvement on physical examination or imaging studies
+    Subjects must have no evidence of distant metastatic disease on physical examination, bone scan, chest x-ray, or computed tomography scan
+    Subjects must have no history of previous pelvic radiation therapy
+    Subjects must have no history of previous surgery to the prostate gland
+    Subjects must have no history of previous chemotherapy
+    Subjects must have no history of previous hormonal therapy
+    Subjects must

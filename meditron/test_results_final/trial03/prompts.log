@@ -1,0 +1,1274 @@
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+
+Output:
+    Original Text: Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: HER2-, HER2+
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2- is True OR HER2+ is True
+
+Criterion:
+    FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features:
+* Measurable disease by Response Evaluation Criteria in Solid Tumors (RECIST) 1.1
+* Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry
+* Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards)
+* Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator OR
+* Platinum-resistant (defined as progression within 12 months of last platinum therapy administration), pathologically confirmed serous ovarian cancer that is recurrent and unresectable, in the opinion of the enrolling investigator
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+
+Output:
+    Original Text: Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: HER2-, HER2+
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2- is True OR HER2+ is True
+
+Criterion:
+    FOR DOSE EXPANSION COHORT ONLY: Pathologically confirmed breast cancer with the following features:
+* Measurable disease by RECIST 1.1
+* ER and PR =< 1% by immunohistochemistry
+* Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by CAP/ASCO standards)
+* Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    FOR ALL PATIENTS:
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Age 18 or older
+
+Output:
+    Original Text: Age 18 or older
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Age >= 18
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+
+Output:
+    Original Text: Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: HER2-, HER2+
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2- is True OR HER2+ is True
+
+Criterion:
+    Eastern Cooperative Oncology Group (ECOG) performance status =< 2
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Age 18 or older
+
+Output:
+    Original Text: Age 18 or older
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Able to swallow pills
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have any affected lymph nodes or metastatic disease
+
+Output:
+    Original Text: Subject must not have any affected lymph nodes or metastatic disease
+    Disease/Condition: Lymph node-Metastases, Metastatic Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == False, MTS == False
+
+Criterion:
+    Absolute neutrophil count > 1,500/mcL
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+
+Output:
+    Original Text: Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: HER2-, HER2+
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2- is True OR HER2+ is True
+
+Criterion:
+    Platelets > 100,000/mm^3
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have any affected lymph nodes or metastatic disease
+
+Output:
+    Original Text: Subject must not have any affected lymph nodes or metastatic disease
+    Disease/Condition: Lymph node-Metastases, Metastatic Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == False, MTS == False
+
+Criterion:
+    Hemoglobin > 9 g/dL
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Age 18 or older
+
+Output:
+    Original Text: Age 18 or older
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Serum bilirubin levels =< 1.5 mg/dL. Higher levels are acceptable if these can be attributed to active hemolysis or ineffective erythropoiesis. Bilirubin above 1.5 mg/dL due to Gilbertâ€™s is still excluded
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have any affected lymph nodes or metastatic disease
+
+Output:
+    Original Text: Subject must not have any affected lymph nodes or metastatic disease
+    Disease/Condition: Lymph node-Metastases, Metastatic Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == False, MTS == False
+
+Criterion:
+    Serum aspartate transaminase (AST) and serum alanine transaminase (ALT) =< 2.5 x upper limit of normal
+* AST (serum glutamic-oxaloacetic transaminase [SGOT])/ALT (serum glutamate pyruvate transaminase [SGPT]) =< 5 x institutional upper limit of normal (ULN) for patients with liver metastasis
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have any affected lymph nodes or metastatic disease
+
+Output:
+    Original Text: Subject must not have any affected lymph nodes or metastatic disease
+    Disease/Condition: Lymph node-Metastases, Metastatic Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == False, MTS == False
+
+Criterion:
+    Alkaline phosphatase < 2.5 x upper limit of normal, unless bone metastasis is present in the absence of liver metastasis
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have any affected lymph nodes or metastatic disease
+
+Output:
+    Original Text: Subject must not have any affected lymph nodes or metastatic disease
+    Disease/Condition: Lymph node-Metastases, Metastatic Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == False, MTS == False
+
+Criterion:
+    Serum creatinine levels =< 1.5 mg/dL
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Patient must have the following laboratory values within normal limits or corrected to within normal limits with supplements before the first dose of study medication:
+* Potassium
+* Magnesium
+* Total calcium (corrected for serum albumin)
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Age 18 or older
+
+Output:
+    Original Text: Age 18 or older
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    International normalized ratio (INR) =< 1.5 (unless the patient is receiving anticoagulants and the INR is within the therapeutic range of intended use for that anticoagulant within 7 days prior to the first dose of study drug)
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have any affected lymph nodes or metastatic disease
+
+Output:
+    Original Text: Subject must not have any affected lymph nodes or metastatic disease
+    Disease/Condition: Lymph node-Metastases, Metastatic Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == False, MTS == False
+
+Criterion:
+    Presence of >= 1 metastatic sites of disease that can be safely accessed for core needle biopsy and patient willingness to undergo fresh tissue biopsies of up to 3 lesions. (Safely accessible means risk of mortality or major morbidity < 1.5%, such as core needle biopsy of breast, superficial lymph node, subcutaneous nodule, peripheral liver nodule, pleural nodule, omental nodule, etc. or per investigator discretion)
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+
+Output:
+    Original Text: Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: HER2-, HER2+
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2- is True OR HER2+ is True
+
+Criterion:
+    Negative serum or urine pregnancy test at screening for women of childbearing potential
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+
+Output:
+    Original Text: Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: HER2-, HER2+
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2- is True OR HER2+ is True
+
+Criterion:
+    Agrees to continue use of approved birth control for at least 6 months after receiving the last dose of study drugs
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Age 18 or older
+
+Output:
+    Original Text: Age 18 or older
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Able to provide informed consent and have signed an approved consent form that conforms to federal and institutional guidelines
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have any affected lymph nodes or metastatic disease
+
+Output:
+    Original Text: Subject must not have any affected lymph nodes or metastatic disease
+    Disease/Condition: Lymph node-Metastases, Metastatic Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == False, MTS == False
+
+Criterion:
+    Previous use of CDK 4/6 or HDAC inhibitors for cancer treatment
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Major surgery, radiotherapy, anticancer therapy, or investigational agents =< 4 weeks of treatment day 1 or =< 5 half-lives, whichever is shorter
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Patients with new or progressive brain metastases (active brain metastases) or leptomeningeal disease unless determined by the treating physician that immediate central nervous system (CNS) specific treatment is not required and is unlikely to be required during the first cycle of therapy
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Medical condition that in the opinion of the enrolling investigator would require the use of valproic acid within =< 5 days of the first dose of belinostat or while on study
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have any affected lymph nodes or metastatic disease
+
+Output:
+    Original Text: Subject must not have any affected lymph nodes or metastatic disease
+    Disease/Condition: Lymph node-Metastases, Metastatic Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == False, MTS == False
+
+Criterion:
+    Active infection requiring systemic therapy
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    History of allergy or hypersensitivity to belinostat, ribociclib, or their binders
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Uncontrolled arrhythmia, congestive heart failure or angina. Patients who have had a myocardial infarction, symptomatic pericarditis, or cardiac surgery should be at least 6 months from the event and free of active symptoms
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Known left ventricular ejection fraction < 50%. (Echocardiogram is not required for study entry)
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Clinically significant cardiac arrhythmias (e.g., ventricular tachycardia), complete left bundle branch block, high grade atrioventricular (AV) block (e.g., bifascicular block, Mobitz type II and third degree AV block)
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have any affected lymph nodes or metastatic disease
+
+Output:
+    Original Text: Subject must not have any affected lymph nodes or metastatic disease
+    Disease/Condition: Lymph node-Metastases, Metastatic Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == False, MTS == False
+
+Criterion:
+    Congenital long QT syndrome
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Age 18 or older
+
+Output:
+    Original Text: Age 18 or older
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Baseline corrected QT interval (QTcF) > 450 msec. The heart rate on the qualifying electrocardiogram (ECG) must be between 50 and 90 beats per minute (BPM)
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Concurrent use of medication known to inhibit UGT1A1. Patients currently taking these medications must have discontinued >= 7 days prior to treatment day 1
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Concurrent use of herbal supplements, unless approved by the principal investigator. Patients currently taking herbal supplements must have discontinued >= 7 days prior to treatment day 1
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Concurrent use of medication with a known risk of inducing torsades de pointes (on the known risk list of crediblemeds.org) that cannot be discontinued or switched to a different medication >= 7 days prior to starting the study drug
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Unresolved diarrhea >= grade 2, per Common Terminology Criteria for Adverse Events (CTCAE) version (v)5.0
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Age 18 or older
+
+Output:
+    Original Text: Age 18 or older
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Use of any of the following substances =< 7 days prior to the start of the treatment:
+* Known strong and moderate inducers or inhibitors of CYP3A4/5, including grapefruit, grapefruit hybrids, pomelos, star-fruit, and Seville oranges
+* Medications that have a narrow therapeutic window and are predominantly metabolized through CYP3A4/5. Examples include certain benzodiazepines such as alprazolam and anti-seizure medications such as carbamazepine. Ultimately determination of drugs with a narrow therapeutic window is left to the discretion of the principal investigator
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have any affected lymph nodes or metastatic disease
+
+Output:
+    Original Text: Subject must not have any affected lymph nodes or metastatic disease
+    Disease/Condition: Lymph node-Metastases, Metastatic Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == False, MTS == False
+
+Criterion:
+    Patient is currently receiving warfarin or other coumarin derived anti-coagulant, for treatment, prophylaxis or otherwise. Note: Therapy with heparin, low molecular weight heparin (LMWH), an oral factor Xa inhibitor, an oral direct thrombin inhibitor, or fondaparinux is allowed
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Impaired gastrointestinal (GI) function that may alter absorption of medicines, such as uncontrolled inflammatory bowel disease, uncontrolled vomiting, or major stomach or small bowel resection
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+
+Output:
+    Original Text: Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: HER2-, HER2+
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2- is True OR HER2+ is True
+
+Criterion:
+    Pregnant or breast feeding
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+
+Output:
+    Original Text: Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: HER2-, HER2+
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2- is True OR HER2+ is True
+
+Criterion:
+    Women of child-bearing potential defined as all women physiologically capable of becoming pregnant or men whose female partner is of child-bearing potential, unless they are using highly effective methods of contraception during the study treatment and for 6 months after stopping the treatment. Highly effective contraception methods include:
+* Total abstinence (when this is in line with the preferred and usual lifestyle of the patient. Periodic abstinence (e.g., calendar, ovulation, symptothermal, post-ovulation methods) and withdrawal are not acceptable methods of contraception
+* Female sterilization (have had surgical bilateral oophorectomy with or without hysterectomy), total hysterectomy or tubal ligation at least 6 weeks before taking study treatment. In case of oophorectomy alone, only when the reproductive status of the woman has been confirmed by follow up hormone level assessment
+* Male partner sterilization (at least 6 months prior to screening). For female patients on the study, the vasectomized male partner should be the sole partner for that patient and the success of the vasectomy must be medically confirmed as per local practice
+* Placement of an intrauterine device (IUD)
+* Use of hormonal contraception plus a barrier contraceptive
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have received prior radiotherapy
+
+Output:
+    Original Text: Subject must not have received prior radiotherapy
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Radiotherapy" is False
+
+Criterion:
+    Known human immunodeficiency virus (HIV) infection with a detectable viral load within 6 months of the anticipated start of treatment. Note: Patients on effective anti-retroviral therapy with an undetectable viral load within 6 months of the anticipated start of treatment are eligible for this trial
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have any affected lymph nodes or metastatic disease
+
+Output:
+    Original Text: Subject must not have any affected lymph nodes or metastatic disease
+    Disease/Condition: Lymph node-Metastases, Metastatic Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == False, MTS == False
+
+Criterion:
+    Known chronic hepatitis B virus (HBV) or hepatitis C virus infection with a detectable viral load. Note: Patients with an undetectable HBV viral load on appropriate suppressive therapy are eligible. Patients with an undetectable HCV viral load are eligible
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+
+Output:
+    Original Text: Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: HER2-, HER2+
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2- is True OR HER2+ is True
+
+Criterion:
+    Malignancy other than breast carcinoma or ovarian cancer (dose escalation) anticipated to need systemic treatment within 1 year in the opinion of the enrolling investigator
+
+Output:[0m
+
+[1m> Finished chain.[0m

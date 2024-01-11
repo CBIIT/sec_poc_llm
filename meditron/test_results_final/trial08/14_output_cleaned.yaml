@@ -1,0 +1,8 @@
+Original Text: |
+    Has known loss of retinoblastoma tumor suppressor gene (Rb) (testing not mandatory).
+Disease/Condition: Retinoblastoma
+Procedure: Rb testing
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Retinoblastoma" AND NOT ("Rb testing")

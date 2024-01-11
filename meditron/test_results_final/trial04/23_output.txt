@@ -1,0 +1,7 @@
+
+    Original Text: Active autoimmune disease (excluding autoimmune thyroid disease on a stable thyroid regimen)
+    Disease/Condition: Autoimmune Thyroid Disease, Systemic Lupus Erythematosus, Rheumatoid Arthritis, Ulcerative Colitis, Crohn's Disease, Temporal Arteritis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: AID == True, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID == False, AID ==

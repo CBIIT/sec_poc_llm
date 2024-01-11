@@ -1,0 +1,2 @@
+Looks like model output exceeded the max new tokens of 256.
+Bumped max new tokens to 500. Input was captured this time.

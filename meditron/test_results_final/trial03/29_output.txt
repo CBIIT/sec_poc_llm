@@ -1,0 +1,29 @@
+
+    Original Text: Congenital Long QT Syndrome
+    Disease/Condition: Congenital Long QT Syndrome
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LQTS == True
+
+Criterion:
+    Patients with a history of cardiac surgery within 12 months prior to randomization
+
+Output:
+    Original Text: Patients with a history of cardiac surgery within 12 months prior to randomization
+    Disease/Condition: Cardiac Surgery
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HistoryOfCardiacSurgery == True
+
+Criterion:
+    Patients with a history of cardiac surgery within 12 months prior to randomization
+
+Output:
+    Original Text: Patients with a history of cardiac surgery within 12 months prior to randomization
+    Disease/Condition: Cardiac Surgery
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Comput

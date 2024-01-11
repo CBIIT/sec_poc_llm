@@ -1,0 +1,8 @@
+Original Text: |
+    Metastatic or locally advanced breast cancer not amenable to curative treatment by surgery or radiotherapy.
+Disease/Condition: Metastatic breast carcinoma
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    Disease is "Metastatic breast carcinoma"

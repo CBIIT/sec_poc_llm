@@ -1,0 +1,56 @@
+Criterion Text In,Criterion Text Out,Inclusion/Exclusion,Disease,Biomarker,Procedure,Drug,Criterion Rule
+"Age â‰¥18 years at the time of informed consent.
+",Age â‰¥18 years at the time of informed consent.,Inclusion,,,,,"age >= 18
+"
+"Metastatic or locally advanced breast cancer not amenable to curative treatment by surgery or radiotherapy.
+",Metastatic or locally advanced breast cancer not amenable to curative treatment by surgery or radiotherapy.,Inclusion,Metastatic breast carcinoma,,,,"Disease is ""Metastatic breast carcinoma""
+"
+"For Phase 1b,currently receiving palbociclib and AI or fulvestrant; for Phase 2,
+currently receiving palbociclib or ribociclib and AI or fulvistrant therapy in the
+metastatic setting with evidence of progressive disease. In addition:
+-  Must have remained on palbociclib or ribociclib and AI or fulvestrant therapy for â‰¥6 months for advanced breast cancer or metastatic disease prior to evidence of progression that in the opinion of the treating physician warrants continued therapy with palbociclib or ribociclib and AI or fulvestrant.
+-  Dosage of palbociclib, ribociclib, AI and fulvestrant must remain unchanged from regimen prior to study enrollment specifically palbociclib at a dose of 125, 100, or 75 mg administered orally for 21 days every 28-day cycle or ribociclib at a dose of 200, 400, or 600 mg administered orally for 21 days every 28-day cycle.
+","For Phase 1b, currently receiving palbociclib and AI or fulvestrant; for Phase 2, currently receiving palbociclib or ribociclib and AI or fulvistrant therapy in the metastatic setting with evidence of progressive disease. In addition:
+- Must have remained on palbociclib or ribociclib and AI or fulvestrant therapy for ≥6 months for advanced breast cancer or metastatic disease prior to evidence of progression that in the opinion of the treating physician warrants continued therapy with palbociclib or ribociclib and AI or fulvestrant.
+- Dosage of palbociclib, ribociclib, AI and fulvestrant must remain unchanged from regimen prior to study enrollment specifically palbociclib at a dose of 125, 100, or 75 mg administered orally for 21 days every 28-day cycle or ribociclib at a dose of 200, 400, or 600 mg administered orally for 21 days every 28-day cycle.",Inclusion,Metastatic breast carcinoma,,,,"Disease is ""Metastatic breast carcinoma"" AND Currently receiving palbociclib and AI or fulvestrant OR Currently receiving palbociclib or ribociclib and AI or fulvistrant therapy in the metastatic setting with evidence of progressive disease. In addition:
+- Must have remained on palbociclib or ribociclib and AI or fulvestrant therapy for ≥6 months for advanced breast cancer or metastatic disease prior to evidence of progression that in the opinion of the treating physician warrants continued therapy with palbociclib or ribociclib and AI or fulvestrant.
+- Dosage of palbociclib, ribociclib, AI and fulvestrant must remain unchanged from regimen prior to study enroll"
+"All men and premenopausal women must be on medical gonadal suppression therapy with a gonadotropin analog (e.g, goserelin or leuprolide) and have estrogen levels in the postmenopausal range by institutional criteria at baseline.
+","All men and premenopausal women must be on medical gonadal suppression therapy with a gonadotropin analog (e.g, goserelin or leuprolide) and have estrogen levels in the postmenopausal range by institutional criteria at baseline.",Inclusion,Male or female patients with prostate cancer,,"Medical gonadal suppression therapy with a gonadotropin analog (e.g, goserelin or leuprolide)",,"Disease is ""Male or female patients with prostate cancer"" AND Medical gonadal suppression therapy with a gonadotropin analog (e.g, goserelin or leuprolide) is True AND Estrogen level is False
+.
+The authors report their experience in the treatment of 10 cases of acute myeloid leukaemia (AML) in children. The results obtained were compared to those reported in literature. The mean age was 7 years; the sex ratio was 1.6. The"
+"Has an Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1.
+",Has an Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1.,Inclusion,ECOG Performance Status,,,,"ECOGPS == 0 OR ECOGPS == 1
+"
+"Has documented confirmation of histological or cytological HR-positive, HER2-negative breast cancer per local laboratory testing.
+","Has documented confirmation of histological or cytological HR-positive, HER2-negative breast cancer per local laboratory testing.",Inclusion,Breast Cancer,"HR+, HER2-",,,"Disease is ""Breast Cancer"" AND HR+ is True AND HER2- is True
+"
+"Up to 2 prior lines of systemic treatment (most recent line of therapy must be palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2) in the locally advanced or metastatic setting is allowed; the participant must have shown evidence of progressive disease on palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2 in the locally advanced or metastatic setting prior to enrollment.
+",Up to 2 prior lines of systemic treatment (most recent line of therapy must be palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2) in the locally advanced or metastatic setting is allowed; the participant must have shown evidence of progressive disease on palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2 in the locally advanced or metastatic setting prior to enrollment.,Inclusion,"Locally Advanced Breast Cancer, Metastatic Breast Cancer",,"Palbociclib + Aromatase Inhibitor, Ribociclib + Aromatase Inhibitor, Fulvestrant + Palbociclib, Fulvestrant + Ribociclib","Palbociclib, Ribociclib, Fulvestrant",LK PAL
+"Willing to provide a representative fresh tumor tissue specimen prior to enrollment. The fresh tumor specimen must be obtained after evidence of progression on palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2. â€¢ Participants with bone only disease WITHOUT a soft tissue component, may opt out of the tumor biopsy.
+","Willing to provide a representative fresh tumor tissue specimen prior to enrollment. The fresh tumor specimen must be obtained after evidence of progression on palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2. â€¢ Participants with bone only disease WITHOUT a soft tissue component, may opt out of the tumor biopsy.",Inclusion,Bone Only Disease,,Tumor Biopsy,"Palbociclib, Ribociclib","(WillingnessToProvideTumorBiopsy == True) AND (BoneOnlyDisease == True)
+"
+"The presence of measurable disease as per Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 is preferred but not required. Lesions in a previously irradiated area that have not progressed are not considered measurable.
+",The presence of measurable disease as per Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 is preferred but not required. Lesions in a previously irradiated area that have not progressed are not considered measurable.,Inclusion,,,,,"""Measurable disease"" is True OR ""Not measurable disease"" is False
+"
+"Has received more than 2 lines of prior systemic therapy for locally advanced/metastatic breast cancer.
+",Has received more than 2 lines of prior systemic therapy for locally advanced/metastatic breast cancer.,Exclusion,Locally Advanced Breast Cancer,,,,"Disease is ""Locally Advanced Breast Cancer"" AND Prior Systemic Therapy is True
+"
+"Had prior exposure to any signal transducer and activator of transcription 3 (STAT3) inhibitor.
+",Had prior exposure to any signal transducer and activator of transducer 3 (STAT3) inhibitor.,Exclusion,,,,,"""Had prior exposure to any signal transducer and activator of transducer 3 (STAT3) inhibitor."" is True
+"
+"Had radiotherapy within 3 weeks prior to Cycle 1 Day 1 (cycle is 28 days). Participants must have recovered from radiotherapy toxicities prior to starting study treatment and recovered to Grade 1 or better from related side effects of such therapy (with the exception of alopecia).
+",Had radiotherapy within 3 weeks prior to Cycle 1 Day 1 (cycle is 28 days),Exclusion,,,Radiotherapy,,"""Had radiotherapy within 3 weeks prior to Cycle 1 Day 1 (cycle is 28 days)"" is True
+"
+"Has HER2 overexpression by local laboratory testing (immunohistochemical [IHC] 3+ or in situ hybridization positive).
+",Has HER2 overexpression by local laboratory testing (immunohistochemical [IHC] 3+ or in situ hybridization positive).,Exclusion,Breast cancer,HER2+,,,"Disease is ""Breast cancer"" AND HER2+ is True
+"
+"Has known loss of retinoblastoma tumor suppressor gene (Rb) (testing not mandatory).
+",Has known loss of retinoblastoma tumor suppressor gene (Rb) (testing not mandatory).,Exclusion,Retinoblastoma,,Rb testing,,"""Retinoblastoma"" AND NOT (""Rb testing"")
+"
+"Has had disease progression on more than two cyclin-dependent kinase (CDK)4/6 inhibitors. Adjuvant abemaciclib is allowed but must have progressed on palbociclib or ribociclib.
+",Has had disease progression on more than two cyclin-dependent kinase (CDK)4/6 inhibitors. Adjuvant abemaciclib is allowed but must have progressed on palbociclib or ribociclib.,Exclusion,"CDK4/6 Inhibitor, Abemaciclib, Palbociclib, Ribociclib",,,,"LK MTS == False, MTS == False, MTS == False, MTS == False
+"
+"Concurrently using other anticancer therapy. Participants must continue palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2.
+",Concurrently using other anticancer therapy. Participants must continue palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2.,Exclusion,,,,,"""Concurrently using other anticancer therapy"" is False
+"

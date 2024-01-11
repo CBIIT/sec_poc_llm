@@ -1,0 +1,18 @@
+
+    Original Text: Ability to receive pelvic radiotherapy and be willing to adhere to the SUPR-SABR regimen
+    Disease/Condition: none
+    Procedure: Pelvic Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Pelvic Radiotherapy" is True and "Willingness to Adhere to the SUPR-SABR Regimen" is True
+
+Criterion:
+    Patients with histologically confirmed squamous cell carcinoma of the cervix, uterine corpus, vagina, vulva, or anus
+
+Output:
+    Original Text: Patients with histologically confirmed squamous cell carcinoma of the cervix, uterine corpus, vagina, vulva, or anus
+    Disease/Condition: Cervix Carcinoma, Uterine Corpus Carcinoma, Vulvar Carcinoma, Anal Carcinoma
+    Procedure: Histological Examination
+    Drug: none
+    Biomarker: none
+    Computable

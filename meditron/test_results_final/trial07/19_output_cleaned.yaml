@@ -1,0 +1,8 @@
+Original Text: |
+    Female subject of childbearing potential should have a negative urine or serum pregnancy within 72 hours prior to receiving the first dose of study medication; if the urine test is positive or cannot be confirmed as negative, a serum pregnancy test will be required
+Disease/Condition: Female
+Procedure: Urine Pregnancy Test
+Drug: None
+Biomarker: None
+Computable Rule: |
+    Disease is "Female" AND Urine Pregnancy Test is False

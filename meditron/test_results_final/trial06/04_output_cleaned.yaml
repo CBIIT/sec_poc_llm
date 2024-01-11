@@ -1,0 +1,8 @@
+Original Text: |
+    In good general health as evidenced by medical history to be a candidate for curative-intent prostate cancer treatment
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "In good general health as evidenced by medical history to be a candidate for curative-intent prostate cancer treatment" is True

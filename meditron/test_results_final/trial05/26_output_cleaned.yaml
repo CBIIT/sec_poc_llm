@@ -1,0 +1,8 @@
+Original Text: |
+    History or current diagnosis of MDS/AML
+Disease/Condition: Myelodysplastic Syndrome, Acute Myeloid Leukemia
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK MDS == True OR LK AML == True

@@ -1,0 +1,8 @@
+Original Text: |
+    Stated willingness to comply with all study procedures and availability for the duration of the study
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Stated willingness to comply with all study procedures" AND "Availability for the duration of the study" is True

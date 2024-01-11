@@ -1,0 +1,8 @@
+Original Text: |
+    Currently participating and receiving study therapy or has participated in a study of an investigational agent and received study therapy or used an investigational device within 4 weeks of the first dose of study treatment
+Disease/Condition: none
+Procedure: None
+Drug: None
+Biomarker: None
+Computable Rule: |
+    "Currently participating and receiving study therapy" OR "has participated in a study of an investigational agent and received study therapy" OR "used an investigational device" is True

@@ -1,0 +1,15 @@
+
+    Original Text: Progression of tumor or intolerance to therapies known to provide clinical benefit. There is no limit to the number of prior treatment regimens
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Progression of tumor or intolerance to therapies known to provide clinical benefit." is False
+
+Criterion:
+    Patients with metastatic breast cancer who have progressed on at least one chemotherapy regimen for advanced disease, including anthracycline-and taxane-based regimens, and who have received no more than two chemotherapy regimens for metastatic disease
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have progressed on at least one chemotherapy regimen for advanced disease, including anthracycline-and taxane-based regimens, and who have received no more than two chemotherapy regimens for metastatic disease
+    Disease/Condition: Breast Cancer
+    Procedure: Anthracycline-and

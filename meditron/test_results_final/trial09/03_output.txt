@@ -1,0 +1,16 @@
+
+    Original Text: PD-L1 expression status available at or after the time of diagnosis of advanced or metastatic NSCLC disease
+    Disease/Condition: Advanced or Metastatic Non-Small Cell Lung Cancer (NSCLC)
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: PD_L1_EXPRESSION_STATUS == True, ADVANCED_OR_METASTATIC_NSCLC == True
+
+Criterion:
+    Patients with histologically confirmed stage IIIA (N2), IIIB (N3), or IIIC (M1) non-small cell lung cancer (NSCLC)
+
+Output:
+    Original Text: Patients with histologically confirmed stage IIIA (N2), IIIB (N3), or IIIC (M1) non-small cell lung cancer (NSCLC)
+    Disease/Condition: Stage IIIA (N2), Stage IIIB (N3), Stage IIIC (M1) Non-Small Cell Lung Cancer (NSCLC)
+    Procedure: none
+    D

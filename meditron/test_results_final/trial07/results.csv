@@ -1,0 +1,150 @@
+Criterion Text In,Criterion Text Out,Inclusion/Exclusion,Disease,Biomarker,Procedure,Drug,Criterion Rule
+"Metastatic melanoma or non-squamous NSCLC with untreated brain metastases
+",Metastatic melanoma or non-squamous NSCLC with untreated brain metastases,Inclusion,"Melanoma, Non-Squamous NSCLC",,,,"LK MELANOMA == True OR LK NSCLC == True, BRAINMETASIS == True
+"
+"Biopsy proven metastatic melanoma or non-squamous NSCLC with at least one untreated cerebral metastasis that is at least 5 mm AND twice the magnetic resonance imaging (MRI) slice thickness, but less than 20 mm, that is asymptomatic and does not require local therapy at the time of enrollment (â€œclinically evaluable lesion[s]â€); an untreated brain metastasis is defined as a lesion not present at the time of whole brain radiation therapy or included in a stereotactic radiotherapy field (or within 2 mm of a treated lesion), or any lesion that is new or unequivocally progressing since prior radiation therapy; all MRIs at screening will be reviewed centrally at Yale for sign off of eligibility
+","Biopsy proven metastatic melanoma or non-squamous NSCLC with at least one untreated cerebral metastasis that is at least 5 mm AND twice the magnetic resonance imaging (MRI) slice thickness, but less than 20 mm, that is asymptomatic and does not require local therapy at the time of enrollment (â€œclinically evaluable lesion[s]â€); an untreated brain metastasis is defined as a lesion not present at the time of whole brain radiation therapy or included in a stereotactic radiotherapy field (or within 2 mm of a treated lesion), or any lesion that is new or unequivocally progressing since prior radiation therapy; all MRIs at screening will be reviewed centrally at Yale for sign off of eligibility",Inclusion,Metastatic melanoma,,,,"""Biopsy proven metastatic melanoma or non-squamous NS"
+"Age >= 18
+",Age >= 18,Inclusion,,,,,"Age >= 18
+"
+"Eastern Cooperative Oncology Group (ECOG) performance status < 2
+",Eastern Cooperative Oncology Group (ECOG) performance status < 2,Inclusion,ECOG Performance Status,,,,"ECOGPS <= 1.5
+"
+"Any number of previous treatments with the exception of previous inhibitors of programmed cell death 1 (PD-1), PD-L1, or programmed cell death 1 ligand 2 (PD-L2); other prior systemic therapies must have been administered at least 2 weeks before administration of pembrolizumab; the exception to this is ipilimumab which must have been administered at least 4 weeks prior to the start of pembrolizumab; patients are not required to have had prior systemic therapy
+","Any number of previous treatments with the exception of previous inhibitors of programmed cell death 1 (PD-1), PD-L1, or programmed cell death 1 ligand 2 (PD-L2); other prior systemic therapies must have been administered at least 2 weeks before administration of pembrolizumab; the exception to this is ipilimumab which must have been administered at least 4 weeks prior to the start of pembrolizumab; patients are not required to have had prior systemic therapy",Inclusion,,,,,"""Any number of previous treatments with the exception of previous inhibitors of programmed cell death 1 (PD-1), PD-L1, or programmed cell death 1 ligand 2 (PD-L2); other prior systemic therapies must have been administered at least 2 weeks before administration of pembrolizumab; the exception to this is ipilimumab which must have been administered"
+"Life expectancy of at least 3 months
+",Life expectancy of at least 3 months,Inclusion,,,,,"none
+"
+"A history of previously treated brain metastases is allowed, provided that at least 7 days have lapsed between radiation and initiation of pembrolizumab; any brain metastasis >= 20 mm or causing symptoms must be treated with local therapy (i.e. radiation or surgical resection, as clinically appropriate) prior to study enrollment; any lesion present at the time of whole brain radiotherapy (WBRT) or included in the stereotactic radiotherapy field (or within 2 mm of the treated lesion) will NOT be considered evaluable unless it is new or documented to have progressed since treatment
+","A history of previously treated brain metastases is allowed, provided that at least 7 days have lapsed between radiation and initiation of pembrolizumab; any brain metastasis >= 20 mm or causing symptoms must be treated with local therapy (i.e. radiation or surgical resection, as clinically appropriate) prior to study enrollment; any lesion present at the time of whole brain radiotherapy (WBRT) or included in the stereotactic radiotherapy field (or within 2 mm of the treated lesion) will NOT be considered evaluable unless it is new or documented to have progressed since treatment",Inclusion,,,,,"""A history of previously treated brain metastases is allowed, provided that at least 7 days have lapsed between radiation and initiation of pembrolizumab; any brain metastasis >= 20 mm or causing symptoms must be treated with local therapy (i.e. radiation or surgical resection, as clinically appropriate)"
+"PD-L1 expression >= 1% in tumor tissue from any site is required for patients with NSCLC; tumor tissue can be archival if no intercurrent systemic therapy was administered, however if no archival tissue is available or if intercurrent systemic therapy was administered, then a biopsy must be obtained for PD-L1 testing; PD-L1 expression must be obtained via central and/or local testing of PD-L1 Immunohistochemistry (IHC) by any Food and Drug Administration (FDA)-approved assay or an assay performed in a Clinical Laboratory Improvement Act (CLIA)-certified laboratory; PD-L1 expression is not required for patients with melanoma
+","PD-L1 expression >= 1% in tumor tissue from any site is required for patients with NSCLC; tumor tissue can be archival if no intercurrent systemic therapy was administered, however if no archival tissue is available or if intercurrent systemic therapy was administered, then a biopsy must be obtained for PD-L1 testing; PD-L1 expression must be obtained via central and/or local testing of PD-L1 Immunohistochemistry (IHC) by any Food and Drug Administration (FDA)-approved assay or an assay performed in a Clinical Laboratory Improvement Act (CLIA)-certified laboratory; PD-L1 expression is not required for patients with melanoma",Inclusion,"Non-small cell lung cancer, Melanoma",PD-L1,,,"PD_L1_expression >= 1% AND Tumor_site == ""NSCLC"" OR Tumor_site == """
+"All patients are required to submit a tumor specimen for analysis (brain or extra-cerebral); a formalin-fixed paraffin-embedded (FFPE) tissue block, or a 4mm punch from an FFPE block must be submitted; if it is not possible to safely obtain a biopsy due to anatomic location of tumors, and no prior tissue is available, this requirement may be waived upon discussion with the study principal investigator (PI) or co-PI
+","All patients are required to submit a tumor specimen for analysis (brain or extra-cerebral); a formalin-fixed paraffin-embedded (FFPE) tissue block, or a 4mm punch from an FFPE block must be submitted; if it is not possible to safely obtain a biopsy due to anatomic location of tumors, and no prior tice is available, this requirement may be waived upon discussion with the study principal investigator (PI) or co-PI",Inclusion,Brain Tumor,,,,"""All patients are required to submit a tumor specimen for analysis (brain or extra-cerebral); a formalin-fixed paraffin-embedded (FFPE) tissue block, or a 4mm punch from an FFPE block must be submitted; if it is not possible to safely obtain a biopsy due to anatomic location of tumors, and no prior tissue is available, this requirement may be waived upon discussion with the study principal investigator"
+"Absolute neutrophil count (ANC) >= 1,500 /mcL
+","Absolute neutrophil count (ANC) >= 1,500 /mcL",Inclusion,ANC,,,,"ANC >= 1500
+"
+"Platelets >= 100,000/mcL
+","Platelets >= 100,000/mcL",Inclusion,,,,,"PLT >= 100000
+"
+"Hemoglobin >= 9 g/dL or >= 5.6 mmol/L without transfusion or erythropoietin (EPO) dependency (within 7 days of assessment)
+",Hemoglobin >= 9 g/dL or >= 5.6 mmol/L without transfusion or erythropoietin (EPO) dependency (within 7 days of assessment),Inclusion,Anemia,,,,"Hb >= 9 OR Hb >= 5.6 AND NOT Tx OR EPO
+"
+"Serum creatinine =< 1.5 X upper limit of normal (ULN) OR measured or calculated creatinine clearance (glomerular filtration rate [GFR] can also be used in place of creatinine or creatinine clearance [CrCl]) >= 60 mL/min for subject with creatinine levels > 1.5 X institutional ULN
+* Creatinine clearance should be calculated per institutional standard
+",Serum creatinine =< 1.5 X upper limit of normal (ULN) OR measured or calculated creatinine clearance (glomerular filtration rate [GFR] can also be used in place of creatinine or creatinine clearance [CrCl]) >= 60 mL/min for subject with creatinine levels > 1.5 X institutional ULN,Inclusion,,,,,"<(1.5 * ULN) or (60 * CrCl) >
+"
+"Serum total bilirubin =< 1.5 X ULN OR direct bilirubin =< ULN for subjects with total bilirubin levels > 1.5 ULN
+",Serum total bilirubin =< 1.5 X ULN OR direct bilirubin =< ULN for subjects with total bilirubin levels > 1.5 ULN,Inclusion,,,,,"<1.5*ULN + (direct_bilirubin <= ULN) * (total_bilirubin > 1.5*ULN)>
+"
+"Aspartate aminotransferase (AST) (serum glutamic oxaloacetic transaminase [SGOT]) and alanine aminotransferase (ALT) (serum glutamate pyruvate transaminase [SGPT]) =< 2.5 X ULN OR =< 5 X ULN for subjects with liver metastases
+",Aspartate aminotransferase (AST) (serum glutamic oxaloacetic transaminase [SGOT]) and alanine aminotransferase (ALT) (serum glutamate pyruvate transaminase [SGPT]) =< 2.5 X ULN OR =< 5 X ULN for subjects with liver metastases,Inclusion,"AST, Alanine Aminotransferase, Glutamic Oxaloacetic Transaminase, SGOT, SGPT",,Liver Metastasis,,"AST <= 2.5 * ULN AND ALT <= 5 * ULN OR AST <= 5 * ULN AND ALT <= 2.5 * ULN AND LIVER_METASTASES == True
+"
+"Albumin >= 2.5 mg/dL
+",Albumin >= 2.5 mg/dL,Inclusion,,,,,"Albumin >= 2.5 mg/dL
+"
+"International normalized ratio (INR) or prothrombin time (PT) =< 1.5 X ULN unless subject is receiving anticoagulant therapy as long as PT or partial thromboplastin time (PTT) is within therapeutic range of intended use of anticoagulants
+",International normalized ratio (INR) or prothrombin time (PT) =< 1.5 X ULN unless subject is receiving anticoagulant therapy as long as PT or partial thromboplastin time (PTT) is within therapeutic range of intended use of anticoagulants,Inclusion,,,,,"INR <= 1.5 * ULN AND PT <= 1.5 * ULN OR PTT <= 1.5 * ULN
+"
+"Activated partial thromboplastin time (aPTT) or partial thromboplastin time (PTT) =< 1.5 X ULN unless subject is receiving anticoagulant therapy as long as PT or PTT is within therapeutic range of intended use of anticoagulants
+",Activated partial thromboplastin time (aPTT) or partial thromboplastin time (PTT) =< 1.5 X ULN unless subject is receiving anticoagulant therapy as long as PT or PTT is within therapeutic range of intended use of anticoagulants,Inclusion,,,,,"""Activated partial thromboplastin time (aPTT) or partial thromboplastin time (PTT) <= 1.5 X ULN"" AND ""subject is not receiving anticoagulant therapy"" AND ""PT or PTT is within therapeutic range of intended use of anticoagulants""
+"
+"Female subject of childbearing potential should have a negative urine or serum pregnancy within 72 hours prior to receiving the first dose of study medication; if the urine test is positive or cannot be confirmed as negative, a serum pregnancy test will be required
+","Female subject of childbearing potential should have a negative urine or serum pregnancy within 72 hours prior to receiving the first dose of study medication; if the urine test is positive or cannot be confirmed as negative, a serum pregnancy test will be required",Inclusion,Female,,Urine Pregnancy Test,,"Disease is ""Female"" AND Urine Pregnancy Test is False
+"
+"Female subjects of childbearing potential should be willing to use 2 methods of birth control or be surgically sterile, or abstain from heterosexual activity for the course of the study through 120 days after the last dose of study medication; subjects of childbearing potential are those who have not been surgically sterilized or have not been free from menses for > 1 year
+","Female subjects of childbearing potential should be willing to use 2 methods of birth control or be surgically sterile, or abstain from heterosexual activity for the course of the study through 120 days after the last dose of study medication; subjects of childbearing potential are those who have not been surgically sterilized or have not been free from menses for > 1 year",Inclusion,Female,,,,"Subjects of childbearing potential are Females
+"
+"Male subjects should agree to use an adequate method of contraception starting with the first dose of study therapy through 120 days after the last dose of study therapy
+",Male subjects should agree to use an adequate method of contraception starting with the first dose of study therapy through 120 days after the last dose of study therapy,Inclusion,,,,,"""Male"" AND (""Agree"" OR ""Agreement"") AND (""Use"" OR ""Using"") AND (""Contraception"" OR ""Contraceptive"") AND (""Starting"" OR ""Started"") AND (""First"" OR ""Firsts"") AND (""Dose"" OR ""Doses"") AND (""Study"" OR ""Studies"") AND (""Therapy"" OR ""Therapies"") AND (""Through"" OR ""Throughout"") AND (""Last"" OR ""Lasts"") AND (""Day"" OR ""Days"")
+"
+"Symptomatic brain metastases; any neurologic symptoms present must have resolved with local therapy by the time of administration of study drug
+",Symptomatic brain metastases; any neurologic symptoms present must have resolved with local therapy by the time of administration of study drug,Exclusion,,,,,"""Symptomatic brain metastases"" is False and ""any neurologic symptoms present must have resolved with local therapy by the time of administration of study drug"" is True
+"
+"Patients with brain metastases for whom complete surgical resection is clinically appropriate
+",Patients with brain metastases for whom complete surgical resection is clinically appropriate,Exclusion,Brain Metastasis,,Surgery,,"""Surgery"" is True and ""Brain Metastasis"" is True
+"
+"Patients with lung cancer with squamous histology
+",Patients with lung cancer with squamous histology,Exclusion,"Squamous Cell Carcinoma, Lung Cancer",,,,"LK SCC == True, LK LungCancer == True
+"
+"Has had prior chemotherapy or targeted small molecule therapy within 2 weeks prior to start of treatment or has not recovered (i.e., =< grade 1 or at baseline) from adverse events due to a previously administered agent; previous radiation to extracranial sites may be completed at any time prior to initiation of pembrolizumab;
+* Note: If subject received major surgery, they must have recovered adequately from the toxicity and/or complications from the intervention prior to starting therapy
+* Note: Toxicity that has not recovered to =< grade 1 is allowed if it meets the inclusion requirements for laboratory parameters
+","Has had prior chemotherapy or targeted small molecule therapy within 2 weeks prior to start of treatment or has not recovered (i.e., =< grade 1 or at baseline) from adverse events due to a previously administered agent; previous radiation to extracranial sites may be completed at any time prior to initiation of pembrolizumab;
+* Note: If subject received major surgery, they must have recovered adequately from the toxicity and/or complications from the intervention prior to starting therapy
+* Note: Toxicity that has not recovered to =< grade 1 is allowed if it meets the inclusion requirements for laboratory parameters",Exclusion,,,"Chemotherapy, Targeted Small Molecule Therapy",,"""Chemotherapy OR Targeted Small Molecule Therapy"" is False AND ""Recovered"" is True
+"
+"Has had prior treatment with any other anti-PD-1 or PD-L1 or PD-L2 agent
+",Has had prior treatment with any other anti-PD-1 or PD-L1 or PD-L2 agent,Exclusion,"Anti-PD-1, Anti-PD-L1, Anti-PD-L2",,,,"LK PD-1 == True, LK PD-L1 == True, LK PD-L2 == True
+"
+"The use of corticosteroids to control cerebral edema or treat neurologic symptoms will not be allowed, and patients who previously required corticosteroids for symptom control must be off steroids for at least 1 week prior to treatment on day 1 of cycle 1; low-dose steroid use (=< 10 mg of prednisone or equivalent) as corticosteroid replacement therapy is allowed
+","The use of corticosteroids to control cerebral edema or treat neurologic symptoms will not be allowed, and patients who previously required corticosteroids for symptom control must be off steroids for at least 1 week prior to treatment on day 1 of cycle 1; low-dose steroid use (=< 10 mg of prednisone or equivalent) as corticosteroid replacement therapy is allowed",Exclusion,,,Corticosteroid,,"""corticosteroid"" OR ""prednisone"" OR ""steroid"" OR ""dexamethasone"" OR ""methylprednisolone"" OR ""hydrocortisone"" OR ""betamethasone"" OR ""triamcinolone"" OR ""cortisone"" OR ""cortone"" OR ""cortone acetate"" OR ""cortone sodium phosphate"" OR ""cortone phosphate"" OR ""cortone phosphate dis"
+"Has not recovered (i.e., =< grade 1 or at baseline) from adverse events due to agents administered more than 4 weeks earlier
+","Has not recovered (i.e., =< grade 1 or at baseline) from adverse events due to agents administered more than 4 weeks earlier",Exclusion,,,,,"""Has not recovered (i.e., =< grade 1 or at baseline) from adverse events due to agents administered more than 4 weeks earlier"" is False
+"
+"Presence of leptomeningeal disease
+",Presence of leptomeningeal disease,Exclusion,Leptomeningeal Disease,,,,"LK == True
+"
+"Has active autoimmune disease that has required systemic treatment in the past 2 years (i.e. with use of disease modifying agents, corticosteroids or immunosuppressive drugs); replacement therapy (eg., thyroxine, insulin, or physiologic corticosteroid replacement therapy for adrenal or pituitary insufficiency, etc.) is not considered a form of systemic treatment
+",Has active autoimmune disease that has required systemic treatment in the past 2 years,Exclusion,,,,,"""Has active autoimmune disease that has required systemic treatment in the past 2 years"" is False
+"
+"Pregnancy or breast feeding; should a woman become pregnant or suspect she is pregnant while participating in this study, she should inform her treating physician immediately; because there is an unknown but potential risk for adverse events in nursing infants secondary to treatment of the mother with pembrolizumab breastfeeding must be discontinued if the mother is treated with pembrolizumab
+","Pregnancy or breast feeding; should a woman become pregnant or suspect she is pregnant while participating in this study, she should inform her treating physician immediately; because there is an unknown but potential risk for adverse events in nursing infants secondary to treatment of the mother with pembrolizumab breastfeeding must be discontinued if the mother is treated with pembrolizumab",Exclusion,,,,,"""Pregnancy or breast feeding"" AND (""should a woman become pregnant or suspect she is pregnant while participating in this study"") AND (""because there is an unknown but potential risk for adverse events in nursing infants secondary to treatment of the mother with pembrolizumab"")
+"
+"Patients may not be receiving any other investigational agents and may not have participated in a study of an investigational agent or using an investigational device within 4 weeks of the first dose of treatment
+",Patients may not be receiving any other investigational agents and may not have participated in a study of an investigational agent or using an investigational device within 4 weeks of the first dose of treatment,Exclusion,,,Investigational Agent,,"""Investigational Agent"" is False and ""Investigational Device"" is False
+"
+"Either a concurrent condition (including medical illness, such as active infection requiring treatment with intravenous antibiotics or the presence of laboratory abnormalities) or history of a prior condition that places the patient at unacceptable risk if he/she were treated with the study drug or a medical condition that confounds the ability to interpret data from the study
+","Either a concurrent condition (including medical illness, such as active infection requiring treatment with intravenous antibiotics or the presence of laboratory abnormalities) or history of a prior condition that places the patient at unacceptable risk if he/she were treated with the study drug or a medical condition that confounds the ability to interpret data from the study",Exclusion,,,,,"""Either a concurrent condition (including medical illness, such as active infection requiring treatment with intravenous antibiotics or the presence of laboratory abnormalities) or history of a prior condition that places the patient at unacceptable risk if he/she were treated with the study drug or a medical condition that confounds the ability to interpret data from the study"" is True
+"
+"Concurrent, active malignancies in addition to those being studied (other than cutaneous squamous cell carcinoma or basal cell carcinoma)
+","Concurrent, active malignancies in addition to those being studied (other than cutaneous squamous cell carcinoma or basal cell carcinoma)",Exclusion,other than cutaneous squamous cell carcinoma or basal cell carcinoma,,,,"LK MTS == False, MTS == False
+"
+"Patients with active hemoptysis
+",Patients with active hemoptysis,Exclusion,Hemoptysis,,,,"""Hemoptysis"" is True
+"
+"Any contraindication to MRI (i.e. patients with pacemakers or other metal implanted medical devices); an MRI safety questionnaire is required prior to magnetic resonance (MR) imaging
+",Any contraindication to MRI (i.e. patients with pacemakers or other metal implanted medical devices); an MRI safety questionnaire is required prior to magnetic resonance (MR) imaging,Exclusion,,,Pacemaker,,"""Pacemaker"" is False
+"
+"Has a history of (non-infectious) pneumonitis that required steroids or current pneumonitis
+",Has a history of (non-infectious) pneumonitis that required steroids or current pneumonitis,Exclusion,"Pneumonitis, Steroids, Current Pneumonitis",,,,"HAS(PNEUMONITIS) OR HAS(STEROIDS) OR HAS(CURRENT_PNEUMONITIS) == True
+"
+"Has a known human immunodeficiency virus (HIV), hepatitis B (HBV), or hepatitis C (HCV) infection
+","Has a known human immunodeficiency virus (HIV), hepatitis B (HBV), or hepatitis C (HCV) infection",Exclusion,"HIV, Hepatitis B Virus Infection, Hepatitis C Virus Infection",,,,"HIV == True, HBV == True, HCV == True
+"
+"Has received a live vaccine within 30 days prior to the first dose of trial treatment
+",Has received a live vaccine within 30 days prior to the first dose of trial treatment,Exclusion,,,Vaccination,,"""Vaccination"" is True
+"
+"Inadequately controlled hypertension (defined as systolic blood pressure > 150 mmHg and/or diastolic blood pressure > 100 mmHg); anti-hypertensive therapy to achieve these parameters is allowable
+",Inadequately controlled hypertension (defined as systolic blood pressure > 150 mmHg and/or diastolic blood pressure > 100 mmHg); anti-hypertensive therapy to achieve these parameters is allowable,Exclusion,Hypertension,,,,"Systolic Blood Pressure > 150 AND Diastolic Blood Pressure > 100
+"
+"History of myocardial infarction or unstable angina within 3 months prior to cycle 1, day 1
+","History of myocardial infarction or unstable angina within 3 months prior to cycle 1, day 1",Exclusion,Myocardial Infarction,,,,"Disease is ""Myocardial Infarction""
+"
+"History of stroke or transient ischemic attack within 3 months prior to cycle 1, day 1
+","History of stroke or transient ischemiatic attack within 3 months prior to cycle 1, day 1",Exclusion,,,,,"none
+"
+"Significant vascular disease (e.g., aortic aneurysm requiring surgical repair or recent peripheral arterial thrombosis) within 6 months prior to cycle 1, day 1
+","Significant vascular disease (e.g., aortic aneurysm requiring surgical repair or recent peripheral arterial thrombosis) within 6 months prior to cycle 1, day 1",Exclusion,Vascular disease,,,,"Disease is ""Vascular disease""
+"
+"Evidence of bleeding diathesis or clinically significant coagulopathy (in the absence of therapeutic anticoagulation); any history of significant bleeding or thrombosis should be discussed with the study principal investigators (PIs)
+",Evidence of bleeding diathesis or clinically significant coagulopathy (in the absence of therapeutic anticoagulation); any history of significant bleeding or thrombosis should be discussed with the study principal investigators (PIs),Exclusion,,,"Bleeding Diathesis, Coagulopathy",,"""Evidence of bleeding diathesis or clinically significant coagulopathy (in the absence of therapeutic anticoagulation)"" AND NOT (""any history of significant bleeding or thrombosis should be discussed with the study principal investigators (PIs)"")
+"
+"Current or recent (within 10 calendar days prior to cycle 1, day 1) use of dipyridamole, ticlopidine, clopidogrel, or cilostazol
+","Current or recent (within 10 calendar days prior to cycle 1, day 1) use of dipyridamole, ticlopidine, clopidogrel, or cilostazol",Exclusion,,,,,"""dipyridamole"" OR ""ticlopidine"" OR ""clopidogrel"" OR ""cilostazol"" is True
+"
+"Warfarin is not permitted; prophylactic or therapeutic use of low molecular-weight heparin (e.g., enoxaparin), direct thrombin inhibitors or factor Xa inhibitors (direct or indirect) are permitted are permitted
+","Warfarin is not permitted; prophylactic or therapeutic use of low molecular-weight heparin (e.g., enoxaparin), direct thrombin inhibitors or factor Xa inhibitors (direct or indirect) are permitted are permitted",Exclusion,,,,,"none
+"
+"History of abdominal or tracheoesophageal fistula or gastrointestinal perforation within 6 months prior to cycle 1, day 1
+","History of abdominal or tracheoesophageal fistula or gastrointestinal perforation within 6 months prior to cycle 1, day 1",Exclusion,,,,,"none
+"
+"Serious, non-healing or dehiscing wound
+","Serious, non-healing or dehiscing wound",Exclusion,"Wound, Non-Healing Wound, Dehiscence",,,,"LK Wound == True, LK Non-HealingWound == True, LK Dehiscence == True
+"
+"Proteinuria > 2.0 g of protein in a 24-hour urine collection; all patients with 2 protein on dipstick urinalysis at baseline must undergo a 24-hour urine collection for protein
+",Proteinuria > 2.0 g of protein in a 24-hour urine collection; all patients with 2 protein on dipstick urinalysis at baseline must undergo a 24-hour urine collection for protein,Exclusion,Proteinuria,,,,"Disease is ""Proteinuria"" AND Proteinuria > 2.0 g of protein in a 24-hour urine collection
+"
+"Has a history of (non-infectious) pneumonitis that required steroids, current pneumonitis or evidence of interstitial lung disease
+","Has a history of (non-infectious) pneumonitis that required steroids, current pneumonitis or evidence of interstitial lung disease",Exclusion,"Pneumonitis, Interstitial Lung Disease",,,,"LK PNEUMONITIS == True OR LK INTERSTITIAL_LUNG_DISEASE == True
+"

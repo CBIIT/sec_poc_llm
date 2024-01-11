@@ -1,0 +1,8 @@
+Original Text: |
+    Concurrent use of medication known to inhibit UGT1A1. Patients currently taking these medications must have discontinued >= 7 days prior to treatment day 1
+Disease/Condition: none
+Procedure: Medication known to inhibit UGT1A1
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Medication known to inhibit UGT1A1" is False

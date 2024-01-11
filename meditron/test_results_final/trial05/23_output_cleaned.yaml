@@ -1,0 +1,8 @@
+Original Text: |
+    Patients who have received more than one line of chemotherapy. Any number of prior hormonal or targeted therapies are allowed
+Disease/Condition: none
+Procedure: Chemotherapy
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Chemotherapy" is True OR "Hormonal Therapy" is True OR "Targeted Therapy" is True

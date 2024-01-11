@@ -1,0 +1,32 @@
+
+    Original Text: Serum creatinine =< 2 x ULN
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: <=>
+
+Criterion:
+    Serum creatinine > 2 x ULN
+
+Output:
+    Original Text: Serum creatinine > 2 x ULN
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: >
+
+Criterion:
+    Serum creatinine > 2 x ULN AND serum creatinine =< 5 x ULN
+
+Output:
+    Original Text: Serum creatinine > 2 x ULN AND serum creatinine =< 5 x ULN
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: > && <=
+
+Criterion:
+    Serum creatinine > 2 x

@@ -1,0 +1,8 @@
+Original Text: |
+    Significant vascular disease (e.g., aortic aneurysm requiring surgical repair or recent peripheral arterial thrombosis) within 6 months prior to cycle 1, day 1
+Disease/Condition: Vascular disease
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    Disease is "Vascular disease"

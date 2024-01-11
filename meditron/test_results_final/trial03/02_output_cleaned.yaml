@@ -1,0 +1,12 @@
+Original Text: |
+    FOR DOSE EXPANSION COHORT ONLY: Pathologically confirmed breast cancer with the following features:
+    * Measurable disease by RECIST 1.1
+    * ER and PR =< 1% by immunohistochemistry
+    * Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by CAP/ASCO standards)
+    * Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator
+Disease/Condition: Breast cancer
+Procedure: none
+Drug: none
+Biomarker: ER < 1%, PR < 1%, HER2 negative
+Computable Rule: |
+    Disease is "Breast cancer" AND ER <= 1% is True AND PR <= 1% is True AND HER2 is False

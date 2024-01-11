@@ -1,0 +1,8 @@
+Original Text: |
+    Patients with a known hypersensitivity to niraparib, carboplatin, cabazitaxel or an anti-PD1 or anti-PDL1 inhibitor
+Disease/Condition: Hypersensitivity
+Procedure: none
+Drug: Niraparib, Carboplatin, Cabazitaxel
+Biomarker: none
+Computable Rule: |
+    HYPERSENSITIVITY == True

@@ -1,0 +1,8 @@
+Original Text: |
+    Male subjects should agree to use an adequate method of contraception starting with the first dose of study therapy through 120 days after the last dose of study therapy
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Male" AND ("Agree" OR "Agreement") AND ("Use" OR "Using") AND ("Contraception" OR "Contraceptive") AND ("Starting" OR "Started") AND ("First" OR "Firsts") AND ("Dose" OR "Doses") AND ("Study" OR "Studies") AND ("Therapy" OR "Therapies") AND ("Through" OR "Throughout") AND ("Last" OR "Lasts") AND ("Day" OR "Days")

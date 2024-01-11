@@ -1,0 +1,26 @@
+
+    Original Text: Eastern Cooperative Oncology Group (ECOG) performance status =< 2
+    Disease/Condition: ECOG performance status
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Performance Status is less than or equal to 2
+
+Criterion:
+    Patients with metastatic breast cancer who have received prior endocrine therapy for advanced disease
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have received prior endocrine therapy for advanced disease
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND Prior Endocrine Therapy is True
+
+Criterion:
+    Patients must have measurable disease per RECIST v1.1
+
+Output:
+    Original Text: Patients must have measurable disease per RECIST v1.1
+    Disease/Condition: Measurable disease
+    Procedure:

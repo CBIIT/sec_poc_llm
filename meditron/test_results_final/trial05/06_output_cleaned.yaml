@@ -1,0 +1,8 @@
+Original Text: |
+    Presence of metastatic disease documented on imaging studies (bone scan, computed tomography [CT] and/or magnetic resonance imaging [MRI] scans)
+Disease/Condition: Metastasis
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    MTS == True

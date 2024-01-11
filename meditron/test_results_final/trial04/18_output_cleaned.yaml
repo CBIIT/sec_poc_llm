@@ -1,0 +1,8 @@
+Original Text: |
+    Known active hepatitis B infection, known history of hepatitis C or human immunodeficiency virus (HIV) infection
+Disease/Condition: Hepatitis B Infection, Hepatitis C Infection, HIV Infection
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK HBV == True, HCV == True, HIV == True

@@ -1,0 +1,17 @@
+
+    Original Text: Patients unable to swallow orally administered medication and patients with gastrointestinal disorders likely to interfere with absorption of the study medication
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Patients unable to swallow orally administered medication" AND "Patients with gastrointestinal disorders likely to interfere with absorption of the study medication" is True
+
+Criterion:
+    Patients with a history of significant cardiac, renal, hepatic, pulmonary, endocrine, neurologic, hematologic, gastrointestinal, or other major medical illnesses
+
+Output:
+    Original Text: Patients with a history of significant cardiac, renal, hepatic, pulmonary, endocrine, neurologic, hematologic, gastrointestinal, or other major medical illnesses
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomark

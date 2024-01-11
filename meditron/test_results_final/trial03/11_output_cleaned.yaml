@@ -1,0 +1,8 @@
+Original Text: |
+    Serum aspartate transaminase (AST) and serum alanine transaminase (ALT) =< 2.5 x upper limit of normal
+Disease/Condition: Liver Metastasis
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    SGOT <= 2.5 * ULN, SGPT <= 5 * ULN

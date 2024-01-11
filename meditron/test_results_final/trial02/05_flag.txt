@@ -1,0 +1,2 @@
+Input not captured due to max new token length.
+Reran with 500 max new tokens, but model failed to capture the elements.

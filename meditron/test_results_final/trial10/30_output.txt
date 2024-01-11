@@ -1,0 +1,24 @@
+
+    Original Text: Has had an allogenic tissue/solid organ transplant.
+    Disease/Condition: Allogenic Tissue/Solid Organ Transplantation
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK ALT == True
+
+Criterion:
+    Patients with a history of malignancy within the last 5 years (excluding nonmelanoma skin cancer)
+
+Output:
+    Original Text: Patients with a history of malignancy within the last 5 years (excluding nonmelanoma skin cancer)
+    Disease/Condition: History of Malignancy, Nonmelanoma Skin Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK HOM == True, NMSC == False
+
+Criterion:
+    Patient has a history of malignancy within the past 5 years (excluding nonmelanoma skin cancer).
+
+Output:
+    Original Text: Patient has a history of malignancy within the past 

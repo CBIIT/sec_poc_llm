@@ -1,0 +1,24 @@
+
+    Original Text: Known history of Human Immunodeficiency Virus (HIV)
+    Disease/Condition: HIV
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a known history of Human Immunodeficiency Virus (HIV) and on antiretroviral therapy (ART)
+
+Output:
+    Original Text: Patients with a known history of Human Immunodeficiency Virus (HIV) and on antiretroviral therapy (ART)
+    Disease/Condition: HIV
+    Procedure: ART
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a known history of Human Immunodeficiency Virus (HIV) and on antiretroviral therapy (ART)
+
+Output:
+    Original Text: Patients with a known history of Human Immunodeficiency Virus (HIV) and on antiretroviral therapy (

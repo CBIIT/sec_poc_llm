@@ -1,0 +1,8 @@
+Original Text: |
+    Clinical or radiographic evidence of bowel obstruction or need
+Disease/Condition: none
+Procedure: Bowel Obstruction
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Bowel Obstruction" is True or "Need" is True

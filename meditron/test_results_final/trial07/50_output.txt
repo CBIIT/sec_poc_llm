@@ -1,0 +1,18 @@
+
+    Original Text: Has a history of (non-infectious) pneumonitis that required steroids, current pneumonitis or evidence of interstitial lung disease
+    Disease/Condition: Pneumonitis, Interstitial Lung Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK PNEUMONITIS == True OR LK INTERSTITIAL_LUNG_DISEASE == True
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to enrollment
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to enrollment
+    Disease/Condition: Non-Melanoma Skin Cancer, Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK NONMELANOMA_SKIN_CANCER == False AND LK M

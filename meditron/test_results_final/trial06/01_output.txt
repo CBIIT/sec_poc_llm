@@ -1,0 +1,32 @@
+
+    Original Text: Provision of signed and dated informed consent form
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a history of cardiac surgery within 30 days prior to randomization
+
+Output:
+    Original Text: Patients with a history of cardiac surgery within 30 days prior to randomization
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a history of cardiac surgery within 30 days prior to randomization
+
+Output:
+    Original Text: Patients with a history of cardiac surgery within 30 days prior to randomization
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a history of cardiac surgery within 30 days prior

@@ -1,0 +1,2 @@
+Output was truncated due to max new tokens of 256.
+Bumped the max new tokens to 500.

@@ -1,0 +1,11 @@
+elapsed_time: 18s
+was_input_captured: False
+original_text: |
+    Localized adenocarcinoma of the prostate with the following features
+    * cT1-T2c
+    * Prostate specific antigen (PSA) < 20
+    ** Patients receiving a 5-alpha reductase inhibitor must have a PSA < 10
+    * Grade group 1-3
+    * Lymph node negative
+    * Negative for distant metastases
+inclusion: True

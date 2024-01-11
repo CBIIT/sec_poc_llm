@@ -1,0 +1,28 @@
+
+    Original Text: Known active Hepatitis B or C
+    Disease/Condition: Hepatitis B, Hepatitis C
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HBV == True OR HCV == True
+
+Criterion:
+    Patients with a history of malignancy within the last 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy within the last 5 years
+    Disease/Condition: History of Malignancy, Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HISTORY_OF_MALIGNANCY == True
+
+Criterion:
+    Patient has a history of malignancy within the last 10 years
+
+Output:
+    Original Text: Patient has a history of malignancy within the last 10 years
+    Disease/Condition: History of Malignancy, Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker:

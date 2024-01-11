@@ -1,0 +1,13 @@
+
+    Original Text: Patients with a known germline or somatic BRCA pathogenic mutation should have a prior PARP inhibitor and subsequent progression, unless they have a documented history of intolerance or inability to swallow oral medications
+    Disease/Condition: BRCA1/2 mutation
+    Procedure: none
+    Drug: none
+    Biomarker: BRCA1/2 mutation
+    Computable Rule: Disease is "BRCA1/2 mutation" AND Prior PARP inhibitor is False OR Prior PARP inhibitor is True AND Subsequent progression is False
+
+Criterion:
+    Patients with a known germline or somatic BRCA pathogenic mutation should have a prior platinum-based chemotherapy regimen and subsequent progression, unless they have a documented history of intolerance or inability to swallow oral medications
+
+Output:
+    Original Text: Patients with a known germline or somatic BRCA pathogenic mutation should have a prior platinum-based chemotherapy regimen and subsequent

@@ -1,0 +1,8 @@
+Original Text: |
+    Congenital Long QT Syndrome
+Disease/Condition: Congenital Long QT Syndrome
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LQTS == True

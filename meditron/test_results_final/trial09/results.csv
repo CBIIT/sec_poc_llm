@@ -1,0 +1,77 @@
+Criterion Text In,Criterion Text Out,Inclusion/Exclusion,Disease,Biomarker,Procedure,Drug,Criterion Rule
+"Confirmed diagnosis of metastatic (Stage IV) or locally advanced, unresectable (Stage III) NSCLC of nonsquamous pathology that has relapsed or progressed
+","Confirmed diagnosis of metastatic (Stage IV) or locally advanced, unresectable (Stage III) NSCLC of nonsquamous pathology that has relapsed or progressed",Inclusion,"Stage IV, Stage III, Nonsquamous Pathology, Relapsed, Progressed",,,,"LK MTS == True, MTS == True, NSCLC == True, Relapse == True, Progress == True
+"
+"Measurable disease as defined by RECIST v1.1 criteria
+",Measurable disease as defined by RECIST v1.1 criteria,Inclusion,,,,,"""RECIST v1.1 Criteria"" is True
+"
+"PD-L1 expression status available at or after the time of diagnosis of advanced or metastatic NSCLC disease
+",PD-L1 expression status available at or after the time of diagnosis of advanced or metastatic NSCLC disease,Inclusion,Advanced or Metastatic Non-Small Cell Lung Cancer (NSCLC),,,,"PD_L1_EXPRESSION_STATUS == True, ADVANCED_OR_METASTATIC_NSCLC == True
+"
+"Can provide existing biopsy taken within 2 years prior to entering trial or provide fresh biopsy
+",Can provide existing biopsy taken within 2 years prior to entering trial or provide fresh biopsy,Inclusion,Biopsy,,,,"BIOPSY == True, BIOPSY == True
+"
+"Have relapsed or progressed after prior anti- PD-(L)1 therapy as follows:
+At least 12 weeks of treatment with only 1 line of anti-PD-(L)1 therapy (mono or combo) in the metastatic setting, without concomitant chemotherapy OR
+At least 12 weeks of single-agent durvalumab
+",Have relapsed or progressed after prior anti- PD-(L)1 therapy as follows:,Inclusion,"Relapse, Progressive Disease",,,Durvalumab,"RP_PD_1_Mono == True, RP_PD_1_Combo == False, RP_PD_1_Single == True
+"
+"Adequate organ function
+",Adequate organ function,Inclusion,,,,,"none
+"
+"ECOG performance status of 0 to 1.
+",ECOG performance status of 0 to 1.,Inclusion,ECOG performance status,,,,"Performance Status is between 0 and 1
+"
+"Symptomatic and/or untreated central nervous system (CNS) metastases or leptomeningeal disease.
+",Symptomatic and/or untreated central nervous system (CNS) metastases or leptomeningeal disease.,Exclusion,"CNS Metastasis, Leptomeningeal Disease",,,,"LK MTS == True OR LK MLD == True
+"
+"Presence of active second malignancy
+",Presence of active second malignancy,Exclusion,Second Malignancy,,,,"SM == True
+"
+"EGFR or ALK mutation. Participants with presence of other driver mutations are allowed if targeted therapy is not available as per local standard of care.
+",EGFR or ALK mutation. Participants with presence of other driver mutations are allowed if targeted therapy is not available as per local standard of care,Exclusion,"EGFR Mutation, ALK Mutation, Other Driver Mutation",,,,"(EGFR Mutation OR ALK Mutation) AND NOT (Other Driver Mutation)
+"
+"Preexisting gastrointestinal disorders/conditions that may interfere with ingestion or absorption of oral medications.
+",Preexisting gastrointestinal disorders/conditions that may interfere with ingestion or absorption of oral medications.,Exclusion,,,,,"""Preexisting gastrointestinal disorders/conditions that may interfere with ingestion or absorption of oral medications."" is False
+"
+"History of or active (non-infectious) pneumonitis/ interstitial disease or lung fibrosis, except for Grade 1 pneumonitis from prior chemoradiation therapy (Stage III patients).
+","History of or active (non-infectious) pneumonitis/ interstitial disease or lung fibrosis, except for Grade 1 pneumonitis from prior chemoradiation therapy (Stage III patients).",Exclusion,Pneumonitis,,Chemoradiation Therapy,,"""Pneumonitis"" is False or ""Chemoradiation Therapy"" is False
+"
+"History of or active autoimmune disease requiring systemic treatment in the last 6 months or persistent immune-mediated toxicity caused by checkpoint inhibitor therapy > Grade 2
+",History of or active autoimmune disease requiring systemic treatment in the last 6 months or persistent immunemediated toxicity caused by checkpoint inhibitor therapy > Grade 2,Exclusion,"Autoimmune Disease, Immune Mediated Toxicity",,,,"AD_HISTORICAL == True OR AI_TOXICITY == True
+"
+"Known active or chronic hepatitis B or C infection unless adequately treated for at least 4 weeks with no detectable viral load; known infection with human immunodeficiency virus (HIV) unless receiving antiretroviral therapy with well-controlled disease.
+",Known active or chronic hepatitis B or C infection unless adequately treated for at least 4 weeks with no detectable viral load; known infection with human immunodeficiency virus (HIV) unless receiving antiretroviral therapy with well-controlled disease.,Exclusion,"Hepatitis B Virus Infection, Hepatitis C Virus Infection, Human Immunodeficiency Virus Infection",,,,"HBV == True OR HCV == True OR HIV == True
+"
+"History of life-threatening toxicity related to prior immune therapy or any toxicity resulting in permanent discontinuation from prior therapy.
+",History of life-threatening toxicity related to prior immune therapy or any toxicity resulting in permanent discontinuation from prior therapy.,Exclusion,,,,,"""Life-threatening toxicity"" is False OR ""Permanent discontinuation"" is True
+"
+"Diagnosis of immunodeficiency or any condition requiring concurrent use of systemic immunosuppressants or corticosteroids.
+",Diagnosis of immunodeficiency or any condition requiring concurrent use of systemic immunosuppressants or corticosteroids.,Exclusion,"Immunodeficiency, Systemic Immunosuppressant, Corticosteroid",,,,"IMMUNODEFICIENCY == True OR SYSTEMIC_IMMUNOSUPPRESSANT == True OR CORTICOSTEROID == True
+"
+"Active infection requiring systemic therapy â‰¤ 7 days prior to first dose of study treatment.
+",Active infection requiring systemic therapy â‰¤ 7 days prior to first dose of study treatment.,Exclusion,Infection,,,,"LK INF == True
+"
+"Any other oncologic treatments administered â‰¤14 days (<28 days in case of checkpoint inhibitor therapy) prior to first dose of study treatment. Also, ongoing adverse effects from such treatment > Grade 1 with the exception for alopecia and Grade 2 peripheral neuropathy.
+","Any other oncologic treatments administered â‰¤14 days (<28 days in case of checkpoint inhibitor therapy) prior to first dose of study treatment. Also, ongoing adverse effects from such treatment > Grade 1 with the exception for alopecia and Grade 2 peripheral neuropathy.",Exclusion,,,,,"""Any other oncologic treatments administered â‰¤14 days (<28 days in case of checkpoint inhibitor therapy) prior to first dose of study treatment."" is False
+"
+"Non-study related minor surgical procedure â‰¤7 days, or major surgical procedure of â‰¤ 5 weeks prior to first dose of study treatment.
+","Non-study related minor surgical procedure â‰¤7 days, or major surgical procedure of â‰¤ 5 weeks prior to first dose of study treatment.",Exclusion,,,"Minor Surgery, Major Surgery",,"""Minor Surgery"" OR ""Major Surgery"" is False
+"
+"Uncontrolled or significant cardiovascular disease
+",Uncontrolled or significant cardiovascular disease,Exclusion,,,,,
+"History of allergy or hypersensitivity to any of the study treatments.
+",History of allergy or hypersensitivity to any of the study treatments.,Exclusion,,,,,"""History of allergy or hypersensitivity to any of the study treatments."" is False
+"
+"Treatment with a live or live attenuated vaccine.
+",Treatment with a live or live attenuated vaccine.,Exclusion,,,Vaccination,,"""Vaccination"" is True
+"
+"Treatment with moderate or strong inducers or inhibitor of CYP 3A4, inhibitors of P-glycoprotein, or substrates of breast cancer resistance protein
+","Treatment with moderate or strong inducers or inhibitor of CYP 3A4, inhibitors of P-glycoprotein, or substrates of breast cancer resistance protein",Exclusion,Moderate or Strong Inducers or Inhibitor of CYP 3A4,,,,"Disease is ""Moderate or Strong Inducers or Inhibitor of CYP 3A4"" OR Disease is ""Inhibitors of P-glycoprotein"" OR Disease is ""Substrates of Breast Cancer Resistance Protein""
+"
+"Pregnant or breast-feeding
+",Pregnant or breast-feeding,Exclusion,Pregnancy,,,,"Disease is ""Pregnancy""
+"
+"Male and Female participants: Lack of agreement to use highly effective method of contraception during treatment and for 6 months after the last administration of chemotherapy
+",Male and Female participants: Lack of agreement to use highly effective method of contraception during treatment and for 6 months after the last administration of chemotherapy,Exclusion,Breast neoplasms,,,,"Disease is ""Breast neoplasms"" AND Participants is Male OR Participants is Female
+"

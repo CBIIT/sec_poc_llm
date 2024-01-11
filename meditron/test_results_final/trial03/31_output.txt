@@ -1,0 +1,16 @@
+
+    Original Text: Concurrent use of medication known to inhibit UGT1A1. Patients currently taking these medications must have discontinued >= 7 days prior to treatment day 1
+    Disease/Condition: none
+    Procedure: Medication known to inhibit UGT1A1
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Medication known to inhibit UGT1A1" is False
+
+Criterion:
+    Subjects with a history of any malignancy other than non-melanoma skin cancer within 5 years before study entry, excluding basal cell carcinoma of the skin
+
+Output:
+    Original Text: Subjects with a history of any malignancy other than non-melanoma skin cancer within 5 years before study entry, excluding basal cell carcinoma of the skin
+    Disease/Condition: none
+    Procedure: History of any malignancy other than non-melanoma skin cancer within 5 years before study entry, excluding basal cell carcinoma of the skin
+    Drug:

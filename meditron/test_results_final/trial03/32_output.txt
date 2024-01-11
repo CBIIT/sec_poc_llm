@@ -1,0 +1,18 @@
+
+    Original Text: Concurrent use of herbal supplements, unless approved by the principal investigator. Patients currently taking herbal supplements must have discontinued >= 7 days prior to treatment day 1
+    Disease/Condition: none
+    Procedure: Herbal Supplement
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Herbal Supplement" is False or "Herbal Supplement" is True and "DaysSinceLastUse" is GreaterThan 7
+
+Criterion:
+    Subject must have a histologically confirmed diagnosis of metastatic colorectal cancer (mCRC) with measurable disease according to RECIST v1.0
+
+Output:
+    Original Text: Subject must have a histologically confirmed diagnosis of metastatic colorectal cancer (mCRC) with measurable disease according to RECIST v1.0
+    Disease/Condition: Colorectal Cancer
+    Procedure: Metastatic Colorectal Cancer
+    Drug: none
+    Biomarker: none
+    Computable

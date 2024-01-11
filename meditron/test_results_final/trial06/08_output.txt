@@ -1,0 +1,18 @@
+
+    Original Text: Prostate volume < 120 cc
+    Disease/Condition: Prostate
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Prostate volume < 120 cc
+
+Criterion:
+    Patients with metastatic castration resistant prostate cancer (mCRPC) with progressive disease on abiraterone acetate and prednisone or enzalutamide and prednisone
+
+Output:
+    Original Text: Patients with metastatic castration resistant prostate cancer (mCRPC) with progressive disease on abiraterone acetate and prednisone or enzalutamide and prednisone
+    Disease/Condition: Metastatic Castration Resistant Prostate Cancer
+    Procedure: none
+    Drug: Abiraterone Acetate, Enzalutamide
+    Biomarker: None
+    Computable Rule: Patient has Metastatic Castration Resistant Prostate Cancer AND Progressive Disease on Abiraterone Acetate

@@ -1,0 +1,8 @@
+Original Text: |
+    Any contraindication to MRI (i.e. patients with pacemakers or other metal implanted medical devices); an MRI safety questionnaire is required prior to magnetic resonance (MR) imaging
+Disease/Condition: none
+Procedure: Pacemaker
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Pacemaker" is False

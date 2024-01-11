@@ -1,0 +1,25 @@
+
+    Original Text: Eastern Cooperative Oncology Group (ECOG) performance status 0 or 1
+    Disease/Condition: ECOG performance status
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Performance Status is 0 or 1
+
+Criterion:
+    Patients with histologically confirmed metastatic colorectal adenocarcinoma
+
+Output:
+    Original Text: Patients with histologically confirmed metastatic colorectal adenocarcinoma
+    Disease/Condition: Metastatic Colorectal Adenocarcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Histology is "Colorectal Adenocarcinoma" AND Metastatic is True
+
+Criterion:
+    Patients must have measurable disease according to RECIST v1.1
+
+Output:
+    Original Text: Patients must have measurable disease according to RECIST v1.1
+    Disease/Condition: Measurable

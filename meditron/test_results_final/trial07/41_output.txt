@@ -1,0 +1,21 @@
+
+    Original Text: History of myocardial infarction or unstable angina within 3 months prior to cycle 1, day 1
+    Disease/Condition: Myocardial Infarction
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Myocardial Infarction"
+
+Criterion:
+    Patients with metastatic colorectal cancer who have received no more than two prior chemotherapy regimens for advanced disease
+
+Output:
+    Original Text: Patients with metastatic colorectal cancer who have received no more than two prior chemotherapy regimens for advanced disease
+    Disease/Condition: Metastatic Colorectal Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Metastatic Colorectal Cancer" AND Prior Chemotherapy Regimen is less than or equal to 2
+
+Criterion:
+    Patients must have measurable disease according to RECIST v1.0

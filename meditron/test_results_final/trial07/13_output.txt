@@ -1,0 +1,13 @@
+
+    Original Text: Serum creatinine =< 1.5 X upper limit of normal (ULN) OR measured or calculated creatinine clearance (glomerular filtration rate [GFR] can also be used in place of creatinine or creatinine clearance [CrCl]) >= 60 mL/min for subject with creatinine levels > 1.5 X institutional ULN
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: <(1.5 * ULN) or (60 * CrCl) >
+
+Criterion:
+    Subjects must have a history of hypertension, defined as systolic blood pressure (SBP) > 140 mm Hg or diastolic blood pressure (DBP) > 90 mm Hg at screening visit or prior to randomization, or use of antihypertensive medications within 2 weeks before screening visit
+
+Output:
+    Original Text: Subjects must have a history of hypertension, defined as systolic

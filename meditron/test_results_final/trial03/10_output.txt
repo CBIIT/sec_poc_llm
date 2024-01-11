@@ -1,0 +1,20 @@
+
+    Original Text: Serum bilirubin levels =< 1.5 mg/dL. Higher levels are acceptable if these can be attributed to active hemolysis or ineffective erythropoiesis. Bilirubin above 1.5 mg/dL due to Gilbertâ€™s is still excluded
+    Disease/Condition: Gilbert's syndrome
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: serum bilirubin levels <= 1.5 AND (bilirubin > 1.5 AND Gilbert's)
+
+Criterion:
+    Patients with a history of any of the following conditions:
+        - Congenital heart disease, including cyanotic congenital heart disease
+        - Cardiac arrhythmia
+        - Cardiomyopathy
+        - Heart failure
+        - Peripheral vascular disease
+        - Cerebrovascular disease
+        - Chronic obstructive pulmonary disease
+        - Asthma
+        - Diabetes mellitus
+        - Renal

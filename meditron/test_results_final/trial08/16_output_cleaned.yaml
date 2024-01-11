@@ -1,0 +1,8 @@
+Original Text: |
+    Concurrently using other anticancer therapy. Participants must continue palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2.
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Concurrently using other anticancer therapy" is False

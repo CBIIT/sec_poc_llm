@@ -1,0 +1,23 @@
+
+    Original Text: Any of the following within 28 days of first date of study treatment
+    Disease/Condition: None
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: "Any of the following within 28 days of first date of study treatment" is False
+
+Criterion:
+    Patients with any of the following conditions should be excluded from this study:
+* History of malignancy except non-melanoma skin cancer or carcinoma in situ of the cervix uteri within the last 5 years
+* Known hypersensitivity to any component of the study medications
+* Pregnant or breastfeeding women
+* Women of childbearing potential not using adequate contraception
+* Concurrent participation in another investigational drug study
+
+Output:
+    Original Text: Patients with any of the following conditions should be excluded from this study
+    Disease/Condition: None
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: "Patients with any of the following conditions should be

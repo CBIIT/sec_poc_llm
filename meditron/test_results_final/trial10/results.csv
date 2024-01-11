@@ -1,0 +1,99 @@
+Criterion Text In,Criterion Text Out,Inclusion/Exclusion,Disease,Biomarker,Procedure,Drug,Criterion Rule
+"Histologically or cytologically-documented, advanced solid tumor of one of the following types:
+Anal Squamous Cell Carcinoma
+Biliary Adenocarcinoma
+Neuroendocrine Tumors (well- and moderately-differentiated) of the lung, appendix, small intestine, colon, rectum, or pancreas
+Endometrial Carcinoma (sarcomas and mesenchymal tumors are excluded)
+Cervical Squamous Cell Carcinoma
+Vulvar Squamous Cell Carcinoma
+Small Cell Lung Carcinoma
+Mesothelioma
+Thyroid Carcinoma
+Salivary Gland Carcinoma (sarcomas and mesenchymal tumors are excluded)
+","Histologically or cytologically-documented, advanced solid tumor of one of the following types:",Inclusion,"Anal Squamous Cell Carcinoma, Biliary Adenocarcinoma, Neuroendocrine Tumors, Endometrial Carcinoma, Cervical Squamous Cell Carcinoma, Vulvar Squamous Cell Carcinoma, Small Cell Lung Carcinoma, Mesothelioma, Thyroid Carcinoma, Salivary Gland Carcinoma",,,,"LK MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True"
+"Any advanced solid tumor, with the exception of colorectal carcinoma (CRC), which is Microsatellite Instability (MSI)-High (MSI-H) OR
+","Any advanced solid tumor, with the exception of colorectal carcinoma (CRC), which is Microsatellite Instability (MSI)-High (MSI-H) OR",Inclusion,"Advanced Solid Tumor, Colorectal Carcinoma, Microsatellite Instability High",,,,"(MSS == False OR CRC == True) AND (MSI-H == True)
+"
+"Any advanced solid tumor (including Colorectal Carcinoma [CRC]) which is Mismatch Repair Deficient (dMMR)/MSI-H in participants from mainland China who are of Chinese descent. (CRC participants will have a histologically proven locally advanced unresectable or metastatic CRC which is dMMR/MSI-H that has received 2 prior lines of therapy) OR
+",Any advanced solid tumor (including Colorectal Carcinoma [CRC]) which is Mismatch Repair Deficient (dMMR)/MSI-H in participants from mainland China who are of Chinese descent. (CRC participants will have a histologically proven locally advanced unresectable or metastatic CRC which is dMMR/MSI-H that has received 2 prior lines of therapy) OR,Inclusion,,,,,"""Mismatch Repair Deficient (dMMR)/MSI-H"" is True AND ""Colorectal Carcinoma"" is True AND ""Chinese"" is True AND ""Advanced Solid Tumor"" is True AND ""2 Prior Lines of Therapy"" is True
+"
+"Any advanced solid tumor that has failed at least one line of therapy and is TMB-H (â‰¥10 mut/Mb, F1CDx assay), excluding dMMR/MSI-H tumors. Note: For participants to be eligible for enrollment they must have failed at least one line of standard of care systemic therapy (ie, not treatment naÃ¯ve), with the exception of CRC participants who must have failed at least 2 lines of standard of care systemic therapy, as per CRC specific eligibility criteria. Participants must not have melanoma or NSCLC.
+","Any advanced solid tumor that has failed at least one line of therapy and is TMB-H (â‰¥10 mut/Mb, F1CDx assay)",Inclusion,Solid tumor,"TMB-H (â‰¥10 mut/Mb, F1CDx assay)",,,"""TMB-H (≥10 mut/Mb, F1CDx assay)"" is True
+"
+"Progression of tumor or intolerance to therapies known to provide clinical benefit. There is no limit to the number of prior treatment regimens
+",Progression of tumor or intolerance to therapies known to provide clinical benefit. There is no limit to the number of prior treatment regimens,Inclusion,,,,,"""Progression of tumor or intolerance to therapies known to provide clinical benefit."" is False
+"
+"Can supply tumor tissue for study analyses (dependent on tumor type)
+",Can supply tumor tissue for study analyses (dependent on tumor type),Inclusion,Breast cancer,,,,"Disease is ""Breast cancer"" AND Tumor tissue is Supplyable
+"
+"Radiologically-measurable disease
+",Radiologically-measurable disease,Inclusion,,,,,"""Radiologically-measurable disease"" is True
+"
+"Performance status of 0 or 1 on the Eastern Cooperative Oncology Group (ECOG) Performance Scale within 3 days prior to first dose of pembrolizumab
+",Performance status of 0 or 1 on the Eastern Cooperative Oncology Group (ECOG) Performance Scale within 3 days prior to first dose of pembrolizumab,Inclusion,ECOG Performance Status,,,Pembrolizumab,"PS_ECOG == 0 OR PS_ECOG == 1
+"
+"Life expectancy of at least 3 months
+",Life expectancy of at least 3 months,Inclusion,,,,,"none
+"
+"Adequate organ function
+",Adequate organ function,Inclusion,,,,,"none
+"
+"Female participants of childbearing potential must be willing to use adequate contraception during the intervention period and for at least the time needed to eliminate each study intervention after the last dose of study intervention. and agrees not to donate eggs (ova, oocytes) to others or freeze/store for her own use for the purpose of reproduction during this period. The length of time required to continue contraception for each study intervention is as follows: MK-3475 (120 days)
+","Female participants of childbearing potential must be willing to use adequate contraception during the intervention period and for at least the time needed to eliminate each study intervention after the last dose of study intervention. and agrees not to donate eggs (ova, oocytes) to others or freeze/store for her own use for the purpose of reproduction during this period. The length of time required to continue contraception for each study intervention is as follows: MK-3475 (120 days)",Inclusion,Female participant of childbearing potential,,,,"Disease is ""Female participant of childbearing potential"" AND Contraception is True
+"
+"Currently participating and receiving study therapy or has participated in a study of an investigational agent and received study therapy or used an investigational device within 4 weeks of the first dose of study treatment
+",Currently participating and receiving study therapy or has participated in a study of an investigational agent and received study therapy or used an investigational device within 4 weeks of the first dose of study treatment,Exclusion,,,,,"""Currently participating and receiving study therapy"" OR ""has participated in a study of an investigational agent and received study therapy"" OR ""used an investigational device"" is True
+"
+"Diagnosis of immunodeficiency or receiving systemic steroid therapy or any other form of immunosuppressive therapy within 7 days prior to the first dose of study treatment
+",Diagnosis of immunodeficiency or receiving systemic steroid therapy or any other form of immunosuppressive therapy within 7 days prior to the first dose of study treatment,Exclusion,"Immunodeficiency, Systemic Steroid Therapy, Other Forms of Immunosuppressive Therapy",,,,"IMMUNODEFICIENCY == True OR STEROIDS == True OR OTHER_FORM_OF_IMMUNOSUPPRESSIVE_THERAPY == True
+"
+"Active autoimmune disease that has required systemic treatment in the past 2 years
+",Active autoimmune disease that has required systemic treatment in the past 2 years,Exclusion,"Autoimmune disease, Systemic Treatment",,,,"AD == True, ST == True
+"
+"Prior anti-cancer monoclonal antibody (mAb) within 4 weeks prior to study Day 1 or not recovered from an adverse event caused by mAbs administered more than 4 weeks earlier
+",Prior anti-cancer monoclonal antibody (mAb) within 4 weeks prior to study Day 1 or not recovered from an adverse event caused by mAbs administered more than 4 weeks earlier,Exclusion,Anti-Cancer Monoclonal Antibodies,,,,"MABS_Prior_AntiCancer_Monoclonal_Antibody_Within_4_Weeks_Prior_to_Study_Day_1 == False, Recovered_From_Adverse_Event_Caused_By_Monoclonal_Antibodies_Administered_More_Than_4_Weeks_Earlier == False
+"
+"Prior chemotherapy, targeted small molecule therapy, or radiation therapy within 2 weeks of study Day 1 or not recovered from adverse events caused by a previously administered agent
+","Prior chemotherapy, targeted small molecule therapy, or radiation therapy within 2 weeks of study Day 1 or not recovered from adverse events caused by a previously administered agent",Exclusion,,,"Chemotherapy, Targeted Small Molecule Therapy, Radiation Therapy",,"""Chemotherapy"", ""Targeted Small Molecule Therapy"", ""Radiation Therapy"" is False OR ""Adverse Events Caused By A Previously Administered Agent"" is True
+"
+"Known additional malignancy within 2 years prior to enrollment with the exception of curatively treated basal cell carcinoma of the skin, squamous cell carcinoma of the skin and/or curatively resected in situ cancers
+","Known additional malignancy within 2 years prior to enrollment with the exception of curatively treated basal cell carcinoma of the skin, squamous cell carcinoma of the skin and/or curatively resected in situ cancers",Exclusion,,,,,"""Known additional malignancy within 2 years prior to enrollment with the exception of curatively treated basal cell carcinoma of the skin, squamous cell carcinoma of the skin and/or curatively resected in situ cancers"" is False
+"
+"Known active central nervous system (CNS) metastases and/or carcinomatous meningitis
+",Known active central nervous system (CNS) metastases and/or carcinomatous meningitis,Exclusion,"CNS Metastasis, Carcinomatous Meningitis",,,,"LK CNSMets == True, CNSMets == True
+"
+"Has known glioblastoma multiforme of the brain stem
+",Has known glioblastoma multiforme of the brain stem,Exclusion,"Glioblastoma Multiforme, Brain Stem",,,,"GBM_STEM == True
+"
+"Has a history of (noninfectious) pneumonitis/interstitial lung disease that required steroids or has current pneumonitis/interstitial lung disease.
+",Has a history of (noninfectious) pneumonitis/interstitial lung disease that required steroids or has current pneumonitis/interstitial lung disease.,Exclusion,"Pneumonitis, Interstitial Lung Disease",,,,"LK PNEUMONITIS == True OR LK INTERSTITIAL_LUNG_DISEASE == True
+"
+"Active infection requiring systemic therapy
+",Active infection requiring systemic therapy,Exclusion,"Infection, Systemic Therapy",,,,"LK INF == True, INF == True
+"
+"Known psychiatric or substance abuse disorders that would interfere with the participant's ability to cooperate with the requirements of the study
+",Known psychiatric or substance abuse disorders that would interfere with the participant's ability to cooperate with the requirements of the study,Exclusion,,,,,"none
+"
+"Pregnant, breastfeeding, or expecting to conceive or father children within the projected duration of the study, starting with the screening visit through 120 days after the last dose of study treatment
+","Pregnant, breastfeeding, or expecting to conceive or father children within the projected duration of the study, starting with the screening visit through 120 days after the last dose of study treatment",Exclusion,,,,,"""Pregnant"" OR ""Breastfeeding"" OR ""ExpectingToConceiveOrFatherChildren"" is True
+"
+"Previously participated in any other pembrolizumab (MK-3475) study, or received prior therapy with an anti-programmed cell death (PD)-1, anti-PD-Ligand 1 (anti-PD-L1), anti-PD-Ligand 2 (anti-PD-L2), or any other immunomodulating mAb or drug specifically targeting T-cell co-stimulation or checkpoint pathways
+","Previously participated in any other pembrolizumab (MK-3475) study, or received prior therapy with an anti-programmed cell death (PD)-1, anti-PD-Ligand 1 (anti-PD-L1), anti-PD-Ligand 2 (anti-PD-L2), or any other immunomodulating mAb or drug specifically targeting T-cell co-stimulation or checkpoint pathways",Exclusion,"Pembrolizumab, Anti-PD-1, Anti-PD-L1, Anti-PD-L2, Immunomodulating mAbs",,,,"LK MK3475 == True, MK3475 == True, MK3475 == False, MK3475 == False, MK3475 == False, MK3475 == False, MK3475 == False, MK3475 == False, MK347"
+"Known history of Human Immunodeficiency Virus (HIV)
+",Known history of Human Immunodeficiency Virus (HIV),Exclusion,HIV,,,,"none
+"
+"Known active Hepatitis B or C
+",Known active Hepatitis B or C,Exclusion,"Hepatitis B, Hepatitis C",,,,"HBV == True OR HCV == True
+"
+"Received live vaccine within 30 days of planned start of study treatment
+",Received live vaccine within 30 days of planned start of study treatment,Exclusion,,,Vaccination,,"""Vaccination"" is False
+"
+"Has severe hypersensitivity (â‰¥Grade 3) to pembrolizumab and/or any of its excipients
+",Has severe hypersensitivity (â‰¥Grade 3) to pembrolizumab and/or any of its excipients,Exclusion,,,,Pembrolizumab,"""Severe Hypersensitivity"" is False
+"
+"Known history of active tuberculosis (TB, Bacillus tuberculosis)
+","Known history of active tuberculosis (TB, Bacillus tuberculosis)",Exclusion,Tuberculosis,,,,"""Known history of active tuberculosis (TB, Bacillus tuberculosis)"" is True
+"
+"Has had an allogenic tissue/solid organ transplant.
+",Has had an allogenic tissue/solid organ transplant.,Exclusion,Allogenic Tissue/Solid Organ Transplantation,,,,"LK ALT == True
+"

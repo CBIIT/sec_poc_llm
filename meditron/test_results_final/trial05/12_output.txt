@@ -1,0 +1,14 @@
+
+    Original Text: Absolute neutrophil count (ANC) >= 1.5 x 10^9/L (unless due to bone marrow infiltration by tumor, in which case ANC > 1,000/mm^3 is allowed) (within 7 days prior to treatment registration)
+    Disease/Condition: Neutropenia, Bone Marrow Infiltration by Tumor
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: ANC >= 1.5*10^9/L && (MTS == False || MTS == True && ANC > 1000/mm^3)
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within 2 years before study entry are excluded from this study.
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within 2 years before study entry are excluded from this study.
+    Disease/Condition: History of Malignancy

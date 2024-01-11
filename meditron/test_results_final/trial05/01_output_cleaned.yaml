@@ -1,0 +1,8 @@
+Original Text: |
+    Completion of informed consent prior to any study specific procedures
+Disease/Condition: none
+Procedure: Informed Consent
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Informed Consent" is True

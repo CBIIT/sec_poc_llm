@@ -1,0 +1,8 @@
+Original Text: |
+    known human immunodeficiency virus (HIV) infection with a detectable viral load within 6 months of the anticipated start of treatment
+Disease/Condition: HIV
+Procedure: Anti-Retroviral Therapy
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "HIV" is True and "Viral Load" is GreaterThan(0)

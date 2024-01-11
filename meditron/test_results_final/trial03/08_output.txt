@@ -1,0 +1,18 @@
+
+    Original Text: Platelets > 100,000/mm^3
+    Disease/Condition: None
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: Platelets > 100000
+
+Criterion:
+    Patients with metastatic colorectal cancer who have received prior treatment with oxaliplatin, irinotecan, fluoropyrimidine, and anti-VEGF therapy
+
+Output:
+    Original Text: Patients with metastatic colorectal cancer who have received prior treatment with oxaliplatin, irinotecan, fluoropyrimidine, and anti-VEGF therapy
+    Disease/Condition: Metastatic Colorectal Cancer
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: Disease is "Metastatic Colorectal Cancer" AND Prior Treatment with Oxaliplatin is True OR Prior Treatment with Irinotecan is True OR Prior Tre

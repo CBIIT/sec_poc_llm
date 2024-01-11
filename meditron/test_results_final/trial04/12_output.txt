@@ -1,0 +1,21 @@
+
+    Original Text: Adequate bone marrow, renal, and hepatic function (liver function and renal tests, grade 1 or lower)
+    Disease/Condition: Bone Marrow, Renal Function, Hepatic Function
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: BM == True, RF == True, HF == True
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to enrollment
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to enrollment
+    Disease/Condition: History of Malignancy, Nonmelanoma Skin Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Malignancy == False, NMSC == False
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to

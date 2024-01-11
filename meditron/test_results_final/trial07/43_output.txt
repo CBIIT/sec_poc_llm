@@ -1,0 +1,15 @@
+
+    Original Text: Significant vascular disease (e.g., aortic aneurysm requiring surgical repair or recent peripheral arterial thrombosis) within 6 months prior to cycle 1, day 1
+    Disease/Condition: Vascular disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Vascular disease"
+
+Criterion:
+    Patients with metastatic colorectal cancer who have received no more than two prior chemotherapy regimens for advanced disease or whose tumors are refractory to fluoropyrimidine, oxaliplatin, and irinotecan-based chemotherapy
+
+Output:
+    Original Text: Patients with metastatic colorectal cancer who have received no more than two prior chemotherapy regimens for advanced disease or whose tumors are refractory to fluoropyrimidine, oxaliplatin, and irinotecan-based chemotherapy
+    Disease/Condition: Colorectal cancer
+    Procedure

@@ -1,0 +1,16 @@
+
+    Original Text: Any prior treatment for castration-resistant prostate cancer (CRPC) with carboplatin, cisplatin, cabazitaxel, PARP-inhibitor or an anti-PD1 or anti-PDL1 inhibitor
+    Disease/Condition: None
+    Procedure: Carboplatin, Cisplatin, Cabazitaxel, PARP-inhibitor, Anti-PD1, Anti-PDL1 Inhibitor
+    Drug: None
+    Biomarker: None
+    Computable Rule: "Carboplatin", "cisplatin", "cabazitaxel", "PARP-inhibitor", "anti-PD1", "anti-PDL1 inhibitor" is True
+
+Criterion:
+    Patients must have measurable disease at baseline according to RECIST v1.1
+
+Output:
+    Original Text: Patients must have measurable disease at baseline according to RECIST v1.1
+    Disease/Condition: None
+    Procedure: None
+    Drug: None

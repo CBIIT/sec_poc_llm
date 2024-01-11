@@ -1,0 +1,8 @@
+Original Text: |
+    Known or suspected untreated brain metastases. Patients with radiographically stable, asymptomatic previously irradiated lesions are eligible provided patient is > 4 weeks beyond completion of cranial irradiation and > 3 weeks off of corticosteroid therapy at the time of study intervention
+Disease/Condition: Brain Metastasis
+Procedure: Radiotherapy
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Brain Metastasis" AND ("Radiotherapy" OR "Radiographically Stable") AND ("Asymptomatic" OR "> 4 Weeks") AND ("> 3 Weeks Off Corticosteroids")

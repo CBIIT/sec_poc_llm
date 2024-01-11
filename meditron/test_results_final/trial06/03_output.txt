@@ -1,0 +1,24 @@
+
+    Original Text: Male patients aged 18 years and older
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Male patients aged 18 years and older with a diagnosis of prostate cancer
+
+Output:
+    Original Text: Male patients aged 18 years and older with a diagnosis of prostate cancer
+    Disease/Condition: prostate cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Male patients aged 18 years and older with a diagnosis of prostate cancer who have received prior treatment with docetaxel, cabazitaxel, abiraterone acetate, enzalutamide, or radium-223
+
+Output:
+    Original Text: Male patients aged 18 years and older with a diagnosis of prostate cancer who have received prior treatment with docetaxel, cabazitaxel, abiraterone acetate, enz

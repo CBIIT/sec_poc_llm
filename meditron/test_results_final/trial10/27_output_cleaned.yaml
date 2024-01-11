@@ -1,0 +1,8 @@
+Original Text: |
+    Received live vaccine within 30 days of planned start of study treatment
+Disease/Condition: none
+Procedure: Vaccination
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Vaccination" is False

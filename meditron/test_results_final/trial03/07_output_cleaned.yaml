@@ -1,0 +1,8 @@
+Original Text: |
+    Absolute neutrophil count > 1,500/mcL
+Disease/Condition: Neutropenia
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    ANC > 1500

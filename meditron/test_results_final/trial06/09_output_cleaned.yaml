@@ -1,0 +1,8 @@
+Original Text: |
+    History and physical including a digital rectal exam 90 days prior to registration
+Disease/Condition: none
+Procedure: History and physical
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "History and physical including a digital rectal exam 90 days prior to registration" is True

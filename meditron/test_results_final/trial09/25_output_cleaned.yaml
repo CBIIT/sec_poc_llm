@@ -1,0 +1,8 @@
+Original Text: |
+    Male and Female participants: Lack of agreement to use highly effective method of contraception during treatment and for 6 months after the last administration of chemotherapy
+Disease/Condition: Breast neoplasms
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    Disease is "Breast neoplasms" AND Participants is Male OR Participants is Female

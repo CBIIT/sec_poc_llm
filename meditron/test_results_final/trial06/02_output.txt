@@ -1,0 +1,32 @@
+
+    Original Text: Stated willingness to comply with all study procedures and availability for the duration of the study
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Stated willingness to comply with all study procedures" AND "Availability for the duration of the study" is True
+
+Criterion:
+    Able to understand and speak English fluently
+
+Output:
+    Original Text: Able to understand and speak English fluently
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Able to understand and speak English fluently" is True
+
+Criterion:
+    Able to provide informed consent
+
+Output:
+    Original Text: Able to provide informed consent
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Able to provide informed consent" is True
+
+Criterion:
+    Able to under

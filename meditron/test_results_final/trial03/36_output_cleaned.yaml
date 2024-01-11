@@ -1,0 +1,8 @@
+Original Text: |
+    Patient is currently receiving warfarin or other coumarin derived anti-coagulant, for treatment, prophylaxis or otherwise. Note: Therapy with heparin, low molecular weight heparin (LMWH), an oral factor Xa inhibitor, an oral direct thrombin inhibitor, or fondaparinux is allowed
+Disease/Condition: Warfarin, Coumarins, Heparin, Low Molecular Weight Heparin, Oral Factor Xa Inhibitors, Oral Direct Thrombin Inhibitors, Fondaparinux
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    PT_WARFARIN == True OR PT_COUMARIN == True OR PT_HEPARIN == True OR PT_LMWH == True OR PT_Oral_FXa_Inhibitor == True OR PT_Oral_Direct_Thrombin_Inhibitor == True OR PT_Fondaparinux == True

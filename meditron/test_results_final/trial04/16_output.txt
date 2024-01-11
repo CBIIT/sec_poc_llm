@@ -1,0 +1,14 @@
+
+    Original Text: Patient agrees to undergo placement of either interventional radiologically placed or surgically placed peritoneal port (may be temporary or subcutaneous)
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Placement of either interventional radiologically placed or surgically placed peritoneal port (may be temporary or subcutaneous)" is True
+
+Criterion:
+    Patients with metastatic colorectal cancer, who have failed first-line therapy with oxaliplatin-based chemotherapy regimens, and who have progressed on irinotecan-based therapy, are eligible for this study.
+
+Output:
+    Original Text: Patients with metastatic colorectal cancer, who have failed first-line therapy with oxaliplatin-based chemotherapy regimens, and who have progressed on irinotecan-based therapy, are eligible for this study.
+    Disease/Condition: Metastatic Colorectal

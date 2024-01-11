@@ -1,0 +1,8 @@
+Original Text: |
+    Baseline corrected QT interval (QTcF) > 450 msec. The heart rate on the qualifying electrocardiogram (ECG) must be between 50 and 90 beats per minute (BPM)
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    QTcF > 450 AND HeartRate BETWEEN 50 AND 90

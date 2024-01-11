@@ -1,0 +1,8 @@
+Original Text: |
+    Patientâ€™s carcinoma should express the FSHR antigen, detectable by polymerase chain reaction (PCR) analysis of archival tumor sample
+Disease/Condition: Carcinoma
+Procedure: Polymerase Chain Reaction
+Drug: none
+Biomarker: FSHR
+Computable Rule: |
+    "FSHR" is True AND "Polymerase Chain Reaction" is True

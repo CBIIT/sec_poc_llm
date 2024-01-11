@@ -1,0 +1,25 @@
+
+    Original Text: Albumin >= 2.5 mg/dL
+    Disease/Condition: None
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Albumin >= 2.5 mg/dL
+
+Criterion:
+    Patients with metastatic colorectal cancer who have received no prior systemic therapy for advanced disease
+
+Output:
+    Original Text: Patients with metastatic colorectal cancer who have received no prior systemic therapy for advanced disease
+    Disease/Condition: Metastatic Colorectal Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Metastatic Colorectal Cancer" AND Prior Systemic Therapy is False
+
+Criterion:
+    Patients with metastatic colorectal cancer who have received prior systemic therapy for advanced disease
+
+Output:
+    Original Text: Patients with metastatic colorectal cancer who have received prior systemic therapy for advanced disease
+   

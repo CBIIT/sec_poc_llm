@@ -1,0 +1,21 @@
+
+    Original Text: Completion of informed consent prior to any study specific procedures
+    Disease/Condition: none
+    Procedure: Informed Consent
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Informed Consent" is True
+
+Criterion:
+    Subjects with a history of malignancy other than non-melanoma skin cancer within 5 years before screening, excluding basal cell carcinoma of the skin
+
+Output:
+    Original Text: Subjects with a history of malignancy other than non-melanoma skin cancer within 5 years before screening, excluding basal cell carcinoma of the skin
+    Disease/Condition: none
+    Procedure: History of Malignancy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "History of Malignancy" is False and "Basal Cell Carcinoma of Skin" is False
+
+Criterion:
+    Subjects with a history of malignancy other than non-melanoma skin cancer within 5 years before screening, excluding basal

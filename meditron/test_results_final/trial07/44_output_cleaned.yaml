@@ -1,0 +1,8 @@
+Original Text: |
+    Evidence of bleeding diathesis or clinically significant coagulopathy (in the absence of therapeutic anticoagulation); any history of significant bleeding or thrombosis should be discussed with the study principal investigators (PIs)
+Disease/Condition: none
+Procedure: Bleeding Diathesis, Coagulopathy
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Evidence of bleeding diathesis or clinically significant coagulopathy (in the absence of therapeutic anticoagulation)" AND NOT ("any history of significant bleeding or thrombosis should be discussed with the study principal investigators (PIs)")

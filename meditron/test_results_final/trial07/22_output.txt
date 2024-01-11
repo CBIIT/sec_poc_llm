@@ -1,0 +1,18 @@
+
+    Original Text: Symptomatic brain metastases; any neurologic symptoms present must have resolved with local therapy by the time of administration of study drug
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Symptomatic brain metastases" is False and "any neurologic symptoms present must have resolved with local therapy by the time of administration of study drug" is True
+
+Criterion:
+    Patients must have measurable disease at baseline, defined as at least one lesion >1 cm in diameter on CT scan or MRI scan
+
+Output:
+    Original Text: Patients must have measurable disease at baseline, defined as at least one lesion >1 cm in diameter on CT scan or MRI scan
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Patients must have measurable disease at baseline, defined as at least one lesion >1 cm in diameter on CT scan or MRI scan" is True

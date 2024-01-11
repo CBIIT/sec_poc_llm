@@ -1,0 +1,25 @@
+
+    Original Text: Has documented confirmation of histological or cytological HR-positive, HER2-negative breast cancer per local laboratory testing.
+    Disease/Condition: Breast Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: HR+, HER2-
+    Computable Rule: Disease is "Breast Cancer" AND HR+ is True AND HER2- is True
+
+Criterion:
+    Patients must have measurable disease according to RECIST v1.1.
+
+Output:
+    Original Text: Patients must have measurable disease according to RECIST v1.1.
+    Disease/Condition: Measurable disease
+    Procedure: none
+    Drug: none
+    Biomarker: None
+    Computable Rule: Disease is "Measurable disease"
+
+Criterion:
+    Patients must have received prior endocrine therapy for metastatic disease.
+
+Output:
+    Original Text: Patients must have received prior endocrine therapy for metastatic disease.
+    D

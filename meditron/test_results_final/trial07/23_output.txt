@@ -1,0 +1,28 @@
+
+    Original Text: Patients with brain metastases for whom complete surgical resection is clinically appropriate
+    Disease/Condition: Brain Metastasis
+    Procedure: Surgery
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Surgery" is True and "Brain Metastasis" is True
+
+Criterion:
+    Patients with histologically confirmed advanced non-small cell lung cancer (NSCLC)
+
+Output:
+    Original Text: Patients with histologically confirmed advanced non-small cell lung cancer (NSCLC)
+    Disease/Condition: NSCLC
+    Procedure: Histology
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Histology" is True and "NSCLC" is True
+
+Criterion:
+    Patients with histologically confirmed advanced non-squamous NSCLC
+
+Output:
+    Original Text: Patients with histologically confirmed advanced non-squamous NSCLC
+    Disease/Condition: NSCLC
+    Procedure: Histology
+    Drug: none
+   

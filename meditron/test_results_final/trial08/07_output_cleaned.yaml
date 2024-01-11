@@ -1,0 +1,8 @@
+Original Text: |
+    Up to 2 prior lines of systemic treatment (most recent line of therapy must be palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2) in the locally advanced or metastatic setting is allowed; the participant must have shown evidence of progressive disease on palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2 in the locally advanced or metastatic setting prior to enrollment.
+Disease/Condition: Locally Advanced Breast Cancer, Metastatic Breast Cancer
+Procedure: Palbociclib + Aromatase Inhibitor, Ribociclib + Aromatase Inhibitor, Fulvestrant + Palbociclib, Fulvestrant + Ribociclib
+Drug: Palbociclib, Ribociclib, Fulvestrant
+Biomarker: none
+Computable Rule: |
+    LK PAL

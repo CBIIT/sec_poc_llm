@@ -1,0 +1,24 @@
+
+    Original Text: Active autoimmune disease that has required systemic treatment in the past 2 years
+    Disease/Condition: Autoimmune disease, Systemic Treatment
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: AD == True, ST == True
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to screening
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to screening
+    Disease/Condition: History of malignancy, Nonmelanoma Skin Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HOM == True, NMSC == False
+
+Criterion:
+    Patients with a history of malignant melanoma (MM) within 10 years prior to screening
+
+Output:
+    Original Text: Patients with a history of malignant melanoma (MM) within 

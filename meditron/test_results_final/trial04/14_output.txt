@@ -1,0 +1,29 @@
+
+    Original Text: Platelets >= 100 000/mm^3
+    Disease/Condition: None
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: PLT >= 100000
+
+Criterion:
+    Patients with a history of malignancy within the last 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy within the last 5 years
+    Disease/Condition: History of Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HISTORY_OF_MALIGNANCY == True
+
+Criterion:
+    Patients with a history of malignancy within the last 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy within the last 5 years
+    Disease/Condition: History of Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HISTORY_

@@ -1,0 +1,8 @@
+Original Text: |
+    International normalized ratio (INR) or prothrombin time (PT) =< 1.5 X ULN unless subject is receiving anticoagulant therapy as long as PT or partial thromboplastin time (PTT) is within therapeutic range of intended use of anticoagulants
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    INR <= 1.5 * ULN AND PT <= 1.5 * ULN OR PTT <= 1.5 * ULN

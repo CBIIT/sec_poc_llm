@@ -1,0 +1,8 @@
+Original Text: |
+    Medical condition that in the opinion of the enrolling investigator would require the use of valproic acid within =< 5 days of the first dose of belinostat or while on study
+Disease/Condition: none
+Procedure: Valproic Acid
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Valproic Acid" is True

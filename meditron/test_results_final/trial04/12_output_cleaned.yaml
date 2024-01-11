@@ -1,0 +1,8 @@
+Original Text: |
+    Adequate bone marrow, renal, and hepatic function (liver function and renal tests, grade 1 or lower)
+Disease/Condition: Bone Marrow, Renal Function, Hepatic Function
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    BM == True, RF == True, HF == True

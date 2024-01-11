@@ -1,0 +1,31 @@
+
+Criterion: 05
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Subject must not have any affected lymph nodes or metastatic disease
+
+Output:
+    Original Text: Subject must not have any affected lymph nodes or metastatic disease
+    Disease/Condition: Lymph node-Metastases, Metastatic Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == False, MTS == False
+
+Criterion:
+    Positive for translocation or inversion events involving the ALK gene locus (e.g. resulting in EML4-ALK fusion) as defined by a Clinical Laboratory Improvement Act (CLIA)-approved test including: (1) translocation or inversion events involving the ALK gene locus (e.g. resulting in EML4-ALK fusion) as determined by the Vysis Break Point fluorescence in situ hybridization (FISH) assay; (2) ALK protein expression by immunohistochemistry (IHC); or (3) ALK rearrangement identified by next generation (NextGen) sequencing; this must have been performed:
+* By a local CLIA certified laboratory: Report must indicate the results as well as the CLIA number of the laboratory which performed the assay; tissue must be available for submission for central, retrospective confirmation of the ALK fusion status via ALCHEMIST-SCREEN (ALLIANCE A151216); OR
+* Patient registered to and the ALK fusion status performed centrally on the ALCHEMIST-SCREEN (ALLIANCE A151216)
+
+Output:[0m
+
+[1m> Finished chain.[0m

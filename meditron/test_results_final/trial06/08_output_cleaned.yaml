@@ -1,0 +1,8 @@
+Original Text: |
+    Prostate volume < 120 cc
+Disease/Condition: Prostate
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    Prostate volume < 120 cc

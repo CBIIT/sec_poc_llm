@@ -1,0 +1,8 @@
+Original Text: |
+    Serum aspartate aminotransferase (AST) and serum alanine aminotransferase (ALT) =< 2.5 x upper limit of normal (ULN)
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    AST + ALT <= 2.5 * ULN

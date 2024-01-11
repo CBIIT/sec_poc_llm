@@ -1,0 +1,8 @@
+Original Text: |
+    Patients must agree to tissue collection for correlative studies at the specified timepoints
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "tissue collection" is True AND "at the specified timepoints" is True

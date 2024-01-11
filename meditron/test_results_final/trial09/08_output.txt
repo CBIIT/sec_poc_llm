@@ -1,0 +1,25 @@
+
+    Original Text: Symptomatic and/or untreated central nervous system (CNS) metastases or leptomeningeal disease.
+    Disease/Condition: CNS Metastasis, Leptomeningeal Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == True OR LK MLD == True
+
+Criterion:
+    Patients with active brain metastases or spinal cord compression.
+
+Output:
+    Original Text: Patients with active brain metastases or spinal cord compression.
+    Disease/Condition: Brain Metastasis, Spinal Cord Compression
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK BM == True OR LK SCC == True
+
+Criterion:
+    Patients with active brain metastases or spinal cord compression.
+
+Output:
+    Original Text: Patients with active brain metastases or spinal cord compression.
+    Disease/Condition: Brain Metastasis

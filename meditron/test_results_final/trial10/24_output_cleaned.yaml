@@ -1,0 +1,8 @@
+Original Text: |
+    Previously participated in any other pembrolizumab (MK-3475) study, or received prior therapy with an anti-programmed cell death (PD)-1, anti-PD-Ligand 1 (anti-PD-L1), anti-PD-Ligand 2 (anti-PD-L2), or any other immunomodulating mAb or drug specifically targeting T-cell co-stimulation or checkpoint pathways
+Disease/Condition: Pembrolizumab, Anti-PD-1, Anti-PD-L1, Anti-PD-L2, Immunomodulating mAbs
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK MK3475 == True, MK3475 == True, MK3475 == False, MK3475 == False, MK3475 == False, MK3475 == False, MK3475 == False, MK3475 == False, MK347

@@ -1,0 +1,8 @@
+Original Text: |
+    Patients with symptomatic uncontrolled brain metastases or spinal cord compressions. A scan to confirm the absence of brain metastases is not required
+Disease/Condition: none
+Procedure: Symptomatic uncontrolled brain metastases or spinal cord compressions
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Symptomatic uncontrolled brain metastases or spinal cord compressions" is False

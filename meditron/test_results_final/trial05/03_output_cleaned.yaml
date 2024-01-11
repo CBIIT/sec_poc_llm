@@ -1,0 +1,8 @@
+Original Text: |
+    Patients must consent to the MD Anderson Immunotherapy Platform laboratory protocol PA13-0291
+Disease/Condition: None
+Procedure: None
+Drug: None
+Biomarker: None
+Computable Rule: |
+    PATIENTS_CONSENTED == True

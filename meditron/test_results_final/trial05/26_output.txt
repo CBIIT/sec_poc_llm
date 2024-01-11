@@ -1,0 +1,21 @@
+
+    Original Text: History or current diagnosis of MDS/AML
+    Disease/Condition: Myelodysplastic Syndrome, Acute Myeloid Leukemia
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MDS == True OR LK AML == True
+
+Criterion:
+    Patients with a history of myelodysplastic syndromes (MDS) or acute myeloid leukemia (AML)
+
+Output:
+    Original Text: Patients with a history of myelodysplastic syndromes (MDS) or acute myeloid leukemia (AML)
+    Disease/Condition: Myelodysplastic Syndrome, Acute Myeloid Leukemia
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MDS == True OR LK AML == True
+
+Criterion:
+    Patients with a history of myelodysplastic syndromes (MDS) or acute myel

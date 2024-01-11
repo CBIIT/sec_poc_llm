@@ -1,0 +1,8 @@
+Original Text: |
+    Current pregnancy or lactation
+Disease/Condition: Pregnancy
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    Disease is "Pregnancy"

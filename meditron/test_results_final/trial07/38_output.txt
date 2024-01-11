@@ -1,0 +1,24 @@
+
+    Original Text: Has a known human immunodeficiency virus (HIV), hepatitis B (HBV), or hepatitis C (HCV) infection
+    Disease/Condition: HIV, Hepatitis B Virus Infection, Hepatitis C Virus Infection
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HIV == True, HBV == True, HCV == True
+
+Criterion:
+    Subjects with a history of malignancy within the last 5 years
+
+Output:
+    Original Text: Subjects with a history of malignancy within the last 5 years
+    Disease/Condition: History of Malignancy, Cancer History
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HISTORY_OF_MALIGNANCY == True
+
+Criterion:
+    Subjects with a history of malignancy within the last 10 years
+
+Output:
+    Original Text: Subjects with a history of m

@@ -1,0 +1,8 @@
+Original Text: |
+    Presence of active second malignancy
+Disease/Condition: Second Malignancy
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    SM == True

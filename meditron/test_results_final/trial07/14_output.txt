@@ -1,0 +1,18 @@
+
+    Original Text: Serum total bilirubin =< 1.5 X ULN OR direct bilirubin =< ULN for subjects with total bilirubin levels > 1.5 ULN
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: <1.5*ULN + (direct_bilirubin <= ULN) * (total_bilirubin > 1.5*ULN)>
+
+Criterion:
+    Subjects must have a history of at least one episode of acute pancreatitis within the last 2 years
+
+Output:
+    Original Text: Subjects must have a history of at least one episode of acute pancreatitis within the last 2 years
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: (history_of_acute_pancreatitis >= 1) AND (time_since_last_episode_of_acute

@@ -1,0 +1,8 @@
+Original Text: |
+    Any advanced solid tumor that has failed at least one line of therapy and is TMB-H (â‰¥10 mut/Mb, F1CDx assay)
+Disease/Condition: Solid tumor
+Procedure: None
+Drug: None
+Biomarker: TMB-H (â‰¥10 mut/Mb, F1CDx assay)
+Computable Rule: |
+    "TMB-H (≥10 mut/Mb, F1CDx assay)" is True

@@ -1,0 +1,8 @@
+Original Text: |
+    No features suggestive of myelodysplastic syndrome (MDS)/acute myeloid leukemia (AML) on peripheral blood smear (within 7 days prior to treatment registration)
+Disease/Condition: Myelodysplastic Syndromes, Acute Myeloid Leukemia
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK MDS == False, MDS == False, LK AML == False, AML == False

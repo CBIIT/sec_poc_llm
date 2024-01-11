@@ -1,0 +1,25 @@
+
+    Original Text: Absolute neutrophil count (ANC) >= 1,500 /mcL
+    Disease/Condition: ANC
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: ANC >= 1500
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within the past 3 years
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within the past 3 years
+    Disease/Condition: History of Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HOMNC < 365
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within the past 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within the past 5 years
+    Disease/Condition: History of Malignancy

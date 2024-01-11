@@ -1,0 +1,28 @@
+
+    Original Text: FOR ALL PATIENTS
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "FOR ALL PATIENTS" is True
+
+Criterion:
+    FOR ALL PATIENTS WITH CANCER:
+
+Output:
+    Original Text: FOR ALL PATIENTS WITH CANCER
+    Disease/Condition: Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "FOR ALL PATIENTS WITH CANCER" is True
+
+Criterion:
+    FOR ALL PATIENTS WITH CANCER AND HAVE RECEIVED RADIOTHERAPY:
+
+Output:
+    Original Text: FOR ALL PATIENTS WITH CANCER AND HAVE RECEIVED RADIOTHERAPY
+    Disease/Condition: Cancer
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker:

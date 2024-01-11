@@ -1,0 +1,32 @@
+
+    Original Text: History of stroke or transient ischemiatic attack within 3 months prior to cycle 1, day 1
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a history of stroke or TIA within 6 months prior to screening
+
+Output:
+    Original Text: Patients with a history of stroke or TIA within 6 months prior to screening
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a history of stroke or TIA within 6 months prior to screening
+
+Output:
+    Original Text: Patients with a history of stroke or TIA within 6 months prior to screening
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a history

@@ -1,0 +1,21 @@
+
+    Original Text: Has received more than 2 lines of prior systemic therapy for locally advanced/metastatic breast cancer.
+    Disease/Condition: Locally Advanced Breast Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Locally Advanced Breast Cancer" AND Prior Systemic Therapy is True
+
+Criterion:
+    Patients with metastatic breast cancer who have progressed on or after treatment with an anthracycline and a taxane in either the adjuvant or metastatic setting.
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have progressed on or after treatment with an anthracycline and a taxane in either the adjuvant or metastatic setting.
+    Disease/Condition: Metastatic breast cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Metastatic breast cancer" AND Progressed On Anthracycline AND Progressed On Taxane
+
+Criterion:
+    Pat

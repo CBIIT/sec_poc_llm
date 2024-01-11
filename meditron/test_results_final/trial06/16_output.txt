@@ -1,0 +1,35 @@
+
+    Original Text: Prior pelvic RT
+    Disease/Condition: none
+    Procedure: Pelvic radiation therapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Pelvic radiation therapy" is True
+
+Criterion:
+    Patients with prior pelvic radiation therapy
+
+Output:
+    Original Text: Patients with prior pelvic radiation therapy
+    Disease/Condition: none
+    Procedure: Pelvic radiation therapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Pelvic radiation therapy" is True
+
+Criterion:
+    Patients with prior pelvic radiation therapy
+
+Output:
+    Original Text: Patients with prior pelvic radiation therapy
+    Disease/Condition: none
+    Procedure: Pelvic radiation therapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Pelvic radiation therapy" is True
+
+Criterion:
+    Patients with prior pelvic radiation therapy
+
+Output:
+    Original Text: Patients with

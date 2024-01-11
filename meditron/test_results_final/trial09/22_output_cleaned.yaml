@@ -1,0 +1,8 @@
+Original Text: |
+    Treatment with a live or live attenuated vaccine.
+Disease/Condition: none
+Procedure: Vaccination
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Vaccination" is True

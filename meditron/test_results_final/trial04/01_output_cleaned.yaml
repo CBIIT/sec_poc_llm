@@ -1,0 +1,8 @@
+Original Text: |
+    >= 18 years of age and able to provide informed consent
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    > 18 AND (age OR ability)

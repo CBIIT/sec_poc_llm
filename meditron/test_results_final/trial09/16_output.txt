@@ -1,0 +1,18 @@
+
+    Original Text: Diagnosis of immunodeficiency or any condition requiring concurrent use of systemic immunosuppressants or corticosteroids.
+    Disease/Condition: Immunodeficiency, Systemic Immunosuppressant, Corticosteroid
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: IMMUNODEFICIENCY == True OR SYSTEMIC_IMMUNOSUPPRESSANT == True OR CORTICOSTEROID == True
+
+Criterion:
+    Patients with a history of malignancy within the last 5 years (except non-melanoma skin cancer)
+
+Output:
+    Original Text: Patients with a history of malignancy within the last 5 years (except non-melanoma skin cancer).
+    Disease/Condition: Malignancy, Non-Melanoma Skin Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: MALIGNANCY == True AND NONMELAN

@@ -1,0 +1,8 @@
+Original Text: |
+    Can provide existing biopsy taken within 2 years prior to entering trial or provide fresh biopsy
+Disease/Condition: Biopsy
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    BIOPSY == True, BIOPSY == True

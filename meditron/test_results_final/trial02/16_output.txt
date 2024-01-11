@@ -1,0 +1,20 @@
+
+    Original Text: The maximum time requirement between surgery and randomization must be:
+* 4 months (120 days) if no adjuvant chemotherapy was administered
+* 9 months (270 days) if adjuvant chemotherapy was administered
+* 11 months (330 days) if adjuvant chemotherapy and radiation therapy were administered
+    Disease/Condition: none
+    Procedure: Surgery
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Surgery" is True AND ("Adjuvant Chemotherapy" is False OR "Adjuvant Chemotherapy" is True AND "Adjuvant Radiation Therapy" is True)
+
+Criterion:
+    Patients with metastatic disease at diagnosis are excluded from this study.
+
+Output:
+    Original Text: Patients with metastatic disease at diagnosis are excluded from this study.
+    Disease/Condition: Metastatic
+    Procedure: Diagnosis
+    Drug: none
+    Biomarker: none

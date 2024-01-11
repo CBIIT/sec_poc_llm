@@ -1,0 +1,28 @@
+
+    Original Text: Platelets >= 100,000/mcL
+    Disease/Condition: None
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: PLT >= 100000
+
+Criterion:
+    Patients with a history of cardiac surgery within 6 months prior to enrollment
+
+Output:
+    Original Text: Patients with a history of cardiac surgery within 6 months prior to enrollment
+    Disease/Condition: Cardiac Surgery
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: CARD_SURG == True
+
+Criterion:
+    Patients with a history of cardiac surgery within 6 months prior to enrollment
+
+Output:
+    Original Text: Patients with a history of cardiac surgery within 6 months prior to enrollment
+    Disease/Condition: Cardiac Surgery
+    Procedure: none
+    Drug: none
+    Biomarker: none

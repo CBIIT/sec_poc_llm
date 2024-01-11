@@ -1,0 +1,8 @@
+Original Text: |
+    Any other oncologic treatments administered â‰¤14 days (<28 days in case of checkpoint inhibitor therapy) prior to first dose of study treatment. Also, ongoing adverse effects from such treatment > Grade 1 with the exception for alopecia and Grade 2 peripheral neuropathy.
+Disease/Condition: None
+Procedure: None
+Drug: None
+Biomarker: None
+Computable Rule: |
+    "Any other oncologic treatments administered â‰¤14 days (<28 days in case of checkpoint inhibitor therapy) prior to first dose of study treatment." is False

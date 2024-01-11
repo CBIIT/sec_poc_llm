@@ -1,0 +1,8 @@
+Original Text: |
+    Alkaline phosphatase < 2.5 x upper limit of normal, unless bone metastasis is present in the absence of liver metastasis
+Disease/Condition: Alkaline Phosphatase, Bone Metastasis, Liver Metastasis
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    ALP < 2.5 * ULN, BM == False && LM == False

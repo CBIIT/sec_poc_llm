@@ -1,0 +1,8 @@
+Original Text: |
+    Ability to receive pelvic radiotherapy and be willing to adhere to the SUPR-SABR regimen
+Disease/Condition: none
+Procedure: Pelvic Radiotherapy
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Pelvic Radiotherapy" is True and "Willingness to Adhere to the SUPR-SABR Regimen" is True

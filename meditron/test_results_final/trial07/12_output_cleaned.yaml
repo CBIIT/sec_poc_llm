@@ -1,0 +1,8 @@
+Original Text: |
+    Hemoglobin >= 9 g/dL or >= 5.6 mmol/L without transfusion or erythropoietin (EPO) dependency (within 7 days of assessment)
+Disease/Condition: Anemia
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    Hb >= 9 OR Hb >= 5.6 AND NOT Tx OR EPO

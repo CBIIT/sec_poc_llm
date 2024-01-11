@@ -1,0 +1,8 @@
+Original Text: |
+    Presence of >= 1 metastatic sites of disease that can be safely accessed for core needle biopsy and patient willingness to undergo fresh tissue biopsies of up to 3 lesions.
+Disease/Condition: Metastasis, Safely Accessible
+Procedure: Core Needle Biopsy, Fresh Tissue Biopsy
+Drug: none
+Biomarker: none
+Computable Rule: |
+    METASTASIS > 0 AND SAFELY ACCESSIBLE > 0

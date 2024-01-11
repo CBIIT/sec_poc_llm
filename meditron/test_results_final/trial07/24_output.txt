@@ -1,0 +1,28 @@
+
+    Original Text: Patients with lung cancer with squamous histology
+    Disease/Condition: Squamous Cell Carcinoma, Lung Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK SCC == True, LK LungCancer == True
+
+Criterion:
+    Patients with advanced non-small cell lung cancer (NSCLC)
+
+Output:
+    Original Text: Patients with advanced non-small cell lung cancer (NSCLC)
+    Disease/Condition: Advanced Non-Small Cell Lung Cancer, NSCLC
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK NSCLC == True
+
+Criterion:
+    Patients with advanced non-squamous NSCLC
+
+Output:
+    Original Text: Patients with advanced non-squamous NSCLC
+    Disease/Condition: Advanced Non-Squamous Non-Small Cell Lung Cancer, NSCLC
+    Procedure: none
+    Drug: none
+   

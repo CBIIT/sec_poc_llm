@@ -1,0 +1,18 @@
+
+    Original Text: Has a history of (non-infectious) pneumonitis that required steroids or current pneumonitis
+    Disease/Condition: Pneumonitis, Steroids, Current Pneumonitis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HAS(PNEUMONITIS) OR HAS(STEROIDS) OR HAS(CURRENT_PNEUMONITIS) == True
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to enrollment
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to enrollment
+    Disease/Condition: Malignancy, Nonmelanoma Skin Cancer, History of Malignancy, History of Nonmelanoma Skin Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HAS(MALIGNANCY

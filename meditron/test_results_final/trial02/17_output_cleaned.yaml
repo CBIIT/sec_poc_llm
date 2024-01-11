@@ -1,0 +1,8 @@
+Original Text: |
+    Patients must have completed any prior adjuvant chemotherapy or radiation therapy 2 or more weeks (6 or more weeks for mitomycin and nitrosoureas) prior to randomization and be adequately recovered at the time of randomization
+Disease/Condition: none
+Procedure: Adjuvant Chemotherapy, Adjuvant Radiation Therapy
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Adjuvant Chemotherapy" OR "Adjuvant Radiation Therapy" is True AND "More than 2 Weeks" is True

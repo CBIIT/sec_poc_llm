@@ -1,0 +1,13 @@
+
+    Original Text: Female participants of childbearing potential must be willing to use adequate contraception during the intervention period and for at least the time needed to eliminate each study intervention after the last dose of study intervention. and agrees not to donate eggs (ova, oocytes) to others or freeze/store for her own use for the purpose of reproduction during this period. The length of time required to continue contraception for each study intervention is as follows: MK-3475 (120 days)
+    Disease/Condition: Female participant of childbearing potential
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Female participant of childbearing potential" AND Contraception is True
+
+Criterion:
+    Participants with a history of prior malignancy other than nonmelanoma skin cancer or in situ cervical cancer within 5 years prior to enrollment are excluded from the study.
+
+Output:
+    Original Text: Participants with a history of prior malignancy

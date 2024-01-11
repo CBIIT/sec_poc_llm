@@ -1,0 +1,10 @@
+elapsed_time: 19s
+was_input_captured: False
+original_text: |
+    Have measurable disease or detectable (non-measurable) disease
+    * Measurable disease is defined as at least 1 lesion that can be accurately measured in at least 1 dimension (longest diameter to be recorded). Each lesion must be >= 10 mm when measured by computed tomography (CT), magnetic resonance imaging (MRI), or caliper measurement at clinical examination or >= 20 mm when measured by chest x-ray. Lymph nodes must be >= 15 mm in short axis when measured by CT or MRI
+    * Detectable (non-measurable) disease is defined as not having measurable disease but having:
+    ** Baseline values of CA-125 at least 2 x upper limit of normal AND EITHER
+    *** Ascites and/or pleural effusion attributed to tumor OR
+    *** Solid and/or cystic abnormalities on radiographic imaging consistent with recurrent disease that do not meet Response Evaluation Criteria in Solid Tumors (RECIST) version 1.1 definitions for target lesions. The protocol is using immune-related (i)RECIST for response evaluation
+inclusion: True

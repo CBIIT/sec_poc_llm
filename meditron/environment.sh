@@ -3,10 +3,12 @@ sudo yum install epel-release
 sudo yum install ack
 
 # For working with github use gh CLI
-conda install -c conda-forge gh
+type -p yum-config-manager >/dev/null || sudo yum install -y yum-utils
+sudo yum-config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+sudo yum install -y gh
 
 # For commands like "conda activate env"
-echo 'source ~/anaconda3/etc/profile.d/conda.sh' >> ~/.bashrc
+echo 'source ~/anaconda3/etc/profile.d/conda.sh' >> ~/.profile
 source ~/anaconda3/etc/profile.d/conda.sh
 
 # Install the required packages in the pytorch environment since that is

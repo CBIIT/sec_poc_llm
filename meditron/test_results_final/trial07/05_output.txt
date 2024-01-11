@@ -1,0 +1,7 @@
+
+    Original Text: Any number of previous treatments with the exception of previous inhibitors of programmed cell death 1 (PD-1), PD-L1, or programmed cell death 1 ligand 2 (PD-L2); other prior systemic therapies must have been administered at least 2 weeks before administration of pembrolizumab; the exception to this is ipilimumab which must have been administered at least 4 weeks prior to the start of pembrolizumab; patients are not required to have had prior systemic therapy
+    Disease/Condition: None
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: "Any number of previous treatments with the exception of previous inhibitors of programmed cell death 1 (PD-1), PD-L1, or programmed cell death 1 ligand 2 (PD-L2); other prior systemic therapies must have been administered at least 2 weeks before administration of pembrolizumab; the exception to this is ipilimumab which must have been administered

@@ -1,0 +1,8 @@
+Original Text: |
+    Known active central nervous system (CNS) metastases and/or carcinomatous meningitis
+Disease/Condition: CNS Metastasis, Carcinomatous Meningitis
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK CNSMets == True, CNSMets == True

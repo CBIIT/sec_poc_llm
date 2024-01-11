@@ -1,0 +1,14 @@
+
+    Original Text: Patients with a known hypersensitivity to niraparib, carboplatin, cabazitaxel or an anti-PD1 or anti-PDL1 inhibitor
+    Disease/Condition: Hypersensitivity
+    Procedure: none
+    Drug: Niraparib, Carboplatin, Cabazitaxel
+    Biomarker: none
+    Computable Rule: HYPERSENSITIVITY == True
+
+Criterion:
+    Patients with a history of prior chemotherapy for advanced prostate cancer (including abiraterone acetate, enzalutamide, docetaxel, cabazitaxel, mitoxantrone, or chlorambucil) within 6 months before randomization
+
+Output:
+    Original Text: Patients with a history of prior chemotherapy for advanced prostate cancer (including abiraterone acetate, enzalutamide, docetaxel, cabazitaxel, mitoxantrone, or chlorambucil) within 6 months before randomization
+    D

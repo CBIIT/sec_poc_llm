@@ -1,0 +1,15 @@
+
+    Original Text: Hemoglobin >= 10.0 g/dL (unless due to bone marrow infiltration by tumor, in which case hemoglobin > 8 g/dL is allowed) (within 7 days prior to treatment registration). Patient may have blood transfusions prior to study enrollment
+    Disease/Condition: Anemia, Bone Marrow Infiltration by Tumor, Blood Transfusion
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Hb >= 10.0 &&!(Hb <= 8.0 && BM_Tumor) ||!(Hb <= 8.0 && BM_Tumor && BT)
+
+Criterion:
+    Adequate renal function defined as creatinine clearance >60 ml/min
+
+Output:
+    Original Text: Adequate renal function defined as creatinine clearance >60 ml/min
+    Disease/Condition: Renal Failure
+    Procedure: none

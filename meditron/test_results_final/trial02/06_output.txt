@@ -1,0 +1,14 @@
+
+    Original Text: Women must not be pregnant or breast-feeding because, based on the mechanism of action, crizotinib may cause fetal harm when administered during pregnancy; in animal studies, teratogenicity was not evident, but embryotoxic and fetotoxic effects were noted in rats at crizotinib exposures similar to and above those observed in humans at the recommended clinical dose
+    Disease/Condition: none
+    Procedure: Pregnancy
+    Drug: Crizotinib
+    Biomarker: none
+    Computable Rule: "Pregnant" OR "Breast-feeding" is True
+
+Criterion:
+    Patients with EGFR exon 19 deletions or exon 21 L858R substitution mutations should receive erlotinib (Tarceva)
+
+Output:
+    Original Text: Patients with EGFR exon 19 deletions or exon 21 L858R substitution mutations should receive erlotinib (Tarceva)
+    Disease/Condition

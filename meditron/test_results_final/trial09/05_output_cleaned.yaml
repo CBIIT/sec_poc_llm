@@ -1,0 +1,8 @@
+Original Text: |
+    Have relapsed or progressed after prior anti- PD-(L)1 therapy as follows:
+Disease/Condition: Relapse, Progressive Disease
+Procedure: none
+Drug: Durvalumab
+Biomarker: none
+Computable Rule: |
+    RP_PD_1_Mono == True, RP_PD_1_Combo == False, RP_PD_1_Single == True

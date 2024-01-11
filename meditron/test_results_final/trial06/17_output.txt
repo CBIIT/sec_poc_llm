@@ -1,0 +1,21 @@
+
+    Original Text: Pre-existing conditions or overall health status which disqualifies the patient from curative-intent RT. Patients with life expectancy less than 10 years are not eligible
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Pre-existing conditions or overall health status which disqualifies the patient from curative-intent RT. Patients with life expectancy less than 10 years are not eligible" is False
+
+Criterion:
+    The patient must have histologically confirmed non-small cell lung cancer (NSCLC)
+
+Output:
+    Original Text: The patient must have histologically confirmed non-small cell lung cancer (NSCLC)
+    Disease/Condition: NSCLC
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "The patient must have histologically confirmed non-small cell lung cancer (NSCLC)" is True
+
+Criterion:
+    The patient must have histologically confirmed small cell lung cancer (S

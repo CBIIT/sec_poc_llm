@@ -1,0 +1,8 @@
+Original Text: |
+    History of or active autoimmune disease requiring systemic treatment in the last 6 months or persistent immunemediated toxicity caused by checkpoint inhibitor therapy > Grade 2
+Disease/Condition: Autoimmune Disease, Immune Mediated Toxicity
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    AD_HISTORICAL == True OR AI_TOXICITY == True

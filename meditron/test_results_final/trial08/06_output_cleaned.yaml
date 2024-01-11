@@ -1,0 +1,8 @@
+Original Text: |
+    Has documented confirmation of histological or cytological HR-positive, HER2-negative breast cancer per local laboratory testing.
+Disease/Condition: Breast Cancer
+Procedure: none
+Drug: none
+Biomarker: HR+, HER2-
+Computable Rule: |
+    Disease is "Breast Cancer" AND HR+ is True AND HER2- is True

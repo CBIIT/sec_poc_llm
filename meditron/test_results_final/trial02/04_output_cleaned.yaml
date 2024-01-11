@@ -1,0 +1,8 @@
+Original Text: |
+    Patients must be registered to the ALCHEMIST-SCREEN (ALLIANCE A151216) trial prior to randomization
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "ALCHEMIST-SCREEN (ALLIANCE A151216)" is True

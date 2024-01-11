@@ -1,0 +1,13 @@
+
+    Original Text: Activated partial thromboplastin time (aPTT) or partial thromboplastin time (PTT) =< 1.5 X ULN unless subject is receiving anticoagulant therapy as long as PT or PTT is within therapeutic range of intended use of anticoagulants
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Activated partial thromboplastin time (aPTT) or partial thromboplastin time (PTT) <= 1.5 X ULN" AND "subject is not receiving anticoagulant therapy" AND "PT or PTT is within therapeutic range of intended use of anticoagulants"
+
+Criterion:
+    Subjects with a history of cardiac arrhythmias, including atrial fibrillation, should be excluded from this study
+
+Output:
+    Original Text: Subjects with a history of cardiac arrhythmias, including atrial

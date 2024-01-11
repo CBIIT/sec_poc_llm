@@ -1,0 +1,13 @@
+
+    Original Text: Had radiotherapy within 3 weeks prior to Cycle 1 Day 1 (cycle is 28 days)
+    Disease/Condition: none
+    Procedure: Radiotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Had radiotherapy within 3 weeks prior to Cycle 1 Day 1 (cycle is 28 days)" is True
+
+Criterion:
+    Subjects with metastatic breast cancer who had received no more than one chemotherapy regimen for metastatic disease, including adjuvant therapy, and whose tumors were positive for HER-2/neu overexpression by immunohistochemistry (IHC) or fluorescence in situ hybridization (FISH), or both, and who had progressed on trastuzumab-based therapy
+
+Output:
+    Original Text: Subjects with metastatic breast cancer who had received no more than one chemotherapy regimen for metastatic disease, including adjuvant therapy, and whose tumors were positive for HER-2/ne

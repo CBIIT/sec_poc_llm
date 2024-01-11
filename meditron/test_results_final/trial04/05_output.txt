@@ -1,0 +1,13 @@
+
+    Original Text: Patients must have had 1 prior platinum-based chemotherapeutic regimen for the management of ovarian, primary peritoneal, or fallopian tube carcinoma and at least 2 prior chemotherapy regimens
+    Disease/Condition: Ovarian cancer
+    Procedure: Platinum-based chemotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Platinum-based chemotherapy" is True and "at least 2 prior chemotherapy regimens" is True
+
+Criterion:
+    Patients must have had 1 prior platinum-based chemotherapeutic regimen for the management of ovarian, primary peritoneal, or fallopian tube carcinoma and at least 2 prior chemotherapy regimens
+
+Output:
+    Original Text: Patients must have had 1 prior platinum-based chemotherapeutic regimen for the management of ovarian, primary peritoneal, or fallopian tube carcinoma and at least 2 prior chemother

@@ -1,0 +1,17 @@
+
+    Original Text: Patients with new or progressive brain metastases (active brain metastases) or leptomeningeal disease unless determined by the treating physician that immediate central nervous system (CNS) specific treatment is not required and is unlikely to be required during the first cycle of therapy
+    Disease/Condition: Brain Metastasis, Leptomeningeal Disease
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: "Brain Metastasis" OR "Leptomeningeal Disease" is True AND ("Immediate CNS Specific Treatment" is False OR "Treating Physician Determined")
+
+Criterion:
+    Patients with active brain metastases or leptomeningeal disease should be excluded from this study
+
+Output:
+    Original Text: Patients with active brain metastases or leptomeningeal disease should be excluded from this study
+    Disease/Condition: Brain Metastasis, Leptomeningeal Disease
+    Procedure: None
+    Drug: None
+    Biom

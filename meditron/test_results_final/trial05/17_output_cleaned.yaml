@@ -1,0 +1,8 @@
+Original Text: |
+    Aspartate aminotransferase (AST) (serum glutamic oxaloacetic transaminase [SGOT]) and alanine aminotransferase (ALT) (serum glutamic pyruvic transaminase [SGPT]) =< 2.5 x institutional upper limit of normal (unless liver metastases are present in which case it must be =< 5 x ULN) (within 7 days prior to treatment registration)
+Disease/Condition: AST, ALT
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    AST <= 2.5 * ULN, ALT <= 2.5 * ULN

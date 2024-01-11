@@ -1,0 +1,8 @@
+Original Text: |
+    Any advanced solid tumor, with the exception of colorectal carcinoma (CRC), which is Microsatellite Instability (MSI)-High (MSI-H) OR
+Disease/Condition: Advanced Solid Tumor, Colorectal Carcinoma, Microsatellite Instability High
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    (MSS == False OR CRC == True) AND (MSI-H == True)

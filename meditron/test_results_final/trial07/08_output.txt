@@ -1,0 +1,7 @@
+
+    Original Text: PD-L1 expression >= 1% in tumor tissue from any site is required for patients with NSCLC; tumor tissue can be archival if no intercurrent systemic therapy was administered, however if no archival tissue is available or if intercurrent systemic therapy was administered, then a biopsy must be obtained for PD-L1 testing; PD-L1 expression must be obtained via central and/or local testing of PD-L1 Immunohistochemistry (IHC) by any Food and Drug Administration (FDA)-approved assay or an assay performed in a Clinical Laboratory Improvement Act (CLIA)-certified laboratory; PD-L1 expression is not required for patients with melanoma
+    Disease/Condition: Non-small cell lung cancer, Melanoma
+    Procedure: none
+    Drug: none
+    Biomarker: PD-L1
+    Computable Rule: PD_L1_expression >= 1% AND Tumor_site == "NSCLC" OR Tumor_site == "

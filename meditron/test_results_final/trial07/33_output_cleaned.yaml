@@ -1,0 +1,8 @@
+Original Text: |
+    Either a concurrent condition (including medical illness, such as active infection requiring treatment with intravenous antibiotics or the presence of laboratory abnormalities) or history of a prior condition that places the patient at unacceptable risk if he/she were treated with the study drug or a medical condition that confounds the ability to interpret data from the study
+Disease/Condition: None
+Procedure: None
+Drug: None
+Biomarker: None
+Computable Rule: |
+    "Either a concurrent condition (including medical illness, such as active infection requiring treatment with intravenous antibiotics or the presence of laboratory abnormalities) or history of a prior condition that places the patient at unacceptable risk if he/she were treated with the study drug or a medical condition that confounds the ability to interpret data from the study" is True

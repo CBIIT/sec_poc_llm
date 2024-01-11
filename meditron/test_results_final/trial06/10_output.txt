@@ -1,0 +1,24 @@
+
+    Original Text: Eastern Cooperative Oncology Group (ECOG) performance status 0-2
+    Disease/Condition: ECOG performance status
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Performance status is between 0 and 2
+
+Criterion:
+    Patients with histologically confirmed advanced solid tumors, excluding non-melanoma skin cancers, who have received no prior systemic therapy for metastatic disease
+
+Output:
+    Original Text: Patients with histologically confirmed advanced solid tumors, excluding non-melanoma skin cancers, who have received no prior systemic therapy for metastatic disease
+    Disease/Condition: Advanced solid tumors, excluding non-melanoma skin cancers
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Histology is Solid Tumor and Prior Systemic Therapy is False
+
+Criterion:
+    Patients must have measurable disease per RECIST v1.1
+
+Output:
+   

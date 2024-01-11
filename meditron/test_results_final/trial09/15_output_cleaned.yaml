@@ -1,0 +1,8 @@
+Original Text: |
+    History of life-threatening toxicity related to prior immune therapy or any toxicity resulting in permanent discontinuation from prior therapy.
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Life-threatening toxicity" is False OR "Permanent discontinuation" is True

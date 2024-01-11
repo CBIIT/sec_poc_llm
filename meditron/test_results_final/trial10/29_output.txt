@@ -1,0 +1,24 @@
+
+    Original Text: Known history of active tuberculosis (TB, Bacillus tuberculosis)
+    Disease/Condition: Tuberculosis
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: "Known history of active tuberculosis (TB, Bacillus tuberculosis)" is True
+
+Criterion:
+    Subjects with a known history of active tuberculosis (TB, Bacillus tuberculosis)
+
+Output:
+    Original Text: Subjects with a known history of active tuberculosis (TB, Bacillus tuberculosis)
+    Disease/Condition: Tuberculosis
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: "Subjects with a known history of active tuberculosis (TB, Bacillus tuberculosis)" is True
+
+Criterion:
+    Subjects with a known history of active tuberculosis (TB, Bacillus tuberculosis)
+
+Output:
+    Original Text:

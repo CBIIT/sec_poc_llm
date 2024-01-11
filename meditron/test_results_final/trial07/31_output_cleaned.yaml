@@ -1,0 +1,8 @@
+Original Text: |
+    Pregnancy or breast feeding; should a woman become pregnant or suspect she is pregnant while participating in this study, she should inform her treating physician immediately; because there is an unknown but potential risk for adverse events in nursing infants secondary to treatment of the mother with pembrolizumab breastfeeding must be discontinued if the mother is treated with pembrolizumab
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Pregnancy or breast feeding" AND ("should a woman become pregnant or suspect she is pregnant while participating in this study") AND ("because there is an unknown but potential risk for adverse events in nursing infants secondary to treatment of the mother with pembrolizumab")

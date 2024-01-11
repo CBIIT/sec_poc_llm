@@ -1,0 +1,8 @@
+Original Text: |
+    Major surgery, radiotherapy, anticancer therapy, or investigational agents =< 4 weeks of treatment day 1 or =< 5 half-lives, whichever is shorter
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Major surgery, radiotherapy, anticancer therapy, or investigational agents" <="4 weeks of treatment day 1" OR "Major surgery, radiotherapy, anticancer therapy, or investigational agents" <="5 half-lives"

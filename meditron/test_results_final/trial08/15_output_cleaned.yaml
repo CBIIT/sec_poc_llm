@@ -1,0 +1,8 @@
+Original Text: |
+    Has had disease progression on more than two cyclin-dependent kinase (CDK)4/6 inhibitors. Adjuvant abemaciclib is allowed but must have progressed on palbociclib or ribociclib.
+Disease/Condition: CDK4/6 Inhibitor, Abemaciclib, Palbociclib, Ribociclib
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK MTS == False, MTS == False, MTS == False, MTS == False

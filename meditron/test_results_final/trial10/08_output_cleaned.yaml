@@ -1,0 +1,8 @@
+Original Text: |
+    Performance status of 0 or 1 on the Eastern Cooperative Oncology Group (ECOG) Performance Scale within 3 days prior to first dose of pembrolizumab
+Disease/Condition: ECOG Performance Status
+Procedure: none
+Drug: Pembrolizumab
+Biomarker: none
+Computable Rule: |
+    PS_ECOG == 0 OR PS_ECOG == 1

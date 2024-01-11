@@ -1,0 +1,18 @@
+
+    Original Text: Performance status of 0 or 1 on the Eastern Cooperative Oncology Group (ECOG) Performance Scale within 3 days prior to first dose of pembrolizumab
+    Disease/Condition: ECOG Performance Status
+    Procedure: none
+    Drug: Pembrolizumab
+    Biomarker: none
+    Computable Rule: PS_ECOG == 0 OR PS_ECOG == 1
+
+Criterion:
+    Patients with histologically confirmed advanced non-small cell lung cancer (NSCLC) with progression after platinum-based chemotherapy
+
+Output:
+    Original Text: Patients with histologically confirmed advanced non-small cell lung cancer (NSCLC) with progression after platinum-based chemotherapy
+    Disease/Condition: NSCLC, Advanced Non-Small Cell Lung Cancer, Histology, Progression After Platinum-Based Chemotherapy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: NSCLC == True AND Histology == True

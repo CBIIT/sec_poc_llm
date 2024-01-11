@@ -1,0 +1,8 @@
+Original Text: |
+    Serious, non-healing or dehiscing wound
+Disease/Condition: Wound, Non-Healing Wound, Dehiscence
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK Wound == True, LK Non-HealingWound == True, LK Dehiscence == True

@@ -1,0 +1,18 @@
+
+    Original Text: Current pregnancy or lactation
+    Disease/Condition: Pregnancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Pregnancy"
+
+Criterion:
+    Patients with metastatic breast cancer who have received prior therapy with an anthracycline and a taxane in either the adjuvant or neoadjuvant setting, unless patients were treated with doxorubicin and docetaxel concurrently
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have received prior therapy with an anthracycline and a taxane in either the adjuvant or neoadjuvant setting, unless patients were treated with doxorubicin and docetaxel concurrently
+    Disease/Condition: Metastatic breast cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Metastatic breast cancer" AND Prior Therapy is "Anthracycline and Taxane" AND

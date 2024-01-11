@@ -1,0 +1,14 @@
+
+    Original Text: Treatment with moderate or strong inducers or inhibitor of CYP 3A4, inhibitors of P-glycoprotein, or substrates of breast cancer resistance protein
+    Disease/Condition: Moderate or Strong Inducers or Inhibitor of CYP 3A4
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Moderate or Strong Inducers or Inhibitor of CYP 3A4" OR Disease is "Inhibitors of P-glycoprotein" OR Disease is "Substrates of Breast Cancer Resistance Protein"
+
+Criterion:
+    Patients must have received prior treatment with an anthracycline and a taxane in either the adjuvant or metastatic setting
+
+Output:
+    Original Text: Patients must have received prior treatment with an anthracycline and a taxane in either the adjuvant or metastatic setting
+    Disease/Condition: Adjuvant or Metastatic Setting

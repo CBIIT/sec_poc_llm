@@ -1,0 +1,8 @@
+Original Text: |
+    Serum total bilirubin =< 1.5 X ULN OR direct bilirubin =< ULN for subjects with total bilirubin levels > 1.5 ULN
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    <1.5*ULN + (direct_bilirubin <= ULN) * (total_bilirubin > 1.5*ULN)>

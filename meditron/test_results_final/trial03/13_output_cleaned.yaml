@@ -1,0 +1,8 @@
+Original Text: |
+    Serum creatinine levels =< 1.5 mg/dL
+Disease/Condition: Creatinine, Serum Creatinine
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    CREATININE <= 1.5

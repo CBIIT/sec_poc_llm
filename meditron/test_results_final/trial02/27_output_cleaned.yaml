@@ -1,0 +1,8 @@
+Original Text: |
+    Patients may not be receiving any other investigational agents while on study
+Disease/Condition: none
+Procedure: Investigational Agent
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Investigational Agent" is False

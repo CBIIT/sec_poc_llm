@@ -1,0 +1,8 @@
+Original Text: |
+    Although it is anticipated that patients who are eligible for this study will not have childbearing potential, any patient the treating doctor or investigator deems to have childbearing potential must agree to an acceptable means of contraception from the time of screening to at least 6 months after T-cell infusion
+Disease/Condition: none
+Procedure: Childbearing Potential
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Childbearing Potential" is True OR "Childbearing Potential" is False AND "Acceptable Means of Contraception" is True

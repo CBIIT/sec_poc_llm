@@ -1,0 +1,10 @@
+
+    Original Text: Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous b NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. N3 disease is not allowed.
+    Disease/Condition: Non-Squamous Cell Carcinoma, Squamous Cell Carcinoma, Stage IIA, Stage IIB, Stage IIIA, Stage IIIB
+    Procedure: Complete Surgical Resection
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK NSCLC == True, LK SquamousCellCarcinoma == True, LK StageIIA == True, LK StageIIB == True, LK StageIIIA == True, LK StageIIIB == True, LK CompleteSurgicalResection == True, LK NegativeMargin == True, LK N3 == False
+
+Criterion:
+    Patients must have undergone complete surgical resection of their stage IIA, II

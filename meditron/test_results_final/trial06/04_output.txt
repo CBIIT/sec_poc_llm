@@ -1,0 +1,21 @@
+
+    Original Text: In good general health as evidenced by medical history to be a candidate for curative-intent prostate cancer treatment
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "In good general health as evidenced by medical history to be a candidate for curative-intent prostate cancer treatment" is True
+
+Criterion:
+    Patients with metastatic castration resistant prostate cancer (mCRPC)
+
+Output:
+    Original Text: Patients with metastatic castration resistant prostate cancer (mCRPC)
+    Disease/Condition: Metastatic Castration Resistant Prostate Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Patients with metastatic castration resistant prostate cancer (mCRPC)" is True
+
+Criterion:
+    Patients with mCRPC who have progressed on abiraterone acetate and prednisone, or enzalutamide, or both

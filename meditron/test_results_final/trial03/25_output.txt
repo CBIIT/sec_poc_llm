@@ -1,0 +1,24 @@
+
+    Original Text: History of allergy or hypersensitivity to belinostat, ribociclib, or their binders
+    Disease/Condition: none
+    Procedure: none
+    Drug: Belinostat, Ribociclib
+    Biomarker: none
+    Computable Rule: "Belinostat", "Ribociclib", "Allergy", "Hypersensitivity" are all False
+
+Criterion:
+    Patients with a history of cardiac dysrhythmias (excluding isolated premature ventricular contractions)
+
+Output:
+    Original Text: Patients with a history of cardiac dysrhythmias (excluding isolated premature ventricular contractions)
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Cardiac Dysrhythmia" is False
+
+Criterion:
+    Patients with a history of QTc interval >450 msec at screening or baseline ECG
+
+Output:
+    Original Text:

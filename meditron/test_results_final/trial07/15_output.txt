@@ -1,0 +1,11 @@
+
+    Original Text: Aspartate aminotransferase (AST) (serum glutamic oxaloacetic transaminase [SGOT]) and alanine aminotransferase (ALT) (serum glutamate pyruvate transaminase [SGPT]) =< 2.5 X ULN OR =< 5 X ULN for subjects with liver metastases
+    Disease/Condition: AST, Alanine Aminotransferase, Glutamic Oxaloacetic Transaminase, SGOT, SGPT
+    Procedure: Liver Metastasis
+    Drug: none
+    Biomarker: none
+    Computable Rule: AST <= 2.5 * ULN AND ALT <= 5 * ULN OR AST <= 5 * ULN AND ALT <= 2.5 * ULN AND LIVER_METASTASES == True
+
+Criterion:
+    Subjects with a history of malignancy other than breast cancer within 10 years prior to enrollment are excluded from this study
+

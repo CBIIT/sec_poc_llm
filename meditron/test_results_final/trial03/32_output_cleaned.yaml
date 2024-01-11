@@ -1,0 +1,8 @@
+Original Text: |
+    Concurrent use of herbal supplements, unless approved by the principal investigator. Patients currently taking herbal supplements must have discontinued >= 7 days prior to treatment day 1
+Disease/Condition: none
+Procedure: Herbal Supplement
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Herbal Supplement" is False or "Herbal Supplement" is True and "DaysSinceLastUse" is GreaterThan 7

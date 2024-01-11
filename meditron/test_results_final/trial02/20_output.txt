@@ -1,0 +1,24 @@
+
+    Original Text: Total serum bilirubin =< 1.5 x ULN
+    Disease/Condition: None
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Total serum bilirubin <= 1.5 * ULN
+
+Criterion:
+    Patients with a history of prior malignancy other than nonmelanoma skin cancer within 3 years before enrollment
+
+Output:
+    Original Text: Patients with a history of prior malignancy other than nonmelanoma skin cancer within 3 years before enrollment
+    Disease/Condition: None
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: History of prior malignancy other than nonmelanoma skin cancer within 3 years before enrollment is False
+
+Criterion:
+    Patients must have received no more than two prior chemotherapy regimens for metastatic disease
+
+Output:
+    Original Text: Patients must have received no more than two prior chemotherapy regimens for

@@ -1,0 +1,13 @@
+
+    Original Text: Patients who have partners of childbearing potential (e.g. female that has not been surgically sterilized or who are not amenorrheic for >= 12 months) must be willing to use a method of birth control in addition to adequate barrier protection as determined to be acceptable by the investigator during the study and for 3 months after last dose of niraparib administration and 5 months after the last dose of cetrelimab. In addition men should not donate sperm during this period. Please note that the efficacy of hormonal contraception may be decreased if administered with niraparib
+    Disease/Condition: Partner of childbearing potential
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: Disease is "Partner of childbearing potential" AND Willingness to use a method of birth control is True
+
+Criterion:
+    Patients must have measurable disease per RECIST v1.1
+
+Output:
+    Original Text: Patients must have measurable disease per RECI

@@ -1,0 +1,8 @@
+Original Text: |
+    Confirmed diagnosis of metastatic (Stage IV) or locally advanced, unresectable (Stage III) NSCLC of nonsquamous pathology that has relapsed or progressed
+Disease/Condition: Stage IV, Stage III, Nonsquamous Pathology, Relapsed, Progressed
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK MTS == True, MTS == True, NSCLC == True, Relapse == True, Progress == True

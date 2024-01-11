@@ -1,0 +1,30 @@
+
+    Original Text: Presence of active second malignancy
+    Disease/Condition: Second Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: SM == True
+
+Criterion:
+    Patients with a history of prior chemotherapy within 12 months before enrollment
+
+Output:
+    Original Text: Patients with a history of prior chemotherapy within 12 months before enrollment
+    Disease/Condition: History of Prior Chemotherapy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HPC == True
+
+Criterion:
+    Patients with a history of prior radiation therapy within 12 months before enrollment
+
+Output:
+    Original Text: Patients with a history of prior radiation therapy within 12 months before enrollment
+    Disease/Condition: History of Prior Radiation Therapy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HPRT == True
+

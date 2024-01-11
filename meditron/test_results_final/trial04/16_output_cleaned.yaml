@@ -1,0 +1,8 @@
+Original Text: |
+    Patient agrees to undergo placement of either interventional radiologically placed or surgically placed peritoneal port (may be temporary or subcutaneous)
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Placement of either interventional radiologically placed or surgically placed peritoneal port (may be temporary or subcutaneous)" is True

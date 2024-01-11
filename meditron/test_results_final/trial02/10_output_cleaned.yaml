@@ -1,0 +1,8 @@
+Original Text: |
+    No known interstitial fibrosis or interstitial lung disease
+Disease/Condition: Interstitial Fibrosis, Interstitial Lung Disease
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    IF (LK_IF == False) AND (LK_ILD == False) THEN True

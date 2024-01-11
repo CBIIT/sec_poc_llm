@@ -1,0 +1,24 @@
+
+    Original Text: Concurrent use of testosterone supplementation as it is contraindicated during prostate cancer treatment
+    Disease/Condition: none
+    Procedure: Testosterone Supplementation
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Testosterone Supplementation" is False
+
+Criterion:
+    Patients with a history of malignancy other than non-melanoma skin cancer within 5 years before enrollment
+
+Output:
+    Original Text: Patients with a history of malignancy other than non-melanoma skin cancer within 5 years before enrollment
+    Disease/Condition: none
+    Procedure: Malignancy Other Than Non-Melanoma Skin Cancer
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Malignancy Other Than Non-Melanoma Skin Cancer" is False
+
+Criterion:
+    Patients with a history of malignancy other than non-melanoma skin cancer within 5 years before enrollment
+
+Output:
+   

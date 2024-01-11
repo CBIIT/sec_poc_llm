@@ -1,0 +1,8 @@
+Original Text: |
+    Active infection requiring systemic therapy â‰¤ 7 days prior to first dose of study treatment.
+Disease/Condition: Infection
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK INF == True

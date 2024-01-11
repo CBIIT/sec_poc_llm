@@ -1,0 +1,21 @@
+
+    Original Text: History of or active autoimmune disease requiring systemic treatment in the last 6 months or persistent immunemediated toxicity caused by checkpoint inhibitor therapy > Grade 2
+    Disease/Condition: Autoimmune Disease, Immune Mediated Toxicity
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: AD_HISTORICAL == True OR AI_TOXICITY == True
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within the past 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within the past 5 years
+    Disease/Condition: Non Melanoma Skin Cancer, Other Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: NMSC == False AND OTHER_MALIGNANCY == True
+
+Criterion:
+    Patients with a history

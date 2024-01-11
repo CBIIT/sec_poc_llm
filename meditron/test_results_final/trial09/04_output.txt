@@ -1,0 +1,18 @@
+
+    Original Text: Can provide existing biopsy taken within 2 years prior to entering trial or provide fresh biopsy
+    Disease/Condition: Biopsy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: BIOPSY == True, BIOPSY == True
+
+Criterion:
+    Patient must have histologically confirmed adenocarcinoma of the stomach or gastroesophageal junction (GEJ) with no distant metastasis
+
+Output:
+    Original Text: Patient must have histologically confirmed adenocarcinoma of the stomach or gastroesophageal junction (GEJ) with no distant metastasis
+    Disease/Condition: Adenocarcinoma, Gastric cancer, Gastroesophageal Junction Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HISTOLOGICALLY_CONFIRMED_ADENOCARCINOMA == True, NO_DISTANT_

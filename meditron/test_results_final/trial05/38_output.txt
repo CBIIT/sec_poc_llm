@@ -1,0 +1,24 @@
+
+    Original Text: Prisoners or subjects who are involuntarily incarcerated
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Prisoners or subjects who are involuntarily incarcerated" is True
+
+Criterion:
+    Patients with a history of malignancy other than non-melanoma skin cancer within the past 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy other than non-melanoma skin cancer within the past 5 years
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Patients with a history of malignancy other than non-melanoma skin cancer within the past 5 years" is False
+
+Criterion:
+    Patients with a history of malignancy other than non-melanoma skin cancer within the past 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy other than non-melan

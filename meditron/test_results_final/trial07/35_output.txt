@@ -1,0 +1,29 @@
+
+    Original Text: Patients with active hemoptysis
+    Disease/Condition: Hemoptysis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Hemoptysis" is True
+
+Criterion:
+    Patients with a history of hemoptysis within 6 months before screening
+
+Output:
+    Original Text: Patients with a history of hemoptysis within 6 months before screening
+    Disease/Condition: Hemoptysis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Hemoptysis" is True AND "Time since last hemoptysis" is LessThan(6)
+
+Criterion:
+    Patients with a history of hemoptysis more than 6 months before screening
+
+Output:
+    Original Text: Patients with a history of hemoptysis more than 6 months before screening
+    Disease/Condition: Hemoptysis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "

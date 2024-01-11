@@ -1,0 +1,29 @@
+
+    Original Text: Active infection requiring systemic therapy â‰¤ 7 days prior to first dose of study treatment.
+    Disease/Condition: Infection
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK INF == True
+
+Criterion:
+    Patients with active brain metastases should be excluded from this study.
+
+Output:
+    Original Text: Patients with active brain metastases should be excluded from this study.
+    Disease/Condition: Brain Metastasis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK BRAINMET == False
+
+Criterion:
+    Patients with active brain metastases should be excluded from this study.
+
+Output:
+    Original Text: Patients with active brain metastases should be excluded from this study.
+    Disease/Condition: Brain Metastasis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: L

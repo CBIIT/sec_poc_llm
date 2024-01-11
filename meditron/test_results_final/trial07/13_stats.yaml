@@ -1,0 +1,6 @@
+elapsed_time: 18s
+was_input_captured: False
+original_text: |
+    Serum creatinine =< 1.5 X upper limit of normal (ULN) OR measured or calculated creatinine clearance (glomerular filtration rate [GFR] can also be used in place of creatinine or creatinine clearance [CrCl]) >= 60 mL/min for subject with creatinine levels > 1.5 X institutional ULN
+    * Creatinine clearance should be calculated per institutional standard
+inclusion: True

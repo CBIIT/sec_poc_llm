@@ -1,0 +1,8 @@
+Original Text: |
+    Clinically significant cardiac arrhythmias (e.g., ventricular tachycardia), complete left bundle branch block, high grade atrioventricular (AV) block (e.g., bifascicular block, Mobitz type II and third degree AV block)
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Clinically significant cardiac arrhythmias (e.g., ventricular tachycardia), complete left bundle branch block, high grade atrioventricular (AV) block (e.g., bifascicular block, Mobitz type II and third degree AV block)" is False

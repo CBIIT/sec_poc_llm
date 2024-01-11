@@ -1,0 +1,28 @@
+
+    Original Text: Have measurable disease or detectable (non-measurable) disease
+    Disease/Condition: Measurable Disease, Non-Measurable Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == True, MTS == True
+
+Criterion:
+    Patients must have measurable disease according to RECIST v1.1
+
+Output:
+    Original Text: Patients must have measurable disease according to RECIST v1.1
+    Disease/Condition: Measurable Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == True
+
+Criterion:
+    Patient must have measurable disease according to RECIST v1.1
+
+Output:
+    Original Text: Patient must have measurable disease according to RECIST v1.1
+    Disease/Condition: Measurable Disease
+    Procedure: none
+    Drug: none
+    Biomarker

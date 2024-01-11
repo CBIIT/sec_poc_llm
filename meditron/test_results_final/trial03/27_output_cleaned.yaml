@@ -1,0 +1,8 @@
+Original Text: |
+    Known left ventricular ejection fraction < 50%. (Echocardiogram is not required for study entry)
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Known left ventricular ejection fraction < 50%" is False

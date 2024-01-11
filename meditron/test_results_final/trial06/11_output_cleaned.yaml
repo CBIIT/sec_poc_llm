@@ -1,0 +1,8 @@
+Original Text: |
+    Be able to undergo MRI prostate and pelvis as a component of radiation therapy (RT) planning
+Disease/Condition: none
+Procedure: Magnetic Resonance Imaging
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "MRI prostate and pelvis" is True

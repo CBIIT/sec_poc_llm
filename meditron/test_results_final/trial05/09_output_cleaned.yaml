@@ -1,0 +1,8 @@
+Original Text: |
+    Surgically or ongoing medically castrated, with baseline testosterone levels of =< 50 ng/dL (=< 2.0 nM). Exception: Patients with de novo primary small cell carcinoma of the prostate may begin chemotherapy on study once treatment with an LHRH agonist or antagonist has been initiated, even if testosterone levels have not reached =< 50ng/dL
+Disease/Condition: None
+Procedure: Castration
+Drug: None
+Biomarker: None
+Computable Rule: |
+    "Surgically or ongoing medically castrated" AND ("baseline testosterone levels of =< 50 ng/dL (=< 2.0 nM)" OR "de novo primary small cell carcinoma of the prostate")

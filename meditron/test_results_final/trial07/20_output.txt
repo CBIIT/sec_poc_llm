@@ -1,0 +1,18 @@
+
+    Original Text: Female subjects of childbearing potential should be willing to use 2 methods of birth control or be surgically sterile, or abstain from heterosexual activity for the course of the study through 120 days after the last dose of study medication; subjects of childbearing potential are those who have not been surgically sterilized or have not been free from menses for > 1 year
+    Disease/Condition: Female
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: Subjects of childbearing potential are Females
+
+Criterion:
+    Subjects with a history of hypersensitivity to any component of the formulation or to any other anti-tuberculosis agent
+
+Output:
+    Original Text: Subjects with a history of hypersensitivity to any component of the formulation or to any other anti-tuberculosis agent
+    Disease/Condition: Hypersensitivity
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: Sub

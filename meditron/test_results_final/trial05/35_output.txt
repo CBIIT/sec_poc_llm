@@ -1,0 +1,10 @@
+
+    Original Text: Current or prior use of immunosuppressive medication within 21 days before the first dose of cetrelimab, with the exceptions of intranasal and inhaled corticosteroids or systemic corticosteroids at physiological doses, which are not to exceed 10 mg/day of prednisone, or an equivalent corticosteroid or steroids as pre-medication for hypersensitivity reactions (e.g. CT scan premedication)
+    Disease/Condition: none
+    Procedure: Immunosuppressive Medication
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Immunosuppressive Medication" is False
+
+Criterion:
+    Patients with active autoimmune diseases requiring systemic treatment within the past 3 months or patients with a history of significant autoimmune disease, defined as any of the following conditions requiring systemic therapy within the past 3 years: systemic lupus erythematosus; inflammatory bowel disease (including Crohn's disease);

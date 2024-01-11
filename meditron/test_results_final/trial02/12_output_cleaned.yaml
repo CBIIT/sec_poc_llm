@@ -1,0 +1,8 @@
+Original Text: |
+    No ongoing cardiac dysrhythmias of grade >= 2 NCI CTCAE version 4.0, uncontrolled atrial fibrillation (any grade), or corrected QT (QTc) interval > 470 msec
+Disease/Condition: None
+Procedure: None
+Drug: None
+Biomarker: None
+Computable Rule: |
+    "No ongoing cardiac dysrhythmias of grade >= 2 NCI CTCAE version 4.0, uncontrolled atrial fibrillation (any grade), or corrected QT (QTc) interval > 470 msec" is False

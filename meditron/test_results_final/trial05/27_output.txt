@@ -1,0 +1,32 @@
+
+    Original Text: Active uncontrolled infection
+    Disease/Condition: Infection
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK INF == True
+
+Criterion:
+    Patient must have received at least one prior chemotherapy regimen for advanced disease
+
+Output:
+    Original Text: Patient must have received at least one prior chemotherapy regimen for advanced disease
+    Disease/Condition: Advanced Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK ADV == True
+
+Criterion:
+    Patient must have measurable disease according to RECIST v1.0
+
+Output:
+    Original Text: Patient must have measurable disease according to RECIST v1.0
+    Disease/Condition: Measurable Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MEAS == True
+
+Criterion:
+    Patient must have ade

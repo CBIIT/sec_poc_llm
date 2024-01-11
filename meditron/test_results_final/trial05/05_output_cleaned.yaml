@@ -1,0 +1,8 @@
+Original Text: |
+    Histologically or cytologically confirmed prostate carcinoma
+Disease/Condition: Prostate Carcinoma
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    Disease is "Prostate Carcinoma"

@@ -1,0 +1,18 @@
+
+    Original Text: Patients must agree to tissue collection for correlative studies at the specified timepoints
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "tissue collection" is True AND "at the specified timepoints" is True
+
+Criterion:
+    Patients must have histologically confirmed adenocarcinoma of the gastroesophageal junction (GEJ) or esophagus with tumor involving the GEJ
+
+Output:
+    Original Text: Patients must have histologically confirmed adenocarcinoma of the gastroesophageal junction (GEJ) or esophagus with tumor involving the GEJ
+    Disease/Condition: Adenocarcinoma
+    Procedure: Gastroesophageal Junction
+    Drug: none
+    Biomarker: none
+    Computable Rule: "histologically confirmed adenocarcinoma of the gastroesophageal junction (GEJ) or esophagus with tumor involving the

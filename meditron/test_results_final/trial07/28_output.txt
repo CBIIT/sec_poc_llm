@@ -1,0 +1,17 @@
+
+    Original Text: Has not recovered (i.e., =< grade 1 or at baseline) from adverse events due to agents administered more than 4 weeks earlier
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Has not recovered (i.e., =< grade 1 or at baseline) from adverse events due to agents administered more than 4 weeks earlier" is False
+
+Criterion:
+    Patients with a history of malignancy other than non-melanoma skin cancer, carcinoma in situ of the cervix uteri, or breast ductal carcinoma in situ within the last 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy other than non-melanoma skin cancer, carcinoma in situ of the cervix uteri, or breast ductal carcinoma in situ within the last 5 years
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none

@@ -1,0 +1,25 @@
+
+    Original Text: Women of childbearing potential and sexually active males must be strongly advised to practice abstinence or use an accepted and effective method of contraception
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a history of cardiac surgery, including coronary artery bypass graft (CABG) within 6 months prior to enrollment
+
+Output:
+    Original Text: Patients with a history of cardiac surgery, including coronary artery bypass graft (CABG) within 6 months prior to enrollment
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a history of CABG within 30 days prior to enrollment
+
+Output:
+    Original Text: Patients with a history of CABG within 30 days prior to enrollment
+    Disease/

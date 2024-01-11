@@ -1,0 +1,12 @@
+
+    Original Text: Active or prior documented autoimmune or inflammatory disorders (including inflammatory bowel disease [e.g., colitis or Crohn's disease], diverticulitis [with the exception of diverticulosis], systemic lupus erythematosus, Sarcoidosis syndrome, or Wegener syndrome [granulomatosis with polyangiitis, Graves' disease, rheumatoid arthritis, hypophysitis, uveitis, etc.]). The following are exceptions to this criterion:
+Patients with vitiligo or alopecia
+Patients with hypothyroidism (e.g., following Hashimoto syndrome) stable on hormone replacement
+Any chronic skin condition that does not require systemic therapy
+Patients without active disease in the last 5 years may be included but only after consultation with the study physician
+Patients with celiac disease controlled by diet alone
+
+## Criterion:
+    Subject has a history of any malignancy other than non-melanoma skin cancer within 3 years before screening
+
+Output:

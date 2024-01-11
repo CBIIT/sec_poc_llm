@@ -1,0 +1,15 @@
+
+    Original Text: Has HER2 overexpression by local laboratory testing (immunohistochemical [IHC] 3+ or in situ hybridization positive).
+    Disease/Condition: Breast cancer
+    Procedure: none
+    Drug: none
+    Biomarker: HER2+
+    Computable Rule: Disease is "Breast cancer" AND HER2+ is True
+
+Criterion:
+    Patients with metastatic breast cancer who have received prior therapy with chemotherapy, endocrine therapy, or targeted therapy in the neoadjuvant or adjuvant setting, unless patients were treated with only hormonal therapy as their only systemic therapy.
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have received prior therapy with chemotherapy, endocrine therapy, or targeted therapy in the neoadjuvant or adjuvant setting, unless patients were treated with only hormonal therapy as their only systemic therapy.
+    Disease/Condition: Metastatic breast cancer
+    Procedure: none

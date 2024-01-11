@@ -1,0 +1,9 @@
+
+    Original Text: All men and premenopausal women must be on medical gonadal suppression therapy with a gonadotropin analog (e.g, goserelin or leuprolide) and have estrogen levels in the postmenopausal range by institutional criteria at baseline.
+    Disease/Condition: Male or female patients with prostate cancer
+    Procedure: Medical gonadal suppression therapy with a gonadotropin analog (e.g, goserelin or leuprolide)
+    Drug: None
+    Biomarker: None
+    Computable Rule: Disease is "Male or female patients with prostate cancer" AND Medical gonadal suppression therapy with a gonadotropin analog (e.g, goserelin or leuprolide) is True AND Estrogen level is False
+.
+The authors report their experience in the treatment of 10 cases of acute myeloid leukaemia (AML) in children. The results obtained were compared to those reported in literature. The mean age was 7 years; the sex ratio was 1.6. The

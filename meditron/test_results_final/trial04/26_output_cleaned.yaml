@@ -1,0 +1,8 @@
+Original Text: |
+    Prior history of clinically significant seizure disorder (e.g., not including childhood febrile seizures)
+Disease/Condition: none
+Procedure: Seizure Disorder
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Seizure Disorder" is False

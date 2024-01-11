@@ -1,0 +1,12 @@
+
+    Original Text: Has had prior chemotherapy or targeted small molecule therapy within 2 weeks prior to start of treatment or has not recovered (i.e., =< grade 1 or at baseline) from adverse events due to a previously administered agent; previous radiation to extracranial sites may be completed at any time prior to initiation of pembrolizumab;
+* Note: If subject received major surgery, they must have recovered adequately from the toxicity and/or complications from the intervention prior to starting therapy
+* Note: Toxicity that has not recovered to =< grade 1 is allowed if it meets the inclusion requirements for laboratory parameters
+    Disease/Condition: None
+    Procedure: Chemotherapy, Targeted Small Molecule Therapy
+    Drug: None
+    Biomarker: None
+    Computable Rule: "Chemotherapy OR Targeted Small Molecule Therapy" is False AND "Recovered" is True
+
+Criterion:
+    Patients with active brain metastases should be excluded because there is no standard of care for these patients

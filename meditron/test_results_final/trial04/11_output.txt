@@ -1,0 +1,36 @@
+
+    Original Text: Life expectancy of at least 3 months
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a life expectancy of less than 6 months
+
+Output:
+    Original Text: Patients with a life expectancy of less than 6 months
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a life expectancy of less than 6 months
+
+Output:
+    Original Text: Patients with a life expectancy of less than 6 months
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a life expectancy of less than 6 months
+
+Output:
+    Original Text: Patients with a life expectancy of less than 6 months
+    Disease

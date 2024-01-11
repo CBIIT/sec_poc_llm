@@ -1,0 +1,8 @@
+Original Text: |
+    Patient is willing and able to comply with the protocol for the duration of the study including undergoing treatment and scheduled visits and examinations including follow up
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "willing and able to comply with the protocol for the duration of the study including undergoing treatment and scheduled visits and examinations including follow up" is True

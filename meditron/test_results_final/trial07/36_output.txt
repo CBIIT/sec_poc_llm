@@ -1,0 +1,24 @@
+
+    Original Text: Any contraindication to MRI (i.e. patients with pacemakers or other metal implanted medical devices); an MRI safety questionnaire is required prior to magnetic resonance (MR) imaging
+    Disease/Condition: none
+    Procedure: Pacemaker
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Pacemaker" is False
+
+Criterion:
+    Patients with a history of stroke, transient ischemic attack, or intracranial hemorrhage within 6 months before screening
+
+Output:
+    Original Text: Patients with a history of stroke, transient ischemic attack, or intracranial hemorrhage within 6 months before screening
+    Disease/Condition: Stroke
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: "Stroke" is True
+
+Criterion:
+    Patients with a history of seizures or epilepsy
+
+Output:
+    Original Text: Patients with a history of seizures or

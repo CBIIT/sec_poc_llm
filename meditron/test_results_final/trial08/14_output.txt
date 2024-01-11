@@ -1,0 +1,18 @@
+
+    Original Text: Has known loss of retinoblastoma tumor suppressor gene (Rb) (testing not mandatory).
+    Disease/Condition: Retinoblastoma
+    Procedure: Rb testing
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Retinoblastoma" AND NOT ("Rb testing")
+
+Criterion:
+    Patients with metastatic breast cancer who have failed to respond to at least two chemotherapeutic regimens, including anthracyclines and taxanes, and who have progressed on trastuzumab-based therapy.
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have failed to respond to at least two chemotherapeutic regimens, including anthracyclines and taxanes, and who have progressed on trastuzumab-based therapy.
+    Disease/Condition: Metastatic Breast Cancer
+    Procedure: Anthracycline and Taxane
+    Drug: Trastuzumab
+    Biomarker: HER2+
+    Computable Rule

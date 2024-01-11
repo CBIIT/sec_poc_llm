@@ -1,0 +1,24 @@
+
+    Original Text: Histologically or cytologically confirmed prostate carcinoma
+    Disease/Condition: Prostate Carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Prostate Carcinoma"
+
+Criterion:
+    Patients with histologically or cytologically confirmed advanced solid tumors other than non-small cell lung cancer (NSCLC) or small cell lung cancer (SCLC).
+
+Output:
+    Original Text: Patients with histologically or cytologically confirmed advanced solid tumors other than non-small cell lung cancer (NSCLC) or small cell lung cancer (SCLC).
+    Disease/Condition: Advanced Solid Tumor
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Advanced Solid Tumor"
+
+Criterion:
+    Patients must have measurable disease per RECIST v1.1.
+
+Output:
+    Original Text: Patients must have measurable disease per RECI

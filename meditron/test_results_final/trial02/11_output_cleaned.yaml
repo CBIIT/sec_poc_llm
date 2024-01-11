@@ -1,0 +1,8 @@
+Original Text: |
+    No prior treatment with crizotinib or another ALK inhibitor
+Disease/Condition: Crizotinib, Anaplastic Large Cell Lung Cancer
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    ALK Inhibitors == False, ALK Inhibitors == False

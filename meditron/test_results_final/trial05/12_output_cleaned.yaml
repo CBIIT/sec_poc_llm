@@ -1,0 +1,8 @@
+Original Text: |
+    Absolute neutrophil count (ANC) >= 1.5 x 10^9/L (unless due to bone marrow infiltration by tumor, in which case ANC > 1,000/mm^3 is allowed) (within 7 days prior to treatment registration)
+Disease/Condition: Neutropenia, Bone Marrow Infiltration by Tumor
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    ANC >= 1.5*10^9/L && (MTS == False || MTS == True && ANC > 1000/mm^3)

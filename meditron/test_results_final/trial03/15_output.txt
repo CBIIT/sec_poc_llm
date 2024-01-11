@@ -1,0 +1,21 @@
+
+    Original Text: International normalized ratio (INR) =< 1.5
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: INR <=> 1.5
+
+Criterion:
+    Patients with a history of myocardial infarction, stroke, transient ischemic attack, or revascularization within 6 months before randomization
+
+Output:
+    Original Text: Patients with a history of myocardial infarction, stroke, transient ischemic attack, or revascularization within 6 months before randomization
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HistoryOfMyocardialInfarctionOrStrokeORTransientIschemicAttackORRevascularizationWithin6MonthsBeforeRandomization
+
+Criterion:
+    Patients with a history of myocardial infarction, stroke, transient ischemic attack, or revascularization within 

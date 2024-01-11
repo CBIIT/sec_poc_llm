@@ -1,0 +1,18 @@
+
+    Original Text: Negative serum or urine pregnancy test at screening for women of childbearing potential
+    Disease/Condition: None
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: Disease is None
+
+Criterion:
+    Patients with metastatic breast cancer who have received prior therapy with an anthracycline and a taxane in either the adjuvant or neoadjuvant setting, or whose tumors are hormone receptor positive and HER2 negative
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have received prior therapy with an anthracycline and a taxane in either the adjuvant or neoadjuvant setting, or whose tumors are hormone receptor positive and HER2 negative
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: None
+    Drug: None
+    Biomarker: HER2-negative, hormone receptor positive
+    Computable Rule: Disease is "Metastatic breast carcinoma

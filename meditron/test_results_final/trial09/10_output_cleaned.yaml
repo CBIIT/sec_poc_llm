@@ -1,0 +1,8 @@
+Original Text: |
+    EGFR or ALK mutation. Participants with presence of other driver mutations are allowed if targeted therapy is not available as per local standard of care
+Disease/Condition: EGFR Mutation, ALK Mutation, Other Driver Mutation
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    (EGFR Mutation OR ALK Mutation) AND NOT (Other Driver Mutation)

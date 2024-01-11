@@ -1,0 +1,8 @@
+Original Text: |
+    International normalized ratio (INR) =< 1.5
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    INR <=> 1.5

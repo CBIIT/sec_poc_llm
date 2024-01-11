@@ -1,0 +1,8 @@
+Original Text: |
+    Has not recovered (i.e., =< grade 1 or at baseline) from adverse events due to agents administered more than 4 weeks earlier
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Has not recovered (i.e., =< grade 1 or at baseline) from adverse events due to agents administered more than 4 weeks earlier" is False

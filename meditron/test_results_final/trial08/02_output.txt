@@ -1,0 +1,14 @@
+
+    Original Text: Metastatic or locally advanced breast cancer not amenable to curative treatment by surgery or radiotherapy.
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Metastatic breast carcinoma"
+
+Criterion:
+    Patients with metastatic breast cancer who have received prior therapy for metastatic disease and whose tumors are positive for human epidermal growth factor receptor 2 (HER2) protein overexpression or gene amplification by immunohistochemistry (IHC) and/or fluorescence in situ hybridization (FISH).
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have received prior therapy for metastatic disease and whose tumors are positive for human epidermal growth factor receptor 2 (HER2) protein overexpression or gene amplification by immunohistochemistry (IHC) and/or fluorescence in situ hybridization (FISH).
+    D

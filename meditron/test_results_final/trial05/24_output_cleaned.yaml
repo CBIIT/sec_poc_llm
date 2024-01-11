@@ -1,0 +1,8 @@
+Original Text: |
+    Patients who have not recovered from adverse events secondary to systemic therapy (except for luteinizing hormone-releasing hormone [LHRH] agonist or antagonist treatment for prostate cancer, and bisphosphonates or RANK ligand inhibitors for bone strengthening), major surgery or radiotherapy for the treatment of prostate cancer to a grade =< 2
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Adverse events secondary to systemic therapy (except for luteinizing hormone-releasing hormone [LHRH] agonist or antagonist treatment for prostate cancer, and bisphosphonates or RANK ligand inhibitors for bone strengthening)" is False OR "Major surgery or radiotherapy for the treatment of prostate cancer to a grade =< 2" is False

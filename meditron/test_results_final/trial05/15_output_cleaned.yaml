@@ -1,0 +1,8 @@
+Original Text: |
+    Platelet count >= 100 x 10^9/L (unless due to bone marrow infiltration by tumor, in which case platelet > 50,000/mm^3 is allowed) (within 7 days prior to treatment registration)
+Disease/Condition: Platelet count
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    PLT >= 100*10^9/L && BM_Tumor == False || PLT >= 50*10^9/L && BM_Tumor == True

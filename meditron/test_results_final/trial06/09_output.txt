@@ -1,0 +1,24 @@
+
+    Original Text: History and physical including a digital rectal exam 90 days prior to registration
+    Disease/Condition: none
+    Procedure: History and physical
+    Drug: none
+    Biomarker: none
+    Computable Rule: "History and physical including a digital rectal exam 90 days prior to registration" is True
+
+Criterion:
+    Patients with histologically confirmed metastatic colorectal cancer (mCRC)
+
+Output:
+    Original Text: Patients with histologically confirmed metastatic colorectal cancer (mCRC)
+    Disease/Condition: Metastatic Colorectal Cancer
+    Procedure: Histology
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Metastatic Colorectal Cancer" is True
+
+Criterion:
+    Patients with histologically confirmed mCRC, measurable disease per RECIST v1.1, ECOG performance status ≤2, adequate organ function, and no prior systemic therapy for mCRC
+
+Output:
+    Original

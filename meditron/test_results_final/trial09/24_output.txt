@@ -1,0 +1,18 @@
+
+    Original Text: Pregnant or breast-feeding
+    Disease/Condition: Pregnancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Pregnancy"
+
+Criterion:
+    Patients with metastatic breast cancer who have received prior therapy for metastatic disease and whose tumors are positive for HER2 by immunohistochemistry (IHC) 3+ or fluorescence in situ hybridization (FISH).
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have received prior therapy for metastatic disease and whose tumors are positive for HER2 by immunohistochemistry (IHC) 3+ or fluorescence in situ hybridization (FISH).
+    Disease/Condition: Metastatic breast cancer
+    Procedure: none
+    Drug: none
+    Biomarker: HER2+
+    Computable Rule: Disease is "Metastatic breast cancer" AND HER2+ is True

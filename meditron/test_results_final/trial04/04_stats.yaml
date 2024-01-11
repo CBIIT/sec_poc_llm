@@ -1,0 +1,8 @@
+elapsed_time: 19s
+was_input_captured: False
+original_text: |
+    Patientâ€™s carcinoma should express the FSHR antigen, detectable by polymerase chain reaction (PCR) analysis of archival tumor sample
+    * Expression will be graded as positive, negative, inconclusive/uninterpretable. Only patients without a negative result will be eligible for the treatment with FSCER T cells. Others will be allowed to participate in the treatment portion if other criteria are met
+    ** Historical FFPE will be requested also for Western Blot and IHC analysis for exploration of the correlation to PCR results, but it is not necessary to have obtained it or the results before enrollment; tissue IHC FSHR positivity in the historical FFPE sample is not required for eligibility
+    ** The tissue screening portion can be conducted at any time before the eligibility determination is made for the treatment portion of the study. This means patients age 18 or greater with histologies listed in the inclusion criteria may have their tissue screened for possible future eligibility on this study
+inclusion: True

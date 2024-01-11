@@ -1,0 +1,13 @@
+
+    Original Text: Patients are allowed to receive, but are not required to receive, up to 6 additional prior chemotherapy treatment regimens (including platinum-based chemotherapy). Prior maintenance therapy with an agent when there has not been progression will not be a separate treatment regimen. Prior hormonal therapy is allowed, and when used alone, even as a therapeutic agent, it does not count toward this prior regimen requirement. Hormonal therapy must be discontinued at least 1 week before T-cell infusion. Continuation of hormone replacement therapy is permitted
+    Disease/Condition: none
+    Procedure: Chemotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Chemotherapy" is True OR "Platinum-based chemotherapy" is True OR "Hormonal therapy" is True AND ("hormonal therapy" is False) OR "Hormone replacement therapy" is True
+
+Criterion:
+    The patient must have measurable disease according to RECIST v1.0
+
+Output:
+   

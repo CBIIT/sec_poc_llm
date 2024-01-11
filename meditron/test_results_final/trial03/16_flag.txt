@@ -1,0 +1,1 @@
+Looks like model is truncating text inside of "()"

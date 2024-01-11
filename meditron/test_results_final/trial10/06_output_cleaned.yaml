@@ -1,0 +1,8 @@
+Original Text: |
+    Can supply tumor tissue for study analyses (dependent on tumor type)
+Disease/Condition: Breast cancer
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    Disease is "Breast cancer" AND Tumor tissue is Supplyable

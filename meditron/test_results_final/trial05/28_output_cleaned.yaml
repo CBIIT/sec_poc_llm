@@ -1,0 +1,8 @@
+Original Text: |
+    Active or symptomatic viral hepatitis or chronic liver disease
+Disease/Condition: Viral Hepatitis, Chronic Liver Disease
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK HEPATITIS == True OR LK LIVER_DISEASE == True

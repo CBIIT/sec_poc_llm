@@ -1,0 +1,8 @@
+Original Text: |
+    Bone and soft tissue imaging as clinically indicated (for unfavorable intermediate risk or symptomatic patients only) within 120 days prior to registration
+Disease/Condition: none
+Procedure: Imaging
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Imaging" is True AND ("unfavorable intermediate risk" OR "symptomatic") is False

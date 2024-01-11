@@ -1,0 +1,27 @@
+
+    Original Text: ECOG performance status of 0 to 1.
+    Disease/Condition: ECOG performance status
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Performance Status is between 0 and 1
+
+Criterion:
+    Patients must have measurable disease per RECIST v1.1.
+
+Output:
+    Original Text: Patients must have measurable disease per RECIST v1.1.
+    Disease/Condition: Measurable disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Measurable disease"
+
+Criterion:
+    Patients with metastatic breast cancer who have received no more than two prior chemotherapy regimens for metastatic disease.
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have received no more than two prior chemotherapy regimens for metastatic disease.
+    Disease/Condition: Metastatic breast cancer
+    Procedure: none
+   

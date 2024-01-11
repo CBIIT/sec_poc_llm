@@ -1,0 +1,26 @@
+
+    Original Text: Active or symptomatic viral hepatitis or chronic liver disease
+    Disease/Condition: Viral Hepatitis, Chronic Liver Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK HEPATITIS == True OR LK LIVER_DISEASE == True
+
+Criterion:
+    Patients with a history of malignancy within the last 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy within the last 5 years
+    Disease/Condition: History of Malignancy, Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK CANCER == True
+
+Criterion:
+    Patients with a history of malignancy within the last 10 years
+
+Output:
+    Original Text: Patients with a history of malignancy within the last 10 years
+    Disease/Condition: History of Malignancy, Cancer
+    Procedure: none

@@ -1,0 +1,8 @@
+Original Text: |
+    The presence of measurable disease as per Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 is preferred but not required. Lesions in a previously irradiated area that have not progressed are not considered measurable.
+Disease/Condition: None
+Procedure: None
+Drug: None
+Biomarker: None
+Computable Rule: |
+    "Measurable disease" is True OR "Not measurable disease" is False

@@ -1,0 +1,18 @@
+
+    Original Text: Known additional malignancy within 2 years prior to enrollment with the exception of curatively treated basal cell carcinoma of the skin, squamous cell carcinoma of the skin and/or curatively resected in situ cancers
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Known additional malignancy within 2 years prior to enrollment with the exception of curatively treated basal cell carcinoma of the skin, squamous cell carcinoma of the skin and/or curatively resected in situ cancers" is False
+
+Criterion:
+    Patients with known brain metastases should be excluded from this study
+
+Output:
+    Original Text: Patients with known brain metastases should be excluded from this study
+    Disease/Condition: Brain Metastasis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Patients with known brain metastases should be excluded from this study" is True

@@ -1,0 +1,14 @@
+
+    Original Text: Patients may not be receiving any other investigational agents and may not have participated in a study of an investigational agent or using an investigational device within 4 weeks of the first dose of treatment
+    Disease/Condition: none
+    Procedure: Investigational Agent
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Investigational Agent" is False and "Investigational Device" is False
+
+Criterion:
+    Patients with metastatic colorectal cancer (mCRC) who have failed to respond to or progressed on standard chemotherapy regimens, including fluoropyrimidine-based therapies, oxaliplatin, irinotecan, and anti-VEGF antibodies
+
+Output:
+    Original Text: Patients with metastatic colorectal cancer (mCRC) who have failed to respond to or progressed on standard chemotherapy regimens, including fluoropyrimidine-based therapies, oxaliplatin, irinotecan, and anti-VEGF antibodies
+    D

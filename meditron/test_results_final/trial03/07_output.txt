@@ -1,0 +1,25 @@
+
+    Original Text: Absolute neutrophil count > 1,500/mcL
+    Disease/Condition: Neutropenia
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: ANC > 1500
+
+Criterion:
+    Subject must have a history of at least one episode of acute gastroenteritis within the last 6 months
+
+Output:
+    Original Text: Subject must have a history of at least one episode of acute gastroenteritis within the last 6 months
+    Disease/Condition: Acute Gastroenteritis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HistoryOfAcuteGastroenteritis == True
+
+Criterion:
+    Subject must have a history of at least two episodes of acute gastroenteritis within the last 6 months
+
+Output:
+    Original Text: Subject must have a history of at least two episodes of acute gastroenteritis within the last 6 months
+    Disease/Condition: Ac

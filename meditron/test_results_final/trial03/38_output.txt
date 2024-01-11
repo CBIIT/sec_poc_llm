@@ -1,0 +1,18 @@
+
+    Original Text: Pregnant or breast feeding
+    Disease/Condition: Pregnancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Pregnancy"
+
+Criterion:
+    Patients with metastatic breast cancer who have received prior therapy with an anthracycline and a taxane in either the adjuvant or neoadjuvant setting, or whose tumors are hormone receptor positive, HER2 negative, and have progressed on endocrine therapy
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have received prior therapy with an anthracycline and a taxane in either the adjuvant or neoadjuvant setting, or whose tumors are hormone receptor positive, HER2 negative, and have progressed on endocrine therapy
+    Disease/Condition: Metastatic breast cancer
+    Procedure: none
+    Drug: none
+    Biomarker: Hormone Receptor Positive, HER2 Negative
+    Computable

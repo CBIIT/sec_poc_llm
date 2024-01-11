@@ -1,0 +1,8 @@
+Original Text: |
+    Age >= 18
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    Age >= 18

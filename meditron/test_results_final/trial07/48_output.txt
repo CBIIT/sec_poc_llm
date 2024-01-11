@@ -1,0 +1,25 @@
+
+    Original Text: Serious, non-healing or dehiscing wound
+    Disease/Condition: Wound, Non-Healing Wound, Dehiscence
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK Wound == True, LK Non-HealingWound == True, LK Dehiscence == True
+
+Criterion:
+    Patients with a history of malignancy within the past 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy within the past 5 years
+    Disease/Condition: History of Malignancy, Cancer History
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK HistoryOfMalignancy == True
+
+Criterion:
+    Patient must have a history of malignancy within the past 5 years
+
+Output:
+    Original Text: Patient must have a history of malignancy within the past 5 years
+    Disease/Condition: History of Malignancy, Cancer

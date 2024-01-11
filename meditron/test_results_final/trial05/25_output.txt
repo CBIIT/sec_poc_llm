@@ -1,0 +1,11 @@
+
+    Original Text: Any unresolved toxicity (Common Terminology Criteria for Adverse Events [CTCAE] grade >= 2) from previous anti-cancer therapy. Subjects with irreversible toxicity that is not reasonably expected to be exacerbated by the investigational product may be included (e.g., hearing loss, peripherally neuropathy)
+    Disease/Condition: None
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: "Any unresolved toxicity (Common Terminology Criteria for Adverse Events [CTCAE] grade >= 2) from previous anti-cancer therapy" is False OR "Subjects with irreversible toxicity that is not reasonably expected to be exacerbated by the investigational product may be included (e.g., hearing loss, peripherally neuropathy)" is True
+
+Criterion:
+    Subjects with any of the following conditions should be excluded from this study:
+        - Active malignancy other than non-melanoma skin cancer or carcin

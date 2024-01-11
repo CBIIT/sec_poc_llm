@@ -1,0 +1,8 @@
+Original Text: |
+    Metastatic melanoma or non-squamous NSCLC with untreated brain metastases
+Disease/Condition: Melanoma, Non-Squamous NSCLC
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK MELANOMA == True OR LK NSCLC == True, BRAINMETASIS == True

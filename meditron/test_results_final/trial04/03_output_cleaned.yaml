@@ -1,0 +1,8 @@
+Original Text: |
+    Have measurable disease or detectable (non-measurable) disease
+Disease/Condition: Measurable Disease, Non-Measurable Disease
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK MTS == True, MTS == True

@@ -1,0 +1,35 @@
+
+    Original Text: Age â‰¥18 years at the time of informed consent.
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: age >= 18
+
+Criterion:
+    Age > 18 years at the time of informed consent.
+
+Output:
+    Original Text: Age > 18 years at the time of informed consent.
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: age > 18
+
+Criterion:
+    Age > 18 years old at the time of informed consent.
+
+Output:
+    Original Text: Age > 18 years old at the time of informed consent.
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: age > 18
+
+Criterion:
+    Age > 18 years old at the time of informed consent.
+
+Output:
+    Original

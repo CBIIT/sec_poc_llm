@@ -1,0 +1,10 @@
+
+    Original Text: Pathologically confirmed diagnosis of high-grade (grade 2-3) epithelial ovarian cancer, primary peritoneal cancer, or fallopian tube carcinoma (EOC), which are serous, endometrioid, clear cell, mucinous, mixed epithelial, or undifferentiated. The study does not include pure sarcoma, stromal, or germ-cell tumors. Tumors that are substantially high-grade carcinoma and have focal elements of lower grade tumors or sarcomatous elements (e.g., carcinosarcoma) are eligible
+    Disease/Condition: Epithelial Ovarian Cancer
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: Disease is "Epithelial Ovarian Cancer" OR "Primary Peritoneal Cancer" OR "Fallopian Tube Carcinoma" AND Grade is "High Grade"
+
+Criterion:
+    Histologically confirmed metastatic colorectal

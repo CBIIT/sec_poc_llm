@@ -1,0 +1,8 @@
+Original Text: |
+    Previous use of CDK 4/6 or HDAC inhibitors for cancer treatment
+Disease/Condition: CDK 4/6 Inhibitor, HDAC Inhibitor
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    PREVIOUS_USE_OF_CDK4_OR_HDAC == True, PREVIOUS_USE_OF_CDK4_OR_HDAC == True

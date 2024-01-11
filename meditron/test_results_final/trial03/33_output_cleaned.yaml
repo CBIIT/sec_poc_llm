@@ -1,0 +1,8 @@
+Original Text: |
+    Concurrent use of medication with a known risk of inducing torsades de pointes (on the known risk list of crediblemeds.org) that cannot be discontinued or switched to a different medication >= 7 days prior to starting the study drug
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Torsades De Pointes" is True AND "Medication" is True AND "Discontinued" is False AND "Switched" is False

@@ -1,0 +1,13 @@
+
+    Original Text: known human immunodeficiency virus (HIV) infection with a detectable viral load within 6 months of the anticipated start of treatment
+    Disease/Condition: HIV
+    Procedure: Anti-Retroviral Therapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "HIV" is True and "Viral Load" is GreaterThan(0)
+
+Criterion:
+    Subjects must have a documented history of chronic hepatitis C, defined as positive serum antibody to hepatitis C virus (anti-HCV), positive serum HCV RNA, and elevated alanine aminotransferase (ALT) levels at least twice the upper limit of normal (ULN). Subjects may be either treatment naïve or have failed previous interferon-based therapy
+
+Output:
+    Original Text: Subjects must have a documented history of chronic hepatitis C, defined as positive serum antibody to hepatitis C virus (anti-HCV), positive serum HCV RNA, and

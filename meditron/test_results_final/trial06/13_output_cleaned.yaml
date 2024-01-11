@@ -1,0 +1,8 @@
+Original Text: |
+    International Prostate Symptom Score (IPSS) score =< 20 at time of initial history and physical with treating radiation oncologist
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "IPSS score < 20 at time of initial history and physical with treating radiation oncologist" is True

@@ -1,0 +1,18 @@
+
+    Original Text: History of allergy or hypersensitivity to any of the study treatments.
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "History of allergy or hypersensitivity to any of the study treatments." is False
+
+Criterion:
+    Patients with a history of malignancy other than non-melanoma skin cancer within the last five years, except basal cell carcinoma of the skin or cervical carcinoma in situ.
+
+Output:
+    Original Text: Patients with a history of malignancy other than non-melanoma skin cancer within the last five years, except basal cell carcinoma of the skin or cervical carcinoma in situ.
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Patients with a history of malignancy other than non-melanoma skin cancer within the last five years, except basal cell carcinoma of the skin or cervical

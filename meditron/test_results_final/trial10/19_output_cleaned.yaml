@@ -1,0 +1,8 @@
+Original Text: |
+    Has known glioblastoma multiforme of the brain stem
+Disease/Condition: Glioblastoma Multiforme, Brain Stem
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    GBM_STEM == True

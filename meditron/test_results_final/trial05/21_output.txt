@@ -1,0 +1,24 @@
+
+    Original Text: Patient is willing and able to comply with the protocol for the duration of the study including undergoing treatment and scheduled visits and examinations including follow up
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "willing and able to comply with the protocol for the duration of the study including undergoing treatment and scheduled visits and examinations including follow up" is True
+
+Criterion:
+    Subject must have histologically confirmed advanced non-small cell lung cancer (NSCLC)
+
+Output:
+    Original Text: Subject must have histologically confirmed advanced non-small cell lung cancer (NSCLC)
+    Disease/Condition: NSCLC
+    Procedure: Histology
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Histology" is "NSCLC"
+
+Criterion:
+    Subject must have histologically confirmed advanced non-small cell lung cancer (NSCLC)
+
+Output:
+    Original Text: Subject must have histologically confirmed advanced non

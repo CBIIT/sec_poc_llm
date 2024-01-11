@@ -1,0 +1,28 @@
+
+    Original Text: Hemoglobin > 9 g/dL
+    Disease/Condition: Anemia
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Hb > 9
+
+Criterion:
+    Subjects with a history of cardiac surgery within 3 months prior to screening
+
+Output:
+    Original Text: Subjects with a history of cardiac surgery within 3 months prior to screening
+    Disease/Condition: Cardiac Surgery
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: CARD_SURG == True, TIME_OF_OPERATION < 180
+
+Criterion:
+    Subjects with a history of cardiac surgery within 3 months prior to screening
+
+Output:
+    Original Text: Subjects with a history of cardiac surgery within 3 months prior to screening
+    Disease/Condition: Cardiac Surgery
+    Procedure: none
+    Drug: none
+    Bi

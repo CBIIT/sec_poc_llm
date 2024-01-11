@@ -1,0 +1,21 @@
+
+    Original Text: Any concurrent active malignancies, defined as malignancies requiring any therapy other than expectant observation, because adverse events (AEs) resulting from these malignancies or their treatment may confound our assessment of the safety of adoptive T-cell therapy for ovarian cancer
+    Disease/Condition: Concurrent Active Malignancy, Active Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: MALIGNANCY == True, ACTIVE == True
+
+Criterion:
+    Patients with a history of prior chemotherapy within 4 weeks before enrollment
+
+Output:
+    Original Text: Patients with a history of prior chemotherapy within 4 weeks before enrollment
+    Disease/Condition: Prior Chemotherapy, Chemotherapy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: CHEMOTHERAPY == True
+
+Criterion:
+    Patients with a history of prior radiation therapy within 4 weeks before enroll

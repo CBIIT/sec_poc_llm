@@ -1,0 +1,8 @@
+Original Text: |
+    Concurrent use of testosterone supplementation as it is contraindicated during prostate cancer treatment
+Disease/Condition: none
+Procedure: Testosterone Supplementation
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Testosterone Supplementation" is False

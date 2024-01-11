@@ -1,0 +1,8 @@
+Original Text: |
+    Known chronic hepatitis B virus (HBV) or hepatitis C virus infection with a detectable viral load. Note: Patients with an undetectable HBV viral load on appropriate suppressive therapy are eligible. Patients with an undetectable HCV viral load are eligible
+Disease/Condition: Hepatitis B Virus Infection, Hepatitis C Virus Infection
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    HBV == True OR HCV == True

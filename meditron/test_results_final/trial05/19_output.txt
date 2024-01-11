@@ -1,0 +1,25 @@
+
+    Original Text: Able to swallow study drugs whole as a tablet/capsule
+    Disease/Condition: None
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: True
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to screening
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to screening
+    Disease/Condition: Nonmelanoma Skin Cancer
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: (NOT (Melanoma) AND (Nonmelanoma Skin Cancer))
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to screening
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years prior to screening
+    D

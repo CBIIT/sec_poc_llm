@@ -1,0 +1,8 @@
+Original Text: |
+    Any of the following within 28 days of first date of study treatment
+Disease/Condition: None
+Procedure: None
+Drug: None
+Biomarker: None
+Computable Rule: |
+    "Any of the following within 28 days of first date of study treatment" is False

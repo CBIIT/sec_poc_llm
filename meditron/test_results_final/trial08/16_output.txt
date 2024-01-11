@@ -1,0 +1,18 @@
+
+    Original Text: Concurrently using other anticancer therapy. Participants must continue palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2.
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Concurrently using other anticancer therapy" is False
+
+Criterion:
+    Patients with metastatic breast cancer who have progressed on endocrine therapy and chemotherapy, and have measurable disease at baseline.
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have progressed on endocrine therapy and chemotherapy, and have measurable disease at baseline.
+    Disease/Condition: Metastatic Breast Cancer
+    Procedure: Endocrine Therapy
+    Drug: Chemotherapy
+    Biomarker: Measurable Disease
+    Computable Rule: "Metastatic Breast Cancer" AND "

@@ -1,0 +1,8 @@
+Original Text: |
+    Diagnosis of immunodeficiency or any condition requiring concurrent use of systemic immunosuppressants or corticosteroids.
+Disease/Condition: Immunodeficiency, Systemic Immunosuppressant, Corticosteroid
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    IMMUNODEFICIENCY == True OR SYSTEMIC_IMMUNOSUPPRESSANT == True OR CORTICOSTEROID == True

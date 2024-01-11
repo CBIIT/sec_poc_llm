@@ -1,0 +1,12 @@
+
+    Original Text: Any underlying medical or psychiatric condition, which in the opinion of the investigator, will make the administration of study drug hazardous or obscure the interpretation of adverse events. Examples include, but are not limited to, uncontrolled ventricular arrhythmia, recent (within 3 months) myocardial infarction, superior vena cava syndrome, extensive bilateral lung disease on high resolution computed tomography (HRCT) scan, uncontrolled seizures, history of allogeneic organ transplant, history of primary immunodeficiency or any psychiatric disorder that prohibits obtaining informed consent
+    Disease/Condition: None
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: "Any underlying medical or psychiatric condition, which in the opinion of the investigator, will make the administration of study drug hazardous or obscure the interpretation of adverse events." is True
+
+Criterion:
+    Patients with active malignancy other than non-melanoma skin cancer within the past 5 years
+
+Output

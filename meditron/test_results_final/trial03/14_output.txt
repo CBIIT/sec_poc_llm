@@ -1,0 +1,25 @@
+
+    Original Text: Patient must have the following laboratory values within normal limits or corrected to within normal limits with supplements before the first dose of study medication:
+    Disease/Condition: none
+    Procedure: Laboratory Values
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Potassium", "Magnesium", "Total calcium (corrected for serum albumin)" is True
+
+Criterion:
+    Patients must have a baseline ejection fraction >40%
+
+Output:
+    Original Text: Patients must have a baseline ejection fraction >40%
+    Disease/Condition: none
+    Procedure: Ejection Fraction
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Ejection Fraction" is GreaterThan(40)
+
+Criterion:
+    Patients must have a baseline left ventricular ejection fraction >35%
+
+Output:
+    Original Text: Patients must have a baseline left ventricular ejection fraction >35%
+    D

@@ -1,0 +1,7 @@
+
+    Original Text: Histologically or cytologically-documented, advanced solid tumor of one of the following types:
+    Disease/Condition: Anal Squamous Cell Carcinoma, Biliary Adenocarcinoma, Neuroendocrine Tumors, Endometrial Carcinoma, Cervical Squamous Cell Carcinoma, Vulvar Squamous Cell Carcinoma, Small Cell Lung Carcinoma, Mesothelioma, Thyroid Carcinoma, Salivary Gland Carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True, MTS == True

@@ -1,0 +1,8 @@
+Original Text: |
+    Patients with active hemoptysis
+Disease/Condition: Hemoptysis
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Hemoptysis" is True

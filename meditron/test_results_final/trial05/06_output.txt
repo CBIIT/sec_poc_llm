@@ -1,0 +1,25 @@
+
+    Original Text: Presence of metastatic disease documented on imaging studies (bone scan, computed tomography [CT] and/or magnetic resonance imaging [MRI] scans)
+    Disease/Condition: Metastasis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: MTS == True
+
+Criterion:
+    Patients with histologically confirmed adenocarcinoma of the pancreas
+
+Output:
+    Original Text: Patients with histologically confirmed adenocarcinoma of the pancreas
+    Disease/Condition: Adenocarcinoma of the Pancreas
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: PANCREAS == True
+
+Criterion:
+    Histological confirmation of adenocarcinoma of the pancreas
+
+Output:
+    Original Text: Histological confirmation of adenocarcinoma of the pancreas
+    Disease/Condition: Adenocarcinoma of the Pancreas

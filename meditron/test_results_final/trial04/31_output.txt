@@ -1,0 +1,21 @@
+
+    Original Text: Any other issue which, in the opinion of the treating physician or principal investigator, would make the patient ineligible for the study
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Any other issue which, in the opinion of the treating physician or principal investigator, would make the patient ineligible for the study" is True
+
+Criterion:
+    Subjects with a history of any malignancy within the past 5 years (except non-melanoma skin cancer)
+
+Output:
+    Original Text: Subjects with a history of any malignancy within the past 5 years (except non-melanoma skin cancer)
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Subjects with a history of any malignancy within the past 5 years (except non-melanoma skin cancer)" is False
+
+Criterion:
+    Subjects with a history of any m

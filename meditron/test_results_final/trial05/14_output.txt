@@ -1,0 +1,18 @@
+
+    Original Text: No features suggestive of myelodysplastic syndrome (MDS)/acute myeloid leukemia (AML) on peripheral blood smear (within 7 days prior to treatment registration)
+    Disease/Condition: Myelodysplastic Syndromes, Acute Myeloid Leukemia
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MDS == False, MDS == False, LK AML == False, AML == False
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years before study entry are excluded
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within 5 years before study entry are excluded
+    Disease/Condition: Non-Melanoma Skin Cancer, Melanoma
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK NMSC == False, NMS

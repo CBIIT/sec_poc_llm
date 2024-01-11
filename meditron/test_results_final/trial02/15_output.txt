@@ -1,0 +1,18 @@
+
+    Original Text: The minimum time requirement between date of surgery and randomization must be at least 4 weeks (28 days)
+    Disease/Condition: none
+    Procedure: Surgery
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Surgery" is True AND ("28 days" is GreaterThan "0")
+
+Criterion:
+    Patients with histologically confirmed adenocarcinoma of the gastroesophageal junction, cardia, fundus, body, or antrum of the stomach
+
+Output:
+    Original Text: Patients with histologically confirmed adenocarcinoma of the gastroesophageal junction, cardia, fundus, body, or antrum of the stomach
+    Disease/Condition: Adenocarcinoma
+    Procedure: Stomach
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Adenocarcinoma" is True AND ("Gastroesophageal Junction" is EqualTo "Cardia

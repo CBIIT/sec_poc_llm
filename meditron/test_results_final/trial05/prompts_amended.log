@@ -1,0 +1,44 @@
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+
+Output:
+    Original Text: Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: HER2-, HER2+
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2- is True OR HER2+ is True
+
+Criterion:
+    Patients must meet at least one of the following AVPC criteria:
+* Histologically proven small cell (neuroendocrine) prostate carcinoma
+* Exclusive visceral metastases
+* Predominantly lytic bone metastases identified by plain x-ray or CT scan
+* Bulky (>= 5 cm in longest dimension) lymphadenopathy or high-grade tumor mass in prostate/pelvis
+* Low PSA (=< 10 ng/mL) at initial presentation (prior to androgen ablation or at symptomatic progression in the castrate-setting) plus high volume (>= 20) bone metastases
+* Elevated serum lactate dehydrogenase (LDH) (>= 2 x ULN) or elevated serum carcinoembryonic antigen (CEA) (>= 2 x ULN) in the absence of other etiologies
+* Short interval (=< 180 days) to castrate-resistant progression following initiation of hormonal therapy
+* Known loss or mutation (by Clinical Laboratory Improvement Act [CLIA] certified molecular testing, immunohistochemistry [IHC] and/or deoxyribonucleic acid [DNA] sequencing) in at least 2 of Tp53, RB1 and PTEN defined as:
+** AVPC determination by immunohistochemistry. As previously described, tumor samples are considered negative (and thus abnormal) for RB1 and PTEN if their labeling index is =< 10% and positive (and thus aberrant) for Tp53 if their labeling index is >= 10%, where the labeling index is defined as the percentage of positive cells, and calculated as the number of positively stained epithelial cells divided by the total number of epithelial cells, at X200 magnification
+** AVPC determination by DNA sequencing. As previously described, the TP53, RB1 and PTEN genes will be considered aberrant if they contain exonic nonsynonymous missense or stop-gain mutations, frameshift or non frameshift indels (insertions or deletions), and/or copy number losses
+** Patients who have castration-resistant disease progression per RECIST in the absence of PSA values rising to >= 1.0ng/ml as per Prostate Cancer Working Group 3 (PCWG3) PSA progression criteria
+
+Output:[0m
+
+[1m> Finished chain.[0m

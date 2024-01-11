@@ -1,0 +1,15 @@
+
+    Original Text: Had prior exposure to any signal transducer and activator of transducer 3 (STAT3) inhibitor.
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Had prior exposure to any signal transducer and activator of transducer 3 (STAT3) inhibitor." is True
+
+Criterion:
+    Subjects with a history of malignancy other than non-melanoma skin cancer within 5 years before study entry, excluding basal cell carcinoma of the skin, cervical intraepithelial neoplasia, and squamous cell carcinoma of the skin.
+
+Output:
+    Original Text: Subjects with a history of malignancy other than non-melanoma skin cancer within 5 years before study entry, excluding basal cell carcinoma of the skin, cervical intraepithelial neoplasia, and squamous cell carcinoma of the skin.
+    Disease/Condition: none
+   

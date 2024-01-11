@@ -1,0 +1,8 @@
+Original Text: |
+    The use of corticosteroids to control cerebral edema or treat neurologic symptoms will not be allowed, and patients who previously required corticosteroids for symptom control must be off steroids for at least 1 week prior to treatment on day 1 of cycle 1; low-dose steroid use (=< 10 mg of prednisone or equivalent) as corticosteroid replacement therapy is allowed
+Disease/Condition: none
+Procedure: Corticosteroid
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "corticosteroid" OR "prednisone" OR "steroid" OR "dexamethasone" OR "methylprednisolone" OR "hydrocortisone" OR "betamethasone" OR "triamcinolone" OR "cortisone" OR "cortone" OR "cortone acetate" OR "cortone sodium phosphate" OR "cortone phosphate" OR "cortone phosphate dis

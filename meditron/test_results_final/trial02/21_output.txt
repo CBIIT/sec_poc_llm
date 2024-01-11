@@ -1,0 +1,29 @@
+
+    Original Text: Absolute neutrophil count (ANC) >= 1500/mm^3
+    Disease/Condition: ANC
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: ANC >= 1500
+
+Criterion:
+    Patients with a history of malignancy within 2 years prior to study entry
+
+Output:
+    Original Text: Patients with a history of malignancy within 2 years prior to study entry
+    Disease/Condition: History of Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HOM == True
+
+Criterion:
+    Patients with a history of malignancy within 5 years prior to study entry
+
+Output:
+    Original Text: Patients with a history of malignancy within 5 years prior to study entry
+    Disease/Condition: History of Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HOM ==

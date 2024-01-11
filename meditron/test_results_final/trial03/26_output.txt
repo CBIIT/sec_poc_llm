@@ -1,0 +1,14 @@
+
+    Original Text: Uncontrolled arrhythmia, congestive heart failure or angina. Patients who have had a myocardial infarction, symptomatic pericarditis, or cardiac surgery should be at least 6 months from the event and free of active symptoms
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Uncontrolled arrhythmia", "congestive heart failure", "angina", "myocardial infarction", "pericarditis", "cardiac surgery" is False
+
+Criterion:
+    The patient has a history of hypertension (systolic blood pressure >140 mm Hg or diastolic blood pressure >90 mm Hg) or is receiving antihypertensive medication
+
+Output:
+    Original Text: The patient has a history of hypertension (systolic blood pressure >140 mm Hg or diastolic blood pressure >90 mm Hg) or is receiving antihypertensive medication
+    Dise

@@ -1,0 +1,16 @@
+
+    Original Text: Has severe hypersensitivity (â‰¥Grade 3) to pembrolizumab and/or any of its excipients
+    Disease/Condition: none
+    Procedure: none
+    Drug: Pembrolizumab
+    Biomarker: none
+    Computable Rule: "Severe Hypersensitivity" is False
+
+Criterion:
+    Patient has a history of autoimmune disease, including but not limited to inflammatory bowel disease, diabetes mellitus type 1, rheumatoid arthritis, systemic lupus erythematosus, psoriasis, or multiple sclerosis
+
+Output:
+    Original Text: Patient has a history of autoimmune disease, including but not limited to inflammatory bowel disease, diabetes mellitus type 1, rheumatoid arthritis, systemic lupus erythematosus, psoriasis, or multiple sclerosis
+    Disease/Condition: none
+    Procedure: none
+    D

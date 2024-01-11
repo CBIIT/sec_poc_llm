@@ -1,0 +1,8 @@
+Original Text: |
+    Eastern Cooperative Oncology Group (ECOG) performance status of =< 2
+Disease/Condition: ECOG Performance Status
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    ECOG_PS <= 2

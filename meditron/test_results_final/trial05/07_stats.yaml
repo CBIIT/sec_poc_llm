@@ -1,0 +1,16 @@
+elapsed_time: 52s
+was_input_captured: False
+original_text: |
+    Patients must meet at least one of the following AVPC criteria:
+    * Histologically proven small cell (neuroendocrine) prostate carcinoma
+    * Exclusive visceral metastases
+    * Predominantly lytic bone metastases identified by plain x-ray or CT scan
+    * Bulky (>= 5 cm in longest dimension) lymphadenopathy or high-grade tumor mass in prostate/pelvis
+    * Low PSA (=< 10 ng/mL) at initial presentation (prior to androgen ablation or at symptomatic progression in the castrate-setting) plus high volume (>= 20) bone metastases
+    * Elevated serum lactate dehydrogenase (LDH) (>= 2 x ULN) or elevated serum carcinoembryonic antigen (CEA) (>= 2 x ULN) in the absence of other etiologies
+    * Short interval (=< 180 days) to castrate-resistant progression following initiation of hormonal therapy
+    * Known loss or mutation (by Clinical Laboratory Improvement Act [CLIA] certified molecular testing, immunohistochemistry [IHC] and/or deoxyribonucleic acid [DNA] sequencing) in at least 2 of Tp53, RB1 and PTEN defined as:
+    ** AVPC determination by immunohistochemistry. As previously described, tumor samples are considered negative (and thus abnormal) for RB1 and PTEN if their labeling index is =< 10% and positive (and thus aberrant) for Tp53 if their labeling index is >= 10%, where the labeling index is defined as the percentage of positive cells, and calculated as the number of positively stained epithelial cells divided by the total number of epithelial cells, at X200 magnification
+    ** AVPC determination by DNA sequencing. As previously described, the TP53, RB1 and PTEN genes will be considered aberrant if they contain exonic nonsynonymous missense or stop-gain mutations, frameshift or non frameshift indels (insertions or deletions), and/or copy number losses
+    ** Patients who have castration-resistant disease progression per RECIST in the absence of PSA values rising to >= 1.0ng/ml as per Prostate Cancer Working Group 3 (PCWG3) PSA progression criteria
+inclusion: True

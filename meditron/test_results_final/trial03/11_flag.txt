@@ -1,0 +1,1 @@
+Input not captured, possibly due to nested bullets '*'.

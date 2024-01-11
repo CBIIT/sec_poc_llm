@@ -1,0 +1,8 @@
+Original Text: |
+    Pre-existing conditions or overall health status which disqualifies the patient from curative-intent RT. Patients with life expectancy less than 10 years are not eligible
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Pre-existing conditions or overall health status which disqualifies the patient from curative-intent RT. Patients with life expectancy less than 10 years are not eligible" is False

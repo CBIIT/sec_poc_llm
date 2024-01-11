@@ -1,0 +1,18 @@
+
+    Original Text: Proteinuria > 2.0 g of protein in a 24-hour urine collection; all patients with 2 protein on dipstick urinalysis at baseline must undergo a 24-hour urine collection for protein
+    Disease/Condition: Proteinuria
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Proteinuria" AND Proteinuria > 2.0 g of protein in a 24-hour urine collection
+
+Criterion:
+    Patients with a history of cardiac dysrhythmias or conduction abnormalities requiring medication
+
+Output:
+    Original Text: Patients with a history of cardiac dysrhythmias or conduction abnormalities requiring medication
+    Disease/Condition: Cardiac dysrhythmia
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Cardiac dysrhythmia" AND History of cardiac dysrhythmias or condu

@@ -1,0 +1,8 @@
+Original Text: |
+    A history of previously treated brain metastases is allowed, provided that at least 7 days have lapsed between radiation and initiation of pembrolizumab; any brain metastasis >= 20 mm or causing symptoms must be treated with local therapy (i.e. radiation or surgical resection, as clinically appropriate) prior to study enrollment; any lesion present at the time of whole brain radiotherapy (WBRT) or included in the stereotactic radiotherapy field (or within 2 mm of the treated lesion) will NOT be considered evaluable unless it is new or documented to have progressed since treatment
+Disease/Condition: None
+Procedure: None
+Drug: None
+Biomarker: None
+Computable Rule: |
+    "A history of previously treated brain metastases is allowed, provided that at least 7 days have lapsed between radiation and initiation of pembrolizumab; any brain metastasis >= 20 mm or causing symptoms must be treated with local therapy (i.e. radiation or surgical resection, as clinically appropriate)

@@ -1,0 +1,20 @@
+
+    Original Text: A history of pneumonitis or extensive bilateral lung disease of non-malignant etiology
+    Disease/Condition: Pneumonitis, Extensive Bilateral Lung Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK PNEUMONITIS == True OR LK EXTENSIVE_BILA-TERAL_LUNG_DISEASE == True
+
+Criterion:
+    Patients with a history of malignancy other than breast cancer within 5 years prior to enrollment
+
+Output:
+    Original Text: Patients with a history of malignancy other than breast cancer within 5 years prior to enrollment
+    Disease/Condition: History of Malignancy Other Than Breast Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK HISTORY_OF_MALIGNANCY_OTHER_THAN_BREAST_CANCER == True
+
+Criterion:

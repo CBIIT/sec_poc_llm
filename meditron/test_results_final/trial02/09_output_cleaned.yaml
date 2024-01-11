@@ -1,0 +1,8 @@
+Original Text: |
+    Patients must NOT have uncontrolled intercurrent illness including, but not limited to, serious ongoing or active infection, symptomatic congestive heart failure, unstable angina pectoris, uncontrolled cardiac arrhythmia, or psychiatric illness/social situations that would limit compliance with study requirements
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "uncontrolled intercurrent illness including, but not limited to, serious ongoing or active infection, symptomatic congestive heart failure, unstable angina pectoris, uncontrolled cardiac arrhythmia, or psychiatric illness/social situations that would limit compliance with study requirements" is False

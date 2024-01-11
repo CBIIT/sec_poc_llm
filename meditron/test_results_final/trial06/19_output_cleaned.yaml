@@ -1,0 +1,8 @@
+Original Text: |
+    Prior prostatectomy, cryotherapy, high-intensity focused ultrasound directed towards the prostate for any prostate disease or condition
+Disease/Condition: Prostate
+Procedure: Prostatectomy, Cryotherapy, High Intensity Focused Ultrasound
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Prostate" AND ("Prostatectomy" OR "Cryotherapy" OR "High Intensity Focused Ultrasound")

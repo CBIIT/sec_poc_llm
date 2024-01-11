@@ -1,0 +1,8 @@
+Original Text: |
+    Calculated creatinine clearance (Cockcroft-Gault equation) >= 30 mL/min (within 7 days prior to treatment registration)
+Disease/Condition: None
+Procedure: None
+Drug: None
+Biomarker: None
+Computable Rule: |
+    Cockcroft-Gault_Clearance >= 30

@@ -1,0 +1,18 @@
+
+    Original Text: History of life-threatening toxicity related to prior immune therapy or any toxicity resulting in permanent discontinuation from prior therapy.
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Life-threatening toxicity" is False OR "Permanent discontinuation" is True
+
+Criterion:
+    Patients with active brain metastases, spinal cord compression, carcinomatous meningitis, or leptomeningeal disease are excluded.
+
+Output:
+    Original Text: Patients with active brain metastases, spinal cord compression, carcinomatous meningitis, or leptomeningeal disease are excluded.
+    Disease/Condition: Brain Metastasis
+    Procedure: Spinal Cord Compression
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Active brain metastases" is False OR "Spinal cord compression" is False OR "Carcinomatous meningitis"

@@ -1,0 +1,24 @@
+
+    Original Text: Patients who have received more than one line of chemotherapy. Any number of prior hormonal or targeted therapies are allowed
+    Disease/Condition: none
+    Procedure: Chemotherapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Chemotherapy" is True OR "Hormonal Therapy" is True OR "Targeted Therapy" is True
+
+Criterion:
+    Patients with measurable disease at baseline (defined as bidimensionally measurable lesions)
+
+Output:
+    Original Text: Patients with measurable disease at baseline (defined as bidimensionally measurable lesions)
+    Disease/Condition: none
+    Procedure: Measurable
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Measurable" is True
+
+Criterion:
+    Patients with measurable disease at baseline (defined as bidimensionally measurable lesions)
+
+Output:
+    Original Text: Patients with measurable disease at baseline (defined as bidimensionally meas

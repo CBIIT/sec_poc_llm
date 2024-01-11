@@ -1,0 +1,29 @@
+
+    Original Text: Age >= 18
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: age >= 18
+
+Criterion:
+    Age >= 18 AND NOT (Age <= 25)
+
+Output:
+    Original Text: Age >= 18 AND NOT (Age <= 25)
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: age >= 18 AND NOT (age <= 25)
+
+Criterion:
+    Age >= 18 AND NOT (Age <= 25 OR Age > 30)
+
+Output:
+    Original Text: Age >= 18 AND NOT (Age <= 25 OR Age > 30)
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: age >= 18 AND NOT (age <= 25 OR age > 30)

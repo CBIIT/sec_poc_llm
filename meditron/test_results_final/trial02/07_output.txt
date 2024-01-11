@@ -1,0 +1,13 @@
+
+    Original Text: All females of childbearing potential must have a blood or urine pregnancy test within 72 hours prior to randomization to rule out pregnancy; a female of childbearing potential is any woman, regardless of sexual orientation or whether they have undergone tubal ligation, who meets the following criteria: 1) has not undergone a hysterectomy or bilateral oophorectomy; or 2) has not been naturally postmenopausal for at least 24 consecutive months (i.e., has had menses at any time in the preceding 24 consecutive months)
+    Disease/Condition: Female
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: Female is True AND PregnancyTestResult is False
+
+Criterion:
+    Patients with metastatic colorectal cancer who have progressed on or are intolerant to fluoropyrimidine, oxaliplatin, and irinotecan-based chemotherapy regimens
+
+Output:
+    Original Text: Pat

@@ -1,0 +1,8 @@
+Original Text: |
+    Active uncontrolled infection
+Disease/Condition: Infection
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK INF == True

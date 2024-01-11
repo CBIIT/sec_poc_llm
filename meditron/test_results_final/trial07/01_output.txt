@@ -1,0 +1,24 @@
+
+    Original Text: Metastatic melanoma or non-squamous NSCLC with untreated brain metastases
+    Disease/Condition: Melanoma, Non-Squamous NSCLC
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MELANOMA == True OR LK NSCLC == True, BRAINMETASIS == True
+
+Criterion:
+    Patients with advanced solid tumors (excluding breast cancer) who have failed standard therapy
+
+Output:
+    Original Text: Patients with advanced solid tumors (excluding breast cancer) who have failed standard therapy
+    Disease/Condition: Solid Tumor Excluding Breast Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK SOLID_TUMOR == True AND LK BREAST_CANCER == False
+
+Criterion:
+    Patients with advanced solid tumors (excluding breast cancer) who have failed standard therapy
+
+Output:
+   

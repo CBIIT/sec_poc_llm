@@ -1,0 +1,18 @@
+
+    Original Text: Eastern Cooperative Oncology Group (ECOG) status of 2 or better (or Karnofsky performance status score of >= 60%)
+    Disease/Condition: ECOG Status, Karnofsky Performance Score
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: ECOG_Status == 2 OR KPS >= 60
+
+Criterion:
+    Patients with histologically confirmed adenocarcinoma of the gastroesophageal junction (GEJ) or stomach
+
+Output:
+    Original Text: Patients with histologically confirmed adenocarcinoma of the gastroesophageal junction (GEJ) or stomach
+    Disease/Condition: Adenocarcinoma of Gastric Junction, Adenocarcinoma of Stomach
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Adenocarcinoma_of_Stomach == True OR Adenocarcinoma

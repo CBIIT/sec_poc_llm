@@ -1,0 +1,8 @@
+Original Text: |
+    Has an Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1.
+Disease/Condition: ECOG Performance Status
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    ECOGPS == 0 OR ECOGPS == 1

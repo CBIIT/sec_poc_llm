@@ -1,0 +1,18 @@
+
+    Original Text: Known left ventricular ejection fraction < 50%. (Echocardiogram is not required for study entry)
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Known left ventricular ejection fraction < 50%" is False
+
+Criterion:
+    Patients with a history of cardiac surgery, including coronary artery bypass grafting, valve replacement, or other major cardiac surgery within 6 months before randomization
+
+Output:
+    Original Text: Patients with a history of cardiac surgery, including coronary artery bypass grafting, valve replacement, or other major cardiac surgery within 6 months before randomization
+    Disease/Condition: none
+    Procedure: Cardiac Surgery
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Patients with a history of cardiac surgery, including coronary artery bypass grafting, valve replacement, or other major cardiac surgery within 

@@ -1,0 +1,27 @@
+
+    Original Text: Can supply tumor tissue for study analyses (dependent on tumor type)
+    Disease/Condition: Breast cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Breast cancer" AND Tumor tissue is Supplyable
+
+Criterion:
+    Patients must have measurable disease per RECIST v1.1
+
+Output:
+    Original Text: Patients must have measurable disease per RECIST v1.1
+    Disease/Condition: Breast cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "Breast cancer" AND Measurable is True
+
+Criterion:
+    Patient must have received prior therapy with an endocrine agent for metastatic disease
+
+Output:
+    Original Text: Patient must have received prior therapy with an endocrine agent for metastatic disease
+    Disease/Condition: Breast cancer
+    Procedure: none
+    Drug: none

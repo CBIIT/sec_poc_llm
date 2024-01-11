@@ -1,0 +1,42 @@
+
+    Original Text: Adequate organ function
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Able to swallow tablets
+
+Output:
+    Original Text: Able to swallow tablets
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Able to understand and follow study instructions
+
+Output:
+    Original Text: Able to understand and follow study instructions
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Able to comply with protocol requirements
+
+Output:
+    Original Text: Able to comply with protocol requirements
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criter

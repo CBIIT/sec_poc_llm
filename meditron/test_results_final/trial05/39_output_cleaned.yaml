@@ -1,0 +1,8 @@
+Original Text: |
+    Subjects who are compulsorily detained for treatment of either a psychiatric or physical (e.g. infectious disease) illness
+Disease/Condition: none
+Procedure: Compulsory Detention
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Compulsory Detention" is True

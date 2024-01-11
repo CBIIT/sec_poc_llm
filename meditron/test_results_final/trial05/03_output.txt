@@ -1,0 +1,24 @@
+
+    Original Text: Patients must consent to the MD Anderson Immunotherapy Platform laboratory protocol PA13-0291
+    Disease/Condition: None
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: PATIENTS_CONSENTED == True
+
+Criterion:
+    Patient must have histologically confirmed advanced solid tumors with no available standard therapies
+
+Output:
+    Original Text: Patient must have histologically confirmed advanced solid tumors with no available standard therapies
+    Disease/Condition: Advanced Solid Tumor
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: HISTOLOGICALLY_CONFIRMED == True AND ADVANCED_SOLID_TUMOR == True AND NO_AVAILABLE_STANDARD_THERAPIES == True
+
+Criterion:
+    Patient must have histologically confirmed advanced solid tumors with no available standard therapies
+
+Output:
+    Original Text: Pat

@@ -1,0 +1,7 @@
+
+    Original Text: Total bilirubin =< 1.5 x institutional upper limit of normal (ULN) (except for patients with known Gilbertâ€™s disease) (within 7 days prior to treatment registration)
+    Disease/Condition: Gilbert's disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: <=> ><= <=>= >=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=

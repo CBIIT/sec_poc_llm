@@ -1,0 +1,26 @@
+
+    Original Text: International Prostate Symptom Score (IPSS) score =< 20 at time of initial history and physical with treating radiation oncologist
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "IPSS score < 20 at time of initial history and physical with treating radiation oncologist" is True
+
+Criterion:
+    Patients must have a Karnofsky Performance Status (KPS) >70%
+
+Output:
+    Original Text: Patients must have a Karnofsky Performance Status (KPS) >70%
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "KPS > 70%" is True
+
+Criterion:
+    Patient must have a life expectancy greater than 3 months
+
+Output:
+    Original Text: Patient must have a life expectancy greater than 3 months
+    Disease/Condition: none
+    Procedure: none

@@ -1,0 +1,21 @@
+
+    Original Text: Baseline chest computed tomography (CT) with or without contrast must be performed within 6 months (180 days) prior to randomization to ensure no evidence of disease; if clinically indicated additional imaging studies must be performed to rule out metastatic disease
+    Disease/Condition: none
+    Procedure: Chest CT
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Baseline chest CT" AND ("within 6 months" OR "if clinically indicated") AND "no evidence of disease" AND "rule out metastatic disease"
+
+Criterion:
+    Patients must have histologically confirmed non-small cell lung cancer (NSCLC)
+
+Output:
+    Original Text: Patients must have histologically confirmed non-small cell lung cancer (NSCLC)
+    Disease/Condition: NSCLC
+    Procedure: Histology
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Patients must have histologically confirmed non-small cell lung cancer (NSCLC)"
+
+Criterion:
+    Patients must

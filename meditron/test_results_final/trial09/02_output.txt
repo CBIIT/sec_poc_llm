@@ -1,0 +1,29 @@
+
+    Original Text: Measurable disease as defined by RECIST v1.1 criteria
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "RECIST v1.1 Criteria" is True
+
+Criterion:
+    Patients with measurable disease according to RECIST v1.1 criteria
+
+Output:
+    Original Text: Patients with measurable disease according to RECIST v1.1 criteria
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "RECIST v1.1 Criteria" is True
+
+Criterion:
+    Patients with measurable disease according to RECIST v1.1 criteria
+
+Output:
+    Original Text: Patients with measurable disease according to RECIST v1.1 criteria
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "RECIST v1.

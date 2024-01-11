@@ -1,0 +1,24 @@
+
+    Original Text: History of abdominal or tracheoesophageal fistula or gastrointestinal perforation within 6 months prior to cycle 1, day 1
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a history of any malignancy other than non-melanoma skin cancer (NMSC) within 5 years prior to study entry
+
+Output:
+    Original Text: Patients with a history of any malignancy other than non-melanoma skin cancer (NMSC) within 5 years prior to study entry
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Patients with a history of any malignancy other than NMSC within 2 years prior to study entry
+
+Output:
+    Original Text: Patients with a history of any malignancy other than NMSC within 2 years prior

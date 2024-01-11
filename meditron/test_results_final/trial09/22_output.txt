@@ -1,0 +1,23 @@
+
+    Original Text: Treatment with a live or live attenuated vaccine.
+    Disease/Condition: none
+    Procedure: Vaccination
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Vaccination" is True
+
+Criterion:
+    Patients with a history of any malignancy other than non-melanoma skin cancer within 5 years before enrollment, except basal cell carcinoma of the skin.
+
+Output:
+    Original Text: Patients with a history of any malignancy other than non-melanoma skin cancer within 5 years before enrollment, except basal cell carcinoma of the skin.
+    Disease/Condition: none
+    Procedure: Malignancy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Malignancy" is False
+
+Criterion:
+    Patients with a history of any malignancy other than non-melanoma skin cancer within 5 years before enrollment, except basal cell carcinoma of the skin.
+
+Output:

@@ -1,0 +1,8 @@
+Original Text: |
+    ECOG performance status of 0 to 1.
+Disease/Condition: ECOG performance status
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    Performance Status is between 0 and 1

@@ -1,0 +1,24 @@
+
+    Original Text: Absolute neutrophil count (ANC) >= 1500/mm^3
+    Disease/Condition: Neutropenia
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: ANC >= 1500
+
+Criterion:
+    Patients with a history of cardiac disease or arrhythmia should not receive this medication
+
+Output:
+    Original Text: Patients with a history of cardiac disease or arrhythmia should not receive this medication
+    Disease/Condition: Cardiac Disease, Arrhythmia
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: PATIENTS_WITH_A_HISTORY_OF_CARDIAC_DISEASE_OR_ARRHYTHMIA == False
+
+Criterion:
+    Patients with a history of cardiac disease or arrhythmia should not receive this medication
+
+Output:
+    Original Text: Patients with a history of cardiac disease or

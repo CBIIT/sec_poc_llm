@@ -1,0 +1,29 @@
+
+    Original Text: Presence of leptomeningeal disease
+    Disease/Condition: Leptomeningeal Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK == True
+
+Criterion:
+    Patients with a history of prior chemotherapy for advanced disease
+
+Output:
+    Original Text: Patients with a history of prior chemotherapy for advanced disease
+    Disease/Condition: Advanced Disease, Chemotherapy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: ADV_CHEMO == True, CHEMO == True
+
+Criterion:
+    Patients with a history of prior chemotherapy for advanced disease
+
+Output:
+    Original Text: Patients with a history of prior chemotherapy for advanced disease
+    Disease/Condition: Advanced Disease, Chemotherapy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: ADV_CHEMO == True, CHEMO

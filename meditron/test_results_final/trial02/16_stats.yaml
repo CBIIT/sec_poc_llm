@@ -1,0 +1,8 @@
+elapsed_time: 18s
+was_input_captured: True
+original_text: |
+    The maximum time requirement between surgery and randomization must be:
+    * 4 months (120 days) if no adjuvant chemotherapy was administered
+    * 9 months (270 days) if adjuvant chemotherapy was administered
+    * 11 months (330 days) if adjuvant chemotherapy and radiation therapy were administered
+inclusion: True

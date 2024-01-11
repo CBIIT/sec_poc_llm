@@ -1,0 +1,8 @@
+Original Text: |
+    White blood cells (WBC) > 3 x 10^9/L (unless due to bone marrow infiltration by tumor, in which case WBC > 2 x 10^9/L is allowed) (within 7 days prior to treatment registration)
+Disease/Condition: Leukocytosis
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    WBC > 3*10^9 AND NOT BM_INFILTRATION_BY_TUMOR == True

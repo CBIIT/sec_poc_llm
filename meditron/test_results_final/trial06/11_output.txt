@@ -1,0 +1,18 @@
+
+    Original Text: Be able to undergo MRI prostate and pelvis as a component of radiation therapy (RT) planning
+    Disease/Condition: none
+    Procedure: Magnetic Resonance Imaging
+    Drug: none
+    Biomarker: none
+    Computable Rule: "MRI prostate and pelvis" is True
+
+Criterion:
+    Patients with metastatic castration-resistant prostate cancer (mCRPC) who have progressed on abiraterone acetate and prednisone, or enzalutamide, or both
+
+Output:
+    Original Text: Patients with metastatic castration-resistant prostate cancer (mCRPC) who have progressed on abiraterone acetate and prednisone, or enzalutamide, or both
+    Disease/Condition: Metastatic Castration-Resistant Prostate Cancer
+    Procedure: Abiraterone Acetate
+    Drug: Prednisone
+    Biomarker: none
+    Computable Rule: "Metastatic Castration-Res

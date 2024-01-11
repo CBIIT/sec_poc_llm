@@ -1,0 +1,18 @@
+
+    Original Text: Any advanced solid tumor, with the exception of colorectal carcinoma (CRC), which is Microsatellite Instability (MSI)-High (MSI-H) OR
+    Disease/Condition: Advanced Solid Tumor, Colorectal Carcinoma, Microsatellite Instability High
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: (MSS == False OR CRC == True) AND (MSI-H == True)
+
+Criterion:
+    Patients must have histologically confirmed advanced gastric adenocarcinoma (AGC) with measurable disease per RECIST v1.1
+
+Output:
+    Original Text: Patients must have histologically confirmed advanced gastric adenocarcinoma (AGC) with measurable disease per RECIST v1.1
+    Disease/Condition: Gastric Adenocarcinoma, Measurable Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule

@@ -1,0 +1,8 @@
+Original Text: |
+    Radiologically-measurable disease
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Radiologically-measurable disease" is True

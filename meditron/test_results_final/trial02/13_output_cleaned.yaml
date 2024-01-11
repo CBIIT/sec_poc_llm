@@ -1,0 +1,8 @@
+Original Text: |
+    No use of medications, herbals, or foods that are known potent cytochrome P450, subfamily 3A, polypeptide 4 (CYP3A4) inhibitors or inducers, included but not limited to those outlined
+Disease/Condition: None
+Procedure: None
+Drug: None
+Biomarker: None
+Computable Rule: |
+    Disease is None AND Procedure is None AND Drug is None AND Biomarker is None

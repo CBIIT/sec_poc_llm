@@ -1,0 +1,17 @@
+
+    Original Text: Preexisting gastrointestinal disorders/conditions that may interfere with ingestion or absorption of oral medications.
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Preexisting gastrointestinal disorders/conditions that may interfere with ingestion or absorption of oral medications." is False
+
+Criterion:
+    Subjects with a history of significant cardiac, renal, hepatic, pulmonary, endocrine, hematologic, neurologic, psychiatric, or other medical disorder that would preclude participation in this study.
+
+Output:
+    Original Text: Subjects with a history of significant cardiac, renal, hepatic, pulmonary, endocrine, hematologic, neurologic, psychiatric, or other medical disorder that would preclude participation in this study.
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none

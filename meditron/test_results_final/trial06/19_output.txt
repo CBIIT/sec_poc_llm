@@ -1,0 +1,21 @@
+
+    Original Text: Prior prostatectomy, cryotherapy, high-intensity focused ultrasound directed towards the prostate for any prostate disease or condition
+    Disease/Condition: Prostate
+    Procedure: Prostatectomy, Cryotherapy, High Intensity Focused Ultrasound
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Prostate" AND ("Prostatectomy" OR "Cryotherapy" OR "High Intensity Focused Ultrasound")
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within the last 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within the last 5 years
+    Disease/Condition: Malignancy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Malignancy" AND NOT ("Nonmelanoma Skin Cancer")
+
+Criterion:
+    Patients with a history of malignancy other

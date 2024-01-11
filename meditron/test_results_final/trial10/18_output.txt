@@ -1,0 +1,21 @@
+
+    Original Text: Known active central nervous system (CNS) metastases and/or carcinomatous meningitis
+    Disease/Condition: CNS Metastasis, Carcinomatous Meningitis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK CNSMets == True, CNSMets == True
+
+Criterion:
+    Patients with known brain metastases, spinal cord compression, or leptomeningeal disease are excluded from this study
+
+Output:
+    Original Text: Patients with known brain metastases, spinal cord compression, or leptomeningeal disease are excluded from this study
+    Disease/Condition: Brain Metastasis, Spinal Cord Compression, Leptomeningeal Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK BM == True, SCCompression == True, LMD == True
+
+Criterion:
+    Patients with known brain metastases, spinal cord compression

@@ -1,0 +1,8 @@
+Original Text: |
+    Known active or chronic hepatitis B or C infection unless adequately treated for at least 4 weeks with no detectable viral load; known infection with human immunodeficiency virus (HIV) unless receiving antiretroviral therapy with well-controlled disease.
+Disease/Condition: Hepatitis B Virus Infection, Hepatitis C Virus Infection, Human Immunodeficiency Virus Infection
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    HBV == True OR HCV == True OR HIV == True

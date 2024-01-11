@@ -1,0 +1,14 @@
+
+    Original Text: Bone and soft tissue imaging as clinically indicated (for unfavorable intermediate risk or symptomatic patients only) within 120 days prior to registration
+    Disease/Condition: none
+    Procedure: Imaging
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Imaging" is True AND ("unfavorable intermediate risk" OR "symptomatic") is False
+
+Criterion:
+    Patients with a history of malignancy other than basal cell carcinoma of the skin, cervical cancer in situ, or squamous cell carcinoma of the skin (non-melanoma skin cancer), unless the patient has been continuously disease free for at least 5 years since diagnosis
+
+Output:
+    Original Text: Patients with a history of malignancy other than basal cell carcinoma of the skin, cervical cancer in situ, or squamous cell carcinoma of the skin (non-melanoma skin cancer), unless the patient has been continuously disease free for at least 5 years since diagnosis
+    Disease/Condition

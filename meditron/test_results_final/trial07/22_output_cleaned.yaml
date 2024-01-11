@@ -1,0 +1,8 @@
+Original Text: |
+    Symptomatic brain metastases; any neurologic symptoms present must have resolved with local therapy by the time of administration of study drug
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Symptomatic brain metastases" is False and "any neurologic symptoms present must have resolved with local therapy by the time of administration of study drug" is True

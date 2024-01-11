@@ -1,0 +1,28 @@
+
+    Original Text: Eastern Cooperative Oncology Group (ECOG) performance status of =< 2
+    Disease/Condition: ECOG Performance Status
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: ECOG_PS <= 2
+
+Criterion:
+    Patients must have measurable disease according to RECIST v1.1
+
+Output:
+    Original Text: Patients must have measurable disease according to RECIST v1.1
+    Disease/Condition: Measurable disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: RECIST_v1.1_measurable_disease == True
+
+Criterion:
+    Patients must have progressive disease according to RECIST v1.1
+
+Output:
+    Original Text: Patients must have progressive disease according to RECIST v1.1
+    Disease/Condition: Progressive disease
+    Procedure: none
+    Drug: none
+    Biomarker: none

@@ -1,0 +1,13 @@
+
+    Original Text: International normalized ratio (INR) or prothrombin time (PT) =< 1.5 X ULN unless subject is receiving anticoagulant therapy as long as PT or partial thromboplastin time (PTT) is within therapeutic range of intended use of anticoagulants
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: INR <= 1.5 * ULN AND PT <= 1.5 * ULN OR PTT <= 1.5 * ULN
+
+Criterion:
+    Subjects with a history of significant cardiac arrhythmias, including but not limited to atrial fibrillation, ventricular tachycardia, ventricular flutter, second-degree heart block, third-degree heart block, sick sinus syndrome, or other conduction abnormalities
+
+Output:
+    Original Text: Subjects with a history of significant cardiac arrhythmias, including but not limited to at

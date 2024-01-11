@@ -1,0 +1,8 @@
+Original Text: |
+    Male aged 18 years and above
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    (Male AND Age > 17) OR (Age > 17)

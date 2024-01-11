@@ -1,0 +1,20 @@
+
+    Original Text: Pregnant, breastfeeding, or expecting to conceive or father children within the projected duration of the study, starting with the screening visit through 120 days after the last dose of study treatment
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Pregnant" OR "Breastfeeding" OR "ExpectingToConceiveOrFatherChildren" is True
+
+Criterion:
+    Subjects must have a documented history of chronic hepatitis C virus (HCV) infection with detectable HCV RNA at screening
+
+Output:
+    Original Text: Subjects must have a documented history of chronic hepatitis C virus (HCV) infection with detectable HCV RNA at screening
+    Disease/Condition: Chronic Hepatitis C Virus Infection
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Chronic Hepatitis C Virus Infection" is True
+
+Criter

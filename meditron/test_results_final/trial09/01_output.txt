@@ -1,0 +1,14 @@
+
+    Original Text: Confirmed diagnosis of metastatic (Stage IV) or locally advanced, unresectable (Stage III) NSCLC of nonsquamous pathology that has relapsed or progressed
+    Disease/Condition: Stage IV, Stage III, Nonsquamous Pathology, Relapsed, Progressed
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == True, MTS == True, NSCLC == True, Relapse == True, Progress == True
+
+Criterion:
+    Patients with histologically confirmed stage IIIA (N2), IIIB (N3), or IIIC (M1) non-small cell lung cancer (NSCLC)
+
+Output:
+    Original Text: Patients with histologically confirmed stage IIIA (N2), IIIB (N3), or IIIC (M1) non-small cell lung cancer (NSCLC)
+    Disease/Condition: Stage IIIA (N2), Stage IIIB (N3), Stage IIIC (M1), Non-Small Cell Lung Cancer

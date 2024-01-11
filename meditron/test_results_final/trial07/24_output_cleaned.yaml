@@ -1,0 +1,8 @@
+Original Text: |
+    Patients with lung cancer with squamous histology
+Disease/Condition: Squamous Cell Carcinoma, Lung Cancer
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK SCC == True, LK LungCancer == True

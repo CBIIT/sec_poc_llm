@@ -1,0 +1,18 @@
+
+    Original Text: Patients are allowed to receive, but are not required to receive, biologic/targeted therapy alone or as part of their treatment regimens. When used as treatment after progression, these treatments will count as a separate therapy
+    Disease/Condition: none
+    Procedure: Biologic/Targeted Therapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Biologic/Targeted Therapy" is True OR "Biologic/Targeted Therapy" is False AND "Biologic/Targeted Therapy" is NOT "After Progression"
+
+Criterion:
+    The patient must have had at least one measurable lesion according to RECIST v1.0 or v1.1
+
+Output:
+    Original Text: The patient must have had at least one measurable lesion according to RECIST v1.0 or v1.1
+    Disease/Condition: none
+    Procedure: Measurable Lesion
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Measurable Lesion"

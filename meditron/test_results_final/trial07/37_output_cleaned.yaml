@@ -1,0 +1,8 @@
+Original Text: |
+    Has a history of (non-infectious) pneumonitis that required steroids or current pneumonitis
+Disease/Condition: Pneumonitis, Steroids, Current Pneumonitis
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    HAS(PNEUMONITIS) OR HAS(STEROIDS) OR HAS(CURRENT_PNEUMONITIS) == True

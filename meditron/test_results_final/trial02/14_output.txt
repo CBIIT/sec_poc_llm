@@ -1,0 +1,21 @@
+
+    Original Text: Patients must be adequately recovered from surgery at the time of randomization
+    Disease/Condition: none
+    Procedure: Surgery
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Surgery" is True
+
+Criterion:
+    Patients with histologically confirmed adenocarcinoma of the gastroesophageal junction (GEJ) or lower esophagus, including Siewert type I tumors
+
+Output:
+    Original Text: Patients with histologically confirmed adenocarcinoma of the gastroesophageal junction (GEJ) or lower esophagus, including Siewert type I tumors
+    Disease/Condition: Adenocarcinoma
+    Procedure: Gastroesophageal Junction
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Adenocarcinoma" AND ("Gastroesophageal Junction" OR "Siewert Type I")
+
+Criterion:
+    Patients must have undergone curative

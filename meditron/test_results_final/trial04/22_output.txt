@@ -1,0 +1,10 @@
+
+    Original Text: Any of the following cardiac conditions:
+    Disease/Condition: Clinically significant heart disease (New York Heart Association class 3 or 4) or symptomatic congestive heart failure
+    Procedure: Myocardial infarction < 6 months before enrollment
+    Drug: None
+    Biomarker: None
+    Computable Rule: "Any of the following cardiac conditions:" AND NOT ("Myocardial infarction < 6 months before enrollment") AND NOT ("History of clinically significant ventricular arrhythmia or unexplained syncope that is not believed to be vasovagal in nature or due to dehydration") AND NOT ("History of severe non-ischemic cardiomyopathy with ejection fraction < 20%") AND NOT ("Findings on baseline electrocardiogram (ECG) or echocardiogram (ECHO) that, in the opinion of the patientâ€™s treating physician or investigator, would require medical intervention before anticancer therapy")
+
+Criterion:
+    Patients with

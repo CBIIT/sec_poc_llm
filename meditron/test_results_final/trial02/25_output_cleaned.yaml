@@ -1,0 +1,8 @@
+Original Text: |
+    Prior to randomization patients with any non-hematologic toxicity from surgery, chemotherapy, or radiation must have recovered to grade =< 1 with the exception of alopecia and the criteria outlined
+Disease/Condition: none
+Procedure: Surgery, Chemotherapy, Radiation
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Surgery", "Chemotherapy", "Radiation" is False OR "Alopecia" is True

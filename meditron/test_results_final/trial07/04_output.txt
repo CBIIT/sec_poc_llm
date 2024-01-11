@@ -1,0 +1,18 @@
+
+    Original Text: Eastern Cooperative Oncology Group (ECOG) performance status < 2
+    Disease/Condition: ECOG Performance Status
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: ECOGPS <= 1.5
+
+Criterion:
+    Patients with histologically confirmed advanced non-small cell lung cancer (NSCLC), adenocarcinoma, squamous cell carcinoma, large cell carcinoma, or other NSCLC subtypes
+
+Output:
+    Original Text: Patients with histologically confirmed advanced non-small cell lung cancer (NSCLC), adenocarcinoma, squamous cell carcinoma, large cell carcinoma, or other NSCLC subtypes
+    Disease/Condition: Non-Small Cell Lung Cancer, Adenocarcinoma, Squamous Cell Carcinoma, Large Cell Carcinoma, Other NSCLC Subtype
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: NSCLC_ADENOCAR

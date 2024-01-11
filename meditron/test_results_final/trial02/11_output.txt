@@ -1,0 +1,25 @@
+
+    Original Text: No prior treatment with crizotinib or another ALK inhibitor
+    Disease/Condition: Crizotinib, Anaplastic Large Cell Lung Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: ALK Inhibitors == False, ALK Inhibitors == False
+
+Criterion:
+    Patients must have measurable disease at baseline according to RECIST v1.0
+
+Output:
+    Original Text: Patients must have measurable disease at baseline according to RECIST v1.0
+    Disease/Condition: Measurable Disease, Measureable Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: RECIST_v1.0 == True
+
+Criterion:
+    Patients must have measurable disease at baseline according to RECIST v1.1
+
+Output:
+    Original Text: Patients must have measurable disease at baseline according to RECIST v1.1
+   

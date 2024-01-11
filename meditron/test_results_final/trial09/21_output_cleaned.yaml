@@ -1,0 +1,8 @@
+Original Text: |
+    History of allergy or hypersensitivity to any of the study treatments.
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "History of allergy or hypersensitivity to any of the study treatments." is False

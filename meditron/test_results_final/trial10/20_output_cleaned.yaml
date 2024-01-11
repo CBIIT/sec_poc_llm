@@ -1,0 +1,8 @@
+Original Text: |
+    Has a history of (noninfectious) pneumonitis/interstitial lung disease that required steroids or has current pneumonitis/interstitial lung disease.
+Disease/Condition: Pneumonitis, Interstitial Lung Disease
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK PNEUMONITIS == True OR LK INTERSTITIAL_LUNG_DISEASE == True

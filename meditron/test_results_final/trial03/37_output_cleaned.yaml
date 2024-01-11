@@ -1,0 +1,8 @@
+Original Text: |
+    Impaired gastrointestinal (GI) function that may alter absorption of medicines, such as uncontrolled inflammatory bowel disease, uncontrolled vomiting, or major stomach or small bowel resection
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Impaired gastrointestinal (GI) function that may alter absorption of medicines, such as uncontrolled inflammatory bowel disease, uncontrolled vomiting, or major stomach or small bowel resection" is True

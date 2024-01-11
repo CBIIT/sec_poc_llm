@@ -1,0 +1,8 @@
+Original Text: |
+    Active autoimmune disease that has required systemic treatment in the past 2 years
+Disease/Condition: Autoimmune disease, Systemic Treatment
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    AD == True, ST == True

@@ -1,0 +1,24 @@
+
+    Original Text: Current or recent (within 10 calendar days prior to cycle 1, day 1) use of dipyridamole, ticlopidine, clopidogrel, or cilostazol
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "dipyridamole" OR "ticlopidine" OR "clopidogrel" OR "cilostazol" is True
+
+Criterion:
+    Patients with a history of cardiac surgery within 3 months before randomization
+
+Output:
+    Original Text: Patients with a history of cardiac surgery within 3 months before randomization
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "cardiac surgery" is True
+
+Criterion:
+    Patients with a history of stroke within 6 months before randomization
+
+Output:
+    Original Text: Patients with a history of stroke within 6 months

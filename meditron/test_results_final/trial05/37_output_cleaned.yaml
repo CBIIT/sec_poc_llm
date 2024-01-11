@@ -1,0 +1,8 @@
+Original Text: |
+    Receipt of live attenuated vaccination within 30 days of receiving cetrelimab
+Disease/Condition: none
+Procedure: Vaccination
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Live Attenuated Vaccine" is False

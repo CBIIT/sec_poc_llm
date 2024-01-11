@@ -1,0 +1,25 @@
+
+    Original Text: Serum creatinine levels =< 1.5 mg/dL
+    Disease/Condition: Creatinine, Serum Creatinine
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: CREATININE <= 1.5
+
+Criterion:
+    Patients with a history of cardiac surgery within 6 months prior to enrollment
+
+Output:
+    Original Text: Patients with a history of cardiac surgery within 6 months prior to enrollment
+    Disease/Condition: Cardiac Surgery, History of Cardiac Surgery
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HISTORY_OF_SURGERY_6_MONTHS == True
+
+Criterion:
+    Patients with a history of cardiac surgery within 6 months prior to enrollment
+
+Output:
+    Original Text: Patients with a history of cardiac surgery within 6 months prior to enrollment
+    Disease/

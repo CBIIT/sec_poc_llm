@@ -1,0 +1,13 @@
+
+    Original Text: Prior anti-cancer monoclonal antibody (mAb) within 4 weeks prior to study Day 1 or not recovered from an adverse event caused by mAbs administered more than 4 weeks earlier
+    Disease/Condition: Anti-Cancer Monoclonal Antibodies
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: MABS_Prior_AntiCancer_Monoclonal_Antibody_Within_4_Weeks_Prior_to_Study_Day_1 == False, Recovered_From_Adverse_Event_Caused_By_Monoclonal_Antibodies_Administered_More_Than_4_Weeks_Earlier == False
+
+Criterion:
+    Patients with a history of other malignancy except nonmelanoma skin cancer or carcinoma in situ of the cervix uteri within 5 years before the start of treatment are excluded
+
+Output:
+    Original Text: Patients with a history of other m

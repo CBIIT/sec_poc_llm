@@ -1,0 +1,18 @@
+
+    Original Text: History of or active (non-infectious) pneumonitis/ interstitial disease or lung fibrosis, except for Grade 1 pneumonitis from prior chemoradiation therapy (Stage III patients).
+    Disease/Condition: Pneumonitis
+    Procedure: Chemoradiation Therapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Pneumonitis" is False or "Chemoradiation Therapy" is False
+
+Criterion:
+    Patients with a history of malignancy other than non-melanoma skin cancer within the past five years are excluded.
+
+Output:
+    Original Text: Patients with a history of malignancy other than non-melanoma skin cancer within the past five years are excluded.
+    Disease/Condition: Malignancy
+    Procedure: Non-Melanoma Skin Cancer
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Malignancy" is False or "Non-Melanoma Skin Cancer" is True

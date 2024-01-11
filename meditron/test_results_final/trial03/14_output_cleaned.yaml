@@ -1,0 +1,8 @@
+Original Text: |
+    Patient must have the following laboratory values within normal limits or corrected to within normal limits with supplements before the first dose of study medication:
+Disease/Condition: none
+Procedure: Laboratory Values
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Potassium", "Magnesium", "Total calcium (corrected for serum albumin)" is True

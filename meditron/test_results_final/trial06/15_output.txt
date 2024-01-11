@@ -1,0 +1,28 @@
+
+    Original Text: known homozygous for ATM pathogenic mutation
+    Disease/Condition: ATM deficiency
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "ATM deficiency"
+
+Criterion:
+    Patients with metastatic castrate resistant prostate cancer (mCRPC)
+
+Output:
+    Original Text: Patients with metastatic castrate resistant prostate cancer (mCRPC)
+    Disease/Condition: mCRPC
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Disease is "mCRPC"
+
+Criterion:
+    Patients with metastatic castrate resistant prostate cancer (mCRPC)
+
+Output:
+    Original Text: Patients with metastatic castrate resistant prostate cancer (mCRPC)
+    Disease/Condition: mCRPC
+    Procedure: none
+    Drug: none
+    Biomarker: none

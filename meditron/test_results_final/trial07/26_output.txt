@@ -1,0 +1,21 @@
+
+    Original Text: Has had prior treatment with any other anti-PD-1 or PD-L1 or PD-L2 agent
+    Disease/Condition: Anti-PD-1, Anti-PD-L1, Anti-PD-L2
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK PD-1 == True, LK PD-L1 == True, LK PD-L2 == True
+
+Criterion:
+    Patients must have measurable disease at baseline (defined as at least one lesion > 5 mm in diameter)
+
+Output:
+    Original Text: Patients must have measurable disease at baseline (defined as at least one lesion > 5 mm in diameter)
+    Disease/Condition: Measurable Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK Measurable Disease == True
+
+Criterion:
+    Patients must have received no more than two prior chemotherapy regimens for advanced disease

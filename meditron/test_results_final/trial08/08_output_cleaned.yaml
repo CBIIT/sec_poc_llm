@@ -1,0 +1,8 @@
+Original Text: |
+    Willing to provide a representative fresh tumor tissue specimen prior to enrollment. The fresh tumor specimen must be obtained after evidence of progression on palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2. â€¢ Participants with bone only disease WITHOUT a soft tissue component, may opt out of the tumor biopsy.
+Disease/Condition: Bone Only Disease
+Procedure: Tumor Biopsy
+Drug: Palbociclib, Ribociclib
+Biomarker: None
+Computable Rule: |
+    (WillingnessToProvideTumorBiopsy == True) AND (BoneOnlyDisease == True)

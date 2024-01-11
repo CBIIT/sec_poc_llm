@@ -1,0 +1,24 @@
+
+    Original Text: Clinical or radiographic evidence of bowel obstruction or need
+    Disease/Condition: none
+    Procedure: Bowel Obstruction
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Bowel Obstruction" is True or "Need" is True
+
+Criterion:
+    Patients with a history of cardiac arrhythmias, including atrial fibrillation, should be excluded from this study
+
+Output:
+    Original Text: Patients with a history of cardiac arrhythmias, including atrial fibrillation, should be excluded from this study
+    Disease/Condition: none
+    Procedure: Cardiac Arrhythmia
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Cardiac Arrhythmia" is True or "Atrial Fibrillation" is True
+
+Criterion:
+    Patients with a history of cardiac arrhythmias, including atrial fibrillation, should be excluded from this study
+
+Output:
+    Original Text

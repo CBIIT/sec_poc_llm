@@ -1,0 +1,8 @@
+Original Text: |
+    Known or suspected extensive abdominal adhesions that would preclude port placement or infusion
+Disease/Condition: Adhesive Peritonitis, Abdominal Adhesions, Extensive Abdominal Adhesions
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK AAB == True, AAB == True

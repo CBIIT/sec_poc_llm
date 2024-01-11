@@ -1,0 +1,21 @@
+
+    Original Text: >= 18 years of age and able to provide informed consent
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: > 18 AND (age OR ability)
+
+Criterion:
+    Male or female, aged ≥ 18 years, with a diagnosis of chronic obstructive pulmonary disease (COPD), and who have been smoking for at least 20 pack-years
+
+Output:
+    Original Text: Male or female, aged ≥ 18 years, with a diagnosis of chronic obstructive pulmonary disease (COPD), and who have been smoking for at least 20 pack-years
+    Disease/Condition: COPD
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: (male OR female) AND (age OR age_range) AND (smoke OR smoke_duration) AND (diagnosis OR diagnosis_type)
+
+Criterion:
+    Patients must be male or

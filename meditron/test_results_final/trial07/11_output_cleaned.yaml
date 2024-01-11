@@ -1,0 +1,8 @@
+Original Text: |
+    Platelets >= 100,000/mcL
+Disease/Condition: None
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    PLT >= 100000

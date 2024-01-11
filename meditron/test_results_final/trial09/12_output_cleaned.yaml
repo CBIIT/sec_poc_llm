@@ -1,0 +1,8 @@
+Original Text: |
+    History of or active (non-infectious) pneumonitis/ interstitial disease or lung fibrosis, except for Grade 1 pneumonitis from prior chemoradiation therapy (Stage III patients).
+Disease/Condition: Pneumonitis
+Procedure: Chemoradiation Therapy
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Pneumonitis" is False or "Chemoradiation Therapy" is False

@@ -1,0 +1,8 @@
+Original Text: |
+    Prior or concurrent invasive pelvic malignancy (except non-melanomatous skin cancer) or lymphomatous or hematogenous malignancy, unless disease free for a minimum of 5 years
+Disease/Condition: Invasive Pelvic Malignancy, Lymphomatous Malignancy, Hematogenous Malignancy
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK PELVIC == True OR LK LYMPHOMA == True OR LK HEMATOGENOUS == True AND NOT LK FREE_FOR_5_YEARS == True

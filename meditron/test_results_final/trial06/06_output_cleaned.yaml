@@ -1,0 +1,8 @@
+Original Text: |
+    Previously untreated prostate cancer (with cytotoxic chemotherapy, cryotherapy, surgical or radiation therapy)
+Disease/Condition: Prostate Cancer
+Procedure: Cytotoxic Chemotherapy, Cryotherapy, Surgical or Radiation Therapy
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Previously untreated prostate cancer (with cytotoxic chemotherapy, cryotherapy, surgical or radiation therapy)" is False

@@ -1,0 +1,8 @@
+Original Text: |
+    Known active Hepatitis B or C
+Disease/Condition: Hepatitis B, Hepatitis C
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    HBV == True OR HCV == True

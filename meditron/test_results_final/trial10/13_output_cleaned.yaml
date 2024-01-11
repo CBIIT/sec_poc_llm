@@ -1,0 +1,8 @@
+Original Text: |
+    Diagnosis of immunodeficiency or receiving systemic steroid therapy or any other form of immunosuppressive therapy within 7 days prior to the first dose of study treatment
+Disease/Condition: Immunodeficiency, Systemic Steroid Therapy, Other Forms of Immunosuppressive Therapy
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    IMMUNODEFICIENCY == True OR STEROIDS == True OR OTHER_FORM_OF_IMMUNOSUPPRESSIVE_THERAPY == True

@@ -1,0 +1,8 @@
+Original Text: |
+    Had radiotherapy within 3 weeks prior to Cycle 1 Day 1 (cycle is 28 days)
+Disease/Condition: none
+Procedure: Radiotherapy
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Had radiotherapy within 3 weeks prior to Cycle 1 Day 1 (cycle is 28 days)" is True

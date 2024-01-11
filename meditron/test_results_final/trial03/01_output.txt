@@ -1,0 +1,30 @@
+
+    Original Text: FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features:
+* Measurable disease by Response Evaluation Criteria in Solid Tumors (RECIST) 1.1
+* Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry
+* Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards)
+* Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator OR
+* Platinum-resistant (defined as progression within 12 months of last platinum therapy administration), pathologically confirmed serous ovarian cancer that is recurrent and unresectable, in the opinion of the enrolling investigator
+    Disease/Condition: Breast Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: ER-, PR-, Her-2/neu-
+    Computable Rule: Disease is "Breast Cancer" AND ER is False AND PR is False AND Her-2/neu is False
+
+Criterion:
+    Patients must have measurable disease per RECIST v1.1.
+
+Output:
+    Original Text: Patients must have measurable disease per RECIST v1.1.
+    Disease/Condition: Measurable disease
+    Procedure: none
+    Drug: none
+    Biomarker: None
+    Computable Rule: Disease is "Measurable disease"
+
+Criterion:
+    Patient must have histologically confirmed metastatic or unresectable adenocarcinoma of the gastroesophageal junction or stomach.
+
+Output:
+    Original Text: Patient must have histologically confirmed metastatic or unresectable adenocarcinoma of the gastroesophageal junction or stomach.
+    D

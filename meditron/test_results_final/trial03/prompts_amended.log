@@ -1,0 +1,76 @@
+
+Criterion: 39
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+
+Output:
+    Original Text: Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: HER2-, HER2+
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2- is True OR HER2+ is True
+
+Criterion:
+    Women of child-bearing potential defined as all women physiologically capable of becoming pregnant or men whose female partner is of child-bearing potential, unless they are using highly effective methods of contraception during the study treatment and for 6 months after stopping the treatment. Highly effective contraception methods include:
+* Total abstinence (when this is in line with the preferred and usual lifestyle of the patient. Periodic abstinence (e.g., calendar, ovulation, symptothermal, post-ovulation methods) and withdrawal are not acceptable methods of contraception
+* Female sterilization (have had surgical bilateral oophorectomy with or without hysterectomy), total hysterectomy or tubal ligation at least 6 weeks before taking study treatment. In case of oophorectomy alone, only when the reproductive status of the woman has been confirmed by follow up hormone level assessment
+* Male partner sterilization (at least 6 months prior to screening). For female patients on the study, the vasectomized male partner should be the sole partner for that patient and the success of the vasectomy must be medically confirmed as per local practice
+* Placement of an intrauterine device (IUD)
+* Use of hormonal contraception plus a barrier contraceptive
+
+Output:[0m
+
+[1m> Finished chain.[0m
+
+Criterion: 01
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3mYou are in the role of an abstractor who will analyze an eligibility criterion for a clinical trial and extract the relevant entities as described below.
+Original Text: the original text of the criterion
+Disease/Condition: If the criterion contains a disease or condition name it by its canonical name
+Procedure: If the criterion contains a therapeutic procedure name it by its canonical name
+Drug:  If the criterion contains a therapeutic drug name it by its canonical name
+Biomarker:  If the criterion contains a biomarker name it by its canonical name
+Computable Rule: Translate the criteria into a logical expression that could be interpreted programmatically
+
+Criterion:
+    Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+
+Output:
+    Original Text: Metastatic breast cancer, biopsy proven and at least one of the following scenarios:
+* Estrogen receptor (ER)+/HER2-, defined as > 5% ER+ staining
+* HER2+ (regardless of ER status), including HER2-low and high expressors
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: HER2-, HER2+
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2- is True OR HER2+ is True
+
+Criterion:
+    FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features:
+* Measurable disease by Response Evaluation Criteria in Solid Tumors (RECIST) 1.1
+* Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry
+* Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards)
+* Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator OR
+* Platinum-resistant (defined as progression within 12 months of last platinum therapy administration), pathologically confirmed serous ovarian cancer that is recurrent and unresectable, in the opinion of the enrolling investigator
+
+Output:[0m
+
+[1m> Finished chain.[0m

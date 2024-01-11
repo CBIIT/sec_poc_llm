@@ -1,0 +1,10 @@
+elapsed_time: 19s
+was_input_captured: False
+original_text: |
+    Any of the following cardiac conditions:
+    * Clinically significant heart disease (New York Heart Association class 3 or 4) or symptomatic congestive heart failure
+    * Myocardial infarction < 6 months before enrollment
+    * History of clinically significant ventricular arrhythmia or unexplained syncope that is not believed to be vasovagal in nature or due to dehydration 
+    * History of severe non-ischemic cardiomyopathy with ejection fraction < 20%
+    * Findings on baseline electrocardiogram (ECG) or echocardiogram (ECHO) that, in the opinion of the patientâ€™s treating physician or investigator, would require medical intervention before anticancer therapy
+inclusion: False

@@ -1,0 +1,24 @@
+
+    Original Text: Concurrent, active malignancies in addition to those being studied (other than cutaneous squamous cell carcinoma or basal cell carcinoma)
+    Disease/Condition: other than cutaneous squamous cell carcinoma or basal cell carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == False, MTS == False
+
+Criterion:
+    Patients with a history of prior radiation therapy to the head and neck region within 12 months before enrollment
+
+Output:
+    Original Text: Patients with a history of prior radiation therapy to the head and neck region within 12 months before enrollment
+    Disease/Condition: Radiation Therapy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK RT == True
+
+Criterion:
+    Patients with a history of prior chemotherapy within 6 months before enrollment
+
+Output:
+    Original Text: Patients with a history of prior chem

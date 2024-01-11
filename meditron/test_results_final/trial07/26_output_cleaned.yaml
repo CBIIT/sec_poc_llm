@@ -1,0 +1,8 @@
+Original Text: |
+    Has had prior treatment with any other anti-PD-1 or PD-L1 or PD-L2 agent
+Disease/Condition: Anti-PD-1, Anti-PD-L1, Anti-PD-L2
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    LK PD-1 == True, LK PD-L1 == True, LK PD-L2 == True
