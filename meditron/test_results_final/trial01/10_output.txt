@@ -1,0 +1,27 @@
+
+    Original Text: Absolute neutrophil count >= 1,000/ul
+    Disease/Condition: Neutropenia
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: ANC >= 1000
+
+Criterion:
+    Subject must have a history of at least one episode of acute myeloid leukemia (AML)
+
+Output:
+    Original Text: Subject must have a history of at least one episode of acute myeloid leukemia (AML)
+    Disease/Condition: AML
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HistoryOfAML == True
+
+Criterion:
+    Subject must have a history of at least one episode of acute lymphoblastic leukemia (ALL)
+
+Output:
+    Original Text: Subject must have a history of at least one episode of acute lymphoblastic leukemia (ALL)
+    Disease/Condition: ALL
+    Procedure: none
+   

@@ -1,0 +1,2 @@
+Input reported as not captured, because of the â€™ character which the model correctly interpreted as the apostrophe character
+Manually overriden to say that input was captured.

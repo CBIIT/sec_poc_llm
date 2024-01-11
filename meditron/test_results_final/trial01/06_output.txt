@@ -1,0 +1,22 @@
+
+    Original Text: Left ventricular ejection fraction (LVEF) >= 50% by echocardiogram (ECHO) or multigated acquisition (MUGA) scan
+    Disease/Condition: Ejection Fraction, Multigated Acquisition Scan
+    Procedure: Echocardiogram
+    Drug: none
+    Biomarker: none
+    Computable Rule: LVEF >= 50% AND (ECHO OR MUGA)
+
+Criterion:
+    Patients with a history of cardiac surgery within 1 year prior to enrollment
+
+Output:
+    Original Text: Patients with a history of cardiac surgery within 1 year prior to enrollment
+    Disease/Condition: Cardiac Surgery, History of Cardiac Surgery
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HISTORY_OF_SURGERY == True
+
+Criterion:
+    Patients with a history of cardiac surgery within 1 year prior to enrollment
+

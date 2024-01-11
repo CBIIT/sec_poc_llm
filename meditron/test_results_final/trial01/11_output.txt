@@ -1,0 +1,28 @@
+
+    Original Text: Platelets >= 75,000/ul
+    Disease/Condition: None
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: PLT >= 75000
+
+Criterion:
+    Patients with a history of cardiac surgery within 6 months prior to enrollment
+
+Output:
+    Original Text: Patients with a history of cardiac surgery within 6 months prior to enrollment
+    Disease/Condition: Cardiac Surgery
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: CARDSURG == True, TIME < 182.5
+
+Criterion:
+    Patients with a history of cardiac surgery within 6 months prior to enrollment
+
+Output:
+    Original Text: Patients with a history of cardiac surgery within 6 months prior to enrollment
+    Disease/Condition: Cardiac Surgery
+    Procedure: none
+    Drug: none
+    Bi

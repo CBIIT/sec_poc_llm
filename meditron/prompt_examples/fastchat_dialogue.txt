@@ -1,0 +1,26 @@
+Mention the biomarker, disease/condition, procedure, and/or drug in the text below.
+Text: HER2-overexpressing breast cancer (3+ staining by IHC or HER2 gene amplification by FISH or SISH >= 2.0)
+Biomarker: HER2
+Disease/Condition: Breast cancer
+Procedure: none
+Drug: none
+Mention the biomaker, disease/condition, procedure, and/or drug in the text below.
+Text: Progressive parenchymal brain metastasis following SRS or surgical resection
+Biomarker: None
+Disease/Condition: Cancer
+Procedure: None
+Drug: None
+Mention the biomaker, disease/condition, procedure, and/or drug in the text below.
+Text: Prior lapatinib is allowed if last dose was > 21 days prior to study entry
+Biomarker: None
+Disease/Condition: None
+Procedure: None
+Drug: Lapatinib
+Mention the biomaker, disease/condition, procedure, and/or drug in the text below.
+Text: Prior RT with concurrent lapatinib
+Biomarker: None
+Disease/Condition: None
+Procedure: Radiation Therapy
+Drug: Lapatinib
+Mention the biomaker, disease/condition, procedure, and/or drug in the text below.
+Text: Prior WBRT

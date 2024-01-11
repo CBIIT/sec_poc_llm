@@ -1,0 +1,7 @@
+Original Text: |
+    Serum creatinine =< 1.5 mg/dL (or glomerular filtration rate >= 30 ml/min as determined by the Cockcroft-Gault equation)
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: <=>(creatinine <= 1.5) AND (glomerular_filtration_rate >= 30)

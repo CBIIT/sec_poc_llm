@@ -1,0 +1,7 @@
+Original Text: |
+    No active, second potentially life-threatening cancer
+Disease/Condition: Active Cancer, Potentially Life Threatening Cancer
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: LK ACTIVE_CANCER == False, LK POTENTIALLY_LIFE_THREATENING_CANCER == False

@@ -1,0 +1,48 @@
+
+    Original Text: Active infection requiring IV antibiotics at the time of protocol therapy initiation
+    Disease/Condition: Infection, Infectious Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK INF == True, INF == True
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within the past 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within the past 5 years
+    Disease/Condition: Cancer, Malignant Neoplasm, Non-Melanoma Skin Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK CANCER == False, CANCER == False, NMSKC == False
+
+Criterion:
+    Patients with a history of malignancy within the past 2 years
+
+Output:
+    Original Text: Patients with a history of malignancy within the past 2 years
+    Disease/Condition: Cancer, Malignant Neoplasm
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK CANCER == False, CANCER == False
+
+Criterion:
+    Patients with a history of malignancy within the past 1 year
+
+Output:
+    Original Text: Patients with a history of malignancy within the past 1 year
+    Disease/Condition: Cancer, Malignant Neoplasm
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK CANCER == False, CANCER == False
+
+Criterion:
+    Patients with a history of malignancy within the past 6 months
+
+Output:
+    Original Text: Patients with a history of malignancy within the past 6 months
+    Disease/Condition: Cancer, Malignant Neoplasm
+    Procedure: none

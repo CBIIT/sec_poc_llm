@@ -1,0 +1,17 @@
+
+    Original Text: Fasting glucose =< 140 mg/dL and glycosylated hemoglobin measurement (HbA1c) =< 7%
+    Disease/Condition: Diabetes Mellitus Type II
+    Procedure: none
+    Drug: none
+    Biomarker: HbA1c < 7%
+    Computable Rule: Disease is "Diabetes Mellitus Type II" AND HbA1c < 7% is True
+
+Criterion:
+    Patients with metastatic colorectal cancer who have received prior treatment with oxaliplatin, irinotecan, fluoropyrimidine, and anti-VEGF therapy
+
+Output:
+    Original Text: Patients with metastatic colorectal cancer who have received prior treatment with oxaliplatin, irinotecan, fluoropyrimidine, and anti-VEGF therapy
+    Disease/Condition: Metastatic Colorectal Cancer
+    Procedure: none
+    Drug: none
+   

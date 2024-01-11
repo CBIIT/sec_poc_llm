@@ -1,5 +1,6 @@
 from model import get_token_len
 from token_counting import *
+from collections import namedtuple
 
 DOC_TEMPLATE = """Inclusion Criteria
 {inclusion}
@@ -84,16 +85,22 @@ def parse_file(filename: str) -> ECDoc:
                 exc.append(line)
     return ECDoc(inc=inc, exc=exc)
 
-def parse_file_with_pipes(filename: str) -> list[str]:
+Criterion = namedtuple('Criterion', ['value', 'inclusion'])
+
+def parse_file_with_pipes(filename: str) -> list[Criterion]:
     criterions = []
-    with open(filename) as filein:
+    with open(filename, encoding='utf-8') as filein:
         contents = filein.read()
     splits = contents.split('|')
     for split in splits:
-        split = split.replace('(inclusion--- t)', '')
-        split = split.replace('(inclusion--- f)', '')
+        if '(inclusion--- t)' in split:
+            inclusion = True
+            split = split.replace('(inclusion--- t)', '')
+        else:
+            inclusion = False
+            split = split.replace('(inclusion--- f)', '')
         split = split.strip()
-        criterions.append(split)
+        criterions.append(Criterion(split, inclusion))
     return criterions
 
 

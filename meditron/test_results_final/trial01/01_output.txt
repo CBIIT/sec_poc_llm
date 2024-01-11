@@ -1,0 +1,25 @@
+
+    Original Text: COHORT A: At least one measurable CNS metastasis, defined as >= 10 mm in at least one dimension
+    Disease/Condition: CNS Metastasis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: CohortA == True
+
+Criterion:
+    COHORT B: No measurable CNS metastasis, defined as < 10 mm in all dimensions
+
+Output:
+    Original Text: COHORT B: No measurable CNS metastasis, defined as < 10 mm in all dimensions
+    Disease/Condition: CNS Metastasis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: CohortB == True
+
+Criterion:
+    COHORT C: No measurable CNS metastasis, defined as < 20 mm in all dimensions
+
+Output:
+    Original Text: COHORT C: No measurable CNS metastasis, defined as < 20 mm in all dimensions
+    D

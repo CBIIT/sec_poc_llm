@@ -1,0 +1,21 @@
+
+    Original Text: Has received prior therapy with a PI3K or mTOR inhibitor
+    Disease/Condition: PI3K Inhibitors, mTOR Inhibitors
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: HAS(PI3K_Inhibitors) OR HAS(mTOR_Inhibitors) == True
+
+Criterion:
+    Patients must have measurable disease at baseline (defined as at least one lesion >10 mm in diameter on CT scan or >20 mm in diameter on MRI scan).
+
+Output:
+    Original Text: Patients must have measurable disease at baseline (defined as at least one lesion >10 mm in diameter on CT scan or >20 mm in diameter on MRI scan).
+    Disease/Condition: Measurable Disease
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: MEASURABLE == True
+
+Criterion:
+    Patients must have measurable disease at baseline (

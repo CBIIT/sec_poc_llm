@@ -1,0 +1,7 @@
+Original Text: |
+    COHORT B: New and/or progressive brain metastasis(es) with clinical indication for resection
+Disease/Condition: Brain Metastasis
+Procedure: Resection
+Drug: none
+Biomarker: none
+Computable Rule: Cohort_B == True

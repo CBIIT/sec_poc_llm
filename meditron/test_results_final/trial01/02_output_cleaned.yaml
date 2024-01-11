@@ -1,0 +1,8 @@
+Original Text: |
+    COHORT A: Unequivocal evidence of new and/or progressive brain metastases, and at least one of the following scenarios:
+Disease/Condition: None
+Procedure: None
+Drug: None
+Biomarker: None
+Computable Rule: |
+    "COHORT A" is True

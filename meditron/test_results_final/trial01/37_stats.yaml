@@ -1,0 +1,6 @@
+elapsed_time: 18s
+was_input_captured: False
+original_text: |
+    Corrected QT (QTc) interval time of >= 470 msec
+    * Note: The correction may be made using any method of QTc calculation
+inclusion: False

@@ -1,0 +1,8 @@
+Original Text: |
+    Visceral crisis or impending visceral crisis at time of screening
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Visceral crisis" is True or "Impending visceral crisis" is True

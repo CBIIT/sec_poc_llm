@@ -1,0 +1,18 @@
+
+    Original Text: The subject has an uncontrolled intercurrent illness, including, but not limited to, ongoing or active infection, uncontrolled hypertension, unstable angina pectoris, uncontrolled cardiac arrhythmia, congestive heart failure-New York Heart Association class III or IV, active ischemic heart disease, myocardial infarction within the previous six months, uncontrolled diabetes mellitus (DM), gastric or duodenal ulceration diagnosed within the previous 6 months, chronic liver or renal disease, or severe malnutrition. If a participant has controlled DM but is unable to monitor blood sugars at home, they will be excluded from the trial
+    Disease/Condition: Uncontrolled Intercurrent Illness, Infection, Hypertension, Angina Pectoris, Arrhythmia, Congestive Heart Failure, Ischemic Heart Disease, Myocardial Infarction, Diabetes Mellitus, Gastric Ulcer, Duodenal Ulcer, Liver Disease, Renal Disease, Malnutrition
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK UII == True, UII == True, HI == True, ANG == True, ARR == True, CHF == True, IHD == True, MI == True, DM == True, GU == True, DU == True, LI == True, RD == True, MN == True
+
+Criterion:
+    The subject has a history of significant bleeding disorder, such as hemophilia, von Willebrand's disease, or other coagulopathy
+
+Output:
+    Original Text: The subject has a history of significant bleeding disorder, such as hemophilia, von Willebrand's disease, or other coagulopathy
+    Disease/Condition: Hemophilia, Von Willebrand's Disease, Coagulopathy
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK SBD == True, SBD == True

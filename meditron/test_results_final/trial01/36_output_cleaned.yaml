@@ -1,0 +1,8 @@
+Original Text: |
+    Known intolerance to trastuzumab that persists after appropriate medical management. Patients who have a history of prior intolerance to trastuzumab that is controlled after medical management and who tolerate trastuzumab thereafter without reactions are eligible to participate
+Disease/Condition: Breast cancer
+Procedure: Trastuzumab
+Drug: Trastuzumab
+Biomarker: HER2 overexpression
+Computable Rule: |
+    "Known intolerance to trastuzumab that persists after appropriate medical management." AND ("Breast cancer" OR "HER2 overexpression") AND ("Trastuzumab")

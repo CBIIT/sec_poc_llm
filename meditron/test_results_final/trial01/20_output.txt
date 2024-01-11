@@ -1,0 +1,30 @@
+
+    Original Text: Participant must be able to swallow and retain oral medication
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Participants must have a diagnosis of chronic obstructive pulmonary disease (COPD)
+
+Output:
+    Original Text: Participants must have a diagnosis of chronic obstructive pulmonary disease (COPD)
+    Disease/Condition: COPD
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+
+Criterion:
+    Participants must have a diagnosis of chronic obstructive pulmonary disease (COPD)
+
+Output:
+    Original Text: Participants must have a diagnosis of chronic obstructive pulmonary disease (COPD)
+    Disease/Condition: COPD
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: none
+

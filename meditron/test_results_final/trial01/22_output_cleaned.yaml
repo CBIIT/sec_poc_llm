@@ -1,0 +1,8 @@
+Original Text: |
+    CNS complications for whom urgent neurosurgical intervention is indicated (e.g., resection, shunt placement)
+Disease/Condition: none
+Procedure: Neurosurgery
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Neurosurgery" is True

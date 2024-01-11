@@ -1,0 +1,34 @@
+
+    Original Text: Hemoglobin >= 9 g/dL
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Hemoglobin >= 9 g/dL
+
+Criterion:
+    Hemoglobin < 9 g/dL
+
+Output:
+    Original Text: Hemoglobin < 9 g/dL
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Hemoglobin < 9 g/dL
+
+Criterion:
+    Hemoglobin > 9 g/dL
+
+Output:
+    Original Text: Hemoglobin > 9 g/dL
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Hemoglobin > 9 g/dL
+
+Criterion:
+    Hemoglobin <= 9 g/dL
+
+Output:

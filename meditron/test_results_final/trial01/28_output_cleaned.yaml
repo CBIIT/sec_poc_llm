@@ -1,0 +1,8 @@
+Original Text: |
+    Current use or history of receiving a non-approved, investigational treatment within 14 days prior to initiation of protocol therapy
+Disease/Condition: none
+Procedure: Investigational Treatment
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Investigational Treatment" is False

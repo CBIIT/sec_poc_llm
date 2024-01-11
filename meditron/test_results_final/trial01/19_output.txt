@@ -1,0 +1,24 @@
+
+    Original Text: The subject is capable of understanding and complying with the protocol and has signed the informed consent document
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "has signed the informed consent document" is True
+
+Criterion:
+    The subject has a history of malignancy within the last 5 years, excluding non-melanoma skin cancer
+
+Output:
+    Original Text: The subject has a history of malignancy within the last 5 years, excluding non-melanoma skin cancer
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "history of malignancy within the last 5 years" is False
+
+Criterion:
+    The subject has a history of malignancy within the last 10 years, excluding non-melanoma skin cancer
+
+Output:
+    Original Text: The subject has a history of malignancy within the last 10 years, excluding non-melanoma skin cancer

@@ -1,0 +1,8 @@
+Original Text: |
+    Subjects with a history of hypersensitivity to compounds of similar biologic composition to paxalisib (GDC-0084) or any constituent of the product
+Disease/Condition: none
+Procedure: Hypersensitivity
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Hypersensitivity" is True

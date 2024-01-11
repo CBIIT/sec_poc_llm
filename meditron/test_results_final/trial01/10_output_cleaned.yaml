@@ -1,0 +1,7 @@
+Original Text: |
+    Absolute neutrophil count >= 1,000/ul
+Disease/Condition: Neutropenia
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: ANC >= 1000

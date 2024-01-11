@@ -1,0 +1,7 @@
+Original Text: |
+    Active infection requiring IV antibiotics at the time of protocol therapy initiation
+Disease/Condition: Infection, Infectious Disease
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: LK INF == True, INF == True

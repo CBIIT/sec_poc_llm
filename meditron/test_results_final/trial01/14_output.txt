@@ -1,0 +1,13 @@
+
+    Original Text: Aspartate aminotransferase (AST) (serum glutamic oxaloacetic transaminase [SGOT])/alanine aminotransferase (ALT) (serum glutamate pyruvate transaminase [SGPT]) =< 2.5 x institutional ULN OR =< 5.0 x institutional ULN for patients with documented liver metastases
+    Disease/Condition: AST, ALT
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: AST <= 2.5 * ULN OR ALT <= 5.0 * ULN AND Liver Metastases
+
+Criterion:
+    Patients must have histologically confirmed adenocarcinoma of the gastroesophageal junction (GEJ), defined as tumors arising within 5 cm of the GEJ, or esophageal cancer, defined as tumors located distal to the GEJ
+
+Output:
+    Original Text: Patients must have histologically confirmed

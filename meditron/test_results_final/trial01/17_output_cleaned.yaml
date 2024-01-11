@@ -1,0 +1,8 @@
+Original Text: |
+    Female subjects of childbearing potential must have a negative serum or urine pregnancy test within 8 days of initiating protocol therapy
+Disease/Condition: none
+Procedure: Pregnancy Test
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Pregnancy Test" is False

@@ -1,0 +1,29 @@
+
+    Original Text: The participant is >= 18 years old
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: age >= 18
+
+Criterion:
+    The participant is >= 18 years old AND not pregnant
+
+Output:
+    Original Text: The participant is >= 18 years old AND not pregnant
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: (age >= 18) AND (notPregnant)
+
+Criterion:
+    The participant is >= 18 years old AND not pregnant AND has a diagnosis of breast cancer
+
+Output:
+    Original Text: The participant is >= 18 years old AND not pregnant AND has a diagnosis of breast cancer
+    Disease/Condition: breast cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: (age >= 18

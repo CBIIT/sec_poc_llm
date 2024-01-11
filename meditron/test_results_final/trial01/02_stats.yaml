@@ -1,0 +1,9 @@
+elapsed_time: 20s
+was_input_captured: False
+original_text: |
+    COHORT A: Unequivocal evidence of new and/or progressive brain metastases, and at least one of the following scenarios:
+    * Treated with stereotactic radiosurgery (SRS) or surgery with residual un-treated lesions remaining. Such participants are eligible for immediate enrollment on this study providing that at least one untreated lesion is measurable
+    * Participants who have had prior whole brain radiotherapy (WBRT) and/or SRS and then whose lesions have subsequently progressed or who have new lesions are also eligible. In this case, lesions which have been treated with SRS may be considered as target lesions if there is unequivocal evidence, in the opinion of the treating physician, of progression following SRS
+    * Participants who have not previously been treated with cranial radiation (e.g., WBRT or SRS) are eligible to enter the study, but such participants must be asymptomatic from their CNS metastases and not requiring corticosteroids for symptom control
+    * Participants who present with systemic stable/absent or progressive disease are eligible to this trial, as long as they fulfill one of the above criteria
+inclusion: True

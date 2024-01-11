@@ -1,0 +1,8 @@
+Original Text: |
+    Stable or decreasing corticosteroid dose for at least 7 days prior to initiation of treatment
+Disease/Condition: none
+Procedure: Corticosteroid
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Corticosteroid" is True AND ("Stable" OR "Decreasing") AND ("for at least 7 days prior to initiation of treatment")

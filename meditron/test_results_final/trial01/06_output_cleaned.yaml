@@ -1,0 +1,7 @@
+Original Text: |
+    Left ventricular ejection fraction (LVEF) >= 50% by echocardiogram (ECHO) or multigated acquisition (MUGA) scan
+Disease/Condition: Ejection Fraction, Multigated Acquisition Scan
+Procedure: Echocardiogram
+Drug: none
+Biomarker: none
+Computable Rule: LVEF >= 50% AND (ECHO OR MUGA)

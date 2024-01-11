@@ -1,0 +1,8 @@
+Original Text: |
+    Has had major surgery within 21 days before initiation of protocol therapy
+Disease/Condition: none
+Procedure: Surgery
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "Surgery" is True

@@ -1,0 +1,18 @@
+
+    Original Text: Stable or decreasing corticosteroid dose for at least 7 days prior to initiation of treatment
+    Disease/Condition: none
+    Procedure: Corticosteroid
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Corticosteroid" is True AND ("Stable" OR "Decreasing") AND ("for at least 7 days prior to initiation of treatment")
+
+Criterion:
+    Patients with a history of malignancy other than non-melanoma skin cancer within 5 years before enrollment, excluding basal cell carcinoma of the skin
+
+Output:
+    Original Text: Patients with a history of malignancy other than non-melanoma skin cancer within 5 years before enrollment, excluding basal cell carcinoma of the skin
+    Disease/Condition: none
+    Procedure: Malignancy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Malignancy" is False AND ("Non-melanoma Skin Cancer" is False)

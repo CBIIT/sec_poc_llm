@@ -1,0 +1,17 @@
+
+    Original Text: Has had major surgery within 21 days before initiation of protocol therapy
+    Disease/Condition: none
+    Procedure: Surgery
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Surgery" is True
+
+Criterion:
+    Patients with a history of malignancy other than non-melanoma skin cancer, carcinoma in situ of the cervix uteri, or basal cell or squamous cell carcinoma of the skin (excluding lentigo maligna melanoma) within 5 years before study entry are excluded
+
+Output:
+    Original Text: Patients with a history of malignancy other than non-melanoma skin cancer, carcinoma in situ of the cervix uteri, or basal cell or squamous cell carcinoma of the skin (excluding lentigo maligna melanoma) within 5 years before study entry are excluded
+    Disease/Condition: none
+    Procedure: Malignancy
+    Drug: none
+    Biomarker: none

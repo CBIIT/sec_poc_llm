@@ -1,0 +1,21 @@
+
+    Original Text: No active, second potentially life-threatening cancer
+    Disease/Condition: Active Cancer, Potentially Life Threatening Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK ACTIVE_CANCER == False, LK POTENTIALLY_LIFE_THREATENING_CANCER == False
+
+Criterion:
+    Patients with a history of malignancy other than nonmelanoma skin cancer within the past 5 years
+
+Output:
+    Original Text: Patients with a history of malignancy other than nonmelanoma skin cancer within the past 5 years
+    Disease/Condition: History of Malignancy, Nonmelanoma Skin Cancer
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK HISTORY_OF_MALIGNANCY == True, LK NONMELANOMA_SKIN_CANCER == False
+
+Criterion:
+   

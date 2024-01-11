@@ -1,0 +1,13 @@
+
+    Original Text: COHORT A: Unequivocal evidence of new and/or progressive brain metastases, and at least one of the following scenarios:
+    Disease/Condition: None
+    Procedure: None
+    Drug: None
+    Biomarker: None
+    Computable Rule: "COHORT A" is True
+
+Criterion:
+    COHORT B: Participants who have had prior WBRT and/or SRS and then whose lesions have subsequently progressed or who have new lesions are also eligible. In this case, lesions which have been treated with SRS may be considered as target lesions if there is unequivocal evidence, in the opinion of the treating physician, of progression following SRS
+
+Output:
+    Original Text: COHORT B: Participants who have had prior WBRT and/or SRS and then whose lesions have subsequently progressed or who have new lesions are also eligible. In this case, lesions which have been treated with SRS may be considered as target lesions if there is unequivocal evidence, in the opinion of

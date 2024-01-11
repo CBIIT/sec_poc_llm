@@ -1,0 +1,8 @@
+Original Text: |
+    The subject is capable of understanding and complying with the protocol and has signed the informed consent document
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "has signed the informed consent document" is True

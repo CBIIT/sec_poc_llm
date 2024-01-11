@@ -1,0 +1,7 @@
+Original Text: |
+    Fasting glucose =< 140 mg/dL and glycosylated hemoglobin measurement (HbA1c) =< 7%
+Disease/Condition: Diabetes Mellitus Type II
+Procedure: none
+Drug: none
+Biomarker: HbA1c < 7%
+Computable Rule: Disease is "Diabetes Mellitus Type II" AND HbA1c < 7% is True

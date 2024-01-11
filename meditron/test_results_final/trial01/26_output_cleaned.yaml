@@ -1,0 +1,7 @@
+Original Text: |
+    Has received prior therapy with a PI3K or mTOR inhibitor
+Disease/Condition: PI3K Inhibitors, mTOR Inhibitors
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: HAS(PI3K_Inhibitors) OR HAS(mTOR_Inhibitors) == True

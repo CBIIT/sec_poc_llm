@@ -1,0 +1,13 @@
+
+    Original Text: COHORT B: New and/or progressive brain metastasis(es) with clinical indication for resection
+    Disease/Condition: Brain Metastasis
+    Procedure: Resection
+    Drug: none
+    Biomarker: none
+    Computable Rule: Cohort_B == True
+
+Criterion:
+    Patients with histologically confirmed advanced solid tumors (stage IIIb/IV), including non-small cell lung cancer (NSCLC), small cell lung cancer (SCLC), breast cancer, colorectal cancer, gastric cancer, pancreatic cancer, prostate cancer, ovarian cancer, renal cell carcinoma, hepatocellular carcinoma, cholangiocarcinoma, urothelial carcinoma, cervical cancer, endometrial cancer, neuroendocrine tumors, Merkel cell carcinoma, sarcoma, melanoma, mesothelioma, or other solid tumors
+
+Output:
+    Original Text: Patients with histologically confirmed advanced solid tumors (stage IIIb/IV),

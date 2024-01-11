@@ -1,0 +1,7 @@
+Original Text: |
+    Symptomatic intrinsic lung disease or extensive tumor involvement of the lungs, resulting in dyspnea at rest
+Disease/Condition: Intrinsic Lung Disease, Extensive Tumor Involvement of the Lungs, Dyspnea at Rest
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: LK ILD == True OR LK ETIL == True OR LK DYS == True

@@ -1,0 +1,18 @@
+
+    Original Text: Known leptomeningeal metastases (defined as positive CSF cytology and/or unequivocal radiological evidence of clinically significant leptomeningeal involvement. CSF sampling is not required in the absence of suggestive symptoms to exclude leptomeningeal involvement)
+    Disease/Condition: Leptomeningeal Metastasis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: LK MTS == True, MTS == True
+
+Criterion:
+    Patients with known brain metastases, spinal cord compression, or carcinomatous meningitis are excluded from this study
+
+Output:
+    Original Text: Patients with known brain metastases, spinal cord compression, or carcinomatous meningitis are excluded from this study
+    Disease/Condition: Brain Metastasis, Spinal Cord Compression, Carcinomatous Meningitis
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: BM == True

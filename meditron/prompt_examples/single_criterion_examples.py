@@ -14,6 +14,7 @@ Output:
     Original Text: Subject must not have received prior radiotherapy
     Disease/Condition: none
     Procedure: Radiotherapy
+    Drug: none
     Biomarker: none
     Computable Rule: "Radiotherapy" is False"""
     },
@@ -30,6 +31,7 @@ Output:
 * HER2+ (regardless of ER status), including HER2-low and high expressors
     Disease/Condition: Metastatic breast carcinoma
     Procedure: none
+    Drug: none
     Biomarker: HER2-, HER2+
     Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2- is True OR HER2+ is True"""
     },
@@ -42,6 +44,7 @@ Output:
     Original Text: Subject must not have any affected lymph nodes or metastatic disease
     Disease/Condition: Lymph node-Metastases, Metastatic Disease
     Procedure: none
+    Drug: none
     Biomarker: none
     Computable Rule: LK MTS == False, MTS == False"""
     },
@@ -54,6 +57,7 @@ Output:
     Original Text: Age 18 or older
     Disease/Condition: none
     Procedure: none
+    Drug: none
     Biomarker: none
     Computable Rule: none"""
     },

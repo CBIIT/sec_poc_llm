@@ -1,0 +1,27 @@
+
+    Original Text: Visceral crisis or impending visceral crisis at time of screening
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Visceral crisis" is True or "Impending visceral crisis" is True
+
+Criterion:
+    Patients with a history of malignancy other than breast cancer within 5 years before study entry
+
+Output:
+    Original Text: Patients with a history of malignancy other than breast cancer within 5 years before study entry
+    Disease/Condition: none
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: "History of malignancy other than breast cancer" is False
+
+Criterion:
+    Patients with a history of malignancy other than breast cancer within 5 years before study entry
+
+Output:
+    Original Text: Patients with a history of malignancy other than breast cancer within 5 years before study entry
+    Disease/Condition: none
+    Procedure: none
+    Drug

@@ -1,0 +1,7 @@
+Original Text: |
+    No washout is required for endocrine therapy. If a patient has been on ovarian suppression for at least 28 days prior to initiation of study treatment, continuation of ovarian suppression is permitted on protocol. Starting a new endocrine therapy during protocol therapy is not permitted
+Disease/Condition: Metastatic breast carcinoma
+Procedure: none
+Drug: none
+Biomarker: Ovarian suppression
+Computable Rule: Disease is "Metastatic breast carcinoma" AND Ovarian suppression is True

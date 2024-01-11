@@ -1,0 +1,8 @@
+Original Text: |
+    Patients with known contraindication to magnetic resonance imaging (MRI) (e.g., due to pacemaker, ferromagnetic implants, claustrophobia, extreme obesity, hypersensitivity, etc.). However, head computed tomography (CT) with contrast may be used in place of MRI at baseline and throughout the trial if MRI is contraindicated and a participant’s brain metastases are clearly measurable by head CT
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    "MRI" is False OR "CT" is True

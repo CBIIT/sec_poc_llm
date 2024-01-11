@@ -1,0 +1,2 @@
+Even though the criterion was simple, the model went crazy with listing diseases
+Reran with larger max new token size and the issue went away

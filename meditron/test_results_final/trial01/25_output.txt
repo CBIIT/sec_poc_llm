@@ -1,0 +1,18 @@
+
+    Original Text: Chemotherapy or targeted therapy within 14 days prior to initiation of protocol therapy. No washout is required for trastuzumab
+    Disease/Condition: none
+    Procedure: Chemotherapy, Targeted Therapy
+    Drug: none
+    Biomarker: none
+    Computable Rule: "Chemotherapy" OR "Targeted Therapy" is True AND "Trastuzumab" is False
+
+Criterion:
+    Patients with metastatic breast cancer who have progressive disease after treatment with anthracyclines and taxanes
+
+Output:
+    Original Text: Patients with metastatic breast cancer who have progressive disease after treatment with anthracyclines and taxanes
+    Disease/Condition: Metastatic Breast Cancer
+    Procedure: Progressive Disease
+    Drug: Anthracycline, Taxane
+    Biomarker: none
+    Computable Rule: "Metastatic Breast Cancer" is True AND "Progressive Disease" is True AND "Anthracycline" is True AND "Taxane

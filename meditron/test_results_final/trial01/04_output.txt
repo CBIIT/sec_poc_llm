@@ -1,0 +1,18 @@
+
+    Original Text: Pathologically confirmed HER2-positive MBC by local laboratory with the following requirements: HER2 overexpressed or amplified (immunohistochemistry of 3+ or HER2 gene amplification by in situ hybridization with a ratio of HER2-gene signals to centromere 17 signals >= 2.0 or average HER2 copy number >= 6.0 signals/cells)
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: HER2+
+    Computable Rule: Disease is "Metastatic breast carcinoma" AND HER2+ is True
+
+Criterion:
+    Patients must have measurable disease according to RECIST v1.1.
+
+Output:
+    Original Text: Patients must have measurable disease according to RECIST v1.1.
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: None
+    Computable Rule

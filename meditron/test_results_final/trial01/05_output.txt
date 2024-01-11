@@ -1,0 +1,25 @@
+
+    Original Text: Eastern Cooperative Oncology Group (ECOG) performance status of =< 2
+    Disease/Condition: ECOG performance status
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Performance Status is <= 2
+
+Criterion:
+    Patients with histologically confirmed metastatic breast cancer
+
+Output:
+    Original Text: Patients with histologically confirmed metastatic breast cancer
+    Disease/Condition: Metastatic breast carcinoma
+    Procedure: none
+    Drug: none
+    Biomarker: none
+    Computable Rule: Histology is Breast Cancer
+
+Criterion:
+    Patients must have received prior therapy for metastatic disease and must have progressed on or within 6 months of completion of adjuvant chemotherapy for early stage disease
+
+Output:
+    Original Text: Patients must have received prior therapy for metastatic disease and must have progressed on or within 6 months of completion of adjuvant chemotherapy for early stage disease
+    Disease/Condition

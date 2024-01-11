@@ -1,0 +1,8 @@
+Original Text: |
+    Corrected QT (QTc) interval time of >= 470 msec
+Disease/Condition: none
+Procedure: none
+Drug: none
+Biomarker: none
+Computable Rule: |
+    ">= 470 msec" is True
