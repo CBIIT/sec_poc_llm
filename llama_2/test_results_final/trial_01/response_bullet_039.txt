@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Symptomatic intrinsic lung disease or extensive tumor involvement of the lungs, resulting in dyspnea at rest | Exclusion | Lung Cancer | None | None | NOT (Lung Cancer) AND (Dyspnea at rest) |
+
+Note:
+
+* Criterion Text: The text of the exclusion criterion as provided.
+* Inclusion/Exclusion: "Exclusion" because this criterion describes a condition that disqualifies a patient from participation in the clinical trial.
+* Disease: "Lung Cancer" because the criterion mentions tumor involvement of the lungs.
+* Biomarker: None, because the criterion does not mention a specific biomarker.
+* Prior Therapy: None, because the criterion does not mention prior therapy.
+* Criterion Rule: A logical expression that could be interpreted programmatically. In this case, the rule is "NOT (Lung Cancer) AND (Dyspnea at rest)", which means that patients with lung cancer or dyspnea at rest are excluded from the clinical trial.

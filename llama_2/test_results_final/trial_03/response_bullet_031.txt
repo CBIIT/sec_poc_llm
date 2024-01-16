@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Active infection requiring systemic therapy | Exclusion | None | None | None | NOT (InfectionActive AND SystemicTherapyRequired) |
+
+In this case, since the eligibility criteria text only includes a single exclusion criterion related to an active infection requiring systemic therapy, the table only has one row. The Criterion Text column contains the verbatim snippet from the eligibility criteria text. The Inclusion/Exclusion column indicates that this is an exclusion criterion. Since there is no disease, biomarker, or prior therapy mentioned in the criteria text, those columns are left empty. The Criterion Rule column translates the criterion into a logical expression that could be interpreted programmatically. In this case, the rule is simply the negation of the conjunction of the conditions "InfectionActive" and "SystemicTherapyRequired".

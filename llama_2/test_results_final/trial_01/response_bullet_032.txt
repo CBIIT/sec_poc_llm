@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Current use or history of receiving a non-approved, investigational treatment within 14 days prior to initiation of protocol therapy | Exclusion |  |  |  | HasReceivedInvestigationalTreatmentWithin14Days() |
+
+In this table, the Criterion Text column contains the verbatim snippet of the exclusion criterion. The Inclusion/Exclusion column indicates that this is an exclusion criterion. Since the criterion does not mention a disease, biomarker, or prior therapy, those columns are left blank. The Criterion Rule column translates the criterion into a logical expression that could be interpreted programmatically. In this case, the rule is "HasReceivedInvestigationalTreatmentWithin14Days()", which means that the patient has received a non-approved, investigational treatment within 14 days prior to the initiation of protocol therapy.

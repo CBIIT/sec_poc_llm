@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Uncontrolled arrhythmia | Exclusion |  |  |  | arrhythmia exists and is uncontrolled |
+| Congestive heart failure | Exclusion |  |  |  | heart failure exists and is congestive |
+| Angina | Exclusion |  |  |  | angina exists |
+| Myocardial infarction | Exclusion |  |  |  | myocardial infarction has occurred and it has been less than 6 months since the event |
+| Symptomatic pericarditis | Exclusion |  |  |  | pericarditis exists and is symptomatic |
+| Cardiac surgery | Exclusion |  |  |  | cardiac surgery has occurred and it has been less than 6 months since the event |
+
+Note: The criterion text mentions "uncontrolled arrhythmia", "congestive heart failure", and "angina" as separate exclusion criteria. Therefore, each of these conditions is listed as a separate row in the table.
+
+Also, note that the criterion text does not mention any biomarkers or prior therapies, so those columns are left empty.

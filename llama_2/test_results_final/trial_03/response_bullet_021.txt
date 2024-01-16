@@ -1,0 +1,10 @@
+Sure! Here is the table you requested:
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patient must have the following laboratory values within normal limits or corrected to within normal limits with supplements before the first dose of study medication: | Inclusion | None | None | None | Patient Laboratory Values Within Normal Limits |
+|  |  | Potassium | None | None | Patient Potassium Level Within Normal Limits |
+|  |  | Magnesium | None | None | Patient Magnesium Level Within Normal Limits |
+|  |  | Total calcium (corrected for serum albumin) | None | None | Patient Total Calcium Level (Corrected for Serum Albumin) Within Normal Limits |
+
+I hope this helps! Let me know if you have any questions.

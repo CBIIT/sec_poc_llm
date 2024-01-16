@@ -1,0 +1,14 @@
+Sure! Here's the table you requested:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Concurrent use of medication with a known risk of inducing torsades de pointes (on the known risk list of crediblemeds.org) that cannot be discontinued or switched to a different medication ≥ 7 days prior to starting the study drug | Exclusion |  |  |  | "ConcurrentMedicationTorsadesDePointes" = false |
+
+
+Let me explain my reasoning:
+
+
+•	Concurrent use of medication with a known risk of inducing torsades de pointes (on the known risk list of crediblemeds.org) that cannot be discontinued or switched to a different medication >= 7 days prior to starting the study drug: This is an exclusion criterion, hence the "Exclusion" in the second column. There is no disease, biomarker, or prior therapy mentioned in this criterion, so those columns remain empty. The criterion rule in the final column translates the criterion text into a logical expression that could be interpreted programmatically. In this case, we're simply checking whether the patient is concurrently taking medication with a known risk of inducing torsades de pointes and cannot discontinue or switch it. If that's the case, the patient does not meet the criterion and is excluded from the study.
+
+

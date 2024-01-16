@@ -1,0 +1,7 @@
+Sure! Here's the table you requested:
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Total bilirubin ≤ 1.5 mg/dL (upper limit of normal) except subject with documented Gilbert's syndrome ≤ 5 x upper limit of normal (ULN) or liver metastasis, who must have a baseline total bilirubin ≤ 3.0 mg/dL | Inclusion | Gilbert's Syndrome | Total Bilirubin | - | Total bilirubin ≤ 1.5 mg/dL OR (Gilbert's Syndrome AND Total Bilirubin ≤ 5 x ULN) OR (Liver Metastasis AND Baseline Total Bilirubin ≤ 3.0 mg/dL) |
+
+I hope this helps! Let me know if you have any questions.

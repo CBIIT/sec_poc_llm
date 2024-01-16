@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+|  Baseline values of CA-125 at least 2 x upper limit of normal AND EITHER | Inclusion | Ovarian cancer | CA-125 | None | (CA-125 ≥ 2 x ULN) ∧ (presence of EITHER condition A OR condition B) |
+
+Note:
+
+* ULN stands for upper limit of normal, which is a reference range for a particular laboratory test that indicates the highest concentration of a substance that is considered normal or healthy.
+* CA-125 is a biomarker used to monitor the effectiveness of treatment for ovarian cancer.
+* The criterion rule is a logical expression that represents the combination of conditions (CA-125 ≥ 2 x ULN) and (presence of EITHER condition A OR condition B) that must be met for a patient to be eligible for the clinical trial.

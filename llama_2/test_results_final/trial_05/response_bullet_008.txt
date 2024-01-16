@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Known loss or mutation (by CLIA certified molecular testing, IHC and/or DNA sequencing) in at least 2 of Tp53, RB1, and PTEN | Inclusion | None | Tp53, RB1, PTEN | None | (Tp53 != null && RB1 != null && PTEN != null) |
+
+Note:
+
+* Tp53, RB1, and PTEN are tumor suppressor genes that are frequently mutated in various types of cancer.
+* CLIA (Clinical Laboratory Improvement Act) certification is a requirement for clinical laboratories that perform testing on human specimens.
+* IHC (immunohistochemistry) and DNA sequencing are both methods used to detect and analyze protein expression and genetic mutations in cancer cells.

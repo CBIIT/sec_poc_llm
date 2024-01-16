@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by CAP/ASCO standards) | Inclusion | Breast cancer | Her-2/neu | N/A | (Her-2/neu ≤ 1+ by immunohistochemistry) ∧ (not amplified by CAP/ASCO standards) |
+
+Note:
+
+* Her-2/neu is a biomarker that is associated with breast cancer.
+* CAP/ASCO standards refer to the guidelines for HER2 testing established by the College of American Pathologists (CAP) and the American Society of Clinical Oncology (ASCO).
+* The criterion states that patients with Her-2/neu negative breast cancer are eligible for the clinical trial, where Her-2/neu negativity is defined as 0 or 1+ by immunohistochemistry or not amplified by CAP/ASCO standards.
+* The criterion rule translates this criteria into a logical expression that could be interpreted programmatically.

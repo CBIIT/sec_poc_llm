@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Solid and/or cystic abnormalities on radiographic imaging consistent with recurrent disease that do not meet Response Evaluation Criteria in Solid Tumors (RECIST) version 1.1 definitions for target lesions. | Inclusion | None | None | None | CriterionText IN ('Solid and/or cystic abnormalities on radiographic imaging consistent with recurrent disease that do not meet Response Evaluation Criteria in Solid Tumors (RECIST) version 1.1 definitions for target lesions') |
+
+Note:
+
+* The criterion text mentions "recurrent disease" but does not specify a particular disease, so the Disease column is left empty.
+* The criterion text does not mention any biomarkers, so the Biomarker column is left empty.
+* The criterion text does not mention any prior therapy, so the Prior Therapy column is left empty.
+* The criterion rule is a simple inclusion criterion, so the Criterion Rule column contains a straightforward logical expression.

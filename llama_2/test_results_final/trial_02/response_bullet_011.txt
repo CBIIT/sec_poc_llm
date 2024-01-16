@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients must have completed any prior adjuvant chemotherapy or radiation therapy 2 or more weeks (6 or more weeks for mitomycin and nitrosoureas) prior to randomization and be adequately recovered at the time of randomization | Inclusion | Lung Cancer | - | Chemotherapy or radiation therapy | (completed adjuvant chemotherapy or radiation therapy ≥ 2 weeks prior to randomization) ∧ (adequately recovered at time of randomization) |
+
+Note: The criterion rule is a logical expression that could be interpreted programmatically. In this case, the expression is "completed adjuvant chemotherapy or radiation therapy ≥ 2 weeks prior to randomization" and "adequately recovered at time of randomization". This means that patients who have completed any prior adjuvant chemotherapy or radiation therapy at least 2 weeks (6 weeks for mitomycin and nitrosoureas) prior to randomization and are adequately recovered at the time of randomization are eligible for the clinical trial.

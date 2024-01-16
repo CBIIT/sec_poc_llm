@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+|  Has had prior chemotherapy or targeted small molecule therapy within 2 weeks prior to start of treatment or has not recovered (i.e., =< grade 1 or at baseline) from adverse events due to a previously administered agent | Exclusion |  |  | Chemotherapy or targeted small molecule therapy within 2 weeks | - |
+
+Note: The criterion text describes an exclusion criterion, which is why it is marked as "Exclusion" in the table. The "Disease", "Biomarker", and "Prior Therapy" columns are left empty because the criterion text does not mention any specific disease, biomarker, or prior therapy. The "Criterion Rule" column contains a logical expression that could be interpreted programmatically to determine whether a patient meets this exclusion criterion. In this case, the rule is simply "has had prior chemotherapy or targeted small molecule therapy within 2 weeks", which means that any patient who has received such treatment within the specified time frame would be excluded from the clinical trial.

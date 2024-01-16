@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| No active, second potentially life-threatening cancer | Exclusion |  |  |  | Not (Active) and Not (Potentially Life-Threatening Cancer) |
+
+In this case, the only criterion in the Exclusion Criteria is "No active, second potentially life-threatening cancer". This criterion is an exclusion criterion, and it does not mention any specific disease or biomarker. Therefore, the Disease and Biomarker columns are left blank. The Prior Therapy column is also blank, as the criterion does not mention any prior therapy. The Criterion Rule column translates the criterion into a logical expression that could be interpreted programmatically, which in this case is "Not (Active) and Not (Potentially Life-Threatening Cancer)".

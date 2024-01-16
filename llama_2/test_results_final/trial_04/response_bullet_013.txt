@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients are allowed to receive, but are not required to receive, up to 6 additional prior chemotherapy treatment regimens (including platinum-based chemotherapy) | Inclusion | None | None | Chemotherapy | (Prior Chemotherapy ≤ 6) |
+| Prior maintenance therapy with an agent when there has not been progression will not be a separate treatment regimen | Inclusion | None | None | Maintenance Therapy | (Progression-free Maintenance Therapy = True) |
+| Prior hormonal therapy is allowed, and when used alone, even as a therapeutic agent, it does not count toward this prior regimen requirement | Inclusion | None | None | Hormonal Therapy | (Hormonal Therapy ≠ Chemotherapy) |
+| Hormonal therapy must be discontinued at least 1 week before T-cell infusion | Inclusion | None | None | Hormonal Therapy | (Hormonal Therapy Discontinued ≥ 1 week before T-cell Infusion) |
+| Continuation of hormone replacement therapy is permitted | Inclusion | None | None | Hormone Replacement Therapy | (Hormone Replacement Therapy = True) |
+
+Note:
+
+* The criterion text includes four inclusion criteria and one exclusion criterion.
+*

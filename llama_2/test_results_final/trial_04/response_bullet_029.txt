@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Known or suspected leptomeningeal disease and patients with metastases to the brain stem, midbrain, pons, or medulla | Exclusion | Leptomeningeal disease | - | - | NOT (LeptomeningealDisease OR BrainStemMetastases OR MidbrainMetastases OR PonsMetastases OR MedullaMetastases) |
+
+Note:
+
+* Leptomeningeal disease is a condition where cancer cells spread to the leptomeninges, which are the thin layers of tissue that cover the brain and spinal cord.
+* The criterion text specifies that patients with known or suspected leptomeningeal disease, as well as those with metastases to certain areas of the brain, are excluded from the clinical trial.
+* The criterion rule is a logical expression that could be interpreted programmatically to determine whether a patient meets the exclusion criterion. In this case, the criterion rule is simply the negation of the ORed conditions, which means that if any of the conditions are true, the patient is excluded.

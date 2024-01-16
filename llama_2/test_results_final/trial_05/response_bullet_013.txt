@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients who have received more than one line of chemotherapy | Exclusion |  |  | Chemotherapy | !Chemotherapy.count > 1 |
+
+Note:
+
+* The Criterion Text column contains the verbatim snippet of the eligibility criterion.
+* The Inclusion/Exclusion column specifies whether the criterion is an inclusion or exclusion criterion.
+* The Disease column names the disease or condition specified in the criterion, if any.
+* The Biomarker column names the biomarker specified in the criterion, if any.
+* The Prior Therapy column names the prior therapy specified in the criterion, if any.
+* The Criterion Rule column translates the criterion into a logical expression that could be interpreted programmatically.
+
+In this case, the eligibility criteria text includes a single exclusion criterion related to prior chemotherapy treatment. Therefore, the table contains only one row with the corresponding information.

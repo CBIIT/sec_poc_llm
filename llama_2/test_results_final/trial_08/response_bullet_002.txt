@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Metastatic or locally advanced breast cancer not amenable to curative treatment by surgery or radiotherapy | Inclusion | Breast Cancer | None | None | (Disease = "Breast Cancer") AND (Treatment.Surgery = "Not Amenable") AND (Treatment.Radiotherapy = "Not Amenable") |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: The name of the disease or condition mentioned in the criterion, using its canonical name.
+* Biomarker: The name of the biomarker mentioned in the criterion, using its canonical name.
+* Prior Therapy: The name of the prior therapy mentioned in the criterion, using its canonical name.
+* Criterion Rule: A logical expression that could be interpreted programmatically, translating the criterion into a rule that can be applied to determine eligibility.
+
+In this case, the criterion text describes a disease (Breast Cancer) and a treatment criterion (not amenable to curative treatment by surgery or radiotherapy), but does not mention any biomarkers or prior therapies. Therefore, the

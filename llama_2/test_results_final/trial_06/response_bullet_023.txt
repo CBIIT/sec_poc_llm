@@ -1,0 +1,13 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Pre-existing conditions or overall health status which disqualifies the patient from curative-intent RT | Exclusion | None | None | None | Patient.health_status != "curative-intent RT" |
+| Patients with life expectancy less than 10 years are not eligible | Exclusion | None | None | None | Patient.life_expectancy < 10 |
+
+Note:
+
+* The Criterion Text column contains the verbatim text of the exclusion criterion.
+* The Inclusion/Exclusion column specifies whether the criterion is an inclusion or exclusion criterion.
+* The Disease column is left empty since the criterion does not mention a specific disease or condition.
+* The Biomarker column is left empty since the criterion does not mention a specific biomarker.
+* The Prior Therapy column is left empty since the criterion does not mention a specific prior therapy.
+* The Criterion Rule column translates the criterion into a logical expression that could be interpreted programmatically. In this case, the rule is a simple inequality that checks if the patient's health status is not "curative-intent RT" or if their life expectancy is less than 10 years.

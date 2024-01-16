@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Participants who have not previously been treated with cranial radiation (e.g., WBRT or SRS) are eligible to enter the study, but such participants must be asymptomatic from their CNS metastases and not requiring corticosteroids for symptom control | Inclusion | CNS metastases | None | None | Participants who have not received cranial radiation (WBRT or SRS) and are asymptomatic from CNS metastases and not on corticosteroids for symptom control |
+
+Note: CNS metastases is not a specific disease but a condition where cancer has spread to the central nervous system.

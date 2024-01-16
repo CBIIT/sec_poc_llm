@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Histologically or cytologically-documented, advanced solid tumor of one of the following types: | Inclusion | Anal Squamous Cell Carcinoma, Biliary Adenocarcinoma, Neuroendocrine Tumors, Endometrial Carcinoma, Cervical Squamous Cell Carcinoma, Vulvar Squamous Cell Carcinoma, Small Cell Lung Carcinoma, Mesothelioma, Thyroid Carcinoma, Salivary Gland Carcinoma | - | - | - |
+|  | | (sarcomas and mesenchymal tumors are excluded) |  |  |  |
+|  | | (gallbladder or biliary tree (intrahepatic or extrahepatic cholangiocarcinoma) except Ampulla of Vater cancers) |  |  |  |
+|  | | (well- and moderately-differentiated) |  |  |  |
+|  | | (sarcomas and mesenchymal tumors are excluded) |  |  |  |
+
+Note: The Criterion Rule column is not populated since the criteria text does not include any specific rules or logical expressions that need to be translated programmatically.

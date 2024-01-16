@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Up to 2 prior lines of systemic treatment (most recent line of therapy must be palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2) in the locally advanced or metastatic setting is allowed; the participant must have shown evidence of progressive disease on palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2 | Inclusion | None | None | Palbociclib, AI, fulvestrant, ribociclib | (Palbociclib ∧ AI ∧ (Phase 1b ∨ Phase 2)) ∨ (fulvestrant ∧ (Phase 1b ∨ Phase 2)) |
+
+Note: AI stands for "aromatase inhibitor."

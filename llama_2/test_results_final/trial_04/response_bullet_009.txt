@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| The tissue screening portion can be conducted at any time before the eligibility determination is made for the treatment portion of the study. | Inclusion | None | None | None | Patients aged 18 or greater with histologies listed in the inclusion criteria may have their tissue screened for possible future eligibility on this study. |
+
+Note: Since the inclusion criteria do not mention any specific diseases, biomarkers, or prior therapies, the corresponding columns are left empty.

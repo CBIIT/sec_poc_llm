@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Be able to undergo MRI prostate and pelvis as a component of radiation therapy (RT) planning | Inclusion | None | None | None | (exist MRIprostatepelvis) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name is provided.
+* Biomarker: If the criterion contains a biomarker, its canonical name is provided.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name is provided.
+* Criterion Rule: A logical expression that could be interpreted programmatically to translate the criterion.
+
+In this case, the criterion text describes a requirement for undergoing MRI prostate and pelvis as part of radiation therapy planning. Therefore, the table contains no information for the Disease, Biomarker, or Prior Therapy columns, as this criterion does not relate to any specific disease, biomarker, or prior therapy. The Criterion Rule is a logical expression representing the ability to undergo the specified MRI procedure.

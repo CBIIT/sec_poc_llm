@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Preexisting gastrointestinal disorders/conditions that may interfere with ingestion or absorption of oral medications | Exclusion | None | None | None | NOT (Gastrointestinal Disorder) |
+
+Note:
+
+* The criterion text describes an exclusion criterion.
+* There is no disease, biomarker, or prior therapy specified in the criterion text.
+* The criterion rule is "NOT (Gastrointestinal Disorder)" which means that the patient must not have a preexisting gastrointestinal disorder or condition that may interfere with ingestion or absorption of oral medications.

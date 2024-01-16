@@ -1,0 +1,7 @@
+Sure! Here's the table you requested:
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Platelets >= 100 000/mm^3 | Inclusion | None | None | None | platelets ≥ 100000 |
+
+I hope this helps! Let me know if you have any questions.

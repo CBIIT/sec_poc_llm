@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Localized adenocarcinoma of the prostate with the following features | Inclusion | Prostate Adenocarcinoma | - | - | (Feature 1) ∧ (Feature 2) ∧ (Feature 3) |
+
+Note:
+
+* Criterion Text: The text describing the inclusion criterion for the clinical trial.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: The name of the disease or condition mentioned in the criterion text.
+* Biomarker: The name of the biomarker mentioned in the criterion text.
+* Prior Therapy: The name of the prior therapy mentioned in the criterion text.
+* Criterion Rule: A logical expression representing the criterion, which could be interpreted programmatically.
+
+In this case, the criterion text describes a localized adenocarcinoma of the prostate with specific features. Therefore, the Disease column contains "Prostate Adenocarcinoma", and the Biomarker and Prior Therapy columns are empty. The Criterion Rule column contains a logical expression representing the combination of the features mentioned in the criterion text.

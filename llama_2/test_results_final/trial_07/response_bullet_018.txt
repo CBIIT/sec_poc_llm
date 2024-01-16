@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| INR or PT ≤ 1.5 X ULN unless subject is receiving anticoagulant therapy as long as PT or PTT is within therapeutic range of intended use of anticoagulants | Inclusion | None | None | Anticoagulant therapy | INR ≤ 1.5 X ULN OR (PT ≤ 1.5 X ULN AND (receiving anticoagulant therapy AND PT or PTT within therapeutic range)) |
+
+Note:
+
+* ULN stands for Upper Limit of Normal
+* INR stands for International Normalized Ratio
+* PT stands for Prothrombin Time
+* PTT stands for Partial Thromboplastin Time

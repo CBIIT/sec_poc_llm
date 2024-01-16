@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Any underlying medical or psychiatric condition, which in the opinion of the investigator, will make the administration of study drug hazardous or obscure the interpretation of adverse events | Exclusion |  |  |  | Condition exists (uncontrolled ventricular arrhythmia, recent myocardial infarction, superior vena cava syndrome, extensive bilateral lung disease on HRCT scan, uncontrolled seizures, history of allogeneic organ transplant, history of primary immunodeficiency, or any psychiatric disorder that prohibits obtaining informed consent) |
+
+Note:
+
+* The criterion text describes an exclusion criterion.
+* No specific disease or biomarker is mentioned in the criterion text.
+* The criterion text refers to various medical conditions that could impact the administration of the study drug or interpretation of adverse events.
+* The criterion rule translates to "if a subject has any underlying medical or psychiatric condition that, in the opinion of the investigator, will make the administration of study drug hazardous or obscure the interpretation of adverse events, then the subject is excluded from the study."

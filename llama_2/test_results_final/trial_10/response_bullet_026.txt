@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Known active Hepatitis B or C | Exclusion | Hepatitis B |  |  | HepatitisB_active OR HepatitisC_active |
+
+(Note: In this table, "HepatitisB_active" and "HepatitisC_active" are fictional biomarkers used to represent the active status of Hepatitis B or C, respectively. In reality, there are various ways to determine the active status of these viruses, and the specific biomarkers used may vary depending on the clinical trial.)

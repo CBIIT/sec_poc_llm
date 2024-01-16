@@ -1,0 +1,3 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Any contraindication to MRI (i.e. patients with pacemakers or other metal implanted medical devices); an MRI safety questionnaire is required prior to magnetic resonance (MR) imaging | Exclusion |  |  |  | Contraindication to MRI ∧ (pacemaker ∨ other metal implanted medical device) |

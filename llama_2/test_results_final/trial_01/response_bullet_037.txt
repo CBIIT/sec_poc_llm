@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Has had major surgery within 21 days before initiation of protocol therapy | Exclusion |  |  | Major surgery within 21 days | -has_major_surgery_within_21_days |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name is provided.
+* Biomarker: If the criterion contains a biomarker, its canonical name is provided.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name is provided.
+* Criterion Rule: A logical expression that could be interpreted programmatically to translate the criterion.
+
+In this case, the only criterion in the Exclusion Criteria text provided is related to recent major surgery, so the table contains only one row. The Criterion Rule is a simple negation of the criterion text, expressed in a straightforward way to facilitate programming interpretation.

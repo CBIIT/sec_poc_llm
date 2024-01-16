@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| A malignancy (other than the one treated in this study) which has a >= 30% probability of recurrence within 24 months (except for adequately treated non-melanoma skin cancer, curatively treated in-situ cancer of the cervix or Ta urothelial carcinomas) | Exclusion | None | None | None | NOT (Disease = "Non-melanoma skin cancer" OR Disease = "In-situ cancer of the cervix" OR Disease = "Ta urothelial carcinomas") AND Probability of recurrence within 24 months >= 30% |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: Denotes whether the criterion is an inclusion or exclusion criterion.
+* Disease: The name of the disease or condition mentioned in the criterion. Since the criterion text mentions multiple diseases, we have left this column empty.
+* Biomarker: The name of the biomarker mentioned in the criterion. Since the criterion text does not mention any biomarkers, we have left this column empty.
+* Prior Therapy: The name of the prior therapy mentioned in the criterion. Since the criterion text does not mention any prior therapy,

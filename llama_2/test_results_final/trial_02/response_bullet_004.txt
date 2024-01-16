@@ -1,0 +1,3 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients must be registered to the ALCHEMIST-SCREEN (ALLIANCE A151216) trial prior to randomization | Inclusion |  |  |  | "Patient registered to ALCHEMIST-SCREEN trial" |

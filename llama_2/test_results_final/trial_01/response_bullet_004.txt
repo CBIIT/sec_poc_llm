@@ -1,0 +1,13 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Participants who have had prior whole brain radiotherapy (WBRT) and/or SRS and then whose lesions have subsequently progressed or who have new lesions | Inclusion | Brain Metastases | - | WBRT, SRS | (WBRT ∧/ SRS) → P |
+| Lesions which have been treated with SRS may be considered as target lesions if there is unequivocal evidence, in the opinion of the treating physician, of progression following SRS | Inclusion | Brain Metastases | - | SRS | ∃SRS(Lesion) ∧ P(Lesion) |
+
+Explanation:
+
+* Criterion Text: The first criterion text mentions participants who have had prior WBRT and/or SRS and whose lesions have subsequently progressed or who have new lesions. The second criterion text mentions lesions that have been treated with SRS and may be considered as target lesions if there is unequivocal evidence of progression following SRS.
+* Inclusion/Exclusion: Both criteria are inclusion criteria.
+* Disease: The disease relevant to both criteria is Brain Metastases.
+* Biomarker: No biomarkers are mentioned in the criteria text.
+* Prior Therapy: WBRT and SRS are mentioned as prior therapies.
+* C

@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| The presence of measurable disease as per Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 is preferred but not required. Lesions in a previously irradiated area that have not progressed are not considered measurable. | Inclusion | - | - | - | Measurable disease according to RECIST v1.1 (not required) |
+
+Note:
+
+* Since the inclusion criterion does not mention a specific disease or biomarker, the corresponding columns are left empty.
+* The criterion mentions "lesions in a previously irradiated area" but does not specify a particular prior therapy, so the Prior Therapy column is also left empty.
+* The criterion is a preference rather than a requirement, so it is not included in the Criterion Rule.

@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| The use of corticosteroids to control cerebral edema or treat neurologic symptoms will not be allowed, and patients who previously required corticosteroids for symptom control must be off steroids for at least 1 week prior to treatment on day 1 of cycle 1; low-dose steroid use (=< 10 mg of prednisone or equivalent) as corticosteroid replacement therapy is allowed | Exclusion | None | None | Corticosteroid use | CorticosteroidUse(off) = true |
+
+Note:
+
+* The criterion text describes an exclusion criterion.
+* There is no disease or biomarker mentioned in the criterion text.
+* The prior therapy mentioned is corticosteroid use, specifically the use of corticosteroids to control cerebral edema or treat neurologic symptoms.
+* The criterion rule translates to "Corticosteroid use is not allowed, except for low-dose steroid use as corticosteroid replacement therapy."
+
+I hope this helps! Let me know if you have any questions.

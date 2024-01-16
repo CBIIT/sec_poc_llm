@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Prior to randomization patients with any non-hematologic toxicity from surgery, chemotherapy, or radiation must have recovered to grade =< 1 with the exception of alopecia and the criteria outlined | Inclusion | None | None | Chemotherapy, surgery, radiation | Criterion Text = "Prior to randomization patients with any non-hematologic toxicity from surgery, chemotherapy, or radiation must have recovered to grade =< 1 with the exception of alopecia and the criteria outlined" |
+
+Note: The criterion text refers to non-hematologic toxicity from surgery, chemotherapy, or radiation, but it does not specify a particular disease or biomarker. Therefore, the Disease and Biomarker columns are left empty. The Prior Therapy column lists the therapies mentioned in the criterion text. The Criterion Rule column translates the criterion text into a logical expression that could be interpreted programmatically. In this case, the criterion rule is simply the criterion text itself.

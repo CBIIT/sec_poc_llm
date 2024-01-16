@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Either a concurrent condition (including medical illness, such as active infection requiring treatment with intravenous antibiotics or the presence of laboratory abnormalities) or history of a prior condition that places the patient at unacceptable risk if he/she were treated with the study drug or a medical condition that confounds the ability to interpret data from the study | Exclusion |  |  |  | (ConcurrentCondition OR PriorCondition) AND (UnacceptableRisk OR ConfoundingData) |
+
+Note:
+
+* ConcurrentCondition: The patient has a concurrent medical condition that may interfere with the study drug's effectiveness or pose a risk to the patient's health.
+* PriorCondition: The patient has a history of a medical condition that may affect the study's outcome or pose a risk to the patient's health.
+* UnacceptableRisk: The patient's medical condition or history of a medical condition places them at an unacceptable risk if treated with the study drug.
+* ConfoundingData: The patient's medical condition or history of a medical condition may confound the ability to interpret data from the study.

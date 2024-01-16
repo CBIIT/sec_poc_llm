@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| International Prostate Symptom Score (IPSS) score =< 20 at time of initial history and physical with treating radiation oncologist | Inclusion | Prostate Cancer | - | - | IPSS score ≤ 20 |
+
+Note:
+
+* Disease: Prostate Cancer (since the criterion is related to prostate symptoms)
+* Biomarker: None (no biomarker is mentioned in the criterion)
+* Prior Therapy: None (no prior therapy is mentioned in the criterion)
+* Criterion Rule: IPSS score ≤ 20 (the criterion is a numerical value of ≤ 20 for the IPSS score)

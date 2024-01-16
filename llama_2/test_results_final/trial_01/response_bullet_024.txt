@@ -1,0 +1,9 @@
+Sure! Here's the table based on the given criteria text:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Participant must be able to swallow and retain oral medication | Inclusion |  |  |  | "Participant has ability to swallow and retain oral medication" |
+
+
+The criterion text describes an inclusion criterion (Inclusion/Exclusion column) that relates to the participant's ability to take oral medication. Since it doesn't mention any specific disease, biomarker, or prior therapy, the corresponding columns remain blank. The Criterion Rule column translates the criterion text into a logical expression that could be interpreted programmatically.

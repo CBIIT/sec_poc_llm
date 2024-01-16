@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| EGFR or ALK mutation | Exclusion | None | EGFR, ALK | None | !(EGFR or ALK mutation) |
+
+Note: 
+
+* The criterion text specifies an exclusion criterion.
+* No disease or condition is specified in the criterion text.
+* The criterion text mentions EGFR and ALK mutations, which are biomarkers.
+* No prior therapy is specified in the criterion text.
+* The criterion rule is a logical expression that translates to "not (EGFR or ALK mutation)". This means that participants with EGFR or ALK mutations are excluded from the clinical trial.

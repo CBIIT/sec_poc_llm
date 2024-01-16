@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Medical condition that in the opinion of the enrolling investigator would require the use of valproic acid within =< 5 days of the first dose of belinostat or while on study | Exclusion |  |  | Valproic acid | Criterion not met: valproic acid use within 5 days of first dose of belinostat or during study |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: Denotes whether the criterion is an inclusion or exclusion criterion.
+* Disease: None, as the criterion does not mention a specific disease or condition.
+* Biomarker: None, as the criterion does not mention a specific biomarker.
+* Prior Therapy: Valproic acid, as the criterion mentions the use of valproic acid.
+* Criterion Rule: A logical expression that could be interpreted programmatically. In this case, the criterion rule is "Criterion not met: valproic acid use within 5 days of first dose of belinostat or during study". This means that if a patient has used valproic acid within 5 days of the first dose of belinostat or while on study, they do not meet the exclusion criterion.

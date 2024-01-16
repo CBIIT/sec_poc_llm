@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+|  Has a known human immunodeficiency virus (HIV), hepatitis B (HBV), or hepatitis C (HCV) infection | Exclusion | HIV, HBV, HCV |  |  | HIV_status(known) ∧ HBV_status(known) ∧ HCV_status(known) |
+
+Note:
+
+* HIV, HBV, and HCV are diseases.
+* HIV_status, HBV_status, and HCV_status are biomarkers that indicate the presence or absence of the respective viruses.
+* The criterion rule is a logical expression that combines the three biomarkers using the logical AND operator. The expression evaluates to true if any of the biomarkers are true (i.e., the patient has a known HIV, HBV, or HCV infection), and false otherwise.

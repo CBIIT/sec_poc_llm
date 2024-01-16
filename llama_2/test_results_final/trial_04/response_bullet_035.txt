@@ -1,0 +1,10 @@
+Sure! Here is the table you requested:
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Serious uncontrolled medical illness or disorder | Exclusion |  |  |  | disorder  |
+| Active uncontrolled infection (with the exception of uncomplicated urinary tract infection) | Exclusion |  |  |  | infection |
+| Abdominal fistula, gastrointestinal perforation, or intraabdominal abscess | Exclusion |  |  |  | fistula |
+| Abdominal surgery (for reasons other than IP port placement) | Exclusion |  |  |  | surgery |
+
+I hope this helps! Let me know if you have any questions.

@@ -1,0 +1,8 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Known human immunodeficiency virus (HIV) infection with a detectable viral load within 6 months of the anticipated start of treatment. | Exclusion | HIV | - | - | !HIV(detectable viral load) & !ART(effective, undetectable viral load within 6 months) |
+
+Note:
+
+* HIV: Human immunodeficiency virus
+* ART: Anti-retroviral therapy

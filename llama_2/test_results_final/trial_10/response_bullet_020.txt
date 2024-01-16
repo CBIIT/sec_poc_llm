@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Has a history of (noninfectious) pneumonitis/interstitial lung disease that required steroids or has current pneumonitis/interstitial lung disease. | Exclusion | Pneumonitis/Interstitial Lung Disease |  |  | HasHistoryOfPneumonitisOrILDOrCurrentPneumonitisOrILD |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: Denotes whether the criterion is an inclusion or exclusion criterion.
+* Disease: The name of the disease or condition mentioned in the criterion text.
+* Biomarker: No biomarker is mentioned in the criterion text.
+* Prior Therapy: No prior therapy is mentioned in the criterion text.
+* Criterion Rule: A logical expression that could be interpreted programmatically, based on the criterion text.
+
+Since the criterion text mentions a disease (Pneumonitis/Interstitial Lung Disease), the Disease column is populated. As no biomarker or prior therapy is mentioned, those columns remain empty. The Criterion Rule is a concise representation of the criterion text, which could be used in a programmatic interpretation of the eligibility criteria.

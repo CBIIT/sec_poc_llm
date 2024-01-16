@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| All females of childbearing potential must have a blood or urine pregnancy test within 72 hours prior to randomization to rule out pregnancy | Inclusion | None | None | None | (Female ∧ Childbearing Potential ∧ No Hysterectomy or Bilateral Oophorectomy ∧ Not Postmenopausal) → Pregnancy Test |
+
+Note:
+
+* Female is a canonical name for the disease/condition.
+* Childbearing Potential is a canonical name for the disease/condition.
+* Hysterectomy and Bilateral Oophorectomy are canonical names for the surgical procedures.
+* Postmenopausal is a canonical name for the disease/condition.
+* Pregnancy Test is a canonical name for the biomarker.

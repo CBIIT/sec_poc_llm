@@ -1,0 +1,8 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Willing to provide a representative fresh tumor tissue specimen prior to enrollment | Inclusion | None | None | Palbociclib and AI or fulvestrant for Phase 1b, or palbociclib or ribociclib and AI or fulvestrant for Phase 2 | (Participant.willingness_to_provide_tumor_specimen = true) ∧ (Tumor.freshness = "fresh") ∧ (Tumor.tissue_type = "representative") ∧ (Study.phase = "Phase 1b" ∨ Study.phase = "Phase 2") ∧ (Participant.treatment_history.includes("palbociclib") ∧ Participant.treatment_history.includes("AI") ∨ Participant.treatment_history.includes("fulvestrant")) |
+| Participants with bone only disease WITHOUT a soft tissue component, may opt out of the tumor biopsy | Inclusion | None | None | None | (Participant.disease.type = "bone only") ∧ (Participant.disease.soft_tissue_component = false) |
+
+Note:
+
+* Disease, Biomarker, and Prior Therapy

@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Prior chemotherapy, targeted small molecule therapy, or radiation therapy within 2 weeks of study Day 1 or not recovered from adverse events caused by a previously administered agent | Exclusion |  |  | Chemotherapy, targeted small molecule therapy, radiation therapy | Criterion Rule: (!(Chemotherapy OR Targeted Small Molecule Therapy OR Radiation Therapy) AND (Not Recovered From Adverse Events)) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: Denotes whether the criterion is an inclusion or exclusion criterion.
+* Disease: None, since the criterion does not mention a specific disease or condition.
+* Biomarker: None, since the criterion does not mention a specific biomarker.
+* Prior Therapy: Chemotherapy, targeted small molecule therapy, and radiation therapy, since the criterion mentions these therapies as reasons for exclusion.
+* Criterion Rule: A logical expression that could be interpreted programmatically. The criterion rule is "not recovered from adverse events caused by a previously administered agent" and is represented using the logical operators (!) for negation, (OR) for disjunction, and (AND) for conjunction.

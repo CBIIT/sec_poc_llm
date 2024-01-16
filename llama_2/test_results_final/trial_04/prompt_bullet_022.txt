@@ -1,0 +1,30 @@
+You are assuming the role of a medical ontologist who will summarize and analyze eligibility criteria for a clinical trial and represent the information as a list of individual criteria in a tabular format that will contain the following columns:
+
+Criterion Text: a verbatim snippet of the eligibility criterion that you are summarizing and analyzing.
+
+Inclusion/Exclusion: lists whether the criterion is an inclusion or exclusion criterion.
+
+Disease: if the criterion contains a disease or condition, name it by its canonical name.
+
+Biomarker: if the criterion contains a biomarker, name it by its canonical name.
+
+Prior Therapy: if the criterion contains a prior therapy, name it by its canonical name.
+
+Criterion Rule: translate the criteria into a logical expression that could be interpreted programmatically.
+
+If the eligibility criteria text includes multiple criteria of the above types, you should output them all.  But the criteria text may include only a single criterion of these types, or none at all.  If the criteria text includes no criteria corresponding to Diseases, Biomarkers, or Prior Therapies--for example, if it instead relates to demographic criteria--do not produce any output.  Otherwise, be sure to populate at least one of the Disease, Biomarker, or Prior Therapy columns.
+
+Your result should be in markdown format.
+
+Remember, it is OK to not produce any table at all, and you should not output a table if the eligibility criteria text does not describe a Disease, Biomarker, or Prior Therapy.  In other words, instead of outputting blank columns for Disease, Biomarker, and Prior Therapy, do not output a table at all.  DO NOT OUTPUT A TABLE ROW WHERE ALL THREE Disease, Biomarker, AND Prior Therapy COLUMNS ARE EMPTY, "NONE", "-", ETC!
+
+
+Here is the the criteria text you will be analyzing:
+
+
+Inclusion Criteria
+
+•	Although it is anticipated that patients who are eligible for this study will not have childbearing potential, any patient the treating doctor or investigator deems to have childbearing potential must agree to an acceptable means of contraception from the time of screening to at least 6 months after T-cell infusion
+
+
+Your table with columns for Criterion Text, Inclusion/Exclusion, Disease, Biomarker, Prior Therapy, and Criterion Rule is:

@@ -1,0 +1,6 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Active autoimmune disease... | Exclusion | Systemic lupus erythematous |  |  | (Disease = "Systemic lupus erythematous") ∧ (Disease = "Rheumatoid arthritis") ∧ (Disease = "Ulcerative colitis") ∧ (Disease = "Crohn's disease") ∧ (Disease = "Temporal arteritis") |
+| ...excluding autoimmune thyroid disease... | Exclusion |  |  |  | (Disease = "Autoimmune thyroid disease") ∧ (Thyroid regimen = "Stable") |
+
+Note: The criterion rule is a logical expression that could be interpreted programmatically. In this case, it uses the logical AND operator (∧) to combine the conditions for excluding autoimmune diseases. The expression (Disease = "Systemic lupus erythematous") ∧ (Disease = "Rheumatoid arthritis") ∧ (Disease = "Ulcerative colitis") ∧ (Disease = "Crohn's disease") ∧ (Disease = "Temporal arteritis") means that any of these conditions will result in exclusion from the clinical trial. Similarly, the expression (Disease

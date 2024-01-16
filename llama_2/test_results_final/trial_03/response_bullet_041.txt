@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Unresolved diarrhea >= grade 2, per Common Terminology Criteria for Adverse Events (CTCAE) version (v)5.0 | Exclusion | None | None | None | !(diarrhea_grade < 2) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name is listed.
+* Biomarker: If the criterion contains a biomarker, its canonical name is listed.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name is listed.
+* Criterion Rule: A logical expression that could be interpreted programmatically to evaluate whether a patient meets the criterion. In this case, the criterion rule is "!(diarrhea_grade < 2)", which means that the patient does not meet the criterion if their diarrhea is unresolved and grade 2 or higher according to CTCAE v5.0.

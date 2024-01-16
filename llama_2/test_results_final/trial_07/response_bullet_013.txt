@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Serum creatinine ≤ 1.5 X upper limit of normal (ULN) OR measured or calculated creatinine clearance (glomerular filtration rate [GFR] can also be used in place of creatinine or creatinine clearance [CrCl]) ≥ 60 mL/min for subject with creatinine levels > 1.5 X institutional ULN | Inclusion | None | None | None | creatinine ≤ 1.5 X ULN OR (creatinine > 1.5 X ULN) AND (GFR ≥ 60 mL/min) |
+
+Note:
+
+* The criterion text specifies an inclusion criterion.
+* There is no disease or biomarker specified in the criterion text.
+* The criterion text mentions prior therapy (creatinine levels > 1.5 X institutional ULN), but it does not specify a particular therapy.
+* The criterion rule is a logical expression that combines the conditions mentioned in the criterion text.

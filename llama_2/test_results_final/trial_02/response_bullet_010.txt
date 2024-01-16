@@ -1,0 +1,7 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| The maximum time requirement between surgery and randomization must be: | Inclusion | None | None | None | (time since surgery ≤ 120 days) ∧ (no adjuvant chemotherapy) |
+|  | | | | | (time since surgery ≤ 270 days) ∧ (adjuvant chemotherapy) |
+|  | | | | | (time since surgery ≤ 330 days) ∧ (adjuvant chemotherapy ∧ radiation therapy) |
+
+Note: The criterion text describes three different time requirements based on whether or not adjuvant chemotherapy and/or radiation therapy were administered. Therefore, there are three separate criterion rules.

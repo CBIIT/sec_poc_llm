@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Prior anti-cancer monoclonal antibody (mAb) within 4 weeks prior to study Day 1 or not recovered from an adverse event caused by mAbs administered more than 4 weeks earlier | Exclusion |  |  | Monoclonal antibody therapy | Not recovered from an adverse event caused by mAbs administered more than 4 weeks earlier OR (monoclonal antibody therapy within 4 weeks prior to study Day 1) |
+
+Explanation:
+
+* Criterion Text: The text of the exclusion criterion is "Prior anti-cancer monoclonal antibody (mAb) within 4 weeks prior to study Day 1 or not recovered from an adverse event caused by mAbs administered more than 4 weeks earlier."
+* Inclusion/Exclusion: This is an exclusion criterion, so the value is "Exclusion."
+* Disease: This criterion does not mention a specific disease, so this column is left blank.
+* Biomarker: This criterion does not mention a specific biomarker, so this column is left blank.
+* Prior Therapy: This criterion mentions prior monoclonal antibody therapy, so the value is "Monoclonal antibody therapy."
+* Criterion Rule: The criterion

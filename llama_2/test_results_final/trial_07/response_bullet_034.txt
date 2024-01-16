@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Pregnancy or breast feeding | Exclusion | None | None | None | Pregnancy OR Breastfeeding |
+| Should a woman become pregnant or suspect she is pregnant while participating in this study, she should inform her treating physician immediately | Exclusion | None | None | None | Pregnancy OR Breastfeeding |
+| Because there is an unknown but potential risk for adverse events in nursing infants secondary to treatment of the mother with pembrolizumab breastfeeding must be discontinued if the mother is treated with pembrolizumab | Exclusion | None | None | Pembrolizumab | Pregnancy OR Breastfeeding |
+
+Note:
+
+* Pregnancy and Breastfeeding are not diseases or biomarkers, but they are conditions that are relevant to the exclusion criteria.
+* Pembrolizumab is a drug, not a disease or biomarker, but it is relevant to the exclusion criteria as it is the treatment that poses a potential risk to nursing infants.
+* The criterion rule is a logical expression that could be interpreted programmatically. In this case, the criterion rule is "Pregnancy OR Breastfeeding", which means that if either condition is true, the patient does not meet the criteria.

@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Known active central nervous system (CNS) metastases and/or carcinomatous meningitis | Exclusion | Metastatic brain disease | - | - | !(CNSMetastases || CarcinomatousMeningitis) |
+
+Note:
+
+* Criterion Text: "Known active central nervous system (CNS) metastases and/or carcinomatous meningitis"
+* Inclusion/Exclusion: "Exclusion" indicates that this criterion is an exclusion criterion.
+* Disease: "Metastatic brain disease" is the disease associated with this criterion.
+* Biomarker: There is no biomarker associated with this criterion.
+* Prior Therapy: There is no prior therapy associated with this criterion.
+* Criterion Rule: The criterion rule is "!(CNSMetastases || CarcinomatousMeningitis)", which translates to "not (CNS metastases or carcinomatous meningitis)". This means that patients with known active CNS metastases and/or carcinomatous meningitis are excluded from the clinical trial.

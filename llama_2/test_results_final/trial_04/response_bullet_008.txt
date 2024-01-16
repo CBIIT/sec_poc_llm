@@ -1,0 +1,15 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Historical FFPE will be requested also for Western Blot and IHC analysis for exploration of the correlation to PCR results, but it is not necessary to have obtained it or the results before enrollment | Inclusion | None | None | None | NOT (empty) |
+| Tissue IHC FSHR positivity in the historical FFPE sample is not required for eligibility | Inclusion | None | FSHR | None | NOT (FSHR) |
+
+Here's a brief explanation of each column:
+
+* Criterion Text: The verbatim text of the eligibility criterion.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion (I) or exclusion (E) criterion.
+* Disease: The name of the disease or condition associated with the criterion, if any.
+* Biomarker: The name of the biomarker associated with the criterion, if any.
+* Prior Therapy: The name of the prior therapy associated with the criterion, if any.
+* Criterion Rule: A logical expression that could be interpreted programmatically to determine whether a patient meets the criterion. NOT (empty) means that the criterion is not empty, and NOT (FSHR) means that the criterion is not FSHR.
+
+Note that since the criteria text does not mention any specific disease, bi

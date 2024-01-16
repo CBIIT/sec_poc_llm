@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Lymph node negative | Inclusion | None | None | None | LymphNodeNegative() |
+
+In this case, since the eligibility criteria text only includes a single criterion related to lymph node status, the table only has one row. The Criterion Text column contains the verbatim text from the eligibility criteria, and the Inclusion/Exclusion column indicates that this is an inclusion criterion. Since the criterion does not mention a specific disease, biomarker, or prior therapy, those columns are left empty. The Criterion Rule column translates the criterion into a logical expression that could be interpreted programmatically, in this case, LymphNodeNegative().

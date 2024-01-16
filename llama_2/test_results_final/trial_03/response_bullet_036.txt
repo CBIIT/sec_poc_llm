@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Congenital long QT syndrome | Exclusion | Long QT syndrome |  |  | HasCongenitalLongQTSyndrome() |
+
+In this table, the criterion text is "Congenital long QT syndrome", which is an exclusion criterion. The disease associated with this criterion is Long QT syndrome, which is a genetic disorder that affects the heart's electrical activity. There are no biomarkers or prior therapies associated with this criterion, so those columns are left blank. The criterion rule is "HasCongenitalLongQTSyndrome()", which is a logical expression that could be interpreted programmatically to determine whether a patient has congenital long QT syndrome.

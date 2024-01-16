@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Any advanced solid tumor, with the exception of colorectal carcinoma (CRC), which is Microsatellite Instability (MSI)-High (MSI-H) | Inclusion | None | None | None | (Disease != "Colorectal Carcinoma" OR (Disease == "Colorectal Carcinoma" AND Biomarker == "Microsatellite Instability-High")) |
+
+Note:
+
+* Disease: Colorectal Carcinoma (CRC)
+* Biomarker: Microsatellite Instability-High (MSI-H)
+* Prior Therapy: None
+* Criterion Rule: The patient must have an advanced solid tumor that is not Colorectal Carcinoma, or if the patient has Colorectal Carcinoma, it must be Microsatellite Instability-High.

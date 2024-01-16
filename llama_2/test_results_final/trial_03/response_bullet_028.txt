@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Major surgery, radiotherapy, anticancer therapy, or investigational agents ≤ 4 weeks of treatment day 1 or ≤ 5 half-lives, whichever is shorter | Exclusion |  |  | Major surgery, radiotherapy, anticancer therapy, or investigational agents |  ~((Major surgery) ∧ (radiotherapy) ∧ (anticancer therapy) ∧ (investigational agents)) ∧ (treatment day 1 ≤ 4 weeks) ∧ (treatment day 1 ≤ 5 half-lives) |
+
+Explanation:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: Denotes whether the criterion is an inclusion or exclusion criterion. In this case, it's an exclusion criterion.
+* Disease: Not applicable, as the criterion does not mention a specific disease or condition.
+* Biomarker: Not applicable, as the criterion does not mention a specific biomarker.
+* Prior Therapy: The criterion mentions various forms of therapy (surgery, radiotherapy, anticancer therapy, investigational agents), so we list them all.
+* Criterion Rule: A logical expression that could be interpreted programmatically. The

@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| History of or active autoimmune disease requiring systemic treatment in the last 6 months | Exclusion | Autoimmune disease |  |  | HasHistoryOfOrActiveAutoimmuneDisease(systemic, 6 months) |
+| Persistent immune-mediated toxicity caused by checkpoint inhibitor therapy > Grade 2 | Exclusion |  |  | Checkpoint inhibitor therapy | HasPersistentImmuneMediatedToxicity(checkpoint inhibitor, > Grade 2) |
+
+Note:
+
+* "HasHistoryOfOrActiveAutoimmuneDisease" is a logical expression that indicates the patient has a history of or active autoimmune disease requiring systemic treatment in the last 6 months.
+* "HasPersistentImmuneMediatedToxicity" is a logical expression that indicates the patient has persistent immune-mediated toxicity caused by checkpoint inhibitor therapy with a severity greater than Grade 2.

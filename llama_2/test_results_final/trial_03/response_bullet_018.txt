@@ -1,0 +1,12 @@
+Sure! Here's the table you requested:
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| AST (serum glutamic-oxaloacetic transaminase [SGOT])/ALT (serum glutamate pyruvate transaminase [SGPT]) ≤ 5 x institutional upper limit of normal (ULN) for patients with liver metastasis | Inclusion | Liver Metastasis | - | - | AST/ALT ≤ 5 x ULN |
+
+The Criterion Text is a verbatim snippet of the eligibility criterion.
+The Inclusion/Exclusion column indicates whether the criterion is an inclusion or exclusion criterion.
+The Disease column names the disease or condition specified in the criterion. In this case, it's "Liver Metastasis".
+The Biomarker column names the biomarker specified in the criterion. Since there is no biomarker specified, this column is empty.
+The Prior Therapy column names the prior therapy specified in the criterion. Since there is no prior therapy specified, this column is empty.
+The Criterion Rule translates the criterion into a logical expression that could be interpreted programmatically. In this case, it's "AST/ALT ≤ 5 x ULN".

@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Women must not be pregnant or breast-feeding | Exclusion | None | None | None | !Pregnant and !BreastFeeding |
+
+Note:
+
+!Pregnant: Pregnancy status
+!BreastFeeding: Breastfeeding status
+
+Explanation:
+
+The exclusion criterion states that women who are pregnant or breast-feeding are not eligible for the clinical trial because crizotinib may cause fetal harm. Therefore, the criterion is an exclusion criterion, and the disease/condition associated with this criterion is none. There are no biomarkers or prior therapies mentioned in the criterion text, so those columns remain empty. The criterion rule can be translated to a logical expression as "not pregnant and not breast-feeding" (!Pregnant and !BreastFeeding).

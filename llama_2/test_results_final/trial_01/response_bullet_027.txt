@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Known leptomeningeal metastases | Exclusion | Leptomeningeal metastases | - | - | Leptomeningeal metastases (defined as positive CSF cytology and/or unequivocal radiological evidence of clinically significant leptomeningeal involvement. CSF sampling is not required in the absence of suggestive symptoms to exclude leptomeningeal involvement) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name is listed.
+* Biomarker: If the criterion contains a biomarker, its canonical name is listed.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name is listed.
+* Criterion Rule: A logical expression that could be interpreted programmatically to translate the criterion.
+
+In this case, the criterion text describes an exclusion criterion for known leptomeningeal metastases. Therefore, the table includes an exclusion criterion, disease (leptomeningeal metastases), and a criterion rule that defines the condition for leptomeningeal metastases.

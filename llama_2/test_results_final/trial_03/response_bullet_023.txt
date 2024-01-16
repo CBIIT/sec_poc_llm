@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Presence of >= 1 metastatic sites of disease that can be safely accessed for core needle biopsy and patient willingness to undergo fresh tissue biopsies of up to 3 lesions. | Inclusion | Metastatic disease | - | - | (Metastatic site accessible and patient willing) ∧ (Number of metastatic sites ≥ 1) |
+
+Note:
+
+* Disease: Metastatic disease (since the criterion refers to metastatic sites of disease)
+* Biomarker: None (the criterion does not mention any specific biomarkers)
+* Prior Therapy: None (the criterion does not mention any prior therapy requirements)
+* Criterion Rule: The rule is a logical expression that combines the conditions of accessible metastatic site(s) and patient willingness to undergo fresh tissue biopsies. The expression is (Metastatic site accessible and patient willing) ∧ (Number of metastatic sites ≥ 1), which means that both conditions must be true for the patient to meet the inclusion criterion.

@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Hemoglobin >= 9 g/dL or >= 5.6 mmol/L without transfusion or erythropoietin (EPO) dependency (within 7 days of assessment) | Inclusion | Anemia | Hemoglobin | Erythropoietin (EPO) | Criterion Text = "Hemoglobin >= 9 g/dL or >= 5.6 mmol/L without transfusion or erythropoietin (EPO) dependency (within 7 days of assessment)" |
+
+Note:
+
+* The criterion text specifies an inclusion criterion for patients with a hemoglobin level of at least 9 g/dL or 5.6 mmol/L without transfusion or EPO dependency within 7 days of assessment.
+* The disease associated with this criterion is anemia.
+* The biomarker associated with this criterion is hemoglobin.
+* The prior therapy associated with this criterion is EPO.
+* The criterion rule translates the criterion text into a logical expression that could be interpreted programmatically.

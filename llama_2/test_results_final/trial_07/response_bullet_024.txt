@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients with brain metastases for whom complete surgical resection is clinically appropriate | Exclusion | Brain Metastases | - | - | NOT (Brain Metastases AND Complete Surgical Resection Is Clinically Appropriate) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: "Exclusion" since this criterion describes a patient population that is not eligible for the clinical trial.
+* Disease: "Brain Metastases" since this criterion mentions patients with brain metastases.
+* Biomarker: "-" since this criterion does not mention any biomarkers.
+* Prior Therapy: "-" since this criterion does not mention any prior therapies.
+* Criterion Rule: A logical expression that could be interpreted programmatically. In this case, the criterion rule is "NOT (Brain Metastases AND Complete Surgical Resection Is Clinically Appropriate)" which means that patients with brain metastases who are not candidates for complete surgical resection are excluded from the clinical trial.

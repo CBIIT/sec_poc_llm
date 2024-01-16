@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients who are eligible for this study will not have childbearing potential | Inclusion |  |  |  | Patients without childbearing potential |
+| Any patient the treating doctor or investigator deems to have childbearing potential must agree to an acceptable means of contraception from the time of screening to at least 6 months after T-cell infusion | Inclusion |  |  |  | Patients with childbearing potential must agree to contraception |
+
+Note:
+
+* The first criterion is an inclusion criterion that specifies patients without childbearing potential are eligible for the study.
+* The second criterion is also an inclusion criterion that specifies patients with childbearing potential must agree to contraception to be eligible for the study.
+* There are no disease, biomarker, or prior therapy criteria in the given eligibility criteria text.
+* The criterion rule for the first criterion is a simple condition that requires patients to lack childbearing potential.
+* The criterion rule for the second criterion is a conditional statement that requires patients with childbearing potential to agree to contraception.

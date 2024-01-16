@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+|  Has received a live vaccine within 30 days prior to the first dose of trial treatment | Exclusion |  |  |  | formula not applicable, no disease, biomarker, or prior therapy is mentioned |
+
+The criterion text describes an exclusion criterion related to a live vaccine received within 30 days prior to the first dose of trial treatment. No disease, biomarker, or prior therapy is mentioned, so the corresponding columns remain empty.

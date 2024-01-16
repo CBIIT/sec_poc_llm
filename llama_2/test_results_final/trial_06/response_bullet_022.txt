@@ -1,0 +1,3 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+|  Prior pelvic RT | Exclusion |  |  | Pelvic RT | Not Pelvic RT |

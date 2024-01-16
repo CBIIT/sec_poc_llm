@@ -1,0 +1,8 @@
+Sure! Here is the table you requested:
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Positive for translocation or inversion events involving the ALK gene locus (e.g. resulting in EML4-ALK fusion) as defined by a Clinical Laboratory Improvement Act (CLIA)-approved test | Inclusion | ALK-positive NSCLC | ALK | N/A | (ALK-positive NSCLC) ∧ (EML4-ALK fusion) |
+| ALK protein expression by immunohistochemistry (IHC) | Inclusion | ALK-positive NSCLC | ALK | N/A | (ALK-positive NSCLC) ∧ (IHC-positive) |
+| ALK rearrangement identified by next generation (NextGen) sequencing | Inclusion | ALK-positive NSCLC | ALK | N/A | (ALK-positive NSCLC) ∧ (NGS-positive) |
+| Local CLIA certified laboratory: Report must indicate the results as well as the CLIA number of the laboratory which performed the assay; tissue must be available for submission for central, retrospective confirmation of the ALK fusion status via ALCHEMIST-SCREEN (ALLIANCE A151216) | Inclusion | ALK-positive NSCLC | ALK | N

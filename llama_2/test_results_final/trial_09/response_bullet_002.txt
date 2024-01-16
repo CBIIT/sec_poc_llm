@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Measurable disease as defined by RECIST v1.1 criteria | Inclusion |  |  |  | MeasurableDisease(RECISTv1.1) |
+
+Note:
+
+* Measurable disease is an inclusion criterion.
+* No specific disease or biomarker is mentioned in the given criteria text.
+* Prior therapy is not mentioned.
+* The criterion rule is "MeasurableDisease(RECISTv1.1)", which means that the patient must have measurable disease according to the RECIST v1.1 criteria.

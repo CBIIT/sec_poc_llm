@@ -1,0 +1,7 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Known chronic hepatitis B virus (HBV) or hepatitis C virus infection with a detectable viral load. | Exclusion | Hepatitis B | - | - | !HBVviralLoad or !HCVviralLoad |
+| Patients with an undetectable HBV viral load on appropriate suppressive therapy are eligible. | Inclusion | Hepatitis B | - | HBVsuppressiveTherapy | HBVviralLoad=0 |
+| Patients with an undetectable HCV viral load are eligible | Inclusion | Hepatitis C | - | HCVsuppressiveTherapy | HCVviralLoad=0 |
+
+Note: The "!" symbol in the Criterion Rule column indicates a negation operator. In this case, it means that the criterion is met if the viral load is undetectable, which is the opposite of the initial exclusion criterion.

@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Measurable disease by RECIST 1.1 | Inclusion |  |  |  | MeasurableDisease(RECIST 1.1) |
+
+Note:
+
+* Criterion Text: "Measurable disease by RECIST 1.1" is an inclusion criterion.
+* Inclusion/Exclusion: Inclusion.
+* Disease: Not applicable (no disease or condition is specified in the criterion text).
+* Biomarker: Not applicable (no biomarker is specified in the criterion text).
+* Prior Therapy: Not applicable (no prior therapy is specified in the criterion text).
+* Criterion Rule: MeasurableDisease(RECIST 1.1) represents the criterion as a logical expression that could be interpreted programmatically. The RECIST 1.1 criteria are used to assess the measurability of cancer lesions.

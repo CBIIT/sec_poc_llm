@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| No known interstitial fibrosis or interstitial lung disease | Exclusion | Interstitial fibrosis | - | - | !(has_interstitial_fibrosis ∨ has_interstitial_lung_disease) |
+
+Here's a breakdown of how I filled in each column:
+
+* Criterion Text: This is a direct copy of the exclusion criterion from the given criteria text.
+* Inclusion/Exclusion: Since the criterion is an exclusion criterion, I marked it as "Exclusion".
+* Disease: I identified the disease mentioned in the criterion text as "Interstitial fibrosis" and "Interstitial lung disease". I used the canonical name for the disease.
+* Biomarker: Since the criterion text does not mention a biomarker, I left this column empty.
+* Prior Therapy: Since the criterion text does not mention prior therapy, I left this column empty.
+* Criterion Rule: I translated the criterion text into a logical expression that could be interpreted programmatically. The expression "!(has_interstitial_fibrosis ∨ has_interstitial_lung_disease)" means "not (has interstitial fibrosis or has interstitial lung disease)". The "has_

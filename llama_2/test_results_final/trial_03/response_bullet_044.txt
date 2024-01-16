@@ -1,0 +1,13 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Impaired gastrointestinal (GI) function that may alter absorption of medicines | Exclusion | Inflammatory bowel disease | - | - | NOT (GI_Function_Normal) |
+|  |  | - | - | - |  |
+| Uncontrolled vomiting | Exclusion | - | - | - | NOT (Vomiting_Controlled) |
+|  |  | - | - | - |  |
+| Major stomach or small bowel resection | Exclusion | - | - | - | NOT (Bowel_Surgery_None) |
+
+Note:
+
+* "GI_Function_Normal" refers to a logical expression that evaluates to true if the patient's gastrointestinal function is normal, and false otherwise.
+* "Vomiting_Controlled" refers to a logical expression that evaluates to true if the patient's vomiting is controlled, and false otherwise.
+* "Bowel_Surgery_None" refers to a logical expression that evaluates to true if the patient has not had major stomach or small bowel resection, and false otherwise.

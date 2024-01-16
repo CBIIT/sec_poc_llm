@@ -1,0 +1,3 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Visceral crisis or impending visceral crisis at time of screening | Exclusion |  |  |  | VisceralCrisisAtScreening = true |

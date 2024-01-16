@@ -1,0 +1,8 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| No use of medications, herbals, or foods that are known potent cytochrome P450, subfamily 3A, polypeptide 4 (CYP3A4) inhibitors or inducers, included but not limited to those outlined | Exclusion |  |  |  | "neg (CYP3A4_inhibitor OR CYP3A4_inducer)" |
+
+Note:
+
+* CYP3A4_inhibitor: A medication, herbal, or food that inhibits the activity of the cytochrome P450, subfamily 3A, polypeptide 4 (CYP3A4) enzyme.
+* CYP3A4_inducer: A medication, herbal, or food that induces the activity of the cytochrome P450, subfamily 3A, polypeptide 4 (CYP3A4) enzyme.

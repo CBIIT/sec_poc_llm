@@ -1,0 +1,16 @@
+Sorry, but the provided eligibility criteria text does not contain any criteria related to diseases, biomarkers, or prior therapies. Therefore, I cannot produce a table with the requested columns.
+
+However, I can suggest a modified set of columns that could be used to represent the eligibility criteria in a tabular format:
+
+* Criterion Text: a verbatim snippet of the eligibility criterion
+* Inclusion/Exclusion: lists whether the criterion is an inclusion or exclusion criterion
+* Type: categorizes the criterion into one of the following types: demographic, clinical, laboratory, imaging, or other
+* Criterion Rule: translates the criterion into a logical expression that could be interpreted programmatically
+
+Using these columns, the table for the provided eligibility criteria text would be:
+
+| Criterion Text | Inclusion/Exclusion | Type | Criterion Rule |
+| --- | --- | --- | --- |
+| Stated willingness to comply with all study procedures and availability for the duration of the study | Inclusion | Demographic | (Willingness = true) ∧ (Availability = true) |
+
+Note that the Type column categorizes the criterion into a demographic criterion, as it relates to the patient's willingness and availability to participate in the study. The Criterion Rule column translates the criterion into a logical expression that could be interpreted programmatically.

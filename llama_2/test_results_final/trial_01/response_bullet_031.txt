@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| No washout is required for endocrine therapy. If a patient has been on ovarian suppression for at least 28 days prior to initiation of study treatment, continuation of ovarian suppression is permitted on protocol. Starting a new endocrine therapy during protocol therapy is not permitted | Exclusion |  |  | Endocrine therapy | Criterion Rule: (HasEndocrineTherapy = false) ∧ (OvarianSuppressionForAtLeast28Days = true) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: Denotes whether the criterion is an inclusion or exclusion criterion.
+* Disease: No disease is specified in this criterion.
+* Biomarker: No biomarker is specified in this criterion.
+* Prior Therapy: The criterion mentions endocrine therapy, which is a prior therapy.
+* Criterion Rule: A logical expression that could be interpreted programmatically. In this case, the rule states that a patient is eligible if they have not received endocrine therapy (HasEndocrineTherapy = false) and have been on ovarian suppression for at least 28 days prior to initiation of study treatment (OvarianSuppressionForAtLe

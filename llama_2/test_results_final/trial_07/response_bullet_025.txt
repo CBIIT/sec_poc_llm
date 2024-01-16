@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients with lung cancer with squamous histology | Exclusion | Lung cancer | - | - | NOT (Lung cancer with squamous histology) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: The name of the disease or condition specified in the criterion, using its canonical name.
+* Biomarker: The name of the biomarker specified in the criterion, using its canonical name.
+* Prior Therapy: The name of the prior therapy specified in the criterion, using its canonical name.
+* Criterion Rule: A logical expression that could be interpreted programmatically to evaluate whether a patient meets the criterion.
+
+In this case, the criterion text specifies an exclusion criterion for patients with lung cancer with squamous histology. Therefore, the table includes an exclusion criterion with the specified disease (Lung cancer) and no biomarker or prior therapy. The criterion rule is a negation of the disease with the specified histology, which means that patients with lung cancer without squamous histology would meet this criterion.

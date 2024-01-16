@@ -1,0 +1,20 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| COHORT A: Unequivocal evidence of new and/or progressive brain metastases, and at least one of the following scenarios | Inclusion | Brain Metastases | None | None | (Scenario 1) |
+|  |  |  |  |  | (Scenario 2) |
+|  |  |  |  |  | (Scenario 3) |
+
+Scenario 1:
+(1) Unequivocal evidence of new and/or progressive brain metastases and Karnofsky performance status (KPS) ≥70%
+
+Scenario 2:
+(2) Unequivocal evidence of new and/or progressive brain metastases and systemic treatment naïve for brain metastases
+
+Scenario 3:
+(3) Unequivocal evidence of new and/or progressive brain metastases and prior treatment with stereotactic radiosurgery (SRS) or surgical resection for brain metastases, with at least 14 days elapsed since the last treatment and KPS ≥70%
+
+Note:
+
+* Disease: Brain Metastases
+* Biomarker: None
+* Prior Therapy: Stereotactic radiosurgery (SRS) or surgical resection for brain metastases (in Scenario 3

@@ -1,0 +1,3 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| The effects of paxalisib (GDC-0084) on the developing human fetus are unknown and radiotherapy has known teratogenic effects so women of child-bearing potential and men must agree to use adequate contraception (barrier method of birth control; abstinence) prior to study entry and for the duration of study participation and 7 months after completion of trastuzumab administration per recommendations from the trastuzumab package insert | Inclusion | None | None | Trastuzumab | CriterionText contains "trastuzumab" |

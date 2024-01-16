@@ -1,0 +1,15 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Known intolerance to trastuzumab that persists after appropriate medical management | Exclusion | None | None | Trastuzumab | !tolerates(trastuzumab) |
+
+
+Explanation:
+
+1. Criterion Text: "Known intolerance to trastuzumab that persists after appropriate medical management."
+2. Inclusion/Exclusion: Exclusion.
+3. Disease: None.
+4. Biomarker: None.
+5. Prior Therapy: Trastuzumab.
+6. Criterion Rule: !tolerates(trastuzumab), which means "not intolerant to trastuzumab" or "tolerates trastuzumab."
+
+Note: The criterion text describes a situation where patients who have a history of prior intolerance to trastuzumab are eligible to participate if they can tolerate trastuzumab thereafter without reactions. Therefore, the criterion rule is negating the intolerance to trastuzumab.

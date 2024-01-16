@@ -1,0 +1,3 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Women of childbearing potential and sexually active males must be strongly advised to practice abstinence or use an accepted and effective method of contraception | Inclusion |  |  |  | "Abstinence or effective contraception" |

@@ -1,0 +1,8 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients with celiac disease controlled by diet alone | Exclusion | Celiac disease |  |  | celiac_disease_controlled_by_diet = true |
+| Receipt of live attenuated vaccination within 30 days of receiving cetrelimab | Exclusion |  |  | Live attenuated vaccination within 30 days | vaccination_within_30_days = false |
+| Prisoners or subjects who are involuntarily incarcerated | Exclusion |  |  |  | prisoner = false |
+| Subjects who are compulsorily detained for treatment of either a psychiatric or physical (e.g. infectious disease) illness | Exclusion |  |  |  | detained_for_treatment = false |
+
+Note: The "Criterion Rule" column translates the criterion into a logical expression that could be interpreted programmatically. The syntax used is a simplified version of SQL, where "=" means "is equal to", "==" means "is not equal to", "&&" means "and", and "||" means "or". The values used in the expressions are based on the values mentioned in the criterion text. For example, "celiac_disease_controlled_by_diet = true" means that the patient has celiac disease

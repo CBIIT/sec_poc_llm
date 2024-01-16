@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Concurrent use of testosterone supplementation as it is contraindicated during prostate cancer treatment | Exclusion | Prostate Cancer |  |  | HasTestosteroneSupplementation(true) ∧ HasProstateCancer(true) |
+
+In this table, the Criterion Text column contains the verbatim snippet of the exclusion criterion. The Inclusion/Exclusion column specifies whether the criterion is an inclusion or exclusion criterion. The Disease column names the disease or condition specified in the criterion (in this case, "Prostate Cancer"). The Biomarker column is empty since no biomarker is specified in the criterion. The Prior Therapy column is empty since no prior therapy is specified in the criterion. The Criterion Rule column translates the criterion into a logical expression that could be interpreted programmatically. In this case, the rule states that if a patient has testosterone supplementation (HasTestosteroneSupplementation(true)) and has prostate cancer (HasProstateCancer(true)), then they do not meet the criterion.

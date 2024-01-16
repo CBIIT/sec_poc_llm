@@ -1,0 +1,9 @@
+Sure! Here's the table you requested:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Serious, non-healing or dehiscing wound | Exclusion | None | None | None | NOT (healing or dehiscing wound) |
+
+
+I hope this helps! Let me know if you have any questions.

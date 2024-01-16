@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Active infection requiring systemic therapy ≤ 7 days prior to first dose of study treatment. | Exclusion | None | None | None | !InfectionActive(7) |
+
+In this table, the Criterion Text is the verbatim snippet of the exclusion criterion. The Inclusion/Exclusion column indicates that this is an exclusion criterion. The Disease, Biomarker, and Prior Therapy columns are empty because this criterion does not relate to any specific disease, biomarker, or prior therapy. The Criterion Rule is a logical expression that could be interpreted programmatically, in this case, it is "!InfectionActive(7)" which means the patient has an active infection that requires systemic therapy within 7 days prior to the first dose of study treatment.

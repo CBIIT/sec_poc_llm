@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| For parenteral hydration and/or nutrition | Exclusion |  |  |  | FALSE |
+
+Note: As the given criteria text does not mention any disease, biomarker, or prior therapy, the corresponding columns are left empty. The criterion rule is represented as FALSE, indicating that the criterion is an exclusion criterion.

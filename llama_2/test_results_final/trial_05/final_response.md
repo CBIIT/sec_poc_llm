@@ -1,0 +1,31 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Histologically proven small cell (neuroendocrine) prostate carcinoma | Inclusion | Prostate cancer | - | - | (Disease = "Prostate cancer") |
+| Exclusive visceral metastases | Inclusion | Metastatic cancer | - | - | (exists (m:Metastasis {location: "visceral"})) |
+| Predominantly lytic bone metastases identified by plain x-ray or CT scan | Inclusion | Metastatic bone disease | - | - | (X-ray or CT scan evidence of lytic bone metastases) |
+| Bulky (>= 5 cm in longest dimension) lymphadenopathy or high-grade tumor mass in prostate/pelvis | Inclusion | Prostate cancer | N/A | N/A | (lymphadenopathy >= 5 cm) ∨ (tumor mass in prostate/pelvis is high-grade) |
+| Low PSA (=< 10 ng/mL) at initial presentation (prior to androgen ablation or at symptomatic progression in the castrate-setting) plus high volume (>= 20) bone metastases | Inclusion | Prostate Cancer | PSA | Androgen Ablation | PSA <= 10 ng/mL  |
+| Elevated serum lactate dehydrogenase (LDH) (>= 2 x ULN) or elevated serum carcinoembryonic antigen (CEA) (>= 2 x ULN) in the absence of other etiologies | Inclusion | None | LDH, CEA | None | (LDH >= 2 x ULN) OR (CEA >= 2 x ULN) |
+| Short interval (=< 180 days) to castrate-resistant progression following initiation of hormonal therapy | Inclusion | Prostate cancer | - | Hormonal therapy | (Prostate cancer) ∧ (Hormonal therapy initiation) ∧ (Castrate-resistant progression) ∧ (Interval < 180 days) |
+| Known loss or mutation (by CLIA certified molecular testing, IHC and/or DNA sequencing) in at least 2 of Tp53, RB1, and PTEN | Inclusion | None | Tp53, RB1, PTEN | None | (Tp53 != null && RB1 != null && PTEN != null) |
+| AVPC determination by DNA sequencing | Inclusion | None | TP53, RB1, PTEN | None | (TP53 OR RB1 OR PTEN) AND (exonic nonsynonymous missense OR stop-gain mutations OR frameshift OR non frameshift indels OR copy number losses) |
+| Patients who have castration-resistant disease progression per RECIST in the absence of PSA values rising to >= 1.0ng/ml as per Prostate Cancer Working Group 3 (PCWG3) PSA progression criteria (inclusion--- t) | Inclusion | Prostate cancer | - | - | Patients with castration-resistant prostate cancer and no rising PSA values are included |
+| Documented evidence of progressive disease as defined by any of the following: a) PSA progression: minimum of 2 rising values (3 measurements) obtained a minimum of 7 days apart with the last result being at least >= 1.0 ng/mL; b) New or increasing non-bone disease (RECIST); c) Positive bone scan with 2 or more new lesions (Prostate Cancer Working Group 3 [PCWG3]); d) Increasing symptoms unequivocally attributed to disease progression as judged by the treating physician and the principal investigator (PI) | Inclusion | Prostate cancer | - | - | Patients with documented evidence of progressive disease are included |
+| Any prior treatment for castration-resistant prostate cancer (CRPC) with carboplatin, cisplatin, cabazitaxel, PARP-inhibitor or an anti-PD1 or anti-PDL1 inhibitor | Exclusion | Prostate Cancer | None | Carboplatin, Cisplatin, Cabazitaxel, PARP-inhibitor, anti-PD1, anti-PDL1 | (Prior_Therapy = "Carboplatin" ∨ Prior_Therapy = "Cisplatin" ∨ Prior_Therapy = "Cabazitaxel" ∨ Prior_Therapy = "PARP-inhibitor" ∨ Prior_Therapy = "anti-PD1" ∨ Prior_Therapy = "anti-PDL1") → False |
+| Patients who have received more than one line of chemotherapy | Exclusion |  |  | Chemotherapy | !Chemotherapy.count > 1 |
+| Patients who have not recovered from adverse events secondary to systemic therapy (except for luteinizing hormone-releasing hormone [LHRH] agonist or antagonist treatment for prostate cancer, and bisphosphonates or RANK ligand inhibitors for bone strengthening), major surgery or radiotherapy for the treatment of prostate cancer to a grade =< 2 | Exclusion | Prostate cancer | None | None | Patients with adverse events from systemic therapy for prostate cancer that have not recovered to a grade =< 2 |
+| 	History or current diagnosis of MDS/AML | Exclusion | Myelodysplastic syndrome (MDS) | - | - | Not(MDS) |
+| Active or symptomatic viral hepatitis or chronic liver disease | Exclusion | Viral hepatitis | None | None | !(Viral hepatitis) |
+| A history of pneumonitis or extensive bilateral lung disease of non-malignant etiology | Exclusion | Pneumonitis | - | - | NOT (Pneumonitis OR extensive bilateral lung disease) |
+| Patients with symptomatic uncontrolled brain metastases or spinal cord compressions | Exclusion | Metastatic brain tumor | - | - | NOT (brain metastases is absent) AND NOT (spinal cord compression is absent) |
+| Current or prior use of immunosuppressive medication within 21 days before the first dose of cetrelimab | Exclusion |  |  | Systemic corticosteroids at physiological doses, which are not to exceed 10 mg/day of prednisone, or an equivalent corticosteroid or steroids as pre-medication for hypersensitivity reactions (e.g. CT scan premedication) | Not(ImmunosuppressiveMedicationUsedWithin21Days) |
+| Active or prior documented autoimmune or inflammatory disorders | Exclusion | Inflammatory bowel disease | - | - | - |
+|  | | (e.g., colitis or Crohn's disease) | - | - | - |
+|  | | Diverticulitis (with the exception of diverticulosis) | - | - | - |
+|  | | Systemic lupus erythematosus | - | - | - |
+|  | | Sarcoidosis syndrome | - | - | - |
+|  | | Wegener syndrome (granulomatosis with polyangiitis, Graves' disease, rheumatoid arthritis, hypophysitis, uveitis, etc.) | - | - | - |
+| Patients with vitiligo or alopecia | Exclusion | Vitiligo | - | - | NOT (has Vitiligo) AND NOT (has Alopecia) |
+| Patients with hypothyroidism (e.g., following Hashimoto syndrome) stable on hormone replacement | Exclusion | Hypothyroidism | - | Hormone replacement | NOT (Disease("Hypothyroidism") AND (Therapy("Hormone replacement") AND (Status("stable")))) |
+| Patients with celiac disease controlled by diet alone | Exclusion | Celiac disease |  |  | celiac_disease_controlled_by_diet = true |
+| Receipt of live attenuated vaccination within 30 days of receiving cetrelimab | Exclusion |  |  | Live attenuated vaccination within 30 days | vaccination_within_30_days = false |

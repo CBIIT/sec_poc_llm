@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| CNS complications for whom urgent neurosurgical intervention is indicated (e.g., resection, shunt placement) | Exclusion |  |  |  | CNS_complications_indicating_urgent_neurosurgical_intervention |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name is provided.
+* Biomarker: If the criterion contains a biomarker, its canonical name is provided.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name is provided.
+* Criterion Rule: A logical expression that could be interpreted programmatically to translate the criterion.
+
+In this case, the criterion text describes an exclusion criterion related to CNS complications requiring urgent neurosurgical intervention. No disease, biomarker, or prior therapy is specified in the given criterion text. Therefore, the table contains only the criterion text, inclusion/exclusion status, and a criterion rule that translates the criterion to a logical expression.

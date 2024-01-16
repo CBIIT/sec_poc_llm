@@ -1,0 +1,8 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards) | Inclusion | Breast cancer | Her-2/neu | - | Her-2/neu status: 0 or 1+ by IHC or not amplified by CAP/ASCO standards |
+
+Note:
+
+* Her-2/neu is a biomarker, not a disease.
+* The criterion rule is a logical expression that translates the criterion text into a programmatically interpretable format. In this case, the rule is "Her-2/neu status: 0 or 1+ by IHC or not amplified by CAP/ASCO standards".

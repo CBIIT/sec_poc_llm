@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| AVPC determination by DNA sequencing | Inclusion | None | TP53, RB1, PTEN | None | (TP53 OR RB1 OR PTEN) AND (exonic nonsynonymous missense OR stop-gain mutations OR frameshift OR non frameshift indels OR copy number losses) |
+
+Note:
+
+* Disease column is empty since the criterion does not mention any specific disease.
+* Biomarker column lists the genes that will be considered aberrant if they contain the specified mutations or losses.
+* Prior Therapy column is empty since the criterion does not mention any prior therapy.
+* Criterion Rule is a logical expression that combines the genes and the types of mutations or losses mentioned in the criterion text. The OR operator is used to combine the different genes, and the AND operator is used to combine the different types of mutations or losses for each gene.

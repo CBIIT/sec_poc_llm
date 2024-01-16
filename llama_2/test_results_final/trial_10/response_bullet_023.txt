@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Pregnant, breastfeeding, or expecting to conceive or father children within the projected duration of the study, starting with the screening visit through 120 days after the last dose of study treatment | Exclusion | None | None | None | !(Pregnant OR Breastfeeding OR Expecting) |
+
+Note: The criterion rule is represented using logical expressions and the ! symbol indicates negation. The criterion rule is interpreted as "not (pregnant or breastfeeding or expecting)".

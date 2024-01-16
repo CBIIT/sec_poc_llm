@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Diagnosis of immunodeficiency or receiving systemic steroid therapy or any other form of immunosuppressive therapy within 7 days prior to the first dose of study treatment | Exclusion | Immunodeficiency | - | Systemic steroid therapy or immunosuppressive therapy | NOT (Immunodeficiency) AND NOT (receiving systemic steroid therapy or any other form of immunosuppressive therapy within 7 days prior to the first dose of study treatment) |
+
+Note:
+
+* The criterion text is an exclusion criterion.
+* The disease mentioned in the criterion text is "immunodeficiency".
+* There is no biomarker mentioned in the criterion text.
+* The prior therapy mentioned in the criterion text is "systemic steroid therapy or any other form of immunosuppressive therapy".
+* The criterion rule is a logical expression that translates to "NOT (immunodeficiency) AND NOT (receiving systemic steroid therapy or any other form of immunosuppressive therapy within 7 days prior to the first dose of study treatment)".

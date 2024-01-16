@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Any advanced solid tumor that has failed at least one line of therapy and is TMB-H (10 mut/Mb, F1CDx assay), excluding dMMR/MSI-H tumors. | Inclusion | - | TMB-H | At least one line of standard of care systemic therapy | TMB-H ≥ 10 mut/Mb & !dMMR/MSI-H & ☓ standard of care systemic therapy |
+
+Note:
+
+* TMB-H stands for "tumor mutational burden-high" and is a biomarker that measures the number of mutations present in a tumor's DNA.
+* dMMR/MSI-H stands for "deficient mismatch repair/microsatellite instability-high" and refers to a type of tumor that has a defect in its ability to repair DNA mistakes, leading to a high frequency of mutations.
+* Standard of care systemic therapy refers to the usual treatment options available for a particular type of cancer, such as chemotherapy, targeted therapy, or immunotherapy.
+* The criterion rule is a logical expression that combines the different components of the criterion using the appropriate logical operators (e.g., "and," "or," "not"). In this case, the criterion rule states that a particip

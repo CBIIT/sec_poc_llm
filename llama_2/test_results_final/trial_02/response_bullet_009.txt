@@ -1,0 +1,3 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| The minimum time requirement between date of surgery and randomization must be at least 4 weeks (28 days) | Inclusion |  |  |  | Time since surgery ≥ 28 days |

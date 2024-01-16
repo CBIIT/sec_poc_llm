@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients with vitiligo or alopecia | Exclusion | Vitiligo | - | - | NOT (has Vitiligo) AND NOT (has Alopecia) |
+
+Note:
+
+* Criterion Text: "Patients with vitiligo or alopecia" is an exclusion criterion.
+* Inclusion/Exclusion: Exclusion.
+* Disease: Vitiligo.
+* Biomarker: None.
+* Prior Therapy: None.
+* Criterion Rule: The rule translates to "NOT (has Vitiligo) AND NOT (has Alopecia)". This means that patients who have vitiligo or alopecia are excluded from the clinical trial.

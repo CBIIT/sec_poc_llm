@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Ascites and/or pleural effusion attributed to tumor | Inclusion | None | None | None | (Ascites ∧/ pleural effusion) → Tumor |
+
+Note:
+
+•	The criterion text specifies two possible conditions for inclusion: ascites and/or pleural effusion.
+•	Since both conditions are attributed to tumor, there is no need to specify a separate disease or biomarker column.
+•	The criterion rule translates to: “if the patient has ascites or pleural effusion, and it is attributed to tumor, then the patient meets the inclusion criterion.”

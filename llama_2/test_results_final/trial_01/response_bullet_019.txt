@@ -1,0 +1,9 @@
+Sure! Here's the table you requested:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Fasting glucose ≤ 140 mg/dL and glycosylated hemoglobin measurement (HbA1c) ≤ 7% | Inclusion | Diabetes Mellitus | HbA1c |  | (FastingGlucose ≤ 140 mg/dL) ∧ (HbA1c ≤ 7%) |
+
+
+Let me know if you have any questions or need further clarification!

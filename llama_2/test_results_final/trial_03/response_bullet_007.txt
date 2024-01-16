@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| ER and PR ≤ 1% by immunohistochemistry | Inclusion | Breast cancer | Estrogen receptor (ER), progesterone receptor (PR) | - | ER AND PR ≤ 1% |
+
+Note:
+
+* Disease: Breast cancer
+* Biomarker: Estrogen receptor (ER), progesterone receptor (PR)
+* Prior Therapy: None specified
+* Criterion Rule: ER and PR ≤ 1% (both conditions must be met)

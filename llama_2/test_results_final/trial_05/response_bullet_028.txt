@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients with hypothyroidism (e.g., following Hashimoto syndrome) stable on hormone replacement | Exclusion | Hypothyroidism | - | Hormone replacement | NOT (Disease("Hypothyroidism") AND (Therapy("Hormone replacement") AND (Status("stable")))) |
+
+Explanation:
+
+* Criterion Text: "Patients with hypothyroidism (e.g., following Hashimoto syndrome) stable on hormone replacement"
+* Inclusion/Exclusion: Exclusion
+* Disease: Hypothyroidism (canonical name)
+* Biomarker: - (not applicable)
+* Prior Therapy: Hormone replacement (canonical name)
+* Criterion Rule: NOT (Disease("Hypothyroidism") AND (Therapy("Hormone replacement") AND (Status("stable")))
+
+The criterion rule is a logical expression that could be interpreted programmatically. It states that the patient should not have hypothyroidism and should not be stable on hormone replacement therapy. The Status("stable") attribute indicates that the patient is stable on the therapy, which means that they are not experiencing any adverse effects or complications that would make them ineligible for the clinical trial.

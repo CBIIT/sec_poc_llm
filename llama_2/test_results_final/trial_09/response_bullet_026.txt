@@ -1,0 +1,6 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Pregnant or breast-feeding | Exclusion | None | None | None | !(Pregnancy OR Breastfeeding) |
+| Male and Female participants: Lack of agreement to use highly effective method of contraception during treatment and for 6 months after the last administration of chemotherapy | Exclusion | None | None | None | !(Agree TO Use Highly Effective Contraception) |
+
+Note: The Criterion Rule column translates the criteria text into a logical expression that could be interpreted programmatically. The expression is enclosed in !() to indicate its negation, meaning that the criterion is an exclusion criterion.

@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Use of any of the following substances ≤ 7 days prior to the start of the treatment | Exclusion |  |  |  | CYP3A4/5 inducers/inhibitors |
+| Known strong and moderate inducers or inhibitors of CYP3A4/5 | Exclusion |  |  |  | CYP3A4/5 inducers/inhibitors |
+| Grapefruit, grapefruit hybrids, pomelos, star-fruit, and Seville oranges | Exclusion |  |  |  | CYP3A4/5 inducers/inhibitors |
+| Medications that have a narrow therapeutic window and are predominantly metabolized through CYP3A4/5 | Exclusion |  |  |  | Narrow therapeutic window drugs |
+| Certain benzodiazepines such as alprazolam and anti-seizure medications such as carbamazepine | Exclusion |  |  |  | Narrow therapeutic window drugs |
+
+Note:
+
+* CYP3A4/5 inducers/inhibitors are substances that can increase or decrease the activity of the enzymes CYP3A4 and CYP3A5, which

@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Malignancy other than breast carcinoma or ovarian cancer (dose escalation) anticipated to need systemic treatment within 1 year in the opinion of the enrolling investigator | Exclusion | Breast Carcinoma | - | - | - |
+
+Note:
+
+* Criterion Text: The text of the exclusion criterion, verbatim.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: The name of the disease or condition mentioned in the criterion text, using its canonical name. In this case, "Breast Carcinoma" is the disease mentioned in the criterion text.
+* Biomarker: The name of the biomarker mentioned in the criterion text, using its canonical name. Since no biomarker is mentioned in the criterion text, this column is empty.
+* Prior Therapy: The name of the prior therapy mentioned in the criterion text, using its canonical name. Since no prior therapy is mentioned in the criterion text, this column is empty.
+* Criterion Rule: A logical expression that could be interpreted programmatically to determine whether a patient meets the criterion. In this case, the criterion rule would be "Patient has breast carcinoma or ovarian cancer and is anticipated to need systemic treatment within 1 year in

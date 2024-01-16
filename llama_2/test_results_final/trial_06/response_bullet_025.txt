@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Prior prostatectomy, cryotherapy, high-intensity focused ultrasound directed towards the prostate for any prostate disease or condition | Exclusion | Prostate Cancer | None | Prostatectomy, cryotherapy, high-intensity focused ultrasound | Not (Prostatectomy OR Cryotherapy OR High-Intensity Focused Ultrasound) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: Denotes whether the criterion is an inclusion or exclusion criterion.
+* Disease: The name of the disease or condition associated with the criterion. In this case, it is Prostate Cancer.
+* Biomarker: None, as the criterion does not mention a biomarker.
+* Prior Therapy: The name of the prior therapy or procedure mentioned in the criterion. In this case, it is Prostatectomy, Cryotherapy, or High-Intensity Focused Ultrasound.
+* Criterion Rule: A logical expression that could be interpreted programmatically. In this case, it is "Not (Prostatectomy OR Cryotherapy OR High-Intensity Focused Ultrasound)". This means that any patient who has undergone prostatectomy, cryotherapy, or high-int

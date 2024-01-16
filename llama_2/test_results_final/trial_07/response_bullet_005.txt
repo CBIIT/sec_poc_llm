@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Any number of previous treatments with the exception of previous inhibitors of programmed cell death 1 (PD-1), PD-L1, or programmed cell death 1 ligand 2 (PD-L2); other prior systemic therapies must have been administered at least 2 weeks before administration of pembrolizumab; the exception to this is ipilimumab, which must have been administered at least 4 weeks prior to the start of pembrolizumab; patients are not required to have had prior systemic therapy | Inclusion | None | None | Prior Therapy: PD-1, PD-L1, PD-L2, ipilimumab | - |
+
+Note:
+
+* The criterion text describes an inclusion criterion.
+* There is no disease or biomarker specified in the criterion text.
+* The prior therapy specified in the criterion text is PD-1, PD-L1, PD-L2, and ipilimumab.
+* The criterion rule translates to "Patients with any number of previous treatments are eligible, except for previous inhibitors of PD-1, PD-L1, or PD-L2, and other prior systemic therapies must have been administered at least 2 weeks before administration of pembrol

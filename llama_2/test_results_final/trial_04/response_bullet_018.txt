@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Absolute neutrophil count (ANC) >= 1500/mm^3 | Inclusion | None | None | None | ANC ≥ 1500/mm^3 |
+
+Note:
+
+* Criterion Text: The text of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name is listed.
+* Biomarker: If the criterion contains a biomarker, its canonical name is listed.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name is listed.
+* Criterion Rule: A logical expression that could be interpreted programmatically to determine whether a patient meets the criterion.
+
+In this case, the eligibility criterion is an inclusion criterion that requires the patient's absolute neutrophil count (ANC) to be greater than or equal to 1500/mm^3. There are no diseases, biomarkers, or prior therapies mentioned in the criterion, so those columns are left blank. The criterion rule is simply "ANC ≥ 1500/mm^3", which means that any patient with an ANC of 1500

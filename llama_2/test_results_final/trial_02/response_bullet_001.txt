@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous b NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. N3 disease is not allowed. | Inclusion | Non-squamous or squamous b NSCLC | - | - | - | (Disease = "Non-squamous or squamous b NSCLC" AND Stage = "IIA" OR Stage = "IIB" OR Stage = "IIIA" OR Stage = "IIIB" AND Surgical Resection = "complete" AND Margins = "negative") NOT (Disease = "N3") |
+
+Note:
+
+* Disease column contains the name of the disease mentioned in the criteria text, which is "Non-squamous or squamous b NSCLC".
+* Biomarker column is empty since there is no mention of a biomarker in the criteria text.
+* Prior Therapy column is empty since there is no mention of prior therapy in the criteria text.
+* Criterion Rule column contains a logical expression that could be interpreted programmatically, which is a conjunction of conditions on disease, stage, surgical resection, margins, and exclusion of N3 disease.

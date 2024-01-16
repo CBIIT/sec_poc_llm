@@ -1,0 +1,7 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Life expectancy of at least 3 months | Inclusion |  |  |  | LifeExpectancyAtLeast3Months |
+
+Note:
+
+* LifeExpectancyAtLeast3Months: This criterion rule represents the logical expression for the inclusion criterion "Life expectancy of at least 3 months". It can be interpreted programmatically to determine whether a patient meets this criterion.

@@ -1,0 +1,9 @@
+Sure! Here's the table you requested:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Clinical or radiographic evidence of bowel obstruction or need | Exclusion |  |  |  | NOT (Bowel Obstruction OR Need) |
+
+
+I hope this helps! Let me know if you have any questions.

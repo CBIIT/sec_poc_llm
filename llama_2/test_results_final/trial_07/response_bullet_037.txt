@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Concurrent, active malignancies in addition to those being studied (other than cutaneous squamous cell carcinoma or basal cell carcinoma) | Exclusion | None | None | None | NOT (Disease = "Cutaneous squamous cell carcinoma" OR Disease = "Basal cell carcinoma") AND Disease != "None" |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name is listed.
+* Biomarker: If the criterion contains a biomarker, its canonical name is listed.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name is listed.
+* Criterion Rule: A logical expression that could be interpreted programmatically to translate the criterion.
+
+In this case, the criterion text describes an exclusion criterion that refers to concurrent, active malignancies in addition to those being studied, with the exception of cutaneous squamous cell carcinoma or basal cell carcinoma. Therefore, the table contains an exclusion criterion with no disease, biomarker, or prior

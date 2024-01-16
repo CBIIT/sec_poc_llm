@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients with active hemoptysis | Exclusion | None | None | None | Patients with active hemoptysis ≠ None |
+
+Note:
+
+* Criterion Text: "Patients with active hemoptysis" is an exclusion criterion.
+* Inclusion/Exclusion: Exclusion.
+* Disease: None (this criterion does not relate to a specific disease).
+* Biomarker: None (this criterion does not relate to a specific biomarker).
+* Prior Therapy: None (this criterion does not relate to prior therapy).
+* Criterion Rule: The criterion rule is "Patients with active hemoptysis ≠ None," which means that any patient with active hemoptysis will be excluded from the clinical trial.

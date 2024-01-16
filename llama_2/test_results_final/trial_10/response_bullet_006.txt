@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Can supply tumor tissue for study analyses (dependent on tumor type) | Inclusion |  |  |  | Tumor tissue availability |
+
+Note:
+
+* Since the inclusion criterion is dependent on tumor type, it is not possible to determine a specific disease or biomarker for this criterion.
+* Prior therapy is not mentioned in the given inclusion criterion.
+* The criterion rule is a logical expression that translates the criterion text into a programmatically interpretable format. In this case, the criterion rule is "Tumor tissue availability".

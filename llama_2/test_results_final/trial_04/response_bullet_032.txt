@@ -1,0 +1,7 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Any concurrent active malignancies | Exclusion | Ovarian cancer | - | - | !Expectant observation |
+
+Note:
+
+!Expectant observation means that the patient is not receiving any therapy other than observation. This criterion rule translates the exclusion criterion into a logical expression that could be interpreted programmatically. It means that if a patient has any concurrent active malignancies that require therapy other than expectant observation, they are excluded from the clinical trial.

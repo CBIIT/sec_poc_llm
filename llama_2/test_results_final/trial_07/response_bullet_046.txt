@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Significant vascular disease (e.g., aortic aneurysm requiring surgical repair or recent peripheral arterial thrombosis) within 6 months prior to cycle 1, day 1 | Exclusion | Aortic aneurysm | - | - | NOT (vascular disease = "significant") AND (time from vascular disease diagnosis < 6 months) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: "Exclusion" since this is an exclusion criterion.
+* Disease: "Aortic aneurysm" since the criterion mentions this disease.
+* Biomarker: "-" since no biomarker is mentioned in the criterion.
+* Prior Therapy: "-" since no prior therapy is mentioned in the criterion.
+* Criterion Rule: A logical expression that could be interpreted programmatically. In this case, the rule is "NOT (vascular disease = 'significant') AND (time from vascular disease diagnosis < 6 months)". This means that if the patient has a significant vascular disease or has had a recent peripheral arterial thrombosis within 6 months prior to cycle 1, day 1, they are excluded from the clinical

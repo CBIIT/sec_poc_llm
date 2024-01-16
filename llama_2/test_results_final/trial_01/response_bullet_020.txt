@@ -1,0 +1,9 @@
+Sure! Here's the table you requested:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Serum creatinine =< 1.5 mg/dL (or glomerular filtration rate >= 30 ml/min as determined by the Cockcroft-Gault equation) | Inclusion | None | None | None | creatinine ≤ 1.5 or GFR ≥ 30 |
+
+
+The Criterion Text is a direct copy of the text you provided. The Inclusion/Exclusion column indicates that this is an inclusion criterion. Since there is no disease, biomarker, or prior therapy mentioned in the criteria text, those columns are left blank. The Criterion Rule is a logical expression that could be interpreted programmatically, which in this case is a straightforward translation of the criteria text.

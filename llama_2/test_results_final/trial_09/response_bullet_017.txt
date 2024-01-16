@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| History of life-threatening toxicity related to prior immune therapy or any toxicity resulting in permanent discontinuation from prior therapy | Exclusion | None | None | Immune therapy | Criterion Rule: NOT (Immune Therapy = None) |
+
+Note: Since the criterion text does not mention any specific disease or biomarker, the corresponding columns are left empty. The prior therapy column lists "Immune therapy" because the criterion text mentions "prior immune therapy." The criterion rule is a logical expression that indicates the exclusion criterion is met if the patient has a history of life-threatening toxicity related to prior immune therapy or any toxicity resulting in permanent discontinuation from prior therapy.

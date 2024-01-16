@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| No ongoing cardiac dysrhythmias of grade >= 2 National Cancer Institute (NCI) Common Terminology Criteria for Adverse Events (CTCAE) version 4.0, uncontrolled atrial fibrillation (any grade), or corrected QT (QTc) interval > 470 msec | Exclusion | - | - | - | - |
+
+Note: The criterion text describes exclusion criteria related to cardiac dysrhythmias and QT interval, but does not mention any specific diseases, biomarkers, or prior therapies. Therefore, the Disease, Biomarker, and Prior Therapy columns are left empty.

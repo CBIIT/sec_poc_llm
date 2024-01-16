@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Known additional malignancy within 2 years prior to enrollment with the exception of curatively treated basal cell carcinoma of the skin, squamous cell carcinoma of the skin and/or curatively resected in situ cancers | Exclusion | Basal cell carcinoma | - | - | - |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: Denotes whether the criterion is an inclusion or exclusion criterion.
+* Disease: The name of the disease or condition mentioned in the criterion. In this case, Basal cell carcinoma is the only disease mentioned.
+* Biomarker: No biomarker is mentioned in this criterion.
+* Prior Therapy: No prior therapy is mentioned in this criterion.
+* Criterion Rule: A logical expression that could be interpreted programmatically. In this case, the rule is simply "known additional malignancy within 2 years prior to enrollment" with the exception of certain types of skin cancer.

@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Adequate organ function | Inclusion |  |  |  | "Adequate organ function" |
+
+Note: As per the instructions, since the eligibility criteria text does not describe a Disease, Biomarker, or Prior Therapy, the table contains only one row with the Criterion Text and the corresponding Inclusion/Exclusion status. The other columns remain empty.

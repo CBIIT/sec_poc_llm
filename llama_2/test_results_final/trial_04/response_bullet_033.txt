@@ -1,0 +1,3 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Prior radiotherapy to any portion of the abdominal cavity or pelvis | Exclusion |  |  | Radiotherapy | NOT (Radiotherapy = "None") |

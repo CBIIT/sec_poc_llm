@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Estrogen receptor (ER) and progesterone receptor (PR) ≤ 1% by immunohistochemistry | Inclusion | Breast cancer | ER, PR | - | ER ≤ 1% ∧ PR ≤ 1% |
+
+Note:
+
+* Criterion Text: The text of the eligibility criterion as provided.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion (I) or exclusion (E) criterion.
+* Disease: The name of the disease or condition associated with the criterion, using its canonical name (here, "Breast cancer").
+* Biomarker: The name of the biomarker(s) associated with the criterion, using its canonical name(s) (here, "ER" and "PR").
+* Prior Therapy: The name of the prior therapy associated with the criterion, using its canonical name (here, "-" since no prior therapy is specified).
+* Criterion Rule: A logical expression that could be interpreted programmatically, translating the criterion text into a concise, unambiguous format (here, "ER ≤ 1% ∧ PR ≤ 1%").

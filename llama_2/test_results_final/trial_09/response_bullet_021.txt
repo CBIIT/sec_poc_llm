@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Non-study related minor surgical procedure ≤7 days, or major surgical procedure of ≤ 5 weeks prior to first dose of study treatment | Exclusion |  |  | Surgery within 7 days or 5 weeks | ¬ (Surgery ≤ 7 days ∧ Surgery ≤ 5 weeks) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: Denotes whether the criterion is an inclusion or exclusion criterion.
+* Disease: None, since the criterion does not mention a disease or condition.
+* Biomarker: None, since the criterion does not mention a biomarker.
+* Prior Therapy: Surgery, since the criterion mentions surgical procedures.
+* Criterion Rule: A logical expression that could be interpreted programmatically. In this case, the expression ¬ (Surgery ≤ 7 days ∧ Surgery ≤ 5 weeks) means "not (surgery within 7 days and surgery within 5 weeks)".

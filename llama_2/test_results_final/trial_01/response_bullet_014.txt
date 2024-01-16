@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Absolute neutrophil count >= 1,000/ul | Inclusion |  |  |  | neutrophil_count >= 1000 |
+
+Neutrophil count is a biomarker, but in this case, it is not a disease or condition.  Therefore, the Biomarker column is left blank.  Similarly, since the criteria do not mention prior therapy, that column is also left blank.  The Criterion Rule is a logical expression that could be interpreted programmatically.  In this case, it is a simple comparison of the absolute neutrophil count to a threshold value of 1,000/ul.

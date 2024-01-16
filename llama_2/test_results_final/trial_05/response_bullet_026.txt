@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Active or prior documented autoimmune or inflammatory disorders | Exclusion | Inflammatory bowel disease | - | - | - |
+|  | | (e.g., colitis or Crohn's disease) | - | - | - |
+|  | | Diverticulitis (with the exception of diverticulosis) | - | - | - |
+|  | | Systemic lupus erythematosus | - | - | - |
+|  | | Sarcoidosis syndrome | - | - | - |
+|  | | Wegener syndrome (granulomatosis with polyangiitis, Graves' disease, rheumatoid arthritis, hypophysitis, uveitis, etc.) | - | - | - |
+| The following are exceptions to this criterion: | - | - | - | - | - |
+
+Note: The criterion text includes multiple exceptions to the exclusion criterion, but no inclusions. The table above represents this by listing the criterion text as an exclusion criterion and leaving the inclusion column blank. Additionally, since the criterion text does not mention any biomarkers or prior therapies, those columns are also left blank.

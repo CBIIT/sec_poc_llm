@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Histologically proven small cell (neuroendocrine) prostate carcinoma | Inclusion | Prostate cancer | - | - | (Disease = "Prostate cancer") |
+
+Note:
+
+* Criterion Text: The exact text from the inclusion criteria is "Histologically proven small cell (neuroendocrine) prostate carcinoma."
+* Inclusion/Exclusion: This criterion is an inclusion criterion.
+* Disease: The disease mentioned in the criterion text is "Prostate cancer."
+* Biomarker: No biomarker is mentioned in the criterion text.
+* Prior Therapy: No prior therapy is mentioned in the criterion text.
+* Criterion Rule: The criterion rule is simply the disease name, "Prostate cancer," which can be interpreted programmatically as (Disease = "Prostate cancer").

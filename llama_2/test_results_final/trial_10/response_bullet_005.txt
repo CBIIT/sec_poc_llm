@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Progression of tumor or intolerance to therapies known to provide clinical benefit. There is no limit to the number of prior treatment regimens | Inclusion | None | None | None | Progression of tumor or intolerance to prior therapies known to provide clinical benefit |
+
+Note:
+
+* Since the inclusion criterion does not mention any specific disease or biomarker, the Disease and Biomarker columns are left empty.
+* The Prior Therapy column is also left empty, as the criterion does not specify any particular prior therapy.
+* The Criterion Rule is a logical expression that translates the criterion text into a programmatically interpretable format. In this case, the criterion rule is "Progression of tumor or intolerance to prior therapies known to provide clinical benefit".

@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Known homozygous for ATM pathogenic mutation | Exclusion | None | None | None | !(ATM_mutation_status == "homozygous_pathogenic") |
+
+Note:
+
+* Criterion Text: "Known homozygous for ATM pathogenic mutation"
+* Inclusion/Exclusion: Exclusion
+* Disease: None (this criterion is related to a genetic mutation, not a disease)
+* Biomarker: None (this criterion is related to a genetic mutation, not a biomarker)
+* Prior Therapy: None (this criterion is not related to prior therapy)
+* Criterion Rule: !(ATM_mutation_status == "homozygous_pathogenic") (this rule states that the patient is excluded if they have a known homozygous pathogenic mutation in the ATM gene)

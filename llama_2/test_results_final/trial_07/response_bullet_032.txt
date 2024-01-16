@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Presence of leptomeningeal disease | Exclusion | Leptomeningeal disease |  |  | LeptomeningealDisease(true) → Ineligible |
+
+Note:
+
+* Criterion Text: "Presence of leptomeningeal disease" is an exclusion criterion.
+* Inclusion/Exclusion: Exclusion.
+* Disease: Leptomeningeal disease (canonical name).
+* Biomarker: Not applicable.
+* Prior Therapy: Not applicable.
+* Criterion Rule: A logical expression that translates to "if LeptomeningealDisease is true, then Ineligible." This rule indicates that if a patient has leptomeningeal disease, they are ineligible for the clinical trial.

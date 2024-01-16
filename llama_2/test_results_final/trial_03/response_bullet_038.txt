@@ -1,0 +1,20 @@
+Sure! Here's the table you requested:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Concurrent use of medication known to inhibit UGT1A1 | Exclusion |  |  |  | Patients currently taking these medications must have discontinued >= 7 days prior to treatment day 1 |
+
+
+Let me explain my reasoning:
+
+
+•	Concurrent use of medication known to inhibit UGT1A1: This criterion is an exclusion criterion.
+
+•	Disease: This criterion does not mention a specific disease or condition.
+
+•	Biomarker: This criterion does not mention a specific biomarker.
+
+•	Prior Therapy: This criterion mentions prior therapy (medication known to inhibit UGT1A1).
+
+•	Criterion Rule: The criterion rule is "Patients currently taking these medications must have discontinued >= 7 days prior to treatment day 1". This rule translates to a logical expression as follows: let P be the set of patients taking medications that inhibit UGT1A1; let T be the set of patients who have discontinued taking such medications at least 7 days prior to treatment day 1; then, the criterion is met if and only if T ⊆ P. In other words, all patients who are taking medications that

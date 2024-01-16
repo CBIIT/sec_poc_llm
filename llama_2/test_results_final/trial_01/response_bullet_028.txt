@@ -1,0 +1,6 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients with known contraindication to magnetic resonance imaging (MRI) (e.g., due to pacemaker, ferromagnetic implants, claustrophobia, extreme obesity, hypersensitivity, etc.) | Exclusion |  |  |  | Patients with contraindication to MRI |
+| Head computed tomography (CT) with contrast may be used in place of MRI at baseline and throughout the trial if MRI is contraindicated and a participant’s brain metastases are clearly measurable by head CT | Inclusion |  |  |  | Brain metastases measurable by head CT |
+
+Note: The first criterion is an exclusion criterion, while the second criterion is an inclusion criterion. The first criterion does not mention any specific disease or biomarker, while the second criterion refers to brain metastases, which can be considered a disease. The Prior Therapy column is not applicable in this case, as the criteria do not mention any prior therapy. The Criterion Rule column translates the criteria into a logical expression that could be interpreted programmatically.

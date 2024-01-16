@@ -1,0 +1,6 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients must not have any history of locally advanced or metastatic cancer requiring systemic therapy within 5 years from randomization, with the exception of in-situ carcinomas and non-melanoma skin cancer | Exclusion | None | None | History of locally advanced or metastatic cancer | ¬(HasHistoryOfLocallyAdvancedOrMetastaticCancerWithin5YearsFromRandomization() ∧ HasInSituCarcinomaOrNonMelanomaSkinCancer()) |
+| Patients must have no previous primary lung cancer diagnosed concurrently or within the past 2 years | Exclusion | Lung cancer | None | Previous primary lung cancer diagnosis | ¬(HasPreviousPrimaryLungCancerDiagnosisWithin2Years()) |
+
+Note: The criterion rule is represented as a logical expression in the format of a Python function, where the variables correspond to the disease, biomarker, or prior therapy mentioned in the criterion text. The ¬ symbol indicates negation.

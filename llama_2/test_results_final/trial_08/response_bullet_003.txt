@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Currently receiving palbociclib and AI or fulvestrant | Inclusion | Breast cancer | - | Palbociclib and AI or fulvestrant therapy for ≥6 months | (Disease = "Breast cancer") ∧ (Prior Therapy = "Palbociclib and AI or fulvestrant therapy for ≥6 months") |
+| Currently receiving palbociclib or ribociclib and AI or fulvestrant therapy in the metastatic setting with evidence of progressive disease | Inclusion | Breast cancer | - | Palbociclib or ribociclib and AI or fulvestrant therapy for ≥6 months | (Disease = "Breast cancer") ∧ (Prior Therapy = "Palbociclib or ribociclib and AI or fulvestrant therapy for ≥6 months") ∧ (Evidence of progressive disease) |
+| Must have remained on palbociclib or ribociclib and AI or fulvestrant therapy for ≥6 months for advanced breast cancer or metastatic disease prior to evidence of progression | Inclusion | Breast cancer | - | Palbociclib or ribociclib and AI or fulvestrant therapy for ≥6 months | (Disease = "Breast cancer") ∧ (P

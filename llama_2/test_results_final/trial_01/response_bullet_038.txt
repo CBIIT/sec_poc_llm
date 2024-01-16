@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Active infection requiring IV antibiotics at the time of protocol therapy initiation | Exclusion |  |  |  | Not (Infection AND (IV antibiotics OR Protocol Therapy Initiation)) |
+
+In this table, the criterion text is "Active infection requiring IV antibiotics at the time of protocol therapy initiation". This criterion is an exclusion criterion, indicated by "Exclusion" in the Inclusion/Exclusion column. There is no disease, biomarker, or prior therapy specified in the criterion text, so those columns are left blank. The Criterion Rule column translates the criterion text into a logical expression that could be interpreted programmatically. In this case, the rule is "Not (Infection AND (IV antibiotics OR Protocol Therapy Initiation))", which means that any patient with an active infection requiring IV antibiotics at the time of protocol therapy initiation should be excluded from the clinical trial.

@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Has not recovered (i.e., =< grade 1 or at baseline) from adverse events due to agents administered more than 4 weeks earlier | Exclusion |  |  |  | "has_not_recovered_from_adverse_events_in_last_4_weeks" |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: Denotes whether the criterion is an inclusion or exclusion criterion.
+* Disease: None, as the criterion does not mention a specific disease or condition.
+* Biomarker: None, as the criterion does not mention a specific biomarker.
+* Prior Therapy: None, as the criterion does not mention a specific prior therapy.
+* Criterion Rule: A logical expression that could be interpreted programmatically, representing the exclusion criterion. In this case, the rule states that a patient has not recovered (i.e., is still experiencing adverse events) from agents administered more than 4 weeks earlier.

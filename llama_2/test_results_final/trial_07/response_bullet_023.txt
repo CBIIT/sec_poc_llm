@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Symptomatic brain metastases; any neurologic symptoms present must have resolved with local therapy by the time of administration of study drug | Exclusion | Brain Metastases | - | Local Therapy | NOT (has_symptomatic_brain_metastases OR has_unresolved_neurologic_symptoms) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: "Exclusion" since this criterion describes a condition that disqualifies a patient from participating in the clinical trial.
+* Disease: "Brain Metastases" since the criterion mentions symptomatic brain metastases.
+* Biomarker: "-" since the criterion does not mention any specific biomarkers.
+* Prior Therapy: "Local Therapy" since the criterion specifies that neurologic symptoms must have resolved with local therapy.
+* Criterion Rule: A logical expression that could be interpreted programmatically. In this case, the rule is "NOT (has_symptomatic_brain_metastases OR has_unresolved_neurologic_symptoms)", which means that patients with symptomatic brain metastases or unresolved neurologic symptoms are excluded from the trial.

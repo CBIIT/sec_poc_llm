@@ -1,0 +1,16 @@
+Sure! Here's the table you requested:
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Negative serum or urine pregnancy test at screening for women of childbearing potential | Inclusion | None | None | None | NOT (Pregnant) |
+
+Here's a breakdown of how I filled out each column:
+
+* Criterion Text: This is a direct copy of the criterion text provided.
+* Inclusion/Exclusion: Since the criterion is stated as an inclusion criterion, I labeled it as "Inclusion".
+* Disease: Since the criterion does not mention a specific disease or condition, I left this column blank.
+* Biomarker: Since the criterion does not mention a specific biomarker, I left this column blank.
+* Prior Therapy: Since the criterion does not mention prior therapy, I left this column blank.
+* Criterion Rule: I translated the criterion into a logical expression that could be interpreted programmatically. In this case, the criterion is simply a negation of the condition "Pregnant", so I used the logical operator "NOT" followed by the condition "Pregnant".
+
+I hope this helps! Let me know if you have any questions.

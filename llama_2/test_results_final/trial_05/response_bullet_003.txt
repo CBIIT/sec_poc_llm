@@ -1,0 +1,3 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Predominantly lytic bone metastases identified by plain x-ray or CT scan | Inclusion | Metastatic bone disease | - | - | (X-ray or CT scan evidence of lytic bone metastases) |

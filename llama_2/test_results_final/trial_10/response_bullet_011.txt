@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Female participants of childbearing potential must be willing to use adequate contraception during the intervention period and for at least the time needed to eliminate each study intervention after the last dose of study intervention, and agrees not to donate eggs (ova, oocytes) to others or freeze/store for her own use for the purpose of reproduction during this period. | Inclusion |  |  |  | "Female participants of childbearing potential must be willing to use adequate contraception during the intervention period" |
+|  |  |  |  | "and agrees not to donate eggs (ova, oocytes) to others or freeze/store for her own use for the purpose of reproduction during this period" |
+| The length of time required to continue contraception for each study intervention is as follows: MK-3475 (120 days) | Inclusion |  |  |  | "The length of time required to continue contraception for MK-3475 is 120 days" |
+
+Note:
+
+* "Female participants of childbearing potential" is not a disease or biomarker, but rather a demographic criterion.
+* "MK-3475" is a drug, not a disease or biomarker.
+* "ova,

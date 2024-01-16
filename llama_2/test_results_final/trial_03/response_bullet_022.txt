@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| INR ≤ 1.5 | Inclusion |  |  |  | INR ≤ 1.5  |
+| INR within therapeutic range of intended use for anticoagulant within 7 days prior to first dose of study drug | Inclusion |  |  | Anticoagulant therapy | INR within therapeutic range of intended use for anticoagulant  |
+
+Note:
+
+* The first criterion is an inclusion criterion.
+* The second criterion is also an inclusion criterion, but it has a conditional statement that includes a disease (anticoagulant therapy) and a biomarker (INR).
+* There are no biomarkers or prior therapies mentioned in the given criteria text.
+* The criterion rule for the first criterion is a simple inequality.
+* The criterion rule for the second criterion is more complex and includes a conditional statement.

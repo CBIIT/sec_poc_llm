@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Exclusive visceral metastases | Inclusion | Metastatic cancer | - | - | (exists (m:Metastasis {location: "visceral"})) |
+
+Note:
+
+* Criterion Text: "Exclusive visceral metastases"
+* Inclusion/Exclusion: Inclusion
+* Disease: Metastatic cancer (since the criterion refers to metastases)
+* Biomarker: None
+* Prior Therapy: None
+* Criterion Rule: The criterion rule is represented as a logical expression in the form of a SPARQL query. The query checks for the existence of a metastasis (m:Metastasis) with a location of "visceral".
+
+Note that since the criterion text does not mention any specific disease or biomarker, the corresponding columns are left empty. Also, since the criterion is an inclusion criterion, it is represented as such in the Inclusion/Exclusion column.

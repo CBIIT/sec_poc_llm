@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Known active or chronic hepatitis B or C infection unless adequately treated for at least 4 weeks with no detectable viral load | Exclusion | Hepatitis B | - | - | !viral_load_detectable(hepatitis_B_or_C) |
+| Known infection with human immunodeficiency virus (HIV) unless receiving antiretroviral therapy with well-controlled disease | Exclusion | HIV | - | Antiretroviral therapy | !well_controlled_disease(HIV) |
+
+Note:
+
+* "!" indicates a logical negation, meaning "not" in this context.
+* "viral_load_detectable(hepatitis_B_or_C)" means the viral load for hepatitis B or C is detectable.
+* "well_controlled_disease(HIV)" means the HIV disease is well-controlled, indicating the patient is receiving effective antiretroviral therapy.

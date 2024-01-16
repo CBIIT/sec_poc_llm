@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Has HER2 overexpression by local laboratory testing (immunohistochemical [IHC] 3+ or in situ hybridization positive) | Inclusion | HER2-positive breast cancer | HER2 | None | (IHC 3+ OR ISH positive) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: The name of the disease or condition associated with the criterion, using its canonical name.
+* Biomarker: The name of the biomarker associated with the criterion, using its canonical name.
+* Prior Therapy: The name of the prior therapy associated with the criterion, using its canonical name.
+* Criterion Rule: A logical expression that could be interpreted programmatically, translating the criterion into a concise format.
+
+In this case, the criterion text describes a single inclusion criterion for patients with HER2-positive breast cancer. The criterion rule is a logical expression that combines the two possible methods for determining HER2 overexpression (IHC 3+ or ISH positive).

@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Known history of active tuberculosis (TB, Bacillus tuberculosis) | Exclusion | Tuberculosis | None | None | NOT (Tuberculosis) |
+
+Note:
+
+* Criterion Text: "Known history of active tuberculosis (TB, Bacillus tuberculosis)" is an exclusion criterion.
+* Inclusion/Exclusion: "Exclusion" indicates that the criterion is an exclusion criterion.
+* Disease: "Tuberculosis" is the name of the disease mentioned in the criterion text.
+* Biomarker: None, as the criterion text does not mention a biomarker.
+* Prior Therapy: None, as the criterion text does not mention a prior therapy.
+* Criterion Rule: "NOT (Tuberculosis)" represents the logical expression that could be interpreted programmatically to determine whether a patient meets this exclusion criterion. It means that if a patient has a known history of active tuberculosis, they do not meet the criterion and are excluded from the clinical trial.

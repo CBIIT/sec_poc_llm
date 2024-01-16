@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+|  Have relapsed or progressed after prior anti-PD-(L)1 therapy as follows: | Inclusion |  |  | Anti-PD-(L)1 therapy | Has relapsed or progressed after prior anti-PD-(L)1 therapy |
+
+In this case, the eligibility criteria text describes a single inclusion criterion related to prior therapy, specifically anti-PD-(L)1 therapy. Therefore, the table contains a single row with the criterion text, marked as an inclusion criterion, and the prior therapy specified as anti-PD-(L)1 therapy. The disease, biomarker, and criterion rule columns are empty, as this criterion does not relate to any specific disease or biomarker.

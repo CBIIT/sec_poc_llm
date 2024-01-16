@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| History of allergy or hypersensitivity to belinostat, ribociclib, or their binders | Exclusion |  |  |  | Belinostat or ribociclib allergy |
+
+In this case, the only criterion provided was an exclusion criterion related to a history of allergy or hypersensitivity to belinostat or ribociclib, which are drugs used in cancer treatment. Therefore, the table contains only one row with the specified criterion text, marked as an exclusion criterion, and no disease, biomarker, or prior therapy columns are populated, as they are not relevant to this criterion. The criterion rule is a straightforward translation of the criterion text.

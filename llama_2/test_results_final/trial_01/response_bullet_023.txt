@@ -1,0 +1,1 @@
+Sorry, but the given criteria text does not describe any Disease, Biomarker, or Prior Therapy, and so does not match the requirements for outputting a table.  Therefore, I am not outputting a table.  I could output a table if you give me criteria text that matches the requirements.

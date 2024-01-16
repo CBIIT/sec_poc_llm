@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Proteinuria > 2.0 g of protein in a 24-hour urine collection; all patients with 2 protein on dipstick urinalysis at baseline must undergo a 24-hour urine collection for protein | Exclusion | None | None | None | Proteinuria > 2.0 g/24h |
+
+Note:
+
+* The criterion text specifies an exclusion criterion for proteinuria exceeding 2.0 g/24h.
+* There is no disease, biomarker, or prior therapy specified in the given criterion text.
+* The criterion rule translates to "Proteinuria > 2.0 g/24h" which can be interpreted programmatically.

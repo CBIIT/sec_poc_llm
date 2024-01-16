@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Previous use of CDK 4/6 or HDAC inhibitors for cancer treatment | Exclusion |  |  | CDK 4/6 or HDAC inhibitors | Not(CDK 4/6 or HDAC inhibitors) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: Denotes whether the criterion is an inclusion or exclusion criterion.
+* Disease: No disease or condition is specified in the given criterion text.
+* Biomarker: No biomarker is specified in the given criterion text.
+* Prior Therapy: The criterion text specifies prior use of CDK 4/6 or HDAC inhibitors for cancer treatment.
+* Criterion Rule: A logical expression that could be interpreted programmatically to evaluate whether a patient meets the criterion. In this case, the criterion rule is "Not(CDK 4/6 or HDAC inhibitors)", which means that the patient has not received CDK 4/6 or HDAC inhibitors for cancer treatment previously.

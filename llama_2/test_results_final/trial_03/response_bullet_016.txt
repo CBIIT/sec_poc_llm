@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Serum bilirubin levels =< 1.5 mg/dL. Higher levels are acceptable if these can be attributed to active hemolysis or ineffective erythropoiesis. Bilirubin above 1.5 mg/dL due to Gilbert’s is still excluded | Inclusion | None | Bilirubin | None | Bilirubin ≤ 1.5 mg/dL or (Bilirubin > 1.5 mg/dL and (Active Hemolysis or Ineffective Erythropoiesis)) |
+
+Explanation:
+
+* Criterion Text: The text of the eligibility criterion, verbatim.
+* Inclusion/Exclusion: Whether the criterion is an inclusion or exclusion criterion.
+* Disease: None, since the criterion does not mention a specific disease or condition.
+* Biomarker: Bilirubin, since the criterion specifies serum bilirubin levels as a criterion.
+* Prior Therapy: None, since the criterion does not mention any prior therapy.
+* Criterion Rule: A logical expression that could be interpreted programmatically. In this case, the rule is "Bilirubin ≤ 1.5 mg/dL or (Bilirubin > 1

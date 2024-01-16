@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Has received more than 2 lines of prior systemic therapy for locally advanced/metastatic breast cancer. | Inclusion | Breast Cancer | None | Systemic Therapy | (Prior Systemic Therapy ≥ 2) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name is listed.
+* Biomarker: If the criterion contains a biomarker, its canonical name is listed.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name is listed.
+* Criterion Rule: A logical expression that could be interpreted programmatically to translate the criterion.
+
+In this case, the criterion text describes a condition related to prior systemic therapy for breast cancer, so the Disease column is populated with "Breast Cancer". Since the criterion does not mention any specific biomarkers or prior therapies, those columns remain empty. The Criterion Rule is a logical expression that captures the essence of the criterion, in this case, "Prior Systemic Therapy ≥ 2".

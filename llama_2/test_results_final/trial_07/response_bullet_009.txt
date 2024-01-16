@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| All patients are required to submit a tumor specimen for analysis (brain or extra-cerebral); a formalin-fixed paraffin-embedded (FFPE) tissue block, or a 4mm punch from an FFPE block must be submitted; if it is not possible to safely obtain a biopsy due to anatomic location of tumors, and no prior tissue is available, this requirement may be waived upon discussion with the study principal investigator (PI) or co-PI | Inclusion | None | None | None | (patient.tumor_specimen_submitted = true) |
+
+Note:
+
+* Criterion Text: The text of the eligibility criterion, verbatim.
+* Inclusion/Exclusion: Whether the criterion is an inclusion or exclusion criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name.
+* Biomarker: If the criterion contains a biomarker, its canonical name.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name.
+* Criterion Rule: A logical expression that could be interpreted programmatically to determine whether a patient meets the criterion. In this case, the criterion rule is simply (patient.tumor_specimen_submitted = true), which means that the patient

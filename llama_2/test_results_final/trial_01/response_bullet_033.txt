@@ -1,0 +1,16 @@
+Sure! Here's the table based on the given criteria text:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Subjects with a history of hypersensitivity to compounds of similar biologic composition to paxalisib (GDC-0084) or any constituent of the product | Exclusion |  |  |  | Not(Hypersensitivity(paxalisib, GDC-0084, product constituents)) |
+
+
+Explanation:
+
+1. Criterion Text: The verbatim snippet of the exclusion criterion.
+2. Inclusion/Exclusion: Denotes whether the criterion is an inclusion or exclusion criterion. Since this criterion is an exclusion criterion, it is marked as "Exclusion".
+3. Disease: Not applicable, as the criterion does not mention a disease or condition.
+4. Biomarker: Not applicable, as the criterion does not mention a biomarker.
+5. Prior Therapy: Not applicable, as the criterion does not mention a prior therapy.
+6. Criterion Rule: A logical expression that could be interpreted programmatically. In this case, the criterion rule is "Not(Hypersensitivity(paxalisib, GDC-0084, product constituents))", which means that subjects with a history of hypersensitivity to compounds of similar

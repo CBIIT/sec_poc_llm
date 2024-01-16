@@ -1,0 +1,9 @@
+Sure! Here's the table you requested:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Albumin >= 2.5 mg/dL | Inclusion | None | None | None | Albumin ≥ 2.5 mg/dL |
+
+
+The only criterion in the given text is "Albumin >= 2.5 mg/dL", which is an inclusion criterion. There are no disease, biomarker, or prior therapy criteria mentioned in the text. Therefore, the table above contains only one row, with the criterion text, inclusion/exclusion status, and a blank entry for the other three columns.

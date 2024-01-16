@@ -1,0 +1,9 @@
+Sure! Here's the table you requested:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Serum creatinine levels =< 1.5 mg/dL | Inclusion | None | None | None | creatinine ≤ 1.5 |
+
+
+The Criterion Text is a direct copy of the text you provided. The Inclusion/Exclusion column indicates that this is an inclusion criterion. Since there is no disease, biomarker, or prior therapy mentioned in the criteria text, those columns are left blank. The Criterion Rule is a logical expression that could be interpreted programmatically, in this case, "creatinine ≤ 1.5" means that the serum creatinine level must be less than or equal to 1.5 mg/dL in order for the patient to be eligible for the clinical trial.

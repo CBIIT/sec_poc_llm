@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patient is currently receiving warfarin or other coumarin derived anti-coagulant, for treatment, prophylaxis or otherwise | Exclusion | None | None | Warfarin or other coumarin derived anti-coagulant | NOT (Warfarin OR Other coumarin derived anti-coagulant) |
+
+Note: Therapy with heparin, low molecular weight heparin (LMWH), an oral factor Xa inhibitor, an oral direct thrombin inhibitor, or fondaparinux is allowed | Inclusion | None | None | Heparin OR LMWH OR Oral factor Xa inhibitor OR Oral direct thrombin inhibitor OR Fondaparinux | (Heparin OR LMWH OR Oral factor Xa inhibitor OR Oral direct thrombin inhibitor OR Fondaparinux) |
+
+The first row represents an exclusion criterion, which states that patients who are currently receiving warfarin or other coumarin derived anti-coagulants are not eligible for the clinical trial. The Criterion Rule translates this criterion into a logical expression that could be interpreted programmatically, which in this case is simply "NOT (Warfarin OR Other coumarin derived anti-coagulant)".
+
+The second row represents a note that clar

@@ -1,0 +1,3 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Bone and soft tissue imaging as clinically indicated (for unfavorable intermediate risk or symptomatic patients only) within 120 days prior to registration | Inclusion |  |  |  | (patient.risk_level = "unfavorable intermediate" OR patient.symptomatic = true) AND (patient.imaging_done = true AND patient.imaging_date ≤ 120 days ago) |

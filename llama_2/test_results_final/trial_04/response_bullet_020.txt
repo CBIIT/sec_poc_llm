@@ -1,0 +1,6 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| No anticancer therapy in the 3 weeks before the T-cell infusion (and all hematologic effects have resolved) | Inclusion |  |  | Chemotherapy, biologic therapy, or immunotherapy |  ~TreatmentFreeInterval(3 weeks) ∧ HematologicEffectsResolved() |
+| No prior immunotherapy with checkpoint blockade (e.g., PD1 inhibitor, PDL1 inhibitor, or CTL4- antagonist or similar agent) in the 6 months before the T-cell infusion (and all clinically significant related side effects must be resolved) | Inclusion |  |  | Immunotherapy with checkpoint blockade |  ~ImmunotherapyFreeInterval(6 months) ∧ SideEffectsResolved() |
+
+In this table, the Criterion Text column contains a verbatim snippet of the eligibility criterion being analyzed. The Inclusion/Exclusion column indicates whether the criterion is an inclusion or exclusion criterion. The Disease column names the disease or condition referenced in the criterion, if any. The Biomarker column names the biomarker referenced in the criterion, if any. The Prior Therapy column names the prior therapy referenced in the criterion, if any. The Criterion Rule column translates the criter

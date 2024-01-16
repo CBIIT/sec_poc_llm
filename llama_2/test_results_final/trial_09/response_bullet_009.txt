@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| ECOG performance status of 0 to 1 | Inclusion |  |  |  | ECOG_status(0,1) |
+
+ECOG stands for Eastern Cooperative Oncology Group; a performance status of 0 means the patient is fully active, and a performance status of 1 means the patient is unable to work but ambulatory and capable of all self-care.

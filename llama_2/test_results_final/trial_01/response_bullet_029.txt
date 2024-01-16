@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Chemotherapy or targeted therapy within 14 days prior to initiation of protocol therapy. No washout is required for trastuzumab | Exclusion |  |  | Chemotherapy or targeted therapy | ChemotherapyOrTargetedTherapyWithin14Days() |
+
+In this case, the eligibility criteria text describes an exclusion criterion related to prior therapy, specifically chemotherapy or targeted therapy within 14 days prior to the initiation of protocol therapy. Therefore, the table includes an entry with the criterion text, marked as an exclusion criterion, and a prior therapy column listing chemotherapy or targeted therapy. The criterion rule is a logical expression that could be interpreted programmatically to evaluate whether a patient has received chemotherapy or targeted therapy within the specified time frame.

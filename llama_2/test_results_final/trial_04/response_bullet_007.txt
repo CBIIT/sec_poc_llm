@@ -1,0 +1,14 @@
+Sure! Here is the table you requested:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patient’s carcinoma should express the FSHR antigen, detectable by polymerase chain reaction (PCR) analysis of archival tumor sample | Inclusion | None | FSHR | None | FSHR expression ≠ negative |
+
+
+The Criterion Text column contains the verbatim snippet of the eligibility criterion.
+The Inclusion/Exclusion column lists whether the criterion is an inclusion or exclusion criterion.
+The Disease column names the disease or condition referenced in the criterion, if any.
+The Biomarker column names the biomarker referenced in the criterion, if any.
+The Prior Therapy column names the prior therapy referenced in the criterion, if any.
+The Criterion Rule column translates the criterion into a logical expression that could be interpreted programmatically. In this case, the criterion rule states that FSHR expression must not be negative.

@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Female subject of childbearing potential should have a negative urine or serum pregnancy within 72 hours prior to receiving the first dose of study medication; if the urine test is positive or cannot be confirmed as negative, a serum pregnancy test will be required | Inclusion | None | None | None | (Female AND childbearing potential AND negative pregnancy test within 72 hours) |
+
+Note: Childbearing potential is not a disease or condition, but rather a demographic criterion. Therefore, the Disease and Biomarker columns are left empty. The Prior Therapy column is also empty since the criterion does not mention any specific therapy or treatment. The Criterion Rule is a logical expression that could be interpreted programmatically to determine whether a subject meets this inclusion criterion.

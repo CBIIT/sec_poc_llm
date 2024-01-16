@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| AVPC determination by immunohistochemistry | Inclusion | None | RB1, PTEN, Tp53 | None | (RB1 labeling index <= 10%) || (PTEN labeling index <= 10%) || (Tp53 labeling index >= 10%) |
+
+Note:
+
+* The criterion text describes a method for determining the status of certain biomarkers (RB1, PTEN, and Tp53) in tumor samples using immunohistochemistry.
+* The criterion is an inclusion criterion.
+* No specific disease or condition is mentioned in the criterion text.
+* The biomarkers RB1, PTEN, and Tp53 are mentioned.
+* No prior therapy is mentioned in the criterion text.
+* The criterion rule is a logical expression that combines the conditions for RB1, PTEN, and Tp53 using the logical operators "or" and "and". The expression can be interpreted programmatically to determine whether a tumor sample meets the criterion.

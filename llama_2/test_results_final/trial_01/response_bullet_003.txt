@@ -1,0 +1,13 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Treated with stereotactic radiosurgery (SRS) or surgery with residual un-treated lesions remaining | Inclusion | None | None | SRS or surgery | (SRS or surgery) ∧ (residual un-treated lesions remaining) |
+| At least one untreated lesion is measurable | Inclusion | None | None | None | ∃l (untreated lesion and measurable) |
+
+Here's a breakdown of how I filled out the table:
+
+* Criterion Text: I copied the criterion text verbatim from the given criteria text.
+* Inclusion/Exclusion: I marked the criterion as "Inclusion" because it describes a condition that allows the participant to be included in the study.
+* Disease: Since the criterion text doesn't mention a specific disease, I left this column blank.
+* Biomarker: Similarly, since the criterion text doesn't mention a biomarker, I left this column blank.
+* Prior Therapy: The criterion text mentions SRS or surgery, so I filled in "SRS or surgery" in this column.
+* Criterion Rule: I translated the criterion text into a logical expression that could be interpreted programmatically. The expression states that the participant is eligible if they have undergone S

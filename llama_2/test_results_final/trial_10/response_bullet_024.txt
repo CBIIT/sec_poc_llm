@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Previously participated in any other pembrolizumab (MK-3475) study | Exclusion |  |  |  | "participated_in_pembrolizumab_study" = false |
+| Received prior therapy with an anti-programmed cell death (PD)-1, anti-PD-Ligand 1 (anti-PD-L1), anti-PD-Ligand 2 (anti-PD-L2), or any other immunomodulating mAb or drug specifically targeting T-cell co-stimulation or checkpoint pathways | Exclusion |  |  |  | "received_prior_therapy_with_immunomodulating_mAb_or_drug" = false |
+
+Note:
+
+* "participated_in_pembrolizumab_study" and "received_prior_therapy_with_immunomodulating_mAb_or_drug" are criteria rules that can be used programmatically to evaluate whether a patient meets the exclusion criteria.
+* Since the criteria text does not mention any specific disease or biomarker, the Disease and Biomarker columns are left empty.
+* Prior Therapy column lists the specific therapies mentioned in the criteria text.

@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator | Inclusion | None | None | None | (Enrolling_Investigator_Opinion = "not amenable to treatment with curative intent") ∧ (Metastatic = true ∨ Unresectable = true ∨ Locally_Advanced = true) |
+
+Note:
+
+* "Enrolling Investigator" refers to the physician or researcher responsible for enrolling patients in the clinical trial.
+* "Metastatic" refers to cancer that has spread to other parts of the body.
+* "Unresectable" refers to cancer that cannot be removed by surgery.
+* "Locally Advanced" refers to cancer that has grown extensively in the organ or tissue where it started and may have spread to nearby tissues or lymph nodes.
+* "Curative Intent" refers to treatment aimed at curing the cancer rather than just managing its symptoms.

@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+|  Can provide existing biopsy taken within 2 years prior to entering trial or provide fresh biopsy | Inclusion |  |  |  | (ExistingBiopsyBeforeTwoYears OR FreshBiopsy) |
+
+Note:
+
+* Criterion Text: The text of the eligibility criterion as provided.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion (I) or exclusion (E) criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name is listed.
+* Biomarker: If the criterion contains a biomarker, its canonical name is listed.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name is listed.
+* Criterion Rule: A logical expression that could be interpreted programmatically to evaluate whether a patient meets the criterion. In this case, the criterion rule is a disjunction (OR) of two conditions: either the patient has an existing biopsy taken within two years prior to entering the trial, or the patient can provide a fresh biopsy.

@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Elevated serum lactate dehydrogenase (LDH) (>= 2 x ULN) or elevated serum carcinoembryonic antigen (CEA) (>= 2 x ULN) in the absence of other etiologies | Inclusion | None | LDH, CEA | None | (LDH >= 2 x ULN) OR (CEA >= 2 x ULN) |
+
+In this case, the inclusion criterion is stated as "Elevated serum lactate dehydrogenase (LDH) (>= 2 x ULN) or elevated serum carcinoembryonic antigen (CEA) (>= 2 x ULN) in the absence of other etiologies." This criterion is an inclusion criterion, and it mentions two biomarkers, LDH and CEA, which are both elevated in the absence of other etiologies. Therefore, the table includes columns for Inclusion/Exclusion, Disease (None, as this criterion does not mention a specific disease), Biomarker (LDH and CEA), Prior Therapy (None, as this criterion does not mention prior therapy), and Criterion Rule (a logical expression that combines the two biomarkers with the "OR" operator).

@@ -1,0 +1,19 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Clinically significant cardiac arrhythmias (e.g., ventricular tachycardia), complete left bundle branch block, high grade atrioventricular (AV) block (e.g., bifascicular block, Mobitz type II and third degree AV block) | Exclusion | Cardiac Arrhythmia | - | - | - |
+
+Note:
+
+* Disease: Cardiac Arrhythmia
+* Biomarker: -
+* Prior Therapy: -
+* Criterion Rule: -
+
+Explanation:
+
+* The criterion text describes an exclusion criterion.
+* The criterion text mentions cardiac arrhythmias, complete left bundle branch block, and high-grade atrioventricular block, which are all related to cardiac conditions. Therefore, the disease column is populated with "Cardiac Arrhythmia".
+* The biomarker and prior therapy columns are not populated since the criterion text does not mention any specific biomarkers or prior therapies.
+* The criterion rule is not populated since it is not possible to translate the criterion text into a logical expression that could be interpreted programmatically.
+
+It's important to note that this table represents a summary of the information provided in the criterion text, and it's not a comprehensive representation of all the possible criteria

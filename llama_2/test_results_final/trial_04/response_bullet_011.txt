@@ -1,0 +1,3 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients should be considered platinum-refractory (progression while on a prior platinum chemotherapy) or resistant (persistence or recurrence within 6 months after a prior platinum chemotherapy) and be deemed unlikely to have significant benefit from any standard therapies by the treating investigator | Inclusion | None | None | Platinum chemotherapy | Patients who have progressed or recurred within 6 months of platinum chemotherapy and are unlikely to benefit from standard therapies, as determined by the treating investigator, are eligible. |

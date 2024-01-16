@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients without active disease in the last 5 years may be included but only after consultation with the study physician | Exclusion |  |  |  | Patients without active disease in the last 5 years ≠ null |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name is listed.
+* Biomarker: If the criterion contains a biomarker, its canonical name is listed.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name is listed.
+* Criterion Rule: A logical expression that could be interpreted programmatically to translate the criterion.
+
+In this case, the criterion text describes an exclusion criterion that refers to patients without active disease in the last 5 years. Therefore, the table includes an exclusion criterion row with the corresponding criterion text, inclusion/exclusion status, and criterion rule. Since the criterion does not mention any specific disease, biomarker, or prior therapy, those columns remain empty.

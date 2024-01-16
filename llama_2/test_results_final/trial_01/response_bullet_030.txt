@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Has received prior therapy with a PI3K or mTOR inhibitor | Exclusion |  |  | PI3K or mTOR inhibitor | Not(PriorTherapy(PI3K OR mTOR inhibitor)) |
+
+In this table, the Criterion Text is "Has received prior therapy with a PI3K or mTOR inhibitor." This criterion is an exclusion criterion (Inclusion/Exclusion column), and it does not relate to a specific disease or biomarker (Disease and Biomarker columns are blank). The Prior Therapy column lists the name of the therapy that is the basis of the exclusion criterion. The Criterion Rule column translates the criterion into a logical expression that could be interpreted programmatically. In this case, the rule is "Not(PriorTherapy(PI3K OR mTOR inhibitor))", which means that the patient is not eligible for the clinical trial if they have received prior therapy with a PI3K or mTOR inhibitor.

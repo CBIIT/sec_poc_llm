@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Had radiotherapy within 3 weeks prior to Cycle 1 Day 1 (cycle is 28 days). | Inclusion |  |  | Radiotherapy | CriterionTextContains("radiotherapy") & TimeIntervalBeforeCycle1Day1IsLessThanOrEqualTo3Weeks & Grade1OrLessToxicitiesRecovered |
+| Participants must have recovered from radiotherapy toxicities prior to starting study treatment and recovered to Grade 1 or better from related side effects of such therapy (with the exception of alopecia). | Inclusion |  |  | Radiotherapy | CriterionTextContains("radiotherapy") & TimeIntervalBeforeCycle1Day1IsLessThanOrEqualTo3Weeks & Grade1OrLessToxicitiesRecovered & AlopeciaIsNotPresent |
+
+Note:
+
+* Criterion Text: The verbatim text of the eligibility criterion.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: The name of the disease or condition mentioned in the criterion text.
+* Biomarker: The name of the biomarker mentioned in the criterion text.
+* Prior Therapy: The name of the prior therapy mentioned in the criterion

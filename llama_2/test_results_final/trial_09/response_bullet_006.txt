@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| At least 12 weeks of treatment with only 1 line of anti-PD-(L)1 therapy (mono or combo) in the metastatic setting, without concomitant chemotherapy | Inclusion | None | None | Prior Therapy: Anti-PD-(L)1 therapy (mono or combo) | (Prior Therapy = "Anti-PD-(L)1 therapy (mono or combo)") |
+
+Note:
+
+* The criterion text specifies that the patient must have received at least 12 weeks of treatment with only one line of anti-PD-(L)1 therapy (mono or combo) in the metastatic setting, without concomitant chemotherapy.
+* The inclusion/exclusion status is set to "Inclusion" since this is an inclusion criterion.
+* There is no disease or biomarker specified in this criterion, so those columns are left blank.
+* The prior therapy column is set to "Prior Therapy: Anti-PD-(L)1 therapy (mono or combo)" since the criterion specifies that the patient must have received prior therapy with anti-PD-(L)1 therapy.
+* The criterion rule is translated to a logical expression as "(Prior Therapy = "Anti-PD-(L)1 therapy (mono or combo

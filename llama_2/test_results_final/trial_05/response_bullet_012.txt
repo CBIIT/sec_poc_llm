@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Any prior treatment for castration-resistant prostate cancer (CRPC) with carboplatin, cisplatin, cabazitaxel, PARP-inhibitor or an anti-PD1 or anti-PDL1 inhibitor | Exclusion | Prostate Cancer | None | Carboplatin, Cisplatin, Cabazitaxel, PARP-inhibitor, anti-PD1, anti-PDL1 | (Prior_Therapy = "Carboplatin" ∨ Prior_Therapy = "Cisplatin" ∨ Prior_Therapy = "Cabazitaxel" ∨ Prior_Therapy = "PARP-inhibitor" ∨ Prior_Therapy = "anti-PD1" ∨ Prior_Therapy = "anti-PDL1") → False |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: Denotes whether the criterion is an inclusion or exclusion criterion.
+* Disease: The name of the disease or condition mentioned in the criterion. In this case, it's "Prostate Cancer".
+* Biomarker: None, since the criterion doesn't mention any biomarkers.
+* Prior Therapy

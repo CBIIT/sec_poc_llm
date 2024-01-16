@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Previously untreated prostate cancer (with cytotoxic chemotherapy, cryotherapy, surgical or radiation therapy) | Inclusion | Prostate Cancer | None | None | (Disease = "Prostate Cancer") AND (Prior Therapy = "None") |
+
+Note:
+
+* Disease column contains the name of the disease or condition mentioned in the criterion text. In this case, it is "Prostate Cancer".
+* Biomarker column contains the name of the biomarker mentioned in the criterion text. Since there is no biomarker mentioned, it is left empty.
+* Prior Therapy column contains the name of the prior therapy mentioned in the criterion text. Since there is no prior therapy mentioned, it is left empty.
+* Criterion Rule is a logical expression that could be interpreted programmatically. In this case, it is "(Disease = "Prostate Cancer") AND (Prior Therapy = "None")", which means that the patient must have prostate cancer and must not have had any prior therapy for prostate cancer.

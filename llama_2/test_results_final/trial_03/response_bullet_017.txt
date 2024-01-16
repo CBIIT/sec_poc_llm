@@ -1,0 +1,8 @@
+Sure! Here's the table you requested:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Serum aspartate transaminase (AST) and serum alanine transaminase (ALT) =< 2.5 x upper limit of normal | Inclusion | None | None | None | AST <= 2.5 * ULN AND ALT <= 2.5 * ULN |
+
+I hope this helps! Let me know if you have any questions.

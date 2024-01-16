@@ -1,0 +1,3 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patient agrees to undergo placement of either interventional radiologically placed or surgically placed peritoneal port (may be temporary or subcutaneous) | Inclusion |  |  |  | "Patient agrees to undergo placement of either interventional radiologically placed or surgically placed peritoneal port (may be temporary or subcutaneous)" = True |

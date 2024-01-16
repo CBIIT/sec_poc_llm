@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Any advanced solid tumor (including Colorectal Carcinoma [CRC]) which is Mismatch Repair Deficient (dMMR)/MSI-H in participants from mainland China who are of Chinese descent. | Inclusion | Colorectal Carcinoma (CRC) | Mismatch Repair Deficient (dMMR)/MSI-H | 2 prior lines of therapy | (Disease = CRC) ∧ (Biomarker = dMMR/MSI-H) ∧ (Prior Therapy = 2) |
+
+Note:
+
+* Disease column contains the name of the disease mentioned in the criterion text.
+* Biomarker column contains the name of the biomarker mentioned in the criterion text.
+* Prior Therapy column contains the name of the prior therapy mentioned in the criterion text.
+* Criterion Rule column contains a logical expression that could be interpreted programmatically, using the variables Disease, Biomarker, and Prior Therapy.
+
+In this case, the criterion text includes two parts:
+
+* The first part mentions any advanced solid tumor that is Mismatch Repair Deficient (dMMR)/MSI-H in participants from mainland China who are of Chinese descent. This part is an inclusion criterion and corresponds to the disease Colorectal

@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Biopsy proven metastatic melanoma or non-squamous NSCLC with at least one untreated cerebral metastasis | Inclusion | Melanoma | None | None | (Disease = "melanoma" OR Disease = "non-squamous NSCLC") AND (Metastasis = "untreated" AND Size >= 5 mm AND Size < 20 mm AND Asymptomatic = true AND Requires local therapy = false) |
+
+Note:
+
+* Disease = "melanoma" OR Disease = "non-squamous NSCLC" - This criterion includes two diseases, metastatic melanoma, and non-squamous NSCLC.
+* Metastasis = "untreated" AND Size >= 5 mm AND Size < 20 mm AND Asymptomatic = true AND Requires local therapy = false - This criterion includes several conditions related to the metastasis, including its size, asymptomatic nature, and lack of requirement for local therapy.
+* Prior Therapy = None - This criterion does not mention any specific prior therapy.
+
+The Criterion Rule is a logical expression that could be interpreted programmatically, it combines the conditions for the disease, metastasis, and local therapy requirement.

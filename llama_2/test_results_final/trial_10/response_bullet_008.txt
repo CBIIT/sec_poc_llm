@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Performance status of 0 or 1 on the Eastern Cooperative Oncology Group (ECOG) Performance Scale within 3 days prior to first dose of pembrolizumab | Inclusion |  |  |  | Performance status ≤ 1 on ECOG scale within 3 days prior to first dose of pembrolizumab |
+
+Note:
+
+* The criterion text specifies an inclusion criterion (Inclusion/Exclusion: Inclusion) related to the patient's performance status, which must be 0 or 1 on the ECOG Performance Scale within 3 days prior to the first dose of pembrolizumab.
+* There is no disease, biomarker, or prior therapy specified in the given criterion text.
+* The criterion rule translates the criterion text into a logical expression that could be interpreted programmatically. In this case, the rule is simply "Performance status ≤ 1 on ECOG scale within 3 days prior to first dose of pembrolizumab".

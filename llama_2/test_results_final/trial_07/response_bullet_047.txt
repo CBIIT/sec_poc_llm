@@ -1,0 +1,8 @@
+Sure! Here's the table you requested:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Evidence of bleeding diathesis or clinically significant coagulopathy (in the absence of therapeutic anticoagulation); any history of significant bleeding or thrombosis should be discussed with the study principal investigators (PIs) | Exclusion | Bleeding diathesis | - | - | NOT (Therapeutic Anticoagulation) AND (Bleeding Diathesis OR Clinically Significant Coagulopathy) |
+
+In this case, the criterion text describes an exclusion criterion that references a disease (bleeding diathesis) and a medical condition (clinically significant coagulopathy). Therefore, we have populated the Disease column with "Bleeding diathesis" and left the Biomarker and Prior Therapy columns empty. The Criterion Rule translates the criterion text into a logical expression that could be interpreted programmatically.

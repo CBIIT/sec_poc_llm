@@ -1,0 +1,8 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Platinum-resistant (defined as progression within 12 months of last platinum therapy administration), pathologically confirmed serous ovarian cancer that is recurrent and unresectable, in the opinion of the enrolling investigator | Inclusion | Ovarian Cancer | None | Platinum therapy | Criterion Text = "Platinum-resistant (defined as progression within 12 months of last platinum therapy administration), pathologically confirmed serous ovarian cancer that is recurrent and unresectable, in the opinion of the enrolling investigator" |
+| Pathologically confirmed breast cancer with the following features: | Inclusion | Breast Cancer | None | None | Criterion Text = "Pathologically confirmed breast cancer with the following features:" |
+
+Note: The criteria text mentions two different types of cancer: ovarian cancer and breast cancer. Therefore, two separate rows are included in the table, one for each type of cancer.
+
+The "Criterion Rule" column translates the criteria text into a logical expression that could be interpreted programmatically. In this case, the criterion rule for the ovarian cancer criterion is simply the text of the criterion itself, since it is a straightforward inclusion criterion. For the breast cancer criterion, the rule is also straightforward, but it is represented as a logical "AND" operation between

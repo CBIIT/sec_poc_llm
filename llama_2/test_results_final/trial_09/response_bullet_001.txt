@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Confirmed diagnosis of metastatic (Stage IV) or locally advanced, unresectable (Stage III) NSCLC of nonsquamous pathology that has relapsed or progressed | Inclusion | Non-small cell lung cancer | - | - | (Disease = "Non-small cell lung cancer" AND (Stage = "Stage IV" OR Stage = "Stage III" AND unresectable = true)) |
+
+Note:
+
+* Disease column contains the name of the disease mentioned in the criterion text, which is "Non-small cell lung cancer" in this case.
+* Biomarker column is empty since there is no mention of a biomarker in the criterion text.
+* Prior Therapy column is empty since there is no mention of prior therapy in the criterion text.
+* Criterion Rule is a logical expression that could be interpreted programmatically, which translates to "(Disease = 'Non-small cell lung cancer' AND (Stage = 'Stage IV' OR Stage = 'Stage III' AND unresectable = true))".
+
+It's important to note that the criterion text only mentions "nonsquamous pathology" which means that squamous cell lung cancer is excluded from this clinical trial.

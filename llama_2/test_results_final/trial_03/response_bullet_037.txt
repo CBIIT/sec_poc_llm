@@ -1,0 +1,7 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Baseline corrected QT interval (QTcF) > 450 msec. The heart rate on the qualifying electrocardiogram (ECG) must be between 50 and 90 beats per minute (BPM) | Exclusion |  |  |  | QTcF > 450 msec ∧ heart rate ∈ [50, 90] BPM |
+
+The Criterion Text describes an exclusion criterion (Inclusion/Exclusion: Exclusion) that refers to a specific electrocardiogram (ECG) measurement (Disease: none). The criterion specifies that the baseline corrected QT interval (QTcF) must be greater than 450 milliseconds, and the heart rate on the qualifying ECG must be between 50 and 90 beats per minute (Biomarker: none). Therefore, the Criterion Rule is QTcF > 450 msec ∧ heart rate ∈ [50, 90] BPM.
+
+Note that the Prior Therapy column is empty, as the criterion does not mention any specific prior therapy.

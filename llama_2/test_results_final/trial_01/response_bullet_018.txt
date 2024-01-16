@@ -1,0 +1,14 @@
+Sure! Here's the table you requested:
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| AST (SGOT)/ALT (SGPT) ≤ 2.5 x institutional ULN OR ≤ 5.0 x institutional ULN for patients with documented liver metastases | Inclusion | None | None | None | AST_SGOT OR ALT_SGPT <= 2.5 x ULN OR AST_SGOT OR ALT_SGPT <= 5.0 x ULN (if liver metastases are documented) |
+
+Here's a breakdown of how I filled out the table:
+
+* Criterion Text: I copied the criterion text directly from the given criteria text.
+* Inclusion/Exclusion: I labeled this criterion as an Inclusion criterion because it specifies a condition that must be met for the patient to be included in the clinical trial.
+* Disease: Since the criterion text doesn't mention a specific disease or condition, I left this column blank.
+* Biomarker: Similarly, since the criterion text doesn't mention a specific biomarker, I left this column blank.
+* Prior Therapy: This criterion doesn't mention prior therapy, so I left this column blank.
+* Criterion Rule: I translated the criterion text into a logical expression that could be interpreted programmatically

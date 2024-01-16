@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Concurrently using other anticancer therapy | Inclusion |  |  | Palbociclib and AI or fulvestrant for Phase 1b and palbociclib or ribociclib and AI or fulvestrant for Phase 2 | (Therapy = Palbociclib ∧ Therapy = AI ∧ Therapy = Fulvestrant) ∨ (Therapy = Ribociclib ∧ Therapy = AI ∧ Therapy = Fulvestrant) |
+
+Note:
+
+* Therapy represents the therapy received by the patient.
+* Palbociclib, Ribociclib, AI, and Fulvestrant are all cancer therapies.
+* The criterion rule is a logical expression that represents the conditions under which the patient is eligible for the clinical trial. In this case, the patient must be receiving either Palbociclib and AI or Fulvestrant for Phase 1b, or Palbociclib or Ribociclib and AI or Fulvestrant for Phase 2.

@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Pathologically confirmed diagnosis of high-grade (grade 2-3) epithelial ovarian cancer, primary peritoneal cancer, or fallopian tube carcinoma (EOC), which are serous, endometrioid, clear cell, mucinous, mixed epithelial, or undifferentiated | Inclusion | Epithelial ovarian cancer | - | - | (EOC) = (serous ∨ endometrioid ∨ clear cell ∨ mucinous ∨ mixed epithelial ∨ undifferentiated) |
+| Tumors that are substantially high-grade carcinoma and have focal elements of lower grade tumors or sarcomatous elements (e.g., carcinosarcoma) are eligible | Inclusion | - | - | - | (tumor.grade = high ∧ tumor.hasFocalElements(lowerGradeTumors ∨ sarcomatousElements)) |
+| The study does not include pure sarcoma, stromal, or germ-cell tumors | Exclusion | - | - | - | (tumor.type = sarcoma ∨ tumor.type = stromal ∨ tumor.type = germCell) |
+
+Note:
+
+* EOC stands for epithelial ovarian cancer

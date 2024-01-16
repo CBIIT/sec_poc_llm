@@ -1,0 +1,7 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Clinically significant heart disease (New York Heart Association class 3 or 4) or symptomatic congestive heart failure | Exclusion | Heart disease |  |  | "HeartDisease(NYHA3or4) ∨ SymptomaticCHF" |
+| Myocardial infarction < 6 months before enrollment | Exclusion | Myocardial infarction |  |  | "MI(<6months)" |
+| History of clinically significant ventricular arrhythmia or unexplained syncope that is not believed to be vasovagal in nature or due to dehydration | Exclusion |  |  |  | "ArrhythmiaOrSyncope(notVasovagalOrDehydration)" |
+| History of severe non-ischemic cardiomyopathy with ejection fraction < 20% | Exclusion | Cardiomyopathy |  |  | "Cardiomyopathy(ejectionFraction<20%)" |
+| Findings on baseline electrocardiogram (ECG) or echocardiogram (ECHO) that, in the opinion of the patientâ€™s treating physician or investigator, would require medical intervention before anticancer therapy | Exclusion |  |  |  | "

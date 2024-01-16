@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Agrees to continue use of approved birth control for at least 6 months after receiving the last dose of study drugs | Inclusion |  |  |  | "birth_control_usage = 'approved' AND birth_control_duration >= 6 months" |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name is listed.
+* Biomarker: If the criterion contains a biomarker, its canonical name is listed.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name is listed.
+* Criterion Rule: A logical expression that could be interpreted programmatically to translate the criterion.
+
+In this case, the criterion text describes a requirement for participants to continue using approved birth control for at least 6 months after receiving the last dose of study drugs. Therefore, the table contains a single row with the criterion text, marked as an inclusion criterion, and no disease, biomarker, or prior therapy columns, as this criterion does not relate to any specific disease, biomarker, or prior therapy. The criterion rule

@@ -1,0 +1,3 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| PD-L1 expression status available at or after the time of diagnosis of advanced or metastatic NSCLC disease | Inclusion | Non-small cell lung cancer | PD-L1 | - | PD-L1 expression status available at or after diagnosis of advanced or metastatic NSCLC |

@@ -1,0 +1,9 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients must have adequate organ function as defined by the following criteria within 2 weeks prior to randomization | Inclusion |  |  |  | Patients with adequate organ function |
+| Serum aspartate aminotransferase (AST) and serum alanine aminotransferase (ALT) =< 2.5 x upper limit of normal (ULN) | Inclusion |  |  |  | AST and ALT =< 2.5 x ULN |
+| Total serum bilirubin =< 1.5 x ULN | Inclusion |  |  |  | Bilirubin =< 1.5 x ULN |
+| Absolute neutrophil count (ANC) >= 1500/mm^3 | Inclusion |  |  |  | ANC >= 1500/mm^3 |
+| Platelets >= 30,000/mm^3 | Inclusion |  |  |  | Platelets >= 30,000/mm^3 |
+| Hemoglobin >= 8.0 g/dL | Inclusion |  |  |  | Hemoglobin >= 8.0 g/dL |
+| Serum creatinine =< 2 x ULN | Inclusion

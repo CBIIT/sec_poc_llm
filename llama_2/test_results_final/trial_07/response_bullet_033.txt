@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Has active autoimmune disease that has required systemic treatment in the past 2 years | Exclusion | Autoimmune disease | - | Systemic treatment with disease-modifying agents, corticosteroids, or immunosuppressive drugs | - |
+
+Note:
+
+* The criterion text specifies an exclusion criterion.
+* The disease mentioned is "autoimmune disease".
+* There is no biomarker mentioned in the criterion text.
+* The prior therapy mentioned is "systemic treatment with disease-modifying agents, corticosteroids, or immunosuppressive drugs".
+* The criterion rule can be translated as "Has received systemic treatment for autoimmune disease in the past 2 years".

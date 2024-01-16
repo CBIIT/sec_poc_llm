@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Baseline chest computed tomography (CT) with or without contrast must be performed within 6 months (180 days) prior to randomization to ensure no evidence of disease; if clinically indicated additional imaging studies must be performed to rule out metastatic disease | Inclusion | None | None | None | (baseline_chest_CT_with_or_without_contrast AND (≤ 6 months OR clinically_indicated_additional_imaging_studies)) ≠ none |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name is listed.
+* Biomarker: If the criterion contains a biomarker, its canonical name is listed.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name is listed.
+* Criterion Rule: A logical expression that could be interpreted programmatically to translate the criterion. In this case, the criterion rule is a conjunction of two conditions: 
+	+ Baseline chest CT with or without contrast performed within 6 months (180 days) prior to randomization.
+	+ If

@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients unable to swallow orally administered medication | Exclusion |  |  |  | Patient.has_condition(“Dysphagia”) |
+| Patients with gastrointestinal disorders likely to interfere with absorption of the study medication | Exclusion |  |  |  | Patient.has_condition(“Gastrointestinal disorder”) ∧ Medication.interferes_with_absorption(“Study medication”) |
+
+Note:
+
+* Dysphagia is a disease characterized by difficulty swallowing.
+* Gastrointestinal disorder refers to any condition affecting the gastrointestinal tract, such as irritable bowel syndrome, Crohn’s disease, or gastritis.
+* The criterion rule uses logical expressions to represent the criteria programmatically. In this case, the first criterion uses the “has_condition” function to check if the patient has dysphagia, while the second criterion uses the “has_condition” function to check if the patient has a gastrointestinal disorder and the “interferes_with_absorption” function to check if the study medication is likely to be interfered with by the patient’s gastrointestinal disorder.

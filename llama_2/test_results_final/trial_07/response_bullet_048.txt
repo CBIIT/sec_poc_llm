@@ -1,0 +1,9 @@
+Sure! Here's the table you requested:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Current or recent (within 10 calendar days prior to cycle 1, day 1) use of dipyridamole, ticlopidine, clopidogrel, or cilostazol | Exclusion |  |  |  | formula: not(dipyridamole or ticlopidine or clopidogrel or cilostazol) |
+
+
+I hope this helps! Let me know if you have any questions.

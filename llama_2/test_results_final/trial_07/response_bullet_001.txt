@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Metastatic melanoma or non-squamous NSCLC with untreated brain metastases | Inclusion | Melanoma, Non-squamous non-small cell lung cancer | - | - | (Disease = Melanoma) ∨ (Disease = Non-squamous non-small cell lung cancer) ∧ (Presence of untreated brain metastases) |
+
+Note:
+
+* Disease column contains the canonical name of the disease mentioned in the criterion text.
+* Biomarker column is empty since there is no mention of a biomarker in the criterion text.
+* Prior Therapy column is empty since there is no mention of prior therapy in the criterion text.
+* Criterion Rule is a logical expression that could be interpreted programmatically. In this case, it is a disjunction (OR) of two conditions: (Disease = Melanoma) or (Disease = Non-squamous non-small cell lung cancer) and (Presence of untreated brain metastases).

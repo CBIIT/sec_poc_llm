@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Participants who present with systemic stable/absent or progressive disease are eligible to this trial, as long as they fulfill one of the above criteria | Inclusion | None | None | None | Participants with systemic stable/absent or progressive disease are eligible if they meet at least one of the above criteria. |
+
+Note: Since the eligibility criteria text does not mention any specific diseases, biomarkers, or prior therapies, the corresponding columns are left blank. The criterion rule is a logical expression that translates to "Participants with systemic stable/absent or progressive disease are eligible if they meet at least one of the above criteria."

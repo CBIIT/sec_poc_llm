@@ -1,0 +1,6 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Have measurable disease or detectable (non-measurable) disease | Inclusion | None | None | None | (Measurable disease ∨ Detectable disease) |
+| Measurable disease is defined as at least 1 lesion that can be accurately measured in at least 1 dimension (longest diameter to be recorded). Each lesion must be >= 10 mm when measured by computed tomography (CT), magnetic resonance imaging (MRI), or caliper measurement at clinical examination or >= 20 mm when measured by chest x-ray | Inclusion | None | None | None | (Lesion ≥ 10 mm ∧ Measured by CT, MRI, or caliper ∧ Recorded dimension ≥ 10 mm) ∨ (Lesion ≥ 20 mm ∧ Measured by chest x-ray) |
+| Detectable (non-measurable) disease is defined as not having measurable disease but having: | Inclusion | None | None | None | ¬Measurable disease ∧ (Lymph nodes ≥ 15 mm ∨ Other detectable disease) |
+| Lymph nodes must be >= 15 mm in short axis when measured by CT or MRI | Inclusion | None | None | None | Lymph nodes ≥ 15 mm ∧ Measured

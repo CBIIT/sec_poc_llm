@@ -1,0 +1,13 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Has had disease progression on more than two cyclin-dependent kinase (CDK)4/6 inhibitors | Inclusion | None | None | Palbociclib or ribociclib | HasProgressedOn(CDK4/6Inhibitor, 2) |
+| Adjuvant abemaciclib is allowed but must have progressed on palbociclib or ribociclib | Inclusion | None | None | Palbociclib or ribociclib, Abemaciclib | HasProgressedOn(CDK4/6Inhibitor, 2) ∧ (Palbociclib ∨ Ribociclib) → Abemaciclib |
+
+Note:
+
+* CDK4/6Inhibitor refers to any cyclin-dependent kinase (CDK)4/6 inhibitor drug.
+* HasProgressedOn(Drug, Number) means the patient has had disease progression while taking the specified drug(s) at least the specified number of times.
+* ∧ means logical AND.
+* ∨ means logical OR.
+
+The table above represents the two inclusion criteria mentioned in the criteria text. The first criterion states that the patient must have had disease progression on more than two CDK4/6 inhibitors, without specifying any particular drug. The second criterion allows for adjuvant abemac

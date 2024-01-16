@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Any other oncologic treatments administered ≤14 days (<28 days in case of checkpoint inhibitor therapy) prior to first dose of study treatment. Also, ongoing adverse effects from such treatment > Grade 1 with the exception for alopecia and Grade 2 peripheral neuropathy. | Exclusion |  |  | Chemotherapy, Targeted Therapy, Immunotherapy | Criterion Rule: (DaysSinceLastTreatment > 14) && (GradeOfAdverseEffect > 1) && (TreatmentType != "Checkpoint Inhibitor") |
+
+Note:
+
+* The criterion text describes an exclusion criterion.
+* There is no disease or biomarker specified in the criterion text.
+* The prior therapy is defined as "any other oncologic treatments" and includes chemotherapy, targeted therapy, and immunotherapy.
+* The criterion rule is a logical expression that combines the conditions described in the criterion text using the specified variables: DaysSinceLastTreatment (the number of days since the last treatment), GradeOfAdverseEffect (the grade of adverse effect), and TreatmentType (the type of treatment). The expression translates to "if the days since last treatment are greater than or equal to 14,

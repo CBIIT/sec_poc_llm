@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Short interval (=< 180 days) to castrate-resistant progression following initiation of hormonal therapy | Inclusion | Prostate cancer | - | Hormonal therapy | (Prostate cancer) ∧ (Hormonal therapy initiation) ∧ (Castrate-resistant progression) ∧ (Interval < 180 days) |
+
+Note:
+
+* Disease: Prostate cancer
+* Biomarker: - (not applicable)
+* Prior Therapy: Hormonal therapy
+* Criterion Rule: The patient must have been diagnosed with prostate cancer, have initiated hormonal therapy, and have experienced castrate-resistant progression within 180 days of the initiation of hormonal therapy.

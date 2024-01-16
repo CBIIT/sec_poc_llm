@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Any unresolved toxicity (Common Terminology Criteria for Adverse Events [CTCAE] grade >= 2) from previous anti-cancer therapy | Exclusion |  |  |  | Subjects with irreversible toxicity that is not reasonably expected to be exacerbated by the investigational product may be included (e.g., hearing loss, peripherally neuropathy) |
+
+Explanation:
+
+* Criterion Text: The exact text from the exclusion criteria is "Any unresolved toxicity (Common Terminology Criteria for Adverse Events [CTCAE] grade >= 2) from previous anti-cancer therapy."
+* Inclusion/Exclusion: This criterion is an exclusion criterion.
+* Disease: None, as this criterion does not mention a specific disease or condition.
+* Biomarker: None, as this criterion does not mention a specific biomarker.
+* Prior Therapy: This criterion mentions previous anti-cancer therapy, but does not specify a particular therapy.
+* Criterion Rule: The criterion rule can be translated to a logical expression as follows: "If the subject has unresolved toxicity (CTCAE grade >= 2) from previous anti-cancer therapy, then the subject is excluded."
+
+Note:

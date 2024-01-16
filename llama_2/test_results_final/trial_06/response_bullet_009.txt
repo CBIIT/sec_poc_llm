@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| PSA < 20 | Inclusion | Prostate Cancer | PSA | None | PSA(<20) |
+
+Note:
+
+* PSA stands for Prostate Specific Antigen.
+* The criterion text specifies an inclusion criterion for prostate cancer clinical trial, which states that the patient's PSA level must be less than 20.
+* The disease associated with this criterion is Prostate Cancer.
+* The biomarker associated with this criterion is PSA.
+* There is no prior therapy specified in the given criterion text.
+* The criterion rule is represented as PSA(<20), which means the patient's PSA level must be less than 20 to meet the inclusion criterion.

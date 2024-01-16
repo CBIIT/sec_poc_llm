@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| PD-L1 expression >= 1% in tumor tissue from any site | Inclusion | Non-small cell lung cancer (NSCLC) | PD-L1 | None | PD-L1 expression >= 1% in tumor tissue from any site |
+| PD-L1 expression via central and/or local testing of PD-L1 Immunohistochemistry (IHC) by any Food and Drug Administration (FDA)-approved assay or an assay performed in a Clinical Laboratory Improvement Act (CLIA)-certified laboratory | Inclusion | Non-small cell lung cancer (NSCLC) | PD-L1 | None | PD-L1 expression via central and/or local testing of PD-L1 Immunohistochemistry (IHC) by any Food and Drug Administration (FDA)-approved assay or an assay performed in a Clinical Laboratory Improvement Act (CLIA)-certified laboratory |
+| No archival tissue is available or if intercurrent systemic therapy was administered, then a biopsy must be obtained for PD-L1 testing | Inclusion | Non-small cell lung cancer (NSCLC) | PD-L1 | None | (No archival tissue is available) OR (intercurrent systemic therapy was administer

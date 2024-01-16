@@ -1,0 +1,10 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Treatment with moderate or strong inducers or inhibitors of CYP 3A4, inhibitors of P-glycoprotein, or substrates of breast cancer resistance protein | Exclusion |  |  |  | Treatment with CYP 3A4 inducers or inhibitors, P-glycoprotein inhibitors, or breast cancer resistance protein substrates |
+
+Note:
+
+* CYP 3A4, P-glycoprotein, and breast cancer resistance protein are not diseases or biomarkers, but rather proteins that play a role in drug metabolism and transport. Therefore, they are not included in the Disease or Biomarker columns.
+* The criterion text does not mention any specific diseases or biomarkers, only drugs that interact with these proteins. Therefore, the Disease and Biomarker columns are left empty.
+* The Prior Therapy column is also left empty, as the criterion text does not mention any specific prior therapies.
+* The Criterion Rule column translates the criterion text into a logical expression that could be interpreted programmatically. In this case, the rule states that treatment with certain drugs that interact with CYP 3A4, P-glycoprotein, or breast cancer resistance protein is an exclusion criterion.

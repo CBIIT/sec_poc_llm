@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Known or suspected untreated brain metastases | Exclusion | Brain Metastases | None | None | NOT (Brain Metastases = "Untreated") |
+| Patients with radiographically stable, asymptomatic previously irradiated lesions are eligible | Inclusion | Brain Metastases | None | Cranial irradiation | (Brain Metastases = "Previously irradiated" AND Time since completion of cranial irradiation > 4 weeks AND Time since completion of corticosteroid therapy > 3 weeks) |
+
+Note:
+
+* The first criterion is an exclusion criterion and relates to untreated brain metastases, so it is listed as an exclusion criterion in the Inclusion/Exclusion column.
+* The second criterion is an inclusion criterion and relates to patients with previously irradiated brain metastases, so it is listed as an inclusion criterion in the Inclusion/Exclusion column.
+* The Disease column lists the disease or condition mentioned in the criterion text, which in this case is Brain Metastases.
+* The Biomarker column is empty since there is no mention of a biomarker in the criterion text.
+* The Prior Therapy column lists the prior therapy mentioned in the criterion text, which in this case is

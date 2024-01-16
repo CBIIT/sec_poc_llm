@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Active or symptomatic viral hepatitis or chronic liver disease | Exclusion | Viral hepatitis | None | None | !(Viral hepatitis) |
+
+Note: The criterion rule is represented using the logical negation operator (!) to indicate that the criterion is an exclusion criterion. The disease column contains the name of the disease or condition specified in the criterion text, and the biomarker and prior therapy columns are left empty since the criterion text does not mention any biomarkers or prior therapies.

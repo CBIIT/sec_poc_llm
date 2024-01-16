@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Inadequately controlled hypertension | Exclusion | Hypertension |  |  | Systolic blood pressure > 150 mmHg and/or diastolic blood pressure > 100 mmHg |
+
+Note: In this case, the criterion text describes a condition (hypertension) and specifies a threshold for blood pressure that defines "inadequately controlled" hypertension. Therefore, we have populated the Disease column with "Hypertension". There is no biomarker or prior therapy specified in the criterion text, so those columns remain empty. The Criterion Rule is a logical expression that could be interpreted programmatically to determine whether a patient's hypertension is adequately controlled based on the specified blood pressure thresholds.

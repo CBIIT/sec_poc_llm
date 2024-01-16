@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+|  Has had prior treatment with any other anti-PD-1 or PD-L1 or PD-L2 agent | Exclusion |  |  |  | HasPriorTreatmentWithAntiPD1OrPDLLAgent() |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the exclusion criterion.
+* Inclusion/Exclusion: Denotes whether the criterion is an inclusion or exclusion criterion.
+* Disease: None, since the criterion does not mention a specific disease or condition.
+* Biomarker: None, since the criterion does not mention a specific biomarker.
+* Prior Therapy: The criterion mentions prior treatment with any other anti-PD-1 or PD-L1 or PD-L2 agent, so this column is populated.
+* Criterion Rule: A logical expression that could be interpreted programmatically to evaluate whether a patient meets this exclusion criterion. In this case, the rule is "HasPriorTreatmentWithAntiPD1OrPDLLAgent()", which means the patient has had prior treatment with any other anti-PD-1 or PD-L1 or PD-L2 agent.

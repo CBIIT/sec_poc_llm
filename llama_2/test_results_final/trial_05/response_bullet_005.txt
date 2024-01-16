@@ -1,0 +1,12 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Low PSA (=< 10 ng/mL) at initial presentation (prior to androgen ablation or at symptomatic progression in the castrate-setting) plus high volume (>= 20) bone metastases | Inclusion | Prostate Cancer | PSA | Androgen Ablation | PSA <= 10 ng/mL  |
+
+Note:
+
+* PSA stands for Prostate-Specific Antigen.
+* Androgen Ablation refers to the use of drugs to reduce the levels of male hormones, such as testosterone, which can stimulate the growth of prostate cancer cells.
+
+Explanation:
+
+The inclusion criterion states that patients with low PSA levels (less than or equal to 10 ng/mL) at initial presentation, and high volume (20 or more) bone metastases, are eligible for the clinical trial. This criterion is an inclusion criterion. The disease being targeted is prostate cancer, and the biomarker used is PSA. Prior therapy with androgen ablation is also considered in the criterion. The criterion rule can be translated programmatically as "PSA <= 10 ng/mL".

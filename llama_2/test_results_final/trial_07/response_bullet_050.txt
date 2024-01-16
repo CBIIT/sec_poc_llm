@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| History of abdominal or tracheoesophageal fistula or gastrointestinal perforation within 6 months prior to cycle 1, day 1 | Exclusion | None | None | None | NOT (FistulaOrPerforationWithin6Months()) |
+
+The Criterion Rule, FistulaOrPerforationWithin6Months, could be defined as a logical function that takes a patient's medical history as input and returns true if the patient has a history of abdominal or tracheoesophageal fistula or gastrointestinal perforation within 6 months prior to cycle 1, day 1, and false otherwise.

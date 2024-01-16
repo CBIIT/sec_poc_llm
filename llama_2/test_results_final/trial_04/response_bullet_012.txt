@@ -1,0 +1,11 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Patients with a known germline or somatic BRCA pathogenic mutation should have a prior PARP inhibitor and subsequent progression, unless they have a documented history of intolerance or inability to swallow oral medications | Inclusion | BRCA | BRCA1, BRCA2 | PARP inhibitor | Criterion Rule: (BRCA1 or BRCA2) and (PARP inhibitor) and (progression) and not (intolerance or inability to swallow oral medications) |
+
+Note:
+
+* BRCA1 and BRCA2 are the canonical names for the BRCA genes.
+* PARP inhibitor refers to a class of drugs that inhibit the activity of poly (ADP-ribose) polymerase, an enzyme involved in DNA repair.
+* Progression refers to the worsening of cancer symptoms or the presence of new cancer lesions.
+* Intolerance refers to the inability to tolerate a drug or therapy due to adverse effects.
+* Inability to swallow oral medications refers to the inability to take medications by mouth due to a physical or cognitive impairment.

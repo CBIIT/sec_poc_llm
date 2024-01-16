@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| 	History or current diagnosis of MDS/AML | Exclusion | Myelodysplastic syndrome (MDS) | - | - | Not(MDS) |
+
+In this table, the Criterion Text is "History or current diagnosis of MDS/AML." This criterion is an exclusion criterion (Inclusion/Exclusion: Exclusion). The Disease column contains the name of the disease mentioned in the criterion text, which is Myelodysplastic syndrome (MDS). The Biomarker and Prior Therapy columns are empty since the criterion text does not mention any biomarkers or prior therapies. The Criterion Rule is "Not(MDS)", which means that patients with a history or current diagnosis of MDS/AML are excluded from the clinical trial.

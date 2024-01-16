@@ -1,0 +1,15 @@
+Sure! Here's the table you requested:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Hemoglobin > 9 g/dL | Inclusion | None | None | None | Hemoglobin > 9 g/dL |
+
+
+The Criterion Text is the verbatim snippet of the eligibility criterion. In this case, it's "Hemoglobin > 9 g/dL".
+
+The Inclusion/Exclusion column indicates whether the criterion is an inclusion or exclusion criterion. Since this criterion is an inclusion criterion, it's marked as "Inclusion".
+
+The Disease, Biomarker, and Prior Therapy columns are left empty since the criterion does not mention any specific disease, biomarker, or prior therapy.
+
+The Criterion Rule column translates the criterion into a logical expression that could be interpreted programmatically. In this case, it's simply "Hemoglobin > 9 g/dL".

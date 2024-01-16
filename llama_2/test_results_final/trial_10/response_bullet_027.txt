@@ -1,0 +1,5 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Received live vaccine within 30 days of planned start of study treatment | Exclusion |  |  |  | formula: has-received-live-vaccine-within-30-days-of-planned-start-of-study-treatment |
+
+The criterion text describes an exclusion criterion that refers to a vaccine received within a specified time frame before the start of study treatment. No diseases, biomarkers, or prior therapies are mentioned. The criterion rule is a logical expression that could be interpreted programmatically to assess whether a patient has received a live vaccine within 30 days of the planned start of study treatment.

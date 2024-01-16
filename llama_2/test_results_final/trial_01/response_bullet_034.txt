@@ -1,0 +1,13 @@
+Sure! Here is the table you requested:
+
+
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| The subject has an uncontrolled intercurrent illness | Exclusion | Congestive heart failure-New York Heart Association class III or IV |  |  | "CHF_NYHA_III_IV" = true |
+|  |  | Active ischemic heart disease |  |  | "AISCHD" = true |
+|  |  | Myocardial infarction within the previous six months |  |  | "MI_6M" = true |
+|  |  | Uncontrolled diabetes mellitus (DM) |  |  | "DM_UNCONTROLLED" = true |
+|  |  | Gastric or duodenal ulceration diagnosed within the previous 6 months |  |  | "GDU_6M" = true |
+|  |  | Chronic liver or renal disease |  |  | "CLRD_OR_CRD" = true |
+|  |  | Severe malnutrition |  |  | "MALNUTRITION_SEVERE" = true |
+| If a participant has controlled DM but is unable to monitor blood sugars at home, they will be excluded from the trial |  |  |  |  | "DM_CONTROLLED_B

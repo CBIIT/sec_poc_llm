@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Adequate bone marrow, renal, and hepatic function (liver function and renal tests, grade 1 or lower) | Inclusion | None | None | None | (LiverFunctionGrade ≤ 1) ∧ (RenalTestGrade ≤ 1) |
+
+Note:
+
+* Criterion Text: The verbatim snippet of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name is listed.
+* Biomarker: If the criterion contains a biomarker, its canonical name is listed.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name is listed.
+* Criterion Rule: A logical expression that could be interpreted programmatically, translating the criterion into a rule.
+
+In this case, the criterion text describes a set of functional tests that must be met for patient eligibility. Since the criterion does not mention any specific disease, biomarker, or prior therapy, the respective columns are left empty. The criterion rule is a logical expression that combines the liver function and renal tests, both with a grade of 1 or lower, using the conjunction

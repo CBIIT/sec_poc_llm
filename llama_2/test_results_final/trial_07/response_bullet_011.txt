@@ -1,0 +1,14 @@
+| Criterion Text | Inclusion/Exclusion | Disease | Biomarker | Prior Therapy | Criterion Rule |
+| --- | --- | --- | --- | --- | --- |
+| Platelets >= 100,000/mcL | Inclusion | None | None | None | Platelets ≥ 100000 |
+
+Note:
+
+* Criterion Text: The text of the eligibility criterion being summarized and analyzed.
+* Inclusion/Exclusion: Indicates whether the criterion is an inclusion or exclusion criterion.
+* Disease: If the criterion contains a disease or condition, its canonical name is listed.
+* Biomarker: If the criterion contains a biomarker, its canonical name is listed.
+* Prior Therapy: If the criterion contains a prior therapy, its canonical name is listed.
+* Criterion Rule: A logical expression that could be interpreted programmatically to determine whether a patient meets the criterion.
+
+In this case, the only criterion is "Platelets >= 100,000/mcL," which is an inclusion criterion. It does not relate to a specific disease, biomarker, or prior therapy, so those columns are left blank. The criterion rule is a straightforward translation of the criterion text.
