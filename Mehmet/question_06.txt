@@ -1,0 +1,8 @@
+[
+    {
+        "source_text": "COHORT A: Unequivocal evidence of new and/or progressive brain metastases",
+        "organ_metastasis": "brain"
+    }
+]
+
+Which organ metastases, if any, are required for inclusion?  Output an empty list if none are mentioned.

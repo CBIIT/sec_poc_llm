@@ -1,0 +1,12 @@
+[
+    {
+        "source_text": "patients with the following tumor type will be eligible: • Expansion Cohort 1: Cutaneous Squamous Cell Carcinoma (CSCC)",
+        "cell_type": "squamous cell"
+    },
+    {
+        "source_text": "Histologically proven small cell (neuroendocrine) prostate carcinoma",
+        "cell_type": "neuroendocrine"
+    }
+]
+
+Which cancerous cell types are required?  If the cell types were not specified, output an empty list.
