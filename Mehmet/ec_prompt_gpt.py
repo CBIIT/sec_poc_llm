@@ -17,7 +17,7 @@ import sys
 def parse_args():
     parser = argparse.ArgumentParser(description='TODO')
     parser.add_argument('--endpoint', type=str, required=True, help='Azure OpenAI Endpoint')
-    parser.add_argument('--version', type=str, default='2023-07-01-preview', help='Azuer OpenAI model version')
+    parser.add_argument('--version', type=str, default='2023-07-01-preview', help='Azure OpenAI model version')
     parser.add_argument('--model', type=str, required=True, help='Azure OpenAI model aka engine')
     parser.add_argument('--system_prompt', type=str, default='system_prompt.txt', help='System prompt')
     parser.add_argument('--prompt_template', type=str, default='prompt_template.txt',
@@ -69,9 +69,13 @@ if __name__ == '__main__':
     response_text = response['choices'][0]['message']['content']
 
     if args.save_dir:
-        with open(os.path.join(args.save_dir, 'prompt.txt'), 'w') as f:
+
+        # Insert the question number in the outputs.
+        # TODO: something less hacky.
+        num = args.question_prompt.split('_')[1].split('.')[0]
+        with open(os.path.join(args.save_dir, f'prompt_{num}.txt'), 'w') as f:
             f.write(prompt)
-        with open(os.path.join(args.save_dir, 'response.txt'), 'w') as f:
+        with open(os.path.join(args.save_dir, f'response_{num}.txt'), 'w') as f:
             f.write(response_text)
 
     print(response_text)
