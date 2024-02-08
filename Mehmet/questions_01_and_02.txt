@@ -1,0 +1,16 @@
+{
+    "source_text": "Pathologically confirmed breast cancer with the following features",
+    "answer": "Breast"
+}
+
+Which organ is the primary locus of the cancer in the Eligibility Criteria section above?
+
+What are the allowed and disallowed locations of the primary tumor with respect to the organ topology? If not specified, use an empty list as the value.  For example:
+
+{
+    "source_text": "The subject has a pathologic diagnosis of non-small cell lung carcinoma that is metastatic or unresectable",
+    "allowed_locations": [],
+    "disallowed_locations": []
+}
+
+Your answer for the allowed and disallowed locations of the primary tumor with respect to the organ topology is:
