@@ -1,0 +1,8 @@
+[
+    {
+        "source_text": "The subject requires concomitant treatment, in therapeutic doses, unless deemed clinically unsafe to discontinue, with anticoagulants such as warfarin or warfarin-related agents, unfractionated heparin, thrombin or Factor Xa inhibitors, or antiplatelet agents (eg, clopidogrel).",
+        "therapy": "anticoagulants"
+    }
+]
+
+Are there any current therapies that make the patient ineligible?  Output an empty list if there are none listed.

@@ -1,0 +1,12 @@
+[
+    {
+        "source_text": "The subject is pregnant or breastfeeding.",
+        "criterion": "pregnant or breastfeeding"
+    },
+    {   
+        "source_text": "Prisoners or subjects who are involuntarily incarcerated",
+        "criterion": "incarceration"
+    }
+]
+
+Are there any demographic or social criteria that make the patient ineligible?  Output an empty list if there are none listed.

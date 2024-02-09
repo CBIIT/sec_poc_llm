@@ -1,0 +1,8 @@
+[
+    {
+        "source_text": "The subject has radiographic evidence of cavitating pulmonary lesion(s)",
+        "radiological_finding": "cavitating pulmonary lesion(s)"
+    }
+]
+
+Are there any radiological findings mentioned in the attached protocol that make the subject ineligible?  If there are not, output an empty list.

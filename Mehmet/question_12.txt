@@ -1,0 +1,12 @@
+[
+    {
+        "source_text": "Any type of systemic anticancer agent (including investigational) within 3 weeks of first dose of study treatment, or within 5 half-lives of the agent whichever is shorter.",
+        "prior_therapy": "Any type of systemic anticancer agent"
+    },
+    {
+        "source_text": "Radiation therapy for bone or brain metastasis within 2 weeks, any other external radiation therapy within 4 weeks of first dose of study drug.",
+        "prior_therapy": "Radiation therapy"
+    },
+]
+
+Are there any prior therapies in the exclusion criteria?
