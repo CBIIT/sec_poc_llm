@@ -1,0 +1,12 @@
+[
+    {
+        "source_text": "clinically-significant cardiac arrhythmias",
+        "diagnosis": "cardiac arrhythmias"
+    },
+    {   
+        "source_text": "inflammatory bowel disease (including ulcerative colitis and Crohn's disease), diverticulitis, cholecystitis, symptomatic cholangitis or appendicitis",
+        "diagnosis": "inflammatory bowel disease"
+    }
+]
+
+Are there any past diagnoses in the medical history that make the patient ineligible?  Output an empty list if there are none listed.

@@ -1,0 +1,11 @@
+You will be summarizing the Eligibility Criteria section of a clinical trial protocol document.  Note that in the Eligibility Criteria section, the suffix "(inclusion--- t)"  denotes that the line describes an inclusion criterion, and "(inclusion--- f)" denotes an exclusion criterion.
+
+Here is the Eligibility Criteria section you will be summarizing:
+
+
+__EC_SECTION__
+
+
+Provide your answer in JSON format, without any extra verbosity or plain English.  You will also need to provide a verbatim snippet from the Eligibility Criteria section that you base your summary on.
+
+Here is an example to replicate:

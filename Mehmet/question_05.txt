@@ -1,0 +1,7 @@
+{
+    "source_text": "Pathologically confirmed sentinel lymph node positive melanoma with high risk features (extracapsular extension or >= 0.5 mm nodal tumor implant, or >= 2 involved nodes, or Primary tumor lymphovascular invasion [LVI])",
+    "minimum": 2,
+    "maximum": null
+}
+
+What are the minimum and/or maximum numbers of lymph node metastases specified?  Use a null value if they are not specified, and an empty response if no lymph node metastases are mentioned.  Note that this question only pertains to LYMPH NODE metastases, not other types of metastases.

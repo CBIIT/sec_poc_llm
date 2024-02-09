@@ -1,0 +1,8 @@
+[
+    {
+        "source_text": "Apnea-Hypopnea Index < 15 (Mild obstructive sleep apnea)",
+        "lab_finding": "sleep apnea"
+    }
+]
+
+Are there any specialized laboratory findings, from sleep labs, physical or sports therapy labs, etc., mentioned in the attached protocol that make the subject ineligible?  Do not include routine laboratory findings, such as blood work, or obervations that would be made by a general practitioner or an oncologist.  Output an empty list if no specialized laboratory findings are present.

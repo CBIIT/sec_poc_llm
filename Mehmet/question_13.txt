@@ -1,0 +1,8 @@
+[
+    {
+        "source_text": "Absolute neutrophil count (ANC) ≥ 1500/mm3 without colony stimulating factor support",
+        "test_value": "ANC ≥ 1500/mm3"
+    }
+]
+
+Are there any biochemistry lab test values mentioned in the attached protocol that make the subject ineligible?

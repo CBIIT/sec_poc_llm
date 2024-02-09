@@ -1,0 +1,14 @@
+[
+    {
+        "source_text": "Treated with stereotactic radiosurgery (SRS) or surgery with residual un-treated lesions remaining. Such participants are eligible for immediate enrollment on this study providing that at least one untreated lesion is measurable",
+        "prior_therapy": "stereotactic radiosurgery",
+        "condition": "at least one untreated lesion is measurable"
+    },
+    {
+        "source_text": "Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous b NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins",
+        "prior_therapy": "surgical resection",
+        "condition": "stage IIA, IIB, IIIA or IIIB non-squamous or squamous b NSCLC"
+    }
+]
+
+Are there any required prior therapies in the inclusion criteria?  Please only list them if they are required.  A therapy is not inclusionary if the subject could be accepted to the study without it.  However, certain prior therapies may belong to the inclusion criteria, given the specific condition of the subject.  In that case, please list that therapy and the condition; otherwise, set the condition to null.  If no prior therapies are in the inclusion criteria, output an empty list.

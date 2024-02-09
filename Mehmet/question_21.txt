@@ -1,0 +1,12 @@
+[
+    {
+        "source_text": "Prior treatment with cabozantinib",
+        "therapy": "cabozantinib"
+    },
+    {
+        "source_text": "Has received prior therapy with a PI3K or mTOR inhibitor",
+        "therapy": "PI3K or mTOR inhibitor"
+    }
+]
+
+Are there any past therapies that make the patient ineligible?  Do not include current therapies for the patient, only past ones.  Output an empty list if there are none listed.

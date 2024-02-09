@@ -1,0 +1,11 @@
+[
+    {
+        "source_text": "COHORT A: At least one measurable CNS metastasis, defined as >= 10 mm in at least one dimension",
+        "min_number": 1,
+        "max_number": null,
+        "min_size": "10 mm",
+        "max_size": null
+    }
+]
+
+If distant organ metastases are in the inclusion criteria, what are the minimum and maximum number of metastatic tumors, and what are the minimum and maximum sizes of each metastatic tumor?  Use null values if any of these criteria are not specified.  If no distant organ metastases are in the inclusion criteria, output an empty list.

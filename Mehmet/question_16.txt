@@ -1,0 +1,12 @@
+[
+    {
+        "source_text": "Concurrent uncontrolled hypertension defined as sustained BP ≥ 150 mm Hg systolic, or ≥ 90 mm Hg diastolic despite optimal antihypertensive treatment",
+        "finding": "hypertension"
+    },
+    {
+        "source_text": "The subject has a corrected QT interval calculated by the Fridericia formula (QTcF) > 500 ms 14 days before Week 1 Day 1",
+        "finding": "QTcF > 500 ms"
+    }
+]
+
+Are there any symptoms, signs, or measurements of the patient that are observable in the doctor’s office that make the subject ineligible?  Do not include any laboratory test values or pathological findings.  Include only signs, symptoms, and measurements that a doctor or nurse would observe from a patient's visit.  Output an empty list if there are none listed.

@@ -1,0 +1,9 @@
+[
+    {
+        "source_text": "patients with NSCLC showing cell chromatin condensation are eligible for Cohort A",
+        "morphology_change": "chromatin condensation",
+        "inclusion_indicator": "inclusion"
+    }
+]
+
+What types of cell morphology changes are required to be included or to be excluded, if any?  If the degree of morphological changes was not specified, output an empty list.
