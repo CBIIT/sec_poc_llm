@@ -135,3 +135,10 @@ ui-tests/playwright-report
 .pnp.*
 ui-tests/.yarn/*
 ui-tests/.pnp.*
+
+.env
+venv/
+trials/
+outputs/
+outputs*
+answers*

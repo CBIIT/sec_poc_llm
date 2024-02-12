@@ -1,0 +1,10 @@
+{prompt} First extract the source text that contains the answer, then extract the answer(s).
+Prefer the term "None" instead of "unknown" or "not specified".
+
+Desired format (note: there may be multiple SourceTexts and Answers):
+SourceText("<original_text_containing_answer>")
+Answer("<your_answer>", Cohort="<cohort_or_None>")
+SourceText("<original_text_containing_answer>")
+Answer("<your_answer>", Cohort="<cohort_or_None>")
+
+"""{ec_section}"""

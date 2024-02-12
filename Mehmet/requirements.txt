@@ -1,1 +1,8 @@
 openai==0.28
+python-dotenv
+pandas
+tiktoken
+fabulous
+backoff
+evaluate
+rouge_score
