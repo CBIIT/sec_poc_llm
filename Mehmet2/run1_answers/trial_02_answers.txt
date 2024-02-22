@@ -1,0 +1,170 @@
+1. Extract the organ(s) that are the primary locus of cancer. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous b NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. N3 disease is not allowed. (inclusion--- t))
+Answer(value=lung)
+----------------------------------------------------------------------
+2. Please confirm if the lung is/are the required organ(s) for origin of primary cancer. Answer yes, no, or unsure.
+
+
+Answer(value=Yes)
+----------------------------------------------------------------------
+3. Extract the allowed location(s) of the primary tumor with respect to the organ topology (if applicable). Use the desired format.
+
+SourceText(value=Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous b NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. N3 disease is not allowed. (inclusion--- t))
+Answer(value=stage IIA, IIB, IIIA, IIIB non-squamous or squamous b NSCLC)
+----------------------------------------------------------------------
+4. Extract the disallowed location(s) of the primary tumor with respect to the organ topology (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous b NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. N3 disease is not allowed. (inclusion--- t))
+Answer(value=N3 disease)
+----------------------------------------------------------------------
+5. Extract the cancerous cell types that are required for inclusion. Use the desired format.
+
+SourceText(value=Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous b NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. N3 disease is not allowed. (inclusion--- t))
+Answer(value=non-squamous or squamous b NSCLC)
+----------------------------------------------------------------------
+6. Extract the types and degree of cell morphology changes that are required (if applicable). Use the desired format. Add the Degree attribute to the answer like so: Answer("<your_answer>", Degree="<degree_or_None>").
+
+SourceText(value=Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous b NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. N3 disease is not allowed. (inclusion--- t))
+Answer(value="None", Degree="None"))
+----------------------------------------------------------------------
+7. Extract the minimum/maximum numbers of lymph node metastases that are required (if applicable). Use the desired format. Add the Min/Max attribute to the answer like so: Answer("<your_answer>", Min="<min_or_None>", Max="<max_or_None>"). First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous b NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. N3 disease is not allowed. (inclusion--- t))
+Answer(value=0, Max=0)
+----------------------------------------------------------------------
+8. Extract the organ metastases that are required for inclusion (if applicable). Use the desired format.
+
+SourceText(value=Baseline chest computed tomography (CT) with or without contrast must be performed within 6 months (180 days) prior to randomization to ensure no evidence of disease; if clinically indicated additional imaging studies must be performed to rule out metastatic disease (inclusion--- t))
+Answer()
+----------------------------------------------------------------------
+9. Extract the distant organ metastases that are required for inclusion (if applicable). First extract distant organ metastases, then extract the count and size of the tumors like so: Answer("<your_answer>", MinSize="", MaxSize="", MinCount="", MaxCount="").
+
+SourceText(value=Baseline chest computed tomography (CT) with or without contrast must be performed within 6 months (180 days) prior to randomization to ensure no evidence of disease; if clinically indicated additional imaging studies must be performed to rule out metastatic disease (inclusion--- t))
+Answer()
+----------------------------------------------------------------------
+10. Extract the prior therapies that are required for inclusion (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value="The maximum time requirement between surgery and randomization must be:* 4 months (120 days) if no adjuvant chemotherapy was administered* 9 months (270 days) if adjuvant chemotherapy was administered* 11 months (330 days) if adjuvant chemotherapy and radiation therapy were administered (inclusion--- t)")
+Answer(value=No adjuvant chemotherapy required, Cohort=4 months (120 days) if no adjuvant chemotherapy was administered)
+SourceText(value="Patients must have completed any prior adjuvant chemotherapy or radiation therapy 2 or more weeks (6 or more weeks for mitomycin and nitrosoureas) prior to randomization and be adequately recovered at the time of randomization* NOTE: Patients taking low dose methotrexate for non-malignant conditions and other cytotoxic agents for non-malignant conditions are allowed to continue treatment while on study* NOTE: Neo-adjuvant chemotherapy or radiation therapy for the resected lung cancer is not permitted (inclusion--- t)")
+Answer(value=Adjuvant chemotherapy, Cohort=9 months (270 days) if adjuvant chemotherapy was administered)
+
+Answer(value=Adjuvant chemotherapy and radiation therapy, Cohort=11 months (330 days) if adjuvant chemotherapy and radiation therapy were administered)
+
+Answer(value=Adjuvant chemotherapy or radiation therapy completed 2 or more weeks prior to randomization)
+
+Answer(value=Neo-adjuvant chemotherapy or radiation therapy for the resected lung cancer is not permitted)
+----------------------------------------------------------------------
+11. Extract the cancer biomarkers that are required for inclusion (if applicable). First extract the source text containing the answer. Then extract the name of the biomarker and the requisite conditions like so:  
+SourceText("<original_text_containing_answer>")  
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None")      
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None")
+
+SourceText(value="Positive for translocation or inversion events involving the ALK gene locus (e.g. resulting in EML4-ALK fusion) as defined by a Clinical Laboratory Improvement Act (CLIA)-approved test including: (1) translocation or inversion events involving the ALK gene locus (e.g. resulting in EML4-ALK fusion) as determined by the Vysis Break Point fluorescence in situ hybridization (FISH) assay; (2) ALK protein expression by immunohistochemistry (IHC); or (3) ALK rearrangement identified by next generation (NextGen) sequencing; this must have been performed:* By a local CLIA certified laboratory: Report must indicate the results as well as the CLIA number of the laboratory which performed the assay; tissue must be available for submission for central, retrospective confirmation of the ALK fusion status via ALCHEMIST-SCREEN (ALLIANCE A151216); OR* Patient registered to and the ALK fusion status performed centrally on the ALCHEMIST-SCREEN (ALLIANCE A151216) (inclusion--- t)")
+Answer(value="ALK gene locus", Condition="Positive for translocation or inversion events"))
+
+Answer(value="EML4-ALK fusion", Condition="Positive for translocation or inversion events"))
+
+Answer(value="ALK protein", Condition="Positive expression by immunohistochemistry (IHC)"))
+
+Answer(value="ALK rearrangement", Condition="Identified by next generation (NextGen) sequencing"))
+----------------------------------------------------------------------
+12. Extract the prior therapies that are required for exclusion (if applicable).
+
+SourceText(value=No prior treatment with crizotinib or another ALK inhibitor (inclusion--- t))
+Answer(value=Crizotinib or another ALK inhibitor)
+----------------------------------------------------------------------
+13. Extract the biochemistry lab test values that are required for exclusion (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=No ongoing cardiac dysrhythmias of grade >= 2 National Cancer Institute (NCI) Common Terminology Criteria for Adverse Events (CTCAE) version 4.0, uncontrolled atrial fibrillation (any grade), or corrected QT (QTc) interval > 470 msec (inclusion--- t))
+Answer(value=QTc interval > 470 msec)
+----------------------------------------------------------------------
+14. Extract the radiological findings that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Baseline chest computed tomography (CT) with or without contrast must be performed within 6 months (180 days) prior to randomization to ensure no evidence of disease; if clinically indicated additional imaging studies must be performed to rule out metastatic disease (inclusion--- t))
+Answer(value=Evidence of disease)
+SourceText(value=No known interstitial fibrosis or interstitial lung disease (inclusion--- t))
+Answer(value=Known interstitial fibrosis or interstitial lung disease)
+----------------------------------------------------------------------
+15. Extract any other laboratory findings that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Patients must NOT have uncontrolled intercurrent illness including, but not limited to, serious ongoing or active infection, symptomatic congestive heart failure, unstable angina pectoris, uncontrolled cardiac arrhythmia, or psychiatric illness/social situations that would limit compliance with study requirements (inclusion--- f))
+Answer(value=Serious ongoing or active infection)
+SourceText(value=Patients must have adequate organ function as defined by the following criteria within 2 weeks prior to randomization: Serum aspartate aminotransferase (AST) and serum alanine aminotransferase (ALT) =< 2.5 x upper limit of normal (ULN) (inclusion--- t) | Total serum bilirubin =< 1.5 x ULN (inclusion--- t) | Absolute neutrophil count (ANC) >= 1500/mm^3 (inclusion--- t) | Platelets >= 30,000/mm^3 (inclusion--- t) | Hemoglobin >= 8.0 g/dL (inclusion--- t) | Serum creatinine =< 2 x ULN (inclusion--- t))
+Answer(value=AST or ALT > 2.5 x ULN)
+
+Answer(value=Total serum bilirubin > 1.5 x ULN)
+
+Answer(value=ANC < 1500/mm^3)
+
+Answer(value=Platelets < 30,000/mm^3)
+
+Answer(value=Hemoglobin < 8.0 g/dL)
+
+Answer(value=Serum creatinine > 2 x ULN)
+----------------------------------------------------------------------
+16. Extract any other symptoms, signs, or measurements of the patient observable in a doctor's office that are required for exclusion (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Patients must NOT have uncontrolled intercurrent illness including, but not limited to, serious ongoing or active infection, symptomatic congestive heart failure, unstable angina pectoris, uncontrolled cardiac arrhythmia, or psychiatric illness/social situations that would limit compliance with study requirements (inclusion--- f))
+Answer(value=serious ongoing or active infection, symptomatic congestive heart failure, unstable angina pectoris, uncontrolled cardiac arrhythmia, psychiatric illness/social situations that would limit compliance with study requirements)
+SourceText(value=No known interstitial fibrosis or interstitial lung disease (inclusion--- t))
+Answer(value=known interstitial fibrosis or interstitial lung disease)
+SourceText(value=No ongoing cardiac dysrhythmias of grade >= 2 National Cancer Institute (NCI) Common Terminology Criteria for Adverse Events (CTCAE) version 4.0, uncontrolled atrial fibrillation (any grade), or corrected QT (QTc) interval > 470 msec (inclusion--- t))
+Answer(value=ongoing cardiac dysrhythmias of grade >= 2 NCI CTCAE version 4.0, uncontrolled atrial fibrillation (any grade), corrected QT (QTc) interval > 470 msec)
+SourceText(value=Patients must not have any history of locally advanced or metastatic cancer requiring systemic therapy within 5 years from randomization, with the exception of in-situ carcinomas and non-melanoma skin cancer; patients must have no previous primary lung cancer diagnosed concurrently or within the past 2 years (inclusion--- f))
+Answer(value=history of locally advanced or metastatic cancer requiring systemic therapy within 5 years from randomization, previous primary lung cancer diagnosed concurrently or within the past 2 years)
+----------------------------------------------------------------------
+17. Extract any demographic or social criteria that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Women must not be pregnant or breast-feeding because, based on the mechanism of action, crizotinib may cause fetal harm when administered during pregnancy; in animal studies, teratogenicity was not evident, but embryotoxic and fetotoxic effects were noted in rats at crizotinib exposures similar to and above those observed in humans at the recommended clinical dose (inclusion--- f))
+Answer(value=pregnant or breast-feeding)
+SourceText(value=Patients must have no previous primary lung cancer diagnosed concurrently or within the past 2 years (inclusion--- f))
+Answer(value=previous primary lung cancer diagnosed concurrently or within the past 2 years)
+----------------------------------------------------------------------
+18. Extract any current diagnoses that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Patients must NOT have uncontrolled intercurrent illness including, but not limited to, serious ongoing or active infection, symptomatic congestive heart failure, unstable angina pectoris, uncontrolled cardiac arrhythmia, or psychiatric illness/social situations that would limit compliance with study requirements (inclusion--- f))
+Answer(value=serious ongoing or active infection, symptomatic congestive heart failure, unstable angina pectoris, uncontrolled cardiac arrhythmia, psychiatric illness/social situations that would limit compliance with study requirements)
+SourceText(value=No known interstitial fibrosis or interstitial lung disease (inclusion--- t))
+Answer(value=known interstitial fibrosis or interstitial lung disease)
+SourceText(value=No ongoing cardiac dysrhythmias of grade >= 2 National Cancer Institute (NCI) Common Terminology Criteria for Adverse Events (CTCAE) version 4.0, uncontrolled atrial fibrillation (any grade), or corrected QT (QTc) interval > 470 msec (inclusion--- t))
+Answer(value=ongoing cardiac dysrhythmias of grade >= 2 NCI CTCAE version 4.0, uncontrolled atrial fibrillation (any grade), corrected QT (QTc) interval > 470 msec)
+SourceText(value=Patients must not have any history of locally advanced or metastatic cancer requiring systemic therapy within 5 years from randomization, with the exception of in-situ carcinomas and non-melanoma skin cancer; patients must have no previous primary lung cancer diagnosed concurrently or within the past 2 years (inclusion--- f))
+Answer(value=history of locally advanced or metastatic cancer requiring systemic therapy within 5 years from randomization, previous primary lung cancer diagnosed concurrently or within the past 2 years)
+----------------------------------------------------------------------
+19. Extract any past diagnoses in the patient's medical history that are required for exclusion (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Patients must NOT have uncontrolled intercurrent illness including, but not limited to, serious ongoing or active infection, symptomatic congestive heart failure, unstable angina pectoris, uncontrolled cardiac arrhythmia, or psychiatric illness/social situations that would limit compliance with study requirements (inclusion--- f))
+Answer(value=serious ongoing or active infection, symptomatic congestive heart failure, unstable angina pectoris, uncontrolled cardiac arrhythmia, psychiatric illness/social situations that would limit compliance with study requirements)
+SourceText(value=No known interstitial fibrosis or interstitial lung disease (inclusion--- t))
+Answer(value=interstitial fibrosis, interstitial lung disease)
+SourceText(value=No prior treatment with crizotinib or another ALK inhibitor (inclusion--- t))
+Answer(value=prior treatment with crizotinib or another ALK inhibitor)
+SourceText(value=No ongoing cardiac dysrhythmias of grade >= 2 National Cancer Institute (NCI) Common Terminology Criteria for Adverse Events (CTCAE) version 4.0, uncontrolled atrial fibrillation (any grade), or corrected QT (QTc) interval > 470 msec (inclusion--- t))
+Answer(value=ongoing cardiac dysrhythmias of grade >= 2, uncontrolled atrial fibrillation, corrected QT (QTc) interval > 470 msec)
+SourceText(value=No use of medications, herbals, or foods that are known potent cytochrome P450, subfamily 3A, polypeptide 4 (CYP3A4) inhibitors or inducers, included but not limited to those outlined (inclusion--- t))
+Answer(value=use of medications, herbals, or foods that are known potent CYP3A4 inhibitors or inducers)
+SourceText(value=Patients must not have any history of locally advanced or metastatic cancer requiring systemic therapy within 5 years from randomization, with the exception of in-situ carcinomas and non-melanoma skin cancer; patients must have no previous primary lung cancer diagnosed concurrently or within the past 2 years (inclusion--- f))
+Answer(value=history of locally advanced or metastatic cancer requiring systemic therapy within 5 years, previous primary lung cancer diagnosed concurrently or within the past 2 years)
+----------------------------------------------------------------------
+20. Extract any current therapies that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=No prior treatment with crizotinib or another ALK inhibitor (inclusion--- t))
+Answer(value=prior treatment with crizotinib or another ALK inhibitor)
+SourceText(value=Patients may not be receiving any other investigational agents while on study (inclusion--- t))
+Answer(value=receiving any other investigational agents)
+----------------------------------------------------------------------
+21. Extract any past therapies in the patient's medical history that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Patients must not have any history of locally advanced or metastatic cancer requiring systemic therapy within 5 years from randomization, with the exception of in-situ carcinomas and non-melanoma skin cancer; patients must have no previous primary lung cancer diagnosed concurrently or within the past 2 years (inclusion--- f))
+Answer(value=history of locally advanced or metastatic cancer requiring systemic therapy within 5 years, previous primary lung cancer diagnosed concurrently or within the past 2 years)
+----------------------------------------------------------------------
+22. Extract the cancer biomarkers that are required for exclusion (if applicable). First extract the source text containing the answer. Then extract the name of the biomarker and the requisite conditions like so:  
+SourceText("<original_text_containing_answer>")  
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None")      
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None") First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=No prior treatment with crizotinib or another ALK inhibitor (inclusion--- t))
+Answer(value="ALK inhibitor", Condition="No prior treatment"))
+----------------------------------------------------------------------

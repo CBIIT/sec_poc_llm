@@ -1,0 +1,176 @@
+1. Extract the organ(s) that are the primary locus of cancer. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Pathologically confirmed diagnosis of high-grade (grade 2-3) epithelial ovarian cancer, primary peritoneal cancer, or fallopian tube carcinoma (EOC), which are serous, endometrioid, clear cell, mucinous, mixed epithelial, or undifferentiated.)
+Answer(value=ovarian cancer)
+
+Answer(value=primary peritoneal cancer)
+
+Answer(value=fallopian tube carcinoma)
+----------------------------------------------------------------------
+2. Please confirm if the ovarian cancer, primary peritoneal cancer, fallopian tube carcinoma is/are the required organ(s) for origin of primary cancer. Answer yes, no, or unsure.
+
+
+Answer(value=Yes)
+----------------------------------------------------------------------
+3. Extract the allowed location(s) of the primary tumor with respect to the organ topology (if applicable). Use the desired format.
+
+SourceText(value=Pathologically confirmed diagnosis of high-grade (grade 2-3) epithelial ovarian cancer, primary peritoneal cancer, or fallopian tube carcinoma (EOC), which are serous, endometrioid, clear cell, mucinous, mixed epithelial, or undifferentiated.)
+Answer(value=ovary)
+
+Answer(value=peritoneum)
+
+Answer(value=fallopian tube)
+----------------------------------------------------------------------
+4. Extract the disallowed location(s) of the primary tumor with respect to the organ topology (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=The study does not include pure sarcoma, stromal, or germ-cell tumors.)
+Answer(value=Pure sarcoma, stromal, germ-cell tumors)
+SourceText(value=Known or suspected leptomeningeal disease and patients with metastases to the brain stem, midbrain, pons, or medulla (inclusion--- f))
+Answer(value=Brain stem, midbrain, pons, medulla)
+SourceText(value=Known or suspected untreated brain metastases.)
+Answer()
+----------------------------------------------------------------------
+5. Extract the cancerous cell types that are required for inclusion. Use the desired format.
+
+SourceText(value=Pathologically confirmed diagnosis of high-grade (grade 2-3) epithelial ovarian cancer, primary peritoneal cancer, or fallopian tube carcinoma (EOC), which are serous, endometrioid, clear cell, mucinous, mixed epithelial, or undifferentiated.)
+Answer(value=Serous, endometrioid, clear cell, mucinous, mixed epithelial, undifferentiated)
+----------------------------------------------------------------------
+6. Extract the types and degree of cell morphology changes that are required (if applicable). Use the desired format. Add the Degree attribute to the answer like so: Answer("<your_answer>", Degree="<degree_or_None>").
+
+SourceText(value=Pathologically confirmed diagnosis of high-grade (grade 2-3) epithelial ovarian cancer, primary peritoneal cancer, or fallopian tube carcinoma (EOC), which are serous, endometrioid, clear cell, mucinous, mixed epithelial, or undifferentiated.)
+Answer(value="High-grade", Degree="grade 2-3"))
+----------------------------------------------------------------------
+7. Extract the minimum/maximum numbers of lymph node metastases that are required (if applicable). Use the desired format. Add the Min/Max attribute to the answer like so: Answer("<your_answer>", Min="<min_or_None>", Max="<max_or_None>"). First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=* Measurable disease is defined as at least 1 lesion that can be accurately measured in at least 1 dimension (longest diameter to be recorded). Each lesion must be >= 10 mm when measured by computed tomography (CT), magnetic resonance imaging (MRI), or caliper measurement at clinical examination or >= 20 mm when measured by chest x-ray. Lymph nodes must be >= 15 mm in short axis when measured by CT or MRI)
+Answer(value=>= 15 mm, Min=15)
+----------------------------------------------------------------------
+8. Extract the organ metastases that are required for inclusion (if applicable). Use the desired format.
+
+
+Answer(value=The provided text does not specify any requirement for organ metastases as an inclusion criterion for the clinical trial. Therefore, there is no information to extract regarding the minimum or maximum number of organ metastases required for inclusion.)
+----------------------------------------------------------------------
+9. Extract the distant organ metastases that are required for inclusion (if applicable). First extract distant organ metastases, then extract the count and size of the tumors like so: Answer("<your_answer>", MinSize="", MaxSize="", MinCount="", MaxCount="").
+
+
+Answer(value=The provided text does not specify any requirement for distant organ metastases as an inclusion criterion for the clinical trial. Therefore, there is no information to extract regarding the count or size of distant organ metastases required for inclusion.)
+----------------------------------------------------------------------
+10. Extract the prior therapies that are required for inclusion (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Patients must have had 1 prior platinum-based chemotherapeutic regimen for the management of ovarian, primary peritoneal, or fallopian tube carcinoma and at least 2 prior chemotherapy regimens (inclusion--- t))
+Answer(value=1 prior platinum-based chemotherapeutic regimen for the management of ovarian, primary peritoneal, or fallopian tube carcinoma and at least 2 prior chemotherapy regimens)
+SourceText(value=Patients with a known germline or somatic BRCA pathogenic mutation should have a prior PARP inhibitor and subsequent progression, unless they have a documented history of intolerance or inability to swallow oral medications (inclusion--- t))
+Answer(value=Prior PARP inhibitor)
+----------------------------------------------------------------------
+11. Extract the cancer biomarkers that are required for inclusion (if applicable). First extract the source text containing the answer. Then extract the name of the biomarker and the requisite conditions like so:  
+SourceText("<original_text_containing_answer>")  
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None")      
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None")
+
+SourceText(value=Patient’s carcinoma should express the FSHR antigen, detectable by polymerase chain reaction (PCR) analysis of archival tumor sample)
+Answer(value="FSHR antigen", Condition="detectable by polymerase chain reaction (PCR) analysis of archival tumor sample"))
+----------------------------------------------------------------------
+12. Extract the prior therapies that are required for exclusion (if applicable).
+
+SourceText(value=No prior immunotherapy with checkpoint blockade (e.g., PD1 inhibitor, PDL1 inhibitor, or CTL4- antagonist or similar agent) in the 6 months before the T-cell infusion (and all clinically significant related side effects must be resolved) (inclusion--- t))
+Answer(value=Prior immunotherapy with checkpoint blockade (e.g., PD1 inhibitor, PDL1 inhibitor, or CTL4- antagonist or similar agent) within 6 months before the T-cell infusion)
+----------------------------------------------------------------------
+13. Extract the biochemistry lab test values that are required for exclusion (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Adequate bone marrow, renal, and hepatic function (liver function and renal tests, grade 1 or lower) (inclusion--- t))
+Answer()
+SourceText(value=Absolute neutrophil count (ANC) >= 1500/mm^3 (inclusion--- t))
+Answer()
+SourceText(value=Platelets >= 100 000/mm^3 (inclusion--- t))
+Answer(value=NoneThe above criteria are inclusion criteria and do not provide specific biochemistry lab test values for exclusion. Therefore, there are no biochemistry lab test values required for exclusion in the provided text.)
+----------------------------------------------------------------------
+14. Extract the radiological findings that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Clinical or radiographic evidence of bowel obstruction or need (inclusion--- f))
+Answer(value=Clinical or radiographic evidence of bowel obstruction)
+SourceText(value=Known or suspected extensive abdominal adhesions that would preclude port placement or infusion (inclusion--- f))
+Answer(value=Known or suspected extensive abdominal adhesions that would preclude port placement or infusion)
+SourceText(value=Known or suspected leptomeningeal disease and patients with metastases to the brain stem, midbrain, pons, or medulla (inclusion--- f))
+Answer(value=Known or suspected leptomeningeal disease; metastases to the brain stem, midbrain, pons, or medulla)
+SourceText(value=Known or suspected untreated brain metastases. Patients with radiographically stable, asymptomatic previously irradiated lesions are eligible provided patient is > 4 weeks beyond completion of cranial irradiation and > 3 weeks off of corticosteroid therapy at the time of study intervention (inclusion--- f))
+Answer(value=Known or suspected untreated brain metastases)
+SourceText(value=Prior radiotherapy to any portion of the abdominal cavity or pelvis (inclusion--- f))
+Answer(value=Prior radiotherapy to any portion of the abdominal cavity or pelvis)
+----------------------------------------------------------------------
+15. Extract any other laboratory findings that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Known active hepatitis B infection, known history of hepatitis C or human immunodeficiency virus (HIV) infection (inclusion--- f))
+Answer(value=Known active hepatitis B infection; known history of hepatitis C; human immunodeficiency virus (HIV) infectionThere are no other specific laboratory findings mentioned in the provided text that are required for exclusion, aside from the infectious diseases listed above.)
+----------------------------------------------------------------------
+16. Extract any other symptoms, signs, or measurements of the patient observable in a doctor's office that are required for exclusion (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Known active hepatitis B infection, known history of hepatitis C or human immunodeficiency virus (HIV) infection (inclusion--- f))
+Answer(value=Known active hepatitis B infection, known history of hepatitis C, human immunodeficiency virus (HIV) infection)
+SourceText(value=Clinical or radiographic evidence of bowel obstruction or need (inclusion--- f))
+Answer(value=Clinical or radiographic evidence of bowel obstruction)
+SourceText(value=For parenteral hydration and/or nutrition (inclusion--- f))
+Answer(value=Need for parenteral hydration and/or nutrition)
+SourceText(value=Known or suspected extensive abdominal adhesions that would preclude port placement or infusion (inclusion--- f))
+Answer(value=Known or suspected extensive abdominal adhesions that would preclude port placement or infusion)
+SourceText(value="Any of the following cardiac conditions:* Clinically significant heart disease (New York Heart Association class 3 or 4) or symptomatic congestive heart failure* Myocardial infarction < 6 months before enrollment* History of clinically significant ventricular arrhythmia or unexplained syncope that is not believed to be vasovagal in nature or due to dehydration* History of severe non-ischemic cardiomyopathy with ejection fraction < 20%* Findings on baseline electrocardiogram (ECG) or echocardiogram (ECHO) that, in the opinion of the patientâ€™s treating physician or investigator, would require medical intervention before anticancer therapy (inclusion--- f)")
+Answer(value=Clinically significant heart disease (New York Heart Association class 3 or 4), symptomatic congestive heart failure, Myocardial infarction < 6 months before enrollment, History of clinically significant ventricular arrhythmia or unexplained syncope, History of severe non-ischemic cardiomyopathy with ejection fraction < 20%, Findings on baseline electrocardiogram (ECG) or echocardiogram (ECHO) requiring medical intervention before anticancer therapy)
+SourceText(value=Active autoimmune disease (excluding autoimmune thyroid disease on a stable thyroid regimen). Such conditions include but are not limited to systemic lupus erythematous, rheumatoid arthritis, ulcerative colitis, Crohnâ€™s disease, and temporal arteritis (inclusion--- f))
+Answer(value="Active autoimmune disease (excluding autoimmune thyroid disease on a stable thyroid regimen)", Coh)
+----------------------------------------------------------------------
+17. Extract any demographic or social criteria that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Current pregnancy or lactation (inclusion--- f))
+Answer(value=Current pregnancy or lactation)
+----------------------------------------------------------------------
+18. Extract any current diagnoses that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Known active hepatitis B infection, known history of hepatitis C or human immunodeficiency virus (HIV) infection (inclusion--- f))
+Answer(value=Known active hepatitis B infection, known history of hepatitis C, human immunodeficiency virus (HIV) infection)
+SourceText(value=Known or suspected leptomeningeal disease and patients with metastases to the brain stem, midbrain, pons, or medulla (inclusion--- f))
+Answer(value=Known or suspected leptomeningeal disease, metastases to the brain stem, midbrain, pons, or medulla)
+SourceText(value=Known or suspected untreated brain metastases. Patients with radiographically stable, asymptomatic previously irradiated lesions are eligible provided patient is > 4 weeks beyond completion of cranial irradiation and > 3 weeks off of corticosteroid therapy at the time of study intervention (inclusion--- f))
+Answer(value=Known or suspected untreated brain metastases)
+SourceText(value=Prior history of clinically significant seizure disorder (e.g., not including childhood febrile seizures) (inclusion--- f))
+Answer(value=Prior history of clinically significant seizure disorder)
+SourceText(value=Any concurrent active malignancies, defined as malignancies requiring any therapy other than expectant observation, because adverse events (AEs) resulting from these malignancies or their treatment may confound our assessment of the safety of adoptive T-cell therapy for ovarian cancer (inclusion--- f))
+Answer(value=Any concurrent active malignancies)
+----------------------------------------------------------------------
+19. Extract any past diagnoses in the patient's medical history that are required for exclusion (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Known active hepatitis B infection, known history of hepatitis C or human immunodeficiency virus (HIV) infection (inclusion--- f))
+Answer(value=Active hepatitis B infection, history of hepatitis C, HIV infection)
+SourceText(value="Any of the following cardiac conditions:* Clinically significant heart disease (New York Heart Association class 3 or 4) or symptomatic congestive heart failure* Myocardial infarction < 6 months before enrollment* History of clinically significant ventricular arrhythmia or unexplained syncope that is not believed to be vasovagal in nature or due to dehydration* History of severe non-ischemic cardiomyopathy with ejection fraction < 20%* Findings on baseline electrocardiogram (ECG) or echocardiogram (ECHO) that, in the opinion of the patientâ€™s treating physician or investigator, would require medical intervention before anticancer therapy (inclusion--- f)")
+Answer(value=Clinically significant heart disease, symptomatic congestive heart failure, myocardial infarction within 6 months, clinically significant ventricular arrhythmia, unexplained syncope, severe non-ischemic cardiomyopathy with ejection fraction < 20%, significant ECG or ECHO findings requiring intervention)
+SourceText(value=Active autoimmune disease (excluding autoimmune thyroid disease on a stable thyroid regimen). Such conditions include but are not limited to systemic lupus erythematous, rheumatoid arthritis, ulcerative colitis, Crohnâ€™s disease, and temporal arteritis (inclusion--- f))
+Answer(value=Active autoimmune disease (excluding stable autoimmune thyroid disease))
+SourceText(value=Known or suspected leptomeningeal disease and patients with metastases to the brain stem, midbrain, pons, or medulla (inclusion--- f))
+Answer(value=Leptomeningeal disease, metastases to the brain stem, midbrain, pons, or medulla)
+SourceText(value=Known or suspected untreated brain metastases. Patients with radiographically stable, asymptomatic previously irradiated lesions are eligible provided patient is > 4 weeks beyond completion of cranial irradiation and > 3 weeks off of corticosteroid therapy at the time of study intervention (inclusion--- f))
+Answer(value=Untreated brain metastases)
+SourceText(value="Prior history of clinically significant seizure disorder (e.g., not including childhood febr)
+
+----------------------------------------------------------------------
+20. Extract any current therapies that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=No anticancer therapy (chemotherapy, biologic therapy, or immunotherapy) in the 3 weeks before the T-cell infusion (and all hematologic effects have resolved). No prior immunotherapy with checkpoint blockade (e.g., PD1 inhibitor, PDL1 inhibitor, or CTL4- antagonist or similar agent) in the 6 months before the T-cell infusion (and all clinically significant related side effects must be resolved) (inclusion--- t))
+Answer(value=Anticancer therapy within 3 weeks before T-cell infusion, immunotherapy with checkpoint blockade within 6 months before T-cell infusion)
+SourceText(value=Any concurrent active malignancies, defined as malignancies requiring any therapy other than expectant observation, because adverse events (AEs) resulting from these malignancies or their treatment may confound our assessment of the safety of adoptive T-cell therapy for ovarian cancer (inclusion--- f))
+Answer(value=Therapy for concurrent active malignancies other than expectant observation)
+SourceText(value=Prior radiotherapy to any portion of the abdominal cavity or pelvis (inclusion--- f))
+Answer(value=Prior radiotherapy to the abdominal cavity or pelvis)
+----------------------------------------------------------------------
+21. Extract any past therapies in the patient's medical history that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=No prior immunotherapy with checkpoint blockade (e.g., PD1 inhibitor, PDL1 inhibitor, or CTL4- antagonist or similar agent) in the 6 months before the T-cell infusion (and all clinically significant related side effects must be resolved) (inclusion--- t))
+Answer(value=Prior immunotherapy with checkpoint blockade within 6 months before T-cell infusion)
+SourceText(value=Prior radiotherapy to any portion of the abdominal cavity or pelvis (inclusion--- f))
+Answer(value=Prior radiotherapy to the abdominal cavity or pelvis)
+----------------------------------------------------------------------
+22. Extract the cancer biomarkers that are required for exclusion (if applicable). First extract the source text containing the answer. Then extract the name of the biomarker and the requisite conditions like so:  
+SourceText("<original_text_containing_answer>")  
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None")      
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None") First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Patient’s carcinoma should express the FSHR antigen, detectable by polymerase chain reaction (PCR) analysis of archival tumor sample * Expression will be graded as positive, negative, inconclusive/uninterpretable. Only patients without a negative result will be eligible for the treatment with FSCER T cells.)
+Answer(value="FSHR antigen", Condition="Negative"))
+----------------------------------------------------------------------

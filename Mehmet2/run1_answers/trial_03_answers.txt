@@ -1,0 +1,212 @@
+1. Extract the organ(s) that are the primary locus of cancer. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features:)
+Answer(value=breast, Cohort=Dose Escalation)
+SourceText(value=Platinum-resistant (defined as progression within 12 months of last platinum therapy administration), pathologically confirmed serous ovarian cancer that is recurrent and unresectable, in the opinion of the enrolling investigator (inclusion--- t))
+Answer(value=ovarian, Cohort=Dose Escalation)
+SourceText(value=FOR DOSE EXPANSION COHORT ONLY: Pathologically confirmed breast cancer with the following features:)
+Answer(value=breast, Cohort=Dose Expansion)
+----------------------------------------------------------------------
+2. Please confirm if the breast, ovarian, breast is/are the required organ(s) for origin of primary cancer. Answer yes, no, or unsure.
+
+
+Answer(value=Yes)
+----------------------------------------------------------------------
+3. Extract the allowed location(s) of the primary tumor with respect to the organ topology (if applicable). Use the desired format.
+
+SourceText(value=FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features:)
+Answer(value=breast, Cohort=Dose Escalation)
+SourceText(value=Platinum-resistant (defined as progression within 12 months of last platinum therapy administration), pathologically confirmed serous ovarian cancer that is recurrent and unresectable, in the opinion of the enrolling investigator (inclusion--- t))
+Answer(value=ovarian, Cohort=Dose Escalation)
+SourceText(value=FOR DOSE EXPANSION COHORT ONLY: Pathologically confirmed breast cancer with the following features:)
+Answer(value=breast, Cohort=Dose Expansion)
+----------------------------------------------------------------------
+4. Extract the disallowed location(s) of the primary tumor with respect to the organ topology (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Patients with new or progressive brain metastases (active brain metastases) or leptomeningeal disease unless determined by the treating physician that immediate central nervous system (CNS) specific treatment is not required and is unlikely to be required during the first cycle of therapy (inclusion--- f))
+Answer(value=Brain, Leptomeningeal)
+
+5. Extract the cancerous cell types that are required for inclusion. Use the desired format.
+
+SourceText(value=FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features: * Measurable disease by Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 * Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry * Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards) * Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator OR * Platinum-resistant (defined as progression within 12 months of last platinum therapy administration), pathologically confirmed serous ovarian cancer that is recurrent and unresectable, in the opinion of the enrolling investigator (inclusion--- t))
+Answer(value=Breast cancer, Serous ovarian cancer, Cohort=Dose Escalation)
+SourceText(value=FOR DOSE EXPANSION COHORT ONLY: Pathologically confirmed breast cancer with the following features: * Measurable disease by RECIST 1.1 * ER and PR =< 1% by immunohistochemistry * Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by CAP/ASCO standards) * Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator (inclusion--- t))
+Answer(value=Breast cancer, Cohort=Dose Expansion)
+----------------------------------------------------------------------
+6. Extract the types and degree of cell morphology changes that are required (if applicable). Use the desired format. Add the Degree attribute to the answer like so: Answer("<your_answer>", Degree="<degree_or_None>").
+
+SourceText(value=FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features: * Measurable disease by Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 * Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry * Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards) * Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator OR * Platinum-resistant (defined as progression within 12 months of last platinum therapy administration), pathologically confirmed serous ovarian cancer that is recurrent and unresectable, in the opinion of the enrolling investigator (inclusion--- t))
+Answer(value="ER negative, PR negative, Her-2/neu negative", Degree="=< 1% for ER and PR, 0 or 1+ for Her-2/neu"))
+SourceText(value=FOR DOSE EXPANSION COHORT ONLY: Pathologically confirmed breast cancer with the following features: * Measurable disease by RECIST 1.1 * ER and PR =< 1% by immunohistochemistry * Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by CAP/ASCO standards) * Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator (inclusion--- t))
+Answer(value="ER negative, PR negative, Her-2/neu negative", Degree="=< 1% for ER and PR, 0 or 1+ for Her-2/neu"))
+----------------------------------------------------------------------
+7. Extract the minimum/maximum numbers of lymph node metastases that are required (if applicable). Use the desired format. Add the Min/Max attribute to the answer like so: Answer("<your_answer>", Min="<min_or_None>", Max="<max_or_None>"). First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Presence of >= 1 metastatic sites of disease that can be safely accessed for core needle biopsy and patient willingness to undergo fresh tissue biopsies of up to 3 lesions.)
+Answer(value=>= 1, Min=1)
+----------------------------------------------------------------------
+8. Extract the organ metastases that are required for inclusion (if applicable). Use the desired format.
+
+SourceText(value=AST (serum glutamic-oxaloacetic transaminase [SGOT])/ALT (serum glutamate pyruvate transaminase [SGPT]) =< 5 x institutional upper limit of normal (ULN) for patients with liver metastasis (inclusion--- t))
+Answer(value=liver metastasis)
+----------------------------------------------------------------------
+9. Extract the distant organ metastases that are required for inclusion (if applicable). First extract distant organ metastases, then extract the count and size of the tumors like so: Answer("<your_answer>", MinSize="", MaxSize="", MinCount="", MaxCount="").
+
+
+Answer(value=The provided text does not specify any distant organ metastases that are required for inclusion in terms of count and size of the tumors. The only mention of organ metastasis is related to liver metastasis for the purpose of liver function test thresholds, but it does not provide details on the count or size of tumors required for inclusion. Therefore, there is no answer to provide based on the given text.)
+----------------------------------------------------------------------
+10. Extract the prior therapies that are required for inclusion (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features: * Platinum-resistant (defined as progression within 12 months of last platinum therapy administration), pathologically confirmed serous ovarian cancer that is recurrent and unresectable, in the opinion of the enrolling investigator (inclusion--- t))
+Answer(value=Progression within 12 months of last platinum therapy administration, Cohort=Dose Escalation)
+SourceText(value=FOR DOSE EXPANSION COHORT ONLY: Pathologically confirmed breast cancer with the following features: * Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator (inclusion--- t))
+Answer(, Cohort=Dose Expansion)
+----------------------------------------------------------------------
+11. Extract the cancer biomarkers that are required for inclusion (if applicable). First extract the source text containing the answer. Then extract the name of the biomarker and the requisite conditions like so:  
+SourceText("<original_text_containing_answer>")  
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None")      
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None")
+
+SourceText(value=FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features: * Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry * Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards))
+Answer(value="Estrogen receptor (ER)", Condition="=< 1% by immunohistochemistry"))
+SourceText(value=FOR DOSE EXPANSION COHORT ONLY: Pathologically confirmed breast cancer with the following features: * ER and PR =< 1% by immunohistochemistry * Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by CAP/ASCO standards))
+Answer(value="Progesterone receptor (PR)", Condition="=< 1% by immunohistochemistry"))
+
+Answer(value="Her-2/neu", Condition="negative (0 or 1+ by immunohistochemistry OR not amplified by CAP/ASCO standards)"))
+
+Answer(value="Estrogen receptor (ER)", Condition="=< 1% by immunohistochemistry"))
+
+Answer(value="Progesterone receptor (PR)", Condition="=< 1% by immunohistochemistry"))
+
+Answer(value="Her-2/neu", Condition="negative (0 or 1+ by immunohistochemistry OR not amplified by CAP/ASCO standards)"))
+----------------------------------------------------------------------
+12. Extract the prior therapies that are required for exclusion (if applicable). First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Previous use of CDK 4/6 or HDAC inhibitors for cancer treatment (inclusion--- f))
+Answer(value=Previous use of CDK 4/6 or HDAC inhibitors)
+----------------------------------------------------------------------
+13. Extract the biochemistry lab test values that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Serum bilirubin levels =< 1.5 mg/dL. Higher levels are acceptable if these can be attributed to active hemolysis or ineffective erythropoiesis. Bilirubin above 1.5 mg/dL due to Gilbertâ€™s is still excluded (inclusion--- t))
+Answer(value=Bilirubin above 1.5 mg/dL due to Gilbert’s)
+SourceText(value=Serum aspartate transaminase (AST) and serum alanine transaminase (ALT) =< 2.5 x upper limit of normal * AST (serum glutamic-oxaloacetic transaminase [SGOT])/ALT (serum glutamate pyruvate transaminase [SGPT]) =< 5 x institutional upper limit of normal (ULN) for patients with liver metastasis (inclusion--- t))
+Answer(value=AST or ALT > 2.5 x upper limit of normal without liver metastasis; AST or ALT > 5 x institutional ULN with liver metastasis)
+SourceText(value=Alkaline phosphatase < 2.5 x upper limit of normal, unless bone metastasis is present in the absence of liver metastasis (inclusion--- t))
+Answer(value=Alkaline phosphatase >= 2.5 x upper limit of normal without bone metastasis)
+SourceText(value=Serum creatinine levels =< 1.5 mg/dL (inclusion--- t))
+Answer(value=Serum creatinine > 1.5 mg/dL)
+SourceText(value=International normalized ratio (INR) =< 1.5 (unless the patient is receiving anticoagulants and the INR is within the therapeutic range of intended use for that anticoagulant within 7 days prior to the first dose of study drug) (inclusion--- t))
+Answer(value=INR > 1.5 without therapeutic anticoagulation)
+SourceText(value=Baseline corrected QT interval (QTcF) > 450 msec. The heart rate on the qualifying electrocardiogram (ECG) must be between 50 and 90 beats per minute (BPM) (inclusion--- f))
+Answer(value=Baseline QTcF > 450 msec)
+SourceText(value="Unresolved diarrhea >= grade 2, per Common Terminology Criteria for Ad)
+
+----------------------------------------------------------------------
+14. Extract the radiological findings that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Patients with new or progressive brain metastases (active brain metastases) or leptomeningeal disease unless determined by the treating physician that immediate central nervous system (CNS) specific treatment is not required and is unlikely to be required during the first cycle of therapy (inclusion--- f))
+Answer(value=New or progressive brain metastases; leptomeningeal disease)
+----------------------------------------------------------------------
+15. Extract any other laboratory findings that are required for exclusion (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Serum bilirubin levels =< 1.5 mg/dL. Higher levels are acceptable if these can be attributed to active hemolysis or ineffective erythropoiesis. Bilirubin above 1.5 mg/dL due to Gilbertâ€™s is still excluded (inclusion--- t))
+Answer(value=Bilirubin above 1.5 mg/dL due to Gilbert’s syndrome)
+SourceText(value=Baseline corrected QT interval (QTcF) > 450 msec. The heart rate on the qualifying electrocardiogram (ECG) must be between 50 and 90 beats per minute (BPM) (inclusion--- f))
+Answer(value=Baseline corrected QT interval (QTcF) > 450 msec)
+SourceText(value=Unresolved diarrhea >= grade 2, per Common Terminology Criteria for Adverse Events (CTCAE) version (v)5.0 (inclusion--- f))
+Answer(value=Unresolved diarrhea >= grade 2)
+SourceText(value=Known human immunodeficiency virus (HIV) infection with a detectable viral load within 6 months of the anticipated start of treatment. Note: Patients on effective anti-retroviral therapy with an undetectable viral load within 6 months of the anticipated start of treatment are eligible for this trial (inclusion--- f))
+Answer(value=HIV infection with a detectable viral load within 6 months of the anticipated start of treatment)
+SourceText(value=Known chronic hepatitis B virus (HBV) or hepatitis C virus infection with a detectable viral load. Note: Patients with an undetectable HBV viral load on appropriate suppressive therapy are eligible. Patients with an undetectable HCV viral load are eligible (inclusion--- f))
+Answer(value=Chronic HBV or HCV infection with a detectable viral load)
+----------------------------------------------------------------------
+16. Extract any other symptoms, signs, or measurements of the patient observable in a doctor's office that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Eastern Cooperative Oncology Group (ECOG) performance status =< 2 (inclusion--- t))
+Answer(value=ECOG performance status > 2)
+SourceText(value=Patients with new or progressive brain metastases (active brain metastases) or leptomeningeal disease unless determined by the treating physician that immediate central nervous system (CNS) specific treatment is not required and is unlikely to be required during the first cycle of therapy (inclusion--- f))
+Answer(value=New or progressive brain metastases (active brain metastases) or leptomeningeal disease)
+SourceText(value=Uncontrolled arrhythmia, congestive heart failure or angina. Patients who have had a myocardial infarction, symptomatic pericarditis, or cardiac surgery should be at least 6 months from the event and free of active symptoms (inclusion--- f))
+Answer(value=Uncontrolled arrhythmia, congestive heart failure or angina)
+SourceText(value=Known left ventricular ejection fraction < 50%. (Echocardiogram is not required for study entry) (inclusion--- f))
+Answer(value=Known left ventricular ejection fraction < 50%)
+SourceText(value=Clinically significant cardiac arrhythmias (e.g., ventricular tachycardia), complete left bundle branch block, high grade atrioventricular (AV) block (e.g., bifascicular block, Mobitz type II and third degree AV block) (inclusion--- f))
+Answer(value=Clinically significant cardiac arrhythmias, complete left bundle branch block, high grade AV block)
+SourceText(value=Congenital long QT syndrome (inclusion--- f))
+Answer(value=Congenital long QT syndrome)
+SourceText(value=Baseline corrected QT interval (QTcF) > 450 msec. The heart rate on the qualifying electrocardiogram (ECG) must be between 50 and 90 beats per minute (BPM) (inclusion--- f))
+Answer(value=Baseline corrected QT interval (QTcF) > 450 msec)
+SourceText(value=Unresolved diarrhea >= grade 2, per Common Terminology Criteria for Adverse Events (CTCAE) version (v)5.0 (inclusion--- f))
+Answer(value=Unresolved diarrhea >= grade 2)
+SourceText(value="Impaired gastrointestinal (GI))
+
+----------------------------------------------------------------------
+17. Extract any demographic or social criteria that are required for exclusion (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Pregnant or breast feeding (inclusion--- f))
+Answer(value=Pregnant or breast feeding)
+SourceText(value="Women of child-bearing potential defined as all women physiologically capable of becoming pregnant or men whose female partner is of child-bearing potential, unless they are using highly effective methods of contraception during the study treatment and for 6 months after stopping the treatment. Highly effective contraception methods include:* Total abstinence (when this is in line with the preferred and usual lifestyle of the patient. Periodic abstinence (e.g., calendar, ovulation, symptothermal, post-ovulation methods) and withdrawal are not acceptable methods of contraception* Female sterilization (have had surgical bilateral oophorectomy with or without hysterectomy), total hysterectomy or tubal ligation at least 6 weeks before taking study treatment. In case of oophorectomy alone, only when the reproductive status of the woman has been confirmed by follow up hormone level assessment* Male partner sterilization (at least 6 months prior to screening). For female patients on the study, the vasectomized male partner should be the sole partner for that patient and the success of the vasectomy must be medically confirmed as per local practice* Placement of an intrauterine device (IUD* Use of hormonal contraception plus a barrier contraceptive (inclusion--- f)")
+Answer(value=Women of child-bearing potential not using highly effective methods of contraception)
+SourceText(value=Known human immunodeficiency virus (HIV) infection with a detectable viral load within 6 months of the anticipated start of treatment. Note: Patients on effective anti-retroviral therapy with an undetectable viral load within 6 months of the anticipated start of treatment are eligible for this trial (inclusion--- f))
+Answer(value=Known HIV infection with a detectable viral load within 6 months of the anticipated start of treatment)
+SourceText(value=Known chronic hepatitis B virus (HBV) or hepatitis C virus infection with a detectable viral load. Note: Patients with an undetectable HBV viral load on appropriate suppressive therapy are eligible. Patients with an undetectable HCV viral load are eligible (inclusion--- f))
+Answer(value=Known chronic HBV or HCV infection with a detectable viral load)
+----------------------------------------------------------------------
+18. Extract any current diagnoses that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Patients with new or progressive brain metastases (active brain metastases) or leptomeningeal disease unless determined by the treating physician that immediate central nervous system (CNS) specific treatment is not required and is unlikely to be required during the first cycle of therapy (inclusion--- f))
+Answer(value=New or progressive brain metastases (active brain metastases) or leptomeningeal disease)
+SourceText(value=Uncontrolled arrhythmia, congestive heart failure or angina. Patients who have had a myocardial infarction, symptomatic pericarditis, or cardiac surgery should be at least 6 months from the event and free of active symptoms (inclusion--- f))
+Answer(value=Uncontrolled arrhythmia, congestive heart failure or angina)
+SourceText(value=Known left ventricular ejection fraction < 50%. (Echocardiogram is not required for study entry) (inclusion--- f))
+Answer(value=Known left ventricular ejection fraction < 50%)
+SourceText(value=Clinically significant cardiac arrhythmias (e.g., ventricular tachycardia), complete left bundle branch block, high grade atrioventricular (AV) block (e.g., bifascicular block, Mobitz type II and third degree AV block) (inclusion--- f))
+Answer(value=Clinically significant cardiac arrhythmias, complete left bundle branch block, high grade atrioventricular (AV) block)
+SourceText(value=Congenital long QT syndrome (inclusion--- f))
+Answer(value=Congenital long QT syndrome)
+SourceText(value=Baseline corrected QT interval (QTcF) > 450 msec. The heart rate on the qualifying electrocardiogram (ECG) must be between 50 and 90 beats per minute (BPM) (inclusion--- f))
+Answer(value=Baseline corrected QT interval (QTcF) > 450 msec)
+SourceText(value=Unresolved diarrhea >= grade 2, per Common Terminology Criteria for Adverse Events (CTCAE) version (v)5.0 (inclusion--- f))
+Answer(value=Unresolved diarrhea >= grade 2)
+SourceText(value="Impaired gastrointestinal (GI) function that may alter absorption of medicines, such as uncontrolled inflammatory bowel disease, uncontrolled vomiting, or major stomach or small bowel resection (inclusion--- f)
+
+----------------------------------------------------------------------
+19. Extract any past diagnoses in the patient's medical history that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Patients who have had a myocardial infarction, symptomatic pericarditis, or cardiac surgery should be at least 6 months from the event and free of active symptoms (inclusion--- f))
+Answer(value=Myocardial infarction, symptomatic pericarditis, or cardiac surgery within the past 6 months)
+SourceText(value=Malignancy other than breast carcinoma or ovarian cancer (dose escalation) anticipated to need systemic treatment within 1 year in the opinion of the enrolling investigator (inclusion--- f))
+Answer(value=Malignancy other than breast carcinoma or ovarian cancer anticipated to need systemic treatment within 1 year)
+----------------------------------------------------------------------
+20. Extract any current therapies that are required for exclusion (if applicable). Use the desired format. First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Previous use of CDK 4/6 or HDAC inhibitors for cancer treatment (inclusion--- f))
+Answer(value=CDK 4/6 inhibitors, HDAC inhibitors)
+SourceText(value=Concurrent use of medication known to inhibit UGT1A1. Patients currently taking these medications must have discontinued >= 7 days prior to treatment day 1 (inclusion--- f))
+Answer(value=Medication known to inhibit UGT1A1)
+SourceText(value=Concurrent use of herbal supplements, unless approved by the principal investigator. Patients currently taking herbal supplements must have discontinued >= 7 days prior to treatment day 1 (inclusion--- f))
+Answer(value=Herbal supplements)
+SourceText(value=Concurrent use of medication with a known risk of inducing torsades de pointes (on the known risk list of crediblemeds.org) that cannot be discontinued or switched to a different medication >= 7 days prior to starting the study drug (inclusion--- f))
+Answer(value=Medication with a known risk of inducing torsades de pointes)
+SourceText(value="Use of any of the following substances =< 7 days prior to the start of the treatment:* Known strong and moderate inducers or inhibitors of CYP3A4/5, including grapefruit, grapefruit hybrids, pomelos, star-fruit, and Seville oranges* Medications that have a narrow therapeutic window and are predominantly metabolized through CYP3A4/5. Examples include certain benzodiazepines such as alprazolam and anti-seizure medications such as carbamazepine. Ultimately determination of drugs with a narrow therapeutic window is left to the discretion of the principal investigator (inclusion--- f)")
+Answer(value=Strong and moderate inducers or inhibitors of CYP3A4/5, Medications with a narrow therapeutic window and predominantly metabolized through CYP3A4/5)
+SourceText(value=Patient is currently receiving warfarin or other coumarin derived anti-coagulant, for treatment, prophylaxis or otherwise. Note: Therapy with heparin, low molecular weight heparin (LMWH), an oral factor Xa inhibitor, an oral direct thrombin inhibitor, or fondaparinux is allowed (inclusion--- f))
+Answer(value=Warfarin or other coumarin derived anti-coagulant)
+----------------------------------------------------------------------
+21. Extract any past therapies in the patient's medical history that are required for exclusion (if applicable). Use the desired format.
+
+SourceText(value=Previous use of CDK 4/6 or HDAC inhibitors for cancer treatment (inclusion--- f))
+Answer(value=CDK 4/6 inhibitors, HDAC inhibitors)
+----------------------------------------------------------------------
+22. Extract the cancer biomarkers that are required for exclusion (if applicable). First extract the source text containing the answer. Then extract the name of the biomarker and the requisite conditions like so:  
+SourceText("<original_text_containing_answer>")  
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None")      
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None") First extract the source text that contains the answer, then extract the answer(s).
+
+SourceText(value=Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards))
+Answer(value="Her-2/neu", Condition="negative (0 or 1+ by immunohistochemistry OR not amplified by CAP/ASCO standards)"))
+SourceText(value=Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry)
+Answer(value="ER", Condition="=< 1% by immunohistochemistry"))
+
+Answer(value="PR", Condition="=< 1% by immunohistochemistry"))
+----------------------------------------------------------------------

@@ -1,0 +1,291 @@
+PROMPT: COHORTS
+Are there multiple cohorts specified in the eligibility criteria for the clinical cancer trial protocol in the attached file? If so, please specify them; e.g., 
+ANSWER: [[Cohort 1]] AND [[Cohort 2]] AND [[Cohort 3]]
+If not, say ANSWER:[[NO]]
+
+Examples:
+
+# trial 1
+ANSWER: [[Cohort A]] AND [[Cohort B]]
+
+# trial 2
+ANSWER:[[NO]]
+
+# trial 3
+ANSWER: [[Dose Escalation Cohorts]] AND [[Dose Expansion Cohort]]
+
+# trial 4
+ANSWER:[[NO]]
+
+----------------------------------------------------------------------
+
+PROMPT: ORGANS based on COHORTS
+Based on the eligibility criteria <for COHORT A> in the attached file, what are the primary organs that the cancer originated from? Please provide the source text portion that your answer is based on. If it is a metastatic cancer and the primary organ was not specified, say ANSWER: [[NOT SPECIFIED]].
+First, please specify the source text that your answer is based on. Then, specify only the name of each primary organ in your ANSWER within double-square brackets without further details. 
+
+Examples:
+
+SOURCE-TEXT: Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA, or IIIB non-squamous or squamous NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. 
+ANSWER: [[Lung]]
+
+SOURCE-TEXT: Metastatic melanoma or non-squamous NSCLC with untreated brain metastases
+ANSWER: [[Skin]] OR [[Lung]]
+
+SOURCE-TEXT: Metastatic or locally advanced breast cancer not amenable to curative treatment by surgery or radiotherapy
+ANSWER: [[Breast]]
+
+SOURCE-TEXT: Confirmed diagnosis of metastatic (Stage IV) or locally advanced, unresectable (Stage III) NSCLC of nonsquamous pathology that has relapsed or progressed
+ANSWER: [[Lung]]
+
+SOURCE-TEXT: Histologically or cytologically-documented, advanced solid tumor of one of the following types: Anal Squamous Cell Carcinoma, Biliary Adenocarcinoma (gallbladder or biliary tree), Neuroendocrine Tumors (lung, appendix, small intestine, colon, rectum, pancreas), Endometrial Carcinoma, Cervical Squamous Cell Carcinoma, Vulvar Squamous Cell Carcinoma, Small Cell Lung Carcinoma, Mesothelioma, Thyroid Carcinoma, Salivary Gland Carcinoma
+ANSWER: [[Anus]] OR [[Gallbladder]] OR [[Biliary Tree]] OR [[Lung]] OR [[Appendix]] OR [[Small Intestine]] OR [[Colon]] OR [[Rectum]] OR [[Pancreas]] OR [[Endometrium]] OR [[Cervix]] OR [[Vulva]] OR [[Thyroid]] OR [[Salivary Gland]]
+
+# trial 1
+SOURCE-TEXT: Pathologically confirmed HER2-positive MBC by local laboratory with the following requirements: HER2 overexpressed or amplified (immunohistochemistry of 3+ or HER2 gene amplification by in situ hybridization with a ratio of HER2-gene signals to centromere 17 signals >= 2.0 or average HER2 copy number >= 6.0 signals/cells) (inclusion--- t).
+ANSWER: [[Breast]]
+
+# trial 1 Cohort B
+SOURCE-TEXT: Pathologically confirmed HER2-positive MBC by local laboratory with the following requirements: HER2 overexpressed or amplified (immunohistochemistry of 3+ or HER2 gene amplification by in situ hybridization with a ratio of HER2-gene signals to centromere 17 signals >= 2.0 or average HER2 copy number >= 6.0 signals/cells) (inclusion--- t).
+ANSWER: [[Breast]]
+
+# trial 2
+SOURCE-TEXT: Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins.
+ANSWER: [[Lung]]
+
+# trial 3 Dose Escalation Cohort
+SOURCE-TEXT: FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features: * Measurable disease by Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 * Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry * Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards) * Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator OR * Platinum-resistant (defined as progression within 12 months of last platinum therapy administration), pathologically confirmed serous ovarian cancer that is recurrent and unresectable, in the opinion of the enrolling investigator.
+ANSWER: [[Breast]] OR [[Ovary]]
+
+# trial 3 Dose Expansion Cohort
+SOURCE-TEXT: The eligibility criteria for Dose Expansion Cohorts in the attached file specify the following:
+Pathologically confirmed breast cancer with the following features:
+Measurable disease by RECIST 1.1
+ER and PR =< 1% by immunohistochemistry.
+ANSWER: [[Breast]]
+
+# trial 4
+SOURCE-TEXT: Pathologically confirmed diagnosis of high-grade (grade 2-3) epithelial ovarian cancer, primary peritoneal cancer, or fallopian tube carcinoma (EOC), which are serous, endometrioid, clear cell, mucinous, mixed epithelial, or undifferentiated.
+ANSWER: [[Ovary]] OR [[Peritoneum]] OR [[Fallopian Tube]]
+
+----------------------------------------------------------------------
+
+PROMPT: CONFIRMATION of Organs based on Cohorts
+Please confirm that <Prostate> is the primary organ that cancer originated from. If affirmative, please say,
+ANSWER: [[YES]]. Otherwise, provide the name of the organs in the ANSWER.
+
+----------------------------------------------------------------------
+
+PROMPT: ORGAN LOCATION
+If particular locations for the primary tumor of <organ> are specified in the inclusion criteria of the attached file, please specify them in your ANSWER after providing the SOURCE-TEXT that your answer is based; otherwise, say, ANSWER: [[NOT SPECIFIED]]
+
+Examples:
+
+# trial 1
+SOURCE-TEXT: COHORT B: New and/or progressive brain metastasis(es) with clinical indication for resection (inclusion--- t) | Pathologically confirmed HER2-positive MBC by local laboratory with the following requirements: HER2 overexpressed or amplified (immunohistochemistry of 3+ or HER2 gene amplification by in situ hybridization with a ratio of HER2-gene signals to centromere 17 signals >= 2.0 or average HER2 copy number >= 6.0 signals/cells) (inclusion--- t).
+ANSWER: [[NOT SPECIFIED]].
+
+# trial 2
+SOURCE-TEXT: Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins.
+ANSWER: [[NOT SPECIFIED]]
+
+# trial 3 Breast
+SOURCE-TEXT: FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features:  
+* Measurable disease by Response Evaluation Criteria in Solid Tumors (RECIST) 1.1  
+* Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry  
+* Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards)  
+* Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator.
+ANSWER: [[NOT SPECIFIED]]
+
+----------------------------------------------------------------------
+
+PROMPT: CELL TYPE BASED ON THE <ORGAN> CANCER
+What cell types of <organ> cancer are required in the inclusion criteria of the attached file. If multiple cell types are mentioned, please specify all of them. If no cell type is mentioned, please say, ANSWER: [[NOT SPECIFIED]].
+
+Examples:
+
+# trial 1
+SOURCE-TEXT: Pathologically confirmed HER2-positive MBC by local laboratory with the following requirements: HER2 overexpressed or amplified (immunohistochemistry of 3+ or HER2 gene amplification by in situ hybridization with a ratio of HER2-gene signals to centromere 17 signals >= 2.0 or average HER2 copy number >= 6.0 signals/cells) (inclusion--- t).
+ANSWER: [[HER2-positive]].
+
+# trial 2
+SOURCE-TEXT: Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins.
+ANSWER: [[Non-squamous NSCLC]] OR [[Squamous NSCLC]]
+
+# trial 3 Breast
+SOURCE-TEXT: FOR DOSE ESCALATION COHORTS ONLY: Pathologically confirmed breast cancer with the following features:
+Measurable disease by Response Evaluation Criteria in Solid Tumors (RECIST) 1.1
+Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry
+Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards)
+ANSWER: [[ER and PR negative]] AND [[Her-2/neu negative]]
+
+----------------------------------------------------------------------
+
+PROMPT: CELL MORPHOLOGY SPECIFICATION
+Is there any mention of required cell morphology specifications in the inclusion criteria for <ORGAN> <CELL TYPE> in the attached protocol? If not, please indicate with ANSWER: [[NO]]. If there are, please provide the SOURCE-TEXT before answering.
+
+Examples:
+
+# trial 1
+SOURCE-TEXT: Pathologically confirmed HER2-positive MBC by local laboratory with the following requirements: HER2 overexpressed or amplified (immunohistochemistry of 3+ or HER2 gene amplification by in situ hybridization with a ratio of HER2-gene signals to centromere 17 signals >= 2.0 or average HER2 copy number >= 6.0 signals/cells) (inclusion--- t).
+ANSWER: [[NO]].
+
+# trial 2 Non-squamous
+ANSWER: [[NO]]
+
+# trial 2 Squamous
+ANSWER: [[NO]]
+
+# trial 3 Breast, ER and PR negative
+ANSWER: [[NO]]
+
+# trial 3 Breast, Her-2/neu negative 
+ANSWER: [[NO]]
+
+----------------------------------------------------------------------
+
+PROMPT: LYMPH NODE METASTASIS
+Please indicate whether there is any mention of lymph node metastasis in the attached protocol. If not, say, "ANSWER: [[NOT SPECIFIED]]". If yes, please provide the required MIN and MAX number of nodes involved. If lymph node metastasis should not be present, indicate "ANSWER: [[MAX = 0]]". If there is only a lower or upper limit, indicate only the MIN or MAX value, respectively.
+
+Examples:
+
+# trial 1
+ANSWER: [[NOT SPECIFIED]]
+
+# trial 2
+SOURCE-TEXT: Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. N3 disease is not allowed.
+ANSWER: [[MAX = 0]]
+
+# trial 3
+ANSWER: [[NOT SPECIFIED]]
+
+----------------------------------------------------------------------
+
+PROMPT: ORGAN METATASIS
+Please indicate whether there is any mention of organ metastasis in the attached protocol. If not, say, "ANSWER: [[NOT SPECIFIED]]." If yes, please provide the required organs involved. If organ metastasis should not be present, indicate "ANSWER: [[NONE]]." Please provide the SOURCE-TEXT that your answer is based on.
+
+Examples:
+
+# trial 1
+SOURCE-TEXT: COHORT A: Unequivocal evidence of new and/or progressive brain metastases, and at least one of the following scenarios:
+ANSWER: [[Brain]].
+
+# trial 2
+SOURCE-TEXT: Baseline chest computed tomography (CT) with or without contrast must be performed within 6 months (180 days) prior to randomization to ensure no evidence of disease; if clinically indicated additional imaging studies must be performed to rule out metastatic disease (inclusion--- t).
+ANSWER: [[NONE]]
+
+# trial 3
+SOURCE-TEXT: Serum aspartate transaminase (AST) and serum alanine transaminase (ALT) =< 2.5 x upper limit of normal
+AST (serum glutamic-oxaloacetic transaminase [SGOT])/ALT (serum glutamate pyruvate transaminase [SGPT]) =< 5 x institutional upper limit of normal (ULN) for patients with liver metastasis
+Alkaline phosphatase < 2.5 x upper limit of normal, unless bone metastasis is present in the absence of liver metastasis.
+ANSWER: [[Liver]] AND [[Bone]]
+
+----------------------------------------------------------------------
+
+PROMPT: LYMPH NODE METASTASIS CONFIRMATION
+IF ANSWER WAS [[NONE]]
+Please confirm that patients with lymph node metastases should be excluded from the trial based on the attached protocol. Provide the SOURCE-TEXT that your answer is based on before responding.  "ANSWER: [[YES]]" for confirmation; otherwise, provide MIN and/or MAX number of required lymph node metastases in your answer.
+
+Examples:
+
+# trial 2
+SOURCE-TEXT: Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. N3 disease is not allowed (inclusion--- t).
+ANSWER: [[YES]]
+
+----------------------------------------------------------------------
+
+PROMPT: ORGAN METASTASIS CONFIRMATION
+IF ANSWER WAS [[NONE]]
+Please confirm if patients with organ metastases should be excluded from the trial as per the attached protocol? Provide the SOURCE-TEXT that your answer is based on before responding.  "ANSWER: [[YES]]" for confirmation; otherwise, specify the affected organs in your answer.
+
+Examples:
+
+# trial 2
+SOURCE-TEXT: Baseline chest computed tomography (CT) with or without contrast must be performed within 6 months (180 days) prior to randomization to ensure no evidence of disease; if clinically indicated additional imaging studies must be performed to rule out metastatic disease (inclusion--- t).
+ANSWER: [[YES]]
+
+----------------------------------------------------------------------
+
+PROMPT: METASTATIC TUMORS [NEEDS TO BE REVAMPED]
+IF REQUIRED ORGAN METASTASIS CONFIRMED
+Please indicate if the number, size, and the location of metastatic tumors are specified in the attached clinical trial protocol? Please provide the SOURCE-TEXT that your answer is based on before responding.
+
+Examples:
+
+# trial 2
+SOURCE-TEXT: Baseline chest computed tomography (CT) with or without contrast must be performed within 6 months (180 days) prior to randomization to ensure no evidence of disease; if clinically indicated additional imaging studies must be performed to rule out metastatic disease (inclusion--- t).
+The attached clinical trial protocol does not specify the number, size, or the location of metastatic tumors; it only requires imaging to ensure no evidence of disease and to rule out metastatic disease.
+
+----------------------------------------------------------------------
+
+PROMPT: STAGING
+Is the required stage or range of stages for <CELL TYPE> of the <ORGAN> specified? If not, say, "ANSWER: [[NOT SPECIFIED]];" otherwise, provide the SOURCE-TEXT that your answer is based on before responding.
+
+Examples:
+
+# trial 2 Non-squamous
+SOURCE-TEXT: Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins (inclusion--- t).
+The required stages for Non-squamous NSCLC of the Lung are specified as stage IIA, IIB, IIIA, or IIIB.
+
+# trial 2 Squamous
+SOURCE-TEXT: Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins (inclusion--- t).
+The required stages for Squamous NSCLC of the Lung are specified as stage IIA, IIB, IIIA, or IIIB.
+
+# trial 3 Breast, ER and PR negative
+SOURCE-TEXT: The inclusion criteria for the clinical trial protocol specify the following for ER and PR negative breast cancer:
+Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator.
+Based on this information, the required stage for ER and PR negative breast cancer is specified as metastatic or unresectable and locally advanced.
+ANSWER: [[Metastatic or unresectable and locally advanced]]
+
+# trial 3 Breast, Her-2/neu negative
+ANSWER: [[NOT SPECIFIED]]
+
+----------------------------------------------------------------------
+
+PROMPT: STAGING CONFIRMATION
+Confirm that patients are excluded from the trial if the <ORGAN> cancer stage is below <ANSWER> or beyond <ANSWER>. Say, "ANSWER: [[YES]] to confirm; otherwise, correct the statement after the providing the SOURCE-TEXT that your response is based on.
+
+Examples:
+
+# trial 2
+SOURCE-TEXT: Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA or IIIB non-squamous or squamous NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. N3 disease is not allowed (inclusion--- t).
+ANSWER: [[YES]]
+
+# trial 3 Breast
+SOURCE-TEXT: The inclusion criteria for the clinical trial protocol specify that patients must have breast cancer with the following features:
+Metastatic or unresectable and locally advanced and not amenable to treatment with curative intent, in the opinion of the enrolling investigator.
+ANSWER: [[YES]]
+
+----------------------------------------------------------------------
+
+PROMPT: BIOMARKERS
+Are there any required cancer biomarkers? If not specified, say, "ANSWER: [[NOT SPECIFIED]]." If specified, provide the range of the required value for inclusion. 
+Examples,
+
+SOURCE-TEXT: ALK rearrangement identified by next generation (NextGen) sequencing.
+ANSWER: [[ALK rearrangement]]
+
+SOURCE-TEXT:  translocation or inversion events involving the ALK gene locus (e.g. resulting in EML4-ALK fusion) as determined by the Vysis Break Point fluorescence in situ hybridization (FISH) assay;
+ANSWER: [[ALK gene locus translocation]] OR [[ALK gene locus inversion]]
+
+SOURCE-TEXT: Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry
+ANSWER: [[Estrogen receptor =< 1%]]
+ANSWER: [[Progesterone receptor =< 1%]]
+
+SOURCE-TEXT: Localized adenocarcinoma of the prostate with the following features: Prostate specific antigen (PSA) < 20 ** Patients receiving a 5-alpha reductase inhibitor must have a PSA < 10
+ANSWER: [[Prostate specific antigen < 20 | Patients NOT receiving a 5-alpha reductase inhibitor]] OR [[Prostate specific antigen < 10 | Patients receiving a 5-alpha reductase inhibitor]]
+
+# trial 1
+SOURCE-TEXT: Pathologically confirmed HER2-positive MBC by local laboratory with the following requirements: HER2 overexpressed or amplified (immunohistochemistry of 3+ or HER2 gene amplification by in situ hybridization with a ratio of HER2-gene signals to centromere 17 signals >= 2.0 or average HER2 copy number >= 6.0 signals/cells) (inclusion--- t).
+ANSWER: [[HER2 overexpressed or amplified | Immunohistochemistry 3+]] OR [[HER2 gene amplification | Ratio of HER2-gene signals to centromere 17 signals >= 2.0]] OR [[HER2 gene amplification | Average HER2 copy number >= 6.0 signals/cells]].
+
+# trial 2
+SOURCE-TEXT: Positive for translocation or inversion events involving the ALK gene locus (e.g. resulting in EML4-ALK fusion) as defined by a Clinical Laboratory Improvement Act (CLIA)-approved test including: (1) translocation or inversion events involving the ALK gene locus (e.g. resulting in EML4-ALK fusion) as determined by the Vysis Break Point fluorescence in situ hybridization (FISH) assay; (2) ALK protein expression by immunohistochemistry (IHC); or (3) ALK rearrangement identified by next generation (NextGen) sequencing; this must have been performed:
+ANSWER: [[ALK gene locus translocation]] OR [[ALK gene locus inversion]] OR [[ALK protein expression]] OR [[ALK rearrangement]]
+
+# trial 3
+SOURCE-TEXT: The inclusion criteria for the clinical trial protocol specify the following cancer biomarkers for breast cancer:
+Estrogen receptor (ER) and progesterone receptor (PR) =< 1% by immunohistochemistry
+Her-2/neu negative (0 or 1+ by immunohistochemistry OR not amplified by College of American Pathologists/American Society of Clinical Oncology [CAP/ASCO] standards).
+ANSWER: [[Estrogen receptor =< 1%]]
+ANSWER: [[Progesterone receptor =< 1%]]
+ANSWER: [[Her-2/neu negative]]
