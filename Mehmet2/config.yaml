@@ -1,0 +1,23 @@
+system_message: &sys_msg 'You will be summarizing the Eligibility Criteria section of a clinical trial protocol document. Note that in the Eligibility Criteria section, the suffix "(inclusion--- t)" denotes that the line describes an inclusion criterion, and "(inclusion--- f)" denotes an exclusion criterion.'
+
+chat:
+  temperature: 0.1
+  top_p: 1
+  max_tokens: 800
+  stop: null
+  stream: false
+
+search:
+  fieldsMapping: {}
+  filter: null
+  inScope: true
+  queryType: simple
+  roleInformation: *sys_msg
+  semanticConfiguration: default
+  strictness: 3
+  topNDocuments: 5
+  # CLI args
+  indexName: null
+  # ENV vars
+  key: null
+  endpoint: null
