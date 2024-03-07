@@ -22,7 +22,7 @@ class Settings:
     SYSTEM_MESSAGE = ""
     SEARCH_CONFIG = {}
 
-    def __new__(cls, env_file: str, config: dict[str, Any]):
+    def __new__(cls, env_file: str, config: dict[str, Any], cliargs: dict[str, Any]):
         if cls._instance is None:
             assert dotenv.load_dotenv(env_file), f"No vars loaded from {env_file}"
 
@@ -41,11 +41,12 @@ class Settings:
 
             # Chat parameters
             cls._instance.CHAT_CONFIG = config["chat"]
-            cls._instance.SYSTEM_MESSAGE = config["system_message"]
+            cls._instance.SYSTEM_MESSAGE = config.get("system_message", "")
             cls._instance.SEARCH_CONFIG = {
                 "key": cls._instance.AZURE_SEARCH_KEY,
                 "endpoint": cls._instance.AZURE_SEARCH_ENDPOINT,
                 **config["search"],
+                **cliargs["search"],
             }
 
         return cls._instance

@@ -16,8 +16,3 @@ search:
   semanticConfiguration: default
   strictness: 3
   topNDocuments: 5
-  # CLI args
-  indexName: null
-  # ENV vars
-  key: null
-  endpoint: null

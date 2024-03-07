@@ -7,11 +7,11 @@
 - prompt: organ
   question: |
     Based on the eligibility criteria for {cohort} in the attached file, what are the primary organs that the cancer originated from? Please provide the source text portion that your answer is based on. If it is a metastatic cancer and the primary organ was not specified, say ANSWER: [[NOT SPECIFIED]].
-    First, please specify the source text that your answer is based on. Then, specify only the name of each primary organ in your ANSWER within double-square brackets without further details. 
+    First, please specify the source text that your answer is based on. Then, specify only the name of each primary organ in your ANSWER within double-square brackets without further details.
 
     Examples:
 
-    SOURCE-TEXT: Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA, or IIIB non-squamous or squamous NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins. 
+    SOURCE-TEXT: Patients must have undergone complete surgical resection of their stage IIA, IIB, IIIA, or IIIB non-squamous or squamous NSCLC per American Joint Committee on Cancer (AJCC) 8th edition and have had negative margins.
     ANSWER: [[Lung]]
 
     SOURCE-TEXT: Metastatic melanoma or non-squamous NSCLC with untreated brain metastases
@@ -73,7 +73,7 @@
 
 - prompt: biomarker
   question: |
-    Are there any required cancer biomarkers? If not specified, say, "ANSWER: [[NOT SPECIFIED]]." If specified, provide the range of the required value for inclusion. 
+    Are there any required cancer biomarkers? If not specified, say, "ANSWER: [[NOT SPECIFIED]]." If specified, provide the range of the required value for inclusion.
     Examples,
 
     SOURCE-TEXT: ALK rearrangement identified by next generation (NextGen) sequencing.

@@ -18,18 +18,18 @@ class QuestionParser:
     _questions: list[dict[str, str]]
     _question_idx: int
 
-    def __init__(self, question_file: Union[str, Path]) -> None:
+    def __init__(self, questions_file: Union[str, Path]) -> None:
         """Parser of YAML file containing an array of `prompt` and `question` items.
 
         Arguments:
-            question_file -- the pathname of the YAML file.
+            questions_file -- the pathname of the YAML file.
         """
-        if question_file in FILES_CACHE:
-            self._questions = FILES_CACHE[question_file]
+        if questions_file in FILES_CACHE:
+            self._questions = FILES_CACHE[questions_file]
         else:
-            with open(question_file) as fp:
+            with open(questions_file) as fp:
                 self._questions = yaml.safe_load(fp)
-                FILES_CACHE[question_file] = self._questions
+                FILES_CACHE[questions_file] = self._questions
 
     def skip_to(self, question_n: int):
         """Set the starting question number to begin the iteration."""
@@ -56,14 +56,14 @@ def serialize(prompt2answer: dict[str, str], outputpath: Union[str, Path]):
 
 def process_questions(
     gpt: GPTClient,
-    question_file: Union[str, Path],
+    questions_file: Union[str, Path],
     question_n: int = 0,
     chat_history: list[dict[str, str]] = [],
     prompt2answer: dict = {},
     results: list[dict[str, str]] = [],
 ):
     p2a_local = prompt2answer.copy()
-    question_parser = QuestionParser(question_file)
+    question_parser = QuestionParser(questions_file)
     question_parser.skip_to(question_n)
 
     for prompt, question in question_parser.questions():
@@ -83,10 +83,10 @@ def process_questions(
         ):
             for entity in response.entities:
                 p2a_local[prompt] = entity
-                logger.info(f"{question_n} {prompt} {entity}")
+                logger.info(f"{question_n: > 3}. {prompt} {entity}")
                 process_questions(
                     gpt=gpt,
-                    question_file=question_file,
+                    questions_file=questions_file,
                     question_n=question_n + 1,
                     prompt2answer=p2a_local,
                     chat_history=chat_history.copy(),
@@ -97,10 +97,10 @@ def process_questions(
             entity_groups = response.split_as_disjunctive()
             for entity_g in entity_groups:
                 p2a_local[prompt] = entity_g
-                logger.info(f"{question_n} {prompt} {entity_g}")
+                logger.info(f"{question_n: > 3}. {prompt} {entity_g}")
                 process_questions(
                     gpt=gpt,
-                    question_file=question_file,
+                    questions_file=questions_file,
                     question_n=question_n + 1,
                     prompt2answer=p2a_local,
                     chat_history=chat_history.copy(),
@@ -109,7 +109,7 @@ def process_questions(
             return
         else:
             p2a_local[prompt] = response.answer
-            logger.info(f"{question_n} {prompt} {response.answer}")
+            logger.info(f"{question_n: > 3}. {prompt} {response.answer}")
             question_n += 1
     results.append(p2a_local)
     return

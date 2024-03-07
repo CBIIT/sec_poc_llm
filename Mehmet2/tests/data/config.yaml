@@ -1,0 +1,7 @@
+system_message: &sys_msg "You are a helpful assistant."
+
+chat:
+  temperature: 0.1
+
+search:
+  roleInformation: *sys_msg
