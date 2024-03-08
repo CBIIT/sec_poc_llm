@@ -1,5 +1,5 @@
 from pathlib import Path
-from unittest.mock import MagicMock
+from typing import Any, Union
 
 import pytest
 import yaml
@@ -11,6 +11,45 @@ from Mehmet2.settings import Settings
 
 test_data = Path(__file__).parent / "data"
 questions_file = test_data / "prompts.yaml"
+
+
+class Prompts:
+    prompts: list[dict[str, str]]
+
+    def __init__(self, prompts_file: Union[str, Path]) -> None:
+        with open(prompts_file) as fp:
+            self.prompts = yaml.safe_load(fp)
+
+    def _get_prompt(self, name: str):
+        return next(
+            (prompt["question"] for prompt in self.prompts if prompt["prompt"] == name),
+            "",
+        )
+
+    @property
+    def cohort(self):
+        return self._get_prompt("cohort")
+
+    @property
+    def organ(self):
+        return self._get_prompt("organ")
+
+    @property
+    def organ_confirm(self):
+        return self._get_prompt("organ_confirmation")
+
+    @property
+    def cell_type(self):
+        return self._get_prompt("cell_type")
+
+    @property
+    def cell_morphology(self):
+        return self._get_prompt("cell_morphology")
+
+
+@pytest.fixture
+def prompts():
+    return Prompts(questions_file)
 
 
 @pytest.fixture
@@ -31,43 +70,111 @@ def settings():
     return settings
 
 
-responses_2_cohorts_3_organs = [
-    # Cohort
-    Response(
-        """SOURCE-TEXT: lorem ipsum
+def get_send_messages_mock(mock_chat: list[tuple[Any, Response]]):
+    sent_prompts = []
+    expected_prompts = []
+
+    def mock_fn(self, messages):
+        expected_prompt, mock_response = mock_chat.pop(0)
+        expected_prompts.append(expected_prompt)
+        sent_prompts.append(messages[-1]["content"])
+        return mock_response
+
+    return mock_fn, sent_prompts, expected_prompts
+
+
+@pytest.fixture
+def cohorts_2_organs_2(prompts):
+    """A conversation with 2 cohorts (A and B) and 2 organs per cohort."""
+    cohorts = (
+        prompts.cohort,
+        Response(
+            """SOURCE-TEXT: lorem ipsum
 ANSWER: [[Cohort A]] AND [[Cohort B]]"""
-    ),
-    #
-    # For Cohort A, Organ
-    Response("""ANSWER: [[Lung]]"""),
-    # For Cohort A, Organ confirmation
-    Response("""ANSWER: [[YES]]"""),
-    # For Cohort A, Cell Type
-    Response("""ANSWER: [[Squamous Cell]] AND [[Non Squamous Cell]]"""),
-    # For Cohort A, Cell Morphology
-    Response("""ANSWER: [[NO]]"""),
-    #
-    # For Cohort B, Organ
-    Response("""ANSWER: [[CNS]] OR [[Brain]]"""),
-    #
-    # For Cohort B, CNS confirmation
-    Response("""ANSWER: [[YES]]"""),
-    # For Cohort B, Cell Type
-    Response("""ANSWER: [[Type 1]]"""),
-    # For Cohort B, Cell Morphology
-    Response("""ANSWER: [[Cell Morph 1]]"""),
-    #
-    # For Cohort B, Brain confirmation
-    Response("""ANSWER: [[YES]]"""),
-    # For Cohort B, Cell Type
-    Response("""ANSWER: [[Type 2]]"""),
-    # For Cohort B, Cell Morphology
-    Response("""ANSWER: [[Cell Morph 2]]"""),
-]
+        ),
+    )
+    cohort_a_organs = (
+        prompts.organ.format(cohort="Cohort A"),
+        Response("""ANSWER: [[Lung]] OR [[Liver]]"""),
+    )
+    cohort_a_lung = [
+        (
+            prompts.organ_confirm.format(organ="Lung"),
+            Response("""ANSWER: [[YES]]"""),
+        ),
+        (
+            prompts.cell_type.format(organ="Lung"),
+            Response("""ANSWER: [[Squamous Cell]] AND [[Non Squamous Cell]]"""),
+        ),
+        (
+            prompts.cell_morphology.format(
+                organ="Lung", cell_type="Squamous Cell AND Non Squamous Cell"
+            ),
+            Response("""ANSWER: [[Lung cell morph]]"""),
+        ),
+    ]
+    cohort_a_liver = [
+        (
+            prompts.organ_confirm.format(organ="Liver"),
+            Response("""ANSWER: [[YES]]"""),
+        ),
+        (
+            prompts.cell_type.format(organ="Liver"),
+            Response("""ANSWER: [[Liver cell type]]"""),
+        ),
+        (
+            prompts.cell_morphology.format(organ="Liver", cell_type="Liver cell type"),
+            Response("""ANSWER: [[Liver cell morph]]"""),
+        ),
+    ]
+
+    cohort_b_organs = (
+        prompts.organ.format(cohort="Cohort B"),
+        Response("""ANSWER: [[CNS]] OR [[Brain]]"""),
+    )
+    cohort_b_cns = [
+        (
+            prompts.organ_confirm.format(organ="CNS"),
+            Response("""ANSWER: [[YES]]"""),
+        ),
+        (
+            prompts.cell_type.format(organ="CNS"),
+            Response("""ANSWER: [[CNS cell type]]"""),
+        ),
+        (
+            prompts.cell_morphology.format(organ="CNS", cell_type="CNS cell type"),
+            Response("""ANSWER: [[CNS cell morph]]"""),
+        ),
+    ]
+    cohort_b_brain = [
+        (
+            prompts.organ_confirm.format(organ="Brain"),
+            Response("""ANSWER: [[YES]]"""),
+        ),
+        (
+            prompts.cell_type.format(organ="Brain"),
+            Response("""ANSWER: [[Brain cell type]]"""),
+        ),
+        (
+            prompts.cell_morphology.format(organ="Brain", cell_type="Brain cell type"),
+            Response("""ANSWER: [[Brain cell morph]]"""),
+        ),
+    ]
+    return [
+        cohorts,
+        cohort_a_organs,
+        *cohort_a_lung,
+        *cohort_a_liver,
+        cohort_b_organs,
+        *cohort_b_cns,
+        *cohort_b_brain,
+    ]
 
 
-def test_2_cohorts_3_organs(monkeypatch, settings):
-    mock_send_messages = MagicMock(side_effect=responses_2_cohorts_3_organs)
+def test_cohorts_2_organs_2(monkeypatch, settings, cohorts_2_organs_2):
+    mock_send_messages, sent_prompts, expected_prompts = get_send_messages_mock(
+        cohorts_2_organs_2
+    )
     monkeypatch.setattr(ie.GPTClient, "send_messages", mock_send_messages)
 
     chat = [system_message(settings.SYSTEM_MESSAGE)]
@@ -78,78 +185,85 @@ def test_2_cohorts_3_organs(monkeypatch, settings):
         chat_history=chat,
         results=results,
     )
+    assert sent_prompts == expected_prompts
     assert results == [
         {
             "cohort": "Cohort A",
             "organ": "Lung",
             "organ_confirmation": "YES",
             "cell_type": "Squamous Cell AND Non Squamous Cell",
-            "cell_morphology": "NO",
+            "cell_morphology": "Lung cell morph",
+        },
+        {
+            "cohort": "Cohort A",
+            "organ": "Liver",
+            "organ_confirmation": "YES",
+            "cell_type": "Liver cell type",
+            "cell_morphology": "Liver cell morph",
         },
         {
             "cohort": "Cohort B",
             "organ": "CNS",
             "organ_confirmation": "YES",
-            "cell_type": "Type 1",
-            "cell_morphology": "Cell Morph 1",
+            "cell_type": "CNS cell type",
+            "cell_morphology": "CNS cell morph",
         },
         {
             "cohort": "Cohort B",
             "organ": "Brain",
             "organ_confirmation": "YES",
-            "cell_type": "Type 2",
-            "cell_morphology": "Cell Morph 2",
+            "cell_type": "Brain cell type",
+            "cell_morphology": "Brain cell morph",
         },
     ]
 
 
-responses_not_specified = [
-    # No cohort
-    Response("""ANSWER:[[NO]]"""),
-    # organ
-    Response("""ANSWER: [[NOT SPECIFIED]]"""),
-    # organ_confirmation
-    Response("""ANSWER: [[YES]]"""),
-    # cell_type
-    Response("""ANSWER: [[NOT SPECIFIED]]"""),
-    # cell_morphology
-    Response("""ANSWER: [[NOT SPECIFIED]]"""),
-]
-NO = "NO"
-NOT_SPECIFIED = "NOT SPECIFIED"
-prompts_not_specified = [
-    """Are there multiple cohorts specified in the eligibility criteria for the clinical cancer trial protocol in the attached file? If so, please specify them; e.g., 
-ANSWER: [[Cohort 1]] AND [[Cohort 2]] AND [[Cohort 3]]
-If not, say ANSWER:[[NO]]
-""",
-    #
-    # Organ
-    f"""Based on the eligibility criteria for {NO} in the attached file, what are the primary organs that the cancer originated from? Please provide the source text portion that your answer is based on. If it is a metastatic cancer and the primary organ was not specified, say ANSWER: [[NOT SPECIFIED]].
-First, please specify the source text that your answer is based on. Then, specify only the name of each primary organ in your ANSWER within double-square brackets without further details.
-""",
-    #
-    # Organ confirmation
-    f"""Please confirm that {NOT_SPECIFIED} is the primary organ that cancer originated from. If affirmative, please say,
-ANSWER: [[YES]]. Otherwise, provide the name of the organs in the ANSWER.
-""",
-    #
-    # Cell Type
-    f"""What cell types of {NOT_SPECIFIED} cancer are required in the inclusion criteria of the attached file. If multiple cell types are mentioned, please specify all of them. If no cell type is mentioned, please say, ANSWER: [[NOT SPECIFIED]].
-""",
-    #
-    # Cell morph
-    f"""Is there any mention of required cell morphology specifications in the inclusion criteria for {NOT_SPECIFIED} {NOT_SPECIFIED} in the attached protocol? If not, please indicate with ANSWER: [[NO]]. If there are, please provide the SOURCE-TEXT before answering.
-""",
-]
+@pytest.fixture
+def no_cohort_2_organs(prompts):
+    """A conversation with NO cohorts and two organs."""
+    cohorts = (prompts.cohort, Response("ANSWER:[[NO]]"))
+    organs = (
+        prompts.organ.format(cohort="NO"),
+        Response("ANSWER: [[Organ 1]] OR [[Organ 2]]"),
+    )
+    organ_1 = [
+        (prompts.organ_confirm.format(organ="Organ 1"), Response("ANSWER: [[YES]]")),
+        (
+            prompts.cell_type.format(organ="Organ 1"),
+            Response("ANSWER: [[Organ 1 cell type]]"),
+        ),
+        (
+            prompts.cell_morphology.format(
+                organ="Organ 1", cell_type="Organ 1 cell type"
+            ),
+            Response("ANSWER: [[Organ 1 cell morph]]"),
+        ),
+    ]
+    organ_2 = [
+        (prompts.organ_confirm.format(organ="Organ 2"), Response("ANSWER: [[YES]]")),
+        (
+            prompts.cell_type.format(organ="Organ 2"),
+            Response("ANSWER: [[Organ 2 cell type]]"),
+        ),
+        (
+            prompts.cell_morphology.format(
+                organ="Organ 2", cell_type="Organ 2 cell type"
+            ),
+            Response("ANSWER: [[Organ 2 cell morph]]"),
+        ),
+    ]
+    return [
+        cohorts,
+        organs,
+        *organ_1,
+        *organ_2,
+    ]
 
 
-def test_not_specified(monkeypatch, settings):
-    sent_messages = []
-
-    def mock_send_messages(self, messages):
-        sent_messages.append(messages[-1]["content"])
-        return responses_not_specified.pop(0)
-
+def test_no_cohort_2_organs(monkeypatch, settings, no_cohort_2_organs):
+    mock_send_messages, sent_prompts, expected_prompts = get_send_messages_mock(
+        no_cohort_2_organs
+    )
     monkeypatch.setattr(ie.GPTClient, "send_messages", mock_send_messages)
 
     chat = [system_message(settings.SYSTEM_MESSAGE)]
@@ -160,13 +274,20 @@ def test_not_specified(monkeypatch, settings):
         chat_history=chat,
         results=results,
     )
-    assert sent_messages == prompts_not_specified
+    assert sent_prompts == expected_prompts
     assert results == [
         {
             "cohort": "NO",
-            "organ": "NOT SPECIFIED",
+            "organ": "Organ 1",
             "organ_confirmation": "YES",
-            "cell_type": "NOT SPECIFIED",
-            "cell_morphology": "NOT SPECIFIED",
+            "cell_type": "Organ 1 cell type",
+            "cell_morphology": "Organ 1 cell morph",
+        },
+        {
+            "cohort": "NO",
+            "organ": "Organ 2",
+            "organ_confirmation": "YES",
+            "cell_type": "Organ 2 cell type",
+            "cell_morphology": "Organ 2 cell morph",
         },
     ]
