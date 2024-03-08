@@ -14,4 +14,8 @@ def configure(level="INFO", sink=sys.stdout):
     )
 
 
-configure()
+CONFIGURED = False
+
+if not CONFIGURED:
+    configure()
+    CONFIGURED = True

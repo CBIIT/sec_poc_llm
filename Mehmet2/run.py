@@ -14,6 +14,7 @@ cwd = Path(__file__).parent
 default_config = cwd / "config.yaml"
 default_questions = cwd / "prompts.yaml"
 default_env = cwd / ".env"
+default_output = cwd / "results.csv"
 
 
 @click.command
@@ -39,6 +40,12 @@ default_env = cwd / ".env"
     show_default=True,
 )
 @click.option(
+    "--output-file",
+    default=default_output,
+    help="Save the results to a CSV file.",
+    show_default=True,
+)
+@click.option(
     "-i",
     "--index-name",
     required=True,
@@ -52,14 +59,13 @@ default_env = cwd / ".env"
 )
 @click.option(
     "--log-sink",
-    default=sys.stdout,
-    help="Where to write the logs.",
-    show_default=True,
+    help="Where to write the logs. Defaults to STDOUT.",
 )
 def run(
     config_file: str,
     questions_file: str,
     env_file: str,
+    output_file: str,
     index_name: str,
     log_level: str,
     log_sink: Any,
@@ -68,15 +74,14 @@ def run(
         config = yaml.safe_load(fp)
     cliargs = {"search": {"indexName": index_name}}
     settings = Settings(env_file, config, cliargs)
-    logging.configure(level=log_level, sink=log_sink)
+    logging.configure(level=log_level, sink=log_sink or sys.stdout)
 
     chat = [system_message(settings.SYSTEM_MESSAGE)]
-    results = []
     process_questions(
         gpt=GPTClient(settings),
         questions_file=questions_file,
         chat_history=chat,
-        results=results,
+        output_file=output_file,
     )
 
 

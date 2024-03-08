@@ -1,7 +1,7 @@
-import csv
 from pathlib import Path
 from typing import Union
 
+import pandas as pd
 import yaml
 
 from Mehmet2.gpt_client import (
@@ -41,17 +41,11 @@ class QuestionParser:
             yield entry["prompt"], entry["question"]
 
 
-def serialize(prompt2answer: dict[str, str], outputpath: Union[str, Path]):
-    headers = prompt2answer.keys()
-    data = prompt2answer.values()
-    with open(outputpath, "a") as f:
-        csvwriter = csv.writer(
-            f, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL
-        )
-        if f.tell() == 0:
-            # write header to empty file
-            csvwriter.writerow(headers)
-        csvwriter.writerow(data)
+def serialize(output_file: Union[str, Path], **kwargs):
+    headers = kwargs.keys()
+    data = kwargs.values()
+    df = pd.DataFrame([data], columns=headers)
+    df.to_csv(output_file, mode="a", header=not Path(output_file).exists(), index=False)
 
 
 def process_questions(
@@ -61,6 +55,7 @@ def process_questions(
     chat_history: list[dict[str, str]] = [],
     prompt2answer: dict = {},
     results: list[dict[str, str]] = [],
+    output_file: str = None,
 ):
     p2a_local = prompt2answer.copy()
     question_parser = QuestionParser(questions_file)
@@ -68,12 +63,24 @@ def process_questions(
 
     for prompt, question in question_parser.questions():
         question = question.format(**p2a_local)
+        logger.debug(f"Prompt: {question}")
         chat_history.append(user_message(question))
         logger.info(f"Token count: {gpt.count_message_tokens(chat_history)}")
 
         response = gpt.send_messages(chat_history)
         logger.debug(f"Response: {response.raw}")
         chat_history.append(assistant_message(response.raw))
+        if output_file:
+            serialize(
+                output_file,
+                question_number=question_n,
+                prompt_type=prompt,
+                prompt=question,
+                raw=response.raw,
+                source_text=response.source_text,
+                answer=response.answer,
+                entities=response.entities,
+            )
 
         if (
             prompt == "cohort"
@@ -91,8 +98,9 @@ def process_questions(
                     prompt2answer=p2a_local,
                     chat_history=chat_history.copy(),
                     results=results,
+                    output_file=output_file,
                 )
-            return
+            return results
         elif prompt == "organ" and len(response.entities) > 1:
             entity_groups = response.split_as_disjunctive()
             for entity_g in entity_groups:
@@ -105,11 +113,13 @@ def process_questions(
                     prompt2answer=p2a_local,
                     chat_history=chat_history.copy(),
                     results=results,
+                    output_file=output_file,
                 )
-            return
+            return results
         else:
             p2a_local[prompt] = response.answer
             logger.info(f"{question_n: > 3}. {prompt} {response.answer}")
             question_n += 1
+
     results.append(p2a_local)
-    return
+    return results

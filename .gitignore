@@ -143,3 +143,4 @@ outputs/
 outputs*
 answers*
 *.log
+results.csv
