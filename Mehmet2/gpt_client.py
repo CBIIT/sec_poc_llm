@@ -2,6 +2,7 @@ import backoff
 import openai
 import tiktoken
 
+from Mehmet2.logging import logger
 from Mehmet2.response_parser import Response
 from Mehmet2.settings import Settings
 
@@ -46,7 +47,14 @@ class GPTClient:
             },
             **self.settings.CHAT_CONFIG,
         )
-        response = Response(completion.choices[0].message.content)
+        try:
+            response = Response(completion.choices[0].message.content)
+        except AssertionError:
+            logger.warning(
+                f"Failed to parse response {completion.choices[0].message.content}."
+            )
+            logger.warning("Setting to empty Response.")
+            response = Response("")
         return response
 
     def count_message_tokens(self, message_text: list[dict[str, str]]):

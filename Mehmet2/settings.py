@@ -18,6 +18,10 @@ class Settings:
     AZURE_SEARCH_ENDPOINT = None
     AZURE_SEARCH_KEY = None
 
+    # Blobs go here as a source indexing
+    AZURE_STORAGE_URL = None
+    AZURE_STORAGE_KEY = None
+
     CHAT_CONFIG = {}
     SYSTEM_MESSAGE = ""
     SEARCH_CONFIG = {}
@@ -38,6 +42,9 @@ class Settings:
             # Azure AI Search setup
             cls._instance.AZURE_SEARCH_ENDPOINT = os.environ["AZURE_SEARCH_ENDPOINT"]
             cls._instance.AZURE_SEARCH_KEY = os.environ["AZURE_SEARCH_KEY"]
+
+            cls._instance.AZURE_STORAGE_URL = os.environ["AZURE_STORAGE_URL"]
+            cls._instance.AZURE_STORAGE_KEY = os.environ["AZURE_STORAGE_KEY"]
 
             # Chat parameters
             cls._instance.CHAT_CONFIG = config["chat"]

@@ -54,9 +54,9 @@ def process_questions(
     question_n: int = 0,
     chat_history: list[dict[str, str]] = [],
     prompt2answer: dict = {},
-    results: list[dict[str, str]] = [],
     output_file: str = None,
 ):
+    results = []
     p2a_local = prompt2answer.copy()
     question_parser = QuestionParser(questions_file)
     question_parser.skip_to(question_n)
@@ -91,30 +91,30 @@ def process_questions(
             for entity in response.entities:
                 p2a_local[prompt] = entity
                 logger.info(f"{question_n: > 3}. {prompt} {entity}")
-                process_questions(
+                entity_results = process_questions(
                     gpt=gpt,
                     questions_file=questions_file,
                     question_n=question_n + 1,
                     prompt2answer=p2a_local,
                     chat_history=chat_history.copy(),
-                    results=results,
                     output_file=output_file,
                 )
+                results += entity_results
             return results
         elif prompt == "organ" and len(response.entities) > 1:
             entity_groups = response.split_as_disjunctive()
             for entity_g in entity_groups:
                 p2a_local[prompt] = entity_g
                 logger.info(f"{question_n: > 3}. {prompt} {entity_g}")
-                process_questions(
+                entity_g_results = process_questions(
                     gpt=gpt,
                     questions_file=questions_file,
                     question_n=question_n + 1,
                     prompt2answer=p2a_local,
                     chat_history=chat_history.copy(),
-                    results=results,
                     output_file=output_file,
                 )
+                results += entity_g_results
             return results
         else:
             p2a_local[prompt] = response.answer
