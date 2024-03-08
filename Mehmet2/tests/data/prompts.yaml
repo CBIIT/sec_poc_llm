@@ -1,0 +1,23 @@
+- prompt: cohort
+  question: |
+    Are there multiple cohorts specified in the eligibility criteria for the clinical cancer trial protocol in the attached file? If so, please specify them; e.g., 
+    ANSWER: [[Cohort 1]] AND [[Cohort 2]] AND [[Cohort 3]]
+    If not, say ANSWER:[[NO]]
+
+- prompt: organ
+  question: |
+    Based on the eligibility criteria for {cohort} in the attached file, what are the primary organs that the cancer originated from? Please provide the source text portion that your answer is based on. If it is a metastatic cancer and the primary organ was not specified, say ANSWER: [[NOT SPECIFIED]].
+    First, please specify the source text that your answer is based on. Then, specify only the name of each primary organ in your ANSWER within double-square brackets without further details.
+
+- prompt: organ_confirmation
+  question: |
+    Please confirm that {organ} is the primary organ that cancer originated from. If affirmative, please say,
+    ANSWER: [[YES]]. Otherwise, provide the name of the organs in the ANSWER.
+
+- prompt: cell_type
+  question: |
+    What cell types of {organ} cancer are required in the inclusion criteria of the attached file. If multiple cell types are mentioned, please specify all of them. If no cell type is mentioned, please say, ANSWER: [[NOT SPECIFIED]].
+
+- prompt: cell_morphology
+  question: |
+    Is there any mention of required cell morphology specifications in the inclusion criteria for {organ} {cell_type} in the attached protocol? If not, please indicate with ANSWER: [[NO]]. If there are, please provide the SOURCE-TEXT before answering.

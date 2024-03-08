@@ -1,0 +1,49 @@
+Extract the organ(s) that are the primary locus of cancer.
+----
+CONFIRM: Please confirm if the {} is/are the required organ(s) for origin of primary cancer. Answer yes, no, or unsure.
+----
+Extract the allowed location(s) of the primary tumor with respect to the organ topology (if applicable). Use the desired format.
+----
+Extract the disallowed location(s) of the primary tumor with respect to the organ topology (if applicable). Use the desired format.
+----
+Extract the cancerous cell types that are required for inclusion. Use the desired format.
+----
+Extract the types and degree of cell morphology changes that are required (if applicable). Use the desired format. Add the Degree attribute to the answer like so: Answer("<your_answer>", Degree="<degree_or_None>").
+----
+Extract the minimum/maximum numbers of lymph node metastases that are required (if applicable). Use the desired format. Add the Min/Max attribute to the answer like so: Answer("<your_answer>", Min="<min_or_None>", Max="<max_or_None>").
+----
+Extract the organ metastases that are required for inclusion (if applicable). Use the desired format.
+----
+Extract the distant organ metastases that are required for inclusion (if applicable). First extract distant organ metastases, then extract the count and size of the tumors like so: Answer("<your_answer>", MinSize="", MaxSize="", MinCount="", MaxCount="").
+----
+Extract the prior therapies that are required for inclusion (if applicable). Use the desired format.
+----
+Extract the cancer biomarkers that are required for inclusion (if applicable). First extract the source text containing the answer. Then extract the name of the biomarker and the requisite conditions like so:  
+SourceText("<original_text_containing_answer>")  
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None")      
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None")
+----
+Extract the prior therapies that are required for exclusion (if applicable).
+----
+Extract the biochemistry lab test values that are required for exclusion (if applicable). Use the desired format.
+----
+Extract the radiological findings that are required for exclusion (if applicable). Use the desired format.
+----
+Extract any other laboratory findings that are required for exclusion (if applicable). Use the desired format.
+----
+Extract any other symptoms, signs, or measurements of the patient observable in a doctor's office that are required for exclusion (if applicable). Use the desired format.
+----
+Extract any demographic or social criteria that are required for exclusion (if applicable). Use the desired format.
+----
+Extract any current diagnoses that are required for exclusion (if applicable). Use the desired format.
+----
+Extract any past diagnoses in the patient's medical history that are required for exclusion (if applicable). Use the desired format.
+----
+Extract any current therapies that are required for exclusion (if applicable). Use the desired format.
+----
+Extract any past therapies in the patient's medical history that are required for exclusion (if applicable). Use the desired format.
+----
+Extract the cancer biomarkers that are required for exclusion (if applicable). First extract the source text containing the answer. Then extract the name of the biomarker and the requisite conditions like so:  
+SourceText("<original_text_containing_answer>")  
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None")      
+Answer("<biomarker_name>", Condition="<biomarker_condition_or_None")
