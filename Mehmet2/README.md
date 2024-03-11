@@ -93,7 +93,7 @@ You may use the [prompts.yaml](prompts.yaml) as a template or you can directly e
 
 ## Editing questions
 
-Simply edit the [prompts.yaml](prompts.yaml) file (or whichever file you dedicate as your questions file) by adding new entries or modifying existing ones. Refer to the [Submitting questions seciton](#submitting-questions) for more info.
+Simply edit the [prompts.yaml](prompts.yaml) file (or whichever file you dedicate as your questions file) by adding new entries or modifying existing ones. Refer to the [Submitting questions section](#submitting-questions) for more info.
 
 ## Running command
 
@@ -109,15 +109,15 @@ python -m Mehmet2.run --help
 
 These are the arguments that should be listed.
 
-| arg              | required | description                                                                                                                    |
-| ---------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| --index-name     | true     | Name of the Index you created in the [Data sources](#data-sources) step.                                                       |
-| --config-file    | false    | A YAML file containing configuration settings for Chat Hyperparams and RAG settings.                                           |
-| --questions-file | false    | The [prompts.yaml](prompts.yaml) file or its replacement.                                                                      |
-| --env-file       | false    | A bash-like file containing environment variables. Described in further detail in the [Prerequisites section](#prerequisites). |
-| --output-file    | false    | Name of the file to output results to in CSV format.                                                                           |
-| --log-level      | false    | Logging level to control how much is logged during execution. Use `DEBUG` for the most output.                                 |
-| --log-sink       | false    | File-like location to write the logs to. Use a local file to preserve the entire chat dialog.                                  |
+| arg              | required | description                                                                                                                             |
+| ---------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| --index-name     | true     | Name of the Index you created in the [Data sources](#data-sources) step.                                                                |
+| --config-file    | false    | A YAML file containing configuration settings for Chat Hyperparams and RAG settings.                                                    |
+| --questions-file | false    | The [prompts.yaml](prompts.yaml) file or its replacement.                                                                               |
+| --env-file       | false    | A bash-like file containing environment variables. Described in further detail in the [Prerequisites section](#command-line-interface). |
+| --output-file    | false    | Name of the file to output results to in CSV format.                                                                                    |
+| --log-level      | false    | Logging level to control how much is logged during execution. Use `DEBUG` for the most output.                                          |
+| --log-sink       | false    | File-like location to write the logs to. Use a local file to preserve the entire chat dialog.                                           |
 
 > Only the --index-name is required. All other arguments will use their defaults described in the `--help` command.
 
