@@ -1,3 +1,6 @@
+from datetime import timedelta
+from timeit import default_timer as timer
+
 import backoff
 import openai
 import tiktoken
@@ -34,6 +37,7 @@ class GPTClient:
 
     @backoff.on_exception(backoff.expo, openai.RateLimitError)
     def send_messages(self, message_text: list[dict[str, str]]):
+        start = timer()
         completion = self.client.chat.completions.create(
             model=self.settings.OPENAI_DEPLOYMENT_ID,
             messages=message_text,
@@ -47,6 +51,8 @@ class GPTClient:
             },
             **self.settings.CHAT_CONFIG,
         )
+        end = timer()
+        logger.info(f"GPT time: {timedelta(seconds=end - start)}")
         try:
             response = Response(completion.choices[0].message.content)
         except AssertionError:

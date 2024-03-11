@@ -1,4 +1,5 @@
 import sys
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -8,6 +9,7 @@ import yaml
 from Mehmet2 import logging
 from Mehmet2.gpt_client import GPTClient, system_message
 from Mehmet2.info_extractor import process_questions
+from Mehmet2.logging import logger
 from Mehmet2.settings import Settings
 
 cwd = Path(__file__).parent
@@ -66,10 +68,23 @@ def run(
     questions_file: str,
     env_file: str,
     output_file: str,
+    # Maps to Input Datasets A. Protocol from the original PDF.
     index_name: str,
     log_level: str,
     log_sink: Any,
 ):
+    """Entrypoint of the PROCESS-QUESTIONS algorithm.
+
+    Arguments:
+        config_file -- Contains the Chat hyperparams and AI Search config.
+        questions_file -- Maps to Input Datasets B. Questions from the original PDF.
+        env_file -- Contains the environment variables to authenticate to Azure OpenAI.
+        output_file -- The file where the results will be saved.
+        index_name -- Maps to Input Datasets A. Protocol from the original PDF.
+        log_level -- Specifies how much should be logged during execution.
+        log_sink -- The file stream where logs will be written.
+    """
+    start = datetime.now()
     with open(config_file) as fp:
         config = yaml.safe_load(fp)
     cliargs = {"search": {"indexName": index_name}}
@@ -77,12 +92,15 @@ def run(
     logging.configure(level=log_level, sink=log_sink or sys.stdout)
 
     chat = [system_message(settings.SYSTEM_MESSAGE)]
+    # Algorithms Line 4.
     process_questions(
         gpt=GPTClient(settings),
         questions_file=questions_file,
         chat_history=chat,
         output_file=output_file,
     )
+    end = datetime.now()
+    logger.info(f"Total time: {end - start}")
 
 
 if __name__ == "__main__":
