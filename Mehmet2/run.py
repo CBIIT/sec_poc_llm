@@ -66,10 +66,22 @@ def run(
     questions_file: str,
     env_file: str,
     output_file: str,
+    # Maps to Input Datasets A. Protocol from the original PDF.
     index_name: str,
     log_level: str,
     log_sink: Any,
 ):
+    """Entrypoint of the PROCESS-QUESTIONS algorithm.
+
+    Arguments:
+        config_file -- Contains the Chat hyperparams and AI Search config.
+        questions_file -- Maps to Input Datasets B. Questions from the original PDF.
+        env_file -- Contains the environment variables to authenticate to Azure OpenAI.
+        output_file -- The file where the results will be saved.
+        index_name -- Maps to Input Datasets A. Protocol from the original PDF.
+        log_level -- Specifies how much should be logged during execution.
+        log_sink -- The file stream where logs will be written.
+    """
     with open(config_file) as fp:
         config = yaml.safe_load(fp)
     cliargs = {"search": {"indexName": index_name}}
@@ -77,6 +89,7 @@ def run(
     logging.configure(level=log_level, sink=log_sink or sys.stdout)
 
     chat = [system_message(settings.SYSTEM_MESSAGE)]
+    # Algorithms Line 4.
     process_questions(
         gpt=GPTClient(settings),
         questions_file=questions_file,

@@ -48,14 +48,14 @@ def serialize(output_file: Union[str, Path], **kwargs):
     df.to_csv(output_file, mode="a", header=not Path(output_file).exists(), index=False)
 
 
-# Line 4 PROCESS-QUESTIONS
+# PROCESS-QUESTIONS
 def process_questions(
     gpt: GPTClient,
     questions_file: Union[str, Path],
-    # Line 3 question ← 1 (here using 0-based indexing)
+    # Initialization Line 3 question ← 1 (using 0-based indexing)
     question_n: int = 0,
     chat_history: list[dict[str, str]] = [],
-    # Line 3 prompt2answer_dict ← ∅
+    # Initialization Line 3 prompt2answer_dict ← ∅
     prompt2answer: dict = {},
     output_file: str = None,
 ):
@@ -63,12 +63,12 @@ def process_questions(
 
     Arguments:
         gpt -- The Azure OpenAI GPT client.
-        questions_file -- Maps to Input Datasets B. Questions from the original PDF.
+        questions_file -- Line 1. `question-file`.
 
     Keyword Arguments:
-        question_n -- Maps to PROCESS-QUESTIONS input `question` (default: {0}).
+        question_n -- Line 1. `question` (default: {0}).
         chat_history -- Used to preserve the chat session (default: {[]}).
-        prompt2answer -- Maps to PROCESS-QUESTIONS input `prompt2answer_dict` (default: {{}}).
+        prompt2answer -- Line 1. `prompt2answer_dict` (default: {{}}).
         output_file -- A filepath to save each response to (default: {None}).
 
     Returns:
