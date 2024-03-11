@@ -27,9 +27,9 @@ class GPTClient:
         """Initialize the AzureOpenAI client from Settings."""
         self.settings = settings
         self.client = openai.AzureOpenAI(
-            base_url=f"{settings.OPENAI_API_BASE_URL.removesuffix('/')}/openai/deployments/{settings.OPENAI_DEPLOYMENT_ID}/extensions",
+            azure_endpoint="https://cameron-openai-instance.openai.azure.com/",
             api_key=settings.OPENAI_API_KEY,
-            api_version=settings.OPENAI_API_VERSION,
+            api_version="2024-02-15-preview",
         )
 
     @backoff.on_exception(backoff.expo, openai.RateLimitError)
@@ -37,14 +37,6 @@ class GPTClient:
         completion = self.client.chat.completions.create(
             model=self.settings.OPENAI_DEPLOYMENT_ID,
             messages=message_text,
-            extra_body={
-                "dataSources": [
-                    {
-                        "type": "AzureCognitiveSearch",
-                        "parameters": self.settings.SEARCH_CONFIG,
-                    }
-                ]
-            },
             **self.settings.CHAT_CONFIG,
         )
         try:

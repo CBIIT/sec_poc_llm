@@ -3,6 +3,7 @@ from typing import Union
 
 import pandas as pd
 import yaml
+from chromadb import Collection
 
 from Mehmet2.gpt_client import (
     GPTClient,
@@ -51,6 +52,7 @@ def serialize(output_file: Union[str, Path], **kwargs):
 def process_questions(
     gpt: GPTClient,
     questions_file: Union[str, Path],
+    vectorstore: Collection,
     question_n: int = 0,
     chat_history: list[dict[str, str]] = [],
     prompt2answer: dict = {},
@@ -63,6 +65,9 @@ def process_questions(
 
     for prompt, question in question_parser.questions():
         question = question.format(**p2a_local)
+        (context,) = vectorstore.query(query_texts=[question], n_results=5)["documents"]
+        context = "\n".join(context)
+        question += f'\nContext: """{context}"""'
         logger.debug(f"Prompt: {question}")
         chat_history.append(user_message(question))
         logger.info(f"Token count: {gpt.count_message_tokens(chat_history)}")
@@ -98,6 +103,7 @@ def process_questions(
                     prompt2answer=p2a_local,
                     chat_history=chat_history.copy(),
                     output_file=output_file,
+                    vectorstore=vectorstore,
                 )
                 results += entity_results
             return results
@@ -113,6 +119,7 @@ def process_questions(
                     prompt2answer=p2a_local,
                     chat_history=chat_history.copy(),
                     output_file=output_file,
+                    vectorstore=vectorstore,
                 )
                 results += entity_g_results
             return results

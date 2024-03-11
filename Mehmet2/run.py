@@ -70,16 +70,44 @@ def run(
     log_level: str,
     log_sink: Any,
 ):
+    import chromadb
+    import chromadb.utils.embedding_functions as embedding_functions
+
     with open(config_file) as fp:
         config = yaml.safe_load(fp)
     cliargs = {"search": {"indexName": index_name}}
     settings = Settings(env_file, config, cliargs)
     logging.configure(level=log_level, sink=log_sink or sys.stdout)
 
+    with open((cwd / "trials" / index_name).with_suffix(".txt")) as fp:
+        context = fp.read()
+
+    context = [text.strip() for text in context.split("|")]
+
+    openai_ef = embedding_functions.OpenAIEmbeddingFunction(
+        api_key=settings.OPENAI_API_KEY,
+        api_base=settings.OPENAI_API_BASE_URL,
+        api_type="azure",
+        deployment_id="embeddings",
+        api_version=settings.OPENAI_API_VERSION,
+        model_name="text-embedding-ada-002",
+    )
+
+    client = chromadb.Client()
+    collection = client.create_collection(
+        index_name,
+        metadata={"hnsw:space": "l2"},
+        embedding_function=openai_ef,
+        get_or_create=True,
+    )
+    collection.add(documents=context, ids=[f"id{i}" for i in range(len(context))])
+
     chat = [system_message(settings.SYSTEM_MESSAGE)]
     process_questions(
         gpt=GPTClient(settings),
+        vectorstore=collection,
         questions_file=questions_file,
+        prompt2answer={"context": context},
         chat_history=chat,
         output_file=output_file,
     )
