@@ -14,6 +14,8 @@ search:
   filter: null
   inScope: true
   queryType: simple
+  # Provide embeddingDeploymentName when using a vector queryType
+  # embeddingDeploymentName: embeddings
   roleInformation: *sys_msg
   semanticConfiguration: default
   strictness: 3

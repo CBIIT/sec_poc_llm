@@ -1,4 +1,5 @@
 import sys
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -8,6 +9,7 @@ import yaml
 from Mehmet2 import logging
 from Mehmet2.gpt_client import GPTClient, system_message
 from Mehmet2.info_extractor import process_questions
+from Mehmet2.logging import logger
 from Mehmet2.settings import Settings
 
 cwd = Path(__file__).parent
@@ -82,6 +84,7 @@ def run(
         log_level -- Specifies how much should be logged during execution.
         log_sink -- The file stream where logs will be written.
     """
+    start = datetime.now()
     with open(config_file) as fp:
         config = yaml.safe_load(fp)
     cliargs = {"search": {"indexName": index_name}}
@@ -96,6 +99,8 @@ def run(
         chat_history=chat,
         output_file=output_file,
     )
+    end = datetime.now()
+    logger.info(f"Total time: {end - start}")
 
 
 if __name__ == "__main__":
