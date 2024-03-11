@@ -143,4 +143,5 @@ outputs/
 outputs*
 answers*
 *.log
-results.csv
+results*.csv
+results*.xlsx

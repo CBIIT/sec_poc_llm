@@ -1,5 +1,6 @@
 system_message: &sys_msg 'You will be summarizing the Eligibility Criteria section of a clinical trial protocol document. Note that in the Eligibility Criteria section, the suffix "(inclusion--- t)" denotes that the line describes an inclusion criterion, and "(inclusion--- f)" denotes an exclusion criterion.'
 
+# https://platform.openai.com/docs/api-reference/chat/create
 chat:
   temperature: 0.1
   top_p: 1
@@ -7,6 +8,7 @@ chat:
   stop: null
   stream: false
 
+# https://learn.microsoft.com/en-us/azure/ai-services/openai/references/azure-search?tabs=python#parameters
 search:
   fieldsMapping: {}
   filter: null
