@@ -13,10 +13,11 @@ from Mehmet2.logging import logger
 from Mehmet2.settings import Settings
 
 cwd = Path(__file__).parent
+timestamp = datetime.now().strftime("%Y-%m-%d_%H%M%S")
 default_config = cwd / "config.yaml"
 default_questions = cwd / "prompts.yaml"
 default_env = cwd / ".env"
-default_output = cwd / "results.csv"
+default_output = cwd / f"results_{timestamp}.csv"
 
 
 @click.command
