@@ -43,8 +43,9 @@ class Settings:
             cls._instance.AZURE_SEARCH_ENDPOINT = os.environ["AZURE_SEARCH_ENDPOINT"]
             cls._instance.AZURE_SEARCH_KEY = os.environ["AZURE_SEARCH_KEY"]
 
-            cls._instance.AZURE_STORAGE_URL = os.environ["AZURE_STORAGE_URL"]
-            cls._instance.AZURE_STORAGE_KEY = os.environ["AZURE_STORAGE_KEY"]
+            # Azure Blob Storage
+            cls._instance.AZURE_STORAGE_URL = os.getenv("AZURE_STORAGE_URL")
+            cls._instance.AZURE_STORAGE_KEY = os.getenv("AZURE_STORAGE_KEY")
 
             # Chat parameters
             cls._instance.CHAT_CONFIG = config["chat"]
