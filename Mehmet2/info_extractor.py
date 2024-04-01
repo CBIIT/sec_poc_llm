@@ -1,3 +1,4 @@
+from datetime import datetime
 from pathlib import Path
 from typing import Union
 
@@ -97,9 +98,12 @@ def process_questions(
         if output_file:
             serialize(
                 output_file,
+                timestamp=datetime.now().strftime("%H:%M:%S"),
                 question_number=question_n,
                 prompt_type=prompt,
                 prompt=question,
+                organ=p2a_local.get("organ"),
+                cohort=p2a_local.get("cohort"),
                 raw=response.raw,
                 source_text=response.source_text,
                 answer=response.answer,
