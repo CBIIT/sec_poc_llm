@@ -61,11 +61,14 @@
 
 - prompt: metastatic_tumor
   question: |
-    Please indicate if the number, size, and the location of metastatic tumors are specified in the attached clinical trial protocol? Please provide the SOURCE-TEXT that your answer is based on before responding.
+    Extract any mentions of number, size, and/or location of metastatic tumors/sites in the protocol document. If there is no mention of metastatic tumors/sites, say "ANSWER: [[NOT SPECIFIED]]." First, extract the SOURCE-TEXT that your answer is based on. Then, extract your answer. Do not include an explanation. Use the following format:
+
+    SOURCE-TEXT: <document excerpt goes here>
+    ANSWER: [[<your answer goes here>]]
 
 - prompt: staging
   question: |
-    Is the required stage or range of stages for {cell_type} of the {organ} specified? If not, say, "ANSWER: [[NOT SPECIFIED]];" otherwise, provide the SOURCE-TEXT that your answer is based on before responding.
+    Is the required stage or range of stages for {cell_type} of the {organ} specified? If not, say, "ANSWER: [[NOT SPECIFIED]];" otherwise, provide the SOURCE-TEXT that your answer is based on before responding. Do not include an explanation in your answer.
 
 - prompt: staging_confirmation
   question: |
