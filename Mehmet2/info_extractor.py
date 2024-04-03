@@ -31,15 +31,22 @@ class QuestionParser:
             with open(questions_file) as fp:
                 self._questions = yaml.safe_load(fp)
                 FILES_CACHE[questions_file] = self._questions
+        self._question_idx = 0
 
     def skip_to(self, question_n: int):
         """Set the starting question number to begin the iteration."""
         self._question_idx = question_n
 
     def questions(self):
-        """Iterate over the questions."""
+        """Iterate over the questions.
+        Returns a 3-element tuple consisting of (
+            prompt -- the prompt identifier,
+            question -- the message to send to GPT,
+            condition -- an optional str consisting of a lambda expression to evaluate before sending the prompt
+        )
+        """
         for entry in self._questions[self._question_idx :]:
-            yield entry["prompt"], entry["question"]
+            yield entry["prompt"], entry["question"], entry.get("condition")
 
 
 def serialize(output_file: Union[str, Path], **kwargs):
@@ -84,7 +91,27 @@ def process_questions(
     question_parser.skip_to(question_n)
 
     # Line 5 and 6
-    for prompt, question in question_parser.questions():
+    for prompt, question, condition in question_parser.questions():
+        # Check if the prompt has a conditional expression to evaluate before sending to the GPT
+        if condition:
+            try:
+                condition_fn = eval(condition, {"__builtins__": {}}, {})
+                should_ask = bool(condition_fn(**p2a_local))
+            except Exception as e:
+                logger.error(e)
+                logger.warning(
+                    f"Skipping prompt {prompt} because the condition function failed to evaluate."
+                )
+                logger.debug(p2a_local)
+                continue
+            else:
+                # If the condition is False, continue to the next question (i.e. skip this one)
+                if not should_ask:
+                    logger.info(
+                        f"Skipping prompt {prompt} because the condition evaluated to False."
+                    )
+                    continue
+
         # Line 7 and 8
         question = question.format(**p2a_local)
         logger.debug(f"Prompt: {question}")
@@ -112,12 +139,15 @@ def process_questions(
 
         # Line 11
         if (
+            # Cohorts should only be separated by ANDs (i.e., conjunctive)
             prompt == "cohort"
             and response.is_conjunctive()
+            # Organs might be separated by a combination of ANDs/ORs, so only check if it has multiple answers "[[]]"
             or prompt == "organ"
             and len(response.entities) > 1
         ):
             answers = (
+                # For organs, split the response as if the organs were only separated by "OR"
                 response.split_as_disjunctive()
                 if prompt == "organ"
                 else response.entities
@@ -142,7 +172,7 @@ def process_questions(
             return results
         else:
             # Line 18
-            p2a_local[prompt] = response.answer
+            p2a_local[prompt] = None if response.is_falsy() else response.answer
             # Line 19
             logger.info(f"{question_n: > 3}. {prompt} {response.answer}")
             # Line 20

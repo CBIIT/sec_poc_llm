@@ -334,3 +334,59 @@ def test_is_disjunctive(
 ):
     r = Response(text)
     assert r.is_disjunctive() == expected
+
+
+is_falsy_texts = [
+    ("", True),
+    (
+        """SOURCE-TEXT: lorem ipsum
+ANSWER: [[NOT SPECIFIED]]
+""",
+        True,
+    ),
+    (
+        """SOURCE-TEXT: lorem ipsum
+ANSWER: [[None]]
+""",
+        True,
+    ),
+    (
+        """SOURCE-TEXT: lorem ipsum
+ANSWER:[[NO]].
+""",
+        True,
+    ),
+    ("""ANSWER: [[Yes]]""", False),
+    (
+        """SOURCE-TEXT: lorem ipsum
+ANSWER: [[Cohort A]]
+""",
+        False,
+    ),
+    # These disjunctive/conjunctive scenarios are not considered falsy,
+    # though they will likely never occur in practice.
+    (
+        """SOURCE-TEXT: lorem ipsum
+ANSWER: [[NOT SPECIFIED]] OR [[None]]
+""",
+        False,
+    ),
+]
+
+
+@pytest.mark.parametrize("text,expected", is_falsy_texts)
+def test_is_falsy(text, expected):
+    r = Response(text)
+    assert r.is_falsy() == expected
+
+
+def test_invalid_response():
+    with pytest.raises(AssertionError) as e:
+        Response("""SOURCE-TEXT: lorem ipsum
+ANSWER: [[This answer does not properly close.""")
+    assert e.match(r"Answer should end with \]\] or \)")
+
+    with pytest.raises(AssertionError) as e:
+        Response("""SOURCE-TEXT: lorem ipsum
+ANSWER: This answer is not contained in double-brackets.""")
+    assert e.match(r"Answer should start with \[\[ or \(")

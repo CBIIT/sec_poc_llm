@@ -273,17 +273,15 @@ def cohorts_1_organs_0(prompts):
         Response("ANSWER: [[NOT SPECIFIED]]"),
     )
     organ_conf = (
-        prompts.organ_confirm.format(organ="NOT SPECIFIED"),
+        prompts.organ_confirm.format(organ="None"),
         Response("ANSWER: [[YES]]"),
     )
     cell_type = (
-        prompts.cell_type.format(organ="NOT SPECIFIED"),
+        prompts.cell_type.format(organ="None"),
         Response("ANSWER: [[NOT SPECIFIED]]"),
     )
     cell_morph = (
-        prompts.cell_morphology.format(
-            organ="NOT SPECIFIED", cell_type="NOT SPECIFIED"
-        ),
+        prompts.cell_morphology.format(organ="None", cell_type="None"),
         Response("ANSWER: [[NOT SPECIFIED]]"),
     )
 
@@ -306,10 +304,10 @@ def test_cohorts_1_organs_0(monkeypatch, settings, cohorts_1_organs_0):
     assert results == [
         {
             "cohort": "Dose Escalation cohorts",
-            "organ": "NOT SPECIFIED",
+            "organ": None,
             "organ_confirmation": "YES",
-            "cell_type": "NOT SPECIFIED",
-            "cell_morphology": "NOT SPECIFIED",
+            "cell_type": None,
+            "cell_morphology": None,
         },
     ]
 
@@ -319,7 +317,7 @@ def cohorts_0_organs_2(prompts):
     """A conversation with NO cohorts and two organs."""
     cohorts = (prompts.cohort, Response("ANSWER:[[NO]]"))
     organs = (
-        prompts.organ.format(cohort="NO"),
+        prompts.organ.format(cohort="None"),
         Response("ANSWER: [[Organ 1]] OR [[Organ 2]]"),
     )
     organ_1 = [
@@ -371,14 +369,14 @@ def test_cohorts_0_organs_2(monkeypatch, settings, cohorts_0_organs_2):
     assert sent_prompts == expected_prompts
     assert results == [
         {
-            "cohort": "NO",
+            "cohort": None,
             "organ": "Organ 1",
             "organ_confirmation": "YES",
             "cell_type": "Organ 1 cell type",
             "cell_morphology": "Organ 1 cell morph",
         },
         {
-            "cohort": "NO",
+            "cohort": None,
             "organ": "Organ 2",
             "organ_confirmation": "YES",
             "cell_type": "Organ 2 cell type",
@@ -392,7 +390,7 @@ def cohorts_0_organs_1(prompts):
     """A conversation with NO cohorts and one organ."""
     cohorts = (prompts.cohort, Response("ANSWER:[[NO]]"))
     organs = (
-        prompts.organ.format(cohort="NO"),
+        prompts.organ.format(cohort="None"),
         Response("ANSWER: [[Breast]]"),
     )
     organ_conf = (
@@ -426,7 +424,7 @@ def test_cohorts_0_organs_1(monkeypatch, settings, cohorts_0_organs_1):
     assert sent_prompts == expected_prompts
     assert results == [
         {
-            "cohort": "NO",
+            "cohort": None,
             "organ": "Breast",
             "organ_confirmation": "YES",
             "cell_type": "Breast cell type",
@@ -440,21 +438,19 @@ def cohorts_0_organs_0(prompts):
     """A conversation with NO cohorts and NO organs."""
     cohorts = (prompts.cohort, Response("ANSWER:[[NO]]"))
     organs = (
-        prompts.organ.format(cohort="NO"),
+        prompts.organ.format(cohort="None"),
         Response("ANSWER: [[NOT SPECIFIED]]"),
     )
     organ_conf = (
-        prompts.organ_confirm.format(organ="NOT SPECIFIED"),
+        prompts.organ_confirm.format(organ="None"),
         Response("ANSWER: [[YES]]"),
     )
     cell_type = (
-        prompts.cell_type.format(organ="NOT SPECIFIED"),
+        prompts.cell_type.format(organ="None"),
         Response("ANSWER: [[NOT SPECIFIED]]"),
     )
     cell_morph = (
-        prompts.cell_morphology.format(
-            organ="NOT SPECIFIED", cell_type="NOT SPECIFIED"
-        ),
+        prompts.cell_morphology.format(organ="None", cell_type="None"),
         Response("ANSWER: [[NOT SPECIFIED]]"),
     )
 
@@ -476,11 +472,11 @@ def test_cohorts_0_organs_0(monkeypatch, settings, cohorts_0_organs_0):
     assert sent_prompts == expected_prompts
     assert results == [
         {
-            "cohort": "NO",
-            "organ": "NOT SPECIFIED",
+            "cohort": None,
+            "organ": None,
             "organ_confirmation": "YES",
-            "cell_type": "NOT SPECIFIED",
-            "cell_morphology": "NOT SPECIFIED",
+            "cell_type": None,
+            "cell_morphology": None,
         },
     ]
 
@@ -546,7 +542,7 @@ def organs_conjunctive(prompts):
         Response("ANSWER: [[NO]]"),
     )
     organs = (
-        prompts.organ.format(cohort="NO"),
+        prompts.organ.format(cohort="None"),
         Response("ANSWER: [[Organ A]] AND [[Organ B]]"),
     )
     organ_conf = (
@@ -582,7 +578,7 @@ def test_organs_conjunctive(monkeypatch, settings, organs_conjunctive):
     assert sent_prompts == expected_prompts
     assert results == [
         {
-            "cohort": "NO",
+            "cohort": None,
             "organ": "Organ A AND Organ B",
             "organ_confirmation": "YES",
             "cell_type": "Cell type A AND Cell type B",
