@@ -115,16 +115,21 @@ def process_questions(
             prompt == "cohort"
             and response.is_conjunctive()
             or prompt == "organ"
-            and response.is_disjunctive()
+            and len(response.entities) > 1
         ):
+            answers = (
+                response.split_as_disjunctive()
+                if prompt == "organ"
+                else response.entities
+            )
             # Line 12
-            for entity in response.entities:
+            for answer in answers:
                 # Line 13
-                p2a_local[prompt] = entity
+                p2a_local[prompt] = answer
                 # Line 14
-                logger.info(f"{question_n: > 3}. {prompt} {entity}")
+                logger.info(f"{question_n: > 3}. {prompt} {answer}")
                 # Line 15
-                entity_results = process_questions(
+                subresults = process_questions(
                     gpt=gpt,
                     questions_file=questions_file,
                     question_n=question_n + 1,
@@ -132,26 +137,9 @@ def process_questions(
                     chat_history=chat_history.copy(),
                     output_file=output_file,
                 )
-                results += entity_results
+                results += subresults
             # Line 16
             return results
-        # Repeat of Lines 11 - 16 IF the organ response is not disjunctive
-        elif prompt == "organ" and len(response.entities) > 1:
-            entity_groups = response.split_as_disjunctive()
-            for entity_g in entity_groups:
-                p2a_local[prompt] = entity_g
-                logger.info(f"{question_n: > 3}. {prompt} {entity_g}")
-                entity_g_results = process_questions(
-                    gpt=gpt,
-                    questions_file=questions_file,
-                    question_n=question_n + 1,
-                    prompt2answer=p2a_local,
-                    chat_history=chat_history.copy(),
-                    output_file=output_file,
-                )
-                results += entity_g_results
-            return results
-        # Line 17
         else:
             # Line 18
             p2a_local[prompt] = response.answer

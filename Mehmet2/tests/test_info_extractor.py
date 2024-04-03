@@ -217,6 +217,104 @@ def test_cohorts_2_organs_2each(monkeypatch, settings, cohorts_2_organs_2each):
 
 
 @pytest.fixture
+def cohorts_1_organs_1(prompts):
+    """A conversation with one cohort and one organ."""
+    cohorts = (prompts.cohort, Response("ANSWER: [[Cohort A]]"))
+    organs = (
+        prompts.organ.format(cohort="Cohort A"),
+        Response("ANSWER: [[Breast]]"),
+    )
+    organ_conf = (
+        prompts.organ_confirm.format(organ="Breast"),
+        Response("ANSWER: [[YES]]"),
+    )
+    cell_type = (
+        prompts.cell_type.format(organ="Breast"),
+        Response("ANSWER: [[HER-2 neu/negative]]"),
+    )
+    cell_morph = (
+        prompts.cell_morphology.format(organ="Breast", cell_type="HER-2 neu/negative"),
+        Response("ANSWER: [[Breast, HER-2 neu/negative, cell morph]]"),
+    )
+
+    return [cohorts, organs, organ_conf, cell_type, cell_morph]
+
+
+def test_cohorts_1_organs_1(monkeypatch, settings, cohorts_1_organs_1):
+    mock_send_messages, sent_prompts, expected_prompts = get_send_messages_mock(
+        cohorts_1_organs_1
+    )
+    monkeypatch.setattr(ie.GPTClient, "send_messages", mock_send_messages)
+
+    chat = [system_message(settings.SYSTEM_MESSAGE)]
+    results = ie.process_questions(
+        gpt=ie.GPTClient(settings),
+        questions_file=questions_file,
+        chat_history=chat,
+    )
+    assert sent_prompts == expected_prompts
+    assert results == [
+        {
+            "cohort": "Cohort A",
+            "organ": "Breast",
+            "organ_confirmation": "YES",
+            "cell_type": "HER-2 neu/negative",
+            "cell_morphology": "Breast, HER-2 neu/negative, cell morph",
+        },
+    ]
+
+
+@pytest.fixture
+def cohorts_1_organs_0(prompts):
+    """A conversation with one cohort and NO organs."""
+    cohorts = (prompts.cohort, Response("ANSWER: [[Dose Escalation cohorts]]"))
+    organs = (
+        prompts.organ.format(cohort="Dose Escalation cohorts"),
+        Response("ANSWER: [[NOT SPECIFIED]]"),
+    )
+    organ_conf = (
+        prompts.organ_confirm.format(organ="NOT SPECIFIED"),
+        Response("ANSWER: [[YES]]"),
+    )
+    cell_type = (
+        prompts.cell_type.format(organ="NOT SPECIFIED"),
+        Response("ANSWER: [[NOT SPECIFIED]]"),
+    )
+    cell_morph = (
+        prompts.cell_morphology.format(
+            organ="NOT SPECIFIED", cell_type="NOT SPECIFIED"
+        ),
+        Response("ANSWER: [[NOT SPECIFIED]]"),
+    )
+
+    return [cohorts, organs, organ_conf, cell_type, cell_morph]
+
+
+def test_cohorts_1_organs_0(monkeypatch, settings, cohorts_1_organs_0):
+    mock_send_messages, sent_prompts, expected_prompts = get_send_messages_mock(
+        cohorts_1_organs_0
+    )
+    monkeypatch.setattr(ie.GPTClient, "send_messages", mock_send_messages)
+
+    chat = [system_message(settings.SYSTEM_MESSAGE)]
+    results = ie.process_questions(
+        gpt=ie.GPTClient(settings),
+        questions_file=questions_file,
+        chat_history=chat,
+    )
+    assert sent_prompts == expected_prompts
+    assert results == [
+        {
+            "cohort": "Dose Escalation cohorts",
+            "organ": "NOT SPECIFIED",
+            "organ_confirmation": "YES",
+            "cell_type": "NOT SPECIFIED",
+            "cell_morphology": "NOT SPECIFIED",
+        },
+    ]
+
+
+@pytest.fixture
 def cohorts_0_organs_2(prompts):
     """A conversation with NO cohorts and two organs."""
     cohorts = (prompts.cohort, Response("ANSWER:[[NO]]"))
@@ -290,6 +388,54 @@ def test_cohorts_0_organs_2(monkeypatch, settings, cohorts_0_organs_2):
 
 
 @pytest.fixture
+def cohorts_0_organs_1(prompts):
+    """A conversation with NO cohorts and one organ."""
+    cohorts = (prompts.cohort, Response("ANSWER:[[NO]]"))
+    organs = (
+        prompts.organ.format(cohort="NO"),
+        Response("ANSWER: [[Breast]]"),
+    )
+    organ_conf = (
+        prompts.organ_confirm.format(organ="Breast"),
+        Response("ANSWER: [[YES]]"),
+    )
+    cell_type = (
+        prompts.cell_type.format(organ="Breast"),
+        Response("ANSWER: [[Breast cell type]]"),
+    )
+    cell_morph = (
+        prompts.cell_morphology.format(organ="Breast", cell_type="Breast cell type"),
+        Response("ANSWER: [[Breast cell morph]]"),
+    )
+
+    return [cohorts, organs, organ_conf, cell_type, cell_morph]
+
+
+def test_cohorts_0_organs_1(monkeypatch, settings, cohorts_0_organs_1):
+    mock_send_messages, sent_prompts, expected_prompts = get_send_messages_mock(
+        cohorts_0_organs_1
+    )
+    monkeypatch.setattr(ie.GPTClient, "send_messages", mock_send_messages)
+
+    chat = [system_message(settings.SYSTEM_MESSAGE)]
+    results = ie.process_questions(
+        gpt=ie.GPTClient(settings),
+        questions_file=questions_file,
+        chat_history=chat,
+    )
+    assert sent_prompts == expected_prompts
+    assert results == [
+        {
+            "cohort": "NO",
+            "organ": "Breast",
+            "organ_confirmation": "YES",
+            "cell_type": "Breast cell type",
+            "cell_morphology": "Breast cell morph",
+        },
+    ]
+
+
+@pytest.fixture
 def cohorts_0_organs_0(prompts):
     """A conversation with NO cohorts and NO organs."""
     cohorts = (prompts.cohort, Response("ANSWER:[[NO]]"))
@@ -331,56 +477,6 @@ def test_cohorts_0_organs_0(monkeypatch, settings, cohorts_0_organs_0):
     assert results == [
         {
             "cohort": "NO",
-            "organ": "NOT SPECIFIED",
-            "organ_confirmation": "YES",
-            "cell_type": "NOT SPECIFIED",
-            "cell_morphology": "NOT SPECIFIED",
-        },
-    ]
-
-
-@pytest.fixture
-def cohorts_1_organs_0(prompts):
-    """A conversation with one cohort and NO organs."""
-    cohorts = (prompts.cohort, Response("ANSWER: [[Dose Escalation cohorts]]"))
-    organs = (
-        prompts.organ.format(cohort="Dose Escalation cohorts"),
-        Response("ANSWER: [[NOT SPECIFIED]]"),
-    )
-    organ_conf = (
-        prompts.organ_confirm.format(organ="NOT SPECIFIED"),
-        Response("ANSWER: [[YES]]"),
-    )
-    cell_type = (
-        prompts.cell_type.format(organ="NOT SPECIFIED"),
-        Response("ANSWER: [[NOT SPECIFIED]]"),
-    )
-    cell_morph = (
-        prompts.cell_morphology.format(
-            organ="NOT SPECIFIED", cell_type="NOT SPECIFIED"
-        ),
-        Response("ANSWER: [[NOT SPECIFIED]]"),
-    )
-
-    return [cohorts, organs, organ_conf, cell_type, cell_morph]
-
-
-def test_cohorts_1_organs_0(monkeypatch, settings, cohorts_1_organs_0):
-    mock_send_messages, sent_prompts, expected_prompts = get_send_messages_mock(
-        cohorts_1_organs_0
-    )
-    monkeypatch.setattr(ie.GPTClient, "send_messages", mock_send_messages)
-
-    chat = [system_message(settings.SYSTEM_MESSAGE)]
-    results = ie.process_questions(
-        gpt=ie.GPTClient(settings),
-        questions_file=questions_file,
-        chat_history=chat,
-    )
-    assert sent_prompts == expected_prompts
-    assert results == [
-        {
-            "cohort": "Dose Escalation cohorts",
             "organ": "NOT SPECIFIED",
             "organ_confirmation": "YES",
             "cell_type": "NOT SPECIFIED",
