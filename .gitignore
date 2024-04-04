@@ -145,3 +145,4 @@ answers*
 *.log
 results*.csv
 results*.xlsx
+~*.xlsx

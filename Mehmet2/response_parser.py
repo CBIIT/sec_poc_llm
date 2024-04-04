@@ -166,3 +166,11 @@ class Response:
         for idx, e in enumerate(entities):
             entities[idx] = e.removeprefix("(").removesuffix(")").strip(" ")
         return entities
+
+    def is_falsy(self):
+        return (
+            not self.answer
+            or self.answer.lower() == "no"
+            or self.answer.lower() == "none"
+            or self.answer.lower() == "not specified"
+        )
