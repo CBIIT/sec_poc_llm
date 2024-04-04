@@ -5,8 +5,15 @@
     If not, say ANSWER:[[NO]]
 
 - prompt: organ
+  condition: "lambda cohort, **k: cohort"
   question: |
     Based on the eligibility criteria for {cohort} in the attached file, what are the primary organs that the cancer originated from? Please provide the source text portion that your answer is based on. If it is a metastatic cancer and the primary organ was not specified, say ANSWER: [[NOT SPECIFIED]].
+    First, please specify the source text that your answer is based on. Then, specify only the name of each primary organ in your ANSWER within double-square brackets without further details.
+
+- prompt: organ
+  condition: "lambda cohort, **k: not cohort"
+  question: |
+    Based on the eligibility criteria in the attached file, what are the primary organs that the cancer originated from? Please provide the source text portion that your answer is based on. If it is a metastatic cancer and the primary organ was not specified, say ANSWER: [[NOT SPECIFIED]].
     First, please specify the source text that your answer is based on. Then, specify only the name of each primary organ in your ANSWER within double-square brackets without further details.
 
 - prompt: organ_confirmation
@@ -19,5 +26,6 @@
     What cell types of {organ} cancer are required in the inclusion criteria of the attached file. If multiple cell types are mentioned, please specify all of them. If no cell type is mentioned, please say, ANSWER: [[NOT SPECIFIED]].
 
 - prompt: cell_morphology
+  condition: "lambda organ, cell_type, **k: organ and cell_type"
   question: |
     Is there any mention of required cell morphology specifications in the inclusion criteria for {organ} {cell_type} in the attached protocol? If not, please indicate with ANSWER: [[NO]]. If there are, please provide the SOURCE-TEXT before answering.

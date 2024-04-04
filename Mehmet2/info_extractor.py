@@ -103,6 +103,7 @@ def process_questions(
                     f"Skipping prompt {prompt} because the condition function failed to evaluate."
                 )
                 logger.debug(p2a_local)
+                question_n += 1
                 continue
             else:
                 # If the condition is False, continue to the next question (i.e. skip this one)
@@ -110,6 +111,7 @@ def process_questions(
                     logger.info(
                         f"Skipping prompt {prompt} because the condition evaluated to False."
                     )
+                    question_n += 1
                     continue
 
         # Line 7 and 8
