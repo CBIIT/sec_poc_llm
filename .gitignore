@@ -146,3 +146,5 @@ answers*
 results*.csv
 results*.xlsx
 ~*.xlsx
+Thesaurus*.zip
+Thesaurus*.txt
