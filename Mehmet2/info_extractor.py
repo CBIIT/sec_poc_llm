@@ -11,6 +11,7 @@ from Mehmet2.gpt_client import (
     user_message,
 )
 from Mehmet2.logging import logger
+from Mehmet2.match_ncit import get_match
 
 FILES_CACHE = {}
 
@@ -124,6 +125,15 @@ def process_questions(
         response = gpt.send_messages(chat_history)
         logger.debug(f"Response: {response.raw}")
         chat_history.append(assistant_message(response.raw))
+        if prompt == "disease_names_lead" or prompt == "diseases":
+            ncit_diseases = []
+            disease_entities = (
+                response.entities if len(response.entities) > 1 else [response.answer]
+            )
+            for disease in disease_entities:
+                ncit_match = get_match(disease)
+                ncit_diseases.append(ncit_match)
+            p2a_local["ncit_" + prompt] = ncit_diseases
         if output_file:
             serialize(
                 output_file,
@@ -137,6 +147,7 @@ def process_questions(
                 source_text=response.source_text,
                 answer=response.answer,
                 entities=response.entities,
+                ncit_concepts=p2a_local.get("ncit_" + prompt),
             )
 
         # Line 11

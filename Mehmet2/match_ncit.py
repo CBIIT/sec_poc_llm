@@ -5,44 +5,93 @@
 # NCI Thesarus terms. The NCI Thesaurus term code mapping is found in file
 # disease-code.txt. The code to preferred term map is found in code2term.tsv
 ###############################################################################
+import json
 import re
+from pathlib import Path
+
+from Mehmet2.logging import logger
+
+# class Logger:
+#     def debug(*args):
+#         print(*args)
+
+#     def info(*args):
+#         print(*args)
+
+
+# logger = Logger()
 # import hashlib
 
-workdir = "/usr/src/app"
-infile = workdir + "/disease-code.tsv"
-code2preferred_f = workdir + "/code2term.tsv"
-testcases_f = workdir + "/test-2024-04-11.txt"
+# Files to tokenize
+datadir = Path(__file__).parent / "data"
+outdir = datadir / "output"
+infile = datadir / "disease-code.tsv"
+code2preferred_f = datadir / "code2term.tsv"
+_testcases_f = datadir / "test-2024-04-11.txt"
 
+# Output files
+if not outdir.exists():
+    outdir.mkdir()
+code2term_outfile = outdir / "code2term.json"
+word_outfile = outdir / "word2codes.json"
+bigram_outfile = outdir / "bigram2codes.json"
+trigram_outfile = outdir / "trigram2codes.json"
+
+# Global mappings
 code2term: dict[str, str] = {}
 word2code: dict[str, dict[str, int]] = {}
 bigram2code: dict[str, dict[str, int]] = {}
 trigram2code: dict[str, dict[str, int]] = {}
 
 
+def _word_split(term: str):
+    return re.split(r"[^\w']+", term)
+
+
+def _word_join(words: list[str]):
+    return " ".join(words)
+
+
 def test():
     cases = []
-
-    read_cases(cases, testcases_f)
+    _read_test_cases(cases, _testcases_f)
     for term in cases:
-        print(term)
-        term = re.sub(
-            r"\(\w+\)", "", term
-        )  # abbreviations in parentheses may be misleading
-        words = []
-        bigrams = []
-        trigrams = []
-        get_ngrams(term, words, bigrams, trigrams)
-        get_codes_v2(
-            words,
-            bigrams,
-            trigrams,
-            word2code,
-            bigram2code,
-            trigram2code,
-        )
+        logger.debug(term)
+        get_match(term)
 
 
-def get_codes_v2(
+def _read_test_cases(aref: list[str], infile: str):
+    ifh = open(infile)
+    while line := ifh.readline():
+        line = line.strip()
+
+        terms = re.split(r"\,\s*", line)
+        for term in terms:
+            if term:
+                aref.append(term)
+    ifh.close()
+
+
+def get_match(term: str):
+    assert word2code and bigram2code and trigram2code and code2term
+    term = re.sub(
+        r"\(\w+\)", "", term
+    )  # abbreviations in parentheses may be misleading
+    words = []
+    bigrams = []
+    trigrams = []
+    _get_ngrams(term, words, bigrams, trigrams)
+    return _get_codes_v2(
+        words,
+        bigrams,
+        trigrams,
+        word2code,
+        bigram2code,
+        trigram2code,
+    )
+
+
+def _get_codes_v2(
     words_aref: list,
     bigrams_aref: list,
     trigrams_aref: list,
@@ -81,7 +130,7 @@ def get_codes_v2(
                 # Count how many times a certain code is seen
                 code2count[code] += increment
             for code, count in code2count.items():
-                word_count = len(re.split(r"[^\w\']+", code2term[code]))
+                word_count = len(_word_split(code2term[code]))
                 word_count = max(n, word_count)
                 max_ngram_count = word_count - n + 1
                 # Coverage shows which code appears most often with respect to the ngram size
@@ -99,17 +148,18 @@ def get_codes_v2(
     code_scores.sort(key=lambda cs: cs[1], reverse=True)
 
     scoremax = 0
+    matched_code, matched_term = None, None
     for cs in code_scores:
         code, score = cs
 
         scoremax = scoremax or score
         if score < scoremax:
             break
-        print(f"\tC{code}\t", end="")
-
-        # print(f"{score:.2f}\t", end="")  # uncomment to debug scoring algorithm
-        print(code2term[code])
-    print()
+        # logger.debug(f"\tC{code}\t{score:.2f}\t{code2term[code]}") # uncomment to debug scoring algorithm
+        logger.debug(f"\tC{code}\t{code2term[code]}")
+        matched_code = code
+        matched_term = code2term[code]
+    return matched_code, matched_term
 
     ## Uncomment the following to save the scores
     # Create a new SHA-1 hash object
@@ -127,7 +177,7 @@ def get_codes_v2(
     # ofh.close()
 
 
-def get_ngrams(
+def _get_ngrams(
     term: str,
     words_aref: list[str],
     bigrams_aref: list[list[str]],
@@ -136,7 +186,7 @@ def get_ngrams(
     term = term.lower()
 
     term = re.sub(r"\bcancer\b", "carcinoma", term)
-    words = re.split(r"[^\w\']+", term)
+    words = _word_split(term)
     for word in words:
         if not word:
             continue
@@ -155,63 +205,60 @@ def get_ngrams(
         trigram.append(word)
 
         if len(bigram) == 2:
-            bigrams_aref.append(tuple(bigram))
+            bigrams_aref.append(_word_join(bigram))
         if len(trigram) == 3:
-            trigrams_aref.append(tuple(trigram))
+            trigrams_aref.append(_word_join(trigram))
 
 
-def read_cases(aref: list[str], infile: str):
-    ifh = open(infile)
-    while line := ifh.readline():
-        line = line.strip()
-
-        terms = re.split(r"\,\s*", line)
-        for term in terms:
-            if term:
-                aref.append(term)
-    ifh.close()
-
-
-def write_data():
-    word_outfile = workdir + "/word2codes_py.tsv"
-    bigram_outfile = workdir + "/bigram2codes_py.tsv"
-    trigram_outfile = workdir + "/trigram2codes_py.tsv"
-    files = [word_outfile, bigram_outfile, trigram_outfile]
-    hashes = [word2code, bigram2code, trigram2code]
+def _write_thesaurus_mappings():
+    logger.info("Saving parsed thesaurus inputs to JSON files...")
+    files = [word_outfile, bigram_outfile, trigram_outfile, code2term_outfile]
+    hashes = [word2code, bigram2code, trigram2code, code2term]
 
     while files:
         file = files.pop(0)
         href = hashes.pop(0)
-        print(f"Writing into {file}...")
-        printout(file, href)
+        logger.info(f"Writing to {file.name}...")
+        with open(file, "w") as ofh:
+            json.dump(href, ofh)
 
 
-def printout(outfile: str, href0: dict[str, dict[str, int]]):
-    ofh = open(outfile, mode="w")
-    for term, href in href0.items():
-        ofh.write(term if isinstance(term, str) else " ".join(term))
-        codes = [int(key) for key in href.keys()]
-        codes.sort()
-        for code in codes:
-            ofh.write(f"\t{code}")
-        ofh.write("\n")
-    ofh.close()
+def _read_saved_thesaurus_mappings():
+    global code2term, word2code, bigram2code, trigram2code
+    if code2term_outfile.exists():
+        with open(code2term_outfile) as ifh:
+            code2term = json.load(ifh)
+    if word_outfile.exists():
+        with open(word_outfile) as ifh:
+            word2code = json.load(ifh)
+    if bigram_outfile.exists():
+        with open(bigram_outfile) as ifh:
+            bigram2code = json.load(ifh)
+    if trigram_outfile.exists():
+        with open(trigram_outfile) as ifh:
+            trigram2code = json.load(ifh)
+    return code2term and word2code and bigram2code and trigram2code
 
 
-def read_input():
-    print("Reading input...")
+def _read_thesaurus_inputs():
+    saved_success = _read_saved_thesaurus_mappings()
+    if saved_success:
+        logger.info("Using previously parsed thesaurus output files.")
+        return
+
+    logger.info(f"Reading NCIt inputs: {infile.name} and {code2preferred_f.name}")
     terms = {}
     ifh = open(infile)
     _ = ifh.readline()
     while line := ifh.readline():
         line = line.strip()
-        term, code = re.split(r"\t", line)
+        term, code = line.split("\t")
         code = re.sub(r"^C", "", code)
         term = term.lower()
         if term in terms:
             continue
         terms[term] = 1
-        words = re.split(r"[^\w\']+", term)
+        words = _word_split(term)
         bigram = []
         trigram = []
 
@@ -231,15 +278,15 @@ def read_input():
             trigram.append(word)
 
             if len(bigram) == 2:
-                bigram_t = tuple(bigram)
-                if bigram_t not in bigram2code:
-                    bigram2code[bigram_t] = {}
-                bigram2code[bigram_t][code] = 1
+                key = _word_join(bigram)
+                if key not in bigram2code:
+                    bigram2code[key] = {}
+                bigram2code[key][code] = 1
             if len(trigram) == 3:
-                trigram_t = tuple(trigram)
-                if trigram_t not in trigram2code:
-                    trigram2code[trigram_t] = {}
-                trigram2code[trigram_t][code] = 1
+                key = _word_join(trigram)
+                if key not in trigram2code:
+                    trigram2code[key] = {}
+                trigram2code[key][code] = 1
     ifh.close()
 
     ifh = open(code2preferred_f)
@@ -247,11 +294,16 @@ def read_input():
     while line := ifh.readline():
         line = line.strip()
         line = re.sub(r"^C", "", line)
-        code, term = re.split(r"\t", line)
+        code, term = line.split("\t")
         code2term[code] = term
     ifh.close()
 
+    _write_thesaurus_mappings()
 
-read_input()
-write_data()  # uncomment if keeping a record of data is needed
-test()
+
+_read_thesaurus_inputs()
+
+if __name__ == "__main__":
+    # test()
+    match = get_match("Non-Small Cell Lung Cancer (NSCLC), stage IIA non-squamous")
+    print(match)

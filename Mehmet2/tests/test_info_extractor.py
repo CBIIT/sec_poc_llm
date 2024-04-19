@@ -6,7 +6,7 @@ import yaml
 
 import Mehmet2.info_extractor as ie
 from Mehmet2.gpt_client import system_message
-from Mehmet2.response_parser import Response
+from Mehmet2.response_parser_v2 import Response
 from Mehmet2.settings import Settings
 
 test_data = Path(__file__).parent / "data"
