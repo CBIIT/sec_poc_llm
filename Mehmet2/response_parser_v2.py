@@ -12,7 +12,7 @@ class Response:
     conditions: list[str]
     entities_by_name: dict[str, list[str]]
     _linestart = re.compile(
-        r"^(SOURCE-TEXT|ANSWER):?", flags=re.I
+        r"^(SOURCE-TEXT|ANSWER|PRIMARY-ORGANS):?", flags=re.I
     )  # Will match a line that starts with "SOURCE-TEXT:" or "ANSWER:"
     _entities = re.compile(
         r"\[\[([\s\S]+?)]]", flags=re.M
@@ -21,7 +21,7 @@ class Response:
         r"(\(\[\[)|(]][\s\S]+?\[\[)|(\]\]\))", flags=re.M
     )  # Will match text between "]]...[[" including leading "(" and trailing ")"
     _expected_entity_fmt = re.compile(
-        r"^(SOURCE-TEXT|ANSWER):?\s*\(?\[\[", flags=re.I
+        r"^(SOURCE-TEXT|ANSWER|PRIMARY-ORGANS):?\s*\(?\[\[", flags=re.I
     )  # Inputs with entities should look like: "UPPERCASE: [[<entity>]]"
 
     def __init__(self, text: str) -> None:

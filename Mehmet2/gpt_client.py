@@ -6,7 +6,7 @@ import openai
 import tiktoken
 
 from Mehmet2.logging import logger
-from Mehmet2.response_parser import Response
+from Mehmet2.response_parser_v2 import Response
 from Mehmet2.settings import Settings
 
 

@@ -148,6 +148,7 @@ def process_questions(
                 answer=response.answer,
                 entities=response.entities,
                 ncit_concepts=p2a_local.get("ncit_" + prompt),
+                other_entities=response.entities_by_name,
             )
 
         # Line 11
