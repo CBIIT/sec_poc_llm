@@ -15,6 +15,8 @@ from Mehmet2.match_ncit import get_match
 
 FILES_CACHE = {}
 
+NCIT_PROMPTS = ("disease_names_lead", "diseases")
+
 
 class QuestionParser:
     _questions: list[dict[str, str]]
@@ -125,15 +127,16 @@ def process_questions(
         response = gpt.send_messages(chat_history)
         logger.debug(f"Response: {response.raw}")
         chat_history.append(assistant_message(response.raw))
-        if prompt == "disease_names_lead" or prompt == "diseases":
-            ncit_diseases = []
-            disease_entities = (
+
+        # Gather any NCIt concepts from GPT's answer
+        ncit_concepts = []
+        if prompt in NCIT_PROMPTS:
+            entities = (
                 response.entities if len(response.entities) > 1 else [response.answer]
             )
-            for disease in disease_entities:
-                ncit_match = get_match(disease)
-                ncit_diseases.append(ncit_match)
-            p2a_local["ncit_" + prompt] = ncit_diseases
+            for entity in entities:
+                ncit_match = get_match(entity)
+                ncit_concepts.append(ncit_match)
         if output_file:
             serialize(
                 output_file,
@@ -147,8 +150,8 @@ def process_questions(
                 source_text=response.source_text,
                 answer=response.answer,
                 entities=response.entities,
-                ncit_concepts=p2a_local.get("ncit_" + prompt),
-                other_entities=response.entities_by_name,
+                ncit_concepts=ncit_concepts or None,
+                other_entities=response.entities_by_name or None,
             )
 
         # Line 11
@@ -157,17 +160,21 @@ def process_questions(
             prompt == "cohort"
             and response.is_conjunctive()
             # Organs might be separated by a combination of ANDs/ORs, so only check if it has multiple answers "[[]]"
-            or prompt == "organ"
+            # Same situation with lead disease names
+            or prompt in ("organ", "disease_names_lead")
             and len(response.entities) > 1
         ):
             answers = (
                 # For organs, split the response as if the organs were only separated by "OR"
                 response.split_as_disjunctive()
-                if prompt == "organ"
+                if prompt in ("organ", "disease_names_lead")
                 else response.entities
             )
             # Line 12
             for answer in answers:
+                if prompt == "disease_names_lead":
+                    ncit_match = get_match(answer)
+                    p2a_local["ncit_" + prompt] = ncit_match
                 # Line 13
                 p2a_local[prompt] = answer
                 # Line 14
@@ -185,6 +192,9 @@ def process_questions(
             # Line 16
             return results
         else:
+            if not response.is_falsy() and prompt in NCIT_PROMPTS:
+                ncit_match = get_match(response.answer)
+                p2a_local["ncit_" + prompt] = ncit_match
             # Line 18
             p2a_local[prompt] = None if response.is_falsy() else response.answer
             # Line 19

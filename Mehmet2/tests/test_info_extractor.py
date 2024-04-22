@@ -11,6 +11,7 @@ from Mehmet2.settings import Settings
 
 test_data = Path(__file__).parent / "data"
 questions_file = test_data / "prompts.yaml"
+prompts_other_f = test_data / "prompts_other.yaml"
 
 
 class Prompts:
@@ -57,10 +58,35 @@ class Prompts:
     def cell_morphology(self):
         return self._get_prompt("cell_morphology")
 
+    @property
+    def disease_names_lead(self):
+        return self._get_prompt("disease_names_lead")
+
+    @property
+    def biomarker_inclusion(self):
+        return self._get_prompt("biomarker_inclusion")
+
+    @property
+    def biomarker_exclusion(self):
+        return self._get_prompt("biomarker_exclusion")
+
+    @property
+    def prior_therapy_inclusion(self):
+        return self._get_prompt("prior_therapy_inclusion")
+
+    @property
+    def prior_therapy_exclusion(self):
+        return self._get_prompt("prior_therapy_exclusion")
+
 
 @pytest.fixture
 def prompts():
     return Prompts(questions_file)
+
+
+@pytest.fixture
+def prompts_other():
+    return Prompts(prompts_other_f)
 
 
 @pytest.fixture
@@ -656,5 +682,77 @@ def test_organs_conjunctive(monkeypatch, settings, organs_conjunctive):
             "organ_confirmation": "YES",
             "cell_type": "Cell type A AND Cell type B",
             "cell_morphology": "Organ A cell morph AND Organ B cell morph",
+        },
+    ]
+
+
+@pytest.fixture
+def diseases_disjunctive(prompts_other):
+    disease_names_lead = (
+        prompts_other.disease_names_lead,
+        Response("""SOURCE-TEXT: [[lorem ipsum]]
+PRIMARY-ORGANS:[[Breast]] OR [[Rectum]]
+ANSWER: [[Ductal Carcinoma In Situ]] OR [[Locally-advanced Rectal Cancer]]
+"""),
+    )
+    biomarkers_inc_disease_a = (
+        prompts_other.biomarker_inclusion,
+        Response("""SOURCE-TEXT:[[lorem ipsum]]
+ANSWER:[[Estrogen Receptor Positive]]
+"""),
+    )
+    biomarkers_exc_disease_a = (
+        prompts_other.biomarker_exclusion,
+        Response("""SOURCE-TEXT:[[lorem ipsum]]
+ANSWER:[[NOT SPECIFIED]]
+"""),
+    )
+    biomarkers_inc_disease_b = (
+        prompts_other.biomarker_inclusion,
+        Response("""SOURCE-TEXT:[[lorem ipsum]]
+ANSWER:[[Biomarker for Locally-advanced Rectal Cancer]]
+"""),
+    )
+    biomarkers_exc_disease_b = (
+        prompts_other.biomarker_exclusion,
+        Response("""SOURCE-TEXT:[[lorem ipsum]]
+ANSWER:[[NOT SPECIFIED]]
+"""),
+    )
+    return [
+        disease_names_lead,
+        biomarkers_inc_disease_a,
+        biomarkers_exc_disease_a,
+        biomarkers_inc_disease_b,
+        biomarkers_exc_disease_b,
+    ]
+
+
+def test_diseases_disjunctive(monkeypatch, settings, diseases_disjunctive):
+    mock_send_messages, sent_prompts, expected_prompts = get_send_messages_mock(
+        diseases_disjunctive
+    )
+    monkeypatch.setattr(ie.GPTClient, "send_messages", mock_send_messages)
+
+    chat = [system_message(settings.SYSTEM_MESSAGE)]
+    results = ie.process_questions(
+        gpt=ie.GPTClient(settings),
+        questions_file=prompts_other_f,
+        chat_history=chat,
+        output_file="test.out.csv",
+    )
+    assert sent_prompts == expected_prompts
+    assert results == [
+        {
+            "ncit_disease_names_lead": ("40374", "Microinvasive Breast Carcinoma"),
+            "disease_names_lead": "Ductal Carcinoma In Situ",
+            "biomarker_exclusion": None,
+            "biomarker_inclusion": "Estrogen Receptor Positive",
+        },
+        {
+            "ncit_disease_names_lead": ("170778", "Locally Advanced Rectal Carcinoma"),
+            "biomarker_exclusion": None,
+            "biomarker_inclusion": "Biomarker for Locally-advanced Rectal Cancer",
+            "disease_names_lead": "Locally-advanced Rectal Cancer",
         },
     ]

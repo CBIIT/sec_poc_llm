@@ -1,0 +1,51 @@
+- prompt: disease_names_lead
+  question: |
+    Based on the eligibility criteria in the provided data source, identify the PRIMARY-ORGANS from which the cancer of interest originated. The main ANSWER of interest is the type of cancer(s) this clinical trial studies. Please provide the SOURCE-TEXT portion on which your answer is based. If the primary organ and the cancer type were not specified, say ANSWER: [[NOT SPECIFIED]].
+    Examples:   
+    SOURCE-TEXT:[[1. Adenocarcinoma of the rectum cT3 or cT4 or cN+, M0 and for which CPR recommends preoperative radiochemotherapy. 2. Tumor <15 cm of the anal margin in rigid or subperitoneal rectoscopy at the MRI. 3. Tumor potentially resectable from the outset, or considered to be resectable after radiochemotherapy (inclusion--- t) | ]]
+    PRIMARY-ORGANS:[[Rectum]]
+    ANSWER:[[Locally-advanced Rectal Cancer]]
+
+    SOURCE-TEXT:Biopsy-proven ER+ DCIS. (inclusion--- t) | ]]
+    PRIMARY-ORGANS:[[Breast]]
+    ANSWER:[[Ductal Carcinoma In Situ]]
+
+- prompt: biomarker_inclusion
+  question: |
+    Are there any required cancer biomarkers in the inclusion criteria? If not specified, say, "ANSWER: [[NOT SPECIFIED]]."
+    Examples:
+    SOURCE-TEXT:[[Biopsy-proven ER+ DCIS. (inclusion--- t) | ]]
+    ANSWER:[[Estrogen Receptor Positive]]
+
+    SOURCE-TEXT:[[AFP-expressing HCC and serum AFP >100 ng/mL. Molecular HLA class I typing confirms participant carries at least one HLA-A02 allele (inclusion--- t) | ]]
+    ANSWER:[[Alpha-Fetoprotein]] AND [[HLA-A02 allele]]
+
+    SOURCE-TEXT:[[Male or female patients with diagnosis of Ph+ and/or BCR-ABL+ CML (inclusion--- t) | ]]
+    ANSWER:[[Philadelphia Chromosome Positive]] AND [[BCR-ABL Positive]]
+
+- prompt: biomarker_exclusion
+  question: |
+    Are there any cancer biomarkers in the exclusion criteria? If not specified, say, "ANSWER: [[NOT SPECIFIED]]."
+
+# - prompt: prior_therapy_inclusion
+#   question: |
+#     Are there any required prior therapy in the inclusion criteria? If not specified, say, "ANSWER: [[NOT SPECIFIED]]."
+#     Examples:
+#     SOURCE-TEXT:[[Had ever received radiation therapy (RT) < 72 months before inclusion in the registry. (inclusion--- t) | ]]
+#     ANSWER:[[Radiation therapy]]
+
+#     SOURCE-TEXT:[[Inclusion Criteria: Pathologically diagnosed lung malignant tumors after surgeries; (inclusion--- t) |  Patients with lung surgeries; (inclusion--- t) | ]]
+#     ANSWER:[[Lung surgery]]
+
+#     SOURCE-TEXT:[[Postmenopausal females with estrogen receptor positive breast cancer that are currently treated with aromatase inhibitor (AI) medication (inclusion--- t) | ]]
+#     ANSWER:[[Aromatase Inhibitor Therapy]]
+
+# - prompt: prior_therapy_exclusion
+#   question: |
+#     Are there any prior therapy in the exclusion criteria? If not specified, say, "ANSWER: [[NOT SPECIFIED]]."
+#     Examples:
+#     SOURCE-TEXT:[[No prior doxorubicin or estramustine Endocrine therapy (inclusion--- f) |]]
+#     ANSWER:[[Doxorubicin Therapy]] OR [[Estramustine Therapy]]
+
+#     SOURCE-TEXT:[[received preoperative anti-cancer treatment (inclusion--- f) | received radiotherapy or chemotherapy during the operation (inclusion--- f) |]]
+#     ANSWER:[[Preoperative anti-cancer treatment]] OR [[Radiotherapy during the operation]] OR [[Chemotherapy during the operation]]
