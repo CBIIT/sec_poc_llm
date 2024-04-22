@@ -17,7 +17,7 @@ timestamp = datetime.now().strftime("%Y-%m-%d_%H%M%S")
 default_config = cwd / "config.yaml"
 default_questions = cwd / "prompts.yaml"
 default_env = cwd / ".env"
-default_output = cwd / f"results_{timestamp}.csv"
+default_output = cwd / ("{trial_id}_%s.csv" % timestamp)
 
 
 @click.command
@@ -92,6 +92,7 @@ def run(
     settings = Settings(env_file, config, cliargs)
     logging.configure(level=log_level, sink=log_sink or sys.stdout)
 
+    output_file = output_file.format(trial_id=index_name)
     chat = [system_message(settings.SYSTEM_MESSAGE)]
     # Algorithms Line 4.
     process_questions(
