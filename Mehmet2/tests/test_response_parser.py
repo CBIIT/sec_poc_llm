@@ -98,18 +98,18 @@ ANSWER:[[NOT SPECIFIED]] .""",
         answer="NOT SPECIFIED",
         conditions=[],
         entities=["NOT SPECIFIED"],
-        source_text="The source text does not mention the organ location for the primary cancer.",
+        source_text="",
         disjunctive_entities=["NOT SPECIFIED"],
     ),
     # Unconventional response
     ResponseParams(
-        """source-text: The source
+        """SOURCE-TEXT: The source
 - text does not mention
 - the organ location for the
 - primary cancer.  
 
 
-  answer [[A]] and [[B]]. """,
+  ANSWER [[A]] and [[B]]. """,
         answer="A AND B",
         conditions=["and"],
         entities=["A", "B"],

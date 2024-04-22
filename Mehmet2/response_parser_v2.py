@@ -12,7 +12,7 @@ class Response:
     conditions: list[str]
     entities_by_name: dict[str, list[str]]
     _linestart = re.compile(
-        r"^(SOURCE-TEXT|ANSWER|PRIMARY-ORGANS):?", flags=re.I
+        r"^\b([A-Z-]+)\b:?",
     )  # Will match a line that starts with "SOURCE-TEXT:" or "ANSWER:"
     _entities = re.compile(
         r"\[\[([\s\S]+?)]]", flags=re.M
@@ -21,7 +21,7 @@ class Response:
         r"(\(\[\[)|(]][\s\S]+?\[\[)|(\]\]\))", flags=re.M
     )  # Will match text between "]]...[[" including leading "(" and trailing ")"
     _expected_entity_fmt = re.compile(
-        r"^(SOURCE-TEXT|ANSWER|PRIMARY-ORGANS):?\s*\(?\[\[", flags=re.I
+        r"^\b[A-Z-]+\b:?\s*\(?\[\[",
     )  # Inputs with entities should look like: "UPPERCASE: [[<entity>]]"
 
     def __init__(self, text: str) -> None:
@@ -99,12 +99,12 @@ class Response:
 
     def _capture_sequence(self, seq_name: str, seq: list[str]):
         entities, conditions, answer = self._extract_from_seq(seq_name, "\n".join(seq))
-        if entities:
+        if entities and seq_name.upper() not in ("SOURCE-TEXT", "ANSWER"):
             if seq_name in self.entities_by_name:
                 self.entities_by_name[seq_name].extend(entities)
             else:
                 self.entities_by_name[seq_name] = entities.copy()
-        if seq_name.lower() == "answer":
+        if seq_name.upper() == "ANSWER":
             if self.answer:
                 # If answer was provided more than once, join them as conjunctive
                 self.entities.extend(entities)
@@ -115,7 +115,7 @@ class Response:
                 self.entities = entities.copy()
                 self.conditions = conditions.copy()
                 self.answer = answer
-        elif seq_name.lower() == "source-text":
+        elif seq_name.upper() == "SOURCE-TEXT":
             # Response may contain more than one source text
             if self.source_text:
                 self.source_text += f"\n\n{answer}"
