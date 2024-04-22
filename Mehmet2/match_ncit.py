@@ -11,15 +11,6 @@ from pathlib import Path
 
 from Mehmet2.logging import logger
 
-# class Logger:
-#     def debug(*args):
-#         print(*args)
-
-#     def info(*args):
-#         print(*args)
-
-
-# logger = Logger()
 # import hashlib
 
 # Files to tokenize
@@ -220,7 +211,7 @@ def _write_thesaurus_mappings():
         href = hashes.pop(0)
         logger.info(f"Writing to {file.name}...")
         with open(file, "w") as ofh:
-            json.dump(href, ofh)
+            json.dump(href, ofh, indent=1)
 
 
 def _read_saved_thesaurus_mappings():
