@@ -130,12 +130,14 @@ def process_questions(
 
         # Gather any NCIt concepts from GPT's answer
         ncit_concepts = []
-        if prompt in NCIT_PROMPTS:
+        if not response.is_falsy() and prompt in NCIT_PROMPTS:
             entities = (
                 response.entities if len(response.entities) > 1 else [response.answer]
             )
             for entity in entities:
+                logger.debug("Getting match...")
                 ncit_match = get_match(entity)
+                logger.debug("Match complete.")
                 ncit_concepts.append(ncit_match)
         if output_file:
             serialize(

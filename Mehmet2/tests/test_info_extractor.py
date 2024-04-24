@@ -12,6 +12,7 @@ from Mehmet2.settings import Settings
 test_data = Path(__file__).parent / "data"
 questions_file = test_data / "prompts.yaml"
 prompts_other_f = test_data / "prompts_other.yaml"
+prompts_only_diseases_f = test_data / "prompts_only_diseases.yaml"
 
 
 class Prompts:
@@ -78,6 +79,10 @@ class Prompts:
     def prior_therapy_exclusion(self):
         return self._get_prompt("prior_therapy_exclusion")
 
+    @property
+    def diseases(self):
+        return self._get_prompt("diseases")
+
 
 @pytest.fixture
 def prompts():
@@ -87,6 +92,11 @@ def prompts():
 @pytest.fixture
 def prompts_other():
     return Prompts(prompts_other_f)
+
+
+@pytest.fixture
+def prompts_only_diseases():
+    return Prompts(prompts_only_diseases_f)
 
 
 @pytest.fixture
@@ -744,15 +754,60 @@ def test_diseases_disjunctive(monkeypatch, settings, diseases_disjunctive):
     assert sent_prompts == expected_prompts
     assert results == [
         {
-            "ncit_disease_names_lead": ("40374", "Microinvasive Breast Carcinoma"),
+            "ncit_disease_names_lead": ("C40374", "Microinvasive Breast Carcinoma"),
             "disease_names_lead": "Ductal Carcinoma In Situ",
             "biomarker_exclusion": None,
             "biomarker_inclusion": "Estrogen Receptor Positive",
         },
         {
-            "ncit_disease_names_lead": ("170778", "Locally Advanced Rectal Carcinoma"),
+            "ncit_disease_names_lead": ("C170778", "Locally Advanced Rectal Carcinoma"),
             "biomarker_exclusion": None,
             "biomarker_inclusion": "Biomarker for Locally-advanced Rectal Cancer",
             "disease_names_lead": "Locally-advanced Rectal Cancer",
+        },
+    ]
+
+
+@pytest.fixture
+def diseases_only(prompts_only_diseases):
+    disease_names_lead = (
+        prompts_only_diseases.disease_names_lead,
+        Response("""SOURCE-TEXT:[[lorem ipsum]]
+ANSWER:[[Stage IIA, IIB, IIIA, or IIIB Non-Squamous or Squamous NSCLC]]"""),
+    )
+    diseases = (
+        prompts_only_diseases.diseases.format(
+            disease_names_lead="Stage IIA, IIB, IIIA, or IIIB Non-Squamous or Squamous NSCLC"
+        ),
+        Response("""SOURCE-TEXT:[[lorem ipsum]]
+ANSWER:[[Stage IIA Non-Squamous NSCLC OR Stage IIB Non-Squamous NSCLC OR Stage IIIA Non-Squamous NSCLC OR Stage IIIB Non-Squamous NSCLC OR Stage IIA Squamous NSCLC OR Stage IIB Squamous NSCLC OR Stage IIIA Squamous NSCLC OR Stage IIIB Squamous NSCLC]]
+"""),
+    )
+    return [disease_names_lead, diseases]
+
+
+def test_diseases_only(monkeypatch, settings, diseases_only):
+    mock_send_messages, sent_prompts, expected_prompts = get_send_messages_mock(
+        diseases_only
+    )
+    monkeypatch.setattr(ie.GPTClient, "send_messages", mock_send_messages)
+
+    chat = [system_message(settings.SYSTEM_MESSAGE)]
+    results = ie.process_questions(
+        gpt=ie.GPTClient(settings),
+        questions_file=prompts_only_diseases_f,
+        chat_history=chat,
+        output_file="test.out.csv",
+    )
+    assert sent_prompts == expected_prompts
+    assert results == [
+        {
+            "disease_names_lead": "Stage IIA, IIB, IIIA, or IIIB Non-Squamous or Squamous NSCLC",
+            "diseases": "Stage IIA Non-Squamous NSCLC OR Stage IIB Non-Squamous NSCLC OR Stage IIIA Non-Squamous NSCLC OR Stage IIIB Non-Squamous NSCLC OR Stage IIA Squamous NSCLC OR Stage IIB Squamous NSCLC OR Stage IIIA Squamous NSCLC OR Stage IIIB Squamous NSCLC",
+            "ncit_disease_names_lead": (
+                "C43588",
+                "Colorectal Squamous Cell Carcinoma",
+            ),
+            "ncit_diseases": ("C134188", "Stage IIB Colorectal Cancer AJCC v8"),
         },
     ]

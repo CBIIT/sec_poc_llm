@@ -1,0 +1,18 @@
+- prompt: disease_names_lead
+  question: |
+    Based on the eligibility criteria in the provided data source, identify the PRIMARY-ORGANS from which the cancer of interest originated. The main ANSWER of interest is the type of cancer(s) this clinical trial studies. Please provide the SOURCE-TEXT portion on which your answer is based. If the primary organ and the cancer type were not specified, say ANSWER: [[NOT SPECIFIED]].
+    Examples:   
+    SOURCE-TEXT:[[1. Adenocarcinoma of the rectum cT3 or cT4 or cN+, M0 and for which CPR recommends preoperative radiochemotherapy. 2. Tumor <15 cm of the anal margin in rigid or subperitoneal rectoscopy at the MRI. 3. Tumor potentially resectable from the outset, or considered to be resectable after radiochemotherapy (inclusion--- t) | ]]
+    PRIMARY-ORGANS:[[Rectum]]
+    ANSWER:[[Locally-advanced Rectal Cancer]]
+
+    SOURCE-TEXT:[[Biopsy-proven ER+ DCIS. (inclusion--- t) | ]]
+    PRIMARY-ORGANS:[[Breast]]
+    ANSWER:[[Ductal Carcinoma In Situ]]
+
+- prompt: diseases
+  question: |
+    If the stage or histopathology information for {disease_names_lead} was provided, please provide each combination separately in disjunctive form.
+    Examples:
+    ANSWER:[[Stage IVA Thyroid Gland Papillary Carcinoma]] OR [[Stage IVB Thyroid Gland Papillary Carcinoma]] OR [[Stage IV Thyroid Gland Medullary Carcinoma]].
+    ANSWER:[[Stage I Nasopharyngeal Undifferentiated Carcinoma]] OR [[Stage II Nasopharyngeal Undifferentiated Carcinoma]] OR [[Stage I Nasopharyngeal Keratinizing Squamous Cell Carcinoma]] OR [[Stage II Nasopharyngeal Keratinizing Squamous Cell Carcinoma]]

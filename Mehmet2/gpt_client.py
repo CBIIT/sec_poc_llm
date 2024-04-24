@@ -54,7 +54,9 @@ class GPTClient:
         end = timer()
         logger.info(f"GPT time: {timedelta(seconds=end - start)}")
         try:
+            logger.debug("Parsing response...")
             response = Response(completion.choices[0].message.content)
+            logger.debug("Response parsed.")
         except AssertionError:
             logger.warning(
                 f"Failed to parse response {completion.choices[0].message.content}."

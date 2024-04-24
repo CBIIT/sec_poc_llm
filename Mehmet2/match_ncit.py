@@ -8,6 +8,7 @@
 import json
 import re
 from pathlib import Path
+from typing import Union
 
 from Mehmet2.logging import logger
 
@@ -64,6 +65,10 @@ def _read_test_cases(aref: list[str], infile: str):
 
 
 def get_match(term: str):
+    words = _word_split(term)
+    if len(words) > 13:
+        logger.warning("Input term is longer than 13 words. Truncating to 13.")
+        term = " ".join(words[:13])
     assert word2code and bigram2code and trigram2code and code2term
     term = re.sub(
         r"\(\w+\)", "", term
@@ -89,7 +94,7 @@ def _get_codes_v2(
     word2code_href: dict,
     bigram2code_href: dict,
     trigram2code_href: dict,
-):
+) -> Union[tuple[str, str], None]:
     hrefs: tuple[dict[str, dict[str, int]]] = (
         word2code_href,
         bigram2code_href,
@@ -101,7 +106,7 @@ def _get_codes_v2(
         trigrams_aref,
     )
 
-    code2score = {}
+    code2score: dict[str, float] = {}
 
     for n in range(1, 4):
         if len(words_aref) <= 2 and n != 2:
@@ -109,6 +114,7 @@ def _get_codes_v2(
 
         aref = arefs[n - 1]
         href = hrefs[n - 1]
+        assert len(aref) <= 13, "Cannot calculate terms longer than ~13 words"
         code2count: dict[str, float] = {}
 
         increment = 1.0
@@ -132,7 +138,7 @@ def _get_codes_v2(
                 code2score[code] += score
             increment *= 1.5
 
-    code_scores = []
+    code_scores: list[tuple[str, float]] = []
     for code, score in code2score.items():
         code_scores.append((code, score))
 
@@ -150,7 +156,7 @@ def _get_codes_v2(
         logger.debug(f"\tC{code}\t{code2term[code]}")
         matched_code = code
         matched_term = code2term[code]
-    return matched_code, matched_term
+    return ("C" + matched_code, matched_term) if matched_code else None
 
     ## Uncomment the following to save the scores
     # Create a new SHA-1 hash object
