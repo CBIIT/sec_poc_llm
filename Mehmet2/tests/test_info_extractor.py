@@ -811,3 +811,41 @@ def test_diseases_only(monkeypatch, settings, diseases_only):
             "ncit_diseases": ("C134188", "Stage IIB Colorectal Cancer AJCC v8"),
         },
     ]
+
+
+@pytest.fixture
+def diseases_falsy_response(prompts_only_diseases):
+    disease_names_lead = (
+        prompts_only_diseases.disease_names_lead,
+        Response("""SOURCE-TEXT:[[lorem ipsum]]
+ANSWER:[[NOT SPECIFIED]]"""),
+    )
+    diseases = (
+        prompts_only_diseases.diseases.format(disease_names_lead="None"),
+        Response("""SOURCE-TEXT:[[lorem ipsum]]
+ANSWER:[[NOT SPECIFIED]]
+"""),
+    )
+    return [disease_names_lead, diseases]
+
+
+def test_diseases_falsy_response(monkeypatch, settings, diseases_falsy_response):
+    mock_send_messages, sent_prompts, expected_prompts = get_send_messages_mock(
+        diseases_falsy_response
+    )
+    monkeypatch.setattr(ie.GPTClient, "send_messages", mock_send_messages)
+
+    chat = [system_message(settings.SYSTEM_MESSAGE)]
+    results = ie.process_questions(
+        gpt=ie.GPTClient(settings),
+        questions_file=prompts_only_diseases_f,
+        chat_history=chat,
+        output_file="test.out.csv",
+    )
+    assert sent_prompts == expected_prompts
+    assert results == [
+        {
+            "disease_names_lead": None,
+            "diseases": None,
+        },
+    ]
