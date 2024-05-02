@@ -849,3 +849,80 @@ def test_diseases_falsy_response(monkeypatch, settings, diseases_falsy_response)
             "diseases": None,
         },
     ]
+
+
+@pytest.fixture
+def diseases_many_disjunctive(prompts_only_diseases):
+    disease_names_lead = (
+        prompts_only_diseases.disease_names_lead,
+        Response("""SOURCE-TEXT: [[Lorem ipsum]]
+ANSWER:[[Test]]"""),
+    )
+    diseases = (
+        prompts_only_diseases.diseases.format(disease_names_lead="Test"),
+        Response("""SOURCE-TEXT:[[lorem ipsum]]
+ANSWER:[[Stage IIA Non-squamous NSCLC]] OR [[Stage IIB Non-squamous NSCLC]] OR [[Stage IIIA Non-squamous NSCLC]] OR [[Stage IIIB Non-squamous NSCLC]] OR [[Stage IIA Squamous b NSCLC]] OR [[Stage IIB Squamous b NSCLC]] OR [[Stage IIIA Squamous b NSCLC]] OR [[Stage IIIB Squamous b NSCLC]]."""),
+    )
+    return [disease_names_lead, diseases]
+
+
+def test_diseases_many_disjunctive(monkeypatch, settings, diseases_many_disjunctive):
+    mock_send_messages, sent_prompts, expected_prompts = get_send_messages_mock(
+        diseases_many_disjunctive
+    )
+    monkeypatch.setattr(ie.GPTClient, "send_messages", mock_send_messages)
+
+    chat = [system_message(settings.SYSTEM_MESSAGE)]
+    results = ie.process_questions(
+        gpt=ie.GPTClient(settings),
+        questions_file=prompts_only_diseases_f,
+        chat_history=chat,
+        output_file="test.out.csv",
+    )
+    assert sent_prompts == expected_prompts
+    assert results == [
+        {
+            "disease_names_lead": "Test",
+            "diseases": "Stage IIA Non-squamous NSCLC OR Stage IIB Non-squamous NSCLC OR Stage "
+            "IIIA Non-squamous NSCLC OR Stage IIIB Non-squamous NSCLC OR Stage IIA "
+            "Squamous b NSCLC OR Stage IIB Squamous b NSCLC OR Stage IIIA Squamous "
+            "b NSCLC OR Stage IIIB Squamous b NSCLC",
+            "ncit_disease_names_lead": [
+                None,
+            ],
+            "ncit_diseases": [
+                (
+                    "C4012",
+                    "Stage IV Non-Small Cell Lung Cancer AJCC v7",
+                ),
+                (
+                    "C4012",
+                    "Stage IV Non-Small Cell Lung Cancer AJCC v7",
+                ),
+                (
+                    "C9102",
+                    "Stage IIIA Non-Small Cell Lung Cancer AJCC v7",
+                ),
+                (
+                    "C9103",
+                    "Stage IIIB Non-Small Cell Lung Cancer AJCC v7",
+                ),
+                (
+                    "C140081",
+                    "Stage IIA Penile Cancer AJCC v8",
+                ),
+                (
+                    "C140083",
+                    "Stage IIB Penile Cancer AJCC v8",
+                ),
+                (
+                    "C9102",
+                    "Stage IIIA Non-Small Cell Lung Cancer AJCC v7",
+                ),
+                (
+                    "C9103",
+                    "Stage IIIB Non-Small Cell Lung Cancer AJCC v7",
+                ),
+            ],
+        },
+    ]

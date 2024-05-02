@@ -156,6 +156,9 @@ def process_questions(
                 other_entities=response.entities_by_name or None,
             )
 
+        ###
+        # Case 1: For "breaking apart" answers into their conjunctive/disjunctive pieces for downstream Q&A.
+        ###
         # Line 11
         if (
             # Cohorts should only be separated by ANDs (i.e., conjunctive)
@@ -167,7 +170,7 @@ def process_questions(
             and len(response.entities) > 1
         ):
             answers = (
-                # For organs, split the response as if the organs were only separated by "OR"
+                # For organs/lead diseases, split the response as if they were only separated by "OR"
                 response.split_as_disjunctive()
                 if prompt in ("organ", "disease_names_lead")
                 else response.entities
@@ -175,6 +178,7 @@ def process_questions(
             # Line 12
             for answer in answers:
                 if prompt == "disease_names_lead":
+                    # Keep the NCIt term aligned with its answer component used in next query
                     ncit_match = get_match(answer)
                     p2a_local["ncit_" + prompt] = ncit_match
                 # Line 13
@@ -193,10 +197,16 @@ def process_questions(
                 results += subresults
             # Line 16
             return results
+        ###
+        # Case 2: Answers not being broken up for downstream Q&A whether because they only have 1 component OR
+        #         the downstream prompts can proceed with original inputs.
+        ###
         else:
             if not response.is_falsy() and prompt in NCIT_PROMPTS:
-                ncit_match = get_match(response.answer)
-                p2a_local["ncit_" + prompt] = ncit_match
+                # Reuse locally computed NCIt codes.
+                # NCIt concepts will have only 1 term for lead disease,
+                # but it may have multiple terms for diseases.
+                p2a_local["ncit_" + prompt] = ncit_concepts
             # Line 18
             p2a_local[prompt] = None if response.is_falsy() else response.answer
             # Line 19
