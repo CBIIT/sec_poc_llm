@@ -68,7 +68,9 @@ def get_match(term: str):
     words = _word_split(term)
     if len(words) > 13:
         logger.warning("Input term is longer than 13 words. Truncating to 13.")
+        logger.info(f"Term before truncation is: '{term}'")
         term = " ".join(words[:13])
+        logger.info(f"Term after truncation is: '{term}'")
     assert word2code and bigram2code and trigram2code and code2term
     term = re.sub(
         r"\(\w+\)", "", term
