@@ -154,3 +154,4 @@ term-code.tsv
 preferred_terms*.csv
 ncit*concepts.tsv
 ncit-biomarker-concepts.xlsx
+ncit_output/*
