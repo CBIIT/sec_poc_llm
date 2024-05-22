@@ -28,7 +28,6 @@ def load_ncit(version="Thesaurus.FLAT.zip"):
         "semantic type",
         "concept in subset",
     ]
-    ncit = ncit.set_index("code")
     print(ncit.head())
     print(ncit.shape)
     return ncit
