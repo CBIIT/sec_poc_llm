@@ -28,6 +28,11 @@ def load_ncit(version="Thesaurus.FLAT.zip"):
         "semantic type",
         "concept in subset",
     ]
+    # Some display names contain the pipe character symbolizing multiple display (preferred) names.
+    # That is confusing as the EVS concepts list of preferred names only contains 1 preferred name.
+    ncit["display name"] = ncit["display name"].apply(
+        lambda dn: pd.NA if pd.isna(dn) or "|" in dn else dn
+    )
     print(ncit.head())
     print(ncit.shape)
     return ncit

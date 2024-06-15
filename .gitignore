@@ -155,3 +155,11 @@ preferred_terms*.csv
 ncit*concepts.tsv
 ncit-biomarker-concepts.xlsx
 ncit_output/*
+azure_rest/*
+chroma/diseases/*
+disease_syn_documents/*
+LLM json protocols/*
+original trial set+1/*
+.milvus_diseases.db.lock
+milvus_diseases.db
+trial_collection_21.xlsx

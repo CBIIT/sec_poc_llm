@@ -12,6 +12,21 @@ from typing import Union
 
 from Mehmet2.logging import logger
 
+# class Logger:
+#     def debug(self, *args, **kwargs):
+#         print(*args, **kwargs)
+
+#     def info(self, *args, **kwargs):
+#         print(*args, **kwargs)
+
+#     def warn(self, *args, **kwargs):
+#         print(*args, **kwargs)
+
+#     def error(self, *args, **kwargs):
+#         print(*args, **kwargs)
+
+
+# logger = Logger()
 # import hashlib
 
 # Files to tokenize
@@ -35,6 +50,8 @@ word2code: dict[str, dict[str, int]] = {}
 bigram2code: dict[str, dict[str, int]] = {}
 trigram2code: dict[str, dict[str, int]] = {}
 
+has_loaded_thesaurus = False
+
 
 def _word_split(term: str):
     return re.split(r"[^\w']+", term)
@@ -45,6 +62,10 @@ def _word_join(words: list[str]):
 
 
 def test():
+    global has_loaded_thesaurus
+    if not has_loaded_thesaurus:
+        _read_thesaurus_inputs()
+        has_loaded_thesaurus = True
     cases = []
     _read_test_cases(cases, _testcases_f)
     for term in cases:
@@ -65,6 +86,10 @@ def _read_test_cases(aref: list[str], infile: str):
 
 
 def get_match(term: str):
+    global has_loaded_thesaurus
+    if not has_loaded_thesaurus:
+        _read_thesaurus_inputs()
+        has_loaded_thesaurus = True
     words = _word_split(term)
     if len(words) > 13:
         logger.warning("Input term is longer than 13 words. Truncating to 13.")
@@ -299,8 +324,6 @@ def _read_thesaurus_inputs():
 
     _write_thesaurus_mappings()
 
-
-_read_thesaurus_inputs()
 
 if __name__ == "__main__":
     # test()

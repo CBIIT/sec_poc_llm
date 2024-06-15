@@ -804,11 +804,13 @@ def test_diseases_only(monkeypatch, settings, diseases_only):
         {
             "disease_names_lead": "Stage IIA, IIB, IIIA, or IIIB Non-Squamous or Squamous NSCLC",
             "diseases": "Stage IIA Non-Squamous NSCLC OR Stage IIB Non-Squamous NSCLC OR Stage IIIA Non-Squamous NSCLC OR Stage IIIB Non-Squamous NSCLC OR Stage IIA Squamous NSCLC OR Stage IIB Squamous NSCLC OR Stage IIIA Squamous NSCLC OR Stage IIIB Squamous NSCLC",
-            "ncit_disease_names_lead": (
-                "C43588",
-                "Colorectal Squamous Cell Carcinoma",
-            ),
-            "ncit_diseases": ("C134188", "Stage IIB Colorectal Cancer AJCC v8"),
+            "ncit_disease_names_lead": [
+                (
+                    "C43588",
+                    "Colorectal Squamous Cell Carcinoma",
+                )
+            ],
+            "ncit_diseases": [("C134188", "Stage IIB Colorectal Cancer AJCC v8")],
         },
     ]
 

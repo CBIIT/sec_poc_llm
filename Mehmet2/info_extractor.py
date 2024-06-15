@@ -124,7 +124,17 @@ def process_questions(
         logger.info(f"Token count: {gpt.count_message_tokens(chat_history)}")
 
         #  Line 9 and 10
-        response = gpt.send_messages(chat_history)
+        if prompt == "__disease_code__":
+            response = gpt.send_messages(
+                [chat_history[-1]],
+                chat_params={},
+                search_params={
+                    "indexName": "disease-to-terms",
+                    "roleInformation": None,
+                },
+            )
+        else:
+            response = gpt.send_messages(chat_history)
         logger.debug(f"Response: {response.raw}")
         chat_history.append(assistant_message(response.raw))
 

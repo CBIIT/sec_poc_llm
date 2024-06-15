@@ -36,8 +36,12 @@ class GPTClient:
         )
 
     @backoff.on_exception(backoff.expo, openai.RateLimitError)
-    def send_messages(self, message_text: list[dict[str, str]]):
+    def send_messages(
+        self, message_text: list[dict[str, str]], chat_params={}, search_params={}
+    ):
         start = timer()
+        cp = {**self.settings.CHAT_CONFIG, **chat_params}
+        sp = {**self.settings.SEARCH_CONFIG, **search_params}
         completion = self.client.chat.completions.create(
             model=self.settings.OPENAI_DEPLOYMENT_ID,
             messages=message_text,
@@ -45,11 +49,11 @@ class GPTClient:
                 "dataSources": [
                     {
                         "type": "AzureCognitiveSearch",
-                        "parameters": self.settings.SEARCH_CONFIG,
+                        "parameters": sp,
                     }
                 ]
             },
-            **self.settings.CHAT_CONFIG,
+            **cp,
         )
         end = timer()
         logger.info(f"GPT time: {timedelta(seconds=end - start)}")
