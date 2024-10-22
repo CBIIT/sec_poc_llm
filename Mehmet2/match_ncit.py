@@ -326,6 +326,12 @@ def _read_thesaurus_inputs():
 
 
 if __name__ == "__main__":
-    # test()
-    match = get_match("Non-Small Cell Lung Cancer (NSCLC), stage IIA non-squamous")
-    print(match)
+    # import pandas as pd
+
+    # testcases = pd.read_csv("testcases_50.csv")
+    # for idx, row in testcases.iterrows():
+    #     res = get_match(row["Term"])
+    #     testcases.loc[idx, "ngram_pred"] = res[1] if res else None
+    #     testcases.loc[idx, "ngram_code"] = res[0] if res else None
+    # testcases.to_csv("testcases_50.csv", index=False)
+    print(get_match("follicle cancer of the thyroid"))

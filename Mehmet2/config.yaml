@@ -1,8 +1,8 @@
-system_message: &sys_msg 'You will be summarizing the Eligibility Criteria section of a clinical trial protocol document. Note that in the Eligibility Criteria section, the suffix "(inclusion--- t)" denotes that the line describes an inclusion criterion, and "(inclusion--- f)" denotes an exclusion criterion.'
+system_message: &sys_msg "You are an AI assistant that helps people extract information from documents."
 
 # https://platform.openai.com/docs/api-reference/chat/create
 chat:
-  temperature: 0
+  temperature: 0.2
   top_p: 1
   max_tokens: 800
   stop: null
@@ -14,10 +14,12 @@ search:
   filter: null
   inScope: true
   # https://learn.microsoft.com/en-us/azure/ai-services/openai/references/azure-search?tabs=python#query-type
-  queryType: simple
+  queryType: vectorSemanticHybrid
   # Provide embeddingDeploymentName when using a vector queryType
-  # embeddingDeploymentName: embeddings
+  embeddingDeploymentName: embeddings
   roleInformation: *sys_msg
   semanticConfiguration: default
-  strictness: 3
+  # NOTE: If the answer is "The requested information is not available in the retrieved data. Please try another query or topic."
+  #       try adjusting the strictness.
+  strictness: 2
   topNDocuments: 5

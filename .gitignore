@@ -149,7 +149,7 @@ results*.xlsx
 Thesaurus*.zip
 Thesaurus*.txt
 trial-*_2024*.csv
-code2term.tsv
+/code2term.tsv
 term-code.tsv
 preferred_terms*.csv
 ncit*concepts.tsv

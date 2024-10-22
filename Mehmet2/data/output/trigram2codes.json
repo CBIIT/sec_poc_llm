@@ -82594,12 +82594,8 @@
  "familial waldenstrom macroglobulinemia": {
   "115212": 1
  },
- "familial waldenstr m": {
+ "familial waldenstr\u00f6m macroglobulinemia": {
   "115212": 1
- },
- "waldenstr m macroglobulinemia": {
-  "115212": 1,
-  "80307": 1
  },
  "pancreatic cancer syndrome": {
   "43298": 1
@@ -113071,7 +113067,7 @@
   "141142": 1,
   "141346": 1
  },
- "fungoides and s": {
+ "fungoides and s\u00e9zary": {
   "9265": 1,
   "115439": 1,
   "88150": 1,
@@ -113087,7 +113083,7 @@
   "88161": 1,
   "88162": 1
  },
- "and s zary": {
+ "and s\u00e9zary syndrome": {
   "9265": 1,
   "115439": 1,
   "88150": 1,
@@ -113102,23 +113098,6 @@
   "88160": 1,
   "88161": 1,
   "88162": 1
- },
- "s zary syndrome": {
-  "9265": 1,
-  "115439": 1,
-  "88150": 1,
-  "88151": 1,
-  "88152": 1,
-  "88153": 1,
-  "88154": 1,
-  "88155": 1,
-  "88157": 1,
-  "88158": 1,
-  "88159": 1,
-  "88160": 1,
-  "88161": 1,
-  "88162": 1,
-  "3366": 1
  },
  "mycosis fungoides by": {
   "141143": 1
@@ -143223,7 +143202,7 @@
   "141358": 1,
   "141359": 1
  },
- "zary syndrome ajcc": {
+ "s\u00e9zary syndrome ajcc": {
   "88150": 1,
   "88151": 1,
   "88152": 1,
@@ -155947,16 +155926,13 @@
  "leukemia small cell": {
   "36270": 1
  },
- "prolymphocytic leukemia s": {
+ "prolymphocytic leukemia s\u00e9zary": {
   "36271": 1
  },
- "leukemia s zary": {
+ "leukemia s\u00e9zary cell": {
   "36271": 1
  },
- "s zary cell": {
-  "36271": 1
- },
- "zary cell like": {
+ "s\u00e9zary cell like": {
   "36271": 1
  },
  "t cell rich": {
